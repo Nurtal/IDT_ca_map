@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calcium Map Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Calcium Map <span>review</span></h1>
+    <div class="progress" id="progress"></div>
+    <div class="actions">
+      <button id="export-kept" type="button">Export kept CSV</button>
+    </div>
+  </header>
+
+  <main id="stage" class="stage"></main>
+
+  <footer class="decide">
+    <button id="btn-reject" class="reject" type="button" title="Reject (←)">✕ Reject</button>
+    <button id="btn-keep" class="keep" type="button" title="Keep (→)">✓ Keep</button>
+  </footer>
+
+  <script src="../data/nodes.js"></script>
+  <script src="../data/interactions.js"></script>
+  <script src="../data/evidence.js"></script>
+  <script src="../shared/core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
