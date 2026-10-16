@@ -820,6 +820,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "5b1327dd0cf8",
+  "interaction_id": "54912d7bc6cd",
+  "source_kind": "pubmed",
+  "ref": "PMID:32142632",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Zhang H",
+  "sentence": "Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "5b32a7581917",
   "interaction_id": "72780d5c603a",
   "source_kind": "signor",
@@ -831,6 +844,19 @@ window.CAMAP.evidence = [
   "sentence": "STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",
   "sentence_verified": "false",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "5d3a193a1625",
+  "interaction_id": "e27616096e06",
+  "source_kind": "pubmed",
+  "ref": "PMID:39759122",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Zhu Y",
+  "sentence": "Decreased mitochondrial calcium uptake led to reduced cytoplasmic release of mitochondrial DNA and inhibited the activation of the cGAS-STING signaling cascade, subsequently inhibiting monocyte-to-osteoclast differentiation.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
  },
  {
   "evidence_id": "5d4d715e62c7",
@@ -974,6 +1000,19 @@ window.CAMAP.evidence = [
   "sentence": "We demonstrated that STING increases intracellular calcium in liver macrophages to promote pyroptosis, which leads to an increase in liver inflammation and tissue injury in liver IRI, and calcium promoted by STING in this process may be mainly released from the ER.",
   "sentence_verified": "true",
   "species_context": "mouse"
+ },
+ {
+  "evidence_id": "6bff88778186",
+  "interaction_id": "11077ea73180",
+  "source_kind": "pubmed",
+  "ref": "PMID:40265346",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Yang X",
+  "sentence": "Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
  },
  {
   "evidence_id": "6c44d818cc1f",
@@ -1247,6 +1286,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "7c51ef21cf02",
+  "interaction_id": "e0417f8eb557",
+  "source_kind": "pubmed",
+  "ref": "PMID:39759122",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Zhu Y",
+  "sentence": "Heavy MF up-regulated Piezo1 in PDLCs, reducing mitochondrial Ca2+ influx by inhibiting ITPR3 expression in mitochondria-associated membranes.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
  },
  {
   "evidence_id": "7e247976196f",
@@ -1587,6 +1639,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "9220fdc5a853",
+  "interaction_id": "6b721eb0ed35",
+  "source_kind": "pubmed",
+  "ref": "PMID:40265346",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Yang X",
+  "sentence": "Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
+ },
+ {
   "evidence_id": "9505bd4987ff",
   "interaction_id": "19fff2995b55",
   "source_kind": "signor",
@@ -1663,6 +1728,19 @@ window.CAMAP.evidence = [
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
   "species_context": "other"
+ },
+ {
+  "evidence_id": "9f44f07bddf8",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pubmed",
+  "ref": "PMID:32142632",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Zhang H",
+  "sentence": "Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "a50596687c5c",

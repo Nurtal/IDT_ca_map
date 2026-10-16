@@ -113,6 +113,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "36e4b122316f"
  },
  {
+  "interaction_id": "11077ea73180",
+  "source": "ATP2A2",
+  "target": "STING1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "direct interaction; modulates STING polymerization and trafficking",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "SERCA2/ATP2A2, the ER calcium pump, binds STING directly: a third calcium-machinery protein in physical contact with STING, after STIM1 and ITPR1.",
+  "conflict_with": "",
+  "evidence_fingerprint": "bd64088bfbf2"
+ },
+ {
   "interaction_id": "117c4ab707df",
   "source": "PRKACA",
   "target": "ITPR1",
@@ -641,6 +657,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "cf4be5878599"
  },
  {
+  "interaction_id": "54912d7bc6cd",
+  "source": "ITPR1",
+  "target": "STING1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "co-immunoprecipitation in myeloid cells",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "both",
+  "justification": "STING binds the IP3 receptor ITPR1 directly: a second STING-calcium channel complex, on the ER release side, driving coagulation in sepsis.",
+  "conflict_with": "",
+  "evidence_fingerprint": "84e76f5f8005"
+ },
+ {
   "interaction_id": "5b029dd85aa1",
   "source": "FAM20C",
   "target": "STIM1",
@@ -783,6 +815,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8e1fe10e6f21"
+ },
+ {
+  "interaction_id": "6b721eb0ed35",
+  "source": "ATP2A2",
+  "target": "STING1",
+  "type": "translocation/trafficking",
+  "directed": "true",
+  "mechanism": "modulates polymerization and trafficking; required for SEC62-dependent reticulophagy",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "ATP2A2 governs STING polymerization and trafficking, placing the ER Ca2+ pump itself on the STING activation route.",
+  "conflict_with": "",
+  "evidence_fingerprint": "9d842998f683"
  },
  {
   "interaction_id": "6eaa5edba8bc",
@@ -1238,15 +1286,15 @@ window.CAMAP.interactions = [
   "target": "CHEBI:29108",
   "type": "Ca2+_flux",
   "directed": "true",
-  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation",
-  "n_sources": "2",
-  "n_pubs": "2",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN",
+  "n_sources": "3",
+  "n_pubs": "3",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm.",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation.",
   "conflict_with": "",
-  "evidence_fingerprint": "2fbe863150dc"
+  "evidence_fingerprint": "b703c8232835"
  },
  {
   "interaction_id": "a84be8ddc723",
@@ -1601,6 +1649,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "923cb2f39cca"
  },
  {
+  "interaction_id": "e0417f8eb557",
+  "source": "ITPR3",
+  "target": "CHEBI:29108",
+  "type": "Ca2+_flux",
+  "directed": "true",
+  "mechanism": "ITPR3 at MAMs; mitochondrial Ca2+ influx",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "both",
+  "justification": "ITPR3 at mitochondria-associated membranes sets mitochondrial Ca2+ influx, the upstream step of a calcium-to-STING arm.",
+  "conflict_with": "",
+  "evidence_fingerprint": "4b903bad8c6a"
+ },
+ {
   "interaction_id": "e0cde0276d5b",
   "source": "PTK2B",
   "target": "TBK1",
@@ -1622,15 +1686,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "activation",
   "directed": "true",
-  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42)",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42) | indirect: mitochondrial Ca2+ uptake -> mtDNA release into cytosol -> cGAS-STING",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING.",
+  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING. | Mitochondrial Ca2+ uptake gates cGAS-STING activation by controlling mtDNA release: an indirect calcium-to-STING route distinct from the STIM1 brake.",
   "conflict_with": "",
-  "evidence_fingerprint": "08d0e0f0c72f"
+  "evidence_fingerprint": "a7abf3e41c59"
  },
  {
   "interaction_id": "e38b3abea8d0",

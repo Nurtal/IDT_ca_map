@@ -62,7 +62,9 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 5923e1feba93,a045d5c21000,intact,EBI-64047397,30042492,,2019,Avalle et al.,"Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",true,human
 5a6172801197,ef02b46551ec,intact,EBI-6127663,22464749,,2012,Palty et al.,,,human
 5a97c5906c91,2a07cb336c23,intact,EBI-6116602,21903422,,2011,Li et al.,,,human
+5b1327dd0cf8,54912d7bc6cd,pubmed,PMID:32142632,,,2020,Zhang H,"Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",true,mouse
 5b32a7581917,72780d5c603a,signor,SIGNOR-260155,24622840,,,,"STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",false,human
+5d3a193a1625,e27616096e06,pubmed,PMID:39759122,,,2024,Zhu Y,"Decreased mitochondrial calcium uptake led to reduced cytoplasmic release of mitochondrial DNA and inhibited the activation of the cGAS-STING signaling cascade, subsequently inhibiting monocyte-to-osteoclast differentiation.",true,unknown
 5d4d715e62c7,ef02b46551ec,intact,EBI-2313437,19249086,,2009,Park et al.,STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.,true,human
 5dd5460829c8,1e0f77983d1d,omnipath,OmniPath:EGFR>CALM1,16799092,,,,,,human
 60bf2b95176a,491bbd785519,intact,EBI-9681933,24954132,,2014,Dubois et al.,"By mimicking ORAI protein remodeling observed in primary tumors, we demonstrate in in vitro models that enhanced ORAI3 expression favors heteromerization with ORAI1 to form a novel channel.",true,human
@@ -74,6 +76,7 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 68f27942a454,a045d5c21000,intact,EBI-64047420,30042492,,2019,Avalle et al.,"Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",true,human
 6a17364fbb60,0ff1684a611f,omnipath,OmniPath:CDK1>ITPR1,14635192,,,,"In the present study, we show that cdc2/CyB, a critical regulator of eukaryotic cell cycle progression, phosphorylates IP3R1 in vitro and in vivo at both Ser(421) and Thr(799) and that this phosphorylation increases IP3 binding.",true,human
 6a906f030505,a0e77231ef15,pmc,PMC8906939,,,2022,Wu XY,"We demonstrated that STING increases intracellular calcium in liver macrophages to promote pyroptosis, which leads to an increase in liver inflammation and tissue injury in liver IRI, and calcium promoted by STING in this process may be mainly released from the ER.",true,mouse
+6bff88778186,11077ea73180,pubmed,PMID:40265346,,,2025,Yang X,"Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",true,unknown
 6c44d818cc1f,136511f772ea,intact,EBI-361353,14743216,,2004,Bouwmeester et al.,,,human
 6c6f5ea0dcc1,45bfb9c9aee6,intact,EBI-54960417,33961781,,2021,Huttlin et al.,,,human
 6ccd3b69d88c,ad6369e99280,intact,EBI-25751112,24622840,,2014,Chen et al.,"We found that expression of the membrane-anchored PLpro domain (PLpro-TM) from SARS-CoV inhibits STING/TBK1/IKKepsilon-mediated activation of type I IFNs and disrupts the phosphorylation and dimerization of IRF3, which are activated by STING and TBK1.",true,human
@@ -95,6 +98,7 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 7a3fae763cdc,503431d86b30,omnipath,OmniPath:IKBKE>IRF3,17706453,,,,,,human
 7a789719bd2a,6fea95392a0a,signor,SIGNOR-260153,24622840,,,,"MAVS also interacts with STING that locates at the ER (endoplasmic reticulum), and induces the ubiquitination and dimerization of STING. The activated STING recruits TBK1 and IRF3 and contributes to the phosphorylation of IRF3 mediated by TBK1.",true,human
 7c40fbe3bfa6,ba1837ec77ca,intact,EBI-21760441,28514442,,2017,Huttlin et al.,,,human
+7c51ef21cf02,e0417f8eb557,pubmed,PMID:39759122,,,2024,Zhu Y,"Heavy MF up-regulated Piezo1 in PDLCs, reducing mitochondrial Ca2+ influx by inhibiting ITPR3 expression in mitochondria-associated membranes.",true,unknown
 7e247976196f,13c75853b18b,pmc,PMC8931115,,,2022,Triantafilou M,"This data suggests that upon HRV infection, STING is released from STIM1 due to alterations in calcium homeostasis, which drives the binding of STING to PI4KIIIbeta and PI4P and recruitment to the RO.",true,in_vitro_human_cells
 80fb5d6deb52,9e2581918be1,intact,EBI-11026998,26496610,,2015,Hein et al.,,,human
 8179dab98367,72780d5c603a,omnipath,OmniPath:IKBKE>TBK1,16306936,,,,,,human
@@ -121,12 +125,14 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 8ff56b1a14ea,48fada1274f9,omnipath,OmniPath:EGFR>IKBKE,27287717,,,,IKBKE Is a Substrate of EGFR and a Therapeutic Target in Non-Small Cell Lung Cancer with Activating Mutations of EGFR.,true,human
 916d80340c55,69c70a8b9163,intact,EBI-54684224,33961781,,2021,Huttlin et al.,,,human
 91df892f4631,290e3af4bcd4,intact,EBI-54848512,33961781,,2021,Huttlin et al.,,,human
+9220fdc5a853,6b721eb0ed35,pubmed,PMID:40265346,,,2025,Yang X,"Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",true,unknown
 9505bd4987ff,19fff2995b55,signor,SIGNOR-178399,18440553,,,,"Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",false,other
 99eae04e0e67,2e6a6c83a3cc,intact,EBI-9689203,24658140,,2014,Petschnigg et al.,,,human
 9b567e9c7dca,943ce1e4ea64,signor,SIGNOR-278222,27287717,,,,"To understand the mechanism by which IKBKE is activated by mutant EGFR, we first investigated if activating mutation of EGFR is able to form a complex with IKBKE.|While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",false,human
 9bc963624181,6755b8377afb,omnipath,OmniPath:CALM1>TRPC1,12601176,,,,,,human
 9c10f72d6f14,822834bb2b97,intact,EBI-21266770,30833792,,2019,Hubel et al.,,,human
 9cb6b99665e8,d4c2f9cbecf2,signor,SIGNOR-178367,18440553,,,,"Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",false,other
+9f44f07bddf8,a0e77231ef15,pubmed,PMID:32142632,,,2020,Zhang H,"Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",true,mouse
 a50596687c5c,f9e32a51cb7d,intact,EBI-20200875,29251827,,2018,Shang et al.,,,human
 a550d9890ece,ba1837ec77ca,intact,EBI-54924571,33961781,,2021,Huttlin et al.,,,human
 a5bd0c918024,d33522fa9187,pmc,PMC8109209,,,2021,Wu B,"Collectively, by stable expression of ACE2 and deletion of ORAI1/STIM1, we developed a system to examine the role of ORAI1/STIM1 in the host response to SARS-CoV-2 infection and identified the role of ORAI1 in Ca2+ homeostasis in these cells.",true,in_vitro_human_cells
