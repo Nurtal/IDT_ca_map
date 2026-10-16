@@ -20,10 +20,12 @@ Then open `review/index.html` (double-click, no server). After review, export
 ## One extraction batch (~50 articles)
 
 1. `git pull`, read `pipeline/state/PROGRESS.md` (status block + session notes).
-2. `python3 pipeline/cli.py queue next 50` — take them in that order (priority: STIM1×STING1,
+2. `python3 pipeline/cli.py queue next 50` (add `--tier N` to stay inside one tier) — take them in that order (priority: STIM1×STING1,
    then anchor × seed pairs, then each anchor alone; within a tier primary research before
    reviews, which are flagged `[review]`).
-3. Fetch their texts: `python3 pipeline/cli.py fetch-texts --next 50` (or `--pmids 123 456`).
+3. Fetch their texts: `python3 pipeline/cli.py fetch-texts --next 50` (or `--pmids 123 456`; `--tier N` applies).
+   Process articles **one at a time**: `queue next 1 --tier N`, read, record, `queue set`. Reading a
+   dozen papers' candidate sentences in one go has repeatedly failed mid-batch.
    `python3 pipeline/cli.py candidates --next 50` prints, per paper, the title, abstract and the
    sentences naming an anchor with a seed / calcium term / interaction verb (tags in brackets);
    read those first, then the full document where needed. Read a cached document with

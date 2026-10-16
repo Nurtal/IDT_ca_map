@@ -138,8 +138,10 @@ def set_statuses(state_dir, pmids, status, note=None):
     save_queue(state_dir, entries)
 
 
-def next_pending(state_dir, n):
-    return [e for e in load_queue(state_dir) if e["status"] == "pending"][:n]
+def next_pending(state_dir, n, tier=None):
+    """The n highest-priority pending articles, optionally restricted to one tier."""
+    return [e for e in load_queue(state_dir)
+            if e["status"] == "pending" and (tier is None or e["tier"] == tier)][:n]
 
 
 def write_progress(state_dir, ordered):

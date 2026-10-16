@@ -41,6 +41,7 @@ def main(argv=None):
     f = sub.add_parser("fetch-texts", help="cache PubTator texts for papers cited in raw records")
     f.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
     f.add_argument("--pmids", nargs="+", help="fetch these PMIDs instead of those cited in raw records")
+    f.add_argument("--tier", type=int, choices=(0, 1, 2), help="restrict --next to this corpus tier")
     f.add_argument("--next", type=int, metavar="N", help="fetch the next N pending articles of the queue")
     sub.add_parser("fetch-db", help="import interaction databases around the seeds into data/raw")
     a = sub.add_parser("annotate", help="cache HGNC + GO calcium + UniProt annotations for all actors")
@@ -49,6 +50,7 @@ def main(argv=None):
     q = sub.add_parser("queue", help="inspect or update the work queue")
     qsub = q.add_subparsers(dest="qcmd", required=True)
     qn = qsub.add_parser("next")
+    qn.add_argument("--tier", type=int, choices=(0, 1, 2), help="only this corpus tier")
     qn.add_argument("n", type=int, nargs="?", default=50)
     qs = qsub.add_parser("set")
     qs.add_argument("pmids", nargs="+")
@@ -57,6 +59,7 @@ def main(argv=None):
     c = sub.add_parser("candidates", help="print title, abstract and candidate sentences of cached papers")
     c.add_argument("pmids", nargs="*")
     c.add_argument("--next", type=int, help="the next N pending articles of the queue")
+    c.add_argument("--tier", type=int, choices=(0, 1, 2), help="restrict --next to this corpus tier")
     c.add_argument("--limit", type=int, default=40)
     g = sub.add_parser("graph", help="kept_interactions.csv -> data/graph_data.js")
     g.add_argument("csv", nargs="?", default=ROOT / "data" / "kept_interactions.csv", type=Path)
@@ -73,7 +76,7 @@ def main(argv=None):
         pt = PubTator(CACHE)
         pmids = set(args.pmids or [])
         if args.next:
-            pmids |= {e["pmid"] for e in next_pending(STATE, args.next)}
+            pmids |= {e["pmid"] for e in next_pending(STATE, args.next, tier=args.tier)}
         for r in ([] if pmids else read_raw(args.raw)):
             if r["source_kind"] in ("pubmed", "pmc"):
                 pmids.add(r["ref"])
@@ -86,7 +89,7 @@ def main(argv=None):
         resolver, pt = Resolver(CACHE, config), PubTator(CACHE)
         anchors = [n for a in config["anchors"] for n in resolver.names(a)]
         seeds = [n for s in config["seeds"] if s["symbol"] not in config["anchors"] for n in resolver.names(s["symbol"])]
-        pmids = list(args.pmids) + [e["pmid"] for e in next_pending(STATE, args.next or 0)]
+        pmids = list(args.pmids) + [e["pmid"] for e in next_pending(STATE, args.next or 0, tier=args.tier)]
         for pmid in pmids:
             doc = pt.document(pmid)
             if doc is None:
@@ -113,7 +116,7 @@ def main(argv=None):
         print(f"{len(zero)} queries with no hit")
         print(f"TOTAL unique articles: {report['total_articles']}  per tier: {report['per_tier']}")
     elif args.cmd == "queue" and args.qcmd == "next":
-        for e in next_pending(STATE, args.n):
+        for e in next_pending(STATE, args.n, tier=args.tier):
             review = " [review]" if e.get("review") else ""
             print(f"{e['pmid']}\t{e.get('pmcid') or '-'}\ttier {e['tier']}\t{e['year']}\t{e['title'][:90]}{review}")
     elif args.cmd == "queue" and args.qcmd == "set":

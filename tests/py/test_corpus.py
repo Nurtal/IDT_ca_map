@@ -137,6 +137,13 @@ class TestQueue(CorpusCase):
         q = {e["pmid"]: e for e in load_queue(self.state)}
         self.assertEqual((q["10"]["status"], q["20"]["note"]), ("done", "batch 1"))
 
+    def test_next_pending_can_be_restricted_to_one_tier(self):
+        from camap.corpus import next_pending
+        self.run_build()
+        self.assertEqual([e["pmid"] for e in next_pending(self.state, 5, tier=2)], ["30", "40", "50"])
+        self.assertEqual([e["pmid"] for e in next_pending(self.state, 5, tier=0)], ["10"])
+        self.assertEqual(len(next_pending(self.state, 5)), 5)
+
     def test_progress_note_reports_state_and_next_step(self):
         self.run_build()
         set_status(self.state, "10", "done")
