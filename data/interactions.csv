@@ -24,6 +24,7 @@ interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_h
 2d5ab0fed0fc,CALM1,TBK1,physical_binding,false,tandem affinity purification,1,0,1,true,GO,,,62f592a82883
 2e6a6c83a3cc,CALM1,EGFR,physical_binding,false,anti bait coimmunoprecipitation | ubiquitin reconstruction | affinity chromatography technology | proximity-dependent biotin identification,6,0,6,true,GO,,,2a77d2769083
 2e91fcd69170,SEC61A1,STING1,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,GO,,,379313e11f25
+2eae9c19d533,ITPR1,CHEBI:29108,Ca2+_flux,true,IP3R1-GRP75-VDAC1 axis at MAMs; blocked by TGR5 agonism in Muller glia and DR rats,1,1,0,false,both,"ITPR1 drives ER-to-mitochondria Ca2+ transfer through the IP3R1-GRP75-VDAC1 axis, the step that leads to mtDNA release and cGAS-STING activation in diabetic retinopathy.",,1d76150c987a
 2f665d2e9617,ATP2A2,EGFR,physical_binding,false,anti bait coimmunoprecipitation | tandem affinity purification | affinity chromatography technology,3,0,3,true,GO,,,3b54c0a48ebc
 2fcdd5e57e71,PTK2B,TBK1,activation,true,OmniPath sources: SIGNOR,1,0,1,true,GO,,,81e8bda8cd07
 3225467efe1a,STING1,VDAC2,physical_binding,false,proteomics then co-IP in A498 and RCC10 renal carcinoma cells,1,1,0,true,text,"VDAC2, the mitochondrial outer-membrane calcium transporter, is a direct STING partner: STING reaches the mitochondrial calcium machinery, not only the ER's.",,fcb8f63e63e1
@@ -118,7 +119,7 @@ e6bd5a7412fe,STING1,UBR3,physical_binding,false,anti tag coimmunoprecipitation,1
 e98b8dfde9e7,TBK1,IKBKE,activation,true,"OmniPath sources: HINT, IntAct, Macrophage, ProtMapper, SIGNOR, SPIKE_LC, Sparser_ProtMapper, Wang | up-regulates activity binding",2,0,2,true,,,,d207eca5cf64
 ea5ed67f6ba7,CALM1,RYR1,activation,true,"OmniPath sources: BioGRID, CA1, Cui2007, HPRD, Wang",1,0,1,true,GO,,,9ecfc207e4b7
 ec72048657ca,UNC93B1,STIM1,activation,true,"keeps STIM1 dimeric, primes translocation to cortical ER (HEK-293T)",1,1,0,true,both,"UNC93B1, the TLR trafficking chaperone, keeps STIM1 primed for SOCE: an innate-immunity protein tuning the STIM1 Ca2+ sensor.",,43e387a3c5cb
-ef02b46551ec,ORAI1,STIM1,physical_binding,false,anti tag coimmunoprecipitation | confocal microscopy | molecular sieving | pull down | ubiquitin reconstruction | fluorescence microscopy | fluorescent resonance energy transfer | anti bait coimmunoprecipitation,9,0,9,true,both,,,f0e9c8a30206
+ef02b46551ec,ORAI1,STIM1,physical_binding,false,anti tag coimmunoprecipitation | confocal microscopy | molecular sieving | pull down | ubiquitin reconstruction | fluorescence microscopy | fluorescent resonance energy transfer | anti bait coimmunoprecipitation | confocal colocalization of STIM1 puncta with ORAI1 in INS-1 cells under mitochondrial stress,10,1,9,true,both,"STIM1-ORAI1 assembly is triggered by mitophagy in beta-cells: ER-to-lysosome Ca2+ flux empties ER stores and recruits SOCE, a new upstream trigger for the STIM1 switch.",,762d0ba389fe
 f0404bdfdc2d,INSR,CALM1,phosphorylation,true,down-regulates phosphorylation Tyr100,1,0,1,true,both,,,3f8275a67112
 f0fb9930215f,CDK1,CGAS,phosphorylation,true,down-regulates activity phosphorylation Ser305,1,0,1,false,,,,a8b89133b714
 f5862429a080,INSR,STIM1,physical_binding,false,proximity-dependent biotin identification,1,0,1,true,GO,,,2684904bd76d

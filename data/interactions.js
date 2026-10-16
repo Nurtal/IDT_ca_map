@@ -401,6 +401,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "379313e11f25"
  },
  {
+  "interaction_id": "2eae9c19d533",
+  "source": "ITPR1",
+  "target": "CHEBI:29108",
+  "type": "Ca2+_flux",
+  "directed": "true",
+  "mechanism": "IP3R1-GRP75-VDAC1 axis at MAMs; blocked by TGR5 agonism in Muller glia and DR rats",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "both",
+  "justification": "ITPR1 drives ER-to-mitochondria Ca2+ transfer through the IP3R1-GRP75-VDAC1 axis, the step that leads to mtDNA release and cGAS-STING activation in diabetic retinopathy.",
+  "conflict_with": "",
+  "evidence_fingerprint": "1d76150c987a"
+ },
+ {
   "interaction_id": "2f665d2e9617",
   "source": "ATP2A2",
   "target": "EGFR",
@@ -1910,15 +1926,15 @@ window.CAMAP.interactions = [
   "target": "STIM1",
   "type": "physical_binding",
   "directed": "false",
-  "mechanism": "anti tag coimmunoprecipitation | confocal microscopy | molecular sieving | pull down | ubiquitin reconstruction | fluorescence microscopy | fluorescent resonance energy transfer | anti bait coimmunoprecipitation",
-  "n_sources": "9",
-  "n_pubs": "0",
+  "mechanism": "anti tag coimmunoprecipitation | confocal microscopy | molecular sieving | pull down | ubiquitin reconstruction | fluorescence microscopy | fluorescent resonance energy transfer | anti bait coimmunoprecipitation | confocal colocalization of STIM1 puncta with ORAI1 in INS-1 cells under mitochondrial stress",
+  "n_sources": "10",
+  "n_pubs": "1",
   "n_db": "9",
   "has_human_evidence": "true",
   "calcium_evidence": "both",
-  "justification": "",
+  "justification": "STIM1-ORAI1 assembly is triggered by mitophagy in beta-cells: ER-to-lysosome Ca2+ flux empties ER stores and recruits SOCE, a new upstream trigger for the STIM1 switch.",
   "conflict_with": "",
-  "evidence_fingerprint": "f0e9c8a30206"
+  "evidence_fingerprint": "762d0ba389fe"
  },
  {
   "interaction_id": "f0404bdfdc2d",

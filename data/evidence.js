@@ -495,6 +495,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "39dbe2e108d8",
+  "interaction_id": "2eae9c19d533",
+  "source_kind": "pmc",
+  "ref": "PMC10474119",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Li Y",
+  "sentence": "Mechanically, TGR5 blocked the IP3R1-GRP75-VDAC1 axis mediated Ca2+ efflux from the endoplasmic reticulum into mitochondria under diabetic condition.",
+  "sentence_verified": "true",
+  "species_context": "rat"
+ },
+ {
   "evidence_id": "3a35132a0b97",
   "interaction_id": "02c0736c1642",
   "source_kind": "pubmed",
@@ -2261,6 +2274,19 @@ window.CAMAP.evidence = [
   "sentence": "STING depletion potentiates VDAC2/GRP75-mediated MERC (mitochondria-ER contact) formation to increase mitochondrial ROS/calcium levels, impairs mitochondria function, and suppresses mTORC1/S6K signaling leading to RCC growth retardation.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells"
+ },
+ {
+  "evidence_id": "cd78dc4bbccf",
+  "interaction_id": "ef02b46551ec",
+  "source_kind": "pmc",
+  "ref": "PMC8921223",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Park K",
+  "sentence": "Furthermore, STIM1 puncta colocalized with Orai1, suggesting Ca2+ influx through SOCE during mitophagy (Supplementary Fig.",
+  "sentence_verified": "true",
+  "species_context": "rat"
  },
  {
   "evidence_id": "ce1e1f746c42",
