@@ -99,15 +99,21 @@
   // ---------- review session ----------
 
   function createSession({ interactions, reviews = {}, reviewer = "", filters = {}, now = () => new Date().toISOString() }) {
-    const state = { reviews: { ...reviews }, filters: { ...filters }, mode: "pending", history: [] };
+    const state = { reviews: { ...reviews }, filters: { ...filters }, mode: "pending", history: [], pinned: null };
     const visible = () => applyFilters(interactions, state.filters);
+    const hasNewEvidence = (i) => {
+      const r = state.reviews[i.interaction_id];
+      return !!(r && r.evidence_fingerprint && i.evidence_fingerprint && r.evidence_fingerprint !== i.evidence_fingerprint);
+    };
     const inMode = {
-      pending: (i) => !state.reviews[i.interaction_id],
+      pending: (i) => !state.reviews[i.interaction_id] || hasNewEvidence(i),
       uncertain: (i) => (state.reviews[i.interaction_id] || {}).decision === "uncertain",
     };
 
     function queue() {
-      return visible().filter(inMode[state.mode]);
+      const q = visible().filter(inMode[state.mode]);
+      const pinned = state.pinned && interactions.find((i) => i.interaction_id === state.pinned);
+      return pinned ? [pinned, ...q.filter((i) => i !== pinned)] : q;
     }
 
     function restore(id, previous) {
@@ -128,7 +134,12 @@
           decision, comment, reviewer, reviewed_at: now(),
           evidence_fingerprint: card.evidence_fingerprint,
         };
+        state.pinned = null;
       },
+      jumpTo(id) {
+        state.pinned = id;
+      },
+      hasNewEvidence,
       undo() {
         const last = state.history.pop();
         if (!last) return null;
@@ -165,7 +176,7 @@
         const c = { total: shown.length, reviewed: 0, remaining: 0, keep: 0, reject: 0, uncertain: 0 };
         for (const i of shown) {
           const r = state.reviews[i.interaction_id];
-          if (r) { c.reviewed++; c[r.decision]++; } else c.remaining++;
+          if (r && !hasNewEvidence(i)) { c.reviewed++; c[r.decision]++; } else c.remaining++;
         }
         return c;
       },

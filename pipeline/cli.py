@@ -4,11 +4,13 @@
     python3 pipeline/cli.py corpus         # count the corpus and (re)build the prioritized work queue
     python3 pipeline/cli.py queue next 50  # list the next pending articles
     python3 pipeline/cli.py queue set PMID done|skipped|error|pending [--note TEXT]
+    python3 pipeline/cli.py fetch-db       # SIGNOR / OmniPath / IntAct / BioGRID -> data/raw/db_*.jsonl
     python3 pipeline/cli.py fetch-texts    # cache PubTator texts of every paper cited in data/raw
     python3 pipeline/cli.py annotate       # cache HGNC set + GO calcium / UniProt annotations of every actor
     python3 pipeline/cli.py build          # data/raw/*.jsonl -> data/{nodes,interactions,evidence}.{csv,js}
 """
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -17,6 +19,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 
 from camap.build import build_dataset, read_raw  # noqa: E402
 from camap.corpus import build_queue, next_pending, set_status  # noqa: E402
+from camap.databases import fetch_all  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
 from camap.nodes import Resolver, load_config  # noqa: E402
 from camap.pubtator import PubTator  # noqa: E402
@@ -33,6 +36,7 @@ def main(argv=None):
     b.add_argument("--out", default=ROOT / "data", type=Path)
     f = sub.add_parser("fetch-texts", help="cache PubTator texts for papers cited in raw records")
     f.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
+    sub.add_parser("fetch-db", help="import interaction databases around the seeds into data/raw")
     a = sub.add_parser("annotate", help="cache HGNC + GO calcium + UniProt annotations for all actors")
     a.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
     sub.add_parser("corpus", help="count the corpus and (re)build the work queue")
@@ -55,7 +59,12 @@ def main(argv=None):
             print(f"WARNING: {len(unverified)} sentence(s) not found verbatim in cached texts")
     elif args.cmd == "fetch-texts":
         pt = PubTator(CACHE)
-        pmids = {r["ref"][5:] for r in read_raw(args.raw) if r["ref"].upper().startswith("PMID:")}
+        pmids = set()
+        for r in read_raw(args.raw):
+            if r["ref"].upper().startswith("PMID:"):
+                pmids.add(r["ref"][5:])
+            if r.get("cited_pmid"):
+                pmids.add(r["cited_pmid"])
         fetched = pt.fetch_texts(sorted(pmids))
         print(f"{len(pmids)} cited papers, {len(fetched)} newly fetched")
     elif args.cmd == "corpus":
@@ -74,6 +83,23 @@ def main(argv=None):
         for pmid in args.pmids:
             set_status(STATE, pmid, args.status, note=args.note)
         print(f"{len(args.pmids)} article(s) -> {args.status}")
+    elif args.cmd == "fetch-db":
+        ensure_hgnc(CACHE)
+        config = load_config()
+        resolver = Resolver(CACHE, config)
+        genes = [(s["symbol"], (resolver.gene(s["symbol"]).get("uniprot_ids") or [""])[0]) for s in config["seeds"]]
+        results, warnings = fetch_all(genes)
+        raw = ROOT / "data" / "raw"
+        for kind, records in results.items():
+            path = raw / f"db_{kind}.jsonl"
+            if not records:
+                path.unlink(missing_ok=True)
+                continue
+            unique = {json.dumps(r, sort_keys=True) for r in records}
+            path.write_text("".join(line + "\n" for line in sorted(unique)))
+            print(f"{kind}: {len(unique)} records -> {path.relative_to(ROOT)}")
+        for w in warnings:
+            print("WARNING:", w)
     elif args.cmd == "annotate":
         ensure_hgnc(CACHE)
         config = load_config()

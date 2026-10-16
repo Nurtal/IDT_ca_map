@@ -26,5 +26,5 @@ NODE_COLUMNS = ["id", "symbol", "name", "type", "module", "is_seed", "uniprot",
 INTERACTION_COLUMNS = ["interaction_id", "source", "target", "type", "directed", "mechanism",
                        "n_sources", "n_pubs", "n_db", "has_human_evidence", "calcium_evidence",
                        "justification", "conflict_with", "evidence_fingerprint"]
-EVIDENCE_COLUMNS = ["evidence_id", "interaction_id", "source_kind", "ref", "doi", "year",
+EVIDENCE_COLUMNS = ["evidence_id", "interaction_id", "source_kind", "ref", "cited_pmid", "doi", "year",
                     "first_author", "sentence", "sentence_verified", "species_context"]

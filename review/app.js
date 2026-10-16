@@ -81,19 +81,35 @@
     return e;
   }
 
-  function refHref(ev) {
-    const ref = ev.ref || "";
+  function refHref(ref) {
     if (ref.startsWith("PMID:")) return "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
     if (ref.startsWith("PMC")) return "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
-    if (ev.doi) return "https://doi.org/" + ev.doi;
+    if (ref.startsWith("SIGNOR-")) return "https://signor.uniroma2.it/relation_result.php?id=" + ref;
+    if (ref.startsWith("EBI-")) return "https://www.ebi.ac.uk/intact/search?query=" + ref;
+    if (ref.startsWith("BIOGRID:")) return "https://thebiogrid.org/interaction/" + ref.slice(8);
+    if (ref.startsWith("OmniPath:")) {
+      const [a, b] = ref.slice(9).split(">");
+      return "https://omnipathdb.org/interactions?partners=" + a + "," + b + "&genesymbols=yes&fields=sources,references";
+    }
     return null;
+  }
+
+  function link(href, text) {
+    return href ? el("a", { href, target: "_blank", rel: "noopener" }, text) : el("span", {}, text);
   }
 
   function refLink(ev) {
     const label = [ev.first_author, ev.year].filter(Boolean).join(" ");
-    const text = (label ? label + " · " : "") + ev.ref;
-    const href = refHref(ev);
-    return href ? el("a", { href, target: "_blank", rel: "noopener" }, text) : el("span", {}, text);
+    const main = link(refHref(ev.ref || "") || (ev.doi ? "https://doi.org/" + ev.doi : null), (label ? label + " · " : "") + ev.ref);
+    if (!ev.cited_pmid) return main;
+    return el("span", {}, main, " · cites ", link(refHref("PMID:" + ev.cited_pmid), "PMID:" + ev.cited_pmid));
+  }
+
+  function sourceBadges(evs) {
+    const kinds = {};
+    for (const ev of evs) (kinds[ev.source_kind] = kinds[ev.source_kind] || new Set()).add(ev.ref);
+    return el("div", { class: "badges" },
+      Object.entries(kinds).map(([k, refs]) => el("span", { class: "badge " + k }, `${k} × ${refs.size}`)));
   }
 
   function endpoint(id) {
@@ -105,16 +121,36 @@
   }
 
   function sentence(ev) {
-    if (!ev.sentence) return el("p", { class: "muted" }, "No sentence");
+    if (!ev.sentence) return el("p", { class: "muted" }, "Database-only, no sentence found");
     const ok = ev.sentence_verified === "true";
     return el("blockquote", { class: ok ? "verified" : "unverified" },
       ev.sentence,
       ok ? null : el("div", { class: "warn" }, "⚠️ Not found verbatim in the source text"));
   }
 
+  const byId = Object.fromEntries(interactions.map((i) => [i.interaction_id, i]));
+
+  function cardFlags(i) {
+    const flags = [];
+    const previous = session.reviews()[i.interaction_id];
+    if (session.hasNewEvidence(i)) {
+      flags.push(el("span", { class: "flag new" }, `🆕 New evidence since your review (was: ${previous.decision})`));
+    }
+    for (const id of (i.conflict_with || "").split(";").filter(Boolean)) {
+      const other = byId[id];
+      if (!other) continue;
+      flags.push(el("button", {
+        type: "button", class: "flag", title: "Open the conflicting interaction",
+        onclick: () => { session.jumpTo(id); render(); },
+      }, `⚠️ Conflicting evidence: ${other.source} ${other.type.replace(/_/g, " ")} ${other.target} →`));
+    }
+    return flags.length ? el("div", { class: "card-flags" }, flags) : null;
+  }
+
   function renderCard(i) {
     const evs = evidenceByInteraction[i.interaction_id] || [];
     return el("article", { class: "card", id: "card" },
+      cardFlags(i),
       el("section", { class: "edge" },
         endpoint(i.source),
         el("div", { class: "link " + i.type },
@@ -129,6 +165,7 @@
       neighbourhoodSection(),
       el("section", { class: "sources" },
         el("h3", {}, `Supported by ${i.n_sources} source(s) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),
+        sourceBadges(evs),
         el("ul", {}, evs.map((ev) =>
           el("li", { class: "evidence" },
             el("div", { class: "meta" },

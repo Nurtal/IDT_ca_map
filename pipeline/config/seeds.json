@@ -43,7 +43,7 @@
   ],
   "metabolites": [
     {"id": "CHEBI:29108", "symbol": "Ca2+", "name": "calcium(2+)", "level": 1,
-     "synonyms": ["Ca2+", "Ca(2+)", "Ca²⁺", "calcium", "calcium ion", "cytosolic calcium"]},
+     "synonyms": ["Ca2+", "Ca(2+)", "Ca²⁺", "calcium", "calcium(2+)", "calcium ion", "cytosolic calcium"]},
     {"id": "CHEBI:75947", "symbol": "2'3'-cGAMP", "name": "2',3'-cyclic GMP-AMP", "level": 1,
      "synonyms": ["2'3'-cGAMP", "cGAMP", "2',3'-cGAMP", "cyclic GMP-AMP"]},
     {"id": "CHEBI:16595", "symbol": "IP3", "name": "1D-myo-inositol 1,4,5-trisphosphate", "level": 1,

@@ -48,6 +48,14 @@ class Resolver:
             return upper
         return self.aliases.get(upper, upper)
 
+    def names(self, node_id):
+        """Every name an actor may appear under in a text."""
+        if node_id in self.metabolites:
+            m = self.metabolites[node_id]
+            return [m["symbol"], *m.get("synonyms", [])]
+        g = self.genes.get(node_id, {})
+        return [node_id, *(g.get("prev_symbol") or []), *(g.get("alias_symbol") or [])]
+
     def gene(self, symbol):
         return self.genes.get(symbol, {})
 

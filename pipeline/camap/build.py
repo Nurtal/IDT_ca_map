@@ -9,7 +9,7 @@ from .nodes import (DEFAULT_CONFIG, Annotations, Resolver, Universe, load_config
 from .pubtator import PubTator
 from .schema import (DATABASE_KINDS, EVIDENCE_COLUMNS, HUMAN_CONTEXTS, INTERACTION_COLUMNS,
                      LINK_TYPES, LITERATURE_KINDS, NODE_COLUMNS, SPECIES_CONTEXTS)
-from .verify import sentence_in
+from .verify import find_sentence, sentence_in
 
 
 def short_hash(text):
@@ -36,12 +36,23 @@ def interaction_key(source, target, type_):
     return source, target, type_
 
 
-def sentence_status(r, texts):
+def source_document(r, texts):
+    """The paper an evidence row quotes: the paper itself, or the one a database cites."""
+    if r["source_kind"] in LITERATURE_KINDS:
+        return texts.document(r["ref"])
+    return texts.document(r["cited_pmid"]) if r.get("cited_pmid") else None
+
+
+def evidence_sentence(r, doc, names):
+    """(sentence, verified) — database rows without a sentence borrow one from the cited abstract."""
     sentence = r.get("sentence", "")
-    if not sentence:
-        return ""
-    doc = texts.document(r["ref"]) if r["source_kind"] in LITERATURE_KINDS else None
-    return "true" if doc and sentence_in(sentence, doc["text"]) else "false"
+    if sentence:
+        return sentence, "true" if doc and sentence_in(sentence, doc["text"]) else "false"
+    if r["source_kind"] in DATABASE_KINDS and doc:
+        found = find_sentence(doc["text"], names(r["_source_id"]), names(r["_target_id"]))
+        if found:
+            return found, "true"
+    return "", ""
 
 
 def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
@@ -60,6 +71,7 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
 
     for iid, inter in interactions.items():
         finalize_interaction(inter, evidence, go_calcium)
+    link_conflicts(interactions.values())
 
     nodes = [node_row(n, resolver, universe, annotations, neighbours)
              for n in sorted({x for i in interactions.values() for x in (i["source"], i["target"])})]
@@ -77,8 +89,10 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
 def collect(records, resolver, universe, texts):
     interactions, evidence = {}, {}
     for r in records:
-        source, target, type_ = interaction_key(resolver.resolve(r["source"]),
-                                                resolver.resolve(r["target"]), r["type"])
+        r["_source_id"], r["_target_id"] = resolver.resolve(r["source"]), resolver.resolve(r["target"])
+        if r["_source_id"] == r["_target_id"]:
+            continue
+        source, target, type_ = interaction_key(r["_source_id"], r["_target_id"], r["type"])
         iid = short_hash(f"{source}|{target}|{type_}")
         inter = interactions.setdefault(iid, {
             "interaction_id": iid, "source": source, "target": target, "type": type_,
@@ -92,14 +106,14 @@ def collect(records, resolver, universe, texts):
         if species not in SPECIES_CONTEXTS:
             raise ValueError(f"{r.get('_origin')}: unknown species_context {species!r}")
         inter["_human"] = inter.get("_human", False) or species in HUMAN_CONTEXTS
-        sentence = r.get("sentence", "")
+        sentence, verified = evidence_sentence(r, source_document(r, texts), resolver.names)
         inter["_text_calcium"] |= universe.mentions_calcium(sentence)
-        eid = short_hash(f"{iid}|{r['source_kind']}|{r['ref']}|{sentence}")
+        eid = short_hash(f"{iid}|{r['source_kind']}|{r['ref']}|{r.get('sentence', '')}")
         evidence[eid] = {
             "evidence_id": eid, "interaction_id": iid, "source_kind": r["source_kind"],
-            "ref": r["ref"], "doi": r.get("doi", ""), "year": r.get("year", ""),
+            "ref": r["ref"], "cited_pmid": r.get("cited_pmid", ""), "doi": r.get("doi", ""), "year": r.get("year", ""),
             "first_author": r.get("first_author", ""), "sentence": sentence,
-            "sentence_verified": sentence_status(r, texts),
+            "sentence_verified": verified,
             "species_context": species,
         }
     return interactions, evidence
@@ -119,6 +133,18 @@ def finalize_interaction(inter, evidence, go_calcium):
     inter["calcium_evidence"] = "both" if go and text else "GO" if go else "text" if text else ""
     inter["evidence_fingerprint"] = short_hash(
         "|".join(sorted(e for e, ev in evidence.items() if ev["interaction_id"] == iid)))
+
+
+OPPOSITES = {"activation": "inhibition", "inhibition": "activation",
+             "expression_regulation_up": "expression_regulation_down",
+             "expression_regulation_down": "expression_regulation_up"}
+
+
+def link_conflicts(interactions):
+    by_key = {(i["source"], i["target"], i["type"]): i for i in interactions}
+    for i in interactions:
+        other = by_key.get((i["source"], i["target"], OPPOSITES.get(i["type"])))
+        i["conflict_with"] = other["interaction_id"] if other else ""
 
 
 def node_row(node_id, resolver, universe, annotations, neighbours):

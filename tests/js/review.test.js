@@ -130,3 +130,36 @@ test("import rejects files that are not review exports", () => {
   const s = core.createSession({ interactions: [I("a")] });
   assert.throws(() => s.importReviews('{"hello": 1}'), /not a review export/);
 });
+
+test("a reviewed card whose evidence changed comes back, flagged as having new evidence", () => {
+  const reviews = {
+    a: { decision: "keep", evidence_fingerprint: "old" },
+    b: { decision: "reject", evidence_fingerprint: "fp-b" },
+  };
+  const s = core.createSession({ interactions: [I("a"), I("b")], reviews });
+  assert.equal(s.current().interaction_id, "a");
+  assert.equal(s.hasNewEvidence(s.current()), true);
+  assert.deepEqual([s.counts().remaining, s.counts().reviewed], [1, 1]);
+  s.decide("keep");
+  assert.equal(s.current(), null);
+  assert.equal(s.reviews().a.evidence_fingerprint, "fp-a");
+});
+
+test("reviews without a fingerprint are not resurfaced", () => {
+  const s = core.createSession({ interactions: [I("a")], reviews: { a: { decision: "keep" } } });
+  assert.equal(s.current(), null);
+});
+
+test("a stale kept card stays in the kept export until it is re-reviewed", () => {
+  const reviews = { a: { decision: "keep", evidence_fingerprint: "old" } };
+  assert.equal(core.keptRows([I("a")], reviews).length, 1);
+});
+
+test("jumping to a card shows it next whatever its status, until a decision is made", () => {
+  const s = core.createSession({ interactions: [I("a"), I("b"), I("c")], reviews: { c: { decision: "keep", evidence_fingerprint: "fp-c" } } });
+  s.jumpTo("c");
+  assert.equal(s.current().interaction_id, "c");
+  s.decide("reject");
+  assert.equal(s.reviews().c.decision, "reject");
+  assert.equal(s.current().interaction_id, "a");
+});
