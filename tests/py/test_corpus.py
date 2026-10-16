@@ -137,6 +137,18 @@ class TestQueue(CorpusCase):
         q = {e["pmid"]: e for e in load_queue(self.state)}
         self.assertEqual((q["10"]["status"], q["20"]["note"]), ("done", "batch 1"))
 
+    def test_bridge_crossing_articles_come_before_same_side_ones(self):
+        results = {
+            "@GENE_STIM1 AND @GENE_ORAI1": [("20", 90.0)],          # calcium side only
+            "@GENE_STIM1 AND @GENE_CGAS": [("30", 10.0)],           # crosses to the STING side
+            "@GENE_ORAI1 AND @GENE_STING1": [("40", 20.0)],         # crosses the other way
+        }
+        self.run_build(dict.fromkeys(RESULTS, []) | results)
+        q = {e["pmid"]: e for e in load_queue(self.state)}
+        self.assertEqual([p for p in q if q[p]["tier"] == 1], ["40", "30", "20"])
+        self.assertTrue(q["30"]["cross"])
+        self.assertFalse(q["20"]["cross"])
+
     def test_next_pending_can_be_restricted_to_one_tier(self):
         from camap.corpus import next_pending
         self.run_build()

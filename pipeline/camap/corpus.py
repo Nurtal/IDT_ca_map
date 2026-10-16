@@ -8,7 +8,9 @@ anchor or linking two level-1 seeds can survive):
 A calcium clause is added whenever every gene of a query is on the STING side.
 Seed pairs without an anchor (e.g. ITPR × RYR) are left out: they describe the
 calcium toolkit itself, already covered by the interaction databases.
-Within a tier, reviews come after primary research (PubMed publication types).
+Within a tier, articles whose query crosses the two sides of the axis (a calcium-side
+gene with a STING-side gene) come first — they are the bridge candidates — then primary
+research before reviews (PubMed publication types).
 """
 import itertools
 import json
@@ -18,6 +20,16 @@ from pathlib import Path
 STATUSES = ("pending", "done", "skipped", "error")
 AUTO_START = "<!-- auto:start -->"
 AUTO_END = "<!-- auto:end -->"
+
+
+def side(seeds, symbol):
+    """Which side of the axis a seed sits on: the STING module, or everything calcium."""
+    return "sting" if seeds[symbol]["module"] == "sting" else "ca"
+
+
+def crosses_axis(config, symbols):
+    seeds = {s["symbol"]: s for s in config["seeds"]}
+    return len({side(seeds, s) for s in symbols if s in seeds}) > 1
 
 
 def corpus_queries(config):
@@ -37,8 +49,8 @@ def corpus_queries(config):
         if a not in anchors and b not in anchors:
             continue
         tier = 0 if a in anchors and b in anchors else 1
-        queries.append((tier, query([a, b])))
-    queries += [(2, query([a])) for a in anchors]
+        queries.append((tier, query([a, b]), crosses_axis(config, [a, b])))
+    queries += [(2, query([a]), False) for a in anchors]
     return sorted(queries, key=lambda t: t[0])
 
 
@@ -60,7 +72,7 @@ def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
     state_dir = Path(state_dir)
     existing = {e["pmid"]: e for e in load_queue(state_dir)}
     entries, per_query = {}, {}
-    for tier, text in corpus_queries(config):
+    for tier, text, cross in corpus_queries(config):
         count, hits = search_all(pubtator, text, page_size)
         per_query[text] = count
         for h in hits:
@@ -68,9 +80,11 @@ def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
             e = entries.setdefault(pmid, {
                 "pmid": pmid, "pmcid": h.get("pmcid", ""), "title": h.get("title", ""),
                 "year": (h.get("date") or "")[:4], "tier": tier, "queries": [], "score": 0.0,
+                "cross": False,
             })
             e["tier"] = min(e["tier"], tier)
             e["queries"].append(text)
+            e["cross"] = e.get("cross", False) or cross
             e["score"] = max(e["score"], float(h.get("score") or 0))
 
     for pmid, old in existing.items():
@@ -82,6 +96,7 @@ def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
                 e[key] = old[key]
     for e in entries.values():
         e.setdefault("status", "pending")
+        e.setdefault("cross", False)
     if pubtypes:
         missing = [p for p, e in entries.items() if "review" not in e]
         for i in range(0, len(missing), 200):
@@ -96,7 +111,8 @@ def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
 
 
 def priority(e):
-    return (e["tier"], bool(e.get("review")), -len(e["queries"]), -e["score"], int(e["pmid"]))
+    return (e["tier"], not e.get("cross"), bool(e.get("review")),
+            -e["score"], -len(e["queries"]), int(e["pmid"]))
 
 
 def queue_path(state_dir):

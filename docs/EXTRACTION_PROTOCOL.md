@@ -21,8 +21,9 @@ Then open `review/index.html` (double-click, no server). After review, export
 
 1. `git pull`, read `pipeline/state/PROGRESS.md` (status block + session notes).
 2. `python3 pipeline/cli.py queue next 50` (add `--tier N` to stay inside one tier) — take them in that order (priority: STIM1×STING1,
-   then anchor × seed pairs, then each anchor alone; within a tier primary research before
-   reviews, which are flagged `[review]`).
+   then anchor × seed pairs, then each anchor alone; within a tier, queries crossing the two
+   sides of the axis — a calcium-side gene with a STING-side gene — come first, then primary
+   research before reviews, which are flagged `[review]`).
 3. Fetch their texts: `python3 pipeline/cli.py fetch-texts --next 50` (or `--pmids 123 456`; `--tier N` applies).
    Process articles **one at a time**: `queue next 1 --tier N`, read, record, `queue set`. Reading a
    dozen papers' candidate sentences in one go has repeatedly failed mid-batch.
