@@ -1718,15 +1718,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "activation",
   "directed": "true",
-  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42) | indirect: mitochondrial Ca2+ uptake -> mtDNA release into cytosol -> cGAS-STING | indirect: ER Ca2+ release and blocked efflux -> Ca2+ overload -> mtDNA release -> cGAS-STING (CT26 cells)",
-  "n_sources": "3",
-  "n_pubs": "3",
+  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42) | indirect: mitochondrial Ca2+ uptake -> mtDNA release into cytosol -> cGAS-STING | indirect: ER Ca2+ release and blocked efflux -> Ca2+ overload -> mtDNA release -> cGAS-STING (CT26 cells) | indirect: ERO1A-driven ER-to-mitochondria Ca2+ shuttling at MAMs -> mtDNA release -> cGAS-STING | high-fat diet; MERC dysregulation and impaired Ca2+ homeostasis in mouse adipocytes",
+  "n_sources": "5",
+  "n_pubs": "5",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING. | Mitochondrial Ca2+ uptake gates cGAS-STING activation by controlling mtDNA release: an indirect calcium-to-STING route distinct from the STIM1 brake. | Second, independent support for the indirect calcium-to-STING route: cytosolic Ca2+ overload damages mitochondria, releasing mtDNA that activates cGAS-STING in tumour cells.",
+  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING. | Mitochondrial Ca2+ uptake gates cGAS-STING activation by controlling mtDNA release: an indirect calcium-to-STING route distinct from the STIM1 brake. | Second, independent support for the indirect calcium-to-STING route: cytosolic Ca2+ overload damages mitochondria, releasing mtDNA that activates cGAS-STING in tumour cells. | Third independent support for the indirect route: blocking ER-to-mitochondria Ca2+ shuttling cuts mtDNA release and shuts down cGAS-STING, here switching macrophage phenotype after spinal cord injury. | Fourth context for calcium feeding STING: in adipocytes, disrupted ER-mitochondria contacts and calcium homeostasis drive a STING-centred interferon response and insulin resistance.",
   "conflict_with": "",
-  "evidence_fingerprint": "5fccaa63c821"
+  "evidence_fingerprint": "50233cf44a8d"
  },
  {
   "interaction_id": "e38b3abea8d0",

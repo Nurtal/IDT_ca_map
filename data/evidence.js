@@ -144,6 +144,19 @@ window.CAMAP.evidence = [
   "species_context": "in_vitro_human_cells"
  },
  {
+  "evidence_id": "10853f68aef2",
+  "interaction_id": "e27616096e06",
+  "source_kind": "pubmed",
+  "ref": "PMID:41571640",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Guo Q",
+  "sentence": "Blocking the Ero1alpha/MAMs/mtCa2+ axis suppresses mtDNA release and downregulates the cGAS-STING-NFkappaB signaling cascade, thus promoting M2 polarization and neural repair.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "118014d5c6ca",
   "interaction_id": "bf5c53ce557a",
   "source_kind": "intact",
@@ -1871,6 +1884,19 @@ window.CAMAP.evidence = [
   "sentence": "Stim1 is phosphorylated during mitosis. Removal of ten mpm-2 recognition sites by truncation at amino acid 482 abolished mpm-2 recognition of mitotic stim1, and significantly rescued stim1 rearrangement and soce response in mitosis. We identified ser 486 and ser 668 as mitosis-specific phosphorylation sites, and stim1 containing mutations of these sites to alanine also significantly rescued mitotic soce.",
   "sentence_verified": "false",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "afe08d237ba2",
+  "interaction_id": "e27616096e06",
+  "source_kind": "pmc",
+  "ref": "PMC11520472",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Chen Q",
+  "sentence": "In summary, our study found that high-fat diet leads to structural and functional dysregulation of MERC in mouse adipocytes, resulting in ER stress and impaired calcium homeostasis, which induces interferon (IFN) responses centered on STING, as well as triggers insulin resistance.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "b04ad3fd53de",
