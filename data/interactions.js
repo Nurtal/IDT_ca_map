@@ -1830,15 +1830,15 @@ window.CAMAP.interactions = [
   "target": "TBK1",
   "type": "inhibition",
   "directed": "true",
-  "mechanism": "indirect, via STING; increased p-TBK1 in STIM1-deficient cells",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "NOT full-length STIM1: the N-terminal fragment produced by coronavirus 3CL protease cleavage at Q496 | indirect, via STING; increased p-TBK1 in STIM1-deficient cells",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "GO",
-  "justification": "Shows the STIM1 brake propagates to the STING kinase TBK1 in human monocytic cells; indirect (through STING).",
+  "justification": "STIM1 restrains a second innate-immune arm beyond STING: its coronavirus-cleaved N-terminal fragment blocks MAVS-TRAF2-TBK1 signalosome assembly, so a calcium sensor is turned into an immune suppressor by proteolysis. | Shows the STIM1 brake propagates to the STING kinase TBK1 in human monocytic cells; indirect (through STING).",
   "conflict_with": "",
-  "evidence_fingerprint": "33af77dadacf"
+  "evidence_fingerprint": "64913d5ea986"
  },
  {
   "interaction_id": "e45f3e56be3d",

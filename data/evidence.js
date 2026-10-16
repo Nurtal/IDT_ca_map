@@ -560,6 +560,19 @@ window.CAMAP.evidence = [
   "species_context": "mouse"
  },
  {
+  "evidence_id": "401d5cfe768a",
+  "interaction_id": "e38b3abea8d0",
+  "source_kind": "pubmed",
+  "ref": "PMID:41289387",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Lee YY",
+  "sentence": "Cleavage at the Q496 residue generates two stable products, N-terminal (NT) and C-terminal (CT) fragments, which acquire de novo immunomodulatory functions. NT suppresses MAVS aggregation and MAVS-TRAF2-TBK1 signalosome formation, while CT attenuates IKKalpha-induced p65 phosphorylation and nuclear translocation by interacting with HSP70.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
+ },
+ {
   "evidence_id": "404993fa19e2",
   "interaction_id": "38dd54b7ca7e",
   "source_kind": "intact",

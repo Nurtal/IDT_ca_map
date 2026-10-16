@@ -5,10 +5,10 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9100 articles in queue: 83 done, 8975 pending, 40 skipped, 2 error.
+9100 articles in queue: 89 done, 8960 pending, 49 skipped, 2 error.
 
 - tier 0: 71/192 processed
-- tier 1: 54/6582 processed
+- tier 1: 69/6582 processed
 - tier 2: 0/2326 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
