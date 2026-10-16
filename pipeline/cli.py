@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from camap.build import build_dataset, read_raw  # noqa: E402
 from camap.corpus import build_queue, next_pending, set_statuses  # noqa: E402
 from camap.pubmed import publication_types  # noqa: E402
+from camap.candidates import candidate_sentences  # noqa: E402
 from camap.databases import fetch_all  # noqa: E402
 from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
@@ -53,6 +54,10 @@ def main(argv=None):
     qs.add_argument("pmids", nargs="+")
     qs.add_argument("status", choices=["pending", "done", "skipped", "error"])
     qs.add_argument("--note")
+    c = sub.add_parser("candidates", help="print title, abstract and candidate sentences of cached papers")
+    c.add_argument("pmids", nargs="*")
+    c.add_argument("--next", type=int, help="the next N pending articles of the queue")
+    c.add_argument("--limit", type=int, default=40)
     g = sub.add_parser("graph", help="kept_interactions.csv -> data/graph_data.js")
     g.add_argument("csv", nargs="?", default=ROOT / "data" / "kept_interactions.csv", type=Path)
     args = p.parse_args(argv)
@@ -76,6 +81,26 @@ def main(argv=None):
                 pmids.add(r["cited_pmid"])
         fetched = pt.fetch_texts(sorted(pmids))
         print(f"{len(pmids)} cited papers, {len(fetched)} newly fetched")
+    elif args.cmd == "candidates":
+        config = load_config()
+        resolver, pt = Resolver(CACHE, config), PubTator(CACHE)
+        anchors = [n for a in config["anchors"] for n in resolver.names(a)]
+        seeds = [n for s in config["seeds"] if s["symbol"] not in config["anchors"] for n in resolver.names(s["symbol"])]
+        pmids = list(args.pmids) + [e["pmid"] for e in next_pending(STATE, args.next or 0)]
+        for pmid in pmids:
+            doc = pt.document(pmid)
+            if doc is None:
+                print(f"=== {pmid}: not cached (run fetch-texts)\n")
+                continue
+            lines = doc["text"].split("\n")
+            print(f"=== PMID {doc['pmid']} {doc['pmcid'] or ''} | {doc['first_author']} {doc['year']} | "
+                  f"{'full text' if doc['full_text'] else 'abstract only'}\n# {doc['title']}")
+            abstract = " ".join(l for l in lines[1:12] if len(l) > 40)[:2500] if not doc["full_text"] else \
+                next((l for l in lines[1:12] if len(l) > 200), "")
+            print("ABSTRACT: " + abstract)
+            for i, (s, tags) in enumerate(candidate_sentences(doc, anchors, seeds, config["calcium_text_pattern"], args.limit)):
+                print(f"  [{i}] ({','.join(tags)}) {s}")
+            print()
     elif args.cmd == "graph":
         n = build_graph(args.csv, ROOT / "data" / "graph_data.js")
         print(f"{n} kept interactions -> data/graph_data.js")

@@ -24,7 +24,9 @@ Then open `review/index.html` (double-click, no server). After review, export
    then anchor × seed pairs, then each anchor alone; within a tier primary research before
    reviews, which are flagged `[review]`).
 3. Fetch their texts: `python3 pipeline/cli.py fetch-texts --next 50` (or `--pmids 123 456`).
-   Read a cached document with
+   `python3 pipeline/cli.py candidates --next 50` prints, per paper, the title, abstract and the
+   sentences naming an anchor with a seed / calcium term / interaction verb (tags in brackets);
+   read those first, then the full document where needed. Read a cached document with
    `PYTHONPATH=pipeline python3 -c "from camap.pubtator import PubTator; print(PubTator('pipeline/cache').document('123')['text'])"`.
 4. For each article, read title + abstract (and full text when the abstract contains a candidate).
    Write one raw record per **(interaction, supporting sentence)** to

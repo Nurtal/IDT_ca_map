@@ -98,5 +98,18 @@ class TestSentenceVerification(BuildCase):
         self.assertEqual(self.verified(source_kind="signor", ref="SIGNOR-1", sentence=""), "")
 
 
+class TestCandidates(unittest.TestCase):
+    def test_candidates_are_anchor_sentences_with_a_partner_calcium_or_verb(self):
+        from camap.candidates import candidate_sentences
+        doc = {"text": "STIM1 interacts with STING via its dimerization domain. "
+                       "TMEM173 senses cyclic dinucleotides in the cytosol of cells. "
+                       "Store depletion releases Ca2+ through ORAI1 channels here. "
+                       "We used HEK293 cells for every experiment of this study. "
+                       "Gok knockdown raised cytosolic Ca2+ in these primary cells."}
+        got = candidate_sentences(doc, ["STIM1", "GOK", "STING1", "STING", "TMEM173"], ["ORAI1"], r"Ca2\+")
+        self.assertEqual([(s.split()[0], tags) for s, tags in got],
+                         [("STIM1", ["anchors", "verb"]), ("Gok", ["Ca"])])
+
+
 if __name__ == "__main__":
     unittest.main()
