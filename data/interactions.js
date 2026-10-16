@@ -1366,15 +1366,15 @@ window.CAMAP.interactions = [
   "target": "CHEBI:29108",
   "type": "Ca2+_flux",
   "directed": "true",
-  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer | STING depletion raises mitochondrial calcium via VDAC2/GRP75 MERCs (opposite sign to PMID 40186485)",
-  "n_sources": "5",
-  "n_pubs": "5",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer | STING depletion raises mitochondrial calcium via VDAC2/GRP75 MERCs (opposite sign to PMID 40186485) | DMXAA-induced Sjogren model; intravital GCaMP6f imaging of submandibular gland",
+  "n_sources": "6",
+  "n_pubs": "6",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing. | Here STING *limits* mitochondrial calcium, the opposite sign to the obese-atria study where STING knockdown relieved mitochondrial calcium overload: the direction of STING's effect on mitochondrial calcium is contested.",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing. | Here STING *limits* mitochondrial calcium, the opposite sign to the obese-atria study where STING knockdown relieved mitochondrial calcium overload: the direction of STING's effect on mitochondrial calcium is contested. | Pharmacological STING activation in vivo raises and spatially scrambles acinar Ca2+ signals, turning an apically confined rise into a global one: STING reshapes calcium signalling, not just its amplitude.",
   "conflict_with": "",
-  "evidence_fingerprint": "c8bc3a4e5fbe"
+  "evidence_fingerprint": "b6834811b23e"
  },
  {
   "interaction_id": "a84be8ddc723",

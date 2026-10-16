@@ -2016,6 +2016,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "b1677a74e292",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC10983907",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Huang KT",
+  "sentence": "Paradoxically, the Ca2+ levels achieved following neural stimulation in mice treated with DMXAA were enhanced despite significantly reduced fluid secretion.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "b242da59c3b6",
   "interaction_id": "97ffc40e214a",
   "source_kind": "intact",
