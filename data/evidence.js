@@ -1834,6 +1834,32 @@ window.CAMAP.evidence = [
   "species_context": "mouse"
  },
  {
+  "evidence_id": "a29f92c3dd99",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "pubmed",
+  "ref": "PMID:42464666",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Chen H",
+  "sentence": "Here, we developed an on-demand nanoparticle system that harnesses mitochondrial-ER functional interplay by concurrently inducing mtDNA release and ER stress, thereby relieving the STIM1-mediated brake on STING and enabling robust STING-TBK1 assembly and downstream signaling.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
+  "evidence_id": "a375e06b68f8",
+  "interaction_id": "8bad2e339252",
+  "source_kind": "pmc",
+  "ref": "PMC10373503",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Gao H",
+  "sentence": "In young lean StingDeltaCM mice, concomitant with their blunted inflammatory responses to microbial DNA accumulation, gut mEV treatment had minimal effects on Serca2 abundance and contractility in the heart ( Figures S4F ,  5E-G ).",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "a50596687c5c",
   "interaction_id": "f9e32a51cb7d",
   "source_kind": "intact",

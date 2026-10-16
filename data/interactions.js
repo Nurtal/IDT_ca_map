@@ -1089,6 +1089,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "8ef12ab51a53"
  },
  {
+  "interaction_id": "8bad2e339252",
+  "source": "STING1",
+  "target": "ATP2A2",
+  "type": "expression_regulation_down",
+  "directed": "true",
+  "mechanism": "cardiomyocyte-specific STING knockout; gut microbial DNA no longer lowers Serca2 or contractility",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "STING is required to downregulate SERCA2 in ageing cardiomyocytes, so STING controls the ER calcium pump at the expression level as well as by binding it: a route from DNA sensing to impaired calcium handling and contractility.",
+  "conflict_with": "",
+  "evidence_fingerprint": "02d6c346e50b"
+ },
+ {
   "interaction_id": "8ce086544075",
   "source": "STING1",
   "target": "STIM1",
@@ -1702,15 +1718,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "inhibition",
   "directed": "true",
-  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | PRRSV Nsp2 deubiquitinates and stabilizes STIM1, retaining STING at the ER (swine) | thapsigargin-loaded nanozyme microneedles; ER Ca2+ depletion relieves STIM1 retention | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
-  "n_sources": "6",
-  "n_pubs": "6",
+  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | PRRSV Nsp2 deubiquitinates and stabilizes STIM1, retaining STING at the ER (swine) | thapsigargin-loaded nanozyme microneedles; ER Ca2+ depletion relieves STIM1 retention | ER stress relieves STIM1 retention; 11.5-fold increase in STING phosphorylation in mouse tumour models | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
+  "n_sources": "7",
+  "n_pubs": "7",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "both",
-  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | An RNA virus exploits the STIM1 brake on STING: its protease stabilizes STIM1 to keep STING in the ER and blunt type I IFN, and STIM1 loss restricts the virus. | The STIM1 brake on STING is exploited therapeutically: depleting ER Ca2+ with thapsigargin releases STING trafficking and amplifies tumour type I IFN in vivo. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
+  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | An RNA virus exploits the STIM1 brake on STING: its protease stabilizes STIM1 to keep STING in the ER and blunt type I IFN, and STIM1 loss restricts the virus. | The STIM1 brake on STING is exploited therapeutically: depleting ER Ca2+ with thapsigargin releases STING trafficking and amplifies tumour type I IFN in vivo. | Second therapeutic exploitation of the STIM1 brake: releasing it with ER stress, alongside mtDNA release, outperforms a clinical STING agonist, so the brake is a druggable amplifier. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
   "conflict_with": "",
-  "evidence_fingerprint": "ce37df3799f1"
+  "evidence_fingerprint": "5f71fa81076f"
  },
  {
   "interaction_id": "ddf7f926df8c",
