@@ -51,8 +51,8 @@ class PubTator:
 
     # ---- search ----
 
-    def search(self, query, page=1):
-        return self.get_json(f"{API}/search/?text={quote(query)}&page={page}")
+    def search(self, query, page=1, size=1000):
+        return self.get_json(f"{API}/search/?text={quote(query)}&page={page}&size={size}")
 
 
 def simplify(raw):

@@ -1,6 +1,7 @@
 {
   "_doc": "Seed list and inclusion rule. anchors: a non-seed node must interact directly with an anchor. level 1 seeds are always kept; level 2 seeds only when they interact with an anchor.",
   "anchors": ["STIM1", "STING1"],
+  "calcium_query": "(calcium OR Ca2+ OR SOCE OR \"store-operated\")",
   "calcium_go_terms": ["GO:0006816", "GO:0019722"],
   "calcium_text_pattern": "(?i)\\bcalcium\\b|\\bCa2\\+|\\bCa\\(2\\+\\)|Ca²⁺|\\bSOCE\\b|\\bCRAC\\b|store[- ]operated|\\bSERCA\\b|\\bIP3R?\\b|\\bER stores?\\b",
   "modules": {

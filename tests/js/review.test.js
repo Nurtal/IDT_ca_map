@@ -73,3 +73,60 @@ test("session skips filtered-out cards and counts only visible ones", () => {
   assert.equal(s.current().interaction_id, "a");
   assert.equal(s.counts().total, 2);
 });
+
+test("uncertain cards leave the main stack and form their own stack", () => {
+  const s = core.createSession({ interactions: [I("a"), I("b"), I("c")] });
+  s.decide("uncertain");
+  assert.equal(s.current().interaction_id, "b");
+  assert.equal(s.counts().uncertain, 1);
+  s.setMode("uncertain");
+  assert.equal(s.current().interaction_id, "a");
+  s.decide("keep");
+  assert.equal(s.current(), null);
+  assert.equal(s.reviews().a.decision, "keep");
+  s.setMode("pending");
+  assert.equal(s.current().interaction_id, "b");
+});
+
+test("undo restores the previous state, including an overwritten uncertain decision", () => {
+  const s = core.createSession({ interactions: [I("a"), I("b")] });
+  s.decide("uncertain", "check figure 3");
+  s.decide("reject");
+  assert.equal(s.undo(), "b");
+  assert.equal(s.current().interaction_id, "b");
+  s.setMode("uncertain");
+  s.decide("keep");
+  assert.equal(s.undo(), "a");
+  assert.equal(s.reviews().a.decision, "uncertain");
+  assert.equal(s.reviews().a.comment, "check figure 3");
+  assert.equal(s.undo(), "a");
+  assert.equal(s.reviews().a, undefined);
+  assert.equal(s.undo(), null);
+});
+
+test("exported reviews re-imported into a fresh session give identical state", () => {
+  const items = [I("a"), I("b"), I("c")];
+  const s = core.createSession({ interactions: items, reviewer: "nf" });
+  s.decide("keep", "good");
+  s.decide("uncertain");
+  const json = s.exportReviews();
+  const t = core.createSession({ interactions: items });
+  t.importReviews(json);
+  assert.deepEqual(t.reviews(), s.reviews());
+  assert.deepEqual(t.counts(), s.counts());
+  assert.equal(t.current().interaction_id, "c");
+});
+
+test("import keeps the most recent decision when both sides reviewed a card", () => {
+  const items = [I("a")];
+  const s = core.createSession({ interactions: items, reviews: { a: { decision: "reject", reviewed_at: "2026-01-02" } } });
+  s.importReviews(JSON.stringify({ version: 1, reviews: { a: { decision: "keep", reviewed_at: "2026-01-01" } } }));
+  assert.equal(s.reviews().a.decision, "reject");
+  s.importReviews(JSON.stringify({ version: 1, reviews: { a: { decision: "keep", reviewed_at: "2026-01-03" } } }));
+  assert.equal(s.reviews().a.decision, "keep");
+});
+
+test("import rejects files that are not review exports", () => {
+  const s = core.createSession({ interactions: [I("a")] });
+  assert.throws(() => s.importReviews('{"hello": 1}'), /not a review export/);
+});

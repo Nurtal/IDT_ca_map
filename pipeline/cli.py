@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Pipeline entry point.
 
+    python3 pipeline/cli.py corpus         # count the corpus and (re)build the prioritized work queue
+    python3 pipeline/cli.py queue next 50  # list the next pending articles
+    python3 pipeline/cli.py queue set PMID done|skipped|error|pending [--note TEXT]
     python3 pipeline/cli.py fetch-texts    # cache PubTator texts of every paper cited in data/raw
     python3 pipeline/cli.py annotate       # cache HGNC set + GO calcium / UniProt annotations of every actor
     python3 pipeline/cli.py build          # data/raw/*.jsonl -> data/{nodes,interactions,evidence}.{csv,js}
@@ -13,11 +16,13 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 
 from camap.build import build_dataset, read_raw  # noqa: E402
+from camap.corpus import build_queue, next_pending, set_status  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
 from camap.nodes import Resolver, load_config  # noqa: E402
 from camap.pubtator import PubTator  # noqa: E402
 
 CACHE = ROOT / "pipeline" / "cache"
+STATE = ROOT / "pipeline" / "state"
 
 
 def main(argv=None):
@@ -30,6 +35,15 @@ def main(argv=None):
     f.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
     a = sub.add_parser("annotate", help="cache HGNC + GO calcium + UniProt annotations for all actors")
     a.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
+    sub.add_parser("corpus", help="count the corpus and (re)build the work queue")
+    q = sub.add_parser("queue", help="inspect or update the work queue")
+    qsub = q.add_subparsers(dest="qcmd", required=True)
+    qn = qsub.add_parser("next")
+    qn.add_argument("n", type=int, nargs="?", default=50)
+    qs = qsub.add_parser("set")
+    qs.add_argument("pmids", nargs="+")
+    qs.add_argument("status", choices=["pending", "done", "skipped", "error"])
+    qs.add_argument("--note")
     args = p.parse_args(argv)
 
     if args.cmd == "build":
@@ -44,6 +58,22 @@ def main(argv=None):
         pmids = {r["ref"][5:] for r in read_raw(args.raw) if r["ref"].upper().startswith("PMID:")}
         fetched = pt.fetch_texts(sorted(pmids))
         print(f"{len(pmids)} cited papers, {len(fetched)} newly fetched")
+    elif args.cmd == "corpus":
+        report = build_queue(load_config(), PubTator(CACHE), STATE)
+        for text, count in report["per_query"].items():
+            if count:
+                print(f"{count:6d}  {text}")
+        zero = [t for t, c in report["per_query"].items() if not c]
+        print(f"{len(zero)} queries with no hit")
+        print(f"TOTAL unique articles: {report['total_articles']}  per tier: {report['per_tier']}")
+    elif args.cmd == "queue" and args.qcmd == "next":
+        for e in next_pending(STATE, args.n):
+            print(f"{e['pmid']}\t{e.get('pmcid') or '-'}\ttier {e['tier']}\t{e['year']}\t{e['title'][:90]}")
+    elif args.cmd == "queue" and args.qcmd == "set":
+        # args.status was parsed last; pmids holds every positional before it
+        for pmid in args.pmids:
+            set_status(STATE, pmid, args.status, note=args.note)
+        print(f"{len(args.pmids)} article(s) -> {args.status}")
     elif args.cmd == "annotate":
         ensure_hgnc(CACHE)
         config = load_config()
