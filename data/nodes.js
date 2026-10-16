@@ -428,5 +428,16 @@ window.CAMAP.nodes = [
   "uniprot": "Q6ZT12",
   "synonyms": "ZNF650; KIAA2024; DKFZp434P117; FLJ37422",
   "function_summary": "E3 ubiquitin-protein ligase which is a component of the N-end rule pathway (By similarity). Does not bind to proteins bearing specific N-terminal residues that are destabilizing according to the N-end rule, leading to their ubiquitination and subsequent degradation (By similarity). May play a role in Shh signaling by mediating the ubiquitination of Kif7 (By similarity). May be important for MYH9 function in certain tissues, possibly by regulating the ubiquitination of MYH9 and consequently affecting its interaction with MYO7A"
+ },
+ {
+  "id": "UNC93B1",
+  "symbol": "UNC93B1",
+  "name": "unc-93B1 regulator of TLR signaling",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "uniprot": "Q9H1C4",
+  "synonyms": "UNC93; UNC-93B",
+  "function_summary": "Plays an important role in innate and adaptive immunity by regulating nucleotide-sensing Toll-like receptor (TLR) signaling. Required for the transport of a subset of TLRs (including TLR3, TLR7 and TLR9) from the endoplasmic reticulum to endolysosomes where they can engage pathogen nucleotides and activate signaling cascades. May play a role in autoreactive B-cells removal"
  }
 ];

@@ -66,6 +66,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "0915d9cb4ed2",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "pmc",
+  "ref": "PMC6446864",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Wu J",
+  "sentence": "To corroborate with the N154S/RRDD finding, we ectopically expressed STIM1 (aa1-249) in Jurkat N154S cells to block STING trafficking, and we found that it also significantly reduced ER stress and cell death (Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "0b0ec11c71b1",
   "interaction_id": "95f8a341cd10",
   "source_kind": "omnipath",
@@ -153,6 +166,19 @@ window.CAMAP.evidence = [
   "year": "2022",
   "first_author": "Triantafilou M",
   "sentence": "The data confirmed that STIM1 and STING interacted in uninfected cells (Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
+  "evidence_id": "1bb543f4ca31",
+  "interaction_id": "ec72048657ca",
+  "source_kind": "pmc",
+  "ref": "PMC8857484",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Wang WA",
+  "sentence": "We therefore propose that UNC93B1 is a chaperone that facilitates STIM1 early activation steps associated with ER Ca2+ depletion to enable the switch into an extended conformation required for the efficient trapping of Orai1 channels.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells"
  },
@@ -326,6 +352,19 @@ window.CAMAP.evidence = [
   "species_context": "other"
  },
  {
+  "evidence_id": "381c98285ce2",
+  "interaction_id": "97196e5e4094",
+  "source_kind": "pmc",
+  "ref": "PMC6446864",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Wu J",
+  "sentence": "Together, our data uncover a critical IFN-independent function of STING that regulates calcium homeostasis, ER stress, and T cell survival.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "38b7b5921a69",
   "interaction_id": "1b9f840b84de",
   "source_kind": "intact",
@@ -401,7 +440,7 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "Here, we demonstrate that TMEM203, a protein that was recently shown to be endosomal and interacts with the pleiotropic inositol phosphate signaling pathway protein IP3R, is associated with SLE disease activity, forms a functional and ligand-dependent complex with STING, and promotes its translocation to endo-lysosomes.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "mouse"
  },
  {
   "evidence_id": "404993fa19e2",
@@ -963,6 +1002,19 @@ window.CAMAP.evidence = [
   "species_context": "in_vitro_human_cells"
  },
  {
+  "evidence_id": "71139b31e95e",
+  "interaction_id": "e015ffd32637",
+  "source_kind": "intact",
+  "ref": "EBI-21266770",
+  "cited_pmid": "30833792",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Hubel et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human"
+ },
+ {
   "evidence_id": "72039da8cf9f",
   "interaction_id": "ef02b46551ec",
   "source_kind": "intact",
@@ -986,7 +1038,7 @@ window.CAMAP.evidence = [
   "first_author": "Zou S",
   "sentence": "Inhibition of mitochondrial calcium uptake due to STING deficiency mitigates the aggregation of N-GSDMD and Drp1 on the mitochondrial membrane.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "724128a680b6",
@@ -1470,6 +1522,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "9c10f72d6f14",
+  "interaction_id": "822834bb2b97",
+  "source_kind": "intact",
+  "ref": "EBI-21266770",
+  "cited_pmid": "30833792",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Hubel et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human"
+ },
+ {
   "evidence_id": "9cb6b99665e8",
   "interaction_id": "d4c2f9cbecf2",
   "source_kind": "signor",
@@ -1883,7 +1948,7 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "We show that TMEM203 interacts, functionally cooperates, and comigrates with STING following cell stimulation, which in turn leads to the activation of the kinase TBK1, and the IRF3 transcription factor.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "d3656a5253a4",
@@ -1922,7 +1987,7 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "2I) and that STIM1 was able to disrupt the TMEM203/STING complex in a dose-dependent manner (Fig.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "d7cfd0c7e11a",
@@ -1948,7 +2013,7 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "TMEM203 interacts with STING and STIM1.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "d824987373d6",
