@@ -40,3 +40,13 @@ def candidate_sentences(doc, anchor_names, seed_names, calcium_pattern, limit=60
         out = sorted(out, key=lambda st: (-len(st[1]), rank[st[0]]))[:limit]
         out.sort(key=lambda st: rank[st[0]])
     return out
+
+
+def strong_only(candidates):
+    """The candidates worth reading first: both anchors in one sentence, or an anchor
+    with a seed / calcium term *and* an interaction verb. Drops bare co-mentions."""
+    out = []
+    for sentence, tags in candidates:
+        if "anchors" in tags or ("verb" in tags and ({"seed", "Ca"} & set(tags))):
+            out.append((sentence, tags))
+    return out

@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from camap.build import build_dataset, read_raw  # noqa: E402
 from camap.corpus import build_queue, next_pending, set_statuses  # noqa: E402
 from camap.pubmed import publication_types  # noqa: E402
-from camap.candidates import candidate_sentences  # noqa: E402
+from camap.candidates import candidate_sentences, strong_only  # noqa: E402
 from camap.databases import fetch_all  # noqa: E402
 from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
@@ -61,6 +61,8 @@ def main(argv=None):
     c.add_argument("--next", type=int, help="the next N pending articles of the queue")
     c.add_argument("--tier", type=int, choices=(0, 1, 2), help="restrict --next to this corpus tier")
     c.add_argument("--limit", type=int, default=40)
+    c.add_argument("--strong", action="store_true",
+                   help="only anchor-pair sentences, or anchor + seed/calcium with an interaction verb")
     g = sub.add_parser("graph", help="kept_interactions.csv -> data/graph_data.js")
     g.add_argument("csv", nargs="?", default=ROOT / "data" / "kept_interactions.csv", type=Path)
     args = p.parse_args(argv)
@@ -101,7 +103,10 @@ def main(argv=None):
             abstract = " ".join(l for l in lines[1:12] if len(l) > 40)[:2500] if not doc["full_text"] else \
                 next((l for l in lines[1:12] if len(l) > 200), "")
             print("ABSTRACT: " + abstract)
-            for i, (s, tags) in enumerate(candidate_sentences(doc, anchors, seeds, config["calcium_text_pattern"], args.limit)):
+            cands = candidate_sentences(doc, anchors, seeds, config["calcium_text_pattern"], args.limit)
+            if args.strong:
+                cands = strong_only(cands)
+            for i, (s, tags) in enumerate(cands):
                 print(f"  [{i}] ({','.join(tags)}) {s}")
             print()
     elif args.cmd == "graph":

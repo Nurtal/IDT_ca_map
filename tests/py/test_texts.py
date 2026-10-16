@@ -111,5 +111,17 @@ class TestCandidates(unittest.TestCase):
                          [("STIM1", ["anchors", "verb"]), ("Gok", ["Ca"])])
 
 
+class TestStrongCandidates(unittest.TestCase):
+    def test_strong_keeps_anchor_pairs_and_calcium_partners_with_a_verb(self):
+        from camap.candidates import candidate_sentences, strong_only
+        doc = {"text": "STIM1 interacts with STING via its dimerization domain. "
+                       "Gok knockdown raised cytosolic Ca2+ in these primary cells. "
+                       "STIM1 was detected in every lysate of this experiment. "
+                       "Store depletion lets STIM1 bind ORAI1 and raise Ca2+ influx."}
+        got = strong_only(candidate_sentences(
+            doc, ["STIM1", "GOK", "STING1", "STING"], ["ORAI1"], r"Ca2\+"))
+        self.assertEqual([s.split()[0] for s, _ in got], ["STIM1", "Store"])
+
+
 if __name__ == "__main__":
     unittest.main()

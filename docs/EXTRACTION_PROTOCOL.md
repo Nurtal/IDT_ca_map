@@ -29,7 +29,9 @@ Then open `review/index.html` (double-click, no server). After review, export
    dozen papers' candidate sentences in one go has repeatedly failed mid-batch.
    `python3 pipeline/cli.py candidates --next 50` prints, per paper, the title, abstract and the
    sentences naming an anchor with a seed / calcium term / interaction verb (tags in brackets);
-   read those first, then the full document where needed. Read a cached document with
+   read those first, then the full document where needed. `--strong` keeps only the sentences
+   that carry both anchors, or an anchor plus a seed/calcium term *and* an interaction verb —
+   use it to triage the long tail, where most articles only co-mention the genes. Read a cached document with
    `PYTHONPATH=pipeline python3 -c "from camap.pubtator import PubTator; print(PubTator('pipeline/cache').document('123')['text'])"`.
 4. For each article, read title + abstract (and full text when the abstract contains a candidate).
    Write one raw record per **(interaction, supporting sentence)** to
