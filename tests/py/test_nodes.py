@@ -93,6 +93,15 @@ class TestModulesAndCalciumEvidence(NodeCase):
     def calcium(self, d, a, b):
         return next(i["calcium_evidence"] for i in d["interactions"] if {i["source"], i["target"]} == {a, b})
 
+    def test_cholesterol_crac_motif_is_not_calcium_evidence(self):
+        self.write_raw([
+            rec(source="SOAT1", target="STING1", type="inhibition",
+                sentence="Both STING CRAC mutants exhibited impaired interaction with cholesterol."),
+        ])
+        d = self.build()
+        self.assertNotIn("SOAT1", [n["id"] for n in d["nodes"]],
+                         "a cholesterol CRAC motif must not count as calcium evidence")
+
     def test_calcium_evidence_from_go_text_or_both(self):
         d = self.build_with([
             rec(source="CASQ1", target="STIM1", type="physical_binding", sentence=NEUTRAL),

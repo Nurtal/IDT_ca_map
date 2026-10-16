@@ -3,7 +3,7 @@
   "anchors": ["STIM1", "STING1"],
   "calcium_query": "(calcium OR Ca2+ OR SOCE OR \"store-operated\")",
   "calcium_go_terms": ["GO:0006816", "GO:0019722"],
-  "calcium_text_pattern": "(?i)\\bcalcium\\b|\\bCa2\\+|\\bCa\\(2\\+\\)|Ca²⁺|\\bSOCE\\b|\\bCRAC\\b|store[- ]operated|\\bSERCA\\b|\\bIP3R?\\b|\\bER stores?\\b",
+  "calcium_text_pattern": "(?i)\\bcalcium\\b|\\bCa2\\+|\\bCa\\(2\\+\\)|Ca²⁺|\\bSOCE\\b|\\bCRAC (?:channel|current)|store[- ]operated|\\bSERCA\\b|\\bIP3R?\\b|\\bER stores?\\b",
   "modules": {
     "soce": "SOCE / STIM1",
     "sting": "STING / innate immunity",

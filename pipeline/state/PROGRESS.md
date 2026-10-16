@@ -5,13 +5,13 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9100 articles in queue: 42 done, 9048 pending, 10 skipped, 0 error.
+9100 articles in queue: 46 done, 9043 pending, 11 skipped, 0 error.
 
-- tier 0: 52/192 processed
+- tier 0: 57/192 processed
 - tier 1: 0/6582 processed
 - tier 2: 0/2326 processed
 
-Next article: PMID 40536345 — Spatiotemporal Regulation of STING Activity by Linear Ubiquitination Governs Antiviral Immunity
+Next article: PMID 33816489 — Exploiting Connections for Viral Replication
 <!-- auto:end -->
 
 ### 2026-10-16 — batch 1 (tier 0)
