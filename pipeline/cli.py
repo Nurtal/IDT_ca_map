@@ -38,6 +38,8 @@ def main(argv=None):
     b.add_argument("--out", default=ROOT / "data", type=Path)
     f = sub.add_parser("fetch-texts", help="cache PubTator texts for papers cited in raw records")
     f.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
+    f.add_argument("--pmids", nargs="+", help="fetch these PMIDs instead of those cited in raw records")
+    f.add_argument("--next", type=int, metavar="N", help="fetch the next N pending articles of the queue")
     sub.add_parser("fetch-db", help="import interaction databases around the seeds into data/raw")
     a = sub.add_parser("annotate", help="cache HGNC + GO calcium + UniProt annotations for all actors")
     a.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
@@ -63,8 +65,10 @@ def main(argv=None):
             print(f"WARNING: {len(unverified)} sentence(s) not found verbatim in cached texts")
     elif args.cmd == "fetch-texts":
         pt = PubTator(CACHE)
-        pmids = set()
-        for r in read_raw(args.raw):
+        pmids = set(args.pmids or [])
+        if args.next:
+            pmids |= {e["pmid"] for e in next_pending(STATE, args.next)}
+        for r in ([] if pmids else read_raw(args.raw)):
             if r["ref"].upper().startswith("PMID:"):
                 pmids.add(r["ref"][5:])
             if r.get("cited_pmid"):
