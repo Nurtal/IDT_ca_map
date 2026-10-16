@@ -1286,15 +1286,15 @@ window.CAMAP.interactions = [
   "target": "CHEBI:29108",
   "type": "Ca2+_flux",
   "directed": "true",
-  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN",
-  "n_sources": "3",
-  "n_pubs": "3",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer",
+  "n_sources": "4",
+  "n_pubs": "4",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation.",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing.",
   "conflict_with": "",
-  "evidence_fingerprint": "b703c8232835"
+  "evidence_fingerprint": "9672d5065408"
  },
  {
   "interaction_id": "a84be8ddc723",
@@ -1583,6 +1583,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "fa2aa85225fa"
+ },
+ {
+  "interaction_id": "d21e03c9ae36",
+  "source": "STIM1",
+  "target": "ORAI1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "STIM1 D84G knock-in mice; constitutive SOCE in skeletal muscle",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "Direct functional evidence that STIM1 gates ORAI1, here constitutively: a gain-of-function STIM1 opens ORAI1 without store depletion, anchoring the canonical SOCE edge in primary tissue.",
+  "conflict_with": "",
+  "evidence_fingerprint": "c9ad93de7926"
  },
  {
   "interaction_id": "d33522fa9187",

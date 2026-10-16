@@ -1093,6 +1093,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "6e21d97295dd",
+  "interaction_id": "d21e03c9ae36",
+  "source_kind": "pmc",
+  "ref": "PMC10977986",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Bryson V",
+  "sentence": "These data suggest that D84G STIM1 can spontaneously activate Orai1 channels in the T-tubular membrane.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "6e787b0c3ee3",
   "interaction_id": "67ad564897f3",
   "source_kind": "omnipath",
@@ -2638,6 +2651,19 @@ window.CAMAP.evidence = [
   "sentence": "We found that expression of the membrane-anchored PLpro domain (PLpro-TM) from SARS-CoV inhibits STING/TBK1/IKKepsilon-mediated activation of type I IFNs and disrupts the phosphorylation and dimerization of IRF3, which are activated by STING and TBK1.",
   "sentence_verified": "true",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "fc2dacfcd254",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC12022609",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Cao Z",
+  "sentence": "Interestingly, although STING activation is generally considered a downstream event of mitochondrial calcium overload and injury, our results show that knocking down STING can alleviate obesity-induced mitochondrial calcium overload and mitigate mitochondrial damage.",
+  "sentence_verified": "true",
+  "species_context": "rat"
  },
  {
   "evidence_id": "fc9aaa645958",
