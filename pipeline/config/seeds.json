@@ -1,0 +1,51 @@
+{
+  "_doc": "Seed list and inclusion rule. anchors: a non-seed node must interact directly with an anchor. level 1 seeds are always kept; level 2 seeds only when they interact with an anchor.",
+  "anchors": ["STIM1", "STING1"],
+  "calcium_go_terms": ["GO:0006816", "GO:0019722"],
+  "calcium_text_pattern": "(?i)\\bcalcium\\b|\\bCa2\\+|\\bCa\\(2\\+\\)|Ca²⁺|\\bSOCE\\b|\\bCRAC\\b|store[- ]operated|\\bSERCA\\b|\\bIP3R?\\b|\\bER stores?\\b",
+  "modules": {
+    "soce": "SOCE / STIM1",
+    "sting": "STING / innate immunity",
+    "ca_stores": "Ca²⁺ stores & pumps",
+    "effectors": "Ca²⁺ effectors",
+    "bridge": "STIM1–STING bridge",
+    "metabolite": "Metabolite"
+  },
+  "seeds": [
+    {"symbol": "STIM1", "module": "soce", "level": 1},
+    {"symbol": "STIM2", "module": "soce", "level": 1},
+    {"symbol": "ORAI1", "module": "soce", "level": 1},
+    {"symbol": "ORAI2", "module": "soce", "level": 1},
+    {"symbol": "ORAI3", "module": "soce", "level": 1},
+    {"symbol": "SARAF", "module": "soce", "level": 1},
+    {"symbol": "STIMATE", "module": "soce", "level": 1},
+    {"symbol": "CRACR2A", "module": "soce", "level": 1},
+    {"symbol": "TRPC1", "module": "soce", "level": 1},
+    {"symbol": "STING1", "module": "sting", "level": 1},
+    {"symbol": "CGAS", "module": "sting", "level": 1},
+    {"symbol": "TBK1", "module": "sting", "level": 1},
+    {"symbol": "IRF3", "module": "sting", "level": 1},
+    {"symbol": "IKBKE", "module": "sting", "level": 1},
+    {"symbol": "ATP2A2", "module": "ca_stores", "level": 1},
+    {"symbol": "ITPR1", "module": "ca_stores", "level": 1},
+    {"symbol": "ITPR2", "module": "ca_stores", "level": 1},
+    {"symbol": "ITPR3", "module": "ca_stores", "level": 1},
+    {"symbol": "RYR1", "module": "ca_stores", "level": 1},
+    {"symbol": "CALM1", "module": "ca_stores", "level": 1},
+    {"symbol": "PPP3CA", "module": "effectors", "level": 2},
+    {"symbol": "NFATC1", "module": "effectors", "level": 2},
+    {"symbol": "NFATC2", "module": "effectors", "level": 2},
+    {"symbol": "CAMK2A", "module": "effectors", "level": 2},
+    {"symbol": "CAMK2B", "module": "effectors", "level": 2},
+    {"symbol": "CAMK2D", "module": "effectors", "level": 2},
+    {"symbol": "CAMK2G", "module": "effectors", "level": 2}
+  ],
+  "metabolites": [
+    {"id": "CHEBI:29108", "symbol": "Ca2+", "name": "calcium(2+)", "level": 1,
+     "synonyms": ["Ca2+", "Ca(2+)", "Ca²⁺", "calcium", "calcium ion", "cytosolic calcium"]},
+    {"id": "CHEBI:75947", "symbol": "2'3'-cGAMP", "name": "2',3'-cyclic GMP-AMP", "level": 1,
+     "synonyms": ["2'3'-cGAMP", "cGAMP", "2',3'-cGAMP", "cyclic GMP-AMP"]},
+    {"id": "CHEBI:16595", "symbol": "IP3", "name": "1D-myo-inositol 1,4,5-trisphosphate", "level": 1,
+     "synonyms": ["IP3", "InsP3", "inositol 1,4,5-trisphosphate", "inositol trisphosphate"]}
+  ]
+}

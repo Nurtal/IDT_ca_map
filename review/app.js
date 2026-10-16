@@ -11,6 +11,11 @@
   const session = CamapCore.createSession({ interactions, reviews: loadReviews() });
 
   const $ = (id) => document.getElementById(id);
+  const MODULES = {
+    soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
+    effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite",
+  };
+  const CALCIUM = { GO: "GO annotation", text: "mentioned in source text", both: "GO annotation + source text" };
 
   function groupBy(rows, key) {
     const out = {};
@@ -58,8 +63,9 @@
   function endpoint(id) {
     const n = nodesById[id] || {};
     return el("div", { class: "endpoint" },
-      el("div", { class: "symbol" }, id),
-      n.name ? el("div", { class: "name" }, n.name) : null);
+      el("div", { class: "symbol" }, n.symbol || id),
+      n.name ? el("div", { class: "name" }, n.name) : null,
+      n.module ? el("span", { class: "module m-" + n.module }, MODULES[n.module] || n.module) : null);
   }
 
   function sentence(ev) {
@@ -79,6 +85,8 @@
           el("span", { class: "arrow" }, i.directed === "true" ? "⟶" : "⟷")),
         endpoint(i.target)),
       i.mechanism ? el("p", { class: "mechanism" }, i.mechanism) : null,
+      el("div", { class: "tags" },
+        el("span", { class: "tag" }, "Calcium evidence: " + (CALCIUM[i.calcium_evidence] || "none"))),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
       el("section", { class: "sources" },
         el("h3", {}, `Sources (${i.n_sources}) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),

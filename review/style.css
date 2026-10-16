@@ -58,3 +58,12 @@ blockquote { margin: 8px 0 0; padding-left: 12px; border-left: 3px solid var(--a
 .decide .reject { border-color: var(--reject); color: var(--reject); }
 blockquote.unverified { border-left-color: var(--uncertain); }
 .warn { color: var(--uncertain); font-size: .8rem; margin-top: 4px; }
+.module { display: inline-block; margin-top: 6px; font-size: .7rem; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border); color: var(--muted); }
+.m-soce { border-color: #39c5cf; color: #39c5cf; }
+.m-sting { border-color: #db61a2; color: #db61a2; }
+.m-ca_stores { border-color: #58a6ff; color: #58a6ff; }
+.m-effectors { border-color: #d29922; color: #d29922; }
+.m-bridge { border-color: #f0f6fc; color: #f0f6fc; }
+.m-metabolite { border-color: #3fb950; color: #3fb950; }
+.tags { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.tag { font-size: .75rem; color: var(--muted); background: var(--panel-2); border-radius: 99px; padding: 3px 10px; }

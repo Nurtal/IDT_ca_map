@@ -1,0 +1,126 @@
+{
+ "response": {
+  "docs": [
+   {
+    "symbol": "STIM1",
+    "name": "stromal interaction molecule 1",
+    "alias_symbol": [
+     "GOK"
+    ],
+    "prev_symbol": [],
+    "uniprot_ids": [
+     "Q13586"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "STING1",
+    "name": "stimulator of interferon response cGAMP interactor 1",
+    "alias_symbol": [
+     "STING",
+     "MITA",
+     "ERIS"
+    ],
+    "prev_symbol": [
+     "TMEM173"
+    ],
+    "uniprot_ids": [
+     "Q86WV6"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "ORAI1",
+    "name": "ORAI calcium release-activated calcium modulator 1",
+    "alias_symbol": [
+     "CRACM1"
+    ],
+    "prev_symbol": [
+     "TMEM142A"
+    ],
+    "uniprot_ids": [
+     "Q96D31"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "CALM1",
+    "name": "calmodulin 1",
+    "alias_symbol": [],
+    "prev_symbol": [
+     "CALM"
+    ],
+    "uniprot_ids": [
+     "P0DP23"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "PPP3CA",
+    "name": "protein phosphatase 3 catalytic subunit alpha",
+    "alias_symbol": [
+     "CNA1"
+    ],
+    "prev_symbol": [],
+    "uniprot_ids": [
+     "Q08209"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "NFATC1",
+    "name": "nuclear factor of activated T cells 1",
+    "alias_symbol": [
+     "NFATc"
+    ],
+    "prev_symbol": [],
+    "uniprot_ids": [
+     "O95644"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "SARAF",
+    "name": "store-operated calcium entry associated regulatory factor",
+    "alias_symbol": [],
+    "prev_symbol": [
+     "TMEM66"
+    ],
+    "uniprot_ids": [
+     "Q96BY9"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "CASQ1",
+    "name": "calsequestrin 1",
+    "alias_symbol": [],
+    "prev_symbol": [],
+    "uniprot_ids": [
+     "P31415"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "GAPDH",
+    "name": "glyceraldehyde-3-phosphate dehydrogenase",
+    "alias_symbol": [],
+    "prev_symbol": [],
+    "uniprot_ids": [
+     "P04406"
+    ],
+    "locus_group": "protein-coding gene"
+   },
+   {
+    "symbol": "TRIM29",
+    "name": "tripartite motif containing 29",
+    "alias_symbol": [],
+    "prev_symbol": [],
+    "uniprot_ids": [
+     "Q14134"
+    ],
+    "locus_group": "protein-coding gene"
+   }
+  ]
+ }
+}
