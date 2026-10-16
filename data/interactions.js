@@ -118,15 +118,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "physical_binding",
   "directed": "false",
-  "mechanism": "direct interaction; modulates STING polymerization and trafficking",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "direct interaction; modulates STING polymerization and trafficking | co-immunoprecipitation in A498 and RCC10 cells",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
-  "has_human_evidence": "false",
+  "has_human_evidence": "true",
   "calcium_evidence": "GO",
-  "justification": "SERCA2/ATP2A2, the ER calcium pump, binds STING directly: a third calcium-machinery protein in physical contact with STING, after STIM1 and ITPR1.",
+  "justification": "SERCA2/ATP2A2, the ER calcium pump, binds STING directly: a third calcium-machinery protein in physical contact with STING, after STIM1 and ITPR1. | Independent confirmation, in two renal carcinoma lines, that STING binds the ER calcium pump ATP2A2/SERCA2 — a second source for that edge.",
   "conflict_with": "",
-  "evidence_fingerprint": "bd64088bfbf2"
+  "evidence_fingerprint": "304868c2e7e5"
  },
  {
   "interaction_id": "117c4ab707df",
@@ -203,7 +203,7 @@ window.CAMAP.interactions = [
   "n_pubs": "1",
   "n_db": "0",
   "has_human_evidence": "true",
-  "calcium_evidence": "text",
+  "calcium_evidence": "both",
   "justification": "Resting STING clamps TRPV2 shut, so STING loss raises cytosolic Ca2+: STING is a brake on ER Ca2+ release, mirroring STIM1 being a brake on STING.",
   "conflict_with": "",
   "evidence_fingerprint": "6e83ef793612"
@@ -431,6 +431,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "81e8bda8cd07"
+ },
+ {
+  "interaction_id": "3225467efe1a",
+  "source": "STING1",
+  "target": "VDAC2",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "proteomics then co-IP in A498 and RCC10 renal carcinoma cells",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "VDAC2, the mitochondrial outer-membrane calcium transporter, is a direct STING partner: STING reaches the mitochondrial calcium machinery, not only the ER's.",
+  "conflict_with": "",
+  "evidence_fingerprint": "fcb8f63e63e1"
  },
  {
   "interaction_id": "32cead8ac74e",
@@ -705,6 +721,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "3bec96b436b7"
  },
  {
+  "interaction_id": "61b5a44ab181",
+  "source": "SELENOK",
+  "target": "STING1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "ER selenoprotein K (a regulator of Ca2+ flux) binds STING in the ER and licenses its oligomerization.",
+  "conflict_with": "",
+  "evidence_fingerprint": "b5e9a218891b"
+ },
+ {
   "interaction_id": "63d5c4e0d354",
   "source": "EGFR",
   "target": "CALM1",
@@ -831,6 +863,22 @@ window.CAMAP.interactions = [
   "justification": "ATP2A2 governs STING polymerization and trafficking, placing the ER Ca2+ pump itself on the STING activation route.",
   "conflict_with": "",
   "evidence_fingerprint": "9d842998f683"
+ },
+ {
+  "interaction_id": "6e534e82a5fe",
+  "source": "SELENOK",
+  "target": "STING1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "promotes oligomerization and ER exit",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "SELENOK is required for STING oligomerization and ER-to-Golgi trafficking, i.e. STING activation.",
+  "conflict_with": "",
+  "evidence_fingerprint": "f215626ba99d"
  },
  {
   "interaction_id": "6eaa5edba8bc",
@@ -1067,7 +1115,7 @@ window.CAMAP.interactions = [
   "n_pubs": "1",
   "n_db": "0",
   "has_human_evidence": "true",
-  "calcium_evidence": "text",
+  "calcium_evidence": "both",
   "justification": "TRPV2 is the channel that carries the STING-gated ER Ca2+ release, feeding CaMKK2/AMPK and replication-fork protection.",
   "conflict_with": "",
   "evidence_fingerprint": "9e10352a787b"
@@ -1286,15 +1334,15 @@ window.CAMAP.interactions = [
   "target": "CHEBI:29108",
   "type": "Ca2+_flux",
   "directed": "true",
-  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer",
-  "n_sources": "4",
-  "n_pubs": "4",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer | STING depletion raises mitochondrial calcium via VDAC2/GRP75 MERCs (opposite sign to PMID 40186485)",
+  "n_sources": "5",
+  "n_pubs": "5",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing.",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing. | Here STING *limits* mitochondrial calcium, the opposite sign to the obese-atria study where STING knockdown relieved mitochondrial calcium overload: the direction of STING's effect on mitochondrial calcium is contested.",
   "conflict_with": "",
-  "evidence_fingerprint": "9672d5065408"
+  "evidence_fingerprint": "c8bc3a4e5fbe"
  },
  {
   "interaction_id": "a84be8ddc723",
@@ -1441,6 +1489,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "7e5f58c23602"
  },
  {
+  "interaction_id": "be10e05e04c4",
+  "source": "STING1",
+  "target": "VDAC2",
+  "type": "inhibition",
+  "directed": "true",
+  "mechanism": "STING depletion increases VDAC2/GRP75-mediated MERC formation",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "STING restrains VDAC2, so losing STING builds ER-mitochondria contacts and raises mitochondrial calcium; an innate-immunity-independent growth arm in renal cancer.",
+  "conflict_with": "",
+  "evidence_fingerprint": "a5ff71867080"
+ },
+ {
   "interaction_id": "bf5c53ce557a",
   "source": "CALM1",
   "target": "PDGFRB",
@@ -1531,7 +1595,7 @@ window.CAMAP.interactions = [
   "n_pubs": "1",
   "n_db": "0",
   "has_human_evidence": "true",
-  "calcium_evidence": "text",
+  "calcium_evidence": "both",
   "justification": "STING directly binds the ER Ca2+ channel TRPV2: a second STING-calcium channel complex alongside STIM1, acting on the release side.",
   "conflict_with": "",
   "evidence_fingerprint": "1726269c88e2"

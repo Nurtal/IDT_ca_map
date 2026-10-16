@@ -320,6 +320,17 @@ window.CAMAP.nodes = [
   "function_summary": "Component of SEC61 channel-forming translocon complex that mediates transport of signal peptide-containing precursor polypeptides across the endoplasmic reticulum (ER). Forms a ribosome receptor and a gated pore in the ER membrane, both functions required for cotranslational translocation of nascent polypeptides. May cooperate with auxiliary protein SEC62, SEC63 and HSPA5/BiP to enable post-translational transport of small presecretory proteins. The SEC61 channel is also involved in ER membrane insertion of transmembrane proteins: it mediates membrane insertion of the first few transmembrane segments of proteins, while insertion of subsequent transmembrane regions of multi-pass membrane proteins is mediated by the multi-pass translocon (MPT) complex. The SEC61 channel cooperates with the translocating protein TRAM1 to import nascent proteins into the ER. Controls the passive efflux of calcium ions from the ER lumen to the cytosol through SEC61 channel, contributing to the maintenance of cellular calcium homeostasis. Plays a critical role in nephrogenesis, specifically at pronephros stage (By similarity)"
  },
  {
+  "id": "SELENOK",
+  "symbol": "SELENOK",
+  "name": "selenoprotein K",
+  "type": "gene",
+  "module": "sting",
+  "is_seed": "false",
+  "uniprot": "Q9Y6D0",
+  "synonyms": "SELK",
+  "function_summary": "Required for Ca(2+) flux in immune cells and plays a role in T-cell proliferation and in T-cell and neutrophil migration (By similarity). Involved in endoplasmic reticulum-associated degradation (ERAD) of soluble glycosylated proteins. Required for palmitoylation and cell surface expression of CD36 and involved in macrophage uptake of low-density lipoprotein and in foam cell formation (By similarity). Together with ZDHHC6, required for palmitoylation of ITPR1 in immune cells, leading to regulate ITPR1 stability and function. Plays a role in protection of cells from ER stress-induced apoptosis. Protects cells from oxidative stress when overexpressed in cardiomyocytes"
+ },
+ {
   "id": "STAT3",
   "symbol": "STAT3",
   "name": "signal transducer and activator of transcription 3",
@@ -394,7 +405,7 @@ window.CAMAP.nodes = [
   "is_seed": "false",
   "uniprot": "Q969S6",
   "synonyms": "MGC14327; HBEBP1",
-  "function_summary": ""
+  "function_summary": "Involved in the regulation of cellular calcium homeotasis. Required for spermatogenesis. Acts as a regulator of STING-mediated inflammatory signaling in macrophages. Forms a complex with STING, promoting the activity of TBK1 kinase and the transcription factor IRF3, leading to activation of type I interferon expression (By similarity)"
  },
  {
   "id": "TRPC1",
@@ -416,7 +427,7 @@ window.CAMAP.nodes = [
   "is_seed": "false",
   "uniprot": "Q9Y5S1",
   "synonyms": "VRL; VRL-1; VRL1",
-  "function_summary": ""
+  "function_summary": "Calcium-permeable, non-selective cation channel. Seems to be regulated, at least in part, by growth factors, such as IGF1, PDGF and morphogenetic neuropeptide/head activator. May transduce physical stimuli in mast cells (By similarity)"
  },
  {
   "id": "UBQLN1",
@@ -450,5 +461,16 @@ window.CAMAP.nodes = [
   "uniprot": "Q9H1C4",
   "synonyms": "UNC93; UNC-93B",
   "function_summary": "Plays an important role in innate and adaptive immunity by regulating nucleotide-sensing Toll-like receptor (TLR) signaling. Required for the transport of a subset of TLRs (including TLR3, TLR7 and TLR9) from the endoplasmic reticulum to endolysosomes where they can engage pathogen nucleotides and activate signaling cascades. May play a role in autoreactive B-cells removal"
+ },
+ {
+  "id": "VDAC2",
+  "symbol": "VDAC2",
+  "name": "voltage dependent anion channel 2",
+  "type": "gene",
+  "module": "sting",
+  "is_seed": "false",
+  "uniprot": "P45880",
+  "synonyms": "",
+  "function_summary": "Non-selective voltage-gated ion channel that mediates the transport of anions and cations through the mitochondrion outer membrane and plasma membrane. The channel adopts an open conformation at zero mV and a closed conformation at both positive and negative potentials. There are two populations of channels; the main that functions in a lower open-state conductance with lower ion selectivity, that switch, in a voltage-dependent manner, from the open to a low-conducting 'closed' state and the other that has a normal ion selectivity in the typical high conductance, 'open' state. Binds various lipids, including the sphingolipid ceramide, the phospholipid phosphatidylcholine, and the sterols cholesterol and oxysterol. Binding of ceramide promotes the mitochondrial outer membrane permeabilization (MOMP) apoptotic pathway. Associates with the translocase of the outer mitochondrial membrane (TOM) complex and PINK1 kinase at depolarized mitochondria, this interaction stabilizes PINK1 at the outer mitochondrial membrane and triggers downstream mitophagy by the recruitment of the E3 ubiquitin ligase PRKN"
  }
 ];

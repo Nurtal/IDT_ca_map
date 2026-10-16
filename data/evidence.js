@@ -53,6 +53,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "03e9b00a8ead",
+  "interaction_id": "6e534e82a5fe",
+  "source_kind": "pmc",
+  "ref": "PMC10112805",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Lv L",
+  "sentence": "SELENOK interacts with STING in the ER and promotes its oligomerization, thereby licensing STING trafficking to the Golgi complex.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "0406ba03db93",
   "interaction_id": "e6bd5a7412fe",
   "source_kind": "intact",
@@ -64,6 +77,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "04d0bf800a9d",
+  "interaction_id": "be10e05e04c4",
+  "source_kind": "pmc",
+  "ref": "PMC9875608",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Zhu Z",
+  "sentence": "STING depletion potentiates VDAC2/GRP75-mediated MERC (mitochondria-ER contact) formation to increase mitochondrial ROS/calcium levels, impairs mitochondria function, and suppresses mTORC1/S6K signaling leading to RCC growth retardation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "07e03d782bc2",
@@ -690,6 +716,19 @@ window.CAMAP.evidence = [
   "species_context": "other"
  },
  {
+  "evidence_id": "4def0f7ea871",
+  "interaction_id": "11077ea73180",
+  "source_kind": "pmc",
+  "ref": "PMC9875608",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Zhu Z",
+  "sentence": "Binding of STING with VDAC2, ATP2A2, and ATP1A1 was confirmed in both A498 (Figure  3B; Figure S4B) and RCC10 (Figure 3C; Figure S4C, Supporting Information) tumor cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "508d49a49895",
   "interaction_id": "45bfb9c9aee6",
   "source_kind": "intact",
@@ -1078,6 +1117,19 @@ window.CAMAP.evidence = [
   "sentence": "We found that expression of the membrane-anchored PLpro domain (PLpro-TM) from SARS-CoV inhibits STING/TBK1/IKKepsilon-mediated activation of type I IFNs and disrupts the phosphorylation and dimerization of IRF3, which are activated by STING and TBK1.",
   "sentence_verified": "true",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "6d1f74efd142",
+  "interaction_id": "61b5a44ab181",
+  "source_kind": "pmc",
+  "ref": "PMC10112805",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Lv L",
+  "sentence": "Mechanistically, SELENOK interacts with STING in the ER and promotes STING oligomerization, which in turn promotes its translocation from the ER to the Golgi.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "6d413a362055",
@@ -2016,6 +2068,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "bbd1b64d92b8",
+  "interaction_id": "3225467efe1a",
+  "source_kind": "pmc",
+  "ref": "PMC9875608",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Zhu Z",
+  "sentence": "Overall, these data suggest that the mitochondrial outer membrane calcium transporter VDAC2 is a new STING binding partner and the STING-VDAC2 interaction may regulate mitochondrial ROS/calcium levels.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "bca3c1474f1f",
   "interaction_id": "b458bf8734cc",
   "source_kind": "pubmed",
@@ -2157,6 +2222,19 @@ window.CAMAP.evidence = [
   "sentence": "Conversely, we also found that STING deficiency augmented translocation of STIM1 and Ca2+ entry triggered by depletion of ER Ca2+ stores.",
   "sentence_verified": "true",
   "species_context": "mouse"
+ },
+ {
+  "evidence_id": "c9e408fb40fe",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC9875608",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Zhu Z",
+  "sentence": "STING depletion potentiates VDAC2/GRP75-mediated MERC (mitochondria-ER contact) formation to increase mitochondrial ROS/calcium levels, impairs mitochondria function, and suppresses mTORC1/S6K signaling leading to RCC growth retardation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "ce1e1f746c42",
