@@ -5,13 +5,13 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9100 articles in queue: 20 done, 9075 pending, 5 skipped, 0 error.
+9100 articles in queue: 26 done, 9067 pending, 7 skipped, 0 error.
 
-- tier 0: 25/192 processed
+- tier 0: 33/192 processed
 - tier 1: 0/6582 processed
 - tier 2: 0/2326 processed
 
-Next article: PMID 32690950 — STEEP mediates STING ER exit and activation of signaling
+Next article: PMID 33972946 — ORAI1 establishes resistance to SARS-CoV-2 infection by regulating tonic type I interferon signaling
 <!-- auto:end -->
 
 ### 2026-10-16 — batch 1 (tier 0)

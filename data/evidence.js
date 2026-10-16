@@ -118,6 +118,19 @@ window.CAMAP.evidence = [
   "species_context": "mouse"
  },
  {
+  "evidence_id": "0c6e65d1d87d",
+  "interaction_id": "13c75853b18b",
+  "source_kind": "pmc",
+  "ref": "PMC9986811",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Kuhl N",
+  "sentence": "To this end, either Ionomycin, which acts as a Ca2+ ionophore at the plasma and ER membranes, or Thapsigargin, which depletes ER Ca2+ levels by inhibiting the ER Ca2+-ATPase, were able to potently boost STING and IRF3 phosphorylation together with cGAMP.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "118014d5c6ca",
   "interaction_id": "bf5c53ce557a",
   "source_kind": "intact",
@@ -129,6 +142,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "11ee97aa51ce",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "pmc",
+  "ref": "PMC8047499",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Prabakaran T",
+  "sentence": "Moreover, we observed that the stimulation-induced dissociation of STING from STIM1, reported to enable STING activation, was inhibited by ISD017 (Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "12813dfaba94",
@@ -337,6 +363,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "367bcc19a9bf",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "pmc",
+  "ref": "PMC8047499",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Prabakaran T",
+  "sentence": "Collectively, ISD017 blocks STING at the ER level through a mechanism dependent on STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "36ef329dad34",
@@ -883,6 +922,19 @@ window.CAMAP.evidence = [
   "sentence": "In the present study, we show that cdc2/CyB, a critical regulator of eukaryotic cell cycle progression, phosphorylates IP3R1 in vitro and in vivo at both Ser(421) and Thr(799) and that this phosphorylation increases IP3 binding.",
   "sentence_verified": "true",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "6a906f030505",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC8906939",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Wu XY",
+  "sentence": "We demonstrated that STING increases intracellular calcium in liver macrophages to promote pyroptosis, which leads to an increase in liver inflammation and tissue injury in liver IRI, and calcium promoted by STING in this process may be mainly released from the ER.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "6c44d818cc1f",

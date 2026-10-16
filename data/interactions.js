@@ -166,15 +166,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "unknown_regulation",
   "directed": "true",
-  "mechanism": "ER Ca2+ lowering by HRV 2B frees STING from STIM1",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "ER Ca2+ lowering by HRV 2B frees STING from STIM1 | thapsigargin / ionomycin boost cGAMP-induced STING and IRF3 phosphorylation in primary human T cells",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "ER Ca2+ depletion (HRV 2B viroporin) releases STING from STIM1: store Ca2+ gates STING trafficking.",
+  "justification": "ER Ca2+ depletion (HRV 2B viroporin) releases STING from STIM1: store Ca2+ gates STING trafficking. | In human primary T cells, ER Ca2+ store depletion potentiates STING and IRF3 phosphorylation, placing store Ca2+ upstream of STING activation in the adaptive compartment.",
   "conflict_with": "",
-  "evidence_fingerprint": "6658cb899c28"
+  "evidence_fingerprint": "852d9092a2ad"
  },
  {
   "interaction_id": "19fff2995b55",
@@ -1190,15 +1190,15 @@ window.CAMAP.interactions = [
   "target": "CHEBI:29108",
   "type": "Ca2+_flux",
   "directed": "true",
-  "mechanism": "mitochondrial Ca2+ uptake at MERCs",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis.",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm.",
   "conflict_with": "",
-  "evidence_fingerprint": "16c897c479a3"
+  "evidence_fingerprint": "2fbe863150dc"
  },
  {
   "interaction_id": "a84be8ddc723",
@@ -1478,15 +1478,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "inhibition",
   "directed": "true",
-  "mechanism": "STIM1 aa1-249 retains STING in the ER | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
-  "n_sources": "3",
-  "n_pubs": "3",
+  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
+  "n_sources": "4",
+  "n_pubs": "4",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "both",
-  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
+  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
   "conflict_with": "",
-  "evidence_fingerprint": "3855def9204c"
+  "evidence_fingerprint": "47bac7a4e04d"
  },
  {
   "interaction_id": "ddf7f926df8c",
@@ -1494,15 +1494,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "physical_binding",
   "directed": "false",
-  "mechanism": "FRET in BEAS-2B cells | co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD)",
-  "n_sources": "2",
-  "n_pubs": "2",
+  "mechanism": "FRET in BEAS-2B cells | co-precipitation in THP1 macrophages | co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD)",
+  "n_sources": "3",
+  "n_pubs": "3",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "GO",
-  "justification": "Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",
+  "justification": "Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | The STIM1-STING complex in human THP1 macrophages is pharmacologically targetable: the ISD017 peptide locks STING onto STIM1. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",
   "conflict_with": "",
-  "evidence_fingerprint": "5f58ce9a6d1c"
+  "evidence_fingerprint": "b5a34877fbf6"
  },
  {
   "interaction_id": "e015ffd32637",
