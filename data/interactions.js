@@ -1270,15 +1270,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "translocation/trafficking",
   "directed": "true",
-  "mechanism": "ER retention; STIM1 loss accelerates STING exit to the ERGIC after cGAMP",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "STIM1 knockdown in HEL cells reduces STING exocytosis after HSV-1 infection | ER retention; STIM1 loss accelerates STING exit to the ERGIC after cGAMP",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
-  "has_human_evidence": "false",
+  "has_human_evidence": "true",
   "calcium_evidence": "GO",
-  "justification": "Mechanism of the bridge: STIM1 acts as an ER retention factor controlling STING trafficking, the rate-limiting step of STING activation.",
+  "justification": "Beyond retaining STING in the ER, STIM1 is required for STING exocytosis during HSV-1 infection: a positive trafficking role that conflicts with the pure-brake model. | Mechanism of the bridge: STIM1 acts as an ER retention factor controlling STING trafficking, the rate-limiting step of STING activation.",
   "conflict_with": "",
-  "evidence_fingerprint": "d78101c37aee"
+  "evidence_fingerprint": "ed8b5bc2a2f7"
  },
  {
   "interaction_id": "abbb8844f4df",
@@ -1558,15 +1558,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "inhibition",
   "directed": "true",
-  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
-  "n_sources": "4",
-  "n_pubs": "4",
+  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | PRRSV Nsp2 deubiquitinates and stabilizes STIM1, retaining STING at the ER (swine) | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
+  "n_sources": "5",
+  "n_pubs": "5",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "both",
-  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
+  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | An RNA virus exploits the STIM1 brake on STING: its protease stabilizes STIM1 to keep STING in the ER and blunt type I IFN, and STIM1 loss restricts the virus. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
   "conflict_with": "",
-  "evidence_fingerprint": "47bac7a4e04d"
+  "evidence_fingerprint": "a21fbd75bc69"
  },
  {
   "interaction_id": "ddf7f926df8c",

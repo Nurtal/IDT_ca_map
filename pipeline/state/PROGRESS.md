@@ -5,13 +5,13 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9100 articles in queue: 31 done, 9062 pending, 7 skipped, 0 error.
+9100 articles in queue: 36 done, 9055 pending, 9 skipped, 0 error.
 
-- tier 0: 38/192 processed
+- tier 0: 45/192 processed
 - tier 1: 0/6582 processed
 - tier 2: 0/2326 processed
 
-Next article: PMID 37039642 — The Papain-Like Protease of Porcine Reproductive and Respiratory Syndrome Virus Impedes STING Translocation from the Endoplasmic Reticulum to the Golgi Apparatus by Deubiquitinating STIM1.
+Next article: PMID 40128408 — Distinct pathogenic mutations in ARF1 allow dissection of its dual role in cGAS-STING signalling
 <!-- auto:end -->
 
 ### 2026-10-16 — batch 1 (tier 0)

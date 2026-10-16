@@ -508,6 +508,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "4091bb1ed36b",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "pubmed",
+  "ref": "PMID:37039642",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Diao F",
+  "sentence": "Mechanistically, PRRSV Nsp2 retains STING at the ER by increasing the level of Ca2+ sensor stromal interaction molecule 1 (STIM1) protein.",
+  "sentence_verified": "true",
+  "species_context": "other"
+ },
+ {
   "evidence_id": "42948d160f62",
   "interaction_id": "f0404bdfdc2d",
   "source_kind": "signor",
@@ -1143,6 +1156,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "75a082f30fe1",
+  "interaction_id": "aa1574b3f313",
+  "source_kind": "pmc",
+  "ref": "PMC11005388",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Dogrammatzis C",
+  "sentence": "STING exocytosis was observed after infecting the parental cells, but reduced STING exocytosis was observed after infecting STIM1 KD derivatives (Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "764134fc7a12",
