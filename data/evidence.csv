@@ -168,6 +168,7 @@ d824987373d6,d82408bef80f,pubmed,PMID:30643259,,,2019,Srikanth S,Here we found t
 d8303e066053,c7f158ef75df,intact,EBI-1077443,17353931,,2007,Ewing et al.,,,human
 d922bb861c6d,2236c60356ac,signor,SIGNOR-250078,14532276,,,,"PKA-mediated hyperphosphorylation of a conserved serine, Ser-2843 in skeletal RyR and Ser-2809 in cardiac RyR, results in an aberrant SR function during heart failure. hyperphosphorylated RyRs are leaky and therefore lead to a reduced SR Ca2+ load and impaired contractile function in heart failure",false,other
 d9547d0d4ff0,ef02b46551ec,intact,EBI-9681964,24954132,,2014,Dubois et al.,,,human
+d96827fdd6d6,d82408bef80f,pubmed,PMID:41779876,,,2026,Dong Y,"HU inhibits DNA replication and repair, promoting cytosolic double-stranded DNA accumulation and activation of the cyclic GMP-AMP synthase-stimulator of interferon genes (cGAS-STING) pathway, while TG induces endoplasmic reticulum Ca2+ depletion to relieve stromal interaction molecule 1 (STIM1)-mediated inhibition of STING trafficking, thereby amplifying type I interferon signaling.",true,mouse
 dc68028b3f42,a045d5c21000,intact,EBI-64092095,30042492,,2019,Avalle et al.,"Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",true,human
 dc8cf1e7dc13,abbb8844f4df,omnipath,OmniPath:PRKAG2>STIM1,31381180,,,,,,human
 de986ecfd821,6eaa5edba8bc,intact,EBI-54684224,33961781,,2021,Huttlin et al.,,,human

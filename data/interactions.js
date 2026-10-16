@@ -1558,15 +1558,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "inhibition",
   "directed": "true",
-  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | PRRSV Nsp2 deubiquitinates and stabilizes STIM1, retaining STING at the ER (swine) | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
-  "n_sources": "5",
-  "n_pubs": "5",
+  "mechanism": "STIM1 aa1-249 retains STING in the ER | ER retention, ER-to-Golgi trafficking blocked | PRRSV Nsp2 deubiquitinates and stabilizes STIM1, retaining STING at the ER (swine) | thapsigargin-loaded nanozyme microneedles; ER Ca2+ depletion relieves STIM1 retention | loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter",
+  "n_sources": "6",
+  "n_pubs": "6",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "both",
-  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | An RNA virus exploits the STIM1 brake on STING: its protease stabilizes STIM1 to keep STING in the ER and blunt type I IFN, and STIM1 loss restricts the virus. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
+  "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | An RNA virus exploits the STIM1 brake on STING: its protease stabilizes STIM1 to keep STING in the ER and blunt type I IFN, and STIM1 loss restricts the virus. | The STIM1 brake on STING is exploited therapeutically: depleting ER Ca2+ with thapsigargin releases STING trafficking and amplifies tumour type I IFN in vivo. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",
   "conflict_with": "",
-  "evidence_fingerprint": "a21fbd75bc69"
+  "evidence_fingerprint": "ce37df3799f1"
  },
  {
   "interaction_id": "ddf7f926df8c",

@@ -5,13 +5,13 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9100 articles in queue: 46 done, 9043 pending, 11 skipped, 0 error.
+9100 articles in queue: 49 done, 9035 pending, 16 skipped, 0 error.
 
-- tier 0: 57/192 processed
+- tier 0: 65/192 processed
 - tier 1: 0/6582 processed
 - tier 2: 0/2326 processed
 
-Next article: PMID 33816489 — Exploiting Connections for Viral Replication
+Next article: PMID 35178710 — TLR2 and TLR7 mediate distinct immunopathological and antiviral plasmacytoid dendritic cell responses to SARS-CoV-2 infection
 <!-- auto:end -->
 
 ### 2026-10-16 — batch 1 (tier 0)

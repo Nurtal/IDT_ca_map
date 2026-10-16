@@ -2198,6 +2198,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "d96827fdd6d6",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "pubmed",
+  "ref": "PMID:41779876",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Dong Y",
+  "sentence": "HU inhibits DNA replication and repair, promoting cytosolic double-stranded DNA accumulation and activation of the cyclic GMP-AMP synthase-stimulator of interferon genes (cGAS-STING) pathway, while TG induces endoplasmic reticulum Ca2+ depletion to relieve stromal interaction molecule 1 (STIM1)-mediated inhibition of STING trafficking, thereby amplifying type I interferon signaling.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "dc68028b3f42",
   "interaction_id": "a045d5c21000",
   "source_kind": "intact",
