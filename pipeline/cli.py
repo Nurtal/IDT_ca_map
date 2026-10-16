@@ -7,6 +7,7 @@
     python3 pipeline/cli.py fetch-db       # SIGNOR / OmniPath / IntAct / BioGRID -> data/raw/db_*.jsonl
     python3 pipeline/cli.py fetch-texts    # cache PubTator texts of every paper cited in data/raw
     python3 pipeline/cli.py annotate       # cache HGNC set + GO calcium / UniProt annotations of every actor
+    python3 pipeline/cli.py graph [CSV]    # kept_interactions.csv -> data/graph_data.js for graph/index.html
     python3 pipeline/cli.py build          # data/raw/*.jsonl -> data/{nodes,interactions,evidence}.{csv,js}
 """
 import argparse
@@ -20,6 +21,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 from camap.build import build_dataset, read_raw  # noqa: E402
 from camap.corpus import build_queue, next_pending, set_status  # noqa: E402
 from camap.databases import fetch_all  # noqa: E402
+from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
 from camap.nodes import Resolver, load_config  # noqa: E402
 from camap.pubtator import PubTator  # noqa: E402
@@ -48,6 +50,8 @@ def main(argv=None):
     qs.add_argument("pmids", nargs="+")
     qs.add_argument("status", choices=["pending", "done", "skipped", "error"])
     qs.add_argument("--note")
+    g = sub.add_parser("graph", help="kept_interactions.csv -> data/graph_data.js")
+    g.add_argument("csv", nargs="?", default=ROOT / "data" / "kept_interactions.csv", type=Path)
     args = p.parse_args(argv)
 
     if args.cmd == "build":
@@ -67,6 +71,9 @@ def main(argv=None):
                 pmids.add(r["cited_pmid"])
         fetched = pt.fetch_texts(sorted(pmids))
         print(f"{len(pmids)} cited papers, {len(fetched)} newly fetched")
+    elif args.cmd == "graph":
+        n = build_graph(args.csv, ROOT / "data" / "graph_data.js")
+        print(f"{n} kept interactions -> data/graph_data.js")
     elif args.cmd == "corpus":
         report = build_queue(load_config(), PubTator(CACHE), STATE)
         for text, count in report["per_query"].items():

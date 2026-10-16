@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calcium Interaction Map</title>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Calcium Map <span>STIM1 · STING interaction graph</span></h1>
+    <div class="stats" id="stats"></div>
+    <div class="top-actions">
+      <button id="toggle-side" type="button" class="only-mobile">Filters</button>
+      <button id="load-csv" type="button" title="Load a kept_interactions.csv (or drop it on the page)">Load CSV…</button>
+      <button id="export-png" type="button">PNG</button>
+      <button id="export-svg" type="button">SVG</button>
+      <button id="theme" type="button" title="Toggle light/dark">◐</button>
+      <input id="csv-file" type="file" accept=".csv,text/csv" hidden>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="side" id="side">
+      <section>
+        <h2>Find an actor</h2>
+        <input id="search" type="search" list="symbols" placeholder="e.g. ORAI1" autocomplete="off">
+        <datalist id="symbols"></datalist>
+      </section>
+
+      <section>
+        <h2>Shortest path</h2>
+        <div class="row">
+          <input id="path-from" list="symbols" placeholder="from" value="STIM1" autocomplete="off">
+          <input id="path-to" list="symbols" placeholder="to" value="STING1" autocomplete="off">
+        </div>
+        <div class="row">
+          <button id="path-go" type="button">Find path</button>
+          <button id="path-clear" type="button">Clear</button>
+        </div>
+        <p id="path-result" class="muted small"></p>
+      </section>
+
+      <section>
+        <h2>Filters</h2>
+        <label class="check"><input type="checkbox" id="f-mouse"> Exclude mouse-only evidence</label>
+        <label class="range">Min. sources <output id="f-min-out">1</output>
+          <input type="range" id="f-min" min="1" max="10" value="1"></label>
+        <h3>Link types</h3>
+        <div id="f-types" class="checks"></div>
+        <h3>Modules</h3>
+        <div id="f-modules" class="checks"></div>
+      </section>
+
+      <section>
+        <h2>Legend</h2>
+        <div id="legend" class="legend"></div>
+      </section>
+    </aside>
+
+    <main class="canvas-wrap">
+      <div id="cy" class="cy"></div>
+      <div id="empty" class="empty" hidden></div>
+      <div id="drop" class="drop" hidden>Drop kept_interactions.csv to display it</div>
+    </main>
+
+    <aside class="info" id="info" hidden>
+      <button id="info-close" class="close" type="button" aria-label="Close">✕</button>
+      <div id="info-body"></div>
+    </aside>
+  </div>
+
+  <script src="../data/nodes.js"></script>
+  <script src="../data/evidence.js"></script>
+  <script src="../data/graph_data.js"></script>
+  <script src="../vendor/cytoscape.min.js"></script>
+  <script src="../vendor/layout-base.js"></script>
+  <script src="../vendor/cose-base.js"></script>
+  <script src="../vendor/cytoscape-fcose.js"></script>
+  <script src="../vendor/cytoscape-svg.js"></script>
+  <script src="../shared/core.js"></script>
+  <script src="graph.js"></script>
+</body>
+</html>

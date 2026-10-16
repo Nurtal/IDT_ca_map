@@ -51,3 +51,29 @@ test("large neighbourhoods are capped, keeping the closest nodes", () => {
   assert.ok(n.nodes.every((x) => x.distance <= 1));
   assert.ok(n.edges.every((e) => n.nodes.some((x) => x.id === e.source) && n.nodes.some((x) => x.id === e.target)));
 });
+
+test("shortest path between two actors ignores edge direction", () => {
+  const p = core.shortestPath(CHAIN, "E", "X");
+  assert.deepEqual(p.nodes, ["E", "D", "C", "B", "X"]);
+  assert.deepEqual(p.edges, ["DE", "CD", "BC", "BX"]);
+});
+
+test("shortest path is null when actors are disconnected or unknown", () => {
+  assert.equal(core.shortestPath([...CHAIN, E("PQ", "P", "Q")], "A", "P"), null);
+  assert.equal(core.shortestPath(CHAIN, "A", "ZZZ"), null);
+});
+
+test("graph filters: link types, minimum sources, modules, mouse-only", () => {
+  const items = [
+    { ...E("1", "A", "B", "activation"), n_sources: "3", has_human_evidence: "true" },
+    { ...E("2", "A", "C", "inhibition"), n_sources: "1", has_human_evidence: "true" },
+    { ...E("3", "B", "C", "physical_binding"), n_sources: "5", has_human_evidence: "false" },
+  ];
+  const modules = { A: "soce", B: "sting", C: "metabolite" };
+  const ids = (f) => core.applyFilters(items, f, (id) => modules[id]).map((i) => i.interaction_id);
+  assert.deepEqual(ids({ types: ["activation", "physical_binding"] }), ["1", "3"]);
+  assert.deepEqual(ids({ minSources: 2 }), ["1", "3"]);
+  assert.deepEqual(ids({ excludeMouseOnly: true }), ["1", "2"]);
+  assert.deepEqual(ids({ modules: ["soce", "sting"] }), ["1"]);
+  assert.deepEqual(ids({ types: [], minSources: 0, modules: [] }), ["1", "2", "3"]);
+});

@@ -90,10 +90,47 @@
     return { nodes: ordered.map(([id, d]) => ({ id, distance: d })), edges, truncated };
   }
 
+  // Fewest-hops path between two actors (direction ignored). Returns {nodes, edges} or null.
+  function shortestPath(interactions, from, to) {
+    const links = new Map();
+    for (const i of interactions) {
+      for (const [a, b] of [[i.source, i.target], [i.target, i.source]]) {
+        (links.get(a) || links.set(a, []).get(a)).push([b, i.interaction_id]);
+      }
+    }
+    if (!links.has(from) || !links.has(to)) return null;
+    const parent = new Map([[from, null]]);
+    let frontier = [from];
+    while (frontier.length && !parent.has(to)) {
+      const next = [];
+      for (const n of frontier) {
+        for (const [m, edge] of links.get(n).slice().sort((x, y) => (x[0] < y[0] ? -1 : 1))) {
+          if (!parent.has(m)) { parent.set(m, [n, edge]); next.push(m); }
+        }
+      }
+      frontier = next;
+    }
+    if (!parent.has(to)) return null;
+    const nodes = [to], edges = [];
+    for (let cur = to; parent.get(cur); cur = parent.get(cur)[0]) {
+      edges.push(parent.get(cur)[1]);
+      nodes.push(parent.get(cur)[0]);
+    }
+    return { nodes: nodes.reverse(), edges: edges.reverse() };
+  }
+
   // ---------- filters ----------
 
-  function applyFilters(interactions, filters = {}) {
-    return interactions.filter((i) => !(filters.excludeMouseOnly && i.has_human_evidence === "false"));
+  // filters: {excludeMouseOnly, types: [...], minSources, modules: [...]}; empty lists mean "all".
+  function applyFilters(interactions, filters = {}, moduleOf = () => "") {
+    const types = filters.types && filters.types.length ? new Set(filters.types) : null;
+    const modules = filters.modules && filters.modules.length ? new Set(filters.modules) : null;
+    const minSources = Number(filters.minSources) || 0;
+    return interactions.filter((i) =>
+      !(filters.excludeMouseOnly && i.has_human_evidence === "false") &&
+      (!types || types.has(i.type)) &&
+      Number(i.n_sources || 0) >= minSources &&
+      (!modules || (modules.has(moduleOf(i.source)) && modules.has(moduleOf(i.target)))));
   }
 
   // ---------- review session ----------
@@ -196,5 +233,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { parseCsv, toCsv, neighbourhood, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });
