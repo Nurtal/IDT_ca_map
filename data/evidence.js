@@ -365,6 +365,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "352a12a3ccfd",
+  "interaction_id": "cd25b3622b2e",
+  "source_kind": "pmc",
+  "ref": "PMC7005872",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Nozawa T",
+  "sentence": "We show that cytosolic Ca2+ signaling is required for TBK1 activation during xenophagy and mitophagy and this process is regulated by Ca2+-binding TBC1D9, highlighting TBC/RabGAP-mediated regulation of TBK1 activation in selective autophagy.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "361f4de1fd9f",
   "interaction_id": "b044c769f5b6",
   "source_kind": "omnipath",
@@ -2313,6 +2326,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "de4fe915e70c",
+  "interaction_id": "e27616096e06",
+  "source_kind": "pmc",
+  "ref": "PMC10771561",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Xiao Y",
+  "sentence": "HAP promoted the release of intracellular Ca2+ stores in cancer cells, and curcumin inhibited Ca2+ efflux, resulting in intracellular Ca2+ overload and the release of mitochondrial DNA (mtDNA).",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "de986ecfd821",

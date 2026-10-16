@@ -1537,6 +1537,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "1726269c88e2"
  },
  {
+  "interaction_id": "cd25b3622b2e",
+  "source": "CHEBI:29108",
+  "target": "TBK1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "STING-independent; Ca2+-dependent ubiquitin recognition by TBC1D9 (HeLa, GAS infection)",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "Cytosolic Ca2+ activates TBK1 directly, through the Ca2+-binding protein TBC1D9 and independently of STING: a calcium entry point into innate immune signalling that bypasses the STIM1-STING brake.",
+  "conflict_with": "",
+  "evidence_fingerprint": "0f25b7aa9bb5"
+ },
+ {
   "interaction_id": "cdd1cf039408",
   "source": "ORAI1",
   "target": "SARAF",
@@ -1686,15 +1702,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "activation",
   "directed": "true",
-  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42) | indirect: mitochondrial Ca2+ uptake -> mtDNA release into cytosol -> cGAS-STING",
-  "n_sources": "2",
-  "n_pubs": "2",
+  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42) | indirect: mitochondrial Ca2+ uptake -> mtDNA release into cytosol -> cGAS-STING | indirect: ER Ca2+ release and blocked efflux -> Ca2+ overload -> mtDNA release -> cGAS-STING (CT26 cells)",
+  "n_sources": "3",
+  "n_pubs": "3",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING. | Mitochondrial Ca2+ uptake gates cGAS-STING activation by controlling mtDNA release: an indirect calcium-to-STING route distinct from the STIM1 brake.",
+  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING. | Mitochondrial Ca2+ uptake gates cGAS-STING activation by controlling mtDNA release: an indirect calcium-to-STING route distinct from the STIM1 brake. | Second, independent support for the indirect calcium-to-STING route: cytosolic Ca2+ overload damages mitochondria, releasing mtDNA that activates cGAS-STING in tumour cells.",
   "conflict_with": "",
-  "evidence_fingerprint": "a7abf3e41c59"
+  "evidence_fingerprint": "5fccaa63c821"
  },
  {
   "interaction_id": "e38b3abea8d0",
