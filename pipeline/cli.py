@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT / "pipeline"))
 
 from camap.build import build_dataset, read_raw  # noqa: E402
 from camap.corpus import build_queue, next_pending, set_statuses  # noqa: E402
+from camap.pubmed import publication_types  # noqa: E402
 from camap.databases import fetch_all  # noqa: E402
 from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
@@ -79,7 +80,7 @@ def main(argv=None):
         n = build_graph(args.csv, ROOT / "data" / "graph_data.js")
         print(f"{n} kept interactions -> data/graph_data.js")
     elif args.cmd == "corpus":
-        report = build_queue(load_config(), PubTator(CACHE), STATE)
+        report = build_queue(load_config(), PubTator(CACHE), STATE, pubtypes=publication_types)
         for text, count in report["per_query"].items():
             if count:
                 print(f"{count:6d}  {text}")
@@ -88,7 +89,8 @@ def main(argv=None):
         print(f"TOTAL unique articles: {report['total_articles']}  per tier: {report['per_tier']}")
     elif args.cmd == "queue" and args.qcmd == "next":
         for e in next_pending(STATE, args.n):
-            print(f"{e['pmid']}\t{e.get('pmcid') or '-'}\ttier {e['tier']}\t{e['year']}\t{e['title'][:90]}")
+            review = " [review]" if e.get("review") else ""
+            print(f"{e['pmid']}\t{e.get('pmcid') or '-'}\ttier {e['tier']}\t{e['year']}\t{e['title'][:90]}{review}")
     elif args.cmd == "queue" and args.qcmd == "set":
         try:
             set_statuses(STATE, args.pmids, args.status, note=args.note)

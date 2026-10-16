@@ -48,6 +48,17 @@ class FakeSearch:
                             for p, s in chunk]}
 
 
+class FakePubmed:
+    """pmids -> {pmid: [publication types]}; unknown PMIDs are plain journal articles."""
+    def __init__(self, types):
+        self.types = types
+        self.calls = []
+
+    def __call__(self, pmids):
+        self.calls.append(list(pmids))
+        return {p: self.types.get(p, ["Journal Article"]) for p in pmids}
+
+
 class CorpusCase(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
@@ -56,20 +67,43 @@ class CorpusCase(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(self.tmp)
 
-    def run_build(self, results=RESULTS):
+    def run_build(self, results=RESULTS, pubmed=None):
         http = FakeSearch(results)
-        report = build_queue(CONFIG, PubTator(self.tmp / "cache", http_get_json=http), self.state, page_size=PAGE)
+        report = build_queue(CONFIG, PubTator(self.tmp / "cache", http_get_json=http), self.state,
+                             page_size=PAGE, pubtypes=pubmed)
         return report, http
 
 
 class TestQueue(CorpusCase):
-    def test_queries_cover_anchors_and_level1_seed_pairs_with_calcium_when_only_sting_side(self):
+    def test_queries_cover_anchors_and_anchor_seed_pairs_with_calcium_when_only_sting_side(self):
         _, http = self.run_build()
         self.assertEqual(set(http.queries), set(RESULTS) | {
             "@GENE_STIM1 AND @GENE_CGAS",
-            "@GENE_ORAI1 AND @GENE_CGAS",
             "@GENE_STING1 AND @GENE_CGAS AND (calcium OR Ca2+)",
         })
+
+    def test_seed_pairs_without_an_anchor_are_not_queried(self):
+        _, http = self.run_build()
+        self.assertNotIn("@GENE_ORAI1 AND @GENE_CGAS", http.queries)
+
+    def test_pending_articles_out_of_corpus_are_dropped_but_processed_ones_kept(self):
+        self.run_build()
+        set_status(self.state, "40", "done")
+        fewer = dict(RESULTS, **{"@GENE_STIM1": [("30", 90.0)], "@GENE_STING1 AND (calcium OR Ca2+)": []})
+        self.run_build(fewer)
+        q = {e["pmid"]: e["status"] for e in load_queue(self.state)}
+        self.assertNotIn("50", q)
+        self.assertEqual(q["40"], "done")
+
+    def test_reviews_come_after_primary_research_within_a_tier(self):
+        pubmed = FakePubmed({"30": ["Journal Article", "Review"]})
+        self.run_build(pubmed=pubmed)
+        q = load_queue(self.state)
+        self.assertEqual([e["pmid"] for e in q], ["10", "20", "40", "50", "30"])
+        self.assertTrue(next(e for e in q if e["pmid"] == "30")["review"])
+        asked = len(pubmed.calls)
+        self.run_build(pubmed=pubmed)
+        self.assertEqual(len(pubmed.calls), asked, "publication types are cached in the queue")
 
     def test_priority_bridge_first_then_seed_pairs_then_anchors_by_score(self):
         self.run_build()

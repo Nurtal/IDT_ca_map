@@ -21,7 +21,8 @@ Then open `review/index.html` (double-click, no server). After review, export
 
 1. `git pull`, read `pipeline/state/PROGRESS.md` (status block + session notes).
 2. `python3 pipeline/cli.py queue next 50` — take them in that order (priority: STIM1×STING1,
-   then seed pairs, then each anchor alone).
+   then anchor × seed pairs, then each anchor alone; within a tier primary research before
+   reviews, which are flagged `[review]`).
 3. Fetch their texts: `python3 pipeline/cli.py fetch-texts --next 50` (or `--pmids 123 456`).
    Read a cached document with
    `PYTHONPATH=pipeline python3 -c "from camap.pubtator import PubTator; print(PubTator('pipeline/cache').document('123')['text'])"`.

@@ -3,9 +3,12 @@
 Corpus (consistent with the node inclusion rule — only interactions touching an
 anchor or linking two level-1 seeds can survive):
   tier 0  anchor × anchor            (STIM1 × STING1, the bridge)
-  tier 1  level-1 seed × level-1 seed
+  tier 1  anchor × other level-1 seed
   tier 2  each anchor alone          (its partners may be any calcium-related gene)
 A calcium clause is added whenever every gene of a query is on the STING side.
+Seed pairs without an anchor (e.g. ITPR × RYR) are left out: they describe the
+calcium toolkit itself, already covered by the interaction databases.
+Within a tier, reviews come after primary research (PubMed publication types).
 """
 import itertools
 import json
@@ -31,6 +34,8 @@ def corpus_queries(config):
     level1 = [s["symbol"] for s in config["seeds"] if s["level"] == 1]
     queries = []
     for a, b in itertools.combinations(level1, 2):
+        if a not in anchors and b not in anchors:
+            continue
         tier = 0 if a in anchors and b in anchors else 1
         queries.append((tier, query([a, b])))
     queries += [(2, query([a])) for a in anchors]
@@ -47,7 +52,11 @@ def search_all(pubtator, text, page_size):
         page += 1
 
 
-def build_queue(config, pubtator, state_dir, page_size=1000):
+REVIEW_TYPES = {"Review", "Systematic Review", "Meta-Analysis"}
+
+
+def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
+    """pubtypes: callable pmids -> {pmid: [PubMed publication types]}, used to rank reviews last."""
     state_dir = Path(state_dir)
     existing = {e["pmid"]: e for e in load_queue(state_dir)}
     entries, per_query = {}, {}
@@ -65,12 +74,19 @@ def build_queue(config, pubtator, state_dir, page_size=1000):
             e["score"] = max(e["score"], float(h.get("score") or 0))
 
     for pmid, old in existing.items():
+        if pmid not in entries and old.get("status", "pending") == "pending":
+            continue  # no longer in the corpus and never processed
         e = entries.setdefault(pmid, old)
-        e["status"] = old.get("status", "pending")
-        if old.get("note"):
-            e["note"] = old["note"]
+        for key in ("status", "note", "review"):
+            if key in old:
+                e[key] = old[key]
     for e in entries.values():
         e.setdefault("status", "pending")
+    if pubtypes:
+        missing = [p for p, e in entries.items() if "review" not in e]
+        for i in range(0, len(missing), 200):
+            for pmid, types in pubtypes(missing[i:i + 200]).items():
+                entries[pmid]["review"] = bool(REVIEW_TYPES & set(types))
 
     save_queue(state_dir, entries.values())
     report = {"total_articles": len(entries), "per_query": per_query,
@@ -80,7 +96,7 @@ def build_queue(config, pubtator, state_dir, page_size=1000):
 
 
 def priority(e):
-    return (e["tier"], -len(e["queries"]), -e["score"], int(e["pmid"]))
+    return (e["tier"], bool(e.get("review")), -len(e["queries"]), -e["score"], int(e["pmid"]))
 
 
 def queue_path(state_dir):
