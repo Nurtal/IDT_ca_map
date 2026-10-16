@@ -1,4 +1,5 @@
 interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_human_evidence,calcium_evidence,justification,conflict_with,evidence_fingerprint
+02c0736c1642,STIMATE,STING1,physical_binding,false,interface mutation,1,1,0,false,GO,A TMEM110(STIMATE)–STING interface exists and its mutation deregulates type I IFN: direct contact between a SOCE regulator and STING.,,52e6bfbf31fa
 02c595fbc579,PAK1,STIM1,phosphorylation,true,up-regulates activity phosphorylation,1,0,1,true,GO,,,1fddde45ab6a
 0bd7ba0ddab6,PRKAA1,STIM1,phosphorylation,true,down-regulates activity phosphorylation Ser257,1,0,1,false,both,,,b32a90985c77
 0cc849b468ad,ATP2A2,CHEBI:29108,translocation/trafficking,true,up-regulates quantity relocalization,1,0,1,true,both,,,a3f8a6ab2f8c
@@ -8,6 +9,7 @@ interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_h
 117c4ab707df,PRKACA,ITPR1,inhibition,true,"OmniPath sources: CA1, Cui2007, HPRD, HPRD_KEA, HPRD_MIMP, KEA, MIMP, PhosphoPoint, PhosphoSite_MIMP, ProtMapper, SIGNOR, SIGNOR_ProtMapper, Wang, hprd_ProtMapper, phosphoELM_KEA, phosphoELM_MIMP",1,0,1,true,GO,,9f1697689258,bbab4c9b6550
 1276c87c561f,IRF3,STING1,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,,,,7a20db19f4c3
 136511f772ea,CALM1,IKBKE,physical_binding,false,tandem affinity purification | anti bait coimmunoprecipitation,2,0,2,true,GO,,,aff2ed8c6fe7
+13c75853b18b,CHEBI:29108,STING1,unknown_regulation,true,ER Ca2+ lowering by HRV 2B frees STING from STIM1,1,1,0,true,text,ER Ca2+ depletion (HRV 2B viroporin) releases STING from STIM1: store Ca2+ gates STING trafficking.,,6658cb899c28
 19fff2995b55,TBK1,IRF3,phosphorylation,true,up-regulates activity phosphorylation | up-regulates activity phosphorylation Ser385 | up-regulates activity phosphorylation Ser386 | up-regulates activity phosphorylation Ser396 | up-regulates activity phosphorylation Ser398 | up-regulates activity phosphorylation Ser402 | up-regulates activity phosphorylation Ser405 | up-regulates activity phosphorylation Thr404,9,0,9,true,,,,8320aadac57f
 1b9f840b84de,ITPR3,STIM2,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,GO,,,52fa5fb16566
 1c8465ac13d8,PRKACA,ORAI1,activation,true,"OmniPath sources: PhosphoSite, PhosphoSite_ProtMapper, ProtMapper",1,0,1,true,GO,,,9087437a0eb1
@@ -16,6 +18,7 @@ interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_h
 2236c60356ac,PRKACA,RYR1,phosphorylation,true,up-regulates activity phosphorylation Ser2843,1,0,1,false,both,,,987fcb51cfd4
 290e3af4bcd4,SARAF,STAT3,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,GO,,,05afc94bbd87
 2a07cb336c23,IRF3,TBK1,physical_binding,false,anti tag coimmunoprecipitation,3,0,3,true,,,,f6c7d1c99cc5
+2b875be9dbb7,TMEM203,STING1,activation,true,promotes STING translocation to endo-lysosomes,1,1,0,false,text,TMEM203 promotes STING translocation to endo-lysosomes and TBK1/IRF3 activation; relevant to SLE.,,656de8a0370e
 2d5ab0fed0fc,CALM1,TBK1,physical_binding,false,tandem affinity purification,1,0,1,true,GO,,,62f592a82883
 2e6a6c83a3cc,CALM1,EGFR,physical_binding,false,anti bait coimmunoprecipitation | ubiquitin reconstruction | affinity chromatography technology | proximity-dependent biotin identification,6,0,6,true,GO,,,2a77d2769083
 2e91fcd69170,SEC61A1,STING1,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,GO,,,379313e11f25
@@ -31,6 +34,7 @@ interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_h
 479a0e819ac3,CDK1,STIM1,phosphorylation,true,down-regulates phosphorylation Ser668,1,0,1,true,both,,,ddd17ce0a487
 48fada1274f9,EGFR,IKBKE,activation,true,"OmniPath sources: PhosphoSite, PhosphoSite_ProtMapper, PhosphoSite_noref, ProtMapper, REACH_ProtMapper, RLIMS-P_ProtMapper, SIGNOR, Sparser_ProtMapper",1,0,1,true,,,,46503d1910d7
 491bbd785519,ORAI1,ORAI3,physical_binding,false,anti bait coimmunoprecipitation | confocal microscopy,3,0,3,true,GO,,,8ec893d0a1dc
+4a4405aa79b2,STIM1,TMEM203,inhibition,true,competition for STING binding (luciferase complementation),1,1,0,false,GO,STIM1 and TMEM203 compete for STING binding; STIM1 disrupts the activating TMEM203–STING complex.,,d6d4547b29b3
 4cdd592913f6,PRKAG2,STIM1,phosphorylation,true,down-regulates activity phosphorylation Ser257,1,0,1,false,both,,,a6d33b7fd249
 4ef9c24441a2,STIM1,TRPC1,activation,true,"OmniPath sources: HINT, IntAct, TRIP",1,0,1,true,GO,,,45de4e5c0a0c
 503431d86b30,IKBKE,IRF3,activation,true,"OmniPath sources: BEL-Large-Corpus_ProtMapper, Cui2007, HINT, HPRD, InnateDB, KEA, Macrophage, PhosphoPoint, PhosphoSite_KEA, PhosphoSite_ProtMapper, ProtMapper, REACH_ProtMapper, SIGNOR, SIGNOR_ProtMapper, SPIKE, SPIKE_LC, Sparser_ProtMapper, Wang, iPTMnet, phosphoELM, phosphoELM_KEA",1,0,1,true,,,,cf4be5878599
@@ -40,6 +44,7 @@ interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_h
 654e0b8e61e0,PTK2B,STIM1,unknown_regulation,true,"OmniPath sources: PhosphoSite, PhosphoSite_ProtMapper, ProtMapper, REACH_ProtMapper, RLIMS-P_ProtMapper, Sparser_ProtMapper",1,0,1,true,both,,,779961c0a966
 6755b8377afb,CALM1,TRPC1,inhibition,true,OmniPath sources: TRIP,1,0,1,true,GO,,,26f8ba3fcf6a
 67ad564897f3,CALM1,INSR,unknown_regulation,true,"OmniPath sources: CellTalkDB, Fantom5_LRdb, HPRD, HPRD_LRdb, LRdb, iTALK",1,0,1,true,GO,,,7fd716dd41e2
+67b3b8a00e7b,STIM1,TMEM203,physical_binding,false,,1,1,0,false,GO,STIM1 binds TMEM203 as well as STING: a three-way competition at the ER.,,c7afc8584deb
 69c70a8b9163,PRKAA1,STIM2,physical_binding,false,anti tag coimmunoprecipitation,3,0,3,true,GO,,,23015b3fb9d8
 69e04f7e297f,CALM1,ITPR1,physical_binding,false,affinity chromatography technology,1,0,1,false,GO,,,8e1fe10e6f21
 6eaa5edba8bc,PRKAB1,STIM2,physical_binding,false,anti tag coimmunoprecipitation,3,0,3,true,GO,,,753eebb5f4bd
@@ -61,16 +66,19 @@ interaction_id,source,target,type,directed,mechanism,n_sources,n_pubs,n_db,has_h
 95f8a341cd10,CALM1,ITPR1,activation,true,"OmniPath sources: CA1, Cui2007, Wang",1,0,1,true,GO,,a84be8ddc723,f914fc247e75
 97ffc40e214a,CALM1,PDGFRA,physical_binding,false,affinity chromatography technology | proximity-dependent biotin identification,2,0,2,true,GO,,,699b208e3df2
 9aff341adec6,SARAF,STIM1,physical_binding,false,anti tag coimmunoprecipitation | fluorescence microscopy,2,0,2,true,GO,,,c533aed5e854
+9bc67609c699,STING1,TMEM203,physical_binding,false,,1,1,0,false,,"TMEM203, an IP3R-interacting regulator of ER Ca2+, binds STING and drives its signalling.",,7567676d61db
 9e2581918be1,ATP2A2,CDK1,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,GO,,,9c362e1cbd60
 9f1697689258,PRKACA,ITPR1,activation,true,"OmniPath sources: CA1, Cui2007, HPRD, HPRD_KEA, HPRD_MIMP, KEA, MIMP, PhosphoPoint, PhosphoSite_MIMP, ProtMapper, SIGNOR, SIGNOR_ProtMapper, Wang, hprd_ProtMapper, phosphoELM_KEA, phosphoELM_MIMP",1,0,1,true,GO,,117c4ab707df,8060e1dc5cd9
 a045d5c21000,ITPR3,STAT3,physical_binding,false,anti bait coimmunoprecipitation | anti tag coimmunoprecipitation,10,0,10,true,both,,,9472e55488c9
 a0a38e55417a,PRKAB1,STIM1,phosphorylation,true,down-regulates activity phosphorylation Ser257,1,0,1,false,both,,,e3fab00030fc
+a0e77231ef15,STING1,CHEBI:29108,Ca2+_flux,true,mitochondrial Ca2+ uptake at MERCs,1,1,0,false,text,"STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis.",,16c897c479a3
 a84be8ddc723,CALM1,ITPR1,inhibition,true,"OmniPath sources: CA1, Cui2007, Wang",1,0,1,true,GO,,95f8a341cd10,bb9cfee14df2
 aa1574b3f313,STIM1,STING1,translocation/trafficking,true,ER retention; STIM1 loss accelerates STING exit to the ERGIC after cGAMP,1,1,0,false,GO,"Mechanism of the bridge: STIM1 acts as an ER retention factor controlling STING trafficking, the rate-limiting step of STING activation.",,d78101c37aee
 abbb8844f4df,PRKAG2,STIM1,inhibition,true,"OmniPath sources: PhosphoSite_ProtMapper, ProtMapper, SIGNOR",1,0,1,true,GO,,,b4b90058e523
 ad6369e99280,STING1,TBK1,physical_binding,false,anti tag coimmunoprecipitation,2,0,2,true,,,,b7a42aaa5d17
 b044c769f5b6,PRKAA1,STIM1,inhibition,true,"OmniPath sources: PhosphoSite, PhosphoSite_ProtMapper, ProtMapper, SIGNOR",1,0,1,true,GO,,,605df4670b71
 b31ce05e9dc0,EGFR,IKBKE,physical_binding,false,bioluminescence resonance energy transfer,1,0,1,true,,,,7f132f60f141
+b458bf8734cc,STING1,STIMATE,expression_regulation_down,true,,1,1,0,false,GO,"STING restrains expression of the SOCE regulator TMEM110/STIMATE, a feedback from DNA sensing onto a calcium-handling ER protein.",,5ab6dd8268a5
 ba1837ec77ca,PRKAG2,STIM2,physical_binding,false,anti tag coimmunoprecipitation,3,0,3,true,GO,,,f14d339bb8c6
 bbfe9c06bd7f,PRKAB1,STIM1,inhibition,true,"OmniPath sources: PhosphoSite_ProtMapper, PhosphoSite_noref, ProtMapper, SIGNOR",1,0,1,true,GO,,,7e5f58c23602
 bf5c53ce557a,CALM1,PDGFRB,physical_binding,false,affinity chromatography technology,1,0,1,true,GO,,,1944a6d167b1
@@ -82,8 +90,9 @@ cdd1cf039408,ORAI1,SARAF,physical_binding,false,fluorescence microscopy | fluore
 ce43ab90b03d,EGFR,STIM1,physical_binding,false,proximity-dependent biotin identification,1,0,1,true,GO,,,fa2aa85225fa
 d4c2f9cbecf2,IKBKE,IRF3,phosphorylation,true,up-regulates activity phosphorylation Ser385 | up-regulates activity phosphorylation Ser386 | up-regulates activity phosphorylation Ser396 | up-regulates activity phosphorylation Ser398 | up-regulates activity phosphorylation Ser402 | up-regulates activity phosphorylation Ser405 | up-regulates activity phosphorylation Thr404,7,0,7,false,,,,d08209c771aa
 d82408bef80f,STIM1,STING1,inhibition,true,loss of STIM1 causes spontaneous STING activation at rest | dose-dependent suppression of cGAMP-induced IFN-beta reporter,2,2,0,true,both,"Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants.",,83456d412239
-ddf7f926df8c,STIM1,STING1,physical_binding,false,co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD),1,1,0,true,GO,"Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",,88d306e0116b
+ddf7f926df8c,STIM1,STING1,physical_binding,false,FRET in BEAS-2B cells | co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD),2,2,0,true,GO,"Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",,5f58ce9a6d1c
 e0cde0276d5b,PTK2B,TBK1,phosphorylation,true,up-regulates activity phosphorylation Tyr591,1,0,1,true,GO,,,bb005ccad64b
+e27616096e06,CHEBI:29108,STING1,activation,true,"IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42)",1,1,0,true,text,"Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING.",,08d0e0f0c72f
 e38b3abea8d0,STIM1,TBK1,inhibition,true,"indirect, via STING; increased p-TBK1 in STIM1-deficient cells",1,1,0,true,GO,Shows the STIM1 brake propagates to the STING kinase TBK1 in human monocytic cells; indirect (through STING).,,33af77dadacf
 e45f3e56be3d,PDGFRB,STIM1,physical_binding,false,proximity-dependent biotin identification,1,0,1,true,GO,,,f9619c2e61a6
 e6bd5a7412fe,STING1,UBR3,physical_binding,false,anti tag coimmunoprecipitation,1,0,1,true,GO,,,5953d12bf1b4

@@ -1,6 +1,22 @@
 window.CAMAP = window.CAMAP || {};
 window.CAMAP.interactions = [
  {
+  "interaction_id": "02c0736c1642",
+  "source": "STIMATE",
+  "target": "STING1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "interface mutation",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "A TMEM110(STIMATE)–STING interface exists and its mutation deregulates type I IFN: direct contact between a SOCE regulator and STING.",
+  "conflict_with": "",
+  "evidence_fingerprint": "52e6bfbf31fa"
+ },
+ {
   "interaction_id": "02c595fbc579",
   "source": "PAK1",
   "target": "STIM1",
@@ -145,6 +161,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "aff2ed8c6fe7"
  },
  {
+  "interaction_id": "13c75853b18b",
+  "source": "CHEBI:29108",
+  "target": "STING1",
+  "type": "unknown_regulation",
+  "directed": "true",
+  "mechanism": "ER Ca2+ lowering by HRV 2B frees STING from STIM1",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "ER Ca2+ depletion (HRV 2B viroporin) releases STING from STIM1: store Ca2+ gates STING trafficking.",
+  "conflict_with": "",
+  "evidence_fingerprint": "6658cb899c28"
+ },
+ {
   "interaction_id": "19fff2995b55",
   "source": "TBK1",
   "target": "IRF3",
@@ -271,6 +303,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f6c7d1c99cc5"
+ },
+ {
+  "interaction_id": "2b875be9dbb7",
+  "source": "TMEM203",
+  "target": "STING1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "promotes STING translocation to endo-lysosomes",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "text",
+  "justification": "TMEM203 promotes STING translocation to endo-lysosomes and TBK1/IRF3 activation; relevant to SLE.",
+  "conflict_with": "",
+  "evidence_fingerprint": "656de8a0370e"
  },
  {
   "interaction_id": "2d5ab0fed0fc",
@@ -513,6 +561,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "8ec893d0a1dc"
  },
  {
+  "interaction_id": "4a4405aa79b2",
+  "source": "STIM1",
+  "target": "TMEM203",
+  "type": "inhibition",
+  "directed": "true",
+  "mechanism": "competition for STING binding (luciferase complementation)",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "STIM1 and TMEM203 compete for STING binding; STIM1 disrupts the activating TMEM203–STING complex.",
+  "conflict_with": "",
+  "evidence_fingerprint": "d6d4547b29b3"
+ },
+ {
   "interaction_id": "4cdd592913f6",
   "source": "PRKAG2",
   "target": "STIM1",
@@ -655,6 +719,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7fd716dd41e2"
+ },
+ {
+  "interaction_id": "67b3b8a00e7b",
+  "source": "STIM1",
+  "target": "TMEM203",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "STIM1 binds TMEM203 as well as STING: a three-way competition at the ER.",
+  "conflict_with": "",
+  "evidence_fingerprint": "c7afc8584deb"
  },
  {
   "interaction_id": "69c70a8b9163",
@@ -993,6 +1073,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "c533aed5e854"
  },
  {
+  "interaction_id": "9bc67609c699",
+  "source": "STING1",
+  "target": "TMEM203",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "",
+  "justification": "TMEM203, an IP3R-interacting regulator of ER Ca2+, binds STING and drives its signalling.",
+  "conflict_with": "",
+  "evidence_fingerprint": "7567676d61db"
+ },
+ {
   "interaction_id": "9e2581918be1",
   "source": "ATP2A2",
   "target": "CDK1",
@@ -1055,6 +1151,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "e3fab00030fc"
+ },
+ {
+  "interaction_id": "a0e77231ef15",
+  "source": "STING1",
+  "target": "CHEBI:29108",
+  "type": "Ca2+_flux",
+  "directed": "true",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "text",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis.",
+  "conflict_with": "",
+  "evidence_fingerprint": "16c897c479a3"
  },
  {
   "interaction_id": "a84be8ddc723",
@@ -1151,6 +1263,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7f132f60f141"
+ },
+ {
+  "interaction_id": "b458bf8734cc",
+  "source": "STING1",
+  "target": "STIMATE",
+  "type": "expression_regulation_down",
+  "directed": "true",
+  "mechanism": "",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "STING restrains expression of the SOCE regulator TMEM110/STIMATE, a feedback from DNA sensing onto a calcium-handling ER protein.",
+  "conflict_with": "",
+  "evidence_fingerprint": "5ab6dd8268a5"
  },
  {
   "interaction_id": "ba1837ec77ca",
@@ -1334,15 +1462,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "physical_binding",
   "directed": "false",
-  "mechanism": "co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD)",
-  "n_sources": "1",
-  "n_pubs": "1",
+  "mechanism": "FRET in BEAS-2B cells | co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD)",
+  "n_sources": "2",
+  "n_pubs": "2",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "GO",
-  "justification": "Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",
+  "justification": "Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",
   "conflict_with": "",
-  "evidence_fingerprint": "88d306e0116b"
+  "evidence_fingerprint": "5f58ce9a6d1c"
  },
  {
   "interaction_id": "e0cde0276d5b",
@@ -1359,6 +1487,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "bb005ccad64b"
+ },
+ {
+  "interaction_id": "e27616096e06",
+  "source": "CHEBI:29108",
+  "target": "STING1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "IP3R-dependent ER Ca2+ depletion / cytosolic Ca2+ overload (SH-SY5Y, Abeta42)",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING.",
+  "conflict_with": "",
+  "evidence_fingerprint": "08d0e0f0c72f"
  },
  {
   "interaction_id": "e38b3abea8d0",

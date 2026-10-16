@@ -353,6 +353,17 @@ window.CAMAP.nodes = [
   "function_summary": "Plays a role in mediating store-operated Ca(2+) entry (SOCE), a Ca(2+) influx following depletion of intracellular Ca(2+) stores. Functions as a highly sensitive Ca(2+) sensor in the endoplasmic reticulum which activates both store-operated and store-independent Ca(2+)-influx. Regulates basal cytosolic and endoplasmic reticulum Ca(2+) concentrations. Upon mild variations of the endoplasmic reticulum Ca(2+) concentration, translocates from the endoplasmic reticulum to the plasma membrane where it probably activates the Ca(2+) release-activated Ca(2+) (CRAC) channels ORAI1, ORAI2 and ORAI3. May inhibit STIM1-mediated Ca(2+) influx"
  },
  {
+  "id": "STIMATE",
+  "symbol": "STIMATE",
+  "name": "STIM activating enhancer",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "true",
+  "uniprot": "Q86TL2",
+  "synonyms": "TMEM110; MGC52022",
+  "function_summary": "Acts as a regulator of store-operated Ca(2+) entry (SOCE) at junctional sites that connect the endoplasmic reticulum (ER) and plasma membrane (PM), called ER-plasma membrane (ER-PM) junction or cortical ER. SOCE is a Ca(2+) influx following depletion of intracellular Ca(2+) stores. Acts by interacting with STIM1, promoting STIM1 conformational switch. Involved in STIM1 relocalization to ER-PM junctions. Contributes to the maintenance and reorganization of store-dependent ER-PM junctions"
+ },
+ {
   "id": "STING1",
   "symbol": "STING1",
   "name": "stimulator of interferon response cGAMP interactor 1",
@@ -373,6 +384,17 @@ window.CAMAP.nodes = [
   "uniprot": "Q9UHD2",
   "synonyms": "NAK",
   "function_summary": "Serine/threonine kinase that plays an essential role in regulating inflammatory responses to foreign agents. Following activation of toll-like receptors by viral or bacterial components, associates with TRAF3 and TANK and phosphorylates interferon regulatory factors (IRFs) IRF3 and IRF7 as well as DDX3X. This activity allows subsequent homodimerization and nuclear translocation of the IRFs leading to transcriptional activation of pro-inflammatory and antiviral genes including IFNA and IFNB. In order to establish such an antiviral state, TBK1 form several different complexes whose composition depends on the type of cell and cellular stimuli. Plays a key role in IRF3 activation: acts by first phosphorylating innate adapter proteins MAVS, STING1 and TICAM1 on their pLxIS motif, leading to recruitment of IRF3, thereby licensing IRF3 for phosphorylation by TBK1. Phosphorylated IRF3 dissociates from the adapter proteins, dimerizes, and then enters the nucleus to induce expression of interferons. Thus, several scaffolding molecules including FADD, TRADD, MAVS, AZI2, TANK or TBKBP1/SINTBAD can be recruited to the TBK1-containing-complexes. Under particular conditions, functions as a NF-kappa-B effector by phosphorylating NF-kappa-B inhibitor alpha/NFKBIA, IKBKB or RELA to translocate NF-Kappa-B to the nucleus. Restricts bacterial proliferation by phosphorylating the autophagy receptor OPTN/Optineurin on 'Ser-177', thus enhancing LC3 binding affinity and antibacterial autophagy. Phosphorylates SMCR8 component of the C9orf72-SMCR8 complex, promoting autophagosome maturation. Phosphorylates ATG8 proteins MAP1LC3C and GABARAPL2, thereby preventing their delipidation and premature removal from nascent autophagosomes. Seems to play a role in energy balance regulation by sustaining a state of chronic, low-grade inflammation in obesity, which leads to a negative impact on insulin sensitivity (By similarity). Attenuates retroviral budding by phosphorylating the endosomal sorting complex required for transport-I (ESCRT-I) subunit VPS37C. Phosphorylates Borna disease virus (BDV) P protein. Plays an essential role in the TLR3- and IFN-dependent control of herpes virus HSV-1 and HSV-2 infections in the central nervous system. Acts both as a positive and negative regulator of the mTORC1 complex, depending on the context: activates mTORC1 in response to growth factors by catalyzing phosphorylation of MTOR, while it limits the mTORC1 complex by promoting phosphorylation of RPTOR. Acts as a positive regulator of the mTORC2 complex by mediating phosphorylation of MTOR, leading to increased phosphorylation and activation of AKT1 (By similarity). Phosphorylates and activates AKT1. Involved in the regulation of TNF-induced RIPK1-mediated cell death, probably acting via CYLD phosphorylation that in turn controls RIPK1 ubiquitination status. Also participates in the differentiation of T follicular regulatory cells together with the receptor ICOS"
+ },
+ {
+  "id": "TMEM203",
+  "symbol": "TMEM203",
+  "name": "transmembrane protein 203",
+  "type": "gene",
+  "module": "bridge",
+  "is_seed": "false",
+  "uniprot": "Q969S6",
+  "synonyms": "MGC14327; HBEBP1",
+  "function_summary": ""
  },
  {
   "id": "TRPC1",

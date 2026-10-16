@@ -144,6 +144,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "18135971b5a9",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "pmc",
+  "ref": "PMC8931115",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Triantafilou M",
+  "sentence": "The data confirmed that STIM1 and STING interacted in uninfected cells (Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "1d4ed369b136",
   "interaction_id": "117c4ab707df",
   "source_kind": "omnipath",
@@ -339,6 +352,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "3a35132a0b97",
+  "interaction_id": "02c0736c1642",
+  "source_kind": "pubmed",
+  "ref": "PMID:41540067",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Feng Z",
+  "sentence": "We further find that TMEM110 expression is restrained by the nucleic acid sensor STING under basal conditions, and that a naturally occurring interface mutation between TMEM110 and STING causes defective lysosomal DNA disposal and aberrant type I interferon activity.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
+ },
+ {
   "evidence_id": "3bece6a120d4",
   "interaction_id": "d4c2f9cbecf2",
   "source_kind": "signor",
@@ -363,6 +389,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "3e5149bd2f20",
+  "interaction_id": "2b875be9dbb7",
+  "source_kind": "pmc",
+  "ref": "PMC6697806",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Li Y",
+  "sentence": "Here, we demonstrate that TMEM203, a protein that was recently shown to be endosomal and interacts with the pleiotropic inositol phosphate signaling pathway protein IP3R, is associated with SLE disease activity, forms a functional and ligand-dependent complex with STING, and promotes its translocation to endo-lysosomes.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
  },
  {
   "evidence_id": "404993fa19e2",
@@ -911,6 +950,19 @@ window.CAMAP.evidence = [
   "species_context": "mouse"
  },
  {
+  "evidence_id": "709c0eed1466",
+  "interaction_id": "e27616096e06",
+  "source_kind": "pmc",
+  "ref": "PMC12273325",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Li B",
+  "sentence": "These findings suggest that ADRA1 drives STING activation via IP3R-mediated ER Ca2+ depletion and subsequent cytoplasmic Ca2+ dyshomeostasis.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "72039da8cf9f",
   "interaction_id": "ef02b46551ec",
   "source_kind": "intact",
@@ -922,6 +974,19 @@ window.CAMAP.evidence = [
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "723370dda532",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC12334783",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Zou S",
+  "sentence": "Inhibition of mitochondrial calcium uptake due to STING deficiency mitigates the aggregation of N-GSDMD and Drp1 on the mitochondrial membrane.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
  },
  {
   "evidence_id": "724128a680b6",
@@ -1026,6 +1091,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "7e247976196f",
+  "interaction_id": "13c75853b18b",
+  "source_kind": "pmc",
+  "ref": "PMC8931115",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Triantafilou M",
+  "sentence": "This data suggests that upon HRV infection, STING is released from STIM1 due to alterations in calcium homeostasis, which drives the binding of STING to PI4KIIIbeta and PI4P and recruitment to the RO.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "80fb5d6deb52",
@@ -1613,6 +1691,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "bca3c1474f1f",
+  "interaction_id": "b458bf8734cc",
+  "source_kind": "pubmed",
+  "ref": "PMID:41540067",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Feng Z",
+  "sentence": "We further find that TMEM110 expression is restrained by the nucleic acid sensor STING under basal conditions, and that a naturally occurring interface mutation between TMEM110 and STING causes defective lysosomal DNA disposal and aberrant type I interferon activity.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
+ },
+ {
   "evidence_id": "bfa1cb061aac",
   "interaction_id": "6eaa5edba8bc",
   "source_kind": "intact",
@@ -1782,6 +1873,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "d3204c8237b0",
+  "interaction_id": "9bc67609c699",
+  "source_kind": "pmc",
+  "ref": "PMC6697806",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Li Y",
+  "sentence": "We show that TMEM203 interacts, functionally cooperates, and comigrates with STING following cell stimulation, which in turn leads to the activation of the kinase TBK1, and the IRF3 transcription factor.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
+ },
+ {
   "evidence_id": "d3656a5253a4",
   "interaction_id": "38dd54b7ca7e",
   "source_kind": "intact",
@@ -1808,6 +1912,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "d46195ac4264",
+  "interaction_id": "4a4405aa79b2",
+  "source_kind": "pmc",
+  "ref": "PMC6697806",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Li Y",
+  "sentence": "2I) and that STIM1 was able to disrupt the TMEM203/STING complex in a dose-dependent manner (Fig.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
+ },
+ {
   "evidence_id": "d7cfd0c7e11a",
   "interaction_id": "d4c2f9cbecf2",
   "source_kind": "signor",
@@ -1819,6 +1936,19 @@ window.CAMAP.evidence = [
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
   "species_context": "other"
+ },
+ {
+  "evidence_id": "d80acc72da68",
+  "interaction_id": "67b3b8a00e7b",
+  "source_kind": "pmc",
+  "ref": "PMC6697806",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Li Y",
+  "sentence": "TMEM203 interacts with STING and STIM1.",
+  "sentence_verified": "true",
+  "species_context": "unknown"
  },
  {
   "evidence_id": "d824987373d6",
