@@ -27,6 +27,19 @@ window.CAMAP.evidence = [
   "species_context": "unknown"
  },
  {
+  "evidence_id": "01fc1308dce5",
+  "interaction_id": "15a957235e38",
+  "source_kind": "pmc",
+  "ref": "PMC9974760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Li S",
+  "sentence": "While cGAS mediates cytosDNA sensing and cGAMP production to promote TRPV2-mediated Ca2+ release from the ER after replication stress, STING normally represses TRPV2 activity to prevent unscheduled activation of the pathway in the absence of replication stress.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "0399c7543e64",
   "interaction_id": "19fff2995b55",
   "source_kind": "signor",
@@ -584,6 +597,19 @@ window.CAMAP.evidence = [
   "sentence": "In this study, we aimed to characterize whether PAK1 modulates calcium mobilization and STIM1 localization.",
   "sentence_verified": "true",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "4a453192957a",
+  "interaction_id": "90579dc1d4e4",
+  "source_kind": "pmc",
+  "ref": "PMC9974760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Li S",
+  "sentence": "Together, these results strongly suggest that following cGAS activation, the binding of cGAMP to STING causes TRPV2 derepression and Ca2+ release to preserve chromosome stability after replication stress.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "4ab77e165713",
@@ -1262,6 +1288,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "8474abb7273f",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "pmc",
+  "ref": "PMC11512225",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Triantafilou K",
+  "sentence": "The pharmacological inhibition of STING during EV-D68 infection, using STING antagonist GSK'783, demonstrated that STING did not associate with PI4P but instead remained in the ER and associated with STIM1 (Figure 4B), confirming that EV-D68 interferes with STING canonical trafficking upon infection.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "848a3894952b",
   "interaction_id": "77c96179aed4",
   "source_kind": "intact",
@@ -1624,6 +1663,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "a5bd0c918024",
+  "interaction_id": "d33522fa9187",
+  "source_kind": "pmc",
+  "ref": "PMC8109209",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Wu B",
+  "sentence": "Collectively, by stable expression of ACE2 and deletion of ORAI1/STIM1, we developed a system to examine the role of ORAI1/STIM1 in the host response to SARS-CoV-2 infection and identified the role of ORAI1 in Ca2+ homeostasis in these cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "a727bf1ce707",
@@ -2302,6 +2354,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "edee103c9559",
+  "interaction_id": "cd0a56e59255",
+  "source_kind": "pmc",
+  "ref": "PMC9974760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Li S",
+  "sentence": "While cGAS and its enzymatic product cGAMP are required for [Ca2+]i elevation after replication stress, STING normally associates with and represses TRPV2 to prevent unscheduled Ca2+ release in the absence of replication stress (Figures 4 and 5).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
+ },
+ {
   "evidence_id": "ee7ef2794888",
   "interaction_id": "92967bf5d87b",
   "source_kind": "omnipath",
@@ -2443,6 +2508,19 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "fcec322924cb",
+  "interaction_id": "897bd429684b",
+  "source_kind": "pmc",
+  "ref": "PMC9974760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Li S",
+  "sentence": "The subsequent binding of cGAMP to STING causes its dissociation from TRPV2, leading to TRPV2 derepression and Ca2+ release from the ER, which in turn activates the downstream signaling cascade to prevent fork degradation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells"
  },
  {
   "evidence_id": "fe8b09957d02",

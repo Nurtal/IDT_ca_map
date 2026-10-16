@@ -1,6 +1,7 @@
 evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sentence,sentence_verified,species_context
 0166417af98b,ef02b46551ec,intact,EBI-2291498,19249086,,2009,Park et al.,STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.,true,human
 01eda528a7c3,c1fbeeccdc9c,pmc,PMC6340781,,,2019,Srikanth S,"We activated STIM1 by treatment with thapsigargin that depletes the ER Ca2+ stores, and activated STING using its ligand, 2',3'-cGAMP.",true,unknown
+01fc1308dce5,15a957235e38,pmc,PMC9974760,,,2023,Li S,"While cGAS mediates cytosDNA sensing and cGAMP production to promote TRPV2-mediated Ca2+ release from the ER after replication stress, STING normally represses TRPV2 activity to prevent unscheduled activation of the pathway in the absence of replication stress.",true,in_vitro_human_cells
 0399c7543e64,19fff2995b55,signor,SIGNOR-260154,24622840,,,,"STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",false,human
 0406ba03db93,e6bd5a7412fe,intact,EBI-54841046,33961781,,2021,Huttlin et al.,,,human
 07e03d782bc2,5e2e47e2ab3b,omnipath,OmniPath:ITPR2>TRPC1,16870612,,,,,,human
@@ -44,6 +45,7 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 47ac1bc6d58f,b31ce05e9dc0,intact,EBI-63947992,35512704,,2022,Mo et al.,,,human
 47d3afb70b01,136511f772ea,intact,EBI-1075919,17353931,,2007,Ewing et al.,,,human
 49423ac2d3d3,40154542b559,omnipath,OmniPath:PAK1>STIM1,29780159,,,,"In this study, we aimed to characterize whether PAK1 modulates calcium mobilization and STIM1 localization.",true,human
+4a453192957a,90579dc1d4e4,pmc,PMC9974760,,,2023,Li S,"Together, these results strongly suggest that following cGAS activation, the binding of cGAMP to STING causes TRPV2 derepression and Ca2+ release to preserve chromosome stability after replication stress.",true,in_vitro_human_cells
 4ab77e165713,2e6a6c83a3cc,intact,EBI-1256982,14960328,,2004,Li et al.,,,human
 4ac6df50f1b3,f5862429a080,intact,EBI-32723092,35384245,,2022,Salokas et al.,,,human
 4bba158a9e27,19fff2995b55,signor,SIGNOR-178411,18440553,,,,"Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",false,other
@@ -96,6 +98,7 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 8179dab98367,72780d5c603a,omnipath,OmniPath:IKBKE>TBK1,16306936,,,,,,human
 819ea57a2119,9aff341adec6,intact,EBI-6127641,22464749,,2012,Palty et al.,,,human
 8323dfceb22e,1ea4204bd4f3,intact,EBI-29762103,35140242,,2022,Helka et al.,,,human
+8474abb7273f,ddf7f926df8c,pmc,PMC11512225,,,2024,Triantafilou K,"The pharmacological inhibition of STING during EV-D68 infection, using STING antagonist GSK'783, demonstrated that STING did not associate with PI4P but instead remained in the ER and associated with STIM1 (Figure 4B), confirming that EV-D68 interferes with STING canonical trafficking upon infection.",true,in_vitro_human_cells
 848a3894952b,77c96179aed4,intact,EBI-26075565,32814053,,2020,Haenig et al.,,,human
 85450aa2eff9,f9e32a51cb7d,intact,EBI-20200562,29251827,,2018,Shang et al.,,,human
 854de5047e9c,a045d5c21000,intact,EBI-64047385,30042492,,2019,Avalle et al.,"Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",true,human
@@ -124,6 +127,7 @@ evidence_id,interaction_id,source_kind,ref,cited_pmid,doi,year,first_author,sent
 9cb6b99665e8,d4c2f9cbecf2,signor,SIGNOR-178367,18440553,,,,"Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",false,other
 a50596687c5c,f9e32a51cb7d,intact,EBI-20200875,29251827,,2018,Shang et al.,,,human
 a550d9890ece,ba1837ec77ca,intact,EBI-54924571,33961781,,2021,Huttlin et al.,,,human
+a5bd0c918024,d33522fa9187,pmc,PMC8109209,,,2021,Wu B,"Collectively, by stable expression of ACE2 and deletion of ORAI1/STIM1, we developed a system to examine the role of ORAI1/STIM1 in the host response to SARS-CoV-2 infection and identified the role of ORAI1 in Ca2+ homeostasis in these cells.",true,in_vitro_human_cells
 a727bf1ce707,f9e32a51cb7d,intact,EBI-6116602,21903422,,2011,Li et al.,,,human
 ab691cd9fffa,4ef9c24441a2,omnipath,OmniPath:STIM1>TRPC1,23686296,,,,Co-immunoprecipitation analysis demonstrated an interaction of TRPC1 with STIM1 and/or Orai1.,true,human
 acaadebdabd0,2e6a6c83a3cc,intact,EBI-32717697,35384245,,2022,Salokas et al.,,,human
@@ -176,6 +180,7 @@ e48594575dfe,45bfb9c9aee6,intact,EBI-54684224,33961781,,2021,Huttlin et al.,,,hu
 e630f825c543,a045d5c21000,intact,EBI-64092135,30042492,,2019,Avalle et al.,"Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",true,human
 e846e6b9dc44,77c96179aed4,intact,EBI-26229704,32814053,,2020,Haenig et al.,,,human
 ecb9af751afc,3be11f02dad6,signor,SIGNOR-263136,18818105,,,,"MITA was phosphorylated by TBK1, which is required for MITA-mediated activation of IRF3. Our results suggest that MITA is a critical mediator of virus-triggered IRF3 activation and IFN expression and further demonstrate the importance of certain mitochondrial proteins in innate antiviral immunity.  Consistent with its inability to activate IRF-E, the mutation of S358 to alanine impaired the ability of MITA to interact with TBK1 and to enhance the interaction between TBK1 and IRF3",false,human
+edee103c9559,cd0a56e59255,pmc,PMC9974760,,,2023,Li S,"While cGAS and its enzymatic product cGAMP are required for [Ca2+]i elevation after replication stress, STING normally associates with and represses TRPV2 to prevent unscheduled Ca2+ release in the absence of replication stress (Figures 4 and 5).",true,in_vitro_human_cells
 ee7ef2794888,92967bf5d87b,omnipath,OmniPath:TBK1>IRF3,20628368,,,,"Consequently, this leads to the activation of TANK-binding kinase 1 (TBK1) and phosphorylation of interferon regulatory factor 3 (IRF3), both of which constitutively associate with cytosolic chaperone Hsp90.",true,human
 eea03e143497,ef02b46551ec,intact,EBI-2291572,19249086,,2009,Park et al.,STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.,true,human
 eee325c934f0,77c96179aed4,intact,EBI-25920763,32814053,,2020,Haenig et al.,,,human
@@ -187,5 +192,6 @@ f4bcf7b5b6a2,2fcdd5e57e71,omnipath,OmniPath:PTK2B>TBK1,37989995,,,,PTK2B promote
 f8ed8a3f6cf2,7005698f4342,signor,SIGNOR-279173,30520731,,,,"Similarly, STIM1 is phosphorylated on S88 by FAM20C both in vitro and in vivo.",true,human
 fac4cf951846,1276c87c561f,intact,EBI-25751145,24622840,,2014,Chen et al.,"We found that expression of the membrane-anchored PLpro domain (PLpro-TM) from SARS-CoV inhibits STING/TBK1/IKKepsilon-mediated activation of type I IFNs and disrupts the phosphorylation and dimerization of IRF3, which are activated by STING and TBK1.",true,human
 fc9aaa645958,69c70a8b9163,intact,EBI-54924571,33961781,,2021,Huttlin et al.,,,human
+fcec322924cb,897bd429684b,pmc,PMC9974760,,,2023,Li S,"The subsequent binding of cGAMP to STING causes its dissociation from TRPV2, leading to TRPV2 derepression and Ca2+ release from the ER, which in turn activates the downstream signaling cascade to prevent fork degradation.",true,in_vitro_human_cells
 fe8b09957d02,0d1e4cd38dfa,signor,SIGNOR-249996,12529267,,,,"IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",false,other
 ff6f6ca1fd54,1c8465ac13d8,omnipath,OmniPath:PRKACA>ORAI1,31652779,,,,,,human

@@ -408,6 +408,17 @@ window.CAMAP.nodes = [
   "function_summary": "Forms a receptor-activated non-selective calcium permeant cation channel. Forms a heteromeric ion channel with TRPC4 or TRPC5 that has reduced calcium permeability compared to the homomeric TRPC4 or TRPC5 channel. Also permeable to monovalent ions including sodium, lithium and cesium ions"
  },
  {
+  "id": "TRPV2",
+  "symbol": "TRPV2",
+  "name": "transient receptor potential cation channel subfamily V member 2",
+  "type": "gene",
+  "module": "sting",
+  "is_seed": "false",
+  "uniprot": "Q9Y5S1",
+  "synonyms": "VRL; VRL-1; VRL1",
+  "function_summary": ""
+ },
+ {
   "id": "UBQLN1",
   "symbol": "UBQLN1",
   "name": "ubiquilin 1",

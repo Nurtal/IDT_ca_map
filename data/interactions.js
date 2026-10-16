@@ -177,6 +177,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "852d9092a2ad"
  },
  {
+  "interaction_id": "15a957235e38",
+  "source": "STING1",
+  "target": "TRPV2",
+  "type": "inhibition",
+  "directed": "true",
+  "mechanism": "STING depletion alone elevates [Ca2+]i",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "Resting STING clamps TRPV2 shut, so STING loss raises cytosolic Ca2+: STING is a brake on ER Ca2+ release, mirroring STIM1 being a brake on STING.",
+  "conflict_with": "",
+  "evidence_fingerprint": "6e83ef793612"
+ },
+ {
   "interaction_id": "19fff2995b55",
   "source": "TBK1",
   "target": "IRF3",
@@ -945,6 +961,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "a646991faf41"
  },
  {
+  "interaction_id": "897bd429684b",
+  "source": "CHEBI:75947",
+  "target": "STING1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "cGAMP binding dissociates the STING-TRPV2 complex",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "cGAMP binding is the switch that releases TRPV2 from STING, converting DNA sensing into an ER Ca2+ release signal.",
+  "conflict_with": "",
+  "evidence_fingerprint": "c8751f72f880"
+ },
+ {
   "interaction_id": "89ec6a850605",
   "source": "CDK1",
   "target": "STIM1",
@@ -975,6 +1007,22 @@ window.CAMAP.interactions = [
   "justification": "Reciprocal arm of the bridge: STING restrains SOCE, so innate immune signalling feeds back on Ca2+ entry.",
   "conflict_with": "",
   "evidence_fingerprint": "5c5a08d0613f"
+ },
+ {
+  "interaction_id": "90579dc1d4e4",
+  "source": "TRPV2",
+  "target": "CHEBI:29108",
+  "type": "Ca2+_flux",
+  "directed": "true",
+  "mechanism": "ER Ca2+ release after hydroxyurea-induced replication stress",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "TRPV2 is the channel that carries the STING-gated ER Ca2+ release, feeding CaMKK2/AMPK and replication-fork protection.",
+  "conflict_with": "",
+  "evidence_fingerprint": "9e10352a787b"
  },
  {
   "interaction_id": "92967bf5d87b",
@@ -1425,6 +1473,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "77847cce1438"
  },
  {
+  "interaction_id": "cd0a56e59255",
+  "source": "STING1",
+  "target": "TRPV2",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "co-immunoprecipitation; STING(FTWAAS) is TRPV2-interaction deficient",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "STING directly binds the ER Ca2+ channel TRPV2: a second STING-calcium channel complex alongside STIM1, acting on the release side.",
+  "conflict_with": "",
+  "evidence_fingerprint": "1726269c88e2"
+ },
+ {
   "interaction_id": "cdd1cf039408",
   "source": "ORAI1",
   "target": "SARAF",
@@ -1455,6 +1519,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "fa2aa85225fa"
+ },
+ {
+  "interaction_id": "d33522fa9187",
+  "source": "ORAI1",
+  "target": "CHEBI:29108",
+  "type": "Ca2+_flux",
+  "directed": "true",
+  "mechanism": "ORAI1/STIM1 knockout HEK293-ACE2 cells; resting cytoplasmic Ca2+",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "true",
+  "calcium_evidence": "both",
+  "justification": "ORAI1 sets resting cytosolic Ca2+ and, through it, tonic type I IFN signalling and antiviral resistance: the SOCE pore feeding back on innate immunity.",
+  "conflict_with": "",
+  "evidence_fingerprint": "d776242a5ff9"
  },
  {
   "interaction_id": "d4c2f9cbecf2",
@@ -1494,15 +1574,15 @@ window.CAMAP.interactions = [
   "target": "STING1",
   "type": "physical_binding",
   "directed": "false",
-  "mechanism": "FRET in BEAS-2B cells | co-precipitation in THP1 macrophages | co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD)",
-  "n_sources": "3",
-  "n_pubs": "3",
+  "mechanism": "FRET in BEAS-2B cells | co-precipitation in THP1 macrophages | FRET in BEAS-2B cells; GSK'783 restores the STIM1-bound state | co-immunoprecipitation; TM-domain mediated (STIM1 aa 1-249 / STING NTD)",
+  "n_sources": "4",
+  "n_pubs": "4",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "GO",
-  "justification": "Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | The STIM1-STING complex in human THP1 macrophages is pharmacologically targetable: the ISD017 peptide locks STING onto STIM1. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",
+  "justification": "Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | The STIM1-STING complex in human THP1 macrophages is pharmacologically targetable: the ISD017 peptide locks STING onto STIM1. | FRET evidence that STING sits on STIM1 at rest and is pulled off it by EV-D68; a STING antagonist restores the STIM1-bound ER state. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains.",
   "conflict_with": "",
-  "evidence_fingerprint": "b5a34877fbf6"
+  "evidence_fingerprint": "93860396dff9"
  },
  {
   "interaction_id": "e015ffd32637",
