@@ -55,3 +55,21 @@ test("parseCsv handles quoted fields, escaped quotes, CRLF and multiline values"
   const rows = core.parseCsv('a,b\r\n"x, y","say ""hi""\nthere"\r\n1,\n');
   assert.deepEqual(rows, [{ a: "x, y", b: 'say "hi"\nthere' }, { a: "1", b: "" }]);
 });
+
+test("mouse-only filter hides interactions without human evidence", () => {
+  const items = [I("a"), I("b", { has_human_evidence: "false" })];
+  assert.deepEqual(core.applyFilters(items, { excludeMouseOnly: true }).map((i) => i.interaction_id), ["a"]);
+  assert.equal(core.applyFilters(items, {}).length, 2);
+});
+
+test("session skips filtered-out cards and counts only visible ones", () => {
+  const s = core.createSession({
+    interactions: [I("a", { has_human_evidence: "false" }), I("b")],
+    filters: { excludeMouseOnly: true },
+  });
+  assert.equal(s.current().interaction_id, "b");
+  assert.equal(s.counts().total, 1);
+  s.setFilters({});
+  assert.equal(s.current().interaction_id, "a");
+  assert.equal(s.counts().total, 2);
+});

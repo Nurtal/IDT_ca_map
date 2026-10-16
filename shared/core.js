@@ -50,14 +50,21 @@
     return lines.join("\r\n") + "\r\n";
   }
 
+  // ---------- filters ----------
+
+  function applyFilters(interactions, filters = {}) {
+    return interactions.filter((i) => !(filters.excludeMouseOnly && i.has_human_evidence === "false"));
+  }
+
   // ---------- review session ----------
 
-  function createSession({ interactions, reviews = {}, reviewer = "", now = () => new Date().toISOString() }) {
-    const state = { reviews: { ...reviews } };
+  function createSession({ interactions, reviews = {}, reviewer = "", filters = {}, now = () => new Date().toISOString() }) {
+    const state = { reviews: { ...reviews }, filters: { ...filters } };
     const isPending = (i) => !state.reviews[i.interaction_id];
+    const visible = () => applyFilters(interactions, state.filters);
 
     function queue() {
-      return interactions.filter(isPending);
+      return visible().filter(isPending);
     }
 
     return {
@@ -75,9 +82,13 @@
       reviews() {
         return state.reviews;
       },
+      setFilters(filters) {
+        state.filters = { ...filters };
+      },
       counts() {
-        const c = { total: interactions.length, reviewed: 0, remaining: 0, keep: 0, reject: 0, uncertain: 0 };
-        for (const i of interactions) {
+        const shown = visible();
+        const c = { total: shown.length, reviewed: 0, remaining: 0, keep: 0, reject: 0, uncertain: 0 };
+        for (const i of shown) {
           const r = state.reviews[i.interaction_id];
           if (r) { c.reviewed++; c[r.decision]++; } else c.remaining++;
         }
@@ -99,5 +110,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { parseCsv, toCsv, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { parseCsv, toCsv, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });

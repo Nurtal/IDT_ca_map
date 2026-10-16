@@ -67,3 +67,7 @@ blockquote.unverified { border-left-color: var(--uncertain); }
 .m-metabolite { border-color: #3fb950; color: #3fb950; }
 .tags { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
 .tag { font-size: .75rem; color: var(--muted); background: var(--panel-2); border-radius: 99px; padding: 3px 10px; }
+.toggle { display: flex; align-items: center; gap: 6px; font-size: .85rem; color: var(--muted); cursor: pointer; }
+.species { font-size: .75rem; color: var(--muted); margin-left: auto; }
+.s-mouse, .s-rat { color: var(--uncertain); }
+.warn-tag { color: var(--uncertain); }

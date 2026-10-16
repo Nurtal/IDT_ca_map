@@ -7,8 +7,8 @@ from pathlib import Path
 from .nodes import (DEFAULT_CONFIG, Annotations, Resolver, Universe, load_config, module_of,
                     select_nodes)
 from .pubtator import PubTator
-from .schema import (DATABASE_KINDS, EVIDENCE_COLUMNS, INTERACTION_COLUMNS, LINK_TYPES,
-                     LITERATURE_KINDS, NODE_COLUMNS)
+from .schema import (DATABASE_KINDS, EVIDENCE_COLUMNS, HUMAN_CONTEXTS, INTERACTION_COLUMNS,
+                     LINK_TYPES, LITERATURE_KINDS, NODE_COLUMNS, SPECIES_CONTEXTS)
 from .verify import sentence_in
 
 
@@ -88,6 +88,10 @@ def collect(records, resolver, universe, texts):
         add_unique(inter["_mechanisms"], r.get("mechanism", ""))
         add_unique(inter["_justifications"], r.get("justification", ""))
         inter["_refs"].add((r["source_kind"], r["ref"]))
+        species = r.get("species_context") or "unknown"
+        if species not in SPECIES_CONTEXTS:
+            raise ValueError(f"{r.get('_origin')}: unknown species_context {species!r}")
+        inter["_human"] = inter.get("_human", False) or species in HUMAN_CONTEXTS
         sentence = r.get("sentence", "")
         inter["_text_calcium"] |= universe.mentions_calcium(sentence)
         eid = short_hash(f"{iid}|{r['source_kind']}|{r['ref']}|{sentence}")
@@ -96,7 +100,7 @@ def collect(records, resolver, universe, texts):
             "ref": r["ref"], "doi": r.get("doi", ""), "year": r.get("year", ""),
             "first_author": r.get("first_author", ""), "sentence": sentence,
             "sentence_verified": sentence_status(r, texts),
-            "species_context": r.get("species_context", "unknown"),
+            "species_context": species,
         }
     return interactions, evidence
 
@@ -109,6 +113,7 @@ def finalize_interaction(inter, evidence, go_calcium):
     inter["n_sources"] = len(refs)
     inter["mechanism"] = " | ".join(inter.pop("_mechanisms"))
     inter["justification"] = " | ".join(inter.pop("_justifications"))
+    inter["has_human_evidence"] = "true" if inter.pop("_human") else "false"
     go = go_calcium(inter["source"]) or go_calcium(inter["target"])
     text = inter.pop("_text_calcium")
     inter["calcium_evidence"] = "both" if go and text else "GO" if go else "text" if text else ""

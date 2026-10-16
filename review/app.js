@@ -2,18 +2,23 @@
 (function () {
   "use strict";
   const STORAGE_KEY = "camap.reviews.v1";
+  const FILTER_KEY = "camap.filters.v1";
   const data = window.CAMAP || {};
   const interactions = data.interactions || [];
   const evidence = data.evidence || [];
   const nodesById = Object.fromEntries((data.nodes || []).map((n) => [n.id, n]));
   const evidenceByInteraction = groupBy(evidence, "interaction_id");
 
-  const session = CamapCore.createSession({ interactions, reviews: loadReviews() });
+  const session = CamapCore.createSession({ interactions, reviews: loadReviews(), filters: load(FILTER_KEY) });
 
   const $ = (id) => document.getElementById(id);
   const MODULES = {
     soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
     effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite",
+  };
+  const SPECIES = {
+    human: "🧍 human", in_vitro_human_cells: "🧫 human cells", mouse: "🐭 mouse", rat: "🐀 rat",
+    other: "other species", unknown: "species ?",
   };
   const CALCIUM = { GO: "GO annotation", text: "mentioned in source text", both: "GO annotation + source text" };
 
@@ -23,20 +28,28 @@
     return out;
   }
 
-  function loadReviews() {
+  function load(key) {
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      return JSON.parse(localStorage.getItem(key) || "{}");
     } catch (e) {
       return {};
     }
   }
 
-  function saveReviews() {
+  function store(key, value) {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(session.reviews()));
+      localStorage.setItem(key, JSON.stringify(value));
     } catch (e) {
       /* storage unavailable: export remains the durable path */
     }
+  }
+
+  function loadReviews() {
+    return load(STORAGE_KEY);
+  }
+
+  function saveReviews() {
+    store(STORAGE_KEY, session.reviews());
   }
 
   function el(tag, attrs = {}, ...children) {
@@ -86,13 +99,15 @@
         endpoint(i.target)),
       i.mechanism ? el("p", { class: "mechanism" }, i.mechanism) : null,
       el("div", { class: "tags" },
-        el("span", { class: "tag" }, "Calcium evidence: " + (CALCIUM[i.calcium_evidence] || "none"))),
+        el("span", { class: "tag" }, "Calcium evidence: " + (CALCIUM[i.calcium_evidence] || "none")),
+        i.has_human_evidence === "false" ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
       el("section", { class: "sources" },
         el("h3", {}, `Sources (${i.n_sources}) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),
         el("ul", {}, evs.map((ev) =>
           el("li", { class: "evidence" },
-            el("div", { class: "meta" }, el("span", { class: "badge " + ev.source_kind }, ev.source_kind), refLink(ev)),
+            el("div", { class: "meta" }, el("span", { class: "badge " + ev.source_kind }, ev.source_kind), refLink(ev),
+              el("span", { class: "species s-" + ev.species_context }, SPECIES[ev.species_context] || ev.species_context)),
             ev.sentence ? sentence(ev) : el("p", { class: "muted" }, "No sentence"))))));
   }
 
@@ -120,6 +135,15 @@
     a.click();
     a.remove();
   }
+
+  const filterMouse = $("filter-mouse");
+  filterMouse.checked = !!load(FILTER_KEY).excludeMouseOnly;
+  filterMouse.addEventListener("change", () => {
+    const filters = { excludeMouseOnly: filterMouse.checked };
+    session.setFilters(filters);
+    store(FILTER_KEY, filters);
+    render();
+  });
 
   $("btn-keep").addEventListener("click", () => decide("keep"));
   $("btn-reject").addEventListener("click", () => decide("reject"));
