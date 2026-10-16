@@ -59,12 +59,20 @@
   // ---------- review session ----------
 
   function createSession({ interactions, reviews = {}, reviewer = "", filters = {}, now = () => new Date().toISOString() }) {
-    const state = { reviews: { ...reviews }, filters: { ...filters } };
-    const isPending = (i) => !state.reviews[i.interaction_id];
+    const state = { reviews: { ...reviews }, filters: { ...filters }, mode: "pending", history: [] };
     const visible = () => applyFilters(interactions, state.filters);
+    const inMode = {
+      pending: (i) => !state.reviews[i.interaction_id],
+      uncertain: (i) => (state.reviews[i.interaction_id] || {}).decision === "uncertain",
+    };
 
     function queue() {
-      return visible().filter(isPending);
+      return visible().filter(inMode[state.mode]);
+    }
+
+    function restore(id, previous) {
+      if (previous) state.reviews[id] = previous;
+      else delete state.reviews[id];
     }
 
     return {
@@ -74,16 +82,43 @@
       decide(decision, comment = "") {
         const card = queue()[0];
         if (!card) return;
-        state.reviews[card.interaction_id] = {
+        const id = card.interaction_id;
+        state.history.push({ id, previous: state.reviews[id] });
+        state.reviews[id] = {
           decision, comment, reviewer, reviewed_at: now(),
           evidence_fingerprint: card.evidence_fingerprint,
         };
       },
+      undo() {
+        const last = state.history.pop();
+        if (!last) return null;
+        restore(last.id, last.previous);
+        return last.id;
+      },
       reviews() {
         return state.reviews;
       },
-      setFilters(filters) {
-        state.filters = { ...filters };
+      setFilters(f) {
+        state.filters = { ...f };
+      },
+      setMode(mode) {
+        if (!inMode[mode]) throw new Error("unknown mode " + mode);
+        state.mode = mode;
+      },
+      mode() {
+        return state.mode;
+      },
+      exportReviews() {
+        return JSON.stringify({ version: 1, exported_at: now(), reviews: state.reviews }, null, 1);
+      },
+      importReviews(json) {
+        const data = JSON.parse(json);
+        if (!data || data.version !== 1 || typeof data.reviews !== "object") throw new Error("not a review export");
+        for (const [id, r] of Object.entries(data.reviews)) {
+          const mine = state.reviews[id];
+          if (!mine || (r.reviewed_at || "") > (mine.reviewed_at || "")) state.reviews[id] = r;
+        }
+        state.history = [];
       },
       counts() {
         const shown = visible();

@@ -1,17 +1,7 @@
 // Review app UI: thin layer over CamapCore.
 (function () {
   "use strict";
-  const STORAGE_KEY = "camap.reviews.v1";
-  const FILTER_KEY = "camap.filters.v1";
-  const data = window.CAMAP || {};
-  const interactions = data.interactions || [];
-  const evidence = data.evidence || [];
-  const nodesById = Object.fromEntries((data.nodes || []).map((n) => [n.id, n]));
-  const evidenceByInteraction = groupBy(evidence, "interaction_id");
-
-  const session = CamapCore.createSession({ interactions, reviews: loadReviews(), filters: load(FILTER_KEY) });
-
-  const $ = (id) => document.getElementById(id);
+  const KEYS = { reviews: "camap.reviews.v1", filters: "camap.filters.v1", reviewer: "camap.reviewer", theme: "camap.theme" };
   const MODULES = {
     soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
     effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite",
@@ -22,17 +12,26 @@
   };
   const CALCIUM = { GO: "GO annotation", text: "mentioned in source text", both: "GO annotation + source text" };
 
-  function groupBy(rows, key) {
-    const out = {};
-    for (const r of rows) (out[r[key]] = out[r[key]] || []).push(r);
-    return out;
-  }
+  const data = window.CAMAP || {};
+  const interactions = data.interactions || [];
+  const nodesById = Object.fromEntries((data.nodes || []).map((n) => [n.id, n]));
+  const evidenceByInteraction = groupBy(data.evidence || [], "interaction_id");
+  const $ = (id) => document.getElementById(id);
 
-  function load(key) {
+  const session = CamapCore.createSession({
+    interactions, reviews: load(KEYS.reviews, {}), filters: load(KEYS.filters, {}),
+    reviewer: load(KEYS.reviewer, ""),
+  });
+  let fileHandle = null;
+
+  // ---------- storage ----------
+
+  function load(key, fallback) {
     try {
-      return JSON.parse(localStorage.getItem(key) || "{}");
+      const v = localStorage.getItem(key);
+      return v == null ? fallback : JSON.parse(v);
     } catch (e) {
-      return {};
+      return fallback;
     }
   }
 
@@ -44,33 +43,52 @@
     }
   }
 
-  function loadReviews() {
-    return load(STORAGE_KEY);
+  async function persist() {
+    store(KEYS.reviews, session.reviews());
+    if (!fileHandle) return;
+    try {
+      const w = await fileHandle.createWritable();
+      await w.write(session.exportReviews());
+      await w.close();
+      $("file-status").textContent = "Auto-saved to " + fileHandle.name + " at " + new Date().toLocaleTimeString();
+    } catch (e) {
+      $("file-status").textContent = "Auto-save failed (" + e.message + "). Use Export.";
+    }
   }
 
-  function saveReviews() {
-    store(STORAGE_KEY, session.reviews());
+  // ---------- rendering helpers ----------
+
+  function groupBy(rows, key) {
+    const out = {};
+    for (const r of rows) (out[r[key]] = out[r[key]] || []).push(r);
+    return out;
   }
 
   function el(tag, attrs = {}, ...children) {
     const e = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
       if (k === "class") e.className = v;
       else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
       else e.setAttribute(k, v);
     }
-    for (const c of children.flat()) if (c != null) e.append(c.nodeType ? c : String(c));
+    for (const c of children.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : String(c));
     return e;
   }
 
-  function refLink(ev) {
+  function refHref(ev) {
     const ref = ev.ref || "";
-    let href = null;
-    if (ref.startsWith("PMID:")) href = "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
-    else if (ref.startsWith("PMC")) href = "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
-    else if (ev.doi) href = "https://doi.org/" + ev.doi;
-    const label = [ev.first_author, ev.year].filter(Boolean).join(" ") || ref;
-    return href ? el("a", { href, target: "_blank", rel: "noopener" }, label + " · " + ref) : el("span", {}, label);
+    if (ref.startsWith("PMID:")) return "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
+    if (ref.startsWith("PMC")) return "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
+    if (ev.doi) return "https://doi.org/" + ev.doi;
+    return null;
+  }
+
+  function refLink(ev) {
+    const label = [ev.first_author, ev.year].filter(Boolean).join(" ");
+    const text = (label ? label + " · " : "") + ev.ref;
+    const href = refHref(ev);
+    return href ? el("a", { href, target: "_blank", rel: "noopener" }, text) : el("span", {}, text);
   }
 
   function endpoint(id) {
@@ -82,6 +100,7 @@
   }
 
   function sentence(ev) {
+    if (!ev.sentence) return el("p", { class: "muted" }, "No sentence");
     const ok = ev.sentence_verified === "true";
     return el("blockquote", { class: ok ? "verified" : "unverified" },
       ev.sentence,
@@ -90,12 +109,12 @@
 
   function renderCard(i) {
     const evs = evidenceByInteraction[i.interaction_id] || [];
-    return el("article", { class: "card" },
+    return el("article", { class: "card", id: "card" },
       el("section", { class: "edge" },
         endpoint(i.source),
         el("div", { class: "link " + i.type },
           el("span", { class: "link-type" }, i.type.replace(/_/g, " ")),
-          el("span", { class: "arrow" }, i.directed === "true" ? "⟶" : "⟷")),
+          el("span", { class: "arrow" }, i.directed === "true" ? (i.type === "inhibition" ? "⊣" : "⟶") : "⟷")),
         endpoint(i.target)),
       i.mechanism ? el("p", { class: "mechanism" }, i.mechanism) : null,
       el("div", { class: "tags" },
@@ -103,29 +122,57 @@
         i.has_human_evidence === "false" ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
       el("section", { class: "sources" },
-        el("h3", {}, `Sources (${i.n_sources}) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),
+        el("h3", {}, `Supported by ${i.n_sources} source(s) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),
         el("ul", {}, evs.map((ev) =>
           el("li", { class: "evidence" },
-            el("div", { class: "meta" }, el("span", { class: "badge " + ev.source_kind }, ev.source_kind), refLink(ev),
+            el("div", { class: "meta" },
+              el("span", { class: "badge " + ev.source_kind }, ev.source_kind), refLink(ev),
               el("span", { class: "species s-" + ev.species_context }, SPECIES[ev.species_context] || ev.species_context)),
-            ev.sentence ? sentence(ev) : el("p", { class: "muted" }, "No sentence"))))));
+            sentence(ev))))));
   }
 
   function render() {
     const c = session.counts();
-    $("progress").textContent = `${c.reviewed}/${c.total} reviewed · ✓ ${c.keep} · ✕ ${c.reject}`;
+    $("progress").textContent =
+      `${c.reviewed}/${c.total} reviewed · ${c.remaining} left · ✓ ${c.keep} · ✕ ${c.reject} · ? ${c.uncertain}`;
+    document.querySelectorAll(".modes button").forEach((b) => b.classList.toggle("active", b.dataset.mode === session.mode()));
     const stage = $("stage");
     stage.replaceChildren();
     const card = session.current();
-    if (card) stage.append(renderCard(card));
-    else stage.append(el("div", { class: "empty" }, interactions.length ? "All interactions reviewed 🎉" : "No interactions loaded. Run the pipeline build first."));
-    $("btn-keep").disabled = $("btn-reject").disabled = !card;
+    if (card) {
+      stage.append(renderCard(card));
+    } else {
+      const msg = !interactions.length ? "No interactions loaded. Run the pipeline build first."
+        : session.mode() === "uncertain" ? "No uncertain interactions." : "All interactions reviewed 🎉";
+      stage.append(el("div", { class: "empty" }, msg));
+    }
+    ["btn-keep", "btn-reject", "btn-uncertain"].forEach((b) => ($(b).disabled = !card));
+    $("comment").value = card ? ((session.reviews()[card.interaction_id] || {}).comment || "") : "";
   }
+
+  // ---------- actions ----------
 
   function decide(decision) {
     if (!session.current()) return;
-    session.decide(decision);
-    saveReviews();
+    const card = $("card");
+    const comment = $("comment").value.trim();
+    const done = () => {
+      session.decide(decision, comment);
+      persist();
+      render();
+    };
+    if (!card || matchMedia("(prefers-reduced-motion: reduce)").matches) return done();
+    card.classList.add("leave-" + decision);
+    setTimeout(done, 180);
+  }
+
+  function undo() {
+    const id = session.undo();
+    if (!id) return;
+    const r = session.reviews()[id];
+    if (r && r.decision === "uncertain") session.setMode("uncertain");
+    if (!r) session.setMode("pending");
+    persist();
     render();
   }
 
@@ -136,24 +183,108 @@
     a.remove();
   }
 
-  const filterMouse = $("filter-mouse");
-  filterMouse.checked = !!load(FILTER_KEY).excludeMouseOnly;
-  filterMouse.addEventListener("change", () => {
-    const filters = { excludeMouseOnly: filterMouse.checked };
-    session.setFilters(filters);
-    store(FILTER_KEY, filters);
-    render();
-  });
+  function enableSwipe() {
+    let start = null;
+    $("stage").addEventListener("pointerdown", (e) => {
+      if (e.target.closest("a, button, textarea, input, .neighbourhood")) return;
+      const card = $("card");
+      if (card) start = { x: e.clientX, card };
+    });
+    window.addEventListener("pointermove", (e) => {
+      if (!start) return;
+      const dx = e.clientX - start.x;
+      start.card.style.transform = `translateX(${dx}px) rotate(${dx / 30}deg)`;
+      start.card.dataset.hint = dx > 60 ? "keep" : dx < -60 ? "reject" : "";
+    });
+    window.addEventListener("pointerup", (e) => {
+      if (!start) return;
+      const dx = e.clientX - start.x;
+      start.card.style.transform = "";
+      start.card.dataset.hint = "";
+      start = null;
+      if (dx > 120) decide("keep");
+      else if (dx < -120) decide("reject");
+    });
+  }
+
+  // ---------- wiring ----------
 
   $("btn-keep").addEventListener("click", () => decide("keep"));
   $("btn-reject").addEventListener("click", () => decide("reject"));
-  $("export-kept").addEventListener("click", () =>
-    download("kept_interactions.csv", CamapCore.keptCsv(interactions, session.reviews()), "text/csv"));
-  document.addEventListener("keydown", (e) => {
-    if (e.target.closest("input, textarea")) return;
-    if (e.key === "ArrowRight") decide("keep");
-    if (e.key === "ArrowLeft") decide("reject");
+  $("btn-uncertain").addEventListener("click", () => decide("uncertain"));
+  $("btn-undo").addEventListener("click", undo);
+  document.querySelectorAll(".modes button").forEach((b) =>
+    b.addEventListener("click", () => { session.setMode(b.dataset.mode); render(); }));
+
+  const filterMouse = $("filter-mouse");
+  filterMouse.checked = !!load(KEYS.filters, {}).excludeMouseOnly;
+  filterMouse.addEventListener("change", () => {
+    const filters = { excludeMouseOnly: filterMouse.checked };
+    session.setFilters(filters);
+    store(KEYS.filters, filters);
+    render();
   });
 
+  const reviewer = $("reviewer");
+  reviewer.value = load(KEYS.reviewer, "");
+  reviewer.addEventListener("change", () => {
+    store(KEYS.reviewer, reviewer.value.trim());
+    location.reload();
+  });
+
+  $("export-reviews").addEventListener("click", () =>
+    download("reviews.json", session.exportReviews(), "application/json"));
+  $("export-kept").addEventListener("click", () =>
+    download("kept_interactions.csv", CamapCore.keptCsv(interactions, session.reviews()), "text/csv"));
+  $("import-reviews").addEventListener("click", () => $("import-file").click());
+  $("import-file").addEventListener("change", async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      session.importReviews(await file.text());
+      persist();
+      render();
+      $("file-status").textContent = "Imported " + file.name;
+    } catch (err) {
+      $("file-status").textContent = "Import failed: " + err.message;
+    }
+    e.target.value = "";
+  });
+
+  if ("showSaveFilePicker" in window) {
+    const link = $("link-file");
+    link.hidden = false;
+    link.addEventListener("click", async () => {
+      try {
+        fileHandle = await window.showSaveFilePicker({
+          suggestedName: "reviews.json", types: [{ description: "Reviews", accept: { "application/json": [".json"] } }],
+        });
+        persist();
+      } catch (e) {
+        /* picker cancelled */
+      }
+    });
+  }
+
+  const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; };
+  applyTheme(load(KEYS.theme, null));
+  $("theme").addEventListener("click", () => {
+    const t = (document.documentElement.dataset.theme || "dark") === "dark" ? "light" : "dark";
+    applyTheme(t);
+    store(KEYS.theme, t);
+    render();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.target instanceof Element && e.target.closest("input, textarea")) {
+      if (e.key === "Escape") e.target.blur();
+      return;
+    }
+    const action = { ArrowRight: () => decide("keep"), ArrowLeft: () => decide("reject"),
+      ArrowDown: () => decide("uncertain"), Backspace: undo, c: () => $("comment").focus() }[e.key];
+    if (action) { e.preventDefault(); action(); }
+  });
+
+  enableSwipe();
   render();
 })();

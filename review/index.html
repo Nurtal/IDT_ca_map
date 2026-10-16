@@ -9,18 +9,38 @@
 <body>
   <header class="topbar">
     <h1>Calcium Map <span>review</span></h1>
+    <nav class="modes" role="tablist">
+      <button type="button" data-mode="pending" class="active">To review</button>
+      <button type="button" data-mode="uncertain">Uncertain</button>
+    </nav>
     <div class="progress" id="progress"></div>
     <label class="toggle"><input type="checkbox" id="filter-mouse"> Exclude mouse-only</label>
-    <div class="actions">
-      <button id="export-kept" type="button">Export kept CSV</button>
-    </div>
+    <label class="reviewer">Reviewer <input id="reviewer" type="text" size="8" placeholder="initials"></label>
+    <details class="menu">
+      <summary>File ▾</summary>
+      <div class="menu-body">
+        <button id="export-reviews" type="button">Export reviews.json</button>
+        <button id="export-kept" type="button">Export kept_interactions.csv</button>
+        <button id="import-reviews" type="button">Import reviews.json…</button>
+        <button id="link-file" type="button" hidden>Auto-save to a file…</button>
+        <p id="file-status" class="muted small"></p>
+        <input id="import-file" type="file" accept=".json,application/json" hidden>
+      </div>
+    </details>
+    <button id="theme" type="button" title="Toggle light/dark">◐</button>
   </header>
 
   <main id="stage" class="stage"></main>
 
   <footer class="decide">
-    <button id="btn-reject" class="reject" type="button" title="Reject (←)">✕ Reject</button>
-    <button id="btn-keep" class="keep" type="button" title="Keep (→)">✓ Keep</button>
+    <textarea id="comment" rows="1" placeholder="Optional comment (e.g. correct link type)…"></textarea>
+    <div class="buttons">
+      <button id="btn-undo" class="undo" type="button" title="Undo (Backspace)">↶</button>
+      <button id="btn-reject" class="reject" type="button" title="Reject (←)">✕ Reject</button>
+      <button id="btn-uncertain" class="uncertain" type="button" title="Uncertain (↓)">? Unsure</button>
+      <button id="btn-keep" class="keep" type="button" title="Keep (→)">✓ Keep</button>
+    </div>
+    <p class="hint">← reject · → keep · ↓ unsure · Backspace undo · C comment</p>
   </footer>
 
   <script src="../data/nodes.js"></script>
