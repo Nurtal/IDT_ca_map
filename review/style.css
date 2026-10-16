@@ -138,3 +138,6 @@ blockquote.unverified { border-left-color: var(--uncertain); }
 @media (prefers-reduced-motion: reduce) {
   .card { transition: none; }
 }
+.neighbourhood h3 { display: flex; align-items: center; gap: 6px; }
+.hop { font-size: .7rem; padding: 2px 8px; text-transform: none; letter-spacing: 0; }
+.hop.active { border-color: var(--accent); color: var(--accent); }

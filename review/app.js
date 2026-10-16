@@ -1,7 +1,10 @@
 // Review app UI: thin layer over CamapCore.
 (function () {
   "use strict";
-  const KEYS = { reviews: "camap.reviews.v1", filters: "camap.filters.v1", reviewer: "camap.reviewer", theme: "camap.theme" };
+  const KEYS = {
+    reviews: "camap.reviews.v1", filters: "camap.filters.v1", reviewer: "camap.reviewer", theme: "camap.theme",
+    hops: "camap.hops",
+  };
   const MODULES = {
     soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
     effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite",
@@ -23,6 +26,8 @@
     reviewer: load(KEYS.reviewer, ""),
   });
   let fileHandle = null;
+  let hops = load(KEYS.hops, 1);
+  let miniGraph = null;
 
   // ---------- storage ----------
 
@@ -121,6 +126,7 @@
         el("span", { class: "tag" }, "Calcium evidence: " + (CALCIUM[i.calcium_evidence] || "none")),
         i.has_human_evidence === "false" ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
+      neighbourhoodSection(),
       el("section", { class: "sources" },
         el("h3", {}, `Supported by ${i.n_sources} source(s) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),
         el("ul", {}, evs.map((ev) =>
@@ -129,6 +135,59 @@
               el("span", { class: "badge " + ev.source_kind }, ev.source_kind), refLink(ev),
               el("span", { class: "species s-" + ev.species_context }, SPECIES[ev.species_context] || ev.species_context)),
             sentence(ev))))));
+  }
+
+  function neighbourhoodSection() {
+    const choose = (h) => el("button", {
+      type: "button", class: "hop" + (h === hops ? " active" : ""),
+      onclick: () => { hops = h; store(KEYS.hops, h); render(); },
+    }, h + " hop" + (h > 1 ? "s" : ""));
+    return el("section", { class: "neighbourhood" },
+      el("h3", {}, "Local neighbourhood ", choose(1), choose(2)),
+      el("div", { class: "mini-graph", id: "mini-graph" }),
+      el("div", { class: "legend" },
+        el("span", {}, el("i", { style: "background:var(--accent)" }), "this interaction"),
+        el("span", {}, el("i", { style: "background:var(--keep)" }), "kept"),
+        el("span", {}, el("i", { style: "background:var(--reject)" }), "rejected"),
+        el("span", {}, el("i", { style: "background:var(--uncertain)" }), "unsure"),
+        el("span", {}, el("i", { style: "background:var(--muted)" }), "pending"),
+        el("span", { id: "nb-note" })));
+  }
+
+  function drawNeighbourhood(card) {
+    if (miniGraph) { miniGraph.destroy(); miniGraph = null; }
+    const box = $("mini-graph");
+    if (!box || typeof cytoscape !== "function") return;
+    const nb = CamapCore.neighbourhood(interactions, card.interaction_id, { hops, reviews: session.reviews() });
+    const css = getComputedStyle(document.documentElement);
+    const v = (name) => css.getPropertyValue(name).trim();
+    const statusColor = { pending: v("--muted"), keep: v("--keep"), reject: v("--reject"), uncertain: v("--uncertain") };
+    $("nb-note").textContent = nb.truncated ? `· showing the ${nb.nodes.length} closest actors` : "";
+    miniGraph = cytoscape({
+      container: box,
+      elements: [
+        ...nb.nodes.map((n) => {
+          const node = nodesById[n.id] || {};
+          return { data: { id: n.id, label: node.symbol || n.id, distance: n.distance, color: v("--m-" + node.module) || v("--muted") } };
+        }),
+        ...nb.edges.map((e) => ({ data: { ...e, color: e.focal ? v("--accent") : statusColor[e.status] } })),
+      ],
+      layout: { name: "cose", animate: false, randomize: false, padding: 30, nodeRepulsion: () => 9000,
+        idealEdgeLength: () => 70, nodeDimensionsIncludeLabels: true },
+      maxZoom: 1.3,
+      style: [
+        { selector: "node", style: { label: "data(label)", "background-color": "data(color)", color: v("--text"),
+          "font-size": 11, "text-valign": "bottom", "text-margin-y": 4, width: 16, height: 16 } },
+        { selector: "node[distance = 0]", style: { width: 26, height: 26, "font-weight": "bold", "font-size": 13 } },
+        { selector: "edge", style: { width: 2, "line-color": "data(color)", "target-arrow-color": "data(color)",
+          "curve-style": "bezier", opacity: 0.8 } },
+        { selector: 'edge[directed = "true"]', style: { "target-arrow-shape": "triangle" } },
+        { selector: 'edge[type = "inhibition"]', style: { "target-arrow-shape": "tee" } },
+        { selector: 'edge[status = "reject"]', style: { "line-style": "dashed", opacity: 0.5 } },
+        { selector: "edge[?focal]", style: { width: 4, opacity: 1 } },
+      ],
+      userZoomingEnabled: true, boxSelectionEnabled: false, autoungrabify: false,
+    });
   }
 
   function render() {
@@ -141,6 +200,7 @@
     const card = session.current();
     if (card) {
       stage.append(renderCard(card));
+      drawNeighbourhood(card);
     } else {
       const msg = !interactions.length ? "No interactions loaded. Run the pipeline build first."
         : session.mode() === "uncertain" ? "No uncertain interactions." : "All interactions reviewed 🎉";

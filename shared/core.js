@@ -50,6 +50,46 @@
     return lines.join("\r\n") + "\r\n";
   }
 
+  // ---------- graph queries ----------
+
+  function adjacency(interactions) {
+    const adj = new Map();
+    const add = (a, b) => (adj.get(a) || adj.set(a, new Set()).get(a)).add(b);
+    for (const i of interactions) { add(i.source, i.target); add(i.target, i.source); }
+    return adj;
+  }
+
+  // Nodes within `hops` of either endpoint of the focal interaction, and the
+  // interactions among them, each tagged with its review status.
+  function neighbourhood(interactions, focalId, { hops = 2, reviews = {}, maxNodes = 60 } = {}) {
+    const focal = interactions.find((i) => i.interaction_id === focalId);
+    if (!focal) return { nodes: [], edges: [], truncated: false };
+    const adj = adjacency(interactions);
+    const distance = new Map([[focal.source, 0], [focal.target, 0]]);
+    let frontier = [focal.source, focal.target];
+    for (let d = 1; d <= hops; d++) {
+      const next = [];
+      for (const n of frontier) {
+        for (const m of [...(adj.get(n) || [])].sort()) {
+          if (!distance.has(m)) { distance.set(m, d); next.push(m); }
+        }
+      }
+      frontier = next;
+    }
+    let ordered = [...distance.entries()].sort((a, b) => a[1] - b[1] || (a[0] < b[0] ? -1 : 1));
+    const truncated = ordered.length > maxNodes;
+    ordered = ordered.slice(0, maxNodes);
+    const keep = new Map(ordered);
+    const edges = interactions
+      .filter((i) => keep.has(i.source) && keep.has(i.target))
+      .map((i) => ({
+        id: i.interaction_id, source: i.source, target: i.target, type: i.type, directed: i.directed,
+        focal: i.interaction_id === focalId,
+        status: (reviews[i.interaction_id] || {}).decision || "pending",
+      }));
+    return { nodes: ordered.map(([id, d]) => ({ id, distance: d })), edges, truncated };
+  }
+
   // ---------- filters ----------
 
   function applyFilters(interactions, filters = {}) {
@@ -145,5 +185,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { parseCsv, toCsv, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { parseCsv, toCsv, neighbourhood, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });
