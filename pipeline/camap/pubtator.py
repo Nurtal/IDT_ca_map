@@ -6,6 +6,7 @@ from urllib.parse import quote
 from . import http
 
 API = "https://www.ncbi.nlm.nih.gov/research/pubtator3-api"
+IDCONV = "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids={ids}&format=json&tool=IDT_ca_map"
 EXCLUDED_SECTIONS = {"REF"}
 BATCH = 100
 
@@ -20,15 +21,32 @@ class PubTator:
     def _path(self, pmid):
         return self.dir / f"{pmid}.json"
 
-    def fetch_texts(self, pmids):
-        """Download (full text when available) every PMID not already cached."""
-        missing = [str(p) for p in pmids if not self._path(p).exists()]
+    def fetch_texts(self, refs):
+        """Download (full text when available) every paper not already cached.
+
+        refs: PMIDs ('123' or 'PMID:123') and/or PMCIDs ('PMC123', converted via NCBI idconv)."""
+        pmids, pmcids = [], []
+        for ref in map(str, refs):
+            if ref.upper().startswith("PMC"):
+                if self.document(ref) is None:
+                    pmcids.append(ref.upper())
+            else:
+                pmids.append(ref[5:] if ref.upper().startswith("PMID:") else ref)
+        pmids += self.pmcids_to_pmids(pmcids)
+        missing = sorted({p for p in pmids if not self._path(p).exists()})
         for start in range(0, len(missing), BATCH):
             chunk = missing[start:start + BATCH]
             url = f"{API}/publications/export/biocjson?pmids={','.join(chunk)}&full=true"
             for raw in self.get_json(url).get("PubTator3", []):
                 self._store(simplify(raw))
         return missing
+
+    def pmcids_to_pmids(self, pmcids):
+        out = []
+        for start in range(0, len(pmcids), 200):
+            res = self.get_json(IDCONV.format(ids=",".join(pmcids[start:start + 200])))
+            out += [str(r["pmid"]) for r in res.get("records", []) if r.get("pmid")]
+        return out
 
     def _store(self, doc):
         self.dir.mkdir(parents=True, exist_ok=True)

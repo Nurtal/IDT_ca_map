@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from camap.corpus import build_queue, load_queue, set_status
+from camap.corpus import build_queue, load_queue, set_status, set_statuses
 from camap.pubtator import PubTator
 
 CONFIG = {
@@ -93,6 +93,15 @@ class TestQueue(CorpusCase):
         self.assertEqual(q["20"]["status"], "done")
         self.assertEqual((q["40"]["status"], q["40"]["note"]), ("skipped", "review article"))
         self.assertEqual(q["60"]["status"], "pending")
+
+    def test_batch_status_update_is_all_or_nothing(self):
+        self.run_build()
+        with self.assertRaises(KeyError):
+            set_statuses(self.state, ["10", "999", "20"], "done")
+        self.assertTrue(all(e["status"] == "pending" for e in load_queue(self.state)))
+        set_statuses(self.state, ["10", "20"], "done", note="batch 1")
+        q = {e["pmid"]: e for e in load_queue(self.state)}
+        self.assertEqual((q["10"]["status"], q["20"]["note"]), ("done", "batch 1"))
 
     def test_progress_note_reports_state_and_next_step(self):
         self.run_build()

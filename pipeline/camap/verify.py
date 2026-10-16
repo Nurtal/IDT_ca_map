@@ -1,6 +1,7 @@
 """Verbatim sentence verification against cached texts."""
 import re
 import unicodedata
+from functools import lru_cache
 
 _TRANSLATE = str.maketrans({
     "‘": "'", "’": "'", "“": '"', "”": '"',
@@ -9,6 +10,7 @@ _TRANSLATE = str.maketrans({
 })
 
 
+@lru_cache(maxsize=512)
 def normalize(text):
     text = unicodedata.normalize("NFKC", text).translate(_TRANSLATE)
     return re.sub(r"\s+", " ", text).strip()

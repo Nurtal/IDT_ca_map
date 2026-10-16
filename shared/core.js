@@ -14,6 +14,33 @@
   ];
   const REVIEW_COLUMNS = ["decision", "comment", "reviewer", "reviewed_at"];
 
+  const LABELS = {
+    modules: {
+      soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
+      effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite",
+    },
+    species: {
+      human: "🧍 human", in_vitro_human_cells: "🧫 human cells", mouse: "🐭 mouse", rat: "🐀 rat",
+      other: "other species", unknown: "species ?",
+    },
+    calcium: { GO: "GO annotation", text: "mentioned in source text", both: "GO annotation + source text" },
+  };
+
+  // Web page of a literature or database reference, or null.
+  function refHref(ref) {
+    ref = ref || "";
+    if (ref.startsWith("PMID:")) return "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
+    if (ref.startsWith("PMC")) return "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
+    if (ref.startsWith("SIGNOR-")) return "https://signor.uniroma2.it/relation_result.php?id=" + ref;
+    if (ref.startsWith("EBI-")) return "https://www.ebi.ac.uk/intact/search?query=" + ref;
+    if (ref.startsWith("BIOGRID:")) return "https://thebiogrid.org/interaction/" + ref.slice(8);
+    if (ref.startsWith("OmniPath:")) {
+      const [a, b] = ref.slice(9).split(">");
+      return "https://omnipathdb.org/interactions?partners=" + a + "," + b + "&genesymbols=yes&fields=sources,references";
+    }
+    return null;
+  }
+
   // ---------- CSV ----------
 
   function parseCsv(text) {
@@ -121,10 +148,11 @@
 
   // ---------- filters ----------
 
-  // filters: {excludeMouseOnly, types: [...], minSources, modules: [...]}; empty lists mean "all".
+  // filters: {excludeMouseOnly, types: [...], minSources, modules: [...]};
+  // an absent (null/undefined) list means "all", an empty list means "none".
   function applyFilters(interactions, filters = {}, moduleOf = () => "") {
-    const types = filters.types && filters.types.length ? new Set(filters.types) : null;
-    const modules = filters.modules && filters.modules.length ? new Set(filters.modules) : null;
+    const types = Array.isArray(filters.types) ? new Set(filters.types) : null;
+    const modules = Array.isArray(filters.modules) ? new Set(filters.modules) : null;
     const minSources = Number(filters.minSources) || 0;
     return interactions.filter((i) =>
       !(filters.excludeMouseOnly && i.has_human_evidence === "false") &&
@@ -147,8 +175,12 @@
       uncertain: (i) => (state.reviews[i.interaction_id] || {}).decision === "uncertain",
     };
 
+    const reviewedAt = (i) => (state.reviews[i.interaction_id] || {}).reviewed_at || "";
+
     function queue() {
-      const q = visible().filter(inMode[state.mode]);
+      let q = visible().filter(inMode[state.mode]);
+      // uncertain stack: oldest deferral first, so deferring again moves a card to the back
+      if (state.mode === "uncertain") q = q.slice().sort((a, b) => (reviewedAt(a) < reviewedAt(b) ? -1 : reviewedAt(a) > reviewedAt(b) ? 1 : 0));
       const pinned = state.pinned && interactions.find((i) => i.interaction_id === state.pinned);
       return pinned ? [pinned, ...q.filter((i) => i !== pinned)] : q;
     }
@@ -233,5 +265,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { LABELS, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });

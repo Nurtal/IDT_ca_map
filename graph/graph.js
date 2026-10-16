@@ -1,20 +1,16 @@
 // Global interaction graph: kept interactions rendered with Cytoscape.js + fcose.
 (function () {
   "use strict";
-  const KEYS = { theme: "camap.theme", filters: "camap.graph.filters.v1" };
-  const MODULES = {
-    soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
-    effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite", "": "Other",
-  };
+  const KEYS = { theme: "camap.theme", filters: "camap.graph.filters.v2" };
+  const MODULES = { ...CamapCore.LABELS.modules, "": "Other" };
+  const SPECIES = CamapCore.LABELS.species;
+  const { refHref } = CamapCore;
+  const { el, link, load, store, download } = CamapUI;
   const LINK_TYPES = [
     "activation", "inhibition", "physical_binding", "phosphorylation", "ubiquitination",
     "translocation/trafficking", "expression_regulation_up", "expression_regulation_down",
     "coexpression", "Ca2+_flux", "unknown_regulation",
   ];
-  const SPECIES = {
-    human: "🧍 human", in_vitro_human_cells: "🧫 human cells", mouse: "🐭 mouse", rat: "🐀 rat",
-    other: "other species", unknown: "species ?",
-  };
 
   if (window.cytoscapeFcose) cytoscape.use(window.cytoscapeFcose);
   // cytoscape-svg registers itself when loaded after cytoscape
@@ -24,7 +20,8 @@
   const evidenceByInteraction = {};
   for (const e of data.evidence || []) (evidenceByInteraction[e.interaction_id] = evidenceByInteraction[e.interaction_id] || []).push(e);
   let kept = data.kept || [];
-  let filters = { excludeMouseOnly: false, minSources: 1, types: [], modules: [], ...load(KEYS.filters, {}) };
+  // types/modules: null = all, [] = none (see CamapCore.applyFilters)
+  let filters = { excludeMouseOnly: false, minSources: 1, types: null, modules: null, ...load(KEYS.filters, {}) };
   let cy = null;
   window.__camapGraph = () => cy; // handle for debugging and headless smoke checks
   let pathHighlight = null;
@@ -34,61 +31,12 @@
 
   // ---------- helpers ----------
 
-  function load(key, fallback) {
-    try {
-      const v = localStorage.getItem(key);
-      return v == null ? fallback : JSON.parse(v);
-    } catch (e) {
-      return fallback;
-    }
-  }
-
-  function store(key, value) {
-    try {
-      localStorage.setItem(key, JSON.stringify(value));
-    } catch (e) {
-      /* per-viewer convenience only */
-    }
-  }
-
-  function el(tag, attrs = {}, ...children) {
-    const e = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs)) {
-      if (v == null || v === false) continue;
-      if (k === "class") e.className = v;
-      else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
-      else e.setAttribute(k, v);
-    }
-    for (const c of children.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : String(c));
-    return e;
-  }
-
   function cssVar(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
 
   function label(id) {
     return (nodesById[id] || {}).symbol || id;
-  }
-
-  function refHref(ref) {
-    if (ref.startsWith("PMID:")) return "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
-    if (ref.startsWith("PMC")) return "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
-    if (ref.startsWith("SIGNOR-")) return "https://signor.uniroma2.it/relation_result.php?id=" + ref;
-    if (ref.startsWith("EBI-")) return "https://www.ebi.ac.uk/intact/search?query=" + ref;
-    if (ref.startsWith("BIOGRID:")) return "https://thebiogrid.org/interaction/" + ref.slice(8);
-    return null;
-  }
-
-  function link(href, text) {
-    return href ? el("a", { href, target: "_blank", rel: "noopener" }, text) : el("span", {}, text);
-  }
-
-  function download(name, blob) {
-    const a = el("a", { href: URL.createObjectURL(blob), download: name });
-    document.body.append(a);
-    a.click();
-    a.remove();
   }
 
   // ---------- graph ----------
@@ -134,7 +82,7 @@
       { selector: 'edge[type = "Ca2+_flux"]', style: { "line-color": v("--m-ca_stores"), "target-arrow-color": v("--m-ca_stores") } },
       { selector: 'edge[type = "coexpression"]', style: { "line-style": "dashed" } },
       { selector: 'edge[type = "unknown_regulation"]', style: { "line-style": "dotted" } },
-      { selector: ".faded", style: { opacity: 0.12, "text-opacity": 0.2 } },
+      { selector: ".faded, .dim", style: { opacity: 0.12, "text-opacity": 0.2 } },
       { selector: "node.hl", style: { "border-width": 3, "border-color": v("--accent") } },
       { selector: "edge.hl", style: { opacity: 1, "z-index": 10 } },
       { selector: ".path", style: { "border-width": 4, "border-color": v("--accent"), "line-color": v("--accent"), "target-arrow-color": v("--accent"), opacity: 1, "z-index": 20 } },
@@ -165,10 +113,10 @@
   function wireGraph() {
     cy.on("mouseover", "node", (e) => {
       const hood = e.target.closedNeighborhood();
-      cy.elements().not(hood).addClass("faded");
+      cy.elements().not(hood).addClass("dim");
       hood.addClass("hl");
     });
-    cy.on("mouseout", "node", () => cy.elements().removeClass("faded hl"));
+    cy.on("mouseout", "node", () => cy.elements().removeClass("dim hl"));
     cy.on("tap", "node", (e) => showNode(e.target.id()));
     cy.on("tap", "edge", (e) => showEdge(e.target.id()));
     cy.on("tap", (e) => { if (e.target === cy) setInfoVisible(false); });
@@ -245,7 +193,7 @@
       evs.length ? el("ul", { class: "evidence" }, evs.map((ev) => el("li", {},
         el("div", { class: "meta" },
           el("span", { class: "badge " + ev.source_kind }, ev.source_kind),
-          link(refHref(ev.ref || ""), [ev.first_author, ev.year, ev.ref].filter(Boolean).join(" · ")),
+          link(refHref(ev.ref), [ev.first_author, ev.year, ev.ref].filter(Boolean).join(" · ")),
           ev.cited_pmid ? link(refHref("PMID:" + ev.cited_pmid), "cites PMID:" + ev.cited_pmid) : null,
           el("span", { class: "small muted" }, SPECIES[ev.species_context] || ev.species_context)),
         ev.sentence ? el("blockquote", { class: ev.sentence_verified === "true" ? "" : "unverified" }, ev.sentence,
@@ -282,11 +230,11 @@
   function checks(container, values, selected, labelOf, onChange) {
     container.replaceChildren(...values.map((v) => {
       const input = el("input", { type: "checkbox", value: v });
-      input.checked = !selected.length || selected.includes(v);
+      input.checked = selected == null || selected.includes(v);
       input.addEventListener("change", () => {
         const all = [...container.querySelectorAll("input")];
         const on = all.filter((x) => x.checked).map((x) => x.value);
-        onChange(on.length === all.length ? [] : on);
+        onChange(on.length === all.length ? null : on);
       });
       return el("label", { class: "check" }, input, " ", labelOf(v));
     }));
@@ -382,12 +330,9 @@
     if (f) loadCsv(f);
   });
 
-  const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; };
-  applyTheme(load(KEYS.theme, null));
+  CamapUI.applyTheme(load(KEYS.theme, null));
   $("theme").addEventListener("click", () => {
-    const t = (document.documentElement.dataset.theme || "dark") === "dark" ? "light" : "dark";
-    applyTheme(t);
-    store(KEYS.theme, t);
+    CamapUI.toggleTheme(KEYS.theme);
     cy.style(style());
   });
 

@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 
 from camap.build import build_dataset, read_raw  # noqa: E402
-from camap.corpus import build_queue, next_pending, set_status  # noqa: E402
+from camap.corpus import build_queue, next_pending, set_statuses  # noqa: E402
 from camap.databases import fetch_all  # noqa: E402
 from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
@@ -69,8 +69,8 @@ def main(argv=None):
         if args.next:
             pmids |= {e["pmid"] for e in next_pending(STATE, args.next)}
         for r in ([] if pmids else read_raw(args.raw)):
-            if r["ref"].upper().startswith("PMID:"):
-                pmids.add(r["ref"][5:])
+            if r["source_kind"] in ("pubmed", "pmc"):
+                pmids.add(r["ref"])
             if r.get("cited_pmid"):
                 pmids.add(r["cited_pmid"])
         fetched = pt.fetch_texts(sorted(pmids))
@@ -90,9 +90,10 @@ def main(argv=None):
         for e in next_pending(STATE, args.n):
             print(f"{e['pmid']}\t{e.get('pmcid') or '-'}\ttier {e['tier']}\t{e['year']}\t{e['title'][:90]}")
     elif args.cmd == "queue" and args.qcmd == "set":
-        # args.status was parsed last; pmids holds every positional before it
-        for pmid in args.pmids:
-            set_status(STATE, pmid, args.status, note=args.note)
+        try:
+            set_statuses(STATE, args.pmids, args.status, note=args.note)
+        except KeyError as e:
+            sys.exit(f"Nothing updated: {e.args[0]}")
         print(f"{len(args.pmids)} article(s) -> {args.status}")
     elif args.cmd == "fetch-db":
         ensure_hgnc(CACHE)
@@ -104,7 +105,8 @@ def main(argv=None):
         for kind, records in results.items():
             path = raw / f"db_{kind}.jsonl"
             if not records:
-                path.unlink(missing_ok=True)
+                # skipped or empty answer: keep whatever an earlier run committed
+                print(f"{kind}: no records fetched, {path.relative_to(ROOT)} left unchanged")
                 continue
             unique = {json.dumps(r, sort_keys=True) for r in records}
             path.write_text("".join(line + "\n" for line in sorted(unique)))

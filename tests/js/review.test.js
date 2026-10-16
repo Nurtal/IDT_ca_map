@@ -163,3 +163,14 @@ test("jumping to a card shows it next whatever its status, until a decision is m
   assert.equal(s.reviews().c.decision, "reject");
   assert.equal(s.current().interaction_id, "a");
 });
+
+test("deferring an uncertain card again sends it to the back of the uncertain stack", () => {
+  let t = 0;
+  const s = core.createSession({ interactions: [I("a"), I("b")], now: () => String(++t).padStart(4, "0") });
+  s.decide("uncertain");
+  s.decide("uncertain");
+  s.setMode("uncertain");
+  assert.equal(s.current().interaction_id, "a");
+  s.decide("uncertain");
+  assert.equal(s.current().interaction_id, "b");
+});

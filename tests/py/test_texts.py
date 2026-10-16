@@ -17,6 +17,9 @@ class FakeHttp:
 
     def __call__(self, url):
         self.calls.append(url)
+        if "idconv" in url:
+            return {"records": [{"pmcid": "PMC9001", "pmid": 1001, "requested-id": "PMC9001"},
+                                {"pmcid": "PMC404", "requested-id": "PMC404", "status": "error"}]}
         return json.loads((FIXTURES / "export_full.json").read_text())
 
 
@@ -48,6 +51,14 @@ class TestPubTatorCache(unittest.TestCase):
     def test_document_lookup_by_pmcid(self):
         self.pt.fetch_texts(["1001"])
         self.assertEqual(self.pt.document("PMC9001")["pmid"], "1001")
+
+    def test_pmcids_are_converted_to_pmids_before_fetching(self):
+        self.pt.fetch_texts(["PMC9001", "PMC404"])
+        self.assertEqual(self.pt.document("PMC9001")["pmid"], "1001")
+        self.assertIn("pmids=1001", self.http.calls[-1])
+        n = len(self.http.calls)
+        self.pt.fetch_texts(["PMC9001"])
+        self.assertEqual(len(self.http.calls), n)
 
     def test_unknown_document_is_none(self):
         self.assertIsNone(self.pt.document("999"))

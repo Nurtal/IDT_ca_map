@@ -103,17 +103,22 @@ def save_queue(state_dir, entries):
 
 
 def set_status(state_dir, pmid, status, note=None):
+    set_statuses(state_dir, [pmid], status, note)
+
+
+def set_statuses(state_dir, pmids, status, note=None):
+    """Update several articles at once; nothing is written if any PMID is unknown."""
     if status not in STATUSES:
         raise ValueError(f"unknown status {status!r}")
     entries = load_queue(state_dir)
-    for e in entries:
-        if e["pmid"] == str(pmid):
-            e["status"] = status
-            if note:
-                e["note"] = note
-            break
-    else:
-        raise KeyError(pmid)
+    by_pmid = {e["pmid"]: e for e in entries}
+    unknown = [p for p in map(str, pmids) if p not in by_pmid]
+    if unknown:
+        raise KeyError(f"not in queue: {', '.join(unknown)}")
+    for p in map(str, pmids):
+        by_pmid[p]["status"] = status
+        if note:
+            by_pmid[p]["note"] = note
     save_queue(state_dir, entries)
 
 

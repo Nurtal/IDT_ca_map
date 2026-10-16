@@ -69,8 +69,11 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
     interactions = {k: i for k, i in interactions.items() if i["source"] in kept and i["target"] in kept}
     evidence = {k: e for k, e in evidence.items() if e["interaction_id"] in interactions}
 
+    evidence_ids = {}
+    for eid, ev in evidence.items():
+        evidence_ids.setdefault(ev["interaction_id"], []).append(eid)
     for iid, inter in interactions.items():
-        finalize_interaction(inter, evidence, go_calcium)
+        finalize_interaction(inter, evidence_ids.get(iid, []), go_calcium)
     link_conflicts(interactions.values())
 
     nodes = [node_row(n, resolver, universe, annotations, neighbours)
@@ -88,6 +91,14 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
 
 def collect(records, resolver, universe, texts):
     interactions, evidence = {}, {}
+    docs = {}
+
+    def document(r):
+        key = r["ref"] if r["source_kind"] in LITERATURE_KINDS else "PMID:" + (r.get("cited_pmid") or "")
+        if key not in docs:
+            docs[key] = source_document(r, texts)
+        return docs[key]
+
     for r in records:
         r["_source_id"], r["_target_id"] = resolver.resolve(r["source"]), resolver.resolve(r["target"])
         if r["_source_id"] == r["_target_id"]:
@@ -106,7 +117,7 @@ def collect(records, resolver, universe, texts):
         if species not in SPECIES_CONTEXTS:
             raise ValueError(f"{r.get('_origin')}: unknown species_context {species!r}")
         inter["_human"] = inter.get("_human", False) or species in HUMAN_CONTEXTS
-        sentence, verified = evidence_sentence(r, source_document(r, texts), resolver.names)
+        sentence, verified = evidence_sentence(r, document(r), resolver.names)
         inter["_text_calcium"] |= universe.mentions_calcium(sentence)
         eid = short_hash(f"{iid}|{r['source_kind']}|{r['ref']}|{r.get('sentence', '')}")
         evidence[eid] = {
@@ -119,8 +130,7 @@ def collect(records, resolver, universe, texts):
     return interactions, evidence
 
 
-def finalize_interaction(inter, evidence, go_calcium):
-    iid = inter["interaction_id"]
+def finalize_interaction(inter, evidence_ids, go_calcium):
     refs = inter.pop("_refs")
     inter["n_pubs"] = sum(1 for k, _ in refs if k in LITERATURE_KINDS)
     inter["n_db"] = sum(1 for k, _ in refs if k in DATABASE_KINDS)
@@ -131,8 +141,7 @@ def finalize_interaction(inter, evidence, go_calcium):
     go = go_calcium(inter["source"]) or go_calcium(inter["target"])
     text = inter.pop("_text_calcium")
     inter["calcium_evidence"] = "both" if go and text else "GO" if go else "text" if text else ""
-    inter["evidence_fingerprint"] = short_hash(
-        "|".join(sorted(e for e, ev in evidence.items() if ev["interaction_id"] == iid)))
+    inter["evidence_fingerprint"] = short_hash("|".join(sorted(evidence_ids)))
 
 
 OPPOSITES = {"activation": "inhibition", "inhibition": "activation",

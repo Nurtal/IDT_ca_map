@@ -5,15 +5,9 @@
     reviews: "camap.reviews.v1", filters: "camap.filters.v1", reviewer: "camap.reviewer", theme: "camap.theme",
     hops: "camap.hops",
   };
-  const MODULES = {
-    soce: "SOCE / STIM1", sting: "STING / innate immunity", ca_stores: "Ca²⁺ stores & pumps",
-    effectors: "Ca²⁺ effectors", bridge: "STIM1–STING bridge", metabolite: "Metabolite",
-  };
-  const SPECIES = {
-    human: "🧍 human", in_vitro_human_cells: "🧫 human cells", mouse: "🐭 mouse", rat: "🐀 rat",
-    other: "other species", unknown: "species ?",
-  };
-  const CALCIUM = { GO: "GO annotation", text: "mentioned in source text", both: "GO annotation + source text" };
+  const { modules: MODULES, species: SPECIES, calcium: CALCIUM } = CamapCore.LABELS;
+  const { refHref } = CamapCore;
+  const { el, link, load, store, download } = CamapUI;
 
   const data = window.CAMAP || {};
   const interactions = data.interactions || [];
@@ -30,23 +24,6 @@
   let miniGraph = null;
 
   // ---------- storage ----------
-
-  function load(key, fallback) {
-    try {
-      const v = localStorage.getItem(key);
-      return v == null ? fallback : JSON.parse(v);
-    } catch (e) {
-      return fallback;
-    }
-  }
-
-  function store(key, value) {
-    try {
-      localStorage.setItem(key, JSON.stringify(value));
-    } catch (e) {
-      /* storage unavailable: export remains the durable path */
-    }
-  }
 
   async function persist() {
     store(KEYS.reviews, session.reviews());
@@ -67,35 +44,6 @@
     const out = {};
     for (const r of rows) (out[r[key]] = out[r[key]] || []).push(r);
     return out;
-  }
-
-  function el(tag, attrs = {}, ...children) {
-    const e = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs)) {
-      if (v == null || v === false) continue;
-      if (k === "class") e.className = v;
-      else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
-      else e.setAttribute(k, v);
-    }
-    for (const c of children.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : String(c));
-    return e;
-  }
-
-  function refHref(ref) {
-    if (ref.startsWith("PMID:")) return "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
-    if (ref.startsWith("PMC")) return "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
-    if (ref.startsWith("SIGNOR-")) return "https://signor.uniroma2.it/relation_result.php?id=" + ref;
-    if (ref.startsWith("EBI-")) return "https://www.ebi.ac.uk/intact/search?query=" + ref;
-    if (ref.startsWith("BIOGRID:")) return "https://thebiogrid.org/interaction/" + ref.slice(8);
-    if (ref.startsWith("OmniPath:")) {
-      const [a, b] = ref.slice(9).split(">");
-      return "https://omnipathdb.org/interactions?partners=" + a + "," + b + "&genesymbols=yes&fields=sources,references";
-    }
-    return null;
-  }
-
-  function link(href, text) {
-    return href ? el("a", { href, target: "_blank", rel: "noopener" }, text) : el("span", {}, text);
   }
 
   function refLink(ev) {
@@ -249,12 +197,16 @@
 
   // ---------- actions ----------
 
+  let deciding = false; // blocks a second decision while the card animates out
+
   function decide(decision) {
-    if (!session.current()) return;
+    if (deciding || !session.current()) return;
+    deciding = true;
     const card = $("card");
     const comment = $("comment").value.trim();
     const done = () => {
       session.decide(decision, comment);
+      deciding = false;
       persist();
       render();
     };
@@ -264,6 +216,7 @@
   }
 
   function undo() {
+    if (deciding) return;
     const id = session.undo();
     if (!id) return;
     const r = session.reviews()[id];
@@ -271,13 +224,6 @@
     if (!r) session.setMode("pending");
     persist();
     render();
-  }
-
-  function download(name, text, type) {
-    const a = el("a", { href: URL.createObjectURL(new Blob([text], { type })), download: name });
-    document.body.append(a);
-    a.click();
-    a.remove();
   }
 
   function enableSwipe() {
@@ -363,16 +309,14 @@
     });
   }
 
-  const applyTheme = (t) => { if (t) document.documentElement.dataset.theme = t; };
-  applyTheme(load(KEYS.theme, null));
+  CamapUI.applyTheme(load(KEYS.theme, null));
   $("theme").addEventListener("click", () => {
-    const t = (document.documentElement.dataset.theme || "dark") === "dark" ? "light" : "dark";
-    applyTheme(t);
-    store(KEYS.theme, t);
+    CamapUI.toggleTheme(KEYS.theme);
     render();
   });
 
   document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey || e.metaKey || e.altKey) return; // leave browser shortcuts alone
     if (e.target instanceof Element && e.target.closest("input, textarea")) {
       if (e.key === "Escape") e.target.blur();
       return;

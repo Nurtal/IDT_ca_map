@@ -63,7 +63,7 @@ test("shortest path is null when actors are disconnected or unknown", () => {
   assert.equal(core.shortestPath(CHAIN, "A", "ZZZ"), null);
 });
 
-test("graph filters: link types, minimum sources, modules, mouse-only", () => {
+test("graph filters: link types, minimum sources, modules, mouse-only (absent list = all)", () => {
   const items = [
     { ...E("1", "A", "B", "activation"), n_sources: "3", has_human_evidence: "true" },
     { ...E("2", "A", "C", "inhibition"), n_sources: "1", has_human_evidence: "true" },
@@ -75,5 +75,17 @@ test("graph filters: link types, minimum sources, modules, mouse-only", () => {
   assert.deepEqual(ids({ minSources: 2 }), ["1", "3"]);
   assert.deepEqual(ids({ excludeMouseOnly: true }), ["1", "2"]);
   assert.deepEqual(ids({ modules: ["soce", "sting"] }), ["1"]);
-  assert.deepEqual(ids({ types: [], minSources: 0, modules: [] }), ["1", "2", "3"]);
+  assert.deepEqual(ids({ minSources: 0 }), ["1", "2", "3"]);
+  assert.deepEqual(ids({ types: [] }), [], "an empty selection shows nothing");
+  assert.deepEqual(ids({ modules: [] }), []);
+});
+
+test("reference links cover literature and every database", () => {
+  assert.equal(core.refHref("PMID:30643259"), "https://pubmed.ncbi.nlm.nih.gov/30643259/");
+  assert.equal(core.refHref("PMC6340781"), "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6340781/");
+  assert.equal(core.refHref("SIGNOR-277299"), "https://signor.uniroma2.it/relation_result.php?id=SIGNOR-277299");
+  assert.equal(core.refHref("EBI-2291793"), "https://www.ebi.ac.uk/intact/search?query=EBI-2291793");
+  assert.equal(core.refHref("BIOGRID:12"), "https://thebiogrid.org/interaction/12");
+  assert.match(core.refHref("OmniPath:STIM1>TRPC1"), /omnipathdb\.org\/interactions\?partners=STIM1,TRPC1/);
+  assert.equal(core.refHref("something"), null);
 });
