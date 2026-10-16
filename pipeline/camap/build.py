@@ -6,6 +6,8 @@ from pathlib import Path
 
 from .schema import (DATABASE_KINDS, EVIDENCE_COLUMNS, INTERACTION_COLUMNS, LINK_TYPES,
                      LITERATURE_KINDS, NODE_COLUMNS)
+from .pubtator import PubTator
+from .verify import sentence_in
 
 
 def short_hash(text):
@@ -32,8 +34,17 @@ def interaction_key(source, target, type_):
     return source, target, type_
 
 
-def build_dataset(raw_dir, out_dir):
+def sentence_status(r, texts):
+    sentence = r.get("sentence", "")
+    if not sentence:
+        return ""
+    doc = texts.document(r["ref"]) if r["source_kind"] in LITERATURE_KINDS else None
+    return "true" if doc and sentence_in(sentence, doc["text"]) else "false"
+
+
+def build_dataset(raw_dir, out_dir, cache_dir=None):
     records = read_raw(raw_dir)
+    texts = PubTator(cache_dir or Path(out_dir) / "_no_cache")
     interactions = {}
     evidence = {}
     for r in records:
@@ -53,7 +64,7 @@ def build_dataset(raw_dir, out_dir):
             "evidence_id": eid, "interaction_id": iid, "source_kind": r["source_kind"],
             "ref": r["ref"], "doi": r.get("doi", ""), "year": r.get("year", ""),
             "first_author": r.get("first_author", ""), "sentence": sentence,
-            "sentence_verified": "", "species_context": r.get("species_context", "unknown"),
+            "sentence_verified": sentence_status(r, texts), "species_context": r.get("species_context", "unknown"),
         }
 
     for iid, inter in interactions.items():

@@ -1,0 +1,16 @@
+{"PubTator3": [
+ {"id": "1001", "pmid": 1001, "pmcid": "PMC9001", "date": "2019-09-01T00:00:00Z", "journal": "Nat Immunol",
+  "authors": ["Srikanth S", "Woo JS"], "infons": {},
+  "passages": [
+   {"infons": {"section_type": "TITLE", "type": "front"}, "offset": 0, "text": "The Ca2+ sensor STIM1 regulates the type I interferon response by retaining the signaling adaptor STING at the endoplasmic reticulum.", "annotations": []},
+   {"infons": {"section_type": "ABSTRACT", "type": "abstract"}, "offset": 133, "text": "STIM1 deficiency results in spontaneous STING activation.\nLoss of STIM1 in human cells enhances type I IFN expression.", "annotations": []},
+   {"infons": {"section_type": "RESULTS", "type": "paragraph"}, "offset": 300, "text": "We found that STIM1 interacts with STING via its “dimerization” domain.", "annotations": []},
+   {"infons": {"section_type": "REF", "type": "ref"}, "offset": 400, "text": "Ishikawa H. STING regulates intracellular DNA-mediated innate immune signalling.", "annotations": []}
+  ]},
+ {"id": "1002", "pmid": 1002, "date": "2021-01-01T00:00:00Z", "journal": "Cell Calcium",
+  "authors": ["Doe J"], "infons": {},
+  "passages": [
+   {"infons": {"type": "title"}, "offset": 0, "text": "ORAI1 and STIM1 coupling.", "annotations": []},
+   {"infons": {"type": "abstract"}, "offset": 26, "text": "STIM1 binds ORAI1 to gate CRAC channels.", "annotations": []}
+  ]}
+]}

@@ -62,6 +62,13 @@
       n.name ? el("div", { class: "name" }, n.name) : null);
   }
 
+  function sentence(ev) {
+    const ok = ev.sentence_verified === "true";
+    return el("blockquote", { class: ok ? "verified" : "unverified" },
+      ev.sentence,
+      ok ? null : el("div", { class: "warn" }, "⚠️ Not found verbatim in the source text"));
+  }
+
   function renderCard(i) {
     const evs = evidenceByInteraction[i.interaction_id] || [];
     return el("article", { class: "card" },
@@ -78,7 +85,7 @@
         el("ul", {}, evs.map((ev) =>
           el("li", { class: "evidence" },
             el("div", { class: "meta" }, el("span", { class: "badge " + ev.source_kind }, ev.source_kind), refLink(ev)),
-            ev.sentence ? el("blockquote", {}, ev.sentence) : el("p", { class: "muted" }, "No sentence"))))));
+            ev.sentence ? sentence(ev) : el("p", { class: "muted" }, "No sentence"))))));
   }
 
   function render() {

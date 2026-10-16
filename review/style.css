@@ -56,3 +56,5 @@ blockquote { margin: 8px 0 0; padding-left: 12px; border-left: 3px solid var(--a
 .decide button { font-size: 1.1rem; padding: 10px 28px; border-radius: 99px; }
 .decide .keep { border-color: var(--keep); color: var(--keep); }
 .decide .reject { border-color: var(--reject); color: var(--reject); }
+blockquote.unverified { border-left-color: var(--uncertain); }
+.warn { color: var(--uncertain); font-size: .8rem; margin-top: 4px; }
