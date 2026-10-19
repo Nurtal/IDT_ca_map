@@ -6,7 +6,7 @@ import zipfile
 from pathlib import Path
 
 from camap.supp import (catalogue_entries, catalogue_report, interaction_records,
-                        read_workbook)
+                        read_workbook, split_unresolved)
 
 NS = 'xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'
 RELNS = 'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"'
@@ -297,3 +297,27 @@ class TestCatalogueDuplicatesAndAliases(unittest.TestCase):
         entries, _ = catalogue_entries(CATALOGUE, [{"Gene name": "MYLPF", "localization 1": "cytosol"}],
                                        resolve=lambda s: "MYL11" if s == "MYLPF" else s)
         self.assertEqual(sorted(entries), ["MYL11"])
+
+
+class TestUnresolvedSymbols(unittest.TestCase):
+    """A cell that is not a gene must not become a node (issue #18)."""
+
+    class FakeResolver:
+        genes = {"RNF5": {}, "STING1": {}}
+
+        def resolve(self, name):
+            return name.upper()
+
+    def records(self, *symbols):
+        return [{"source": s, "target": "STING1", "supp_source": f"book/sheet/row {i}"}
+                for i, s in enumerate(symbols, 2)]
+
+    def test_a_row_naming_a_protein_family_is_held_back_with_its_cell_reference(self):
+        kept, unknown = split_unresolved(self.records("RNF5", "AP-1"), self.FakeResolver())
+        self.assertEqual([r["source"] for r in kept], ["RNF5"])
+        self.assertEqual(sorted(unknown), ["AP-1"])
+        self.assertEqual(unknown["AP-1"], ["book/sheet/row 3"])
+
+    def test_every_row_of_the_same_unknown_cell_is_listed_once_under_it(self):
+        _, unknown = split_unresolved(self.records("SAR1", "SAR1"), self.FakeResolver())
+        self.assertEqual(len(unknown["SAR1"]), 2)

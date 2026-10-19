@@ -93,19 +93,26 @@ def select_nodes(universe, interactions, go_calcium, curated_calcium=None):
 
     A gene of the curator's catalogue is calcium-related by her own judgement (issue #17),
     on a par with a GO annotation or a calcium term in the supporting sentence.
+
+    A row the curator wrote down herself is a deliberate choice, so a curated interaction
+    with a level-1 seed admits its partner on its own: the calcium criterion and the
+    one-hop-from-an-anchor rule constrain what the literature and the databases bring in,
+    not what she picked (user decision of 2026-10-19, issue #16).
     """
     curated_calcium = curated_calcium or (lambda node: False)
-    neighbours, text_calcium = {}, {}
+    neighbours, text_calcium, curated_seed = {}, {}, {}
     for i in interactions:
         for a, b in ((i["source"], i["target"]), (i["target"], i["source"])):
             neighbours.setdefault(a, set()).add(b)
             text_calcium[a] = text_calcium.get(a, False) or i["_text_calcium"]
+            curated_seed[a] = (curated_seed.get(a, False)
+                               or bool(i.get("_curated")) and universe.level(b) == 1)
 
     kept = set()
     for node, nbrs in neighbours.items():
         level = universe.level(node)
         touches_anchor = bool(nbrs & universe.anchors)
-        if level == 1:
+        if level == 1 or curated_seed[node]:
             kept.add(node)
         elif level == 2:
             if touches_anchor:
@@ -118,7 +125,12 @@ def select_nodes(universe, interactions, go_calcium, curated_calcium=None):
 def module_of(universe, node_id, neighbours):
     if node_id in universe.seeds:
         return universe.seeds[node_id]["module"]
-    modules = {universe.seeds[a]["module"] for a in neighbours.get(node_id, ()) if a in universe.anchors}
+    nbrs = neighbours.get(node_id, ())
+    # the anchors say it best; a node that only hangs from other level-1 seeds (the curator's
+    # ORAI1 and TRPC1 interactomes) takes their module rather than none at all
+    modules = {universe.seeds[a]["module"] for a in nbrs if a in universe.anchors}
+    if not modules:
+        modules = {universe.seeds[a]["module"] for a in nbrs if universe.level(a) == 1}
     if len(modules) > 1:
         return "bridge"
     return next(iter(modules), "")

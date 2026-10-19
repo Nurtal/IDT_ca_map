@@ -1,10 +1,9 @@
 # Calcium map
 
 ## Description
-Build Gene network for 3 calcium pathways
+Build Gene network for 2 calcium pathways
   - STIM 1
   - STING
-  - "Ca pathway"
 
 ## Objective
 - Scrap literature to search every nodes & edge implicated

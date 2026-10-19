@@ -16,6 +16,14 @@
     </nav>
     <div class="progress" id="progress"></div>
     <label class="toggle"><input type="checkbox" id="filter-mouse"> Exclude mouse-only</label>
+    <label class="toggle">Evidence
+      <select id="filter-kind">
+        <option value="">all sources</option>
+        <option value="literature">literature only</option>
+        <option value="database">databases only</option>
+        <option value="curated">curator's sheets only</option>
+      </select>
+    </label>
     <label class="reviewer">Reviewer <input id="reviewer" type="text" size="8" placeholder="initials"></label>
     <details class="menu">
       <summary>File ▾</summary>

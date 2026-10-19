@@ -271,13 +271,22 @@
     b.addEventListener("click", () => { session.setMode(b.dataset.mode); render(); }));
 
   const filterMouse = $("filter-mouse");
-  filterMouse.checked = !!load(KEYS.filters, {}).excludeMouseOnly;
-  filterMouse.addEventListener("change", () => {
-    const filters = { excludeMouseOnly: filterMouse.checked };
+  const filterKind = $("filter-kind");
+  const saved = load(KEYS.filters, {});
+  filterMouse.checked = !!saved.excludeMouseOnly;
+  filterKind.value = (saved.sourceKinds || []).length === 1 ? saved.sourceKinds[0] : "";
+  const applyFilters = () => {
+    const filters = {
+      excludeMouseOnly: filterMouse.checked,
+      // one kind at a time here: the stack is reviewed source by source
+      sourceKinds: filterKind.value ? [filterKind.value] : null,
+    };
     session.setFilters(filters);
     store(KEYS.filters, filters);
     render();
-  });
+  };
+  filterMouse.addEventListener("change", applyFilters);
+  filterKind.addEventListener("change", applyFilters);
 
   const reviewer = $("reviewer");
   reviewer.value = load(KEYS.reviewer, "");

@@ -167,7 +167,13 @@
     const types = Array.isArray(filters.types) ? new Set(filters.types) : null;
     const modules = Array.isArray(filters.modules) ? new Set(filters.modules) : null;
     const minSources = Number(filters.minSources) || 0;
+    // an interaction may rest on several kinds of source at once, so it shows as soon as one
+    // of the kinds asked for backs it (counts come from the build: n_pubs / n_db / n_curated)
+    const kinds = Array.isArray(filters.sourceKinds) ? new Set(filters.sourceKinds) : null;
+    const KIND_COUNT = { literature: "n_pubs", database: "n_db", curated: "n_curated" };
+    const hasKind = (i) => [...kinds].some((k) => Number(i[KIND_COUNT[k]] || 0) > 0);
     return interactions.filter((i) =>
+      (!kinds || hasKind(i)) &&
       // species unknown is not species non-human: only hide what is actually animal-only
       !(filters.excludeMouseOnly && i.has_human_evidence === "false"
         && i.has_animal_evidence === "true") &&

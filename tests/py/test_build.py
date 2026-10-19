@@ -149,15 +149,18 @@ class TestCuratedEvidence(BuildCase):
         self.assertEqual(e["sentence_verified"], "")
 
     def test_the_catalogue_satisfies_the_calcium_half_of_the_inclusion_rule(self):
-        self.write_catalogue({"ALG2": {"ca_functionality": "Ca2+ binding"}})
-        self.write_raw([curated()])
+        # a literature row: the curated rows come in on the curator's say-so anyway
+        self.write_catalogue({"CASQ1": {"ca_functionality": "Ca2+ binding"}})
+        self.write_raw([rec(source="CASQ1", target="STING1", type="physical_binding",
+                            sentence="Both proteins were detected in the same complex.")])
         d = self.build()
-        self.assertEqual(sorted(n["id"] for n in d["nodes"]), ["ALG2", "STING1"])
+        self.assertEqual(sorted(n["id"] for n in d["nodes"]), ["CASQ1", "STING1"])
         self.assertEqual(d["interactions"][0]["calcium_evidence"], "curated")
 
     def test_a_partner_outside_the_catalogue_still_needs_GO_or_a_calcium_sentence(self):
         self.write_catalogue({"SOMETHING_ELSE": {}})
-        self.write_raw([curated()])
+        self.write_raw([rec(source="CASQ1", target="STING1", type="physical_binding",
+                            sentence="Both proteins were detected in the same complex.")])
         self.assertEqual(self.build()["interactions"], [])
 
     def test_catalogue_and_GO_criteria_are_both_reported(self):
@@ -179,6 +182,35 @@ class TestCuratedEvidence(BuildCase):
         self.assertEqual(node["ca_functionality"], "Ca2+ binding")
 
 
+class TestCuratedInclusion(BuildCase):
+    """The curator's own call admits a partner (user decision of 2026-10-19, issue #16).
+
+    A row she wrote down is a deliberate choice, so a curated link to a level-1 seed is
+    enough: neither the calcium criterion nor the one-hop-from-an-anchor rule applies to it.
+    """
+
+    def test_a_curated_partner_of_an_anchor_enters_without_any_calcium_link(self):
+        # STING trafficking machinery: no GO calcium term, no catalogue entry, no sentence.
+        self.write_raw([curated(source="COPA")])
+        d = self.build()
+        self.assertEqual(sorted(n["id"] for n in d["nodes"]), ["COPA", "STING1"])
+
+    def test_a_curated_partner_of_a_seed_enters_although_it_is_two_hops_from_the_axis(self):
+        # ORAI1 is a level-1 seed, not an anchor; its curated interactome comes in all the same.
+        self.write_raw([curated(source="ATP2C2", target="ORAI1", type="activation")])
+        self.assertIn("ATP2C2", [n["id"] for n in self.build()["nodes"]])
+
+    def test_the_wider_net_is_cast_for_curated_rows_only(self):
+        self.write_raw([rec(source="GAPDH", target="ORAI1", type="physical_binding",
+                            sentence="Both proteins were detected in the same complex.")])
+        self.assertEqual(self.build()["interactions"], [])
+
+    def test_a_curated_partner_takes_the_module_of_the_seed_it_hangs_from(self):
+        self.write_raw([curated(source="ATP2C2", target="ORAI1", type="activation")])
+        node = next(n for n in self.build()["nodes"] if n["id"] == "ATP2C2")
+        self.assertEqual(node["module"], "soce")
+
+
 class TestDropReport(BuildCase):
     """Issue #16: a curated row the inclusion rule drops must say so, with its reason."""
 
@@ -186,22 +218,12 @@ class TestDropReport(BuildCase):
         _, dropped = build_dataset(self.raw, self.out, **kw)
         return dropped
 
-    def test_a_partner_with_no_calcium_link_is_reported_not_silently_lost(self):
-        self.write_raw([curated(source="COPA")])
+    def test_a_curated_row_hanging_from_no_seed_at_all_is_reported_not_silently_lost(self):
+        self.write_raw([curated(source="COPA", target="TOLLIP")])
         dropped = self.dropped()
-        self.assertEqual(len(dropped), 1)
+        self.assertEqual(len(dropped), 2)
         self.assertIn("COPA", dropped[0])
-        self.assertIn("not calcium-related", dropped[0])
-
-    def test_a_partner_that_never_touches_an_anchor_is_reported_with_that_reason(self):
-        # ORAI1 is a seed but not an anchor, so its partners are two hops from STIM1/STING1.
-        (self.out).mkdir(parents=True, exist_ok=True)
-        (self.out / "supp_catalogue.json").write_text(json.dumps({"ATP2C2": {}}))
-        self.write_raw([curated(source="ATP2C2", target="ORAI1", type="activation")])
-        dropped = self.dropped()
-        self.assertEqual(len(dropped), 1)
-        self.assertIn("ATP2C2", dropped[0])
-        self.assertIn("no interaction with STIM1 or STING1", dropped[0])
+        self.assertIn("no curated link to a seed", dropped[0])
 
     def test_an_admitted_curated_row_is_not_reported(self):
         (self.out).mkdir(parents=True, exist_ok=True)

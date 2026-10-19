@@ -33,6 +33,8 @@
     "negative regulator": "inhibition",
     "positive regulators of soce": "activation",
     "negative regulator of soce": "inhibition",
+    "negative regulators of soce": "inhibition",
+    "positive regulators of soce/arc": "activation",
     "inactivation of arc channels": "inhibition"
   },
   "interactomes": [

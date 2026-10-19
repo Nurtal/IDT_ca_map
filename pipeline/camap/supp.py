@@ -255,13 +255,21 @@ def read_all(config, root, resolve=None):
     return records, catalogue, notes
 
 
-def unresolved_symbols(records, resolver):
-    """Curated symbols the resolver cannot map to a gene we know — reported, never dropped."""
-    unknown = {}
+def split_unresolved(records, resolver):
+    """(records whose actor is a gene we know, {cell: [where it appears]} for the rest).
+
+    A curated row now enters the map on the curator's say-so alone, so a cell that is not a
+    gene — a family ("AP-1", "SEC31"), two genes at once ("PTPN1/2") — would become a node
+    named after the cell. Those rows wait for the curator's answer in issue #18 instead, and
+    `cli.py supp` prints every one of them.
+    """
+    kept, unknown = [], {}
     for r in records:
-        if resolver.resolve(r["source"]) not in resolver.genes:
+        if resolver.resolve(r["source"]) in resolver.genes:
+            kept.append(r)
+        else:
             unknown.setdefault(r["source"], []).append(r["supp_source"])
-    return unknown
+    return kept, unknown
 
 
 def supp_file_stem(supp_source):

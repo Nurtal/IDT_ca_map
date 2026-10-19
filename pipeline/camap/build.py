@@ -116,11 +116,12 @@ def dropped_curated(interactions, kept, universe, neighbours, go_calcium, curate
         for node in (inter["source"], inter["target"]):
             if node in kept:
                 continue
-            anchors = ", ".join(sorted(universe.anchors))
-            reason = (f"no interaction with {anchors.replace(', ', ' or ')}"
-                      if not (neighbours.get(node, set()) & universe.anchors)
-                      else "not calcium-related (no GO annotation, no calcium term, not in the catalogue)")
-            notes.append(f"{inter['source']} {inter['type']} {inter['target']}: {node} dropped, {reason}")
+            anchors = " or ".join(sorted(universe.anchors))
+            also = (f"no interaction with {anchors}"
+                    if not (neighbours.get(node, set()) & universe.anchors)
+                    else "not calcium-related (no GO annotation, no calcium term, not in the catalogue)")
+            notes.append(f"{inter['source']} {inter['type']} {inter['target']}: {node} dropped, "
+                         f"no curated link to a seed, and {also}")
     return notes
 
 

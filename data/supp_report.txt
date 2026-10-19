@@ -1,4 +1,4 @@
-7 symbol(s) the resolver could not map to HGNC (see issue #18):
+7 cell(s) the resolver could not map to HGNC, held out of the map (see issue #18):
   AP-1                 interactome STING.xlsx/interactors/row 4
   PTPN1/2              interactome STING.xlsx/modulators/row 9
   SAR1                 interactome STING.xlsx/interactors/row 30 (+1 more)
@@ -6,34 +6,15 @@
   SEC31                interactome STING.xlsx/interactors/row 37
   Sec24                interactome STING.xlsx/modulators/row 13
   Sec31                interactome STING.xlsx/modulators/row 14
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 4: unmapped regulation 'positive Regulators of SOCE/ARC:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 12: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 15: unmapped regulation 'negative regulator of Cav activity', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 16: unmapped regulation 'negative regulator of Cav activity', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 17: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 18: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 20: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 25: unmapped regulation 'positive regulator of ARC\nnegative regulator of CRAC', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 28: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 33: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 34: unmapped regulation 'positive regulator of AMPAR', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 35: unmapped regulation 'positive regulator of AMPAR', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 36: unmapped regulation 'positive regulator of NMDA activity', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 37: unmapped regulation 'positive regulator of NMDA activity', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 38: unmapped regulation '??', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/STIM1/row 45: unmapped regulation '??', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 46: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 47: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 48: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 56: unmapped regulation 'negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 57: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 66: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 69: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 72: unmapped regulation 'negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 74: unmapped regulation 'Negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 75: unmapped regulation 'negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 78: unmapped regulation 'negative Regulators of SOCE:', read as physical_binding
-NOTE: interactome STIM1 bis.xlsx/STIM1/row 79: unmapped regulation 'negative Regulators of SOCE:', read as physical_binding
 NOTE: interactome STIM1 bis.xlsx/TRPC: sheet is empty
 NOTE: interactome STING.xlsx/modulators/row 12: not a gene symbol, row skipped: 'SEC 23'
 NOTE: interactome STING.xlsx/modulators/row 21: not a gene symbol, row skipped: 'UBAP1\xa0/ HGS and Vesicular protein sorting (Vps) 37A (Vps37A)'

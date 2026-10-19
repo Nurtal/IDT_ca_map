@@ -29,8 +29,8 @@ from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
 from camap.nodes import Resolver, load_config  # noqa: E402
 from camap.pubtator import PubTator  # noqa: E402
-from camap.supp import (catalogue_report, load_supp_config, read_all, supp_file_stem,  # noqa: E402
-                        unresolved_symbols)
+from camap.supp import (catalogue_report, load_supp_config, read_all, split_unresolved,  # noqa: E402
+                        supp_file_stem)
 
 CACHE = ROOT / "pipeline" / "cache"
 SUPP_CONFIG = ROOT / "pipeline" / "config" / "supp.json"
@@ -90,10 +90,13 @@ def main(argv=None):
         unverified = [e for e in tables["evidence"][1] if e["sentence_verified"] == "false"]
         if unverified:
             print(f"WARNING: {len(unverified)} sentence(s) not found verbatim in cached texts")
+        report = Path(args.out) / "supp_dropped.txt"
         if dropped:
             print(f"WARNING: {len(dropped)} curated interaction(s) dropped by the inclusion rule "
                   f"(see data/supp_dropped.txt)")
-            (Path(args.out) / "supp_dropped.txt").write_text("\n".join(dropped) + "\n")
+            report.write_text("\n".join(dropped) + "\n")
+        elif report.exists():  # a stale report would claim drops the current build does not make
+            report.unlink()
     elif args.cmd == "fetch-texts":
         pt = PubTator(CACHE)
         pmids = set(args.pmids or [])
@@ -174,6 +177,7 @@ def main(argv=None):
         resolver = Resolver(CACHE, config)
         supp_config = load_supp_config(SUPP_CONFIG)
         records, catalogue, notes = read_all(supp_config, ROOT, resolve=resolver.resolve)
+        records, unknown = split_unresolved(records, resolver)
 
         raw = args.out / "raw"
         raw.mkdir(parents=True, exist_ok=True)
@@ -188,10 +192,10 @@ def main(argv=None):
         catalogue_path.write_text(json.dumps(catalogue, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
         print(f"{len(catalogue):4d} catalogue genes -> {show(catalogue_path)}")
 
-        unknown = unresolved_symbols(records, resolver)
         lines = []
         if unknown:
-            lines.append(f"{len(unknown)} symbol(s) the resolver could not map to HGNC (see issue #18):")
+            lines.append(f"{len(unknown)} cell(s) the resolver could not map to HGNC, "
+                         f"held out of the map (see issue #18):")
             for symbol, where in sorted(unknown.items()):
                 lines.append(f"  {symbol:20s} {where[0]}"
                              f"{'' if len(where) == 1 else f' (+{len(where) - 1} more)'}")

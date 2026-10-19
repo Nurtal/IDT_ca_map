@@ -205,3 +205,16 @@ test("the murine-only filter hides mouse-only interactions, not species-unknown 
   const kept = core.applyFilters([mouseOnly, unknown], { excludeMouseOnly: true });
   assert.deepEqual(kept.map((i) => i.interaction_id), ["u"]);
 });
+
+test("the evidence-kind filter keeps an interaction carrying any of the chosen kinds", () => {
+  const lit = I("l", { n_pubs: "2", n_db: "0", n_curated: "0" });
+  const db = I("d", { n_pubs: "0", n_db: "1", n_curated: "0" });
+  const cur = I("c", { n_pubs: "0", n_db: "0", n_curated: "1" });
+  const both = I("b", { n_pubs: "1", n_db: "0", n_curated: "1" });
+  const items = [lit, db, cur, both];
+  const ids = (f) => core.applyFilters(items, f).map((i) => i.interaction_id);
+  assert.deepEqual(ids({ sourceKinds: ["curated"] }), ["c", "b"]);
+  assert.deepEqual(ids({ sourceKinds: ["literature", "database"] }), ["l", "d", "b"]);
+  assert.deepEqual(ids({}), ["l", "d", "c", "b"]);
+  assert.deepEqual(ids({ sourceKinds: [] }), []);
+});

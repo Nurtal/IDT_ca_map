@@ -79,9 +79,15 @@ Rules of thumb:
 ## Inclusion rule (applied by the build, for reference)
 
 A non-seed actor survives only if it interacts directly with an anchor (STIM1 or STING1) **and** is
-calcium-related (GO calcium transport/signalling annotation, or a calcium term in a supporting sentence).
+calcium-related (GO calcium transport/signalling annotation, a calcium term in a supporting sentence,
+or an entry in the curator's gene catalogue).
 Level-1 seeds are always kept; level-2 seeds (calcineurin, NFAT, CaMKII) need a link to an anchor.
 See `pipeline/config/seeds.json`.
+
+**One exception, for curated rows only** (user decision of 2026-10-19): a curated interaction with a
+level-1 seed admits its partner on its own, without the calcium criterion and without an anchor. A row
+the researcher wrote down is a deliberate choice, so the STING trafficking machinery and the ORAI1 /
+TRPC1 interactomes come in whole. Literature and database rows keep the full rule.
 
 ## The curator's spreadsheets (`data_supp/`)
 
@@ -113,9 +119,12 @@ Rules that keep these rows honest:
 - `cli.py supp --report` says how many catalogue genes are in the map, how many the corpus has
   already turned up without an anchor link yet (the extraction leads), and how many it has never
   touched. The run also writes `data/supp_report.txt` with every symbol and value it could not read.
-- `cli.py build` writes `data/supp_dropped.txt`: every curated interaction the inclusion rule
-  dropped, with its reason. Partners of ORAI1 and TRPC1 land there whenever nothing links them to
-  STIM1 or STING1 — those two are seeds, not anchors, so their partners sit two hops from the axis.
+- A cell that is not one gene — a family (`AP-1`, `SEC31`) or two genes at once (`PTPN1/2`) — would
+  now become a node named after the cell, so `cli.py supp` holds those rows out of `data/raw` and
+  lists them at the top of `data/supp_report.txt`, pending the curator's answer in issue #18.
+- `cli.py build` writes `data/supp_dropped.txt` when a curated interaction is dropped all the same
+  (a row hanging from no seed at all), with its reason. The file is deleted when nothing is dropped,
+  so a stale report never claims losses the current build does not make.
 - A curated row records no species, so its interaction has neither human nor animal evidence. The
   pages say "species not recorded" and the murine-only filter leaves it visible: unknown is not
   the same as non-human.

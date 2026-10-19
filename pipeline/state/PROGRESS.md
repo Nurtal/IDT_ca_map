@@ -70,3 +70,29 @@ co-mention the genes without measuring anything. Seven articles were read in ful
 43, none had a single sentence carrying an anchor and a calcium term together, and only two
 mentioned STIM1/ORAI1 at all (a patient count and an author-contribution artefact). That
 co-occurrence screen is what made a 50-article batch feasible and is now step 3 of the protocol.
+
+### 2026-10-19 — the curator's interactomes come in whole
+
+The researcher's call on the two open questions of issue #16: *ratisse large, garde les 78 et
+les 5*. A curated interaction with a level-1 seed now admits its partner on its own — no calcium
+criterion, no one-hop-from-an-anchor rule. Literature and database rows keep the full inclusion
+rule, so the wider net is exactly as wide as her spreadsheets.
+
+Map: **117 -> 202 nodes, 255 -> 394 interactions, 466 -> 635 evidence rows**, zero curated rows
+dropped (`data/supp_dropped.txt` is gone, and the build deletes it rather than leaving it stale).
+Modules now fall back to the level-1 seed a node hangs from, so the ORAI1 and TRPC1 partners read
+`soce` instead of nothing.
+
+Two things the wider net exposed, both fixed:
+- Six cells that are not genes (`AP-1`, `PTPN1/2`, `SAR1`, `SEC23`, `SEC24`, `SEC31`) were about
+  to become nodes named after the cell. `cli.py supp` now holds those rows out of `data/raw` and
+  lists them at the top of `data/supp_report.txt` — they wait for issue #18.
+- The sheet's section headings (`Negative Regulators of SOCE:` and its variants) were read as
+  plain binding. Mapped: 19 unreadable regulations down to 9, and the nine left are regulations of
+  *another* channel (NMDA, AMPAR, Cav, ARC/CRAC) plus one `??`, where binding is the honest read.
+
+Both pages gained an evidence-kind filter (literature / databases / curator's sheets): with 179
+curated cards in the stack, reviewing source by source is the only practical way through.
+
+**Next session:** the review stack is what matters now — 394 interactions, most of them unreviewed.
+Extraction resumes at tier 1, PMID 37961129.

@@ -21,7 +21,7 @@
   for (const e of data.evidence || []) (evidenceByInteraction[e.interaction_id] = evidenceByInteraction[e.interaction_id] || []).push(e);
   let kept = data.kept || [];
   // types/modules: null = all, [] = none (see CamapCore.applyFilters)
-  let filters = { excludeMouseOnly: false, minSources: 1, types: null, modules: null, ...load(KEYS.filters, {}) };
+  let filters = { excludeMouseOnly: false, minSources: 1, types: null, modules: null, sourceKinds: null, ...load(KEYS.filters, {}) };
   let cy = null;
   window.__camapGraph = () => cy; // handle for debugging and headless smoke checks
   let pathHighlight = null;
@@ -273,7 +273,11 @@
     draw();
   }
 
+  const KINDS = { literature: ["n_pubs", "literature"], database: ["n_db", "databases"], curated: ["n_curated", "curator's sheets"] };
+
   function buildFilterUI() {
+    const kinds = Object.keys(KINDS).filter((k) => kept.some((i) => Number(i[KINDS[k][0]] || 0) > 0));
+    checks($("f-kinds"), kinds, filters.sourceKinds, (k) => KINDS[k][1], (on) => setFilters({ sourceKinds: on }));
     const types = LINK_TYPES.filter((t) => kept.some((i) => i.type === t));
     checks($("f-types"), types, filters.types, (t) => t.replace(/_/g, " "), (on) => setFilters({ types: on }));
     const modules = Object.keys(MODULES).filter((m) => kept.some((i) => moduleOf(i.source) === m || moduleOf(i.target) === m));
