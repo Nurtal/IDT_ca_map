@@ -121,6 +121,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
+  "evidence_id": "029a905bf6bf",
+  "interaction_id": "2cb1a0703851",
+  "source_kind": "pubmed",
+  "ref": "PMID:22506990",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Jardin I",
+  "sentence": "In addition, thapsigargin and thrombin enhanced the association of Homer1 with STIM1 and Orai1 in a Ca2+-dependent manner.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "037124c967d6",
   "interaction_id": "6f3b4358302c",
   "source_kind": "curated",
@@ -266,6 +281,21 @@ window.CAMAP.evidence = [
   "first_author": "Honnappa et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "05e3c56e469e",
+  "interaction_id": "87553d1717ae",
+  "source_kind": "pubmed",
+  "ref": "PMID:22506990",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Jardin I",
+  "sentence": "In addition, thapsigargin and thrombin enhanced the association of Homer1 with STIM1 and Orai1 in a Ca2+-dependent manner.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -1306,6 +1336,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "1f741328fd0f",
+  "interaction_id": "1b1f478af8f7",
+  "source_kind": "pmc",
+  "ref": "PMC6658532",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Katz ZB",
+  "sentence": "Here we show by super-resolution imaging of ORAI1, STIM1, and septin 4 in living cells that septins facilitate Ca2+ signalling indirectly.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "20a140d14905",
   "interaction_id": "e72a1a311924",
   "source_kind": "signor",
@@ -1499,6 +1544,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
+ },
+ {
+  "evidence_id": "25509fd8144d",
+  "interaction_id": "1e07723383dd",
+  "source_kind": "pubmed",
+  "ref": "PMID:19260825",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2009",
+  "first_author": "Jardin I",
+  "sentence": "In the present study we found evidence for the dynamic interaction between endogenously expressed hTRPC6 (human TRPC6) with either both Orai1 and STIM1 (stromal interaction molecule 1) or hTRPC3 to participate in CCE or NCCE.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "257d2912a4da",
@@ -4681,6 +4741,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "6e616d8fb6e1",
+  "interaction_id": "9117997c2b4c",
+  "source_kind": "pubmed",
+  "ref": "PMID:25384971",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Makowski SL",
+  "sentence": "SPPL3 enhances the signal-induced association of stromal interaction molecule 1 (STIM1) and Orai1 and is even required for the full activity of constitutively active STIM1 variants that bind Orai1 independently of ER Ca(2+) release.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "6e64b7606d38",
   "interaction_id": "deaa5119bd28",
   "source_kind": "curated",
@@ -6661,6 +6736,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 69"
  },
  {
+  "evidence_id": "90faab81aa4b",
+  "interaction_id": "fc2d77e7e220",
+  "source_kind": "pubmed",
+  "ref": "PMID:24558039",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Jozsef L",
+  "sentence": "Reticulon 4 is necessary for endoplasmic reticulum tubulation, STIM1-Orai1 coupling, and store-operated calcium entry.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "91324d5c621b",
   "interaction_id": "cc2142cdaee7",
   "source_kind": "curated",
@@ -7197,6 +7287,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9db37dd319a9",
+  "interaction_id": "0af1f30c5ec3",
+  "source_kind": "pmc",
+  "ref": "PMC5094991",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Guéguinou M",
+  "sentence": "Results In the present study, we demonstrate that SOCE promotes migration of colon cancer cell following the formation of a lipid raft ion channel complex composed of TRPC1/Orai1 and SK3 channels.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8926,6 +9031,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 33"
  },
  {
+  "evidence_id": "c86bc34f6667",
+  "interaction_id": "9343c8e12c4a",
+  "source_kind": "pubmed",
+  "ref": "PMID:25384971",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Makowski SL",
+  "sentence": "SPPL3 associates with STIM1 through at least two independent domains, the transmembrane region and the CRAC activation domain (CAD), and can promote the association of the STIM1 CAD with Orai1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c88864f7e2ea",
   "interaction_id": "1fa59b64f52a",
   "source_kind": "curated",
@@ -9509,6 +9629,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with FLNA on calcium store depletion in human platelets | Localisation: Cytosol | Protéine: Filamin  A",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 33"
+ },
+ {
+  "evidence_id": "d6a824932ea4",
+  "interaction_id": "33348fd2e331",
+  "source_kind": "pmc",
+  "ref": "PMC2943750",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Walsh CM",
+  "sentence": "In the present study we have discovered that Golli can directly interact with the ER (endoplasmic reticulum) Ca2+-sensing protein STIM1 (stromal interaction molecule 1).",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d6fb21b2aaaa",
@@ -10331,6 +10466,21 @@ window.CAMAP.evidence = [
   "first_author": "So et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e6d6bbbc51e3",
+  "interaction_id": "c29494924591",
+  "source_kind": "pubmed",
+  "ref": "PMID:19260825",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2009",
+  "first_author": "Jardin I",
+  "sentence": "In the present study we found evidence for the dynamic interaction between endogenously expressed hTRPC6 (human TRPC6) with either both Orai1 and STIM1 (stromal interaction molecule 1) or hTRPC3 to participate in CCE or NCCE.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""

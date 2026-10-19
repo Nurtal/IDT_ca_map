@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 270 done, 13127 pending, 120 skipped, 2 error.
+13519 articles in queue: 320 done, 13077 pending, 120 skipped, 2 error.
 
-- tier 0: 242/3800 processed
+- tier 0: 292/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -372,3 +372,30 @@ criterion, so that is the quote now. Choosing which true sentence to quote chang
 sees; worth remembering rather than reaching for `beyond_calcium`.
 
 Map: **232 nodes, 483 interactions, 762 evidence rows**.
+
+### 2026-10-19 — batch 7 (tier 0): ten records, and not one new node
+
+50 articles, 10 records, **zero new actors** — and that is the result. Six of the proteins came
+back as names the curator had already written in her STIM1 sheet: **RTN4, HOMER1, MBP (Golli),
+SPPL3, ASPH (junctate), SIGMAR1** all carried `curated` evidence and nothing else before today.
+TRPC6 was database-only. The batch turned her rows into published claims with a verbatim sentence
+each.
+
+- **SPPL3 binds and activates STIM1** (PMID 25384971): an intramembrane protease, found in a
+  screen for NFAT activators, that is required even by constitutively active STIM1 variants.
+- **HOMER1 binds STIM1 and ORAI1** in human platelets (PMID 22506990), recruited by the calcium
+  signal it helps produce.
+- **MBP (Golli) binds STIM1** (PMC2943750) — a myelin basic protein product on the SOCE machinery.
+- **RTN4 is needed for STIM1-ORAI1 coupling** (PMID 24558039): no ER tubules, no coupling. The
+  only record of the batch resting on the paper's title sentence; the body shows the SOCE loss.
+- **TRPC6 binds ORAI1 and STIM1** in human platelets (PMID 19260825), switching between the
+  store-operated and the non-capacitative route depending on its partner.
+- **KCNN3 binds TRPC1** (PMC5094991): the SK3/TRPC1/ORAI1 lipid-raft complex of colon cancer,
+  the same feedback as PMC8699475 seen as a three-channel assembly.
+- **SEPTIN4 → STIM1** (PMC6658532), a third reference and the one that says what septins do:
+  they set the number of ER-PM junctions, they do not recruit the channel.
+
+**Curated rows now backed by literature: 12 of 179.** Two batches ago that number was 5. The
+remaining 167 are the honest measure of how much of her sheets the corpus has not yet reached.
+
+Map: **232 nodes, 492 interactions, 772 evidence rows**.
