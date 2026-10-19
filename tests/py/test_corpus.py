@@ -221,3 +221,20 @@ class TestManualAdd(CorpusCase):
         add_articles(self.state, ["29033128"], self.meta)
         self.run_build()
         self.assertIn("29033128", {e["pmid"] for e in load_queue(self.state)})
+
+
+class TestPrimaryOnly(CorpusCase):
+    """`queue next --primary`: the reviews stay in the queue, out of the way."""
+
+    def test_reviews_are_skipped_without_changing_their_place_in_the_queue(self):
+        self.run_build(pubmed=FakePubmed({"10": ["Journal Article", "Review"]}))
+        # "10" is a review, but it crosses the axis, so it still heads the ordinary queue
+        self.assertEqual([e["pmid"] for e in next_pending(self.state, 3)], ["10", "20", "30"])
+        primary = next_pending(self.state, 3, primary=True)
+        self.assertNotIn("10", [e["pmid"] for e in primary])
+        self.assertEqual("10", load_queue(self.state)[0]["pmid"], "the review keeps its rank")
+
+    def test_it_combines_with_the_tier_filter(self):
+        self.run_build(pubmed=FakePubmed({"10": ["Journal Article", "Review"]}))
+        self.assertTrue(all(e["tier"] == 0 and not e.get("review")
+                            for e in next_pending(self.state, 50, tier=0, primary=True)))

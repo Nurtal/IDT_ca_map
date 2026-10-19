@@ -5,10 +5,10 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9105 articles in queue: 120 done, 8863 pending, 120 skipped, 2 error.
+9105 articles in queue: 170 done, 8813 pending, 120 skipped, 2 error.
 
 - tier 0: 72/193 processed
-- tier 1: 169/6584 processed
+- tier 1: 219/6584 processed
 - tier 2: 1/2328 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
@@ -253,3 +253,34 @@ crossing edge, which is right: that is the cross-talk.
 
 One imprecision, deliberate: an edge from a `bridge` node to STING1 reads as crossing, because the
 node's module is not "sting". It errs toward showing cross-talk, which is what the story wants.
+
+### 2026-10-19 — batch 4 (tier 1, the SOCE core) and `queue next --primary`
+
+The first `queue next 50 --tier 1` of this session returned **50 reviews in a row**. The priority
+order is (cross-the-axis, then primary before review), so this is the queue saying something:
+**tier 1 has no axis-crossing primary research left.** What sits in front now is 240 cross reviews,
+and behind them 3612 single-anchor primary articles — the best unread material, ranked last.
+
+Rather than reorder the queue, `queue next` (and `fetch-texts --next`, `candidates --next`) take
+`--primary`: articles PubMed types as reviews keep their rank, they are simply not served. One
+flag, no state change, and the reviews stay reachable with the plain command.
+
+With it, the batch is the SOCE core literature: STIM1/ORAI1 biophysics, SARAF, STIM2, TRPC1.
+50 articles read, all `done`, **12 records**, 3 new nodes (**CACNA1D, ESYT1, SEPTIN4**).
+
+- **STIM1 binds CACNA1D (Cav1.3)** and **TRPC1 ⊣ CACNA1D** (PMID 28258168, mouse substantia nigra):
+  the ER sensor reaching a plasma-membrane channel other than ORAI. Losing the contact kills
+  dopaminergic neurons, and restoring TRPC1 rescues them.
+- **ESYT1 and SEPTIN4 → STIM1** (PMC4270102): the ER-PM junction must be tethered by E-Syt1 and
+  stabilized by Septin4 before SARAF can switch STIM1 off. Recorded as `unknown_regulation`: the
+  paper shows the requirement, not a direction.
+- **STIM2 ⊣ STIM1** and **STIM1–STIM2 binding** (PMID 16860747, 20436167): the brake inside the
+  SOCE machinery, with two independent references.
+- **A conflict worth having**: SARAF ⊣ STIM1 (3 publications) now faces SARAF → STIM1
+  (PMC8562847, Zomot 2021), where SARAF *licenses* initial STIM1 activation by relieving the
+  inactivation domain. The build paired the two cards automatically — the first real conflict
+  badge in the map, and exactly the arbitration the review app exists for.
+
+Map: **210 nodes, 411 interactions, 660 evidence rows**.
+
+**Next session:** `queue next 50 --tier 1 --primary` continues in the same seam.

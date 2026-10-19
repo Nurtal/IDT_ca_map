@@ -22,7 +22,9 @@ Then open `review/index.html` (double-click, no server). After review, export
 ## One extraction batch (~50 articles)
 
 1. `git pull`, read `pipeline/state/PROGRESS.md` (status block + session notes).
-2. `python3 pipeline/cli.py queue next 50` (add `--tier N` to stay inside one tier) — take them in that order (priority: STIM1×STING1,
+2. `python3 pipeline/cli.py queue next 50` (add `--tier N` to stay inside one tier, `--primary` to
+   pass over the articles PubMed types as reviews — they keep their rank, they are just not served;
+   `fetch-texts --next` and `candidates --next` take the same flag, so a session follows one list) — take them in that order (priority: STIM1×STING1,
    then anchor × seed pairs, then each anchor alone; within a tier, queries crossing the two
    sides of the axis — a calcium-side gene with a STING-side gene — come first, then primary
    research before reviews, which are flagged `[review]`).

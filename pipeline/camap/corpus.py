@@ -180,10 +180,16 @@ def set_statuses(state_dir, pmids, status, note=None):
     save_queue(state_dir, entries)
 
 
-def next_pending(state_dir, n, tier=None):
-    """The n highest-priority pending articles, optionally restricted to one tier."""
+def next_pending(state_dir, n, tier=None, primary=False):
+    """The n highest-priority pending articles, optionally restricted to one tier.
+
+    `primary` passes over the articles PubMed types as reviews without touching their rank: once
+    a tier's primary research is read, what heads the queue is a long tail of reviews that the
+    protocol skips anyway, and the primary articles of the next priority band sit behind them.
+    """
     return [e for e in load_queue(state_dir)
-            if e["status"] == "pending" and (tier is None or e["tier"] == tier)][:n]
+            if e["status"] == "pending" and (tier is None or e["tier"] == tier)
+            and not (primary and e.get("review"))][:n]
 
 
 def write_progress(state_dir, ordered):

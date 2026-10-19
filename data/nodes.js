@@ -457,6 +457,25 @@ window.CAMAP.nodes = [
   "functional_assignment": "Cytosolic Ca2+ signaling"
  },
  {
+  "id": "CACNA1D",
+  "symbol": "CACNA1D",
+  "name": "calcium voltage-gated channel subunit alpha1 D",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "Q01668",
+  "synonyms": "CCHL1A2; CACNL1A2; Cav1.3; CACH3; CACN4",
+  "function_summary": "Voltage-sensitive calcium channels (VSCC) mediate the entry of calcium ions into excitable cells and are also involved in a variety of calcium-dependent processes, including muscle contraction, hormone or neurotransmitter release, gene expression, cell motility, cell division and cell death. The isoform alpha-1D gives rise to L-type calcium currents. Long-lasting (L-type) calcium channels belong to the 'high-voltage activated' (HVA) group. They are blocked by dihydropyridines (DHP), phenylalkylamines, and by benzothiazepines",
+  "genecards": "GC03P053328",
+  "protein_type": "calcium channel; Pore-forming subunit",
+  "localization": "PM",
+  "domains": "",
+  "ca_functionality": "Ca2+ entry",
+  "regulation": "",
+  "functional_assignment": "Cytosolic Ca2+ signaling"
+ },
+ {
   "id": "CACNA1G",
   "symbol": "CACNA1G",
   "name": "calcium voltage-gated channel subunit alpha1 G",
@@ -1006,6 +1025,25 @@ window.CAMAP.nodes = [
   "ca_functionality": "",
   "regulation": "",
   "functional_assignment": ""
+ },
+ {
+  "id": "ESYT1",
+  "symbol": "ESYT1",
+  "name": "extended synaptotagmin 1",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "Q9BSJ8",
+  "synonyms": "FAM62A; MBC2; KIAA0747",
+  "function_summary": "Binds calcium (via the C2 domains) and translocates to sites of contact between the endoplasmic reticulum and the cell membrane in response to increased cytosolic calcium levels. Helps tether the endoplasmic reticulum to the cell membrane and promotes the formation of appositions between the endoplasmic reticulum and the cell membrane. Acts as an inhibitor of ADGRD1 G protein-coupled receptor activity in absence of cytosolic calcium. Binds glycerophospholipids in a barrel-like domain and may play a role in cellular lipid transport (By similarity)",
+  "genecards": "GC12P056256",
+  "protein_type": "tethering protein",
+  "localization": "ER membrane",
+  "domains": "C2B domain",
+  "ca_functionality": "Ca2+ binding; Ca2+ regulated; Ca2+ entry",
+  "regulation": "",
+  "functional_assignment": "endoplasmic reticulum-plasma membrane tethering; SOCE"
  },
  {
   "id": "ESYT2",
@@ -2830,6 +2868,25 @@ window.CAMAP.nodes = [
   "ca_functionality": "",
   "regulation": "",
   "functional_assignment": ""
+ },
+ {
+  "id": "SEPTIN4",
+  "symbol": "SEPTIN4",
+  "name": "septin 4",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "O43236",
+  "synonyms": "PNUTL2; C17orf47; SEPT4; H5; CE5B3; hucep-7; ARTS; hCDCREL-2; MART; FLJ40121; Septin-4",
+  "function_summary": "Filament-forming cytoskeletal GTPase (Probable). Pro-apoptotic protein involved in LGR5-positive intestinal stem cell and Paneth cell expansion in the intestines, via its interaction with XIAP (By similarity). May also play a role in the regulation of cell fate in the intestine (By similarity). Positive regulator of apoptosis involved in hematopoietic stem cell homeostasis; via its interaction with XIAP (By similarity). Negative regulator of repair and hair follicle regeneration in response to injury, due to inhibition of hair follicle stem cell proliferation, potentially via its interaction with XIAP (By similarity). Plays an important role in male fertility and sperm motility. During spermiogenesis, essential for the establishment of the annulus (a fibrous ring structure connecting the midpiece and the principal piece of the sperm flagellum) which is a requisite for the structural and mechanical integrity of the sperm. Involved in the migration of cortical neurons and the formation of neuron leading processes during embryonic development (By similarity). Required for dopaminergic metabolism in presynaptic autoreceptors; potentially via activity as a presynaptic scaffold protein (By similarity)",
+  "genecards": "GC17M058522",
+  "protein_type": "enzyme; scaffold protein",
+  "localization": "PM associated; cytosol",
+  "domains": "",
+  "ca_functionality": "Ca2+ entry",
+  "regulation": "",
+  "functional_assignment": "SOCE; proteinI localization and organization"
  },
  {
   "id": "SERPINH1",

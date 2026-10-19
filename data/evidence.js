@@ -766,6 +766,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 47"
  },
  {
+  "evidence_id": "13f54658d46b",
+  "interaction_id": "15367ec703cd",
+  "source_kind": "pmc",
+  "ref": "PMC4270102",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Maléth J",
+  "sentence": "STIM1-Orai1 must be in a PM/ER microdomain tethered by E-Syt1, stabilized by Septin4 and enriched in PI(4,5)P2 for STIM1-SARAF interaction.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "145f603c402d",
   "interaction_id": "272f6432e725",
   "source_kind": "curated",
@@ -1724,6 +1739,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: co-IIP of Homer1 with STIM1 and the Cav1.2 α1 subunit after store depletion | Localisation: cytosol | Protéine: homer scaffold protein 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 39"
+ },
+ {
+  "evidence_id": "32f939f85494",
+  "interaction_id": "24056ac20f98",
+  "source_kind": "pubmed",
+  "ref": "PMID:28258168",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Sun Y",
+  "sentence": "Similarly, TRPC1-/- substantia nigra neurons showed increased L-type Ca2+ currents, decreased stimulation-dependent STIM1-Cav1.3 interaction, and decreased DA neurons.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "33397e68633d",
@@ -2789,6 +2819,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: Retains STING at the ER under steady-state conditions | domain of the interactor: Direct interaction of STIM1 | domain of STING: TMD",
   "supp_source": "interactome STING.xlsx/interactors/row 44"
+ },
+ {
+  "evidence_id": "5089de0943bf",
+  "interaction_id": "14c8cced2664",
+  "source_kind": "pmc",
+  "ref": "PMC8562847",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Zomot E",
+  "sentence": "Here we found that following ER Ca2+ depletion, SARAF facilitates a conformational change in the ER Ca2+ sensor STIM1 that relieves an activation constraint enforced by the STIM1 inactivation domain (ID; aa 475-483) and promotes initial activation of STIM1, its translocation to ER-plasma membrane junctions, and coupling to Orai1 channels.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "508bd006097b",
@@ -4486,6 +4531,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 52"
  },
  {
+  "evidence_id": "772e97e39055",
+  "interaction_id": "86e027c10c69",
+  "source_kind": "pubmed",
+  "ref": "PMID:20631248",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Rao JN",
+  "sentence": "STIM1 interacted with TRPC1 and formed STIM1/TRPC1 complex, whereas inactivation of STIM1 by STIM1 silencing decreased SOC-mediated Ca2+ influx and inhibited epithelial restitution.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "77fb90d04b6b",
   "interaction_id": "8ce086544075",
   "source_kind": "curated",
@@ -4784,6 +4844,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: Promotes STING trafficking and Competes for STING Binding with STIM1 | domain of the interactor: N-terminal TMDs | domain of STING: TMD | Infos dans SLE: TMEM203 mRNA levels are elevated in T cells from patients with systemic lupus",
   "supp_source": "interactome STING.xlsx/interactors/row 50"
+ },
+ {
+  "evidence_id": "7d4d04fcb165",
+  "interaction_id": "cc2142cdaee7",
+  "source_kind": "pubmed",
+  "ref": "PMID:27414851",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Albarran L",
+  "sentence": "SARAF negatively modulates store-operated Ca2+ entry (SOCE) by preventing STIM1 spontaneous activation and regulating STIM1-Orai1 complex formation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "7dc4d83f596b",
@@ -6346,6 +6421,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "a4ae566b708b",
+  "interaction_id": "b4354ca505f5",
+  "source_kind": "intact",
+  "ref": "EBI-911456",
+  "cited_pmid": "16512683",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Berggard et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a50596687c5c",
   "interaction_id": "f9e32a51cb7d",
   "source_kind": "intact",
@@ -7456,6 +7546,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c206b2b19dd4",
+  "interaction_id": "cc2142cdaee7",
+  "source_kind": "pmc",
+  "ref": "PMC4270102",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Maléth J",
+  "sentence": "The Orai1-STIM1 current undergoes slow Ca2+-dependent inactivation (SCDI) mediated by binding of SARAF to STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c21f8d530472",
   "interaction_id": "93270ef1a704",
   "source_kind": "intact",
@@ -7467,6 +7572,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c246d13da650",
+  "interaction_id": "c8e90bad9722",
+  "source_kind": "pubmed",
+  "ref": "PMID:16860747",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Soboloff J",
+  "sentence": "Thus, whereas STIM1 is a required mediator of SOC activation, STIM2 is a powerful inhibitor of this process, interfering with STIM1-mediated SOC activation at a point downstream of puncta formation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7557,6 +7677,21 @@ window.CAMAP.evidence = [
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c75d93f4d13f",
+  "interaction_id": "45bfb9c9aee6",
+  "source_kind": "pubmed",
+  "ref": "PMID:20436167",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Darbellay B",
+  "sentence": "Interaction of STIM1 and STIM2 was revealed by a rapid increase in fluorescence resonance energy transfer between CFP-STIM1 and YFP-STIM2 after SOCE activation and confirmed by co-immunoprecipitation of endogenous STIM1 and STIM2.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7861,6 +7996,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
+  "evidence_id": "d0fd9a886ab1",
+  "interaction_id": "3352e3f8c299",
+  "source_kind": "pmc",
+  "ref": "PMC4270102",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Maléth J",
+  "sentence": "STIM1-Orai1 must be in a PM/ER microdomain tethered by E-Syt1, stabilized by Septin4 and enriched in PI(4,5)P2 for STIM1-SARAF interaction.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d1c88faad60c",
   "interaction_id": "cc2142cdaee7",
   "source_kind": "curated",
@@ -7874,6 +8024,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "d1d5390d9010",
+  "interaction_id": "b1fbde15bb24",
+  "source_kind": "pubmed",
+  "ref": "PMID:28258168",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Sun Y",
+  "sentence": "Together, we provide evidence that TRPC1 suppresses Cav1.3 activity by providing an STIM1-based scaffold, which is essential for DA neuron survival.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d2187f6c4af6",
@@ -8039,6 +8204,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "d5a663087311",
+  "interaction_id": "45bfb9c9aee6",
+  "source_kind": "pubmed",
+  "ref": "PMID:16860747",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Soboloff J",
+  "sentence": "Double labeling shows coincidence of STIM1 and STIM2 within puncta, and immunoprecipitation reveals direct interactions between STIM1 and STIM2.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d605e9d3aa26",
@@ -8894,6 +9074,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: co-IP : interaction between STIM1 and PMCA increased by TCR activation - FRET | Effet de l'interaction: attenuation of PMCA activation | Localisation: Plasma Membrane | Protéine: plasma membrane calcium ATPase 4",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 11"
+ },
+ {
+  "evidence_id": "eb6cf5a0ef8b",
+  "interaction_id": "cc2142cdaee7",
+  "source_kind": "pmc",
+  "ref": "PMC3704993",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Jha A",
+  "sentence": "Two distinct lobes in the C-terminal inhibitory domain in STIM1 determine access of the inhibitor SARAF to the activating SOAR domain to regulate the slow Ca2+-dependent inactivation of Orai1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "ebd278d99d9b",
