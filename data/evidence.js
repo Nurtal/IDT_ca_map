@@ -436,6 +436,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0923380fd63e",
+  "interaction_id": "f262d07f8d4f",
+  "source_kind": "pmc",
+  "ref": "PMC7468131",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Woo JS",
+  "sentence": "Mechanistically, E-Syt2S, the predominant isoform of E-Syt2 in T cells, recruited STIM1 to the junctions via a direct interaction.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0970e16bfdd3",
   "interaction_id": "5ce3347c577f",
   "source_kind": "curated",
@@ -764,6 +779,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "0f938e3daf6e",
+  "interaction_id": "5051860e4b53",
+  "source_kind": "pubmed",
+  "ref": "PMID:22084111",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Krapivinsky G",
+  "sentence": "Store depletion promotes STIM1-POST complex binding to smooth ER and plasma membrane Ca(2+) ATPases (SERCAs and PMCAs, respectively), Na/K-ATPase, as well as to the nuclear transporters, importins-beta and exportins.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "1048d26dc729",
@@ -1362,6 +1392,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1d04a10886ee",
+  "interaction_id": "a3d445eb2c88",
+  "source_kind": "pubmed",
+  "ref": "PMID:37399784",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Hammad AS",
+  "sentence": "These data argue that in breast cancer cells STIM1 modulates NFAT1 expression and cell migration independently of its role in SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -2489,6 +2534,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: E-syt1 stabilizes ER-PM contacts | Localisation: ER membrane | Protéine: Extended Synaptotagmin 2",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 32"
+ },
+ {
+  "evidence_id": "37b8be8eeb49",
+  "interaction_id": "e8444a478315",
+  "source_kind": "pmc",
+  "ref": "PMC5876523",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "López E",
+  "sentence": "Interestingly, platelets from STC2-/- mice exhibit attenuated interaction between STIM1 and Orai1 in response to Thr, thus suggesting that STC2 is required for Thr-evoked STIM1-Orai1 interaction and the subsequent store-operated Ca2+ entry (SOCE).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "381c98285ce2",
@@ -7846,6 +7906,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "a39693823539",
+  "interaction_id": "df48aaa6d330",
+  "source_kind": "pubmed",
+  "ref": "PMID:25645930",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Yeh YC",
+  "sentence": "Here, we show that the lipid raft scaffolding protein caveolin-1 interacts with the STIM1-Orai1 complex to increase channel activity.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a4ae566b708b",
   "interaction_id": "b4354ca505f5",
   "source_kind": "intact",
@@ -10334,6 +10409,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "dab2914e590c",
+  "interaction_id": "fbb581943502",
+  "source_kind": "pubmed",
+  "ref": "PMID:21385992",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Eylenstein A",
+  "sentence": "Here, we show that Orai1 is regulated by serum- and glucocorticoid-inducible kinase 1 (SGK1), a growth factor-regulated kinase.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "dabbc86ac762",

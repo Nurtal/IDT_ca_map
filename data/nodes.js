@@ -3307,6 +3307,25 @@ window.CAMAP.nodes = [
   "functional_assignment": ""
  },
  {
+  "id": "SGK1",
+  "symbol": "SGK1",
+  "name": "serum/glucocorticoid regulated kinase 1",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "O00141",
+  "synonyms": "SGK",
+  "function_summary": "Serine/threonine-protein kinase which is involved in the regulation of a wide variety of ion channels, membrane transporters, cellular enzymes, transcription factors, neuronal excitability, cell growth, proliferation, survival, migration and apoptosis. Plays an important role in cellular stress response. Contributes to regulation of renal Na(+) retention, renal K(+) elimination, salt appetite, gastric acid secretion, intestinal Na(+)/H(+) exchange and nutrient transport, insulin-dependent salt sensitivity of blood pressure, salt sensitivity of peripheral glucose uptake, cardiac repolarization and memory consolidation. Up-regulates Na(+) channels: SCNN1A/ENAC, SCN5A and ASIC1/ACCN2, K(+) channels: KCNJ1/ROMK1, KCNA1-5, KCNQ1-5 and KCNE1, epithelial Ca(2+) channels: TRPV5 and TRPV6, chloride channels: BSND, CLCN2 and CFTR, glutamate transporters: SLC1A3/EAAT1, SLC1A2 /EAAT2, SLC1A1/EAAT3, SLC1A6/EAAT4 and SLC1A7/EAAT5, amino acid transporters: SLC1A5/ASCT2, SLC38A1/SN1 and SLC6A19, creatine transporter: SLC6A8, Na(+)/dicarboxylate cotransporter: SLC13A2/NADC1, Na(+)-dependent phosphate cotransporter: SLC34A2/NAPI-2B, glutamate receptor: GRIK2/GLUR6. Up-regulates carriers: SLC9A3/NHE3, SLC12A1/NKCC2, SLC12A3/NCC, SLC5A3/SMIT, SLC2A1/GLUT1, SLC5A1/SGLT1 and SLC15A2/PEPT2. Regulates enzymes: GSK3A/B, PMM2 and Na(+)/K(+) ATPase, and transcription factors: CTNNB1 and nuclear factor NF-kappa-B. Stimulates sodium transport into epithelial cells by enhancing the stability and expression of SCNN1A/ENAC. This is achieved by phosphorylating the NEDD4L ubiquitin E3 ligase, promoting its interaction with 14-3-3 proteins, thereby preventing it from binding to SCNN1A/ENAC and targeting it for degradation. Regulates store-operated Ca(+2) entry (SOCE) by stimulating ORAI1 and STIM1. Regulates KCNJ1/ROMK1 directly via its phosphorylation or indirectly via increased interaction with SLC9A3R2/NHERF2. Phosphorylates MDM2 and activates MDM2-dependent ubiquitination of p53/TP53. Phosphorylates MAPT/TAU and mediates microtubule depolymerization and neurite formation in hippocampal neurons. Phosphorylates SLC2A4/GLUT4 and up-regulates its activity. Phosphorylates APBB1/FE65 and promotes its localization to the nucleus. Phosphorylates MAPK1/ERK2 and activates it by enhancing its interaction with MAP2K1/MEK1 and MAP2K2/MEK2. Phosphorylates FBXW7 and plays an inhibitory role in the NOTCH1 signaling. Phosphorylates FOXO1 resulting in its relocalization from the nucleus to the cytoplasm. Phosphorylates FOXO3, promoting its exit from the nucleus and interference with FOXO3-dependent transcription. Phosphorylates BRAF and MAP3K3/MEKK3 and inhibits their activity. Phosphorylates SLC9A3/NHE3 in response to dexamethasone, resulting in its activation and increased localization at the cell membrane. Phosphorylates CREB1. Necessary for vascular remodeling during angiogenesis. Sustained high levels and activity may contribute to conditions such as hypertension and diabetic nephropathy. Isoform 2 exhibited a greater effect on cell plasma membrane expression of SCNN1A/ENAC and Na(+) transport than isoform 1",
+  "genecards": "",
+  "protein_type": "",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": ""
+ },
+ {
   "id": "SIGMAR1",
   "symbol": "SIGMAR1",
   "name": "sigma receptor chaperone 1",
@@ -3324,6 +3343,25 @@ window.CAMAP.nodes = [
   "ca_functionality": "Ca2+ entry; ER Ca2+ flux",
   "regulation": "",
   "functional_assignment": "SOCE; Cytosolic Ca2+ signaling"
+ },
+ {
+  "id": "SLC35B1",
+  "symbol": "SLC35B1",
+  "name": "solute carrier family 35 member B1",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "P78383",
+  "synonyms": "UGTREL1; AXER",
+  "function_summary": "ATP:ADP antiporter that catalyzes the exchange of ATP and ADP across the endoplasmic reticulum (ER) membrane. Imports ATP from the cytosol to the ER lumen and exports ADP in the opposite direction. Regulates ER energy metabolism and protein biogenesis. Appears to be part of a calcium-dependent ER to cytosol low energy response axis, where calcium efflux from ER to the cytosol triggers ATP import into the ER lumen to maintain sufficient ATP supply. Provides ATP to ER chaperone HSPA5 that drives protein folding and trafficking in the ER. Can transport dATP, UTP or UDP in exchange for ATP, but the physiological relevance of this process remains to be established",
+  "genecards": "",
+  "protein_type": "",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": ""
  },
  {
   "id": "SLC35G1",

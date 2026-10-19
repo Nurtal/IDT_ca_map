@@ -1135,7 +1135,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.652",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "4a8136868ef7"
@@ -1815,7 +1815,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.819",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9b3cb7f9cfee"
@@ -1917,7 +1917,7 @@ window.CAMAP.interactions = [
   "beyond_calcium": "false",
   "string_score": "",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
-  "conflict_with": "",
+  "conflict_with": "e8444a478315",
   "evidence_fingerprint": "4f767a2ccf14"
  },
  {
@@ -3375,7 +3375,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.917",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "5c81fcdc4a55"
@@ -3599,6 +3599,26 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "cf4be5878599"
+ },
+ {
+  "interaction_id": "5051860e4b53",
+  "source": "SLC35B1",
+  "target": "STIM1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "POST (SLC35B1, TMEM20), a 10-transmembrane protein found by affinity purification of ORAI1 from Jurkat cells; store depletion makes the STIM1-POST complex bind SERCAs, PMCAs, the Na/K-ATPase and the nuclear transporters, and POST reduces plasma-membrane Ca2+ pump activity without affecting SOCE itself",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "true",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
+  "string_score": "",
+  "justification": "STIM1 is not only a channel partner: POST carries it to pumps and transporters, which widens what store depletion does beyond opening ORAI1.",
+  "conflict_with": "",
+  "evidence_fingerprint": "f55296554c29"
  },
  {
   "interaction_id": "512400e0abf8",
@@ -4055,7 +4075,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.936",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "903103ecbaf2"
@@ -4615,7 +4635,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.795",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "d7778a30db5e"
@@ -5115,7 +5135,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.819",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "e572dbdcec30"
@@ -5515,7 +5535,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.902",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "910e81aa265e"
@@ -5715,7 +5735,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.819",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "cc9ebb5c574f"
@@ -7019,6 +7039,26 @@ window.CAMAP.interactions = [
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "55805b2d972c"
+ },
+ {
+  "interaction_id": "a3d445eb2c88",
+  "source": "STIM1",
+  "target": "NFATC2",
+  "type": "expression_regulation_up",
+  "directed": "true",
+  "mechanism": "NFAT1 is strongly downregulated in STIM1-knockout breast cancer cells and overexpressing NFAT1 reverses their enhanced migration; the effect holds in other breast cancer lines and is independent of SOCE and of ORAI1",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "true",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
+  "string_score": "0.51",
+  "justification": "A STIM1 output that does not go through calcium at all: NFAT1 expression, not NFAT1 activation by SOCE. The axis has a non-calcium arm, which is worth knowing in a map built on the calcium criterion.",
+  "conflict_with": "",
+  "evidence_fingerprint": "70f1c3ab74bd"
  },
  {
   "interaction_id": "a4eab6658617",
@@ -8821,6 +8861,26 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "b2e2d0d50031"
  },
  {
+  "interaction_id": "df48aaa6d330",
+  "source": "CAV1",
+  "target": "ORAI1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "caveolin-1, the lipid-raft scaffolding protein, interacts with the STIM1-ORAI1 complex and increases channel activity; its structural domains act independently of one another",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "true",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
+  "string_score": "",
+  "justification": "The raft scaffold itself, after the lipid-raft papers already in the map: caveolin-1 is the protein that makes the microdomain a place where the channel works better.",
+  "conflict_with": "",
+  "evidence_fingerprint": "d1ef15f9a558"
+ },
+ {
   "interaction_id": "e015ffd32637",
   "source": "ATP2A2",
   "target": "UNC93B1",
@@ -8875,7 +8935,7 @@ window.CAMAP.interactions = [
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
   "beyond_calcium": "false",
-  "string_score": "",
+  "string_score": "0.795",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "6b09a9b03f2f"
@@ -9341,6 +9401,26 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "e7fe47d12455"
  },
  {
+  "interaction_id": "e8444a478315",
+  "source": "STC2",
+  "target": "STIM1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "platelets from STC2-/- mice show an attenuated thrombin-evoked STIM1-ORAI1 interaction and reduced SOCE, so STC2 is required for that interaction",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "false",
+  "has_animal_evidence": "true",
+  "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
+  "string_score": "",
+  "justification": "A secreted glycoprotein required for the STIM1-ORAI1 pairing in platelets, shown by knockout rather than by overexpression.",
+  "conflict_with": "2c2af0189289",
+  "evidence_fingerprint": "2b2135cbd1ce"
+ },
+ {
   "interaction_id": "e8907df3754d",
   "source": "SEC13",
   "target": "STING1",
@@ -9761,6 +9841,26 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "88e139958af1"
  },
  {
+  "interaction_id": "f262d07f8d4f",
+  "source": "ESYT2",
+  "target": "STIM1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "E-Syt2S, the short and predominant isoform in T cells, recruits STIM1 to ER-PM junctions through a direct interaction, controlling CRAC-channel Ca2+ dynamics",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "true",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
+  "string_score": "0.766",
+  "justification": "The second extended synaptotagmin on STIM1, after ESYT1: the junction tethers are a family, and in T cells it is the short isoform of E-Syt2 that does the recruiting.",
+  "conflict_with": "",
+  "evidence_fingerprint": "15be2030fe42"
+ },
+ {
   "interaction_id": "f2d2e44bdb20",
   "source": "DAPK3",
   "target": "STING1",
@@ -10159,6 +10259,26 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "12861169be6f",
   "evidence_fingerprint": "b6151aba0507"
+ },
+ {
+  "interaction_id": "fbb581943502",
+  "source": "SGK1",
+  "target": "ORAI1",
+  "type": "unknown_regulation",
+  "directed": "true",
+  "mechanism": "ORAI1 is regulated by the growth-factor-controlled kinase SGK1; the paper's title states the effect as stimulation of the ORAI1/STIM1 channel",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "true",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
+  "string_score": "",
+  "justification": "A growth-factor kinase reaching the channel: it links the pathway that drives proliferation to the calcium entry that sustains it.",
+  "conflict_with": "",
+  "evidence_fingerprint": "6d600d97954e"
  },
  {
   "interaction_id": "fbdb97451a2b",

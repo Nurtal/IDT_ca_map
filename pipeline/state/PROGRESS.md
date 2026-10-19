@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 370 done, 13027 pending, 120 skipped, 2 error.
+13519 articles in queue: 420 done, 12977 pending, 120 skipped, 2 error.
 
-- tier 0: 342/3800 processed
+- tier 0: 392/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -472,3 +472,35 @@ inside a real excerpt still fails, and there is a test for exactly that.
 
 **233 verified, 45 unverifiable, 0 flagged, 525 without a quote.** The warning channel is silent,
 which is the point: the next ⚠️ that appears will be a real one.
+
+### 2026-10-19 — batch 9 (tier 0): the junction tether family, and a conflict with the curator
+
+50 articles, 6 records, 1 new node (**SGK1**). CAV1, ESYT2, STC2 and SLC35B1 were already in the
+map from her sheets or the databases.
+
+- **ESYT2 binds STIM1** (PMC7468131): the short isoform E-Syt2S, predominant in T cells, recruits
+  STIM1 to the junctions directly. With ESYT1 and ASPH and SEPTIN4 already in, the **junction
+  tethers are now a family in the map**, not an anecdote.
+- **SLC35B1 (POST) binds STIM1** (PMID 22084111): store depletion makes the STIM1-POST complex
+  bind SERCAs, PMCAs, the Na/K-ATPase and the nuclear transporters. STIM1 does more on depletion
+  than open ORAI1.
+- **CAV1 → ORAI1** (PMID 25645930): caveolin-1 interacts with the STIM1-ORAI1 complex and raises
+  channel activity — the protein that makes the lipid raft a better place for the channel.
+- **SGK1 regulates ORAI1** (PMID 21385992), linking the growth-factor kinase to the entry that
+  sustains proliferation.
+- **STIM1 → NFATC2 expression** (PMID 37399784): in breast cancer cells STIM1 sets NFAT1
+  *expression* and migration **independently of SOCE and of ORAI1**. An arm of the axis that does
+  not pass through calcium at all — worth knowing in a map built on the calcium criterion.
+
+**A conflict with the curator's own sheet, and it is a real one.** Her row says STC2 *inhibits*
+STIM1; PMC5876523 shows platelets from STC2-/- mice with an *attenuated* STIM1-ORAI1 interaction,
+i.e. STC2 *required* for it. The paper itself cites the other direction (Zeiger: STC2
+overexpression reduces SOCE), which is what her row records. The build paired the two cards
+automatically. Conflicting pairs now in the map: **SARAF/STIM1, STC2/STIM1, TRIM56/STING1**, plus
+seven pairs that come from databases disagreeing with each other.
+
+Not recorded, for want of a subject: PMC10406432 shows IP3 receptors are required for neuronal
+SOCE even when they cannot release Ca²⁺ — but it says "IP3Rs", and ITPR1, ITPR2 and ITPR3 are
+three separate seeds. The same ambiguity as `AP-1` and `septins`.
+
+Map: **236 nodes, 524 interactions, 809 evidence rows**.
