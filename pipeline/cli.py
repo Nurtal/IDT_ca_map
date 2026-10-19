@@ -4,6 +4,7 @@
     python3 pipeline/cli.py corpus         # count the corpus and (re)build the prioritized work queue
     python3 pipeline/cli.py queue next 50  # list the next pending articles
     python3 pipeline/cli.py queue set PMID done|skipped|error|pending [--note TEXT]
+    python3 pipeline/cli.py queue add PMID...   # a lead the corpus searches never returned
     python3 pipeline/cli.py fetch-db       # SIGNOR / OmniPath / IntAct / BioGRID -> data/raw/db_*.jsonl
     python3 pipeline/cli.py fetch-texts    # cache PubTator texts of every paper cited in data/raw
     python3 pipeline/cli.py annotate       # cache HGNC set + GO calcium / UniProt annotations of every actor
@@ -21,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 
 from camap.build import build_dataset, read_raw  # noqa: E402
-from camap.corpus import build_queue, next_pending, set_statuses  # noqa: E402
+from camap.corpus import add_articles, build_queue, next_pending, set_statuses  # noqa: E402
 from camap.pubmed import publication_types  # noqa: E402
 from camap.candidates import candidate_sentences, strong_only  # noqa: E402
 from camap.databases import fetch_all  # noqa: E402
@@ -71,6 +72,9 @@ def main(argv=None):
     qs.add_argument("pmids", nargs="+")
     qs.add_argument("status", choices=["pending", "done", "skipped", "error"])
     qs.add_argument("--note")
+    qa = qsub.add_parser("add", help="add articles the corpus searches never returned")
+    qa.add_argument("pmids", nargs="+")
+    qa.add_argument("--note", help="where the lead came from")
     c = sub.add_parser("candidates", help="print title, abstract and candidate sentences of cached papers")
     c.add_argument("pmids", nargs="*")
     c.add_argument("--next", type=int, help="the next N pending articles of the queue")
@@ -153,6 +157,19 @@ def main(argv=None):
         except KeyError as e:
             sys.exit(f"Nothing updated: {e.args[0]}")
         print(f"{len(args.pmids)} article(s) -> {args.status}")
+    elif args.cmd == "queue" and args.qcmd == "add":
+        texts = PubTator(CACHE)
+        texts.fetch_texts([f"PMID:{p}" for p in args.pmids])
+
+        def metadata(pmid):
+            doc = texts.document(pmid)
+            return {k: doc.get(k, "") for k in ("title", "year", "pmcid")} if doc else None
+
+        added, present = add_articles(STATE, args.pmids, metadata, note=args.note)
+        for e in added:
+            print(f"added  {e['pmid']}\t{e['title'][:80] or '(no title: PubTator knows nothing of it)'}")
+        for pmid in present:
+            print(f"already in the queue: {pmid}")
     elif args.cmd == "fetch-db":
         ensure_hgnc(CACHE)
         config = load_config()

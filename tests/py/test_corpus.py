@@ -6,7 +6,8 @@ import unittest
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from camap.corpus import build_queue, load_queue, set_status, set_statuses
+from camap.corpus import (add_articles, build_queue, load_queue, next_pending,
+                          set_status, set_statuses)
 from camap.pubtator import PubTator
 
 CONFIG = {
@@ -174,3 +175,49 @@ class TestQueue(CorpusCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestManualAdd(CorpusCase):
+    """`queue add`: a lead the corpus searches never surfaced, added by hand."""
+
+    META = {"29033128": {"title": "The DNA Inflammasome in Human Myeloid Cells", "year": "2017",
+                         "pmcid": "PMC5901709"}}
+
+    def meta(self, pmid):
+        return self.META.get(pmid)
+
+    def test_a_manual_pmid_enters_as_a_pending_tier_0_article_with_its_metadata(self):
+        self.run_build()
+        added, present = add_articles(self.state, ["29033128"], self.meta, note="lead from PMC12866496")
+        self.assertEqual([e["pmid"] for e in added], ["29033128"])
+        self.assertEqual(present, [])
+        e = {x["pmid"]: x for x in load_queue(self.state)}["29033128"]
+        self.assertEqual((e["status"], e["tier"], e["manual"]), ("pending", 0, True))
+        self.assertEqual((e["title"], e["year"], e["pmcid"]),
+                         ("The DNA Inflammasome in Human Myeloid Cells", "2017", "PMC5901709"))
+        self.assertEqual(e["note"], "lead from PMC12866496")
+
+    def test_a_manual_lead_is_read_before_the_corpus_queue(self):
+        self.run_build()
+        add_articles(self.state, ["29033128"], self.meta)
+        self.assertEqual(next_pending(self.state, 1)[0]["pmid"], "29033128")
+
+    def test_an_article_already_in_the_queue_is_reported_not_duplicated_nor_reset(self):
+        self.run_build()
+        set_status(self.state, "20", "done")
+        added, present = add_articles(self.state, ["20"], self.meta)
+        self.assertEqual((added, present), ([], ["20"]))
+        q = [e for e in load_queue(self.state) if e["pmid"] == "20"]
+        self.assertEqual(len(q), 1)
+        self.assertEqual(q[0]["status"], "done")
+
+    def test_a_pmid_with_no_metadata_is_still_added_so_the_lead_is_not_lost(self):
+        self.run_build()
+        added, _ = add_articles(self.state, ["99999999"], self.meta)
+        self.assertEqual((added[0]["pmid"], added[0]["title"]), ("99999999", ""))
+
+    def test_rebuilding_the_corpus_keeps_a_manual_article_the_searches_never_return(self):
+        self.run_build()
+        add_articles(self.state, ["29033128"], self.meta)
+        self.run_build()
+        self.assertIn("29033128", {e["pmid"] for e in load_queue(self.state)})

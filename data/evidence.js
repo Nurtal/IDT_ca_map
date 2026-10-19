@@ -1501,6 +1501,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "2cb20dab167a",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "pubmed",
+  "ref": "PMID:38878778",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2024.05.031",
+  "year": "2024",
+  "first_author": "Woo MS",
+  "sentence": "However, activation of neuronal STING requires its detachment from the stromal interaction molecule 1 (STIM1), a process triggered by glutamate excitotoxicity.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "2d13f97b4b5d",
   "interaction_id": "e668e717f330",
   "source_kind": "curated",
@@ -2684,6 +2699,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 5",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 86"
+ },
+ {
+  "evidence_id": "4dce953ad981",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "pubmed",
+  "ref": "PMID:38878778",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2024.05.031",
+  "year": "2024",
+  "first_author": "Woo MS",
+  "sentence": "However, activation of neuronal STING requires its detachment from the stromal interaction molecule 1 (STIM1), a process triggered by glutamate excitotoxicity.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "4def0f7ea871",

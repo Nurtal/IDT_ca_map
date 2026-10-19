@@ -10,6 +10,7 @@ python3 pipeline/cli.py corpus        # (re)count corpus, (re)build the prioriti
 python3 pipeline/cli.py fetch-db      # SIGNOR / OmniPath / IntAct (/ BioGRID with BIOGRID_ACCESS_KEY) -> data/raw/db_*.jsonl
 python3 pipeline/cli.py supp          # data_supp/*.xlsx -> data/raw/supp_*.jsonl + data/supp_catalogue.json
 python3 pipeline/cli.py queue next 50 # next pending articles
+python3 pipeline/cli.py queue add PMID # a lead the corpus searches never returned
 python3 pipeline/cli.py fetch-texts   # cache texts of every paper cited in data/raw (git-ignored cache)
 python3 pipeline/cli.py annotate      # HGNC + GO calcium + UniProt for every actor
 python3 pipeline/cli.py build         # data/raw -> data/{nodes,interactions,evidence}.{csv,js}
@@ -42,16 +43,21 @@ Then open `review/index.html` (double-click, no server). After review, export
 4. For each article, read title + abstract (and full text when the abstract contains a candidate).
    Write one raw record per **(interaction, supporting sentence)** to
    `data/raw/lit_<YYYYMMDD>_<batch>.jsonl` (format below). An article may yield zero records.
-5. Mark each article: `python3 pipeline/cli.py queue set <PMID...> done`
+5. A lead found inside an article (a review citing a primary paper, a preview naming the work it
+   comments on) often is not in the queue at all. `queue add <PMID...> --note "where it came from"`
+   fetches its metadata from PubTator and puts it at the head of the queue, ahead of the whole
+   corpus, flagged `manual` so a later `corpus` run does not drop it. Then read it like any other
+   article and set its status, so the work stays traceable instead of appearing nowhere.
+6. Mark each article: `python3 pipeline/cli.py queue set <PMID...> done`
    (`skipped --note "review article, no primary data"`, or `error --note ...`).
    `done` means the article's own experiments were read, whether or not they yielded a record;
    `skipped` means there was nothing of ours to read — a review, a commentary, or a paper that
    only lists the genes (bioinformatic screen, atlas, network pharmacology). Every status carries
    a `--note` saying which, so the done/skipped counts stay readable.
-6. `python3 pipeline/cli.py fetch-texts && python3 pipeline/cli.py annotate && python3 pipeline/cli.py build`.
+7. `python3 pipeline/cli.py fetch-texts && python3 pipeline/cli.py annotate && python3 pipeline/cli.py build`.
    The build prints how many sentences are not verbatim: fix them (copy the sentence exactly) before committing.
-7. Add a dated line under `## Session notes` in `PROGRESS.md` (what was done, anything odd).
-8. Commit: `Extraction batch N: PMIDs a..b (k interactions)`.
+8. Add a dated line under `## Session notes` in `PROGRESS.md` (what was done, anything odd).
+9. Commit: `Extraction batch N: PMIDs a..b (k interactions)`.
 
 ## Raw record format (one JSON object per line)
 

@@ -5,11 +5,11 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9104 articles in queue: 118 done, 8864 pending, 120 skipped, 2 error.
+9105 articles in queue: 120 done, 8863 pending, 120 skipped, 2 error.
 
-- tier 0: 71/192 processed
+- tier 0: 72/193 processed
 - tier 1: 169/6584 processed
-- tier 2: 0/2328 processed
+- tier 2: 1/2328 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
 <!-- auto:end -->
@@ -161,3 +161,33 @@ costs nothing. Neither of these two PMIDs is in the work queue — the corpus se
 surfaced them — which is the second time a lead has had to be added by hand.
 
 Map: **205 nodes, 401 interactions, 643 evidence rows**.
+
+### 2026-10-19 — `queue add`, and the Woo paper was never missing
+
+New command: `python3 pipeline/cli.py queue add <PMID...> [--note TEXT]`. It pulls the article's
+metadata from PubTator, puts it at the **head** of the queue — ahead of the whole corpus, because
+somebody asked for it by name — and flags it `manual` so the next `corpus` run does not drop it
+(a pending article absent from the searches is normally discarded). An article already in the
+queue is reported, never duplicated and never reset.
+
+Used on Gaidt et al. (PMID 29033128), added and set `done` in the same session.
+
+Then the older lead, **Woo et al., Cell 2024** (STING–STIM1 in neurons). The 2026-10-16 note says
+"PubTator search does not surface it" — that was wrong, or no longer true: resolving the DOI
+(10.1016/j.cell.2024.05.031) gives PMID **38878778**, which has been sitting in the queue as
+tier 2, pending, found by `@GENE_STIM1`. It was never missing, only buried 8900 articles deep.
+`queue add` reported it as already present, which is exactly the check that was wanted.
+
+Read it (abstract only, no full text in PubTator). Two records, both STIM1–STING1:
+
+- **STIM1 binds STING1** and **STIM1 ⊣ STING1**: neuronal STING activation requires its detachment
+  from STIM1, triggered by glutamate excitotoxicity. The Srikanth 2019 retention mechanism outside
+  immunity, in neurons of multiple sclerosis and its mouse model, with glutamate rather than store
+  depletion as the release signal. `species_context` is `unknown`: the abstract covers human MS
+  tissue and a mouse model without saying which carries the detachment experiment.
+- **STING1 → GPX4** (autophagic degradation, the step that causes ferroptosis) is *not* recorded:
+  GPX4 has no GO calcium annotation, is not in the catalogue, and the sentence carries no calcium
+  term. Second time in this session that the effector end of an arm falls outside the map, after
+  `GSDMD → F3`. Worth asking the curator whether GPX4 belongs in her catalogue.
+
+Map: 205 nodes, 401 interactions, 645 evidence rows.

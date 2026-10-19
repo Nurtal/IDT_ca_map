@@ -88,10 +88,10 @@ def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
             e["score"] = max(e["score"], float(h.get("score") or 0))
 
     for pmid, old in existing.items():
-        if pmid not in entries and old.get("status", "pending") == "pending":
+        if pmid not in entries and old.get("status", "pending") == "pending" and not old.get("manual"):
             continue  # no longer in the corpus and never processed
         e = entries.setdefault(pmid, old)
-        for key in ("status", "note", "review"):
+        for key in ("status", "note", "review", "manual"):
             if key in old:
                 e[key] = old[key]
     for e in entries.values():
@@ -111,7 +111,8 @@ def build_queue(config, pubtator, state_dir, page_size=1000, pubtypes=None):
 
 
 def priority(e):
-    return (e["tier"], not e.get("cross"), bool(e.get("review")),
+    # a hand-picked lead comes before the whole corpus: somebody asked for it by name
+    return (not e.get("manual"), e["tier"], not e.get("cross"), bool(e.get("review")),
             -e["score"], -len(e["queries"]), int(e["pmid"]))
 
 
@@ -132,6 +133,31 @@ def save_queue(state_dir, entries):
     ordered = sorted(entries, key=priority)
     queue_path(state_dir).write_text("".join(json.dumps(e, ensure_ascii=False) + "\n" for e in ordered))
     write_progress(state_dir, ordered)
+
+
+def add_articles(state_dir, pmids, metadata, note=None):
+    """([entries added], [pmids already there]) — hand-picked leads the searches never returned.
+
+    A lead found in a review's text is invisible to the corpus queries, so it would otherwise be
+    read without ever appearing as processed. It enters at tier 0, ahead of the corpus queue,
+    and `manual` keeps `build_queue` from dropping it while it is still pending.
+    """
+    entries = load_queue(state_dir)
+    known = {e["pmid"] for e in entries}
+    added, present = [], []
+    for pmid in map(str, pmids):
+        if pmid in known or pmid in {e["pmid"] for e in added}:
+            present.append(pmid)
+            continue
+        meta = metadata(pmid) or {}
+        entry = {"pmid": pmid, "pmcid": meta.get("pmcid", ""), "title": meta.get("title", ""),
+                 "year": meta.get("year", ""), "tier": 0, "queries": [], "score": 0.0,
+                 "cross": True, "status": "pending", "review": False, "manual": True}
+        if note:
+            entry["note"] = note
+        added.append(entry)
+    save_queue(state_dir, entries + added)
+    return added, present
 
 
 def set_status(state_dir, pmid, status, note=None):
