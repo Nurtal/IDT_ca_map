@@ -5,10 +5,10 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9105 articles in queue: 170 done, 8813 pending, 120 skipped, 2 error.
+9105 articles in queue: 220 done, 8763 pending, 120 skipped, 2 error.
 
 - tier 0: 72/193 processed
-- tier 1: 219/6584 processed
+- tier 1: 269/6584 processed
 - tier 2: 1/2328 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
@@ -284,3 +284,29 @@ With it, the batch is the SOCE core literature: STIM1/ORAI1 biophysics, SARAF, S
 Map: **210 nodes, 411 interactions, 660 evidence rows**.
 
 **Next session:** `queue next 50 --tier 1 --primary` continues in the same seam.
+
+### 2026-10-19 — batch 5 (tier 1 primary, SOCE core continued)
+
+50 articles, all `done`, 6 records. No new node: every actor was **already in the map through the
+curator's spreadsheets**, so this batch did what the updated convention predicted — it put
+publications behind her rows.
+
+- **PTK2B (Pyk2) phosphorylates STIM1 at Y361** (PMC5316956, human pulmonary artery endothelial
+  cells). The phospho-defective Y361F mutant still forms puncta but fails to recruit ORAI1 — the
+  cleanest separation yet between clustering and channel activation.
+- **NAPA (alpha-SNAP) is required for STIM1-ORAI1 coupling** (PMC3713520), NSF-independent: the
+  cluster forms without it and carries no current.
+- **ATP2C2 (SPCA2) activates ORAI1** (PMID 41015040), store-independent but STIM1-dependent — a
+  publication behind one of the five curated ORAI1 rows that the wider net let in.
+- **CASQ1 ⊣ STIM1** and the binding behind it (PMID 27185316): calsequestrin monomers hold back
+  STIM1 aggregation through residues 362-396.
+- **EFHB binds STIM1** (PMID 30481768): a second EF-hand sensor on STIM1, next to SARAF.
+
+Read and deliberately left out, all for the same reason — the partner's only neighbour is ORAI1,
+which is a seed but not an anchor, so the rule drops a *literature* row:
+**KCNN3 (SK3)** boosted by ORAI1 (PMC8699475), **AKAP5 (AKAP79)** assembling with ORAI1/STIM1 under
+STIM2 control (PMID 32601188), and the septin screen (PMID 23792561), whose abstract names no
+individual septin — the same ambiguity as the `AP-1` cell in issue #18. If ORAI1 ever becomes an
+anchor, these three come in together.
+
+Map: **210 nodes, 416 interactions, 666 evidence rows**.

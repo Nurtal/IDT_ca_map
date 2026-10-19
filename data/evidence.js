@@ -3481,6 +3481,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "6185d172ed24",
+  "interaction_id": "1beb6a48f3f7",
+  "source_kind": "pubmed",
+  "ref": "PMID:41015040",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Kiss AK",
+  "sentence": "In this complex, SPCA2 facilitates constitutive, store-independent but STIM1-dependent ORAI1-mediated Ca2+ influx by activating ORAI1 and promoting STIM1/ORAI1 interaction, which is essential for basal CFTR function.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "6235819cf4ce",
   "interaction_id": "38544a51e238",
   "source_kind": "omnipath",
@@ -4347,6 +4362,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "728e265414b6",
+  "interaction_id": "9cbffeae9073",
+  "source_kind": "pubmed",
+  "ref": "PMID:30481768",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Albarran L",
+  "sentence": "STIM1 interaction with Orai1, EFHB (EF-hand domain family member B, also known as CFAP21) and SARAF was detected by immunoprecipitation followed by Western blotting using specific antibodies.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7651,6 +7681,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c5b4407f7cb6",
+  "interaction_id": "a29291b6db22",
+  "source_kind": "pubmed",
+  "ref": "PMID:27185316",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Zhang L",
+  "sentence": "CONCLUSIONS: Our results demonstrate that CSQ1 monomers suppress SOCE by interacting with STIM1 and attenuating STIM1 aggregation via its C-terminal amino acid 362-396.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c60e828a6def",
   "interaction_id": "40154542b559",
   "source_kind": "curated",
@@ -8191,6 +8236,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "d4bbd5e3ec2e",
+  "interaction_id": "01a48759f830",
+  "source_kind": "pmc",
+  "ref": "PMC3713520",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Miao Y",
+  "sentence": "Here we identify an essential role of alpha-SNAP in mediating functional coupling of Stim1 and Orai1 molecules to activate SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d59843c32b92",
   "interaction_id": "96114c9d1b00",
   "source_kind": "curated",
@@ -8446,6 +8506,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 28"
  },
  {
+  "evidence_id": "da32ac87581a",
+  "interaction_id": "9efd6800e86d",
+  "source_kind": "pmc",
+  "ref": "PMC5316956",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Yazbeck P",
+  "sentence": "Here, we show that ER Ca2+-store depletion rapidly induces STIM1 phosphorylation at Y361 via proline-rich kinase 2 (Pyk2) in ECs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "da7be2ff2218",
   "interaction_id": "cc2142cdaee7",
   "source_kind": "curated",
@@ -8669,6 +8744,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Protéine: phosphatidylinositol kinase vacuolar protein sorting 34 (VPS34)",
   "supp_source": "interactome STING.xlsx/modulators/row 24"
+ },
+ {
+  "evidence_id": "e32f7f2b418f",
+  "interaction_id": "e361f8efb15b",
+  "source_kind": "pubmed",
+  "ref": "PMID:27185316",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Zhang L",
+  "sentence": "CONCLUSIONS: Our results demonstrate that CSQ1 monomers suppress SOCE by interacting with STIM1 and attenuating STIM1 aggregation via its C-terminal amino acid 362-396.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e3323f8382c6",
