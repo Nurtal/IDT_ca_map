@@ -31,13 +31,22 @@ Then open `review/index.html` (double-click, no server). After review, export
    sentences naming an anchor with a seed / calcium term / interaction verb (tags in brackets);
    read those first, then the full document where needed. `--strong` keeps only the sentences
    that carry both anchors, or an anchor plus a seed/calcium term *and* an interaction verb —
-   use it to triage the long tail, where most articles only co-mention the genes. Read a cached document with
+   use it to triage the long tail, where most articles only co-mention the genes. Deep in tier 1
+   even `--strong` leaves too much to read: screen first for articles with an anchor **and** a
+   seed or a calcium term in the same sentence (regex over the cached text) — the same pairing the
+   inclusion rule needs, so nothing that could become an edge is screened out — and read those in
+   full, plus any whose title promises primary calcium or STING work. A 50-article batch of that
+   tail typically leaves fewer than ten articles worth reading. Read a cached document with
    `PYTHONPATH=pipeline python3 -c "from camap.pubtator import PubTator; print(PubTator('pipeline/cache').document('123')['text'])"`.
 4. For each article, read title + abstract (and full text when the abstract contains a candidate).
    Write one raw record per **(interaction, supporting sentence)** to
    `data/raw/lit_<YYYYMMDD>_<batch>.jsonl` (format below). An article may yield zero records.
 5. Mark each article: `python3 pipeline/cli.py queue set <PMID...> done`
    (`skipped --note "review article, no primary data"`, or `error --note ...`).
+   `done` means the article's own experiments were read, whether or not they yielded a record;
+   `skipped` means there was nothing of ours to read — a review, a commentary, or a paper that
+   only lists the genes (bioinformatic screen, atlas, network pharmacology). Every status carries
+   a `--note` saying which, so the done/skipped counts stay readable.
 6. `python3 pipeline/cli.py fetch-texts && python3 pipeline/cli.py annotate && python3 pipeline/cli.py build`.
    The build prints how many sentences are not verbatim: fix them (copy the sentence exactly) before committing.
 7. Add a dated line under `## Session notes` in `PROGRESS.md` (what was done, anything odd).

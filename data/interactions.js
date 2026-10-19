@@ -225,6 +225,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "8320aadac57f"
  },
  {
+  "interaction_id": "1a34079f7cb2",
+  "source": "PRKACA",
+  "target": "NFATC1",
+  "type": "inhibition",
+  "directed": "true",
+  "mechanism": "OmniPath sources: ACSN, CA1, Cui2007, HPRD_MIMP, MIMP, NCI-PID_ProtMapper, PhosphoSite_MIMP, PhosphoSite_ProtMapper, PhosphoSite_noref, ProtMapper, SIGNOR, SIGNOR_ProtMapper, Wang, iPTMnet, phosphoELM_MIMP",
+  "n_sources": "1",
+  "n_pubs": "0",
+  "n_db": "1",
+  "has_human_evidence": "true",
+  "calcium_evidence": "GO",
+  "justification": "",
+  "conflict_with": "",
+  "evidence_fingerprint": "05c0df07016a"
+ },
+ {
   "interaction_id": "1b9f840b84de",
   "source": "ITPR3",
   "target": "STIM2",
@@ -369,6 +385,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "62f592a82883"
  },
  {
+  "interaction_id": "2e3d8e55a2b4",
+  "source": "EGFR",
+  "target": "NFATC1",
+  "type": "physical_binding",
+  "directed": "false",
+  "mechanism": "bioluminescence resonance energy transfer",
+  "n_sources": "1",
+  "n_pubs": "0",
+  "n_db": "1",
+  "has_human_evidence": "true",
+  "calcium_evidence": "GO",
+  "justification": "",
+  "conflict_with": "",
+  "evidence_fingerprint": "41c3c52261f1"
+ },
+ {
   "interaction_id": "2e6a6c83a3cc",
   "source": "CALM1",
   "target": "EGFR",
@@ -417,6 +449,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "1d76150c987a"
  },
  {
+  "interaction_id": "2f21d239a8e5",
+  "source": "IKBKE",
+  "target": "NFATC1",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "OmniPath sources: PhosphoSite, PhosphoSite_ProtMapper, PhosphoSite_noref, ProtMapper, REACH_ProtMapper, SIGNOR, Sparser_ProtMapper",
+  "n_sources": "1",
+  "n_pubs": "0",
+  "n_db": "1",
+  "has_human_evidence": "true",
+  "calcium_evidence": "GO",
+  "justification": "",
+  "conflict_with": "",
+  "evidence_fingerprint": "ea57f1b02ee0"
+ },
+ {
   "interaction_id": "2f665d2e9617",
   "source": "ATP2A2",
   "target": "EGFR",
@@ -447,6 +495,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "81e8bda8cd07"
+ },
+ {
+  "interaction_id": "31bbbf35f595",
+  "source": "BCL6",
+  "target": "STIM1",
+  "type": "expression_regulation_up",
+  "directed": "true",
+  "mechanism": "RNA-seq of CXCR5+PD-1+ Tfh cells from Bcl6+/- mice; Stim1 among the downregulated genes when one Bcl6 copy is lost",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "both",
+  "justification": "A transcriptional input to the anchor: BCL6 sustains STIM1 expression in follicular helper T cells, so the amount of the ER calcium sensor available to gate SOCE (and to restrain STING) is itself set by a lineage transcription factor.",
+  "conflict_with": "",
+  "evidence_fingerprint": "97d147f150c5"
  },
  {
   "interaction_id": "3225467efe1a",
@@ -961,6 +1025,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "e361a1ecd9f0"
  },
  {
+  "interaction_id": "71fa21547240",
+  "source": "IKBKE",
+  "target": "NFATC1",
+  "type": "phosphorylation",
+  "directed": "true",
+  "mechanism": "up-regulates activity phosphorylation Ser151",
+  "n_sources": "1",
+  "n_pubs": "0",
+  "n_db": "1",
+  "has_human_evidence": "true",
+  "calcium_evidence": "GO",
+  "justification": "",
+  "conflict_with": "",
+  "evidence_fingerprint": "80b687d32d72"
+ },
+ {
   "interaction_id": "72780d5c603a",
   "source": "IKBKE",
   "target": "TBK1",
@@ -1025,6 +1105,22 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "8d13b7305353"
  },
  {
+  "interaction_id": "7fa9183baa15",
+  "source": "STING1",
+  "target": "NFATC1",
+  "type": "expression_regulation_up",
+  "directed": "true",
+  "mechanism": "24 h DMXAA treatment of wild-type splenocytes; total NFATc1 mean fluorescence intensity by flow cytometry",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "GO",
+  "justification": "Links STING directly to a level-2 calcium effector: STING activation drives the Ca2+-calmodulin-calcineurin-NFAT arm, giving the STIM1/STING axis a transcriptional output in T cells.",
+  "conflict_with": "",
+  "evidence_fingerprint": "9f920eb4aca1"
+ },
+ {
   "interaction_id": "822834bb2b97",
   "source": "ITPR2",
   "target": "UNC93B1",
@@ -1055,6 +1151,22 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "1e0f77983d1d",
   "evidence_fingerprint": "ddf1cbfe0fa1"
+ },
+ {
+  "interaction_id": "877b432a28f3",
+  "source": "BCL6",
+  "target": "CHEBI:29108",
+  "type": "Ca2+_flux",
+  "directed": "true",
+  "mechanism": "two-photon intravital imaging of OT-II T cell-MD4 B cell contacts in the follicle with the FRET calcium reporter YC-Nano-50CD; mean DeltaRt/R0 29% in Bcl6+/+ versus 8% in Bcl6+/- contacts",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "has_human_evidence": "false",
+  "calcium_evidence": "",
+  "justification": "The functional half of the BCL6 result: losing one Bcl6 allele cuts the calcium response of T cells during B cell contact in vivo, so the transcriptional control of STIM1 by BCL6 has a measured calcium consequence, not just a transcript change.",
+  "conflict_with": "",
+  "evidence_fingerprint": "0ee50b409779"
  },
  {
   "interaction_id": "89697c230d78",
@@ -1366,15 +1478,31 @@ window.CAMAP.interactions = [
   "target": "CHEBI:29108",
   "type": "Ca2+_flux",
   "directed": "true",
-  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer | STING depletion raises mitochondrial calcium via VDAC2/GRP75 MERCs (opposite sign to PMID 40186485) | DMXAA-induced Sjogren model; intravital GCaMP6f imaging of submandibular gland",
-  "n_sources": "6",
-  "n_pubs": "6",
+  "mechanism": "mitochondrial Ca2+ uptake at MERCs | ER Ca2+ release in liver macrophages after hypoxia/reoxygenation | ER Ca2+ release via ITPR1, independent of type I IFN | STING knockdown in obese rat atria; ER-to-mitochondria Ca2+ transfer | STING depletion raises mitochondrial calcium via VDAC2/GRP75 MERCs (opposite sign to PMID 40186485) | DMXAA-induced Sjogren model; intravital GCaMP6f imaging of submandibular gland | STING V154M gain-of-function mice; Fura Red ratiometric flow cytometry of basal cytosolic Ca2+ in splenic T cells | 4 h DMXAA treatment of wild-type splenocytes in vitro, phenocopying the GOF basal Ca2+ level",
+  "n_sources": "7",
+  "n_pubs": "7",
   "n_db": "0",
   "has_human_evidence": "true",
   "calcium_evidence": "text",
-  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing. | Here STING *limits* mitochondrial calcium, the opposite sign to the obese-atria study where STING knockdown relieved mitochondrial calcium overload: the direction of STING's effect on mitochondrial calcium is contested. | Pharmacological STING activation in vivo raises and spatially scrambles acinar Ca2+ signals, turning an apically confined rise into a global one: STING reshapes calcium signalling, not just its amplitude.",
+  "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing. | Here STING *limits* mitochondrial calcium, the opposite sign to the obese-atria study where STING knockdown relieved mitochondrial calcium overload: the direction of STING's effect on mitochondrial calcium is contested. | Pharmacological STING activation in vivo raises and spatially scrambles acinar Ca2+ signals, turning an apically confined rise into a global one: STING reshapes calcium signalling, not just its amplitude. | Constitutive STING activation raises resting cytosolic calcium in primary T cells, the reverse direction of the Srikanth model where STIM1 restrains STING: here the STING end of the axis sets the calcium set-point. | Acute pharmacological STING activation is sufficient to raise basal Ca2+ in wild-type T cells, so the calcium rise is a consequence of STING signalling itself and not of the chronic GOF genotype.",
   "conflict_with": "",
-  "evidence_fingerprint": "b6834811b23e"
+  "evidence_fingerprint": "4e4ecb0bbdc9"
+ },
+ {
+  "interaction_id": "a62595311b19",
+  "source": "PRKACA",
+  "target": "NFATC1",
+  "type": "phosphorylation",
+  "directed": "true",
+  "mechanism": "down-regulates phosphorylation Ser245 | down-regulates phosphorylation Ser269 | down-regulates phosphorylation Ser294",
+  "n_sources": "3",
+  "n_pubs": "0",
+  "n_db": "3",
+  "has_human_evidence": "true",
+  "calcium_evidence": "GO",
+  "justification": "",
+  "conflict_with": "",
+  "evidence_fingerprint": "31aad100137d"
  },
  {
   "interaction_id": "a84be8ddc723",

@@ -23,6 +23,17 @@ window.CAMAP.nodes = [
   "function_summary": "ATP-driven pump that supplies the Golgi apparatus with Ca(2+) and Mn(2+) ions, both essential cofactors for processing and trafficking of newly synthesized proteins in the secretory pathway. Within a catalytic cycle, acquires Ca(2+) or Mn(2+) ions on the cytoplasmic side of the membrane and delivers them to the lumenal side. The transfer of ions across the membrane is coupled to ATP hydrolysis and is associated with a transient phosphorylation that shifts the pump conformation from inward-facing to outward-facing state. Plays a primary role in the maintenance of Ca(2+) homeostasis in the trans-Golgi compartment with a functional impact on Golgi and post-Golgi protein sorting as well as a structural impact on cisternae morphology. Responsible for loading the Golgi stores with Ca(2+) ions in keratinocytes, contributing to keratinocyte differentiation and epidermis integrity. Participates in Ca(2+) and Mn(2+) ions uptake into the Golgi store of hippocampal neurons and regulates protein trafficking required for neural polarity (By similarity). May also play a role in the maintenance of Ca(2+) and Mn(2+) homeostasis and signaling in the cytosol while preventing cytotoxicity"
  },
  {
+  "id": "BCL6",
+  "symbol": "BCL6",
+  "name": "BCL6 transcription repressor",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "uniprot": "P41182",
+  "synonyms": "ZNF51; ZBTB27; LAZ3; BCL5; BCL6A",
+  "function_summary": "Transcriptional repressor mainly required for germinal center (GC) formation and antibody affinity maturation which has different mechanisms of action specific to the lineage and biological functions. Forms complexes with different corepressors and histone deacetylases to repress the transcriptional expression of different subsets of target genes. Represses its target genes by binding directly to the DNA sequence 5'-TTCCTAGAA-3' (BCL6-binding site) or indirectly by repressing the transcriptional activity of transcription factors. In GC B-cells, represses genes that function in differentiation, inflammation, apoptosis and cell cycle control, also autoregulates its transcriptional expression and up-regulates, indirectly, the expression of some genes important for GC reactions, such as AICDA, through the repression of microRNAs expression, like miR155. An important function is to allow GC B-cells to proliferate very rapidly in response to T-cell dependent antigens and tolerate the physiological DNA breaks required for immunoglobulin class switch recombination and somatic hypermutation without inducing a p53/TP53-dependent apoptotic response. In follicular helper CD4(+) T-cells (T(FH) cells), promotes the expression of T(FH)-related genes but inhibits the differentiation of T(H)1, T(H)2 and T(H)17 cells. Also required for the establishment and maintenance of immunological memory for both T- and B-cells. Suppresses macrophage proliferation through competition with STAT5 for STAT-binding motifs binding on certain target genes, such as CCL2 and CCND2. In response to genotoxic stress, controls cell cycle arrest in GC B-cells in both p53/TP53-dependedent and -independent manners. Besides, also controls neurogenesis through the alteration of the composition of NOTCH-dependent transcriptional complexes at selective NOTCH targets, such as HES5, including the recruitment of the deacetylase SIRT1 and resulting in an epigenetic silencing leading to neuronal differentiation"
+ },
+ {
   "id": "CALM1",
   "symbol": "CALM1",
   "name": "calmodulin 1",
@@ -175,6 +186,17 @@ window.CAMAP.nodes = [
   "uniprot": "Q14573",
   "synonyms": "IP3R3",
   "function_summary": "Inositol 1,4,5-trisphosphate-gated calcium channel that, upon 1D-myo-inositol 1,4,5-trisphosphate binding, transports calcium from the endoplasmic reticulum lumen to cytoplasm, thus releasing the intracellular calcium and therefore participates in cellular calcium ion homeostasis. 1D-myo-inositol 1,4,5-trisphosphate binds to the ligand-free channel without altering its global conformation, yielding the low-energy resting state, then progresses through resting-to preactivated transitions to the higher energy preactivated state, which increases affinity for calcium, promoting binding of the low basal cytosolic calcium at the juxtamembrane domain (JD) site, favoring the transition through the ensemble of high-energy intermediate states along the trajectory to the fully-open activated state. Upon opening, releases calcium in the cytosol where it can bind to the low-affinity cytoplasmic domain (CD) site and stabilizes the inhibited state to terminate calcium release"
+ },
+ {
+  "id": "NFATC1",
+  "symbol": "NFATC1",
+  "name": "nuclear factor of activated T cells 1",
+  "type": "gene",
+  "module": "effectors",
+  "is_seed": "true",
+  "uniprot": "O95644",
+  "synonyms": "NF-ATC; NFATc; NFAT2",
+  "function_summary": "Plays a role in the inducible expression of cytokine genes in T-cells, especially in the induction of the IL-2 or IL-4 gene transcription. Also controls gene expression in embryonic cardiac cells. Could regulate not only the activation and proliferation but also the differentiation and programmed death of T-lymphocytes as well as lymphoid and non-lymphoid cells. Required for osteoclastogenesis and regulates many genes important for osteoclast differentiation and function (By similarity)"
  },
  {
   "id": "ORAI1",

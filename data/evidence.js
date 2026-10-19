@@ -105,6 +105,32 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "0876dc57d9e7",
+  "interaction_id": "71fa21547240",
+  "source_kind": "signor",
+  "ref": "SIGNOR-276778",
+  "cited_pmid": "31730483",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Phosphorylation of NFATC1 at PIM1 target sites is essential for its ability to promote prostate cancer cell migration and invasion. Here we have identified ten PIM1 target sites in NFATC1 and found that prevention of their phosphorylation significantly decreases the transcriptional activity as well as the pro-migratory and pro-invasive effects of NFATC1 in prostate cancer cells.",
+  "sentence_verified": "false",
+  "species_context": "human"
+ },
+ {
+  "evidence_id": "0895c3f24c6d",
+  "interaction_id": "7fa9183baa15",
+  "source_kind": "pmc",
+  "ref": "PMC12423328",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Freytag D",
+  "sentence": "After 24 h, DMXAA-treated cells also showed an upregulation of NFATc1 to the same extent as untreated STING GOF T cells (Fig.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "0915d9cb4ed2",
   "interaction_id": "d82408bef80f",
   "source_kind": "pmc",
@@ -365,6 +391,32 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "2c3a9a5ccaaf",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC12423328",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Freytag D",
+  "sentence": "Using Fura Red -mediated ratiometric measurement to study basal Ca2+ levels, we demonstrated that basal Ca2+ levels were higher in CD4+ and CD8+ T cells from STING GOF mice compared to their WT controls, suggesting that the Ca2+-NFAT signaling pathway in STING GOF T cells could be associated with the induction of their exhaustion (Fig.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
+  "evidence_id": "3149a0d7f3b8",
+  "interaction_id": "1a34079f7cb2",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKACA>NFATC1",
+  "cited_pmid": "10611249",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human"
+ },
+ {
   "evidence_id": "3224500cd8cb",
   "interaction_id": "0bd7ba0ddab6",
   "source_kind": "signor",
@@ -612,6 +664,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "42cba8ef1e14",
+  "interaction_id": "a62595311b19",
+  "source_kind": "signor",
+  "ref": "SIGNOR-93531",
+  "cited_pmid": "12351631",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
+  "sentence_verified": "false",
+  "species_context": "human"
+ },
+ {
   "evidence_id": "4392b48331b5",
   "interaction_id": "a045d5c21000",
   "source_kind": "intact",
@@ -844,6 +909,19 @@ window.CAMAP.evidence = [
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "56d6d90fee99",
+  "interaction_id": "a0e77231ef15",
+  "source_kind": "pmc",
+  "ref": "PMC12423328",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Freytag D",
+  "sentence": "After 4 h, DMXAA-treated CD4+ and CD8+ T cells presented an increase of their basal Ca2+ levels, similar to those observed in untreated STING GOF T cells (Fig.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "571d08315ca3",
@@ -1938,6 +2016,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "a9b5795e1a00",
+  "interaction_id": "a62595311b19",
+  "source_kind": "signor",
+  "ref": "SIGNOR-93539",
+  "cited_pmid": "12351631",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
+  "sentence_verified": "false",
+  "species_context": "human"
+ },
+ {
   "evidence_id": "ab691cd9fffa",
   "interaction_id": "4ef9c24441a2",
   "source_kind": "omnipath",
@@ -2066,6 +2157,19 @@ window.CAMAP.evidence = [
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
   "sentence_verified": "false",
   "species_context": "human"
+ },
+ {
+  "evidence_id": "b2ce9001e478",
+  "interaction_id": "31bbbf35f595",
+  "source_kind": "pmc",
+  "ref": "PMC8528402",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Liu D",
+  "sentence": "As shown in Figure S7, when one copy of the Bcl6 gene was missing, CXCR5+PD-1+ Tfh cells differentially expressed many genes; among those downregulated were Stim1 and Plcg1 (which code for STIM1 and PLCgamma1, respectively) that both impinge on calcium signaling downstream of TCR activation.",
+  "sentence_verified": "true",
+  "species_context": "mouse"
  },
  {
   "evidence_id": "b40d6c9f7103",
@@ -2237,6 +2341,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "c2e3c1791f6e",
+  "interaction_id": "877b432a28f3",
+  "source_kind": "pmc",
+  "ref": "PMC8528402",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Liu D",
+  "sentence": "Quantitatively, Bcl6+/- OT-II T cells exhibited significantly lower mean DeltaRt/R0 values than control T cells (Figure 3B; mean +- SEM of mean DeltaRt/R0 values for 65 Bcl6+/+ versus 64 Bcl6+/- contacts: 29% +- 6% versus 8% +- 4%, p < 0.01).",
+  "sentence_verified": "true",
+  "species_context": "mouse"
+ },
+ {
   "evidence_id": "c3bc2c53a7c2",
   "interaction_id": "2a07cb336c23",
   "source_kind": "intact",
@@ -2300,6 +2417,19 @@ window.CAMAP.evidence = [
   "sentence": "STING depletion potentiates VDAC2/GRP75-mediated MERC (mitochondria-ER contact) formation to increase mitochondrial ROS/calcium levels, impairs mitochondria function, and suppresses mTORC1/S6K signaling leading to RCC growth retardation.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells"
+ },
+ {
+  "evidence_id": "cd1a0c3a5299",
+  "interaction_id": "a62595311b19",
+  "source_kind": "signor",
+  "ref": "SIGNOR-93535",
+  "cited_pmid": "12351631",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
+  "sentence_verified": "false",
+  "species_context": "human"
  },
  {
   "evidence_id": "cd78dc4bbccf",
@@ -2666,6 +2796,19 @@ window.CAMAP.evidence = [
   "species_context": "human"
  },
  {
+  "evidence_id": "e750fa18727d",
+  "interaction_id": "2e3d8e55a2b4",
+  "source_kind": "intact",
+  "ref": "EBI-61267415",
+  "cited_pmid": "35512704",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Mo et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human"
+ },
+ {
   "evidence_id": "e846e6b9dc44",
   "interaction_id": "77c96179aed4",
   "source_kind": "intact",
@@ -2739,6 +2882,19 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2020",
   "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human"
+ },
+ {
+  "evidence_id": "eef8ba26b5f0",
+  "interaction_id": "2f21d239a8e5",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:IKBKE>NFATC1",
+  "cited_pmid": "31730483",
+  "doi": "",
+  "year": "",
+  "first_author": "",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human"
