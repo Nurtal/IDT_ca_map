@@ -5,8 +5,8 @@
     reviews: "camap.reviews.v1", filters: "camap.filters.v1", reviewer: "camap.reviewer", theme: "camap.theme",
     hops: "camap.hops",
   };
-  const { modules: MODULES, species: SPECIES, calcium: CALCIUM } = CamapCore.LABELS;
-  const { refHref } = CamapCore;
+  const { modules: MODULES, species: SPECIES } = CamapCore.LABELS;
+  const { refHref, calciumLabel } = CamapCore;
   const { el, link, load, store, download } = CamapUI;
 
   const data = window.CAMAP || {};
@@ -69,6 +69,13 @@
   }
 
   function sentence(ev) {
+    // A curated row is the researcher's own summary of a paper, never a quote from it,
+    // so it is labelled as such and carries no verbatim-verification marker (issue #16).
+    if (ev.source_kind === "curated") {
+      return el("div", { class: "curator-note" },
+        el("div", { class: "note-label" }, "Curator summary" + (ev.supp_source ? " · " + ev.supp_source : "")),
+        el("p", {}, ev.curator_note || "—"));
+    }
     if (!ev.sentence) return el("p", { class: "muted" }, "Database-only, no sentence found");
     const ok = ev.sentence_verified === "true";
     return el("blockquote", { class: ok ? "verified" : "unverified" },
@@ -107,12 +114,16 @@
         endpoint(i.target)),
       i.mechanism ? el("p", { class: "mechanism" }, i.mechanism) : null,
       el("div", { class: "tags" },
-        el("span", { class: "tag" }, "Calcium evidence: " + (CALCIUM[i.calcium_evidence] || "none")),
-        i.has_human_evidence === "false" ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null),
+        el("span", { class: "tag" }, "Calcium evidence: " + calciumLabel(i.calcium_evidence)),
+        i.has_human_evidence === "false" && i.has_animal_evidence === "true"
+          ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null,
+        i.has_human_evidence === "false" && i.has_animal_evidence === "false"
+          ? el("span", { class: "tag" }, "Species not recorded") : null),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
       neighbourhoodSection(),
       el("section", { class: "sources" },
-        el("h3", {}, `Supported by ${i.n_sources} source(s) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`),
+        el("h3", {}, `Supported by ${i.n_sources} source(s) · ${i.n_pubs} publication(s) · ${i.n_db} database(s)`
+          + (Number(i.n_curated) ? ` · ${i.n_curated} curated` : "")),
         sourceBadges(evs),
         el("ul", {}, evs.map((ev) =>
           el("li", { class: "evidence" },

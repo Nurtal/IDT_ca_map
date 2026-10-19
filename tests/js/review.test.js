@@ -56,15 +56,15 @@ test("parseCsv handles quoted fields, escaped quotes, CRLF and multiline values"
   assert.deepEqual(rows, [{ a: "x, y", b: 'say "hi"\nthere' }, { a: "1", b: "" }]);
 });
 
-test("mouse-only filter hides interactions without human evidence", () => {
-  const items = [I("a"), I("b", { has_human_evidence: "false" })];
+test("mouse-only filter hides interactions whose only evidence is animal", () => {
+  const items = [I("a"), I("b", { has_human_evidence: "false", has_animal_evidence: "true" })];
   assert.deepEqual(core.applyFilters(items, { excludeMouseOnly: true }).map((i) => i.interaction_id), ["a"]);
   assert.equal(core.applyFilters(items, {}).length, 2);
 });
 
 test("session skips filtered-out cards and counts only visible ones", () => {
   const s = core.createSession({
-    interactions: [I("a", { has_human_evidence: "false" }), I("b")],
+    interactions: [I("a", { has_human_evidence: "false", has_animal_evidence: "true" }), I("b")],
     filters: { excludeMouseOnly: true },
   });
   assert.equal(s.current().interaction_id, "b");
@@ -173,4 +173,35 @@ test("deferring an uncertain card again sends it to the back of the uncertain st
   assert.equal(s.current().interaction_id, "a");
   s.decide("uncertain");
   assert.equal(s.current().interaction_id, "b");
+});
+
+// --- curated spreadsheets (issues #16, #17) ---
+
+test("calcium label reads every criterion that applied", () => {
+  assert.equal(core.calciumLabel("GO"), "GO annotation");
+  assert.equal(core.calciumLabel("both"), "GO annotation + source text");
+  assert.equal(core.calciumLabel("GO+curated"), "GO annotation + curator's gene catalogue");
+  assert.equal(core.calciumLabel("text+curated"), "mentioned in source text + curator's gene catalogue");
+  assert.equal(core.calciumLabel(""), "none");
+});
+
+test("kept export carries the curated source count", () => {
+  assert.ok(core.INTERACTION_COLUMNS.includes("n_curated"));
+  const reviews = { a: { decision: "keep", comment: "", reviewer: "nf", reviewed_at: "t" } };
+  const csv = core.keptCsv([I("a", { n_curated: "2" })], reviews);
+  assert.match(csv.split("\n")[0], /n_curated/);
+  assert.match(csv.split("\n")[1], /,2,/);
+});
+
+test("a reference can be a DOI or the curator herself", () => {
+  assert.equal(core.refHref("DOI:10.1016/j.immuni.2014.11.011"),
+    "https://doi.org/10.1016/j.immuni.2014.11.011");
+  assert.equal(core.refHref("CURATED:interactome STING.xlsx/interactors/ALG2"), null);
+});
+
+test("the murine-only filter hides mouse-only interactions, not species-unknown ones", () => {
+  const mouseOnly = I("m", { has_human_evidence: "false", has_animal_evidence: "true" });
+  const unknown = I("u", { has_human_evidence: "false", has_animal_evidence: "false" });
+  const kept = core.applyFilters([mouseOnly, unknown], { excludeMouseOnly: true });
+  assert.deepEqual(kept.map((i) => i.interaction_id), ["u"]);
 });

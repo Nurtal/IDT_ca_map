@@ -67,7 +67,7 @@ test("graph filters: link types, minimum sources, modules, mouse-only (absent li
   const items = [
     { ...E("1", "A", "B", "activation"), n_sources: "3", has_human_evidence: "true" },
     { ...E("2", "A", "C", "inhibition"), n_sources: "1", has_human_evidence: "true" },
-    { ...E("3", "B", "C", "physical_binding"), n_sources: "5", has_human_evidence: "false" },
+    { ...E("3", "B", "C", "physical_binding"), n_sources: "5", has_human_evidence: "false", has_animal_evidence: "true" },
   ];
   const modules = { A: "soce", B: "sting", C: "metabolite" };
   const ids = (f) => core.applyFilters(items, f, (id) => modules[id]).map((i) => i.interaction_id);

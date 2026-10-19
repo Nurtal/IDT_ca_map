@@ -1,0 +1,113 @@
+{
+  "_doc": "Mapping of the curator's spreadsheets in data_supp/ onto raw records (issues #15, #16, #17). Column names are the French headers of the files; the questions behind the choices made here are tracked in issue #18.",
+  "dir": "data_supp",
+  "symbol_fixes": {
+    "_doc": "Curator cell -> HGNC symbol, for typos and unambiguous aliases only. Cells naming several genes (PTPN1/2, 'UBAP1 / HGS and Vps37A') or a protein family (AP-1, SAR1, SEC23, SEC24, SEC31) are left unmapped on purpose and reported, pending issue #18. ALG2 in the STING sheet is ALG-2, the penta-EF-hand Ca2+ sensor PDCD6 (the catalogue lists it under PDCD6 too), not the HGNC mannosyltransferase ALG2 — see issue #18.",
+    "ALG2": "PDCD6",
+    "CRAR2A": "CRACR2A",
+    "TBB4B": "TUBB4B",
+    "TM203": "TMEM203",
+    "TSP4": "THBS4",
+    "TSG101.": "TSG101",
+    "RFN39": "RNF39",
+    "TRIF": "TICAM1",
+    "TAK-1": "MAP3K7",
+    "STEEP": "STEEP1",
+    "VSP34": "PIK3C3",
+    "Galectin-9": "LGALS9",
+    "EXOC4/SEC8": "EXOC4",
+    "EXOC5/SEC10": "EXOC5",
+    "ATG9": "ATG9A",
+    "E3 ubiquitin ligase RNF5": "RNF5",
+    "Notch 1": "NOTCH1",
+    "TRAPβ": "SSR2",
+    "HGS (ESCRT-0),": "HGS",
+    "Sec 13": "SEC13"
+  },
+  "regulation_map": {
+    "positive": "activation",
+    "positive regulation": "activation",
+    "negative": "inhibition",
+    "negative regulation": "inhibition",
+    "positive regulator": "activation",
+    "negative regulator": "inhibition",
+    "positive regulators of soce": "activation",
+    "negative regulator of soce": "inhibition",
+    "inactivation of arc channels": "inhibition"
+  },
+  "interactomes": [
+    {
+      "file": "interactome STIM1 bis.xlsx",
+      "sheets": [
+        {
+          "name": "STIM1",
+          "anchor": "STIM1",
+          "gene_column": "Gène",
+          "regulation_column": "Régulation",
+          "default_type": "physical_binding",
+          "note_columns": ["Infos sur interaction avec STIM1", "Effet de l'interaction",
+                           "Identification MS", "Localisation", "Type de protéine", "Protéine"],
+          "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx)."
+        },
+        {
+          "name": "Orai",
+          "anchor": "ORAI1",
+          "gene_column": "Gène",
+          "regulation_column": "Régulation",
+          "default_type": "physical_binding",
+          "note_columns": ["Effet de l'interaction", "Infos supplémentaires", "Localisation",
+                           "Type de protéine", "Protéine"],
+          "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx)."
+        },
+        {
+          "name": "TRPC",
+          "anchor": "TRPC1",
+          "gene_column": "Gène",
+          "regulation_column": "Régulation",
+          "default_type": "physical_binding",
+          "note_columns": ["Effet de l'interaction", "Protéine"],
+          "justification": "Curated by the researcher as a TRPC1 interactor (interactome STIM1 bis.xlsx)."
+        }
+      ]
+    },
+    {
+      "file": "interactome STING.xlsx",
+      "sheets": [
+        {
+          "name": "interactors",
+          "anchor": "STING1",
+          "gene_column": "Gène",
+          "regulation_column": "Régulation",
+          "default_type": "physical_binding",
+          "note_columns": ["Effet de l'interaction", "domain of the interactor", "domain of STING",
+                           "Infos dans SLE", "Protéine"],
+          "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx)."
+        },
+        {
+          "name": "modulators",
+          "anchor": "STING1",
+          "gene_column": "Gène",
+          "regulation_column": "Régulation",
+          "default_type": "unknown_regulation",
+          "note_columns": ["Effet", "Infos dans SLE", "Protéine"],
+          "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx)."
+        }
+      ]
+    }
+  ],
+  "catalogue": {
+    "_doc": "Calcium-relevance reference, not a node source: a gene here satisfies the calcium half of the inclusion rule, but only enters the graph when an interaction links it to an anchor.",
+    "file": "Genes sauvegardes 24022022.xlsx",
+    "sheet": "Feuil1",
+    "symbol_column": "Gene name",
+    "annotation_columns": {
+      "genecards": ["GeneCards Identifier"],
+      "protein_type": ["protein type 1", "protein type 2", "protein type 3"],
+      "localization": ["localization 1", "localization 2", "localization 3"],
+      "domains": ["canonical domain 1", "canonical domain 2"],
+      "regulation": ["regulation  1", "regulation 2"],
+      "ca_functionality": ["Ca2+ functionality 1", "Ca2+ functionality 2", "Ca2+ functionality 3"],
+      "functional_assignment": ["Functional assignment  1", "Functional assignment  2"]
+    }
+  }
+}

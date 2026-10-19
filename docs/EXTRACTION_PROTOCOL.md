@@ -8,6 +8,7 @@ Read this first in every extraction session, then `pipeline/state/PROGRESS.md`.
 ```
 python3 pipeline/cli.py corpus        # (re)count corpus, (re)build the prioritized queue — idempotent
 python3 pipeline/cli.py fetch-db      # SIGNOR / OmniPath / IntAct (/ BioGRID with BIOGRID_ACCESS_KEY) -> data/raw/db_*.jsonl
+python3 pipeline/cli.py supp          # data_supp/*.xlsx -> data/raw/supp_*.jsonl + data/supp_catalogue.json
 python3 pipeline/cli.py queue next 50 # next pending articles
 python3 pipeline/cli.py fetch-texts   # cache texts of every paper cited in data/raw (git-ignored cache)
 python3 pipeline/cli.py annotate      # HGNC + GO calcium + UniProt for every actor
@@ -81,3 +82,40 @@ A non-seed actor survives only if it interacts directly with an anchor (STIM1 or
 calcium-related (GO calcium transport/signalling annotation, or a calcium term in a supporting sentence).
 Level-1 seeds are always kept; level-2 seeds (calcineurin, NFAT, CaMKII) need a link to an anchor.
 See `pipeline/config/seeds.json`.
+
+## The curator's spreadsheets (`data_supp/`)
+
+`data_supp/` holds spreadsheets the researcher maintains by hand. They are a fourth source,
+next to the literature and the interaction databases, and `cli.py supp` turns them into raw
+records like any other (mapping in `pipeline/config/supp.json`, open questions in issue #18).
+
+| File | What the pipeline does with it |
+|---|---|
+| `interactome STIM1 bis.xlsx` (`STIM1`, `Orai`, `TRPC`) | one interaction per row, anchored on STIM1 / ORAI1 / TRPC1 |
+| `interactome STING.xlsx` (`interactors`, `modulators`) | one interaction per row, anchored on STING1 |
+| `Genes sauvegardes 24022022.xlsx` | **not** nodes: the calcium-relevance reference, plus expert annotations for the nodes that do enter |
+
+Rules that keep these rows honest:
+
+- `source_kind` is `curated` and `ref` is the row's DOI (`DOI:10.xxxx/...`), or
+  `CURATED:<file>/<sheet>/<symbol>` when the curator cites no paper. One record per DOI.
+- A curated row carries a **`curator_note`, never a `sentence`**: it is the researcher's summary
+  of a paper, not a quote from it. `sentence_verified` stays empty, so the ⚠️ of a quote that
+  could not be found verbatim keeps its meaning. Both pages label it "Curator summary".
+- `supp_source` records file, sheet and row, so every record traces back to a cell.
+- Nothing is guessed in silence. A regulation value the mapping does not know, a cell that is not
+  a gene symbol, a symbol HGNC does not have: each is printed by `cli.py supp` and, where the row
+  cannot become an edge, left out rather than coerced. Symbol repairs are explicit in
+  `symbol_fixes`; cells naming a family or several genes are left for the curator.
+- A gene of the catalogue satisfies the calcium half of the inclusion rule on its own
+  (`calcium_evidence` then contains `curated`, e.g. `GO+curated`), but it still needs an
+  interaction with an anchor to enter the graph — the catalogue adds no isolated nodes.
+- `cli.py supp --report` says how many catalogue genes are in the map, how many the corpus has
+  already turned up without an anchor link yet (the extraction leads), and how many it has never
+  touched. The run also writes `data/supp_report.txt` with every symbol and value it could not read.
+- `cli.py build` writes `data/supp_dropped.txt`: every curated interaction the inclusion rule
+  dropped, with its reason. Partners of ORAI1 and TRPC1 land there whenever nothing links them to
+  STIM1 or STING1 — those two are seeds, not anchors, so their partners sit two hops from the axis.
+- A curated row records no species, so its interaction has neither human nor animal evidence. The
+  pages say "species not recorded" and the murine-only filter leaves it visible: unknown is not
+  the same as non-human.

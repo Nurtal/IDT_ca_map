@@ -8,9 +8,11 @@
     python3 pipeline/cli.py fetch-texts    # cache PubTator texts of every paper cited in data/raw
     python3 pipeline/cli.py annotate       # cache HGNC set + GO calcium / UniProt annotations of every actor
     python3 pipeline/cli.py graph [CSV]    # kept_interactions.csv -> data/graph_data.js for graph/index.html
+    python3 pipeline/cli.py supp           # data_supp/*.xlsx -> data/raw/supp_*.jsonl + data/supp_catalogue.json
     python3 pipeline/cli.py build          # data/raw/*.jsonl -> data/{nodes,interactions,evidence}.{csv,js}
 """
 import argparse
+import csv
 import json
 import sys
 from pathlib import Path
@@ -27,9 +29,18 @@ from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
 from camap.nodes import Resolver, load_config  # noqa: E402
 from camap.pubtator import PubTator  # noqa: E402
+from camap.supp import (catalogue_report, load_supp_config, read_all, supp_file_stem,  # noqa: E402
+                        unresolved_symbols)
 
 CACHE = ROOT / "pipeline" / "cache"
+SUPP_CONFIG = ROOT / "pipeline" / "config" / "supp.json"
 STATE = ROOT / "pipeline" / "state"
+
+
+def show(path):
+    """A path relative to the repo when it is inside it, absolute otherwise."""
+    path = Path(path).resolve()
+    return path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
 
 
 def main(argv=None):
@@ -47,6 +58,10 @@ def main(argv=None):
     a = sub.add_parser("annotate", help="cache HGNC + GO calcium + UniProt annotations for all actors")
     a.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
     sub.add_parser("corpus", help="count the corpus and (re)build the work queue")
+    s = sub.add_parser("supp", help="read the curator's spreadsheets in data_supp/ into data/raw")
+    s.add_argument("--out", default=ROOT / "data", type=Path)
+    s.add_argument("--report", action="store_true",
+                   help="also report how the gene catalogue overlaps the map built so far")
     q = sub.add_parser("queue", help="inspect or update the work queue")
     qsub = q.add_subparsers(dest="qcmd", required=True)
     qn = qsub.add_parser("next")
@@ -68,12 +83,17 @@ def main(argv=None):
     args = p.parse_args(argv)
 
     if args.cmd == "build":
-        tables = build_dataset(args.raw, args.out, cache_dir=CACHE)
+        tables, dropped = build_dataset(args.raw, args.out, cache_dir=CACHE,
+                                        catalogue_path=ROOT / "data" / "supp_catalogue.json")
         for name, (_, rows) in tables.items():
             print(f"{name}: {len(rows)} rows")
         unverified = [e for e in tables["evidence"][1] if e["sentence_verified"] == "false"]
         if unverified:
             print(f"WARNING: {len(unverified)} sentence(s) not found verbatim in cached texts")
+        if dropped:
+            print(f"WARNING: {len(dropped)} curated interaction(s) dropped by the inclusion rule "
+                  f"(see data/supp_dropped.txt)")
+            (Path(args.out) / "supp_dropped.txt").write_text("\n".join(dropped) + "\n")
     elif args.cmd == "fetch-texts":
         pt = PubTator(CACHE)
         pmids = set(args.pmids or [])
@@ -148,6 +168,47 @@ def main(argv=None):
             print(f"{kind}: {len(unique)} records -> {path.relative_to(ROOT)}")
         for w in warnings:
             print("WARNING:", w)
+    elif args.cmd == "supp":
+        ensure_hgnc(CACHE)
+        config = load_config()
+        resolver = Resolver(CACHE, config)
+        supp_config = load_supp_config(SUPP_CONFIG)
+        records, catalogue, notes = read_all(supp_config, ROOT, resolve=resolver.resolve)
+
+        raw = args.out / "raw"
+        raw.mkdir(parents=True, exist_ok=True)
+        by_sheet = {}
+        for r in records:
+            by_sheet.setdefault(supp_file_stem(r["supp_source"]), []).append(r)
+        for stem, rows in sorted(by_sheet.items()):
+            path = raw / f"supp_{stem}.jsonl"
+            path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows))
+            print(f"{len(rows):4d} records -> {show(path)}")
+        catalogue_path = args.out / "supp_catalogue.json"
+        catalogue_path.write_text(json.dumps(catalogue, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
+        print(f"{len(catalogue):4d} catalogue genes -> {show(catalogue_path)}")
+
+        unknown = unresolved_symbols(records, resolver)
+        lines = []
+        if unknown:
+            lines.append(f"{len(unknown)} symbol(s) the resolver could not map to HGNC (see issue #18):")
+            for symbol, where in sorted(unknown.items()):
+                lines.append(f"  {symbol:20s} {where[0]}"
+                             f"{'' if len(where) == 1 else f' (+{len(where) - 1} more)'}")
+        lines.extend(f"NOTE: {n}" for n in notes)
+        print()
+        for line in lines:
+            print(line)
+        report_path = args.out / "supp_report.txt"
+        report_path.write_text("\n".join(lines) + "\n")
+        print(f"\nreport -> {show(report_path)}")
+        if args.report:
+            print()
+            nodes_csv = args.out / "nodes.csv"
+            node_ids = {row["id"] for row in csv.DictReader(nodes_csv.open())} if nodes_csv.exists() else set()
+            seen = {resolver.resolve(n) for r in read_raw(raw) for n in (r["source"], r["target"])}
+            for line in catalogue_report(catalogue, node_ids, seen):
+                print(line)
     elif args.cmd == "annotate":
         ensure_hgnc(CACHE)
         config = load_config()

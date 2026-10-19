@@ -1,6 +1,21 @@
 window.CAMAP = window.CAMAP || {};
 window.CAMAP.evidence = [
  {
+  "evidence_id": "00c7d0243998",
+  "interaction_id": "135670da956b",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC5>TRPC1",
+  "cited_pmid": "12032305",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Our data show that (i) TRPC2 does not interact with any known TRPC protein and (ii) TRPC1 has the ability to form channel complexes together with TRPC4 and TRPC5.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0166417af98b",
   "interaction_id": "ef02b46551ec",
   "source_kind": "intact",
@@ -11,7 +26,9 @@ window.CAMAP.evidence = [
   "first_author": "Park et al.",
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "01eda528a7c3",
@@ -24,7 +41,9 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "We activated STIM1 by treatment with thapsigargin that depletes the ER Ca2+ stores, and activated STING using its ligand, 2',3'-cGAMP.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "01fc1308dce5",
@@ -37,7 +56,9 @@ window.CAMAP.evidence = [
   "first_author": "Li S",
   "sentence": "While cGAS mediates cytosDNA sensing and cGAMP production to promote TRPV2-mediated Ca2+ release from the ER after replication stress, STING normally represses TRPV2 activity to prevent unscheduled activation of the pathway in the absence of replication stress.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0399c7543e64",
@@ -50,7 +71,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "039aacb9fc94",
+  "interaction_id": "8ba36779aca9",
+  "source_kind": "curated",
+  "ref": "DOI:10.1371/journal.pone.0012305",
+  "cited_pmid": "",
+  "doi": "10.1371/journal.pone.0012305",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: P100: PC1 cleavage product,  - P100 Co-immunoprecipitates with STIM1 | Effet de l'interaction: inhibition of STIM1 translocation | Localisation: ER/Plasma Membrane | Protéine: polycystin-1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 56"
  },
  {
   "evidence_id": "03e9b00a8ead",
@@ -63,7 +101,9 @@ window.CAMAP.evidence = [
   "first_author": "Lv L",
   "sentence": "SELENOK interacts with STING in the ER and promotes its oligomerization, thereby licensing STING trafficking to the Golgi complex.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0406ba03db93",
@@ -76,7 +116,24 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "04bf3235f71c",
+  "interaction_id": "8be187e6a6d5",
+  "source_kind": "intact",
+  "ref": "EBI-734105",
+  "cited_pmid": "16169070",
+  "doi": "",
+  "year": "2005",
+  "first_author": "Stelzl et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "04d0bf800a9d",
@@ -89,7 +146,24 @@ window.CAMAP.evidence = [
   "first_author": "Zhu Z",
   "sentence": "STING depletion potentiates VDAC2/GRP75-mediated MERC (mitochondria-ER contact) formation to increase mitochondrial ROS/calcium levels, impairs mitochondria function, and suppresses mTORC1/S6K signaling leading to RCC growth retardation.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "05c3e675467a",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "intact",
+  "ref": "EBI-2409906",
+  "cited_pmid": "19632184",
+  "doi": "",
+  "year": "2009",
+  "first_author": "Honnappa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "07e03d782bc2",
@@ -102,7 +176,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0876dc57d9e7",
@@ -115,7 +191,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Phosphorylation of NFATC1 at PIM1 target sites is essential for its ability to promote prostate cancer cell migration and invasion. Here we have identified ten PIM1 target sites in NFATC1 and found that prevention of their phosphorylation significantly decreases the transcriptional activity as well as the pro-migratory and pro-invasive effects of NFATC1 in prostate cancer cells.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0895c3f24c6d",
@@ -128,7 +206,9 @@ window.CAMAP.evidence = [
   "first_author": "Freytag D",
   "sentence": "After 24 h, DMXAA-treated cells also showed an upregulation of NFATc1 to the same extent as untreated STING GOF T cells (Fig.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0915d9cb4ed2",
@@ -141,7 +221,54 @@ window.CAMAP.evidence = [
   "first_author": "Wu J",
   "sentence": "To corroborate with the N154S/RRDD finding, we ectopically expressed STIM1 (aa1-249) in Jurkat N154S cells to block STING trafficking, and we found that it also significantly reduced ER stress and cell death (Fig.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "0970e16bfdd3",
+  "interaction_id": "5ce3347c577f",
+  "source_kind": "curated",
+  "ref": "DOI:10.1126/science.1191086",
+  "cited_pmid": "",
+  "doi": "10.1126/science.1191086",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 CAD domain interacts with CaV1.2 C-terminus | Effet de l'interaction: co-immunoprecipitation of Homer1 with STIM1 and the Cav1.2 α1 subunit | Localisation: Plasma Membrane | Protéine: Cav1.2, Calcium Voltage-Gated Channel Subunit Alpha1 C",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
+ },
+ {
+  "evidence_id": "0a6bbb9b69c6",
+  "interaction_id": "58cf9c383d79",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells9010160",
+  "cited_pmid": "",
+  "doi": "10.3390/cells9010160",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with NMDAR2 - PLA/CO-IP between NR2B/NR2A and STIM1 | Effet de l'interaction: co-localization of STIM1 and NMDAR2 subunits after store depletion | Localisation: Plasma Membrane | Protéine: NDMAR2, Glutamate Ionotropic Receptor NMDA Type Subunit 2B",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 37"
+ },
+ {
+  "evidence_id": "0a9e487dc944",
+  "interaction_id": "6c513194c7d5",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/embor.2011.173",
+  "cited_pmid": "",
+  "doi": "10.1038/embor.2011.173",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: PDIA3 interacts with STIM1 luminal domain and require C49 and C56 | Localisation: ER protein | Protéine: ERP57, Protein Disulfide Isomerase Family A Member 3",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 57"
  },
  {
   "evidence_id": "0b0ec11c71b1",
@@ -154,7 +281,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0bfda12500fa",
@@ -167,7 +296,9 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0c589df6125f",
@@ -180,7 +311,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Treatment with igf-1 or insulin and dexamethasone mobilizes intracellular calcium, activates the ca2+/calmodulin-dependent phosphatase calcineurin, and induces the nuclear translocation of the transcription factor nf-atc1.",
   "sentence_verified": "false",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0c6e65d1d87d",
@@ -193,7 +326,84 @@ window.CAMAP.evidence = [
   "first_author": "Kuhl N",
   "sentence": "To this end, either Ionomycin, which acts as a Ca2+ ionophore at the plasma and ER membranes, or Thapsigargin, which depletes ER Ca2+ levels by inhibiting the ER Ca2+-ATPase, were able to potently boost STING and IRF3 phosphorylation together with cGAMP.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "0d01de6cb03b",
+  "interaction_id": "a29291b6db22",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10112821",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10112821",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CASQ1 binds to STIM1 and STIM2 | Localisation: ER protein | Protéine: Calsequestrin 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 20"
+ },
+ {
+  "evidence_id": "0d9703cf08a4",
+  "interaction_id": "04e603632649",
+  "source_kind": "intact",
+  "ref": "EBI-21760441",
+  "cited_pmid": "28514442",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "0de903a69ff2",
+  "interaction_id": "7aa95731fc93",
+  "source_kind": "intact",
+  "ref": "EBI-20201138",
+  "cited_pmid": "29251827",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Shang et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "0df369fbfde3",
+  "interaction_id": "671e67405056",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb3245",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb3245",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
+ },
+ {
+  "evidence_id": "1048d26dc729",
+  "interaction_id": "66748b107c3e",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.ceca.2013.06.008",
+  "cited_pmid": "",
+  "doi": "10.1016/j.ceca.2013.06.008",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: APC-binding domain in the carboxyl terminus of STIM1 (STIM1 650-685). | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: APC Regulator Of WNT Signaling Pathway/APC (Adenomatous Polyposis Coli) Tumor Suppressor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 6"
  },
  {
   "evidence_id": "10853f68aef2",
@@ -206,7 +416,24 @@ window.CAMAP.evidence = [
   "first_author": "Guo Q",
   "sentence": "Blocking the Ero1alpha/MAMs/mtCa2+ axis suppresses mtDNA release and downregulates the cGAS-STING-NFkappaB signaling cascade, thus promoting M2 polarization and neural repair.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "10fe1cca03b5",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1159/000495494",
+  "cited_pmid": "",
+  "doi": "10.1159/000495494",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "118014d5c6ca",
@@ -219,7 +446,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "11ee97aa51ce",
@@ -232,7 +461,9 @@ window.CAMAP.evidence = [
   "first_author": "Prabakaran T",
   "sentence": "Moreover, we observed that the stimulation-induced dissociation of STING from STIM1, reported to enable STING activation, was inhibited by ISD017 (Fig.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "12813dfaba94",
@@ -245,7 +476,54 @@ window.CAMAP.evidence = [
   "first_author": "Dubois et al.",
   "sentence": "By mimicking ORAI protein remodeling observed in primary tumors, we demonstrate in in vitro models that enhanced ORAI3 expression favors heteromerization with ORAI1 to form a novel channel.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "12cfe8b4b926",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1242/jcs.125054",
+  "cited_pmid": "",
+  "doi": "10.1242/jcs.125054",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "1313a65cb68c",
+  "interaction_id": "71aba7e6baa8",
+  "source_kind": "curated",
+  "ref": "DOI:10.3389/fimmu.2026.1861904",
+  "cited_pmid": "",
+  "doi": "10.3389/fimmu.2026.1861904",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: STING  recruits and activates tank-binding kinase 1 (TBK1), which phosphorylates STING and the transcription factor IRF3 | Infos dans SLE: 10.3389/fimmu.2026.1861904 : altered activity of TBK1",
+  "supp_source": "interactome STING.xlsx/interactors/row 47"
+ },
+ {
+  "evidence_id": "131b694fba28",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1242/jcs.226019",
+  "cited_pmid": "",
+  "doi": "10.1242/jcs.226019",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "16ce1d3301aa",
@@ -258,7 +536,54 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "One such protein, viral interferon regulatory factor 1 (vIRF1), targets STING by preventing it from interacting with TANK binding kinase 1 (TBK1), thereby inhibiting STING's phosphorylation and concomitant activation, resulting in an inhibition of the DNA sensing pathway.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "16d228fb72f2",
+  "interaction_id": "671e67405056",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbrc.2022.01.100",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbrc.2022.01.100",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
+ },
+ {
+  "evidence_id": "172d0a9c91e9",
+  "interaction_id": "23e45dcb33c4",
+  "source_kind": "curated",
+  "ref": "DOI:10.1096/fj.202001886R",
+  "cited_pmid": "",
+  "doi": "10.1096/fj.202001886R",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: co-localized and co-immunoprecipitated with the ER-located Ca2+ sensor stromal interacting molecule 1 (STIM1). | Localisation: lyosomal vesicles membrane | Protéine: TRPML1; Mucolipin TRP Cation Channel 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 49"
+ },
+ {
+  "evidence_id": "174616ea2e02",
+  "interaction_id": "9a825748e065",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>AKAP5",
+  "cited_pmid": "29162807",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "18135971b5a9",
@@ -271,7 +596,54 @@ window.CAMAP.evidence = [
   "first_author": "Triantafilou M",
   "sentence": "The data confirmed that STIM1 and STING interacted in uninfected cells (Fig.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1822ad272faa",
+  "interaction_id": "71aba7e6baa8",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41586-019-1000-2",
+  "cited_pmid": "",
+  "doi": "10.1038/s41586-019-1000-2",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: STING  recruits and activates tank-binding kinase 1 (TBK1), which phosphorylates STING and the transcription factor IRF3 | Infos dans SLE: 10.3389/fimmu.2026.1861904 : altered activity of TBK1",
+  "supp_source": "interactome STING.xlsx/interactors/row 47"
+ },
+ {
+  "evidence_id": "1945787e3db7",
+  "interaction_id": "29715b428dd7",
+  "source_kind": "curated",
+  "ref": "DOI:10.1083/jcb.201506022",
+  "cited_pmid": "",
+  "doi": "10.1083/jcb.201506022",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Exogenous σ1R co-immunopreicipitated with exogenous STIM1 | Localisation: ER protein | Protéine: Sigma Non-Opioid Intracellular Receptor 1, σ1R",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 69"
+ },
+ {
+  "evidence_id": "1adf66c21a28",
+  "interaction_id": "c9840befddf0",
+  "source_kind": "curated",
+  "ref": "DOI:10.1007/s00424-009-0745-0",
+  "cited_pmid": "",
+  "doi": "10.1007/s00424-009-0745-0",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Coimmunoprecipitation and colocalization  of hBest1 and hStim1 | Localisation: ER protein | Protéine: Bestrophin 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 13"
  },
  {
   "evidence_id": "1bb543f4ca31",
@@ -284,7 +656,54 @@ window.CAMAP.evidence = [
   "first_author": "Wang WA",
   "sentence": "We therefore propose that UNC93B1 is a chaperone that facilitates STIM1 early activation steps associated with ER Ca2+ depletion to enable the switch into an extended conformation required for the efficient trapping of Orai1 channels.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1c04798508e1",
+  "interaction_id": "09beccd00af4",
+  "source_kind": "curated",
+  "ref": "DOI:10.15252/embj.201797597",
+  "cited_pmid": "",
+  "doi": "10.15252/embj.201797597",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: co/Ip and FRET : STIM1 interacts with ADCY6 after srore depletion | Effet de l'interaction: STIM1 C-terminus S/P-rich domain regulates STIM1 interaction with ADCY6. | Localisation: plasma membrane-bound | Protéine: Plasma membrane-localized adenylyl cyclase 6",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 3"
+ },
+ {
+  "evidence_id": "1c061cd05abb",
+  "interaction_id": "04e603632649",
+  "source_kind": "intact",
+  "ref": "EBI-54684224",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1c905bd884eb",
+  "interaction_id": "82a6c49f3f73",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb1590",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb1590",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 83"
  },
  {
   "evidence_id": "1d4ed369b136",
@@ -297,7 +716,69 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1eda202f2bb3",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.3892/mmr.2019.10328",
+  "cited_pmid": "",
+  "doi": "10.3892/mmr.2019.10328",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "1efb79fee976",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1080/19336950.2016.1212141",
+  "cited_pmid": "",
+  "doi": "10.1080/19336950.2016.1212141",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "20dab1afcf66",
+  "interaction_id": "42a436f6cb04",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1200667109",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1200667109",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Binding Partner of Orai1 and STIM1 Protein Complex : interacts with STIM1 after soore depletion or Ca2+ decrease via its EF/Hand | Effet de l'interaction: Junctate Recruits STIM1 into the ER-PM Junctions in a Manner Independent of Phosphoinositide and Orai1 Binding | Localisation: ER membrane | Type de protéine: Ca2+-sensing ER protein | Protéine: Junctate",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 7"
+ },
+ {
+  "evidence_id": "20f92de96ee9",
+  "interaction_id": "cd0a56e59255",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/TRPV2",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": "interactome STING.xlsx/interactors/row 59"
  },
  {
   "evidence_id": "21deaa4f3209",
@@ -310,7 +791,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "2262dd2244d9",
@@ -323,7 +806,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "In the present study, we have analysed the expression and functional characteristics of SERCA2c relative to SERCA2a and SERCA2b isoforms upon their stable heterologous expression in HEK-293 cells (human embryonic kidney 293 cells). All SERCA2 proteins induced an increased Ca2+ content in the ER of intact transfected cells.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "23727df58e25",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.jmb.2019.05.008",
+  "cited_pmid": "",
+  "doi": "10.1016/j.jmb.2019.05.008",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "24bf8bd4067c",
@@ -336,7 +836,24 @@ window.CAMAP.evidence = [
   "first_author": "Williams et al.",
   "sentence": "STIM1, STIM2 and D-Stim have a conserved genomic organization, indicating that the vertebrate family of two STIM genes most probably arose from a single ancestral gene.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "257d2912a4da",
+  "interaction_id": "c89aa4fdbbcf",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/BTK",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Deficiency impairs STING-mediated TBK1 and IRF3 activation | domain of the interactor: SH3/ SH2-interaction domain | domain of STING: TMD",
+  "supp_source": "interactome STING.xlsx/interactors/row 7"
  },
  {
   "evidence_id": "26fd1f71ae9b",
@@ -349,7 +866,69 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "The key event in activation of fluid secretion is an increase in intracellular [ca2+] ([ca2+]i) triggered by ip3-induced release of ca2+ from er via the ip3r.  ip3rs determine the site of initiation and the pattern of [ca2+]i signal in the cell.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2771010de3bb",
+  "interaction_id": "7c974bc74646",
+  "source_kind": "curated",
+  "ref": "DOI:10.1128/MCB.05140-11",
+  "cited_pmid": "",
+  "doi": "10.1128/MCB.05140-11",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STC2 interacts with the ER Ca2 sensor STIM1 :IF and Co/IP | Localisation: ER and Golgi apparatus | Protéine: Stanniocalcin 2",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 72"
+ },
+ {
+  "evidence_id": "28207cc39d7f",
+  "interaction_id": "038d627274b5",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells7120262",
+  "cited_pmid": "",
+  "doi": "10.3390/cells7120262",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Co/Ip HSP27 interacts with STIM - HSP27 Expression Maintained the Stability of STIM1 Proteins | Localisation: cytosol | Protéine: Heat Shock Protein Family B (Small) Member 1,HSP27",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 40"
+ },
+ {
+  "evidence_id": "28f3acda4c79",
+  "interaction_id": "88cd63e50808",
+  "source_kind": "curated",
+  "ref": "DOI:10.7554/eLife.00802",
+  "cited_pmid": "",
+  "doi": "10.7554/eLife.00802",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: α-SNAP binds STIM1 CAD | Localisation: Cytosol | Protéine: α-SNAP, NSF Attachment Protein Alpha",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 51"
+ },
+ {
+  "evidence_id": "29bcee6fd3ea",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncomms6843",
+  "cited_pmid": "",
+  "doi": "10.1038/ncomms6843",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "29d441056053",
@@ -362,7 +941,39 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "29f77fd7d74e",
+  "interaction_id": "d1d4a6943b11",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells9010160",
+  "cited_pmid": "",
+  "doi": "10.3390/cells9010160",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with NMDAR2 - PLA between NR2B/NR2A and STIM1 | Effet de l'interaction: co-localization of STIM1 and NMDAR2 subunits after store depletion | Localisation: Plasma Membrane | Protéine: NDMAR2, Glutamate Ionotropic Receptor NMDA Type Subunit 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 36"
+ },
+ {
+  "evidence_id": "2a695de46589",
+  "interaction_id": "2cfdfc8646a0",
+  "source_kind": "signor",
+  "ref": "SIGNOR-252031",
+  "cited_pmid": "12838339",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Heart failure can be traced, in part, to alterations in the activity of the sarcoplasmic reticulum Ca2+ pump that are induced by its interactions with phospholamban, a reversible inhibitor.",
+  "sentence_verified": "false",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "2b593d9cfa6c",
@@ -375,7 +986,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "2bb340566d46",
@@ -388,7 +1001,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Mechanistically, we demonstrate that PTK2B directly phosphorylates residue Tyr591 of TBK1, which increases TBK1 oligomerization and activation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "2c3a9a5ccaaf",
@@ -401,7 +1016,84 @@ window.CAMAP.evidence = [
   "first_author": "Freytag D",
   "sentence": "Using Fura Red -mediated ratiometric measurement to study basal Ca2+ levels, we demonstrated that basal Ca2+ levels were higher in CD4+ and CD8+ T cells from STING GOF mice compared to their WT controls, suggesting that the Ca2+-NFAT signaling pathway in STING GOF T cells could be associated with the induction of their exhaustion (Fig.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2c3d76823dc1",
+  "interaction_id": "a29291b6db22",
+  "source_kind": "curated",
+  "ref": "DOI:10.1159/000445574",
+  "cited_pmid": "",
+  "doi": "10.1159/000445574",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CASQ1 binds to STIM1 and STIM2 | Localisation: ER protein | Protéine: Calsequestrin 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 20"
+ },
+ {
+  "evidence_id": "2c443cf02eb8",
+  "interaction_id": "671e67405056",
+  "source_kind": "curated",
+  "ref": "DOI:10.1186/s12859-017-1850-2",
+  "cited_pmid": "",
+  "doi": "10.1186/s12859-017-1850-2",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
+ },
+ {
+  "evidence_id": "2eeffb8477d5",
+  "interaction_id": "33348fd2e331",
+  "source_kind": "curated",
+  "ref": "DOI:10.1042/BJ20100650",
+  "cited_pmid": "",
+  "doi": "10.1042/BJ20100650",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 polybasic C-terminus (aa667-685) binds calmodulin | Localisation: Cytosol | Protéine: Myelin Basic Protein; Golli-MBP",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 48"
+ },
+ {
+  "evidence_id": "2fbb7c498a6f",
+  "interaction_id": "9a5ff995ba95",
+  "source_kind": "intact",
+  "ref": "EBI-24770082",
+  "cited_pmid": "32296183",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Luck et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2fc49c32abe6",
+  "interaction_id": "c602bad076e2",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STIM1 bis.xlsx/STIM1/ORAI3",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 54"
  },
  {
   "evidence_id": "3149a0d7f3b8",
@@ -414,7 +1106,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "32171b79ec29",
+  "interaction_id": "b8a6e30bbb1a",
+  "source_kind": "curated",
+  "ref": "DOI:10.1113/JP281331",
+  "cited_pmid": "",
+  "doi": "10.1113/JP281331",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 and JPH4 interactions using PLA et co-IF/JP4 also formed a complex with junctate | Effet de l'interaction: JP4 directly interacted with STIM1 via its cytoplasmic domain and facilitated its recruitment into the ER–PM junctions | Localisation: ER/Mitochondria associated Mb | Protéine: Junctophilin-4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 44"
  },
  {
   "evidence_id": "3224500cd8cb",
@@ -427,7 +1136,84 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "STIM1 is a novel exercise‐regulated AMPK substrate. Phosphorylation of STIM1 by AMPK suppresses SOCE",
   "sentence_verified": "false",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "3283e6b60368",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1042/BCJ20160348",
+  "cited_pmid": "",
+  "doi": "10.1042/BCJ20160348",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "32b7c28949ca",
+  "interaction_id": "0033ae3c1239",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbamcr.2015.02.014",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbamcr.2015.02.014",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: co-IIP of Homer1 with STIM1 and the Cav1.2 α1 subunit after store depletion | Localisation: cytosol | Protéine: homer scaffold protein 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 39"
+ },
+ {
+  "evidence_id": "33397e68633d",
+  "interaction_id": "ca9e89104dd1",
+  "source_kind": "intact",
+  "ref": "EBI-55019402",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "333ec788126e",
+  "interaction_id": "60fa4ff100bf",
+  "source_kind": "curated",
+  "ref": "DOI:10.1242/jcs.244012",
+  "cited_pmid": "",
+  "doi": "10.1242/jcs.244012",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Colocalization of STIM1 and SERCA2b /l interaction between SERCA and STIM1 (FRET IP IF) | Effet de l'interaction: interaction sTIM1/SERCA increased after store depletion | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 2b, SERCA2b",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 9"
+ },
+ {
+  "evidence_id": "33653406184f",
+  "interaction_id": "2ffb3d969e56",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>TRPC5",
+  "cited_pmid": "12032305",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Our data show that (i) TRPC2 does not interact with any known TRPC protein and (ii) TRPC1 has the ability to form channel complexes together with TRPC4 and TRPC5.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "33f9fae8725d",
@@ -440,7 +1226,9 @@ window.CAMAP.evidence = [
   "first_author": "Dubois et al.",
   "sentence": "By mimicking ORAI protein remodeling observed in primary tumors, we demonstrate in in vitro models that enhanced ORAI3 expression favors heteromerization with ORAI1 to form a novel channel.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "34ef85c2f805",
@@ -453,7 +1241,9 @@ window.CAMAP.evidence = [
   "first_author": "Williams et al.",
   "sentence": "STIM1, STIM2 and D-Stim have a conserved genomic organization, indicating that the vertebrate family of two STIM genes most probably arose from a single ancestral gene.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "352a12a3ccfd",
@@ -466,7 +1256,54 @@ window.CAMAP.evidence = [
   "first_author": "Nozawa T",
   "sentence": "We show that cytosolic Ca2+ signaling is required for TBK1 activation during xenophagy and mitophagy and this process is regulated by Ca2+-binding TBC1D9, highlighting TBC/RabGAP-mediated regulation of TBK1 activation in selective autophagy.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "354a6f694d31",
+  "interaction_id": "9117997c2b4c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1128/MCB.01124-14",
+  "cited_pmid": "",
+  "doi": "10.1128/MCB.01124-14",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Co-Ips / enhances the signal-induced association of STIM1 and O1 | Effet de l'interaction: SPPL3 associates with STIM1 through CAD and transmembrane domains | Localisation: ER membrane | Protéine: Signal peptide peptidase-like 3",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 71"
+ },
+ {
+  "evidence_id": "359c70e789e3",
+  "interaction_id": "e0ecf79b6be8",
+  "source_kind": "intact",
+  "ref": "EBI-26039629",
+  "cited_pmid": "32814053",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "35aed0b42d3c",
+  "interaction_id": "5ce3347c577f",
+  "source_kind": "curated",
+  "ref": "DOI:10.1126/science.1191027",
+  "cited_pmid": "",
+  "doi": "10.1126/science.1191027",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 CAD domain interacts with CaV1.2 C-terminus | Effet de l'interaction: co-immunoprecipitation of Homer1 with STIM1 and the Cav1.2 α1 subunit | Localisation: Plasma Membrane | Protéine: Cav1.2, Calcium Voltage-Gated Channel Subunit Alpha1 C",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
  },
  {
   "evidence_id": "361f4de1fd9f",
@@ -479,7 +1316,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "367bcc19a9bf",
@@ -492,7 +1331,9 @@ window.CAMAP.evidence = [
   "first_author": "Prabakaran T",
   "sentence": "Collectively, ISD017 blocks STING at the ER level through a mechanism dependent on STIM1.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "36ef329dad34",
@@ -505,7 +1346,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "376125d473df",
+  "interaction_id": "47b2107c9e59",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41598-020-71489-7",
+  "cited_pmid": "",
+  "doi": "10.1038/s41598-020-71489-7",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: E-syt1 stabilizes ER-PM contacts | Localisation: ER membrane | Protéine: Extended Synaptotagmin 2",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 32"
  },
  {
   "evidence_id": "381c98285ce2",
@@ -518,7 +1376,9 @@ window.CAMAP.evidence = [
   "first_author": "Wu J",
   "sentence": "Together, our data uncover a critical IFN-independent function of STING that regulates calcium homeostasis, ER stress, and T cell survival.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "38b7b5921a69",
@@ -531,7 +1391,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "391060e53f7a",
@@ -544,7 +1406,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "39dbe2e108d8",
@@ -557,7 +1421,24 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "Mechanically, TGR5 blocked the IP3R1-GRP75-VDAC1 axis mediated Ca2+ efflux from the endoplasmic reticulum into mitochondria under diabetic condition.",
   "sentence_verified": "true",
-  "species_context": "rat"
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "3a2fd448313e",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.ebiom.2021.103314",
+  "cited_pmid": "",
+  "doi": "10.1016/j.ebiom.2021.103314",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "3a35132a0b97",
@@ -570,7 +1451,9 @@ window.CAMAP.evidence = [
   "first_author": "Feng Z",
   "sentence": "We further find that TMEM110 expression is restrained by the nucleic acid sensor STING under basal conditions, and that a naturally occurring interface mutation between TMEM110 and STING causes defective lysosomal DNA disposal and aberrant type I interferon activity.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "3bece6a120d4",
@@ -583,7 +1466,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikkepsilon And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "3d17c050ecde",
@@ -596,7 +1481,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "3e5149bd2f20",
@@ -609,7 +1496,24 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "Here, we demonstrate that TMEM203, a protein that was recently shown to be endosomal and interacts with the pleiotropic inositol phosphate signaling pathway protein IP3R, is associated with SLE disease activity, forms a functional and ligand-dependent complex with STING, and promotes its translocation to endo-lysosomes.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "3f6be0ae8eda",
+  "interaction_id": "ff7dc8ee1e3b",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STIM1 bis.xlsx/Orai/CRACR2A",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": "interactome STIM1 bis.xlsx/Orai/row 7"
  },
  {
   "evidence_id": "401d5cfe768a",
@@ -622,7 +1526,9 @@ window.CAMAP.evidence = [
   "first_author": "Lee YY",
   "sentence": "Cleavage at the Q496 residue generates two stable products, N-terminal (NT) and C-terminal (CT) fragments, which acquire de novo immunomodulatory functions. NT suppresses MAVS aggregation and MAVS-TRAF2-TBK1 signalosome formation, while CT attenuates IKKalpha-induced p65 phosphorylation and nuclear translocation by interacting with HSP70.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "404993fa19e2",
@@ -635,7 +1541,24 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4082462a9b07",
+  "interaction_id": "da5340f6ec05",
+  "source_kind": "intact",
+  "ref": "EBI-61297478",
+  "cited_pmid": "39232006",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Serafin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "4091bb1ed36b",
@@ -648,7 +1571,9 @@ window.CAMAP.evidence = [
   "first_author": "Diao F",
   "sentence": "Mechanistically, PRRSV Nsp2 retains STING at the ER by increasing the level of Ca2+ sensor stromal interaction molecule 1 (STIM1) protein.",
   "sentence_verified": "true",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "42948d160f62",
@@ -661,7 +1586,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "The in vitro phosphorylation of calmodulin by the insulin receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "42cba8ef1e14",
@@ -674,7 +1601,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "438747f50ad7",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1083/jcb.201805037",
+  "cited_pmid": "",
+  "doi": "10.1083/jcb.201805037",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
   "evidence_id": "4392b48331b5",
@@ -687,7 +1631,39 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "442fc123f6a9",
+  "interaction_id": "48f21ee0cb63",
+  "source_kind": "curated",
+  "ref": "DOI:10.1093/hmg/ddu440",
+  "cited_pmid": "",
+  "doi": "10.1093/hmg/ddu440",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 and JPH4 colocolize | Localisation: ER/Mitochondria associated Mb | Protéine: Junctophilin-1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 43"
+ },
+ {
+  "evidence_id": "45200e33f4d4",
+  "interaction_id": "f959e4bd72df",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/emboj.2011.495",
+  "cited_pmid": "",
+  "doi": "10.1038/emboj.2011.495",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: co-IP : interaction between STIM1 and PMCA increased by TCR activation - FRET | Effet de l'interaction: attenuation of PMCA activation | Localisation: Plasma Membrane | Protéine: plasma membrane calcium ATPase 4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 11"
  },
  {
   "evidence_id": "458567cd3c8c",
@@ -700,7 +1676,9 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "In cells co-expressing STING and increasing amounts of full length or the N- and C-terminal binding fragments of STIM1, we observed a dose-dependent inhibition of luciferase reporter expression (Fig. 5c).",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "4790397c1706",
@@ -713,7 +1691,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "EGFRL858R/T790M phosphorylates IKBKE at tyrosine residues. While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "47ac1bc6d58f",
@@ -726,7 +1706,9 @@ window.CAMAP.evidence = [
   "first_author": "Mo et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "47d3afb70b01",
@@ -739,7 +1721,24 @@ window.CAMAP.evidence = [
   "first_author": "Ewing et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "489b86bfb688",
+  "interaction_id": "3a85d00820f5",
+  "source_kind": "curated",
+  "ref": "DOI:10.1007/s00424-013-1361-6",
+  "cited_pmid": "",
+  "doi": "10.1007/s00424-013-1361-6",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: co-IP/IF - STIM1 binds SERCA1a via its SBR region (449 to 671 of STIM1) | Effet de l'interaction: positive regulator of SERCA | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 1a , SERCA1a",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 8"
  },
  {
   "evidence_id": "49423ac2d3d3",
@@ -752,7 +1751,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "In this study, we aimed to characterize whether PAK1 modulates calcium mobilization and STIM1 localization.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "49773b44939b",
+  "interaction_id": "3431d4a0f960",
+  "source_kind": "curated",
+  "ref": "DOI:10.7554/eLife.00802",
+  "cited_pmid": "",
+  "doi": "10.7554/eLife.00802",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: α-SNAP binds Stim1 and Orai1 | Localisation: Cytosol | Protéine: α-SNAP, NSF Attachment Protein Alpha",
+  "supp_source": "interactome STIM1 bis.xlsx/Orai/row 8"
+ },
+ {
+  "evidence_id": "49bf3d250540",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1074/jbc.M115.704940",
+  "cited_pmid": "",
+  "doi": "10.1074/jbc.M115.704940",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "4a453192957a",
@@ -765,7 +1796,24 @@ window.CAMAP.evidence = [
   "first_author": "Li S",
   "sentence": "Together, these results strongly suggest that following cGAS activation, the binding of cGAMP to STING causes TRPV2 derepression and Ca2+ release to preserve chromosome stability after replication stress.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4a5558ef6f10",
+  "interaction_id": "47b2107c9e59",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41598-019-40331-0",
+  "cited_pmid": "",
+  "doi": "10.1038/s41598-019-40331-0",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: E-syt1 stabilizes ER-PM contacts | Localisation: ER membrane | Protéine: Extended Synaptotagmin 2",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 32"
  },
  {
   "evidence_id": "4ab77e165713",
@@ -778,7 +1826,9 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "4ac6df50f1b3",
@@ -791,7 +1841,24 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4b4cf779d2a7",
+  "interaction_id": "ca6f40f119f1",
+  "source_kind": "curated",
+  "ref": "DOI:10.15252/embj.2018101452",
+  "cited_pmid": "",
+  "doi": "10.15252/embj.2018101452",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Ano8 increased STIM1-ORAI1 complexes, ER-PM ORAI1 complexes, ER-PMjunction and size | Effet de l'interaction: Ano8 interacts with STIM1 - Ano8 increased STIM1-SARAF interaction | Localisation: ER protein | Protéine: Anoctamin 8 /TMEM16H",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 5"
  },
  {
   "evidence_id": "4bba158a9e27",
@@ -804,7 +1871,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4c483f39177c",
+  "interaction_id": "4289472531fc",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb1590",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb1590",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 5",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 86"
  },
  {
   "evidence_id": "4def0f7ea871",
@@ -817,7 +1901,54 @@ window.CAMAP.evidence = [
   "first_author": "Zhu Z",
   "sentence": "Binding of STING with VDAC2, ATP2A2, and ATP1A1 was confirmed in both A498 (Figure  3B; Figure S4B) and RCC10 (Figure 3C; Figure S4C, Supporting Information) tumor cells.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4f57a22ea386",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cell.2012.01.055",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2012.01.055",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "4fb1e32d47ee",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41598-017-17762-8",
+  "cited_pmid": "",
+  "doi": "10.1038/s41598-017-17762-8",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "4fed9187ffce",
+  "interaction_id": "d82408bef80f",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/STIM1",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Retains STING at the ER under steady-state conditions | domain of the interactor: Direct interaction of STIM1 | domain of STING: TMD",
+  "supp_source": "interactome STING.xlsx/interactors/row 44"
  },
  {
   "evidence_id": "508d49a49895",
@@ -830,7 +1961,24 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "51655bebd80d",
+  "interaction_id": "c5a33bdd6eb9",
+  "source_kind": "curated",
+  "ref": "DOI:10.1080/15548627.2025.2496786",
+  "cited_pmid": "",
+  "doi": "10.1080/15548627.2025.2496786",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: SEC62 strengthens its interaction with STING1 upon activation and concurrently facilitates STING1-mediated reticulophagy upon starvation",
+  "supp_source": "interactome STING.xlsx/interactors/row 39"
  },
  {
   "evidence_id": "516bb221cb74",
@@ -843,7 +1991,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "51725e468a3c",
@@ -856,7 +2006,9 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "519e5145851d",
@@ -869,7 +2021,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "51fc995b2d44",
@@ -882,7 +2036,9 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "52a6542e9c29",
@@ -895,7 +2051,84 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "52b6869f60ff",
+  "interaction_id": "3c73316d1581",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1117231108",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1117231108",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: POST co-immunoprecipitates exogenous STIM1 upon TG | Localisation: ER membrane protein | Type de protéine: adaptor protein | Protéine: Partner of STIM1 - POST, TMEM20",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 70"
+ },
+ {
+  "evidence_id": "537301046b05",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.neuroscience.2020.06.014",
+  "cited_pmid": "",
+  "doi": "10.1016/j.neuroscience.2020.06.014",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "53a8703afff1",
+  "interaction_id": "36d896c9e4e0",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1511285112",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1511285112",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Tmem178 and Stim1 interact in resting conditions - interaction decrease by store depletion -Co/IP and IF | Effet de l'interaction: Tmem178:STIM1 association occurs via their transmembrane domains/TMEM178 interacted with STIM1 but not STIM1 D76A | Localisation: ER membrane | Protéine: transmembrane protein 178A, TMEM178",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 78"
+ },
+ {
+  "evidence_id": "53b8c4748abe",
+  "interaction_id": "64316ff7fff8",
+  "source_kind": "intact",
+  "ref": "EBI-54848512",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "542e3bb5e079",
+  "interaction_id": "4a3f6e07a632",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbrc.2015.01.106",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbrc.2015.01.106",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
  },
  {
   "evidence_id": "562329d695df",
@@ -908,7 +2141,9 @@ window.CAMAP.evidence = [
   "first_author": "Park et al.",
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "56d6d90fee99",
@@ -921,7 +2156,9 @@ window.CAMAP.evidence = [
   "first_author": "Freytag D",
   "sentence": "After 4 h, DMXAA-treated CD4+ and CD8+ T cells presented an increase of their basal Ca2+ levels, similar to those observed in untreated STING GOF T cells (Fig.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "571d08315ca3",
@@ -934,7 +2171,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "574e7058286c",
@@ -947,7 +2186,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "585476089399",
+  "interaction_id": "bbfec98d2de5",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb1590",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb1590",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 85"
  },
  {
   "evidence_id": "5923e1feba93",
@@ -960,7 +2216,9 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5a6172801197",
@@ -973,7 +2231,9 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5a97c5906c91",
@@ -986,7 +2246,9 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5b1327dd0cf8",
@@ -999,7 +2261,9 @@ window.CAMAP.evidence = [
   "first_author": "Zhang H",
   "sentence": "Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5b32a7581917",
@@ -1012,7 +2276,54 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5bb7e1a52f8a",
+  "interaction_id": "97439392a781",
+  "source_kind": "curated",
+  "ref": "DOI:10.1111/j.1600-0854.2010.01138.x",
+  "cited_pmid": "",
+  "doi": "10.1111/j.1600-0854.2010.01138.x",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 52"
+ },
+ {
+  "evidence_id": "5c644c1b8e99",
+  "interaction_id": "1a821b861d09",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.matbio.2014.05.004",
+  "cited_pmid": "",
+  "doi": "10.1016/j.matbio.2014.05.004",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TSP-1 co-IP with STIM1, N-terminal domain of STIM1 binds to the signature domain of TSP-1 | Effet de l'interaction: BioID assay | Localisation: secreted matricellular glycoprotein | Protéine: thrombospondin-1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 87"
+ },
+ {
+  "evidence_id": "5c8bcacfa50d",
+  "interaction_id": "4a3f6e07a632",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.0906781106",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.0906781106",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
  },
  {
   "evidence_id": "5d3a193a1625",
@@ -1025,7 +2336,9 @@ window.CAMAP.evidence = [
   "first_author": "Zhu Y",
   "sentence": "Decreased mitochondrial calcium uptake led to reduced cytoplasmic release of mitochondrial DNA and inhibited the activation of the cGAS-STING signaling cascade, subsequently inhibiting monocyte-to-osteoclast differentiation.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5d4d715e62c7",
@@ -1038,7 +2351,24 @@ window.CAMAP.evidence = [
   "first_author": "Park et al.",
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5dc27d0fe2fd",
+  "interaction_id": "f4949377b487",
+  "source_kind": "curated",
+  "ref": "DOI:10.4049/jimmunol.1800659",
+  "cited_pmid": "",
+  "doi": "10.4049/jimmunol.1800659",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
  },
  {
   "evidence_id": "5dd5460829c8",
@@ -1051,7 +2381,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5e74f70e5f04",
+  "interaction_id": "48f9c66030c3",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbalip.2021.158906",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbalip.2021.158906",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Endogenous σ2R co-immunopreicipitated with endogenous STIM1 | Identification MS: Negative Regulators of SOCE: | Localisation: ER/Lysosome | Protéine: Sigma2 Receptor, Transmembrane Protein 9, MAC30, σ2R",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 80"
+ },
+ {
+  "evidence_id": "5f44b64c3db0",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1901090116",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1901090116",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "60bf2b95176a",
@@ -1064,7 +2426,69 @@ window.CAMAP.evidence = [
   "first_author": "Dubois et al.",
   "sentence": "By mimicking ORAI protein remodeling observed in primary tumors, we demonstrate in in vitro models that enhanced ORAI3 expression favors heteromerization with ORAI1 to form a novel channel.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "60d711d4a88f",
+  "interaction_id": "56a0686a0ea5",
+  "source_kind": "curated",
+  "ref": "DOI:10.1084/jem.20201045",
+  "cited_pmid": "",
+  "doi": "10.1084/jem.20201045",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: SURF4 is an adapter molecule that facilitates COPA-mediated retrieval of STING at the Golgi. - Retrograde trafficking",
+  "supp_source": "interactome STING.xlsx/interactors/row 46"
+ },
+ {
+  "evidence_id": "6139ed924ee2",
+  "interaction_id": "0bdf2d3c16f0",
+  "source_kind": "intact",
+  "ref": "EBI-54575534",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "630f36b4c22b",
+  "interaction_id": "4a3f6e07a632",
+  "source_kind": "curated",
+  "ref": "DOI:10.1021/bi800496a",
+  "cited_pmid": "",
+  "doi": "10.1021/bi800496a",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
+ },
+ {
+  "evidence_id": "637e4b17172c",
+  "interaction_id": "c7a13a67b49b",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cub.2014.04.046",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cub.2014.04.046",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: cytosol | Type de protéine: scaffolding protein | Protéine: AKAP79",
+  "supp_source": "interactome STIM1 bis.xlsx/Orai/row 4"
  },
  {
   "evidence_id": "63a0464c4586",
@@ -1077,7 +2501,9 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "63bc101eae1f",
@@ -1090,7 +2516,39 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "64ad43c6d07e",
+  "interaction_id": "f4949377b487",
+  "source_kind": "curated",
+  "ref": "DOI:10.1083/jcb.201806097",
+  "cited_pmid": "",
+  "doi": "10.1083/jcb.201806097",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
+ },
+ {
+  "evidence_id": "64baaccd5dc4",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.15252/embj.2019103661",
+  "cited_pmid": "",
+  "doi": "10.15252/embj.2019103661",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
   "evidence_id": "66cf2535c457",
@@ -1103,7 +2561,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "STIM1 is a novel exercise‐regulated AMPK substrate. Phosphorylation of STIM1 by AMPK suppresses SOCE",
   "sentence_verified": "false",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "66dcb4fdc735",
@@ -1116,7 +2576,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "68ef799fe7c0",
@@ -1129,7 +2591,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "68f27942a454",
@@ -1142,7 +2606,24 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "693f9194dccc",
+  "interaction_id": "ec72048657ca",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41467-017-01601-5",
+  "cited_pmid": "",
+  "doi": "10.1038/s41467-017-01601-5",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: UNC93B1 is important for STIM1 oligomerization - UNC93B1 interacts with STIM1 luminal juxtamemebrane domain - CoIP | Localisation: ER protein | Protéine: Unc-93 Homolog B1, TLR Signaling Regulator, UNC93 B1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 89"
  },
  {
   "evidence_id": "6a17364fbb60",
@@ -1155,7 +2636,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "In the present study, we show that cdc2/CyB, a critical regulator of eukaryotic cell cycle progression, phosphorylates IP3R1 in vitro and in vivo at both Ser(421) and Thr(799) and that this phosphorylation increases IP3 binding.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6a906f030505",
@@ -1168,7 +2651,24 @@ window.CAMAP.evidence = [
   "first_author": "Wu XY",
   "sentence": "We demonstrated that STING increases intracellular calcium in liver macrophages to promote pyroptosis, which leads to an increase in liver inflammation and tissue injury in liver IRI, and calcium promoted by STING in this process may be mainly released from the ER.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6b939c7f50ff",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1083/jcb.201301148",
+  "cited_pmid": "",
+  "doi": "10.1083/jcb.201301148",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "6bff88778186",
@@ -1181,7 +2681,9 @@ window.CAMAP.evidence = [
   "first_author": "Yang X",
   "sentence": "Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6c44d818cc1f",
@@ -1194,7 +2696,24 @@ window.CAMAP.evidence = [
   "first_author": "Bouwmeester et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6c519613ec95",
+  "interaction_id": "f4949377b487",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/ijms22147691",
+  "cited_pmid": "",
+  "doi": "10.3390/ijms22147691",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
  },
  {
   "evidence_id": "6c6f5ea0dcc1",
@@ -1207,7 +2726,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6ccd3b69d88c",
@@ -1220,7 +2741,24 @@ window.CAMAP.evidence = [
   "first_author": "Chen et al.",
   "sentence": "We found that expression of the membrane-anchored PLpro domain (PLpro-TM) from SARS-CoV inhibits STING/TBK1/IKKepsilon-mediated activation of type I IFNs and disrupts the phosphorylation and dimerization of IRF3, which are activated by STING and TBK1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6ce67dc9a07a",
+  "interaction_id": "010282dc6475",
+  "source_kind": "intact",
+  "ref": "EBI-1184894",
+  "cited_pmid": "15140941",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Zhou et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6d1f74efd142",
@@ -1233,7 +2771,9 @@ window.CAMAP.evidence = [
   "first_author": "Lv L",
   "sentence": "Mechanistically, SELENOK interacts with STING in the ER and promotes STING oligomerization, which in turn promotes its translocation from the ER to the Golgi.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6d413a362055",
@@ -1246,7 +2786,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "One such protein, viral interferon regulatory factor 1 (vIRF1), targets STING by preventing it from interacting with TANK binding kinase 1 (TBK1), thereby inhibiting STING's phosphorylation and concomitant activation, resulting in an inhibition of the DNA sensing pathway.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6d6411104236",
@@ -1259,7 +2801,9 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6e21d97295dd",
@@ -1272,7 +2816,9 @@ window.CAMAP.evidence = [
   "first_author": "Bryson V",
   "sentence": "These data suggest that D84G STIM1 can spontaneously activate Orai1 channels in the T-tubular membrane.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6e787b0c3ee3",
@@ -1285,7 +2831,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6f547cf63a6f",
+  "interaction_id": "16038d514693",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10102701",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10102701",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Identification MS: STIM1 proteome identified by MS after BioID assay | Localisation: cytosol | Type de protéine: cytoskeleton | Protéine: Vimentin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 90"
+ },
+ {
+  "evidence_id": "6fd357fca50a",
+  "interaction_id": "02332f6776a7",
+  "source_kind": "intact",
+  "ref": "EBI-32721578",
+  "cited_pmid": "35384245",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Salokas et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6ff2c320ba5b",
@@ -1298,7 +2876,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Calmodulin is the best studied and prototypical example of the e-f-hand family of ca2+-sensing proteins. In the event of a transient rise in Ca2+, the Ca2+ ion is coordinated in each Ca2+-binding loop of Ca2+Â–CaM by seven, primarily carboxylate, ligands. The binding of Ca2+ leads to substantial alterations in the interhelical angles within the EÂ–F hands in each domain and dramatically changes the two domains of CaM to produce more Â‘openÂ’ conformations",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6ff38ebde637",
+  "interaction_id": "92dfd798ed73",
+  "source_kind": "intact",
+  "ref": "EBI-61297478",
+  "cited_pmid": "39232006",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Serafin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "70076d6ee9c2",
+  "interaction_id": "4106c1135369",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10102701",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10102701",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with FLNA on calcium store depletion in human platelets | Localisation: Cytosol | Protéine: Filamin  A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 33"
  },
  {
   "evidence_id": "702d6a49b961",
@@ -1311,7 +2921,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "STIM1 is a novel exercise‐regulated AMPK substrate. Phosphorylation of STIM1 by AMPK suppresses SOCE",
   "sentence_verified": "false",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "70562ff57b6b",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.3389/fphys.2021.762387",
+  "cited_pmid": "",
+  "doi": "10.3389/fphys.2021.762387",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
   "evidence_id": "709c0eed1466",
@@ -1324,7 +2951,9 @@ window.CAMAP.evidence = [
   "first_author": "Li B",
   "sentence": "These findings suggest that ADRA1 drives STING activation via IP3R-mediated ER Ca2+ depletion and subsequent cytoplasmic Ca2+ dyshomeostasis.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "71139b31e95e",
@@ -1337,7 +2966,24 @@ window.CAMAP.evidence = [
   "first_author": "Hubel et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "71b9c1fd5983",
+  "interaction_id": "97c294f04324",
+  "source_kind": "intact",
+  "ref": "EBI-54501522",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "72039da8cf9f",
@@ -1350,7 +2996,24 @@ window.CAMAP.evidence = [
   "first_author": "Park et al.",
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "720b94fdde67",
+  "interaction_id": "1d2b5b611357",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.matbio.2014.05.004",
+  "cited_pmid": "",
+  "doi": "10.1016/j.matbio.2014.05.004",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: interaction  COMP and  STIM1, N-terminal domain of STIM1 binds to the signature domain of  COMP. | Localisation: plasma membrane-bound | Type de protéine: matricellular protein | Protéine: Thrombospondin-5, Cartilage Oligomeric Matrix Protein, TSP-5",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 25"
  },
  {
   "evidence_id": "723370dda532",
@@ -1363,7 +3026,9 @@ window.CAMAP.evidence = [
   "first_author": "Zou S",
   "sentence": "Inhibition of mitochondrial calcium uptake due to STING deficiency mitigates the aggregation of N-GSDMD and Drp1 on the mitochondrial membrane.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "724128a680b6",
@@ -1376,7 +3041,24 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "Furthermore, we found enhanced levels of phosphorylated TBK1 and accordingly increased ratio of p-TBK1 vs. total TBK1 in Stim1-/- MEFs, BMDMs and STIM1-/- THP1 cells (Fig. 2e).",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7266bcc6f66d",
+  "interaction_id": "846705515120",
+  "source_kind": "intact",
+  "ref": "EBI-50425795",
+  "cited_pmid": "37207277",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Hsu et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "727c4446e02d",
@@ -1389,7 +3071,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "74020c848160",
+  "interaction_id": "3c73316d1581",
+  "source_kind": "curated",
+  "ref": "DOI:10.1126/scisignal.aaw2627",
+  "cited_pmid": "",
+  "doi": "10.1126/scisignal.aaw2627",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: POST co-immunoprecipitates exogenous STIM1 upon TG | Localisation: ER membrane protein | Type de protéine: adaptor protein | Protéine: Partner of STIM1 - POST, TMEM20",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 70"
+ },
+ {
+  "evidence_id": "745af51df589",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1053/j.gastro.2019.08.042",
+  "cited_pmid": "",
+  "doi": "10.1053/j.gastro.2019.08.042",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "75a082f30fe1",
@@ -1402,7 +3116,9 @@ window.CAMAP.evidence = [
   "first_author": "Dogrammatzis C",
   "sentence": "STING exocytosis was observed after infecting the parental cells, but reduced STING exocytosis was observed after infecting STIM1 KD derivatives (Fig.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "764134fc7a12",
@@ -1415,7 +3131,39 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "768f4b939671",
+  "interaction_id": "bbfec98d2de5",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb1454",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb1454",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 85"
+ },
+ {
+  "evidence_id": "76a3564c481a",
+  "interaction_id": "4d4ea758009e",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1117231108",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1117231108",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Identification MS: STIM1 proteome identified by MS after Flag IP | Localisation: ER protein | Protéine: Calnexin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 19"
  },
  {
   "evidence_id": "76a9093c6ce8",
@@ -1428,7 +3176,69 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7708c6e939be",
+  "interaction_id": "7c974bc74646",
+  "source_kind": "curated",
+  "ref": "DOI:10.3389/fphys.2018.00266",
+  "cited_pmid": "",
+  "doi": "10.3389/fphys.2018.00266",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STC2 interacts with the ER Ca2 sensor STIM1 :IF and Co/IP | Localisation: ER and Golgi apparatus | Protéine: Stanniocalcin 2",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 72"
+ },
+ {
+  "evidence_id": "790b8ec52be1",
+  "interaction_id": "9a5ff995ba95",
+  "source_kind": "intact",
+  "ref": "EBI-24150753",
+  "cited_pmid": "32296183",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Luck et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7942235618bf",
+  "interaction_id": "56a0686a0ea5",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41467-020-20234-9",
+  "cited_pmid": "",
+  "doi": "10.1038/s41467-020-20234-9",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: SURF4 is an adapter molecule that facilitates COPA-mediated retrieval of STING at the Golgi. - Retrograde trafficking",
+  "supp_source": "interactome STING.xlsx/interactors/row 46"
+ },
+ {
+  "evidence_id": "79bebc7d974e",
+  "interaction_id": "5b8a80a62dd7",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbamcr.2013.02.027",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbamcr.2013.02.027",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with CaV3.1 | Localisation: Plasma Membrane | Protéine: CaV3.1, Calcium Voltage-Gated Channel Subunit Alpha1 G",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 16"
  },
  {
   "evidence_id": "79f919ca121e",
@@ -1441,7 +3251,9 @@ window.CAMAP.evidence = [
   "first_author": "Williams et al.",
   "sentence": "STIM1, STIM2 and D-Stim have a conserved genomic organization, indicating that the vertebrate family of two STIM genes most probably arose from a single ancestral gene.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "7a3fae763cdc",
@@ -1454,7 +3266,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7a4f7d3a3391",
+  "interaction_id": "2b5e9d79d3e5",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STIM1 bis.xlsx/STIM1/CRACR2B",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2B",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 27"
  },
  {
   "evidence_id": "7a789719bd2a",
@@ -1467,7 +3296,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "MAVS also interacts with STING that locates at the ER (endoplasmic reticulum), and induces the ubiquitination and dimerization of STING. The activated STING recruits TBK1 and IRF3 and contributes to the phosphorylation of IRF3 mediated by TBK1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7bf65a3d5bc9",
+  "interaction_id": "fe11c16623e4",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10102701",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10102701",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Identification MS: STIM1 proteome identified by MS after BioID assay | Localisation: ER protein | Protéine: Reticulon-4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 65"
  },
  {
   "evidence_id": "7c40fbe3bfa6",
@@ -1480,7 +3326,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "7c51ef21cf02",
@@ -1493,7 +3341,54 @@ window.CAMAP.evidence = [
   "first_author": "Zhu Y",
   "sentence": "Heavy MF up-regulated Piezo1 in PDLCs, reducing mitochondrial Ca2+ influx by inhibiting ITPR3 expression in mitochondria-associated membranes.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7c6766957f7e",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.yjmcc.2020.03.004",
+  "cited_pmid": "",
+  "doi": "10.1016/j.yjmcc.2020.03.004",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "7c937e78a985",
+  "interaction_id": "e0ecf79b6be8",
+  "source_kind": "intact",
+  "ref": "EBI-25884190",
+  "cited_pmid": "32814053",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7cab8acdf4eb",
+  "interaction_id": "2b875be9dbb7",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1901090116",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1901090116",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Promotes STING trafficking and Competes for STING Binding with STIM1 | domain of the interactor: N-terminal TMDs | domain of STING: TMD | Infos dans SLE: TMEM203 mRNA levels are elevated in T cells from patients with systemic lupus",
+  "supp_source": "interactome STING.xlsx/interactors/row 50"
  },
  {
   "evidence_id": "7e247976196f",
@@ -1506,7 +3401,54 @@ window.CAMAP.evidence = [
   "first_author": "Triantafilou M",
   "sentence": "This data suggests that upon HRV infection, STING is released from STIM1 due to alterations in calcium homeostasis, which drives the binding of STING to PI4KIIIbeta and PI4P and recruitment to the RO.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "7eaba0dc9000",
+  "interaction_id": "78bc4808bdd9",
+  "source_kind": "curated",
+  "ref": "DOI:10.1002/jmv.27860",
+  "cited_pmid": "",
+  "doi": "10.1002/jmv.27860",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Suppresses STING signaling by targeting STING for lysosome degradation | domain of the interactor: ND | domain of STING: ND",
+  "supp_source": "interactome STING.xlsx/interactors/row 63"
+ },
+ {
+  "evidence_id": "80588e950209",
+  "interaction_id": "a39549b5026b",
+  "source_kind": "curated",
+  "ref": "DOI:10.1159/000495494",
+  "cited_pmid": "",
+  "doi": "10.1159/000495494",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: EFHB interacts with STIM1 upon store depletion and dissociates | Effet de l'interaction: inhibits SARAF/STIM1 interaction | Localisation: Cytoplasm, cytoskeleton | Protéine: CFAP21, EF-Hand Domain Family Member B",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 30"
+ },
+ {
+  "evidence_id": "80e4c67ac9ef",
+  "interaction_id": "294f42e4f801",
+  "source_kind": "curated",
+  "ref": "DOI:10.3389/fncel.2016.00251",
+  "cited_pmid": "",
+  "doi": "10.3389/fncel.2016.00251",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Co-IP AMPAR interacts with STIM1 | Localisation: Plasma Membrane | Protéine: Glutamate Ionotropic Receptor AMPA Type Subunit 1, AMPA-Selective Glutamate Receptor 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 34"
  },
  {
   "evidence_id": "80fb5d6deb52",
@@ -1519,7 +3461,9 @@ window.CAMAP.evidence = [
   "first_author": "Hein et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8179dab98367",
@@ -1532,7 +3476,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "819ea57a2119",
@@ -1545,7 +3491,24 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "824c09e56eec",
+  "interaction_id": "a8c09a15dcc7",
+  "source_kind": "intact",
+  "ref": "EBI-16788621",
+  "cited_pmid": "29568061",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Liu et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8323dfceb22e",
@@ -1558,7 +3521,24 @@ window.CAMAP.evidence = [
   "first_author": "Helka et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "839207a5eab8",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1186/s12964-023-01141-0",
+  "cited_pmid": "",
+  "doi": "10.1186/s12964-023-01141-0",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "8474abb7273f",
@@ -1571,7 +3551,9 @@ window.CAMAP.evidence = [
   "first_author": "Triantafilou K",
   "sentence": "The pharmacological inhibition of STING during EV-D68 infection, using STING antagonist GSK'783, demonstrated that STING did not associate with PI4P but instead remained in the ER and associated with STIM1 (Figure 4B), confirming that EV-D68 interferes with STING canonical trafficking upon infection.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "848a3894952b",
@@ -1584,7 +3566,24 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "84e4406853dc",
+  "interaction_id": "82a6c49f3f73",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.molcel.2008.09.020",
+  "cited_pmid": "",
+  "doi": "10.1016/j.molcel.2008.09.020",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 83"
  },
  {
   "evidence_id": "85450aa2eff9",
@@ -1597,7 +3596,9 @@ window.CAMAP.evidence = [
   "first_author": "Shang et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "854de5047e9c",
@@ -1610,7 +3611,9 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "858ef18acc93",
@@ -1623,7 +3626,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "863bab1e627b",
@@ -1636,7 +3641,9 @@ window.CAMAP.evidence = [
   "first_author": "Feng et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "865b7e8e6850",
@@ -1649,7 +3656,9 @@ window.CAMAP.evidence = [
   "first_author": "Thelemann et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "87004174f7a4",
@@ -1662,7 +3671,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8750090367a3",
@@ -1675,7 +3686,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Phosphorylation of cGAS by CDK1 impairs self-DNA sensing in mitosis",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "87a1c10c0efd",
@@ -1688,7 +3701,24 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "885b1fe8de50",
+  "interaction_id": "7aa95731fc93",
+  "source_kind": "intact",
+  "ref": "EBI-6116464",
+  "cited_pmid": "21903422",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Li et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "88ba823aabc2",
@@ -1701,7 +3731,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "893cb06f4d23",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1159/000490036",
+  "cited_pmid": "",
+  "doi": "10.1159/000490036",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "8981bd16e4da",
+  "interaction_id": "5ce3347c577f",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbamcr.2015.02.014",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbamcr.2015.02.014",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 CAD domain interacts with CaV1.2 C-terminus | Effet de l'interaction: co-immunoprecipitation of Homer1 with STIM1 and the Cav1.2 α1 subunit | Localisation: Plasma Membrane | Protéine: Cav1.2, Calcium Voltage-Gated Channel Subunit Alpha1 C",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
  },
  {
   "evidence_id": "89efde3ee8bc",
@@ -1714,7 +3776,24 @@ window.CAMAP.evidence = [
   "first_author": "Tagliabracci et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8aaef0038e3d",
+  "interaction_id": "1a821b861d09",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cellsig.2013.11.025",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cellsig.2013.11.025",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TSP-1 co-IP with STIM1, N-terminal domain of STIM1 binds to the signature domain of TSP-1 | Effet de l'interaction: BioID assay | Localisation: secreted matricellular glycoprotein | Protéine: thrombospondin-1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 87"
  },
  {
   "evidence_id": "8afb145a5437",
@@ -1727,7 +3806,24 @@ window.CAMAP.evidence = [
   "first_author": "Shang et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8b0a1b23e872",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41590-018-0287-8",
+  "cited_pmid": "",
+  "doi": "10.1038/s41590-018-0287-8",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "8b1dde0dde3f",
@@ -1740,7 +3836,54 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8b5e0597f67b",
+  "interaction_id": "8d3636c6bde6",
+  "source_kind": "intact",
+  "ref": "EBI-11091481",
+  "cited_pmid": "26496610",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Hein et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8b689289fddc",
+  "interaction_id": "8aa1f57324bf",
+  "source_kind": "curated",
+  "ref": "DOI:10.1371/journal.pbio.3000700",
+  "cited_pmid": "",
+  "doi": "10.1371/journal.pbio.3000700",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TRIC-A interacts with STIM1 : IF/Co-IP interaction independent of store depletion | Localisation: ER membrane | Protéine: TRIC-A,  Transmembrane Protein 38A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 79"
+ },
+ {
+  "evidence_id": "8b6b4479d145",
+  "interaction_id": "010282dc6475",
+  "source_kind": "intact",
+  "ref": "EBI-1184912",
+  "cited_pmid": "15140941",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Zhou et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8ba518b3c793",
@@ -1753,7 +3896,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Whereas nemo assembles some but not all ikk complexes [12,13], recent reports provide strong experimental evidence for a role of tank [also called traf-interacting protein (i-traf)], nak-associated protein (nap1) and similar to nap1 tbk1 adaptor (sintbad) in the assembly of tbk1 and ikk-e kinase complexes that phosphorylate irf3 and irf7 and promote type i ifn gene induction",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8ce830ffa9d9",
@@ -1766,7 +3911,54 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "When co-expressed in HEK293T cells, STIM1 was specifically identified from immunoprecipitates of STING (Fig. 4b).",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8dfe3b82d906",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1083/jcb.201711151",
+  "cited_pmid": "",
+  "doi": "10.1083/jcb.201711151",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "8e06a0cf24a7",
+  "interaction_id": "057ad619a367",
+  "source_kind": "intact",
+  "ref": "EBI-32721578",
+  "cited_pmid": "35384245",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Salokas et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8e076da6c2f0",
+  "interaction_id": "f4949377b487",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbrc.2014.11.095",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbrc.2014.11.095",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
  },
  {
   "evidence_id": "8e9c1084cd86",
@@ -1779,7 +3971,54 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8f0fb710a876",
+  "interaction_id": "4d4ea758009e",
+  "source_kind": "intact",
+  "ref": "EBI-16789310",
+  "cited_pmid": "29568061",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Liu et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8f149a2f78af",
+  "interaction_id": "7aa95731fc93",
+  "source_kind": "intact",
+  "ref": "EBI-6124232",
+  "cited_pmid": "21903422",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Li et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8fc48e4c82a1",
+  "interaction_id": "60fa4ff100bf",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.ceca.2010.03.001",
+  "cited_pmid": "",
+  "doi": "10.1016/j.ceca.2010.03.001",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Colocalization of STIM1 and SERCA2b /l interaction between SERCA and STIM1 (FRET IP IF) | Effet de l'interaction: interaction sTIM1/SERCA increased after store depletion | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 2b, SERCA2b",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 9"
  },
  {
   "evidence_id": "8ff0a24022bb",
@@ -1792,7 +4031,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8ff56b1a14ea",
@@ -1805,7 +4046,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "IKBKE Is a Substrate of EGFR and a Therapeutic Target in Non-Small Cell Lung Cancer with Activating Mutations of EGFR.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "90692d443064",
+  "interaction_id": "1b802b2e17ed",
+  "source_kind": "intact",
+  "ref": "EBI-1083840",
+  "cited_pmid": "17353931",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Ewing et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "916d80340c55",
@@ -1818,7 +4076,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "91df892f4631",
@@ -1831,7 +4091,24 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9214b5b988a9",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1242/jcs.015735",
+  "cited_pmid": "",
+  "doi": "10.1242/jcs.015735",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
   "evidence_id": "9220fdc5a853",
@@ -1844,7 +4121,69 @@ window.CAMAP.evidence = [
   "first_author": "Yang X",
   "sentence": "Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "927d3f7dc1ac",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1523/JNEUROSCI.2496-18.2019",
+  "cited_pmid": "",
+  "doi": "10.1523/JNEUROSCI.2496-18.2019",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "93893aded1e4",
+  "interaction_id": "f4949377b487",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb2045",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb2045",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
+ },
+ {
+  "evidence_id": "93ec3324b6c2",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cub.2007.12.050",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cub.2007.12.050",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "9424b5973f84",
+  "interaction_id": "04e603632649",
+  "source_kind": "intact",
+  "ref": "EBI-3212194",
+  "cited_pmid": "20562859",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Behrends et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "9505bd4987ff",
@@ -1857,7 +4196,54 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "95abbf018fa8",
+  "interaction_id": "efae39db2509",
+  "source_kind": "intact",
+  "ref": "EBI-3212194",
+  "cited_pmid": "20562859",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Behrends et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "96d3f4eb17d9",
+  "interaction_id": "a87b5feee884",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>TRPC5",
+  "cited_pmid": "15987684",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9867b3253e04",
+  "interaction_id": "9d1d4fff27dc",
+  "source_kind": "curated",
+  "ref": "DOI:10.1080/15548627.2025.2496786",
+  "cited_pmid": "",
+  "doi": "10.1080/15548627.2025.2496786",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: modulating its polymerization and trafficking,",
+  "supp_source": "interactome STING.xlsx/interactors/row 6"
  },
  {
   "evidence_id": "99eae04e0e67",
@@ -1870,7 +4256,39 @@ window.CAMAP.evidence = [
   "first_author": "Petschnigg et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9a6abe1c1b9d",
+  "interaction_id": "367a55f9ac96",
+  "source_kind": "curated",
+  "ref": "DOI:10.1161/CIRCRESAHA.122.322473",
+  "cited_pmid": "",
+  "doi": "10.1161/CIRCRESAHA.122.322473",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: ERO1α binding partners in platelets of STIM1 and SERCA2 | Effet de l'interaction: ERO1α interacts with the N-terminal endoplasmic reticulum luminal | Localisation: ER protein | Protéine: Endoplasmic Reticulum Oxidoreductase 1 Alpha, ERO1α",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 31"
+ },
+ {
+  "evidence_id": "9b08c32b03b3",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cancers13164160",
+  "cited_pmid": "",
+  "doi": "10.3390/cancers13164160",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "9b567e9c7dca",
@@ -1883,7 +4301,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "To understand the mechanism by which IKBKE is activated by mutant EGFR, we first investigated if activating mutation of EGFR is able to form a complex with IKBKE.|While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9ba84f892b71",
+  "interaction_id": "5b6a03f3918a",
+  "source_kind": "intact",
+  "ref": "EBI-11038784",
+  "cited_pmid": "26496610",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Hein et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "9bc963624181",
@@ -1896,7 +4331,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "9c10f72d6f14",
@@ -1909,7 +4346,9 @@ window.CAMAP.evidence = [
   "first_author": "Hubel et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "9cb6b99665e8",
@@ -1922,7 +4361,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9d2aa99997c7",
+  "interaction_id": "dec38d513823",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1423295112",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1423295112",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 binding to phospholamban and thereby indirectly activating SERCA2a | Effet de l'interaction: Tg enhances STIM1–PLN binding. | Localisation: ER /SR membrane | Protéine: phospholamban",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 59"
+ },
+ {
+  "evidence_id": "9dd373c079e5",
+  "interaction_id": "a29291b6db22",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/srep11349",
+  "cited_pmid": "",
+  "doi": "10.1038/srep11349",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CASQ1 binds to STIM1 and STIM2 | Localisation: ER protein | Protéine: Calsequestrin 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 20"
  },
  {
   "evidence_id": "9f44f07bddf8",
@@ -1935,7 +4406,54 @@ window.CAMAP.evidence = [
   "first_author": "Zhang H",
   "sentence": "Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a0317fe54b88",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1083/jcb.202104007",
+  "cited_pmid": "",
+  "doi": "10.1083/jcb.202104007",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "a079caaf4f1d",
+  "interaction_id": "ec72048657ca",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.jbc.2022.101607",
+  "cited_pmid": "",
+  "doi": "10.1016/j.jbc.2022.101607",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: UNC93B1 is important for STIM1 oligomerization - UNC93B1 interacts with STIM1 luminal juxtamemebrane domain - CoIP | Localisation: ER protein | Protéine: Unc-93 Homolog B1, TLR Signaling Regulator, UNC93 B1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 89"
+ },
+ {
+  "evidence_id": "a24c319dcb7c",
+  "interaction_id": "e4d8aa262ff9",
+  "source_kind": "curated",
+  "ref": "DOI:10.1371/journal.pone.0127480",
+  "cited_pmid": "",
+  "doi": "10.1371/journal.pone.0127480",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Co/IP - involves in  store depletion | Effet de l'interaction: interacts with STING ..involved in interferon pathway | Localisation: ER membrane | Protéine: Trans-membrane 203, HBEBP1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 77"
  },
  {
   "evidence_id": "a29f92c3dd99",
@@ -1948,7 +4466,24 @@ window.CAMAP.evidence = [
   "first_author": "Chen H",
   "sentence": "Here, we developed an on-demand nanoparticle system that harnesses mitochondrial-ER functional interplay by concurrently inducing mtDNA release and ER stress, thereby relieving the STIM1-mediated brake on STING and enabling robust STING-TBK1 assembly and downstream signaling.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a32018b234ab",
+  "interaction_id": "97c294f04324",
+  "source_kind": "intact",
+  "ref": "EBI-21650356",
+  "cited_pmid": "28514442",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a375e06b68f8",
@@ -1961,7 +4496,9 @@ window.CAMAP.evidence = [
   "first_author": "Gao H",
   "sentence": "In young lean StingDeltaCM mice, concomitant with their blunted inflammatory responses to microbial DNA accumulation, gut mEV treatment had minimal effects on Serca2 abundance and contractility in the heart ( Figures S4F ,  5E-G ).",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a50596687c5c",
@@ -1974,7 +4511,24 @@ window.CAMAP.evidence = [
   "first_author": "Shang et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a508bd9d2939",
+  "interaction_id": "78bc4808bdd9",
+  "source_kind": "curated",
+  "ref": "DOI:10.1002/eji.202048901",
+  "cited_pmid": "",
+  "doi": "10.1002/eji.202048901",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Suppresses STING signaling by targeting STING for lysosome degradation | domain of the interactor: ND | domain of STING: ND",
+  "supp_source": "interactome STING.xlsx/interactors/row 63"
  },
  {
   "evidence_id": "a550d9890ece",
@@ -1987,7 +4541,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a5bd0c918024",
@@ -2000,7 +4556,24 @@ window.CAMAP.evidence = [
   "first_author": "Wu B",
   "sentence": "Collectively, by stable expression of ACE2 and deletion of ORAI1/STIM1, we developed a system to examine the role of ORAI1/STIM1 in the host response to SARS-CoV-2 infection and identified the role of ORAI1 in Ca2+ homeostasis in these cells.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a63416e38001",
+  "interaction_id": "32708333a9a1",
+  "source_kind": "intact",
+  "ref": "EBI-11038784",
+  "cited_pmid": "26496610",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Hein et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a727bf1ce707",
@@ -2013,7 +4586,24 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a7781fa3f436",
+  "interaction_id": "4a3f6e07a632",
+  "source_kind": "curated",
+  "ref": "DOI:10.1042/BSR20130089",
+  "cited_pmid": "",
+  "doi": "10.1042/BSR20130089",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
  },
  {
   "evidence_id": "a9b5795e1a00",
@@ -2026,7 +4616,54 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a9ff36d58a6c",
+  "interaction_id": "4d4ea758009e",
+  "source_kind": "intact",
+  "ref": "EBI-16788621",
+  "cited_pmid": "29568061",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Liu et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "aa9e3c6fe98e",
+  "interaction_id": "1a821b861d09",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10102701",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10102701",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TSP-1 co-IP with STIM1, N-terminal domain of STIM1 binds to the signature domain of TSP-1 | Effet de l'interaction: BioID assay | Localisation: secreted matricellular glycoprotein | Protéine: thrombospondin-1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 87"
+ },
+ {
+  "evidence_id": "aab970addd51",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.14336/AD.2022.0417",
+  "cited_pmid": "",
+  "doi": "10.14336/AD.2022.0417",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "ab691cd9fffa",
@@ -2039,7 +4676,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Co-immunoprecipitation analysis demonstrated an interaction of TRPC1 with STIM1 and/or Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "abb8d3287630",
+  "interaction_id": "7b4693c768f2",
+  "source_kind": "intact",
+  "ref": "EBI-6116464",
+  "cited_pmid": "21903422",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Li et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "acaadebdabd0",
@@ -2052,7 +4706,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "ad1f31e38217",
@@ -2065,7 +4721,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ad758b84c87d",
+  "interaction_id": "2cfdfc8646a0",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PLN>ATP2A2",
+  "cited_pmid": "10809745",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ae8072b12b45",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cell.2009.04.065",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2009.04.065",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
   "evidence_id": "afae225d0f0a",
@@ -2078,7 +4766,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Stim1 is phosphorylated during mitosis. Removal of ten mpm-2 recognition sites by truncation at amino acid 482 abolished mpm-2 recognition of mitotic stim1, and significantly rescued stim1 rearrangement and soce response in mitosis. We identified ser 486 and ser 668 as mitosis-specific phosphorylation sites, and stim1 containing mutations of these sites to alanine also significantly rescued mitotic soce.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "afcefbac5fd6",
+  "interaction_id": "7f75ee6c23ab",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/Sec61b",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": "interactome STING.xlsx/interactors/row 38"
  },
  {
   "evidence_id": "afe08d237ba2",
@@ -2091,7 +4796,24 @@ window.CAMAP.evidence = [
   "first_author": "Chen Q",
   "sentence": "In summary, our study found that high-fat diet leads to structural and functional dysregulation of MERC in mouse adipocytes, resulting in ER stress and impaired calcium homeostasis, which induces interferon (IFN) responses centered on STING, as well as triggers insulin resistance.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "afe7cbc08c08",
+  "interaction_id": "550b4220d7ce",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/NOTCH1",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Inhibits STING activation by competing with cGAMP for the CDN-binding site | domain of the interactor: Notch intracellular domain (NICD) | domain of STING: LBD",
+  "supp_source": "interactome STING.xlsx/interactors/row 21"
  },
  {
   "evidence_id": "b04ad3fd53de",
@@ -2104,7 +4826,9 @@ window.CAMAP.evidence = [
   "first_author": "Bouwmeester et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b1237fbe93fd",
@@ -2117,7 +4841,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b1340ed691f4",
+  "interaction_id": "d43b46e90d02",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>TRPC4",
+  "cited_pmid": "12032305",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Our data show that (i) TRPC2 does not interact with any known TRPC protein and (ii) TRPC1 has the ability to form channel complexes together with TRPC4 and TRPC5.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b1677a74e292",
@@ -2130,7 +4871,9 @@ window.CAMAP.evidence = [
   "first_author": "Huang KT",
   "sentence": "Paradoxically, the Ca2+ levels achieved following neural stimulation in mice treated with DMXAA were enhanced despite significantly reduced fluid secretion.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b242da59c3b6",
@@ -2143,7 +4886,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b2748da0a53b",
@@ -2156,7 +4901,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b2ce9001e478",
@@ -2169,7 +4916,9 @@ window.CAMAP.evidence = [
   "first_author": "Liu D",
   "sentence": "As shown in Figure S7, when one copy of the Bcl6 gene was missing, CXCR5+PD-1+ Tfh cells differentially expressed many genes; among those downregulated were Stim1 and Plcg1 (which code for STIM1 and PLCgamma1, respectively) that both impinge on calcium signaling downstream of TCR activation.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b40d6c9f7103",
@@ -2182,7 +4931,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b45205918344",
+  "interaction_id": "fe292fdc8c8b",
+  "source_kind": "curated",
+  "ref": "DOI:10.1371/journal.pone.0196512",
+  "cited_pmid": "",
+  "doi": "10.1371/journal.pone.0196512",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CLCA2 interacts with STIM1 at intracellular vesicles and ER-PM junctions | Localisation: cytosol/Plasma Membrane | Protéine: Chloride Channel Accessory 2",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 24"
+ },
+ {
+  "evidence_id": "b4737ea4f0c6",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41590-018-0300-2",
+  "cited_pmid": "",
+  "doi": "10.1038/s41590-018-0300-2",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "b56e6495590a",
@@ -2195,7 +4976,69 @@ window.CAMAP.evidence = [
   "first_author": "Park et al.",
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b58f0eb8a5d8",
+  "interaction_id": "f40dbd875e14",
+  "source_kind": "curated",
+  "ref": "DOI:10.1159/000330080",
+  "cited_pmid": "",
+  "doi": "10.1159/000330080",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: interaction was enhanced by PC1 expression | Localisation: ER protein | Protéine: Inositol 1,4,5-Trisphosphate Receptor Type 3, IP3R3",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 42"
+ },
+ {
+  "evidence_id": "b6fb9b3048e3",
+  "interaction_id": "a4eab6658617",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.0906781106",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.0906781106",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/Orai/row 6"
+ },
+ {
+  "evidence_id": "b753b91f8b90",
+  "interaction_id": "b933d4f4048a",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>CACNA1C",
+  "cited_pmid": "22518098",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b7f8d1c154a0",
+  "interaction_id": "f91ea4aeee62",
+  "source_kind": "intact",
+  "ref": "EBI-32719115",
+  "cited_pmid": "35384245",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Salokas et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b9802e636874",
@@ -2208,7 +5051,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ba40be32b949",
+  "interaction_id": "e56e300cad32",
+  "source_kind": "intact",
+  "ref": "EBI-61297478",
+  "cited_pmid": "39232006",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Serafin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "ba77c9f07752",
@@ -2221,7 +5081,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "We show that purified recombinant ikk-epsilon and tbk1 directly phosphorylate the critical serine residues in irf3 allowing its translocation into the nucleus and production of interferon type i.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "bb6450e1a1d2",
@@ -2234,7 +5096,24 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "bbada1749dcc",
+  "interaction_id": "0c0e9573cd9d",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/modulators/PI4KB",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": "interactome STING.xlsx/modulators/row 8"
  },
  {
   "evidence_id": "bbd1b64d92b8",
@@ -2247,7 +5126,9 @@ window.CAMAP.evidence = [
   "first_author": "Zhu Z",
   "sentence": "Overall, these data suggest that the mitochondrial outer membrane calcium transporter VDAC2 is a new STING binding partner and the STING-VDAC2 interaction may regulate mitochondrial ROS/calcium levels.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "bca3c1474f1f",
@@ -2260,7 +5141,39 @@ window.CAMAP.evidence = [
   "first_author": "Feng Z",
   "sentence": "We further find that TMEM110 expression is restrained by the nucleic acid sensor STING under basal conditions, and that a naturally occurring interface mutation between TMEM110 and STING causes defective lysosomal DNA disposal and aberrant type I interferon activity.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "bd6baa5eb1ea",
+  "interaction_id": "967d69b285b8",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STIM1 bis.xlsx/Orai/SARAF",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: ER protein | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor, TMEM 66",
+  "supp_source": "interactome STIM1 bis.xlsx/Orai/row 10"
+ },
+ {
+  "evidence_id": "bf733d1a728f",
+  "interaction_id": "e0ecf79b6be8",
+  "source_kind": "intact",
+  "ref": "EBI-26193776",
+  "cited_pmid": "32814053",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "bfa1cb061aac",
@@ -2273,7 +5186,39 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "bfd4d42f06ee",
+  "interaction_id": "4d4ea758009e",
+  "source_kind": "curated",
+  "ref": "DOI:10.1002/jcb.22910",
+  "cited_pmid": "",
+  "doi": "10.1002/jcb.22910",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Identification MS: STIM1 proteome identified by MS after Flag IP | Localisation: ER protein | Protéine: Calnexin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 19"
+ },
+ {
+  "evidence_id": "bffd49341e45",
+  "interaction_id": "1e35986cc5cc",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STIM1 bis.xlsx/STIM1/ORAI2",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 53"
  },
  {
   "evidence_id": "c0147f3ef52e",
@@ -2286,7 +5231,9 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "To check how interaction with STIM1 influences the function of STING, we monitored the translocation kinetics of STING after treatment of WT or Stim1-/- MEFs with 2',3'-cGAMP and observed faster translocation of STING into the ERGIC in Stim1-/- MEFs than in WT cells (Fig. 5b).",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c058afc9e517",
@@ -2299,7 +5246,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "The major mitotic kinase CDK1-cyclin B complex phosphorylates human cGAS at S305 or mouse cGAS at S291, which inhibits its ability to synthesize cGAMP upon mitotic entry.",
   "sentence_verified": "true",
-  "species_context": "unknown"
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c0b56b420055",
@@ -2312,7 +5261,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Here, we show that Fam20C phosphorylates several SR proteins involved in Ca2+ signaling, including calsequestrin2 and Stim1, whose biochemical activities are dramatically regulated by Fam20C mediated phosphorylation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c0e15598d74f",
+  "interaction_id": "9bb227bb148d",
+  "source_kind": "curated",
+  "ref": "DOI:10.1007/s10059-013-2268-7",
+  "cited_pmid": "",
+  "doi": "10.1007/s10059-013-2268-7",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: ubiquitination and lysosomal degradation of Orai1. | Localisation: cytosol | Protéine: Ubiquilin 1, PLIC-1",
+  "supp_source": "interactome STIM1 bis.xlsx/Orai/row 12"
+ },
+ {
+  "evidence_id": "c11434fcc51b",
+  "interaction_id": "1a4d56fbd5ec",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10102701",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10102701",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Cytosol | Type de protéine: actin-severing protein | Protéine: Gelsolin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 38"
  },
  {
   "evidence_id": "c177da48b624",
@@ -2325,7 +5306,9 @@ window.CAMAP.evidence = [
   "first_author": "Williams et al.",
   "sentence": "STIM1, STIM2 and D-Stim have a conserved genomic organization, indicating that the vertebrate family of two STIM genes most probably arose from a single ancestral gene.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c21f8d530472",
@@ -2338,7 +5321,54 @@ window.CAMAP.evidence = [
   "first_author": "Shang et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c25d841f8b59",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1002/jcp.27532",
+  "cited_pmid": "",
+  "doi": "10.1002/jcp.27532",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "c280c749824b",
+  "interaction_id": "9921dbe2ccb5",
+  "source_kind": "intact",
+  "ref": "EBI-1079573",
+  "cited_pmid": "17353931",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Ewing et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c2959d98dc85",
+  "interaction_id": "4a3f6e07a632",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41467-017-01135-w",
+  "cited_pmid": "",
+  "doi": "10.1038/s41467-017-01135-w",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
  },
  {
   "evidence_id": "c2e3c1791f6e",
@@ -2351,7 +5381,9 @@ window.CAMAP.evidence = [
   "first_author": "Liu D",
   "sentence": "Quantitatively, Bcl6+/- OT-II T cells exhibited significantly lower mean DeltaRt/R0 values than control T cells (Figure 3B; mean +- SEM of mean DeltaRt/R0 values for 65 Bcl6+/+ versus 64 Bcl6+/- contacts: 29% +- 6% versus 8% +- 4%, p < 0.01).",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c3bc2c53a7c2",
@@ -2364,7 +5396,24 @@ window.CAMAP.evidence = [
   "first_author": "Freischmidt et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c60e828a6def",
+  "interaction_id": "40154542b559",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s12276-018-0093-2",
+  "cited_pmid": "",
+  "doi": "10.1038/s12276-018-0093-2",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: PAK1 interacts with STIM1 : enhanced by PdBu | Effet de l'interaction: coexpression of PAK1 and STIM1   induce their relocalizationfrom the cytosol to the cell periphery or protrusions | Localisation: cytosol | Protéine: p21-activated kinase 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 55"
  },
  {
   "evidence_id": "c6c884d644bf",
@@ -2377,7 +5426,9 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c7e21a6ba410",
@@ -2390,7 +5441,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c95b5989ca98",
@@ -2403,7 +5456,9 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "Conversely, we also found that STING deficiency augmented translocation of STIM1 and Ca2+ entry triggered by depletion of ER Ca2+ stores.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c9e408fb40fe",
@@ -2416,7 +5471,69 @@ window.CAMAP.evidence = [
   "first_author": "Zhu Z",
   "sentence": "STING depletion potentiates VDAC2/GRP75-mediated MERC (mitochondria-ER contact) formation to increase mitochondrial ROS/calcium levels, impairs mitochondria function, and suppresses mTORC1/S6K signaling leading to RCC growth retardation.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ca9898080b71",
+  "interaction_id": "d96af25d2dbc",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41598-018-31621-0",
+  "cited_pmid": "",
+  "doi": "10.1038/s41598-018-31621-0",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: ER protein | Protéine: Inositol 1,4,5-Trisphosphate Receptor Type 1, IP3R1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 41"
+ },
+ {
+  "evidence_id": "cb09a6d5c457",
+  "interaction_id": "60fa4ff100bf",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.ceca.2009.02.010",
+  "cited_pmid": "",
+  "doi": "10.1016/j.ceca.2009.02.010",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Colocalization of STIM1 and SERCA2b /l interaction between SERCA and STIM1 (FRET IP IF) | Effet de l'interaction: interaction sTIM1/SERCA increased after store depletion | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 2b, SERCA2b",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 9"
+ },
+ {
+  "evidence_id": "cb2ab839aae8",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cytogfr.2019.04.003",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cytogfr.2019.04.003",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
+ },
+ {
+  "evidence_id": "cbb5bb6aea13",
+  "interaction_id": "a8c09a15dcc7",
+  "source_kind": "intact",
+  "ref": "EBI-16789310",
+  "cited_pmid": "29568061",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Liu et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "cd1a0c3a5299",
@@ -2429,7 +5546,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "cd78dc4bbccf",
@@ -2442,7 +5561,9 @@ window.CAMAP.evidence = [
   "first_author": "Park K",
   "sentence": "Furthermore, STIM1 puncta colocalized with Orai1, suggesting Ca2+ influx through SOCE during mitophagy (Supplementary Fig.",
   "sentence_verified": "true",
-  "species_context": "rat"
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "ce1e1f746c42",
@@ -2455,7 +5576,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ce88583dc045",
+  "interaction_id": "08e089a9295f",
+  "source_kind": "intact",
+  "ref": "EBI-361350",
+  "cited_pmid": "14743216",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Bouwmeester et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "cea58d0e33cb",
@@ -2468,7 +5606,54 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ceddf938a3b3",
+  "interaction_id": "aa09417c6ee3",
+  "source_kind": "intact",
+  "ref": "EBI-32724282",
+  "cited_pmid": "35384245",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Salokas et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "cf77b505fe4f",
+  "interaction_id": "66748b107c3e",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cell.2009.04.065",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2009.04.065",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: APC-binding domain in the carboxyl terminus of STIM1 (STIM1 650-685). | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: APC Regulator Of WNT Signaling Pathway/APC (Adenomatous Polyposis Coli) Tumor Suppressor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 6"
+ },
+ {
+  "evidence_id": "d0ac2f1ee7ac",
+  "interaction_id": "1a83010f7668",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbrc.2012.05.037",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbrc.2012.05.037",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Surf4 interacted with STIM1 in the lumina of the ER - Surf4 regulates the clustering and/ or relocation of STIM1 at the ER–PM junctions | Effet de l'interaction: Ca2+-bound form of STIM1 more effectively interacts with Surf4 rather than Ca2+-unbound one. Independent of store depletion | Localisation: ER and Golgi apparatus | Type de protéine: cargo receptor | Protéine: surfeit locus protein 4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 75"
  },
  {
   "evidence_id": "d2187f6c4af6",
@@ -2481,7 +5666,24 @@ window.CAMAP.evidence = [
   "first_author": "Wu et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d2553a8230a6",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/srep24452",
+  "cited_pmid": "",
+  "doi": "10.1038/srep24452",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
   "evidence_id": "d3204c8237b0",
@@ -2494,7 +5696,9 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "We show that TMEM203 interacts, functionally cooperates, and comigrates with STING following cell stimulation, which in turn leads to the activation of the kinase TBK1, and the IRF3 transcription factor.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d3656a5253a4",
@@ -2507,7 +5711,24 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d37d58a74ec6",
+  "interaction_id": "e344acba1c69",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.matbio.2014.05.004",
+  "cited_pmid": "",
+  "doi": "10.1016/j.matbio.2014.05.004",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TSP-4 co-IP with STIM1 | Localisation: secreted matricellular glycoprotein | Protéine: thrombospondin-4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 88"
  },
  {
   "evidence_id": "d3c159ed666f",
@@ -2520,7 +5741,24 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d42fabef817f",
+  "interaction_id": "671e67405056",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1521924112",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1521924112",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
  },
  {
   "evidence_id": "d46195ac4264",
@@ -2533,7 +5771,24 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "2I) and that STIM1 was able to disrupt the TMEM203/STING complex in a dose-dependent manner (Fig.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d4abed2c55db",
+  "interaction_id": "9a5ff995ba95",
+  "source_kind": "intact",
+  "ref": "EBI-23859114",
+  "cited_pmid": "32296183",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Luck et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d7cfd0c7e11a",
@@ -2546,7 +5801,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d7e629398951",
+  "interaction_id": "373694aeafe7",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/SEC24A",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": "interactome STING.xlsx/interactors/row 35"
  },
  {
   "evidence_id": "d80acc72da68",
@@ -2559,7 +5831,9 @@ window.CAMAP.evidence = [
   "first_author": "Li Y",
   "sentence": "TMEM203 interacts with STING and STIM1.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d824987373d6",
@@ -2572,7 +5846,9 @@ window.CAMAP.evidence = [
   "first_author": "Srikanth S",
   "sentence": "Here we found that deficiency in the Ca2+ sensor STIM1 caused spontaneous activation of STING and enhanced expression of type I interferons under resting conditions in mice and a patient suffering from combined immunodeficiency.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d8303e066053",
@@ -2585,7 +5861,9 @@ window.CAMAP.evidence = [
   "first_author": "Ewing et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d922bb861c6d",
@@ -2598,7 +5876,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "PKA-mediated hyperphosphorylation of a conserved serine, Ser-2843 in skeletal RyR and Ser-2809 in cardiac RyR, results in an aberrant SR function during heart failure. hyperphosphorylated RyRs are leaky and therefore lead to a reduced SR Ca2+ load and impaired contractile function in heart failure",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d9547d0d4ff0",
@@ -2611,7 +5891,9 @@ window.CAMAP.evidence = [
   "first_author": "Dubois et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d96827fdd6d6",
@@ -2624,7 +5906,114 @@ window.CAMAP.evidence = [
   "first_author": "Dong Y",
   "sentence": "HU inhibits DNA replication and repair, promoting cytosolic double-stranded DNA accumulation and activation of the cyclic GMP-AMP synthase-stimulator of interferon genes (cGAS-STING) pathway, while TG induces endoplasmic reticulum Ca2+ depletion to relieve stromal interaction molecule 1 (STIM1)-mediated inhibition of STING trafficking, thereby amplifying type I interferon signaling.",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d9837a65fcbc",
+  "interaction_id": "0000bf04a59c",
+  "source_kind": "intact",
+  "ref": "EBI-20201138",
+  "cited_pmid": "29251827",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Shang et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d9e90e4639fc",
+  "interaction_id": "6ca9916ba5bc",
+  "source_kind": "curated",
+  "ref": "DOI:10.1128/mcb.00175-22",
+  "cited_pmid": "",
+  "doi": "10.1128/mcb.00175-22",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Co-IP and Fret  AKAP79 and STIM1 protein | Localisation: cytosol | Protéine: A-kinase anchoring protein 79, AKAP79",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 4"
+ },
+ {
+  "evidence_id": "da31059f8da0",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.ceca.2013.06.008",
+  "cited_pmid": "",
+  "doi": "10.1016/j.ceca.2013.06.008",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "db638575b8d1",
+  "interaction_id": "a8a1aa131359",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.jhep.2016.10.032",
+  "cited_pmid": "",
+  "doi": "10.1016/j.jhep.2016.10.032",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with AC5 : IF co-localizization | Localisation: plasma membrane-bound | Protéine: Plasma membrane-localized adenylyl cyclase 5",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 2"
+ },
+ {
+  "evidence_id": "dbfd517f6373",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.3390/cells10081887",
+  "cited_pmid": "",
+  "doi": "10.3390/cells10081887",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "dc0213406107",
+  "interaction_id": "9aff341adec6",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bbamcr.2017.12.001",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bbamcr.2017.12.001",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: SARAF C-domain (aa196-339) inhibited SOCE and interacts with STIM1 | Localisation: ER protein | Type de protéine: TMEM66 | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
+ },
+ {
+  "evidence_id": "dc52e4454e83",
+  "interaction_id": "82a6c49f3f73",
+  "source_kind": "curated",
+  "ref": "DOI:10.4161/chan.3.4.9198",
+  "cited_pmid": "",
+  "doi": "10.4161/chan.3.4.9198",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 83"
  },
  {
   "evidence_id": "dc68028b3f42",
@@ -2637,7 +6026,9 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "dc8cf1e7dc13",
@@ -2650,7 +6041,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "dd01da81c6c3",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.ceca.2019.03.003",
+  "cited_pmid": "",
+  "doi": "10.1016/j.ceca.2019.03.003",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "de4fe915e70c",
@@ -2663,7 +6071,9 @@ window.CAMAP.evidence = [
   "first_author": "Xiao Y",
   "sentence": "HAP promoted the release of intracellular Ca2+ stores in cancer cells, and curcumin inhibited Ca2+ efflux, resulting in intracellular Ca2+ overload and the release of mitochondrial DNA (mtDNA).",
   "sentence_verified": "true",
-  "species_context": "mouse"
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "de986ecfd821",
@@ -2676,7 +6086,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "de9e44d74d54",
@@ -2689,7 +6101,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Here, we show that ER Ca2+-store depletion rapidly induces STIM1 phosphorylation at Y361 via proline-rich kinase 2 (Pyk2) in ECs.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "dec1491a6620",
+  "interaction_id": "97c8fc0f255b",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC4>TRPC1",
+  "cited_pmid": "12032305",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Our data show that (i) TRPC2 does not interact with any known TRPC protein and (ii) TRPC1 has the ability to form channel complexes together with TRPC4 and TRPC5.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e04d6041bc6b",
+  "interaction_id": "e75027fbac22",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/LGALS9",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Promotes the E3 ubiquitin ligase TRIM29-mediated K48-linked ubiquitination of STING | domain of the interactor: Carbohydrate recognition domain 1 | domain of STING: ND",
+  "supp_source": "interactome STING.xlsx/interactors/row 13"
  },
  {
   "evidence_id": "e0d093f40481",
@@ -2702,7 +6146,69 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e18f4a2272df",
+  "interaction_id": "2d91e3a7b9c1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.cub.2012.05.057",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cub.2012.05.057",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "e2f1f0c067bb",
+  "interaction_id": "5671429330c0",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/modulators/PIK3C3",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Protéine: phosphatidylinositol kinase vacuolar protein sorting 34 (VPS34)",
+  "supp_source": "interactome STING.xlsx/modulators/row 24"
+ },
+ {
+  "evidence_id": "e3323f8382c6",
+  "interaction_id": "88cd63e50808",
+  "source_kind": "curated",
+  "ref": "DOI:10.1371/journal.pone.0258670",
+  "cited_pmid": "",
+  "doi": "10.1371/journal.pone.0258670",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: α-SNAP binds STIM1 CAD | Localisation: Cytosol | Protéine: α-SNAP, NSF Attachment Protein Alpha",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 51"
+ },
+ {
+  "evidence_id": "e37b36c12106",
+  "interaction_id": "b8a6e30bbb1a",
+  "source_kind": "curated",
+  "ref": "DOI:10.1073/pnas.1524229113",
+  "cited_pmid": "",
+  "doi": "10.1073/pnas.1524229113",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 and JPH4 interactions using PLA et co-IF/JP4 also formed a complex with junctate | Effet de l'interaction: JP4 directly interacted with STIM1 via its cytoplasmic domain and facilitated its recruitment into the ER–PM junctions | Localisation: ER/Mitochondria associated Mb | Protéine: Junctophilin-4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 44"
  },
  {
   "evidence_id": "e3a1ba33cc1b",
@@ -2715,7 +6221,9 @@ window.CAMAP.evidence = [
   "first_author": "Salokas et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e3c0dd6faa1e",
@@ -2728,7 +6236,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "EGFR phosphorylates IKBKE at tyrosine-153 and -179 residues.|To understand the mechanism by which IKBKE is activated by mutant EGFR, we first investigated if activating mutation of EGFR is able to form a complex with IKBKE.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e3f44b2058b0",
@@ -2741,7 +6251,9 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e412013d6da3",
@@ -2754,7 +6266,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "EGFRL858R/T790M phosphorylates IKBKE at tyrosine residues. While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e46d48e7fa27",
@@ -2767,7 +6281,9 @@ window.CAMAP.evidence = [
   "first_author": "Deribe et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e48594575dfe",
@@ -2780,7 +6296,69 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e532fff64ab3",
+  "interaction_id": "89c5a28d00d4",
+  "source_kind": "intact",
+  "ref": "EBI-54980512",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e5d1443b0e26",
+  "interaction_id": "60fa4ff100bf",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.mce.2011.08.021",
+  "cited_pmid": "",
+  "doi": "10.1016/j.mce.2011.08.021",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Colocalization of STIM1 and SERCA2b /l interaction between SERCA and STIM1 (FRET IP IF) | Effet de l'interaction: interaction sTIM1/SERCA increased after store depletion | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 2b, SERCA2b",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 9"
+ },
+ {
+  "evidence_id": "e603dad10ae1",
+  "interaction_id": "7846ded62b95",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>GRIN2A",
+  "cited_pmid": "12379661",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e6081ca5676f",
+  "interaction_id": "4106c1135369",
+  "source_kind": "curated",
+  "ref": "DOI:10.1161/ATVBAHA.117.310139",
+  "cited_pmid": "",
+  "doi": "10.1161/ATVBAHA.117.310139",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with FLNA on calcium store depletion in human platelets | Localisation: Cytosol | Protéine: Filamin  A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 33"
  },
  {
   "evidence_id": "e630f825c543",
@@ -2793,7 +6371,54 @@ window.CAMAP.evidence = [
   "first_author": "Avalle et al.",
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e64314c764c3",
+  "interaction_id": "2f2ea71c48b1",
+  "source_kind": "curated",
+  "ref": "DOI:10.1182/blood-2011-12-398438",
+  "cited_pmid": "",
+  "doi": "10.1182/blood-2011-12-398438",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CyPa interacts with STIM1 and SERCA2b  and regulate STIM1 phosphorylation | Localisation: Cytosol | Protéine: Peptidylprolyl Isomerase A, cyclophilin A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 61"
+ },
+ {
+  "evidence_id": "e68da0f7fe20",
+  "interaction_id": "82a6c49f3f73",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb1454",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb1454",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 83"
+ },
+ {
+  "evidence_id": "e6feaa5f0ce4",
+  "interaction_id": "c5a33bdd6eb9",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/SEC62",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": "interactome STING.xlsx/interactors/row 40"
  },
  {
   "evidence_id": "e750fa18727d",
@@ -2806,7 +6431,9 @@ window.CAMAP.evidence = [
   "first_author": "Mo et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e846e6b9dc44",
@@ -2819,7 +6446,99 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e8dd63e21e90",
+  "interaction_id": "522392d7f02f",
+  "source_kind": "intact",
+  "ref": "EBI-54776823",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e972b832aedd",
+  "interaction_id": "f959e4bd72df",
+  "source_kind": "curated",
+  "ref": "DOI:10.1126/scisignal.aaw2627",
+  "cited_pmid": "",
+  "doi": "10.1126/scisignal.aaw2627",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: co-IP : interaction between STIM1 and PMCA increased by TCR activation - FRET | Effet de l'interaction: attenuation of PMCA activation | Localisation: Plasma Membrane | Protéine: plasma membrane calcium ATPase 4",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 11"
+ },
+ {
+  "evidence_id": "e9d09cdab647",
+  "interaction_id": "4a3f6e07a632",
+  "source_kind": "curated",
+  "ref": "DOI:10.33594/000000218",
+  "cited_pmid": "",
+  "doi": "10.33594/000000218",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
+ },
+ {
+  "evidence_id": "eb3c642b019d",
+  "interaction_id": "f3bba2475646",
+  "source_kind": "curated",
+  "ref": "DOI:10.1182/blood.2019001103",
+  "cited_pmid": "",
+  "doi": "10.1182/blood.2019001103",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: calreticulin interacts with ERp57 and STIM1 | Localisation: ER protein | Protéine: Calreticulin",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 18"
+ },
+ {
+  "evidence_id": "ebbbcd4fc3a2",
+  "interaction_id": "36d896c9e4e0",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.jaut.2019.04.015",
+  "cited_pmid": "",
+  "doi": "10.1016/j.jaut.2019.04.015",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Tmem178 and Stim1 interact in resting conditions - interaction decrease by store depletion -Co/IP and IF | Effet de l'interaction: Tmem178:STIM1 association occurs via their transmembrane domains/TMEM178 interacted with STIM1 but not STIM1 D76A | Localisation: ER membrane | Protéine: transmembrane protein 178A, TMEM178",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 78"
+ },
+ {
+  "evidence_id": "ec845ddad0b4",
+  "interaction_id": "f4949377b487",
+  "source_kind": "curated",
+  "ref": "DOI:10.1126/scisignal.aac9171",
+  "cited_pmid": "",
+  "doi": "10.1126/scisignal.aac9171",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
  },
  {
   "evidence_id": "ecb9af751afc",
@@ -2832,7 +6551,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "MITA was phosphorylated by TBK1, which is required for MITA-mediated activation of IRF3. Our results suggest that MITA is a critical mediator of virus-triggered IRF3 activation and IFN expression and further demonstrate the importance of certain mitochondrial proteins in innate antiviral immunity.  Consistent with its inability to activate IRF-E, the mutation of S358 to alanine impaired the ability of MITA to interact with TBK1 and to enhance the interaction between TBK1 and IRF3",
   "sentence_verified": "false",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ece75490a8ba",
+  "interaction_id": "c9840befddf0",
+  "source_kind": "curated",
+  "ref": "DOI:10.1515/BC.2011.010",
+  "cited_pmid": "",
+  "doi": "10.1515/BC.2011.010",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Coimmunoprecipitation and colocalization  of hBest1 and hStim1 | Localisation: ER protein | Protéine: Bestrophin 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 13"
+ },
+ {
+  "evidence_id": "ecfd78e22446",
+  "interaction_id": "4f6310f532bd",
+  "source_kind": "curated",
+  "ref": "CURATED:interactome STING.xlsx/interactors/PDCD6",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Effet de l'interaction: Inhibits STING trafficking through binding to its C-terminal tail | domain of the interactor: ND | domain of STING: CTD",
+  "supp_source": "interactome STING.xlsx/interactors/row 2"
  },
  {
   "evidence_id": "edee103c9559",
@@ -2845,7 +6596,9 @@ window.CAMAP.evidence = [
   "first_author": "Li S",
   "sentence": "While cGAS and its enzymatic product cGAMP are required for [Ca2+]i elevation after replication stress, STING normally associates with and represses TRPV2 to prevent unscheduled Ca2+ release in the absence of replication stress (Figures 4 and 5).",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "ee7ef2794888",
@@ -2858,7 +6611,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Consequently, this leads to the activation of TANK-binding kinase 1 (TBK1) and phosphorylation of interferon regulatory factor 3 (IRF3), both of which constitutively associate with cytosolic chaperone Hsp90.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ee8154be7f13",
+  "interaction_id": "a29291b6db22",
+  "source_kind": "curated",
+  "ref": "DOI:10.1007/s10974-020-09583-6",
+  "cited_pmid": "",
+  "doi": "10.1007/s10974-020-09583-6",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: CASQ1 binds to STIM1 and STIM2 | Localisation: ER protein | Protéine: Calsequestrin 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 20"
+ },
+ {
+  "evidence_id": "ee9eacfd12d7",
+  "interaction_id": "1bef4ff1b204",
+  "source_kind": "intact",
+  "ref": "EBI-54483912",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "eea03e143497",
@@ -2871,7 +6656,9 @@ window.CAMAP.evidence = [
   "first_author": "Park et al.",
   "sentence": "STIM1 clusters and activates CRAC channels via direct binding of a cytosolic domain to Orai1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "eee325c934f0",
@@ -2884,7 +6671,9 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "eef8ba26b5f0",
@@ -2897,7 +6686,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "f09f970a442f",
@@ -2910,7 +6701,39 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f0a920f1575e",
+  "interaction_id": "e9f0409a4b7b",
+  "source_kind": "curated",
+  "ref": "DOI:10.1016/j.bcp.2008.03.010",
+  "cited_pmid": "",
+  "doi": "10.1016/j.bcp.2008.03.010",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: interaction between STIM1 and SERCA3 induced by store depletion - Co IP | Localisation: membrane acidic store | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 3, SERCA3",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 10"
+ },
+ {
+  "evidence_id": "f2c6382a9a58",
+  "interaction_id": "0d5730e72e17",
+  "source_kind": "curated",
+  "ref": "DOI:10.3389/fncel.2016.00251",
+  "cited_pmid": "",
+  "doi": "10.3389/fncel.2016.00251",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Co-IP AMPAR interacts with STIM1 | Localisation: Plasma Membrane | Protéine: Glutamate Ionotropic Receptor AMPA Type Subunit 2; Glutamate Receptor 2",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 35"
  },
  {
   "evidence_id": "f313acb7ba9a",
@@ -2923,7 +6746,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Taken together, our data demonstrate that PAK1 interacts with STIM1 and phosphorylates specific STIM1 cytosolic domains.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f3b82c6b95f8",
+  "interaction_id": "671e67405056",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/ncb3234",
+  "cited_pmid": "",
+  "doi": "10.1038/ncb3234",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
  },
  {
   "evidence_id": "f418c2ff118f",
@@ -2936,7 +6776,9 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "f431fa332cbe",
@@ -2949,7 +6791,9 @@ window.CAMAP.evidence = [
   "first_author": "Berggard et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "f4bcf7b5b6a2",
@@ -2962,7 +6806,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "PTK2B promotes TBK1 and STING oligomerization and enhances the STING-TBK1 signaling",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f8d8bab3a0fd",
+  "interaction_id": "ddf7f926df8c",
+  "source_kind": "curated",
+  "ref": "DOI:10.1038/s41467-022-28745-3",
+  "cited_pmid": "",
+  "doi": "10.1038/s41467-022-28745-3",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
   "evidence_id": "f8ed8a3f6cf2",
@@ -2975,7 +6836,39 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Similarly, STIM1 is phosphorylated on S88 by FAM20C both in vitro and in vivo.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f938f12b2311",
+  "interaction_id": "f40dbd875e14",
+  "source_kind": "curated",
+  "ref": "DOI:10.1111/j.1600-0854.2010.01138.x",
+  "cited_pmid": "",
+  "doi": "10.1111/j.1600-0854.2010.01138.x",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: interaction was enhanced by PC1 expression | Localisation: ER protein | Protéine: Inositol 1,4,5-Trisphosphate Receptor Type 3, IP3R3",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 42"
+ },
+ {
+  "evidence_id": "fa6d79146ded",
+  "interaction_id": "7b4693c768f2",
+  "source_kind": "intact",
+  "ref": "EBI-6125218",
+  "cited_pmid": "21903422",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Li et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "fac4cf951846",
@@ -2988,7 +6881,9 @@ window.CAMAP.evidence = [
   "first_author": "Chen et al.",
   "sentence": "We found that expression of the membrane-anchored PLpro domain (PLpro-TM) from SARS-CoV inhibits STING/TBK1/IKKepsilon-mediated activation of type I IFNs and disrupts the phosphorylation and dimerization of IRF3, which are activated by STING and TBK1.",
   "sentence_verified": "true",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "fc2dacfcd254",
@@ -3001,7 +6896,9 @@ window.CAMAP.evidence = [
   "first_author": "Cao Z",
   "sentence": "Interestingly, although STING activation is generally considered a downstream event of mitochondrial calcium overload and injury, our results show that knocking down STING can alleviate obesity-induced mitochondrial calcium overload and mitigate mitochondrial damage.",
   "sentence_verified": "true",
-  "species_context": "rat"
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "fc9aaa645958",
@@ -3014,7 +6911,9 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "fcec322924cb",
@@ -3027,7 +6926,24 @@ window.CAMAP.evidence = [
   "first_author": "Li S",
   "sentence": "The subsequent binding of cGAMP to STING causes its dissociation from TRPV2, leading to TRPV2 derepression and Ca2+ release from the ER, which in turn activates the downstream signaling cascade to prevent fork degradation.",
   "sentence_verified": "true",
-  "species_context": "in_vitro_human_cells"
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fde3e7381128",
+  "interaction_id": "29715b428dd7",
+  "source_kind": "curated",
+  "ref": "DOI:10.1007/s10571-020-00892-5",
+  "cited_pmid": "",
+  "doi": "10.1007/s10571-020-00892-5",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "unknown",
+  "curator_note": "Infos sur interaction avec STIM1: Exogenous σ1R co-immunopreicipitated with exogenous STIM1 | Localisation: ER protein | Protéine: Sigma Non-Opioid Intracellular Receptor 1, σ1R",
+  "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 69"
  },
  {
   "evidence_id": "fe8b09957d02",
@@ -3040,7 +6956,24 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
   "sentence_verified": "false",
-  "species_context": "other"
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ff413c57d09a",
+  "interaction_id": "0bdf2d3c16f0",
+  "source_kind": "intact",
+  "ref": "EBI-54861395",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "ff6f6ca1fd54",
@@ -3053,6 +6986,8 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
-  "species_context": "human"
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  }
 ];

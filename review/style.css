@@ -72,6 +72,13 @@ blockquote.unverified { border-left-color: var(--uncertain); }
 .badge { font-size: .7rem; text-transform: uppercase; padding: 2px 8px; border-radius: 99px; background: var(--border); }
 .badge.pubmed, .badge.pmc { background: color-mix(in srgb, var(--accent) 30%, transparent); }
 .badge.signor, .badge.omnipath, .badge.biogrid, .badge.intact { background: color-mix(in srgb, #8957e5 35%, transparent); }
+.badge.curated { background: color-mix(in srgb, #d29922 40%, transparent); }
+.curator-note { border-left: 3px solid #d29922; padding: 4px 0 4px 10px; margin: 6px 0; }
+.note-label { font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.curated-block { margin: 8px 0; }
+dl.curated { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; margin: 4px 0; font-size: .85rem; }
+dl.curated dt { color: var(--muted); }
+dl.curated dd { margin: 0; }
 .species { font-size: .75rem; color: var(--muted); margin-left: auto; }
 .s-mouse, .s-rat { color: var(--uncertain); }
 

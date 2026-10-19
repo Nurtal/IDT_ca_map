@@ -7,8 +7,10 @@ from pathlib import Path
 from .nodes import (DEFAULT_CONFIG, Annotations, Resolver, Universe, load_config, module_of,
                     select_nodes)
 from .pubtator import PubTator
-from .schema import (DATABASE_KINDS, EVIDENCE_COLUMNS, HUMAN_CONTEXTS, INTERACTION_COLUMNS,
-                     LINK_TYPES, LITERATURE_KINDS, NODE_COLUMNS, SPECIES_CONTEXTS)
+from .schema import (ANIMAL_CONTEXTS, CURATED_KINDS, CURATED_NODE_FIELDS, DATABASE_KINDS,
+                     EVIDENCE_COLUMNS, HUMAN_CONTEXTS,
+                     INTERACTION_COLUMNS, LINK_TYPES, LITERATURE_KINDS, NODE_COLUMNS,
+                     SPECIES_CONTEXTS)
 from .verify import find_sentence, sentence_in
 
 
@@ -55,8 +57,17 @@ def evidence_sentence(r, doc, names):
     return "", ""
 
 
-def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
+def load_catalogue(path):
+    """The curator's gene catalogue, keyed by symbol (issue #17). Absent is fine: it only
+    adds a calcium criterion and node annotations."""
+    path = Path(path)
+    return json.loads(path.read_text()) if path.exists() else {}
+
+
+def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG,
+                  catalogue_path=None):
     config = load_config(config_path)
+    catalogue = load_catalogue(catalogue_path or Path(out_dir) / "supp_catalogue.json")
     resolver = Resolver(cache_dir, config)
     universe = Universe(config)
     annotations = Annotations(cache_dir)
@@ -65,7 +76,10 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
     interactions, evidence = collect(read_raw(raw_dir), resolver, universe, texts)
 
     go_calcium = lambda node: bool(annotations.get(node).get("go_calcium"))  # noqa: E731
-    kept, neighbours = select_nodes(universe, interactions.values(), go_calcium)
+    curated_calcium = lambda node: node in catalogue  # noqa: E731
+    kept, neighbours = select_nodes(universe, interactions.values(), go_calcium,
+                                    curated_calcium=curated_calcium)
+    dropped = dropped_curated(interactions, kept, universe, neighbours, go_calcium, curated_calcium)
     interactions = {k: i for k, i in interactions.items() if i["source"] in kept and i["target"] in kept}
     evidence = {k: e for k, e in evidence.items() if e["interaction_id"] in interactions}
 
@@ -73,10 +87,10 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
     for eid, ev in evidence.items():
         evidence_ids.setdefault(ev["interaction_id"], []).append(eid)
     for iid, inter in interactions.items():
-        finalize_interaction(inter, evidence_ids.get(iid, []), go_calcium)
+        finalize_interaction(inter, evidence_ids.get(iid, []), go_calcium, curated_calcium)
     link_conflicts(interactions.values())
 
-    nodes = [node_row(n, resolver, universe, annotations, neighbours)
+    nodes = [node_row(n, resolver, universe, annotations, neighbours, catalogue)
              for n in sorted({x for i in interactions.values() for x in (i["source"], i["target"])})]
 
     tables = {
@@ -86,7 +100,28 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG):
         "evidence": (EVIDENCE_COLUMNS, sorted(evidence.values(), key=lambda e: e["evidence_id"])),
     }
     write_tables(out_dir, tables)
-    return tables
+    return tables, dropped
+
+
+def dropped_curated(interactions, kept, universe, neighbours, go_calcium, curated_calcium):
+    """Why each curated interaction did not make it into the map (issue #16).
+
+    These rows come from the researcher, so losing one in silence would be a bug; database
+    and literature rows are expected to be filtered and are not reported here.
+    """
+    notes = []
+    for inter in sorted(interactions.values(), key=lambda i: (i["source"], i["target"])):
+        if not inter.get("_curated") or (inter["source"] in kept and inter["target"] in kept):
+            continue
+        for node in (inter["source"], inter["target"]):
+            if node in kept:
+                continue
+            anchors = ", ".join(sorted(universe.anchors))
+            reason = (f"no interaction with {anchors.replace(', ', ' or ')}"
+                      if not (neighbours.get(node, set()) & universe.anchors)
+                      else "not calcium-related (no GO annotation, no calcium term, not in the catalogue)")
+            notes.append(f"{inter['source']} {inter['type']} {inter['target']}: {node} dropped, {reason}")
+    return notes
 
 
 def collect(records, resolver, universe, texts):
@@ -113,10 +148,12 @@ def collect(records, resolver, universe, texts):
         add_unique(inter["_mechanisms"], r.get("mechanism", ""))
         add_unique(inter["_justifications"], r.get("justification", ""))
         inter["_refs"].add((r["source_kind"], r["ref"]))
+        inter["_curated"] = inter.get("_curated", False) or r["source_kind"] in CURATED_KINDS
         species = r.get("species_context") or "unknown"
         if species not in SPECIES_CONTEXTS:
             raise ValueError(f"{r.get('_origin')}: unknown species_context {species!r}")
         inter["_human"] = inter.get("_human", False) or species in HUMAN_CONTEXTS
+        inter["_animal"] = inter.get("_animal", False) or species in ANIMAL_CONTEXTS
         sentence, verified = evidence_sentence(r, document(r), resolver.names)
         inter["_text_calcium"] |= universe.mentions_calcium(sentence)
         eid = short_hash(f"{iid}|{r['source_kind']}|{r['ref']}|{r.get('sentence', '')}")
@@ -126,21 +163,32 @@ def collect(records, resolver, universe, texts):
             "first_author": r.get("first_author", ""), "sentence": sentence,
             "sentence_verified": verified,
             "species_context": species,
+            "curator_note": r.get("curator_note", ""), "supp_source": r.get("supp_source", ""),
         }
     return interactions, evidence
 
 
-def finalize_interaction(inter, evidence_ids, go_calcium):
+def finalize_interaction(inter, evidence_ids, go_calcium, curated_calcium):
     refs = inter.pop("_refs")
+    inter.pop("_curated", None)
     inter["n_pubs"] = sum(1 for k, _ in refs if k in LITERATURE_KINDS)
     inter["n_db"] = sum(1 for k, _ in refs if k in DATABASE_KINDS)
+    inter["n_curated"] = sum(1 for k, _ in refs if k in CURATED_KINDS)
     inter["n_sources"] = len(refs)
     inter["mechanism"] = " | ".join(inter.pop("_mechanisms"))
     inter["justification"] = " | ".join(inter.pop("_justifications"))
     inter["has_human_evidence"] = "true" if inter.pop("_human") else "false"
-    go = go_calcium(inter["source"]) or go_calcium(inter["target"])
-    text = inter.pop("_text_calcium")
-    inter["calcium_evidence"] = "both" if go and text else "GO" if go else "text" if text else ""
+    inter["has_animal_evidence"] = "true" if inter.pop("_animal") else "false"
+    criteria = []
+    if go_calcium(inter["source"]) or go_calcium(inter["target"]):
+        criteria.append("GO")
+    if inter.pop("_text_calcium"):
+        criteria.append("text")
+    if curated_calcium(inter["source"]) or curated_calcium(inter["target"]):
+        criteria.append("curated")
+    # "both" is kept for the historical GO+text pair so reviews made before the catalogue
+    # existed still read the same.
+    inter["calcium_evidence"] = "both" if criteria == ["GO", "text"] else "+".join(criteria)
     inter["evidence_fingerprint"] = short_hash("|".join(sorted(evidence_ids)))
 
 
@@ -156,14 +204,16 @@ def link_conflicts(interactions):
         i["conflict_with"] = other["interaction_id"] if other else ""
 
 
-def node_row(node_id, resolver, universe, annotations, neighbours):
+def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=None):
     ann = annotations.get(node_id)
+    curated = {k: v for k, v in (catalogue or {}).get(node_id, {}).items()
+               if k in CURATED_NODE_FIELDS}
     if node_id in resolver.metabolites:
         m = resolver.metabolites[node_id]
         return {"id": node_id, "symbol": m["symbol"], "name": m["name"], "type": "metabolite",
                 "module": "metabolite", "is_seed": "true",
                 "synonyms": "; ".join(m.get("synonyms", [])),
-                "function_summary": ann.get("function_summary", "")}
+                "function_summary": ann.get("function_summary", ""), **curated}
     gene = resolver.gene(node_id)
     return {
         "id": node_id, "symbol": node_id, "name": gene.get("name", ""), "type": "gene",
@@ -172,6 +222,7 @@ def node_row(node_id, resolver, universe, annotations, neighbours):
         "uniprot": ";".join(gene.get("uniprot_ids") or []),
         "synonyms": "; ".join((gene.get("prev_symbol") or []) + (gene.get("alias_symbol") or [])),
         "function_summary": ann.get("function_summary", ""),
+        **curated,
     }
 
 

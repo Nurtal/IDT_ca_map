@@ -158,6 +158,7 @@
         n.is_seed === "true" ? el("span", { class: "chip" }, "seed") : null,
         n.type === "metabolite" ? el("span", { class: "chip" }, "metabolite") : null),
       n.synonyms ? el("p", { class: "small muted" }, "Synonyms: " + n.synonyms) : null,
+      curatedAnnotations(n),
       n.function_summary ? el("p", { class: "summary" }, n.function_summary) : null,
       el("p", { class: "links" },
         acc ? link("https://www.uniprot.org/uniprotkb/" + acc + "/entry", "UniProt " + acc) : null,
@@ -168,6 +169,26 @@
         el("button", { type: "button", class: "linkish", onclick: () => { showEdge(i.interaction_id); cy.getElementById(i.interaction_id).select(); } },
           `${label(i.source)} ${arrow(i)} ${label(i.target)}`),
         el("span", { class: "muted small" }, ` ${i.type.replace(/_/g, " ")} · ${i.n_sources} source(s)`)))));
+  }
+
+  // What the researcher's own gene catalogue says about this actor (issue #17). Shown next
+  // to the automatic UniProt summary, never instead of it.
+  const CURATED_FIELDS = [
+    ["localization", "Localization"], ["protein_type", "Protein type"], ["domains", "Domains"],
+    ["ca_functionality", "Ca²⁺ functionality"], ["regulation", "Regulates"],
+    ["functional_assignment", "Functional assignment"],
+  ];
+
+  function curatedAnnotations(n) {
+    const rows = CURATED_FIELDS.filter(([key]) => n[key]);
+    if (!rows.length && !n.genecards) return null;
+    return el("div", { class: "curated-block" },
+      el("div", { class: "note-label" }, "Curator's gene catalogue"),
+      el("dl", { class: "curated" }, rows.flatMap(([key, label]) => [
+        el("dt", {}, label), el("dd", {}, n[key])])),
+      n.genecards ? el("p", { class: "links" },
+        link("https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + encodeURIComponent(n.symbol || n.id),
+             "GeneCards " + n.genecards)) : null);
   }
 
   function arrow(i) {
@@ -185,8 +206,11 @@
       i.mechanism ? el("p", { class: "muted" }, i.mechanism) : null,
       el("div", { class: "chips" },
         el("span", { class: "chip" }, `${i.n_sources} source(s): ${i.n_pubs || 0} pub · ${i.n_db || 0} db`),
-        i.calcium_evidence ? el("span", { class: "chip" }, "Ca²⁺: " + i.calcium_evidence) : null,
-        i.has_human_evidence === "false" ? el("span", { class: "chip warn" }, "non-human only") : null),
+        i.calcium_evidence ? el("span", { class: "chip" }, "Ca²⁺: " + CamapCore.calciumLabel(i.calcium_evidence)) : null,
+        i.has_human_evidence === "false" && i.has_animal_evidence === "true"
+          ? el("span", { class: "chip warn" }, "non-human only") : null,
+        i.has_human_evidence === "false" && i.has_animal_evidence === "false"
+          ? el("span", { class: "chip" }, "species not recorded") : null),
       el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—"),
       i.comment ? el("div", {}, el("h3", {}, "Review comment"), el("p", {}, i.comment + (i.reviewer ? " — " + i.reviewer : ""))) : null,
       el("h3", {}, "Evidence"),
@@ -196,7 +220,10 @@
           link(refHref(ev.ref), [ev.first_author, ev.year, ev.ref].filter(Boolean).join(" · ")),
           ev.cited_pmid ? link(refHref("PMID:" + ev.cited_pmid), "cites PMID:" + ev.cited_pmid) : null,
           el("span", { class: "small muted" }, SPECIES[ev.species_context] || ev.species_context)),
-        ev.sentence ? el("blockquote", { class: ev.sentence_verified === "true" ? "" : "unverified" }, ev.sentence,
+        ev.source_kind === "curated"
+          ? el("div", { class: "curator-note" },
+              el("div", { class: "note-label" }, "Curator summary"), el("p", {}, ev.curator_note || "—"))
+          : ev.sentence ? el("blockquote", { class: ev.sentence_verified === "true" ? "" : "unverified" }, ev.sentence,
           ev.sentence_verified === "true" ? null : el("div", { class: "warn small" }, "⚠️ not found verbatim"))
           : el("p", { class: "muted small" }, "Database-only, no sentence found"))))
         : el("p", { class: "muted small" }, "Evidence details not available for this export."));

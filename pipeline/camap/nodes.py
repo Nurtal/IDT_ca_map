@@ -88,8 +88,13 @@ class Universe:
         return bool(sentence and self.calcium_re.search(sentence))
 
 
-def select_nodes(universe, interactions, go_calcium):
-    """Apply the inclusion rule. `interactions` are dicts with source, target, _text_calcium."""
+def select_nodes(universe, interactions, go_calcium, curated_calcium=None):
+    """Apply the inclusion rule. `interactions` are dicts with source, target, _text_calcium.
+
+    A gene of the curator's catalogue is calcium-related by her own judgement (issue #17),
+    on a par with a GO annotation or a calcium term in the supporting sentence.
+    """
+    curated_calcium = curated_calcium or (lambda node: False)
     neighbours, text_calcium = {}, {}
     for i in interactions:
         for a, b in ((i["source"], i["target"]), (i["target"], i["source"])):
@@ -105,7 +110,7 @@ def select_nodes(universe, interactions, go_calcium):
         elif level == 2:
             if touches_anchor:
                 kept.add(node)
-        elif touches_anchor and (go_calcium(node) or text_calcium[node]):
+        elif touches_anchor and (go_calcium(node) or text_calcium[node] or curated_calcium(node)):
             kept.add(node)
     return kept, neighbours
 

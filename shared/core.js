@@ -9,7 +9,8 @@
 
   const INTERACTION_COLUMNS = [
     "interaction_id", "source", "target", "type", "directed", "mechanism", "n_sources", "n_pubs",
-    "n_db", "has_human_evidence", "calcium_evidence", "justification", "conflict_with",
+    "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence",
+    "justification", "conflict_with",
     "evidence_fingerprint",
   ];
   const REVIEW_COLUMNS = ["decision", "comment", "reviewer", "reviewed_at"];
@@ -23,13 +24,25 @@
       human: "🧍 human", in_vitro_human_cells: "🧫 human cells", mouse: "🐭 mouse", rat: "🐀 rat",
       other: "other species", unknown: "species ?",
     },
-    calcium: { GO: "GO annotation", text: "mentioned in source text", both: "GO annotation + source text" },
+    calcium: {
+      GO: "GO annotation", text: "mentioned in source text", curated: "curator's gene catalogue",
+      both: "GO annotation + source text",
+    },
   };
+
+  // "GO+curated" -> "GO annotation + curator's gene catalogue". Several criteria can apply
+  // at once (issue #17); "both" is the historical spelling of "GO+text".
+  function calciumLabel(value) {
+    if (!value) return "none";
+    return value.split("+").map((c) => LABELS.calcium[c] || c).join(" + ");
+  }
 
   // Web page of a literature or database reference, or null.
   function refHref(ref) {
     ref = ref || "";
     if (ref.startsWith("PMID:")) return "https://pubmed.ncbi.nlm.nih.gov/" + ref.slice(5) + "/";
+    if (ref.startsWith("DOI:")) return "https://doi.org/" + ref.slice(4);
+    if (ref.startsWith("CURATED:")) return null;  // the curator's own spreadsheet
     if (ref.startsWith("PMC")) return "https://www.ncbi.nlm.nih.gov/pmc/articles/" + ref + "/";
     if (ref.startsWith("SIGNOR-")) return "https://signor.uniroma2.it/relation_result.php?id=" + ref;
     if (ref.startsWith("EBI-")) return "https://www.ebi.ac.uk/intact/search?query=" + ref;
@@ -155,7 +168,9 @@
     const modules = Array.isArray(filters.modules) ? new Set(filters.modules) : null;
     const minSources = Number(filters.minSources) || 0;
     return interactions.filter((i) =>
-      !(filters.excludeMouseOnly && i.has_human_evidence === "false") &&
+      // species unknown is not species non-human: only hide what is actually animal-only
+      !(filters.excludeMouseOnly && i.has_human_evidence === "false"
+        && i.has_animal_evidence === "true") &&
       (!types || types.has(i.type)) &&
       Number(i.n_sources || 0) >= minSources &&
       (!modules || (modules.has(moduleOf(i.source)) && modules.has(moduleOf(i.target)))));
@@ -265,5 +280,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { LABELS, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { LABELS, calciumLabel, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });
