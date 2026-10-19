@@ -12,7 +12,7 @@ python3 pipeline/cli.py supp          # data_supp/*.xlsx -> data/raw/supp_*.json
 python3 pipeline/cli.py queue next 50 # next pending articles
 python3 pipeline/cli.py queue add PMID # a lead the corpus searches never returned
 python3 pipeline/cli.py fetch-texts   # cache texts of every paper cited in data/raw (git-ignored cache)
-python3 pipeline/cli.py annotate      # HGNC + GO calcium + UniProt for every actor
+python3 pipeline/cli.py annotate      # HGNC + GO calcium + UniProt for every actor, + STRING scores
 python3 pipeline/cli.py build         # data/raw -> data/{nodes,interactions,evidence}.{csv,js}
 ```
 
@@ -86,6 +86,18 @@ Rules of thumb:
   VAPB, ARF1, the ORAI1 interactome...) **is** admissible and strengthens her edge with a
   publication. The 2026-10-16 convention — do not record a STING partner with no calcium link —
   only still holds for a partner that is in neither the sheets nor the catalogue.
+
+## STRING (story 22 of issue #1)
+
+STRING is an **annotation, never an edge source**: its scores mix co-expression, text mining and
+transfers between species, which would flood a curated map. `cli.py annotate` asks STRING once for
+the pairwise scores among the genes of the last build (`data/nodes.csv`) and caches them in
+`pipeline/cache/string/network.json`; the next `build` writes them to the `string_score` column and
+both pages show "STRING 0.93 (annotation, not a source)". The score arrives one build late, which
+is harmless in the `annotate && build` loop, and a pair STRING does not know simply has no score.
+
+A missing score is informative: STRING has nothing for **STIM1–STING1**, the bridge the whole map
+is built around. 154 of 403 interactions have one, median 0.83.
 
 ## Inclusion rule (applied by the build, for reference)
 

@@ -6,7 +6,7 @@
     hops: "camap.hops",
   };
   const { modules: MODULES, species: SPECIES } = CamapCore.LABELS;
-  const { refHref, calciumLabel } = CamapCore;
+  const { refHref, calciumLabel, stringLabel } = CamapCore;
   const { el, link, load, store, download } = CamapUI;
 
   const data = window.CAMAP || {};
@@ -119,7 +119,8 @@
         i.has_human_evidence === "false" && i.has_animal_evidence === "true"
           ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null,
         i.has_human_evidence === "false" && i.has_animal_evidence === "false"
-          ? el("span", { class: "tag" }, "Species not recorded") : null),
+          ? el("span", { class: "tag" }, "Species not recorded") : null,
+        stringLabel(i.string_score) ? el("span", { class: "tag" }, stringLabel(i.string_score)) : null),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
       neighbourhoodSection(),
       el("section", { class: "sources" },

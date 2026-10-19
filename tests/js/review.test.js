@@ -227,3 +227,10 @@ test("a deliberately non-calcium endpoint is exported and labelled as such", () 
   assert.equal(core.calciumLabel("", "true"), "not calcium-related (kept on purpose)");
   assert.equal(core.calciumLabel("GO", "false"), "GO annotation");
 });
+
+test("the STRING score travels to the kept export and reads as an annotation", () => {
+  assert.ok(core.INTERACTION_COLUMNS.includes("string_score"));
+  assert.equal(core.stringLabel("0.986"), "STRING 0.99 (annotation, not a source)");
+  assert.equal(core.stringLabel(""), null);
+  assert.equal(core.stringLabel("0.403"), "STRING 0.40 (annotation, not a source)");
+});

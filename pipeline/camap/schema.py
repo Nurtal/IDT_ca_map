@@ -38,7 +38,7 @@ CURATED_NODE_FIELDS = ["genecards", "protein_type", "localization", "domains",
 NODE_COLUMNS = ["id", "symbol", "name", "type", "module", "is_seed", "calcium_related", "uniprot",
                 "synonyms", "function_summary"] + CURATED_NODE_FIELDS
 INTERACTION_COLUMNS = ["interaction_id", "source", "target", "type", "directed", "mechanism",
-                       "n_sources", "n_pubs", "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence", "beyond_calcium",
+                       "n_sources", "n_pubs", "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence", "beyond_calcium", "string_score",
                        "justification", "conflict_with", "evidence_fingerprint"]
 EVIDENCE_COLUMNS = ["evidence_id", "interaction_id", "source_kind", "ref", "cited_pmid", "doi", "year",
                     "first_author", "sentence", "sentence_verified", "species_context",

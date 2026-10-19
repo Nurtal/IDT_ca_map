@@ -302,3 +302,30 @@ class TestBeyondCalcium(BuildCase):
         self.write_raw([rec(source="STING1", target="GPX4", type="expression_regulation_down",
                             sentence="STING degrades GPX4.")])
         self.assertEqual(self.build()["interactions"], [])
+
+
+class TestStringAnnotation(BuildCase):
+    """Story 22: STRING annotates the edges we have; it never creates one."""
+
+    def write_string(self, scores):
+        path = self.tmp / "cache" / "string"
+        path.mkdir(parents=True, exist_ok=True)
+        (path / "network.json").write_text(json.dumps(scores))
+
+    def test_an_interaction_carries_the_string_score_of_its_pair(self):
+        self.write_string({"STIM1|STING1": 0.42})
+        self.write_raw([rec()])
+        self.assertEqual(self.build(cache_dir=self.tmp / "cache")["interactions"][0]["string_score"],
+                         "0.42")
+
+    def test_a_pair_string_knows_nothing_about_leaves_the_column_empty(self):
+        self.write_string({"STIM1|ORAI1": 0.999})
+        self.write_raw([rec()])
+        self.assertEqual(self.build(cache_dir=self.tmp / "cache")["interactions"][0]["string_score"], "")
+
+    def test_a_string_pair_with_no_evidence_of_ours_is_not_an_interaction(self):
+        self.write_string({"STIM1|ORAI1": 0.999, "GAPDH|ACTB": 0.9})
+        self.write_raw([rec()])
+        d = self.build(cache_dir=self.tmp / "cache")
+        self.assertEqual([(i["source"], i["target"]) for i in d["interactions"]], [("STIM1", "STING1")])
+        self.assertNotIn("GAPDH", [n["id"] for n in d["nodes"]])

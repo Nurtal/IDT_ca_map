@@ -30,6 +30,7 @@ from camap.graph import build_graph  # noqa: E402
 from camap.annotate import annotate_genes, ensure_hgnc  # noqa: E402
 from camap.nodes import Resolver, load_config  # noqa: E402
 from camap.pubtator import PubTator  # noqa: E402
+from camap.string import fetch_scores, genes_only  # noqa: E402
 from camap.supp import (catalogue_report, load_supp_config, read_all, split_unresolved,  # noqa: E402
                         supp_file_stem)
 
@@ -58,6 +59,8 @@ def main(argv=None):
     sub.add_parser("fetch-db", help="import interaction databases around the seeds into data/raw")
     a = sub.add_parser("annotate", help="cache HGNC + GO calcium + UniProt annotations for all actors")
     a.add_argument("--raw", default=ROOT / "data" / "raw", type=Path)
+    a.add_argument("--nodes", default=ROOT / "data" / "nodes.csv", type=Path,
+                   help="the previous build's nodes, whose pairs get a STRING score")
     sub.add_parser("corpus", help="count the corpus and (re)build the work queue")
     s = sub.add_parser("supp", help="read the curator's spreadsheets in data_supp/ into data/raw")
     s.add_argument("--out", default=ROOT / "data", type=Path)
@@ -239,6 +242,16 @@ def main(argv=None):
             names.update((r["source"], r["target"]))
         symbols = {resolver.resolve(n) for n in names} - set(resolver.metabolites)
         print(f"{len(symbols)} actors, {annotate_genes(symbols, CACHE)} newly annotated")
+        # STRING scores the pairs of the map itself, not every actor seen in a raw record:
+        # it is an annotation on edges the map already has (story 22 of issue #1).
+        if args.nodes.exists():
+            with open(args.nodes, newline="") as f:
+                nodes = genes_only(r["id"] for r in csv.DictReader(f))
+            scores = fetch_scores(nodes, CACHE)
+            print(f"{len(nodes)} genes of the map, {len(scores)} STRING pair score(s) "
+                  f"(annotation only, never an edge)")
+        else:
+            print(f"no {show(args.nodes)} yet: run build once, then annotate again for STRING scores")
 
 
 if __name__ == "__main__":

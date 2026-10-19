@@ -213,7 +213,9 @@
         i.has_human_evidence === "false" && i.has_animal_evidence === "true"
           ? el("span", { class: "chip warn" }, "non-human only") : null,
         i.has_human_evidence === "false" && i.has_animal_evidence === "false"
-          ? el("span", { class: "chip" }, "species not recorded") : null),
+          ? el("span", { class: "chip" }, "species not recorded") : null,
+        CamapCore.stringLabel(i.string_score)
+          ? el("span", { class: "chip" }, CamapCore.stringLabel(i.string_score)) : null),
       el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—"),
       i.comment ? el("div", {}, el("h3", {}, "Review comment"), el("p", {}, i.comment + (i.reviewer ? " — " + i.reviewer : ""))) : null,
       el("h3", {}, "Evidence"),

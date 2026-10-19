@@ -218,3 +218,23 @@ That is the honest reading of "ratisse large", and it is now visible on every no
 of being implicit.
 
 Map: **207 nodes, 403 interactions, 647 evidence rows**. 128 Python + 33 JS tests.
+
+### 2026-10-19 — STRING as an annotation (story 22 of the spec)
+
+The last unimplemented story of issue #1. STRING is **never an edge source** — its scores mix
+co-expression, text mining and cross-species transfers, which is exactly the noise the spec wanted
+kept out — so it annotates edges the map already has. `cli.py annotate` asks STRING once for the
+pairwise scores among the genes of the last build (205 genes, one request, cached in
+`pipeline/cache/string/network.json`); the next `build` fills the `string_score` column, and both
+pages render "STRING 0.93 (annotation, not a source)".
+
+The score lands one build late, which is harmless in the `annotate && build` loop, and the cache is
+refetched whenever the gene set changes rather than patched.
+
+**154 of 403 interactions have a score, median 0.83** — and the absences say more than the scores:
+STRING has **nothing for STIM1–STING1**, the bridge this entire map is built around. Neither for
+the three other STIM1/STING1 edges. The lowest scores among our edges are CDK1–STIM1 (0.40),
+ADCY6–STIM1 (0.41), SQSTM1–STING1 (0.41) and TICAM1–STING1 (0.41) — all single-source claims, so
+the column is immediately useful as a sanity check at review.
+
+Map unchanged: 207 nodes, 403 interactions, 647 evidence rows. 138 Python + 34 JS tests.

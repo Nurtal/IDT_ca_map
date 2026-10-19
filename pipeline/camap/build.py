@@ -7,6 +7,7 @@ from pathlib import Path
 from .nodes import (DEFAULT_CONFIG, Annotations, Resolver, Universe, load_config, module_of,
                     select_nodes)
 from .pubtator import PubTator
+from .string import load_scores, score_of
 from .schema import (ANIMAL_CONTEXTS, CURATED_KINDS, CURATED_NODE_FIELDS, DATABASE_KINDS,
                      EVIDENCE_COLUMNS, HUMAN_CONTEXTS,
                      INTERACTION_COLUMNS, LINK_TYPES, LITERATURE_KINDS, NODE_COLUMNS,
@@ -86,8 +87,12 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG,
     evidence_ids = {}
     for eid, ev in evidence.items():
         evidence_ids.setdefault(ev["interaction_id"], []).append(eid)
+    string_scores = load_scores(cache_dir) if cache_dir else {}
     for iid, inter in interactions.items():
         finalize_interaction(inter, evidence_ids.get(iid, []), go_calcium, curated_calcium)
+        # STRING is a second opinion on an edge we already have, never an edge of its own
+        score = score_of(string_scores, inter["source"], inter["target"])
+        inter["string_score"] = "" if score is None else f"{float(score):g}"
     link_conflicts(interactions.values())
 
     nodes = [node_row(n, resolver, universe, annotations, neighbours, catalogue, calcium)

@@ -10,7 +10,7 @@
   const INTERACTION_COLUMNS = [
     "interaction_id", "source", "target", "type", "directed", "mechanism", "n_sources", "n_pubs",
     "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence",
-    "beyond_calcium",
+    "beyond_calcium", "string_score",
     "justification", "conflict_with",
     "evidence_fingerprint",
   ];
@@ -38,6 +38,14 @@
     if (beyond === "true" || beyond === true) return "not calcium-related (kept on purpose)";
     if (!value) return "none";
     return value.split("+").map((c) => LABELS.calcium[c] || c).join(" + ");
+  }
+
+  // STRING's functional-association score, when it has one for the pair. It is a second opinion
+  // on an edge somebody else found, never a source: the wording has to keep that clear.
+  function stringLabel(score) {
+    const value = Number(score);
+    if (!score || Number.isNaN(value)) return null;
+    return `STRING ${value.toFixed(2)} (annotation, not a source)`;
   }
 
   // Web page of a literature or database reference, or null.
@@ -289,5 +297,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { LABELS, calciumLabel, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { LABELS, calciumLabel, stringLabel, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });
