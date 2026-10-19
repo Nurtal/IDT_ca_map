@@ -2035,6 +2035,24 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "95918d6419d8"
  },
  {
+  "interaction_id": "3f3975b31a73",
+  "source": "STING1",
+  "target": "NLRP3",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "forward genetics in human myeloid cells: activated STING traffics to the lysosome, permeabilizes it and triggers lysosomal cell death, whose potassium efflux activates NLRP3; AIM2 is dispensable",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "true",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "curated",
+  "justification": "STING drives the inflammasome through lysosomal cell death. The mechanism shown is potassium efflux, not calcium: this edge enters only because NLRP3 is in the curator's catalogue, and it is hers to keep or reject at review.",
+  "conflict_with": "",
+  "evidence_fingerprint": "98239e262eff"
+ },
+ {
   "interaction_id": "40154542b559",
   "source": "PAK1",
   "target": "STIM1",
@@ -5671,6 +5689,24 @@ window.CAMAP.interactions = [
   "evidence_fingerprint": "f9fa75950bac"
  },
  {
+  "interaction_id": "c7fd7a3a527f",
+  "source": "STING1",
+  "target": "GSDMD",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "TMEM173/STING binding to ITPR1 raises cytosolic calcium in macrophages and monocytes, and that rise drives GSDMD cleavage; genetic or pharmacological inhibition of the TMEM173-GSDMD-F3 pathway blocks systemic coagulation in three sepsis models",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "false",
+  "has_animal_evidence": "true",
+  "calcium_evidence": "text+curated",
+  "justification": "The effector step of the STING-ITPR1 calcium arm: what the calcium released by STING actually does, and the reason that arm is lethal in sepsis.",
+  "conflict_with": "",
+  "evidence_fingerprint": "6ceab4dc42a4"
+ },
+ {
   "interaction_id": "c89aa4fdbbcf",
   "source": "BTK",
   "target": "STING1",
@@ -6749,6 +6785,24 @@ window.CAMAP.interactions = [
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3f8275a67112"
+ },
+ {
+  "interaction_id": "f082e77773eb",
+  "source": "CHEBI:29108",
+  "target": "GSDMD",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "cytosolic calcium rise downstream of the STING-ITPR1 complex drives GSDMD cleavage and activation in myeloid cells",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "false",
+  "has_animal_evidence": "true",
+  "calcium_evidence": "text",
+  "justification": "Calcium itself as the activator of GSDMD, which makes the ER release side of the axis a direct cause of pyroptosis rather than a correlate.",
+  "conflict_with": "",
+  "evidence_fingerprint": "0e5b876a2085"
  },
  {
   "interaction_id": "f0b1d33017dc",

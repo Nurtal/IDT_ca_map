@@ -125,10 +125,39 @@ STEEP1, VAPB, ARF1, the ORAI1 interactome) is now admissible and strengthens her
 publication. The 2026-10-16 rule — do not record a STING partner with no calcium link — only
 still holds for a partner that is in neither the sheets nor the catalogue.
 
-Leads from the reviews, each pointing at a primary paper worth pulling in by PMID: **STING binds
-ITPR1** to release ER calcium and trigger GSDMD pyroptosis and tissue-factor release (cited in
-PMC10001161 and PMC7473058) — ITPR1 is a level-1 seed, so that edge would land on the axis
-directly. And LDL traffic between lysosome and ER driving Ca²⁺ release with STING translocation
-(PMC12866496).
+Leads from the reviews, chased in the same session (see the next note): **STING binds ITPR1** to
+release ER calcium and trigger GSDMD pyroptosis and tissue-factor release (cited in PMC10001161
+and PMC7473058), and LDL traffic between lysosome and ER driving Ca²⁺ release with STING
+translocation (PMC12866496).
 
 **Next session:** tier 1 continues at PMID 32408624.
+
+### 2026-10-19 — chasing the two review leads to their primary papers
+
+**Lead 1 — STING–ITPR1 was already in the map, but only half of it.** The primary paper is Zhang
+et al., *Cell Host Microbe* 2020, "TMEM173 Drives Lethal Coagulation in Sepsis" (PMID 32142632),
+already `done` since 2026-10-16 with the STING1–ITPR1 and STING1→Ca²⁺ records. What the abstract
+also states, and what was missing, is the effector half:
+
+- **STING1 → GSDMD** and **Ca²⁺ → GSDMD** (activation): the TMEM173-dependent calcium rise drives
+  GSDMD cleavage, which releases F3 and starts coagulation. GSDMD enters on the calcium term in
+  that sentence. `GSDMD → F3` is not recorded: F3 touches no anchor, so the rule would drop it —
+  the clinical endpoint of this arm is therefore *not* visible in the map.
+
+PubTator has no full text for this paper (abstract only), so there is nothing more to extract from
+it without the publisher's PDF.
+
+**Lead 2 was an artefact.** The sentence in PMC12866496 is a figure legend that welds two unrelated
+mechanisms together: LDL moving between lysosome and ER drives Ca²⁺ release, *and* STING
+translocates to the lysosome. The primary paper behind the STING half is Gaidt et al., *Cell* 2017
+(PMID 29033128, found by title — PubTator's search does not surface it, and my first guess at the
+PMID was a different paper entirely). It contains **zero** occurrences of calcium or Ca²⁺: the
+mechanism is potassium efflux and lysosomal cell death.
+
+Recorded from it anyway, as a judgement call to be settled at review: **STING1 → NLRP3**
+(activation). It enters only because NLRP3 is in the curator's catalogue; the record's
+justification says plainly that the mechanism shown is K⁺, not calcium, so rejecting the card
+costs nothing. Neither of these two PMIDs is in the work queue — the corpus searches never
+surfaced them — which is the second time a lead has had to be added by hand.
+
+Map: **205 nodes, 401 interactions, 643 evidence rows**.

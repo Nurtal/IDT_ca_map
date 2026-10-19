@@ -1225,6 +1225,24 @@ window.CAMAP.nodes = [
   "functional_assignment": "NMDA receptor complex"
  },
  {
+  "id": "GSDMD",
+  "symbol": "GSDMD",
+  "name": "gasdermin D",
+  "type": "gene",
+  "module": "sting",
+  "is_seed": "false",
+  "uniprot": "P57764",
+  "synonyms": "GSDMDC1; FLJ12150; DF5L",
+  "function_summary": "Precursor of a pore-forming protein that plays a key role in host defense against pathogen infection and danger signals. This form constitutes the precursor of the pore-forming protein: upon cleavage, the released N-terminal moiety (Gasdermin-D, N-terminal) binds to membranes and forms pores, triggering pyroptosis",
+  "genecards": "",
+  "protein_type": "",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": ""
+ },
+ {
   "id": "GSN",
   "symbol": "GSN",
   "name": "gelsolin",
@@ -1691,6 +1709,24 @@ window.CAMAP.nodes = [
   "ca_functionality": "",
   "regulation": "",
   "functional_assignment": ""
+ },
+ {
+  "id": "NLRP3",
+  "symbol": "NLRP3",
+  "name": "NLR family pyrin domain containing 3",
+  "type": "gene",
+  "module": "sting",
+  "is_seed": "false",
+  "uniprot": "Q96P20",
+  "synonyms": "C1orf7; CIAS1; DFNA34; AGTAVPRL; AII; AVP; FCAS; FCU; NALP3; PYPAF1; MWS; CLR1.1",
+  "function_summary": "Sensor component of the NLRP3 inflammasome, which mediates inflammasome activation in response to defects in membrane integrity, leading to secretion of inflammatory cytokines IL1B and IL18 and pyroptosis. In response to pathogens and other damage-associated signals that affect the integrity of membranes, initiates the formation of the inflammasome polymeric complex composed of NLRP3, CASP1 and PYCARD/ASC. Recruitment of pro-caspase-1 (proCASP1) to the NLRP3 inflammasome promotes caspase-1 (CASP1) activation, which subsequently cleaves and activates inflammatory cytokines IL1B and IL18 and gasdermin-D (GSDMD), promoting cytokine secretion and pyroptosis. Activation of NLRP3 inflammasome is also required for HMGB1 secretion; stimulating inflammatory responses. Involved in the homeostatic wound healing response to tissue injury, a multistep cascade that guides neutrophil migration to necrotic sites while avoiding collateral damage of healthy tissues. ATP released from necrotic cells triggers activation of NLRP3 inflammasome through P2RX7 signaling leading to neutrophil adhesion to the vascular endothelium close to the injury site (By similarity). Under resting conditions, ADP-bound NLRP3 is autoinhibited. NLRP3 activation stimuli include extracellular ATP, nigericin, reactive oxygen species, crystals of monosodium urate or cholesterol, amyloid-beta fibers, environmental or industrial particles and nanoparticles, such as asbestos, silica, aluminum salts, cytosolic dsRNA, etc. Almost all stimuli trigger intracellular K(+) efflux (By similarity). These stimuli lead to membrane perturbation and activation of NLRP3 (By similarity). Upon activation, NLRP3 is transported to microtubule organizing center (MTOC), where it is unlocked by NEK7, leading to its relocalization to dispersed trans-Golgi network (dTGN) vesicle membranes and formation of an active inflammasome complex. Associates with dTGN vesicle membranes by binding to phosphatidylinositol 4-phosphate (PtdIns4P). Shows ATPase activity",
+  "genecards": "GC01P247415",
+  "protein_type": "",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": "Inflammasome"
  },
  {
   "id": "NLRX1",

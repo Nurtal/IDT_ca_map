@@ -4291,6 +4291,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
+  "evidence_id": "7534fee77c32",
+  "interaction_id": "f082e77773eb",
+  "source_kind": "pubmed",
+  "ref": "PMID:32142632",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Zhang H",
+  "sentence": "The TMEM173-dependent increase in cytosolic calcium drives Gasdermin D (GSDMD) cleavage and activation, which triggers the release of F3, the key initiator of blood coagulation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "75a082f30fe1",
   "interaction_id": "aa1574b3f313",
   "source_kind": "pmc",
@@ -8371,6 +8386,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "e1d8393b4460",
+  "interaction_id": "3f3975b31a73",
+  "source_kind": "pubmed",
+  "ref": "PMID:29033128",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2017.09.039",
+  "year": "2017",
+  "first_author": "Gaidt MM",
+  "sentence": "Instead, detection of cytosolic DNA by the cGAS-STING axis induces a cell death program initiating potassium efflux upstream of NLRP3.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e22fb12dcd91",
   "interaction_id": "78b6895ffd5e",
   "source_kind": "curated",
@@ -9522,6 +9552,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ff71d648690f",
+  "interaction_id": "c7fd7a3a527f",
+  "source_kind": "pubmed",
+  "ref": "PMID:32142632",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Zhang H",
+  "sentence": "The TMEM173-dependent increase in cytosolic calcium drives Gasdermin D (GSDMD) cleavage and activation, which triggers the release of F3, the key initiator of blood coagulation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
