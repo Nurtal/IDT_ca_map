@@ -2326,6 +2326,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "33efd47840fb",
+  "interaction_id": "83d67df130d9",
+  "source_kind": "pmc",
+  "ref": "PMC9180186",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Robitaille M",
+  "sentence": "The activation of SOCE by thapsigargin resulted in ORAI1-dependent increases in IL6 transcription in MDA-MB-468 cells; this was also dependent on ORAI1 pore function and STIM1 binding and was associated with the translocation of NFAT1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "33f9fae8725d",
   "interaction_id": "491bbd785519",
   "source_kind": "intact",
@@ -2836,6 +2851,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/Orai/row 7"
  },
  {
+  "evidence_id": "3f7b24f712a1",
+  "interaction_id": "1943c2b6ff33",
+  "source_kind": "pmc",
+  "ref": "PMC7555297",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Pascual-Caro C",
+  "sentence": "Thus, STIM1 deficiency leads to a strong reduction of ITPR3 transcript and ITPR3 protein levels, a consequent decrease of the mitochondria free Ca2+ concentration ([Ca2+]mit), reduction of mitochondrial oxygen consumption rate, and decrease in ATP synthesis rate.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "3f9a0cb342dc",
   "interaction_id": "e2e8aa8e31aa",
   "source_kind": "curated",
@@ -2967,6 +2997,36 @@ window.CAMAP.evidence = [
   "sentence": "Stx17 is phosphorylated by TBK1 whereby phospho-Stx17 controls the formation of the ATG13+FIP200+ mammalian pre-autophagosomal structure (mPAS) in response to induction of autophagy.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4138ee3fb901",
+  "interaction_id": "71b057e9e554",
+  "source_kind": "pmc",
+  "ref": "PMC6997179",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Pelzl L",
+  "sentence": "In conclusion, phosphate-donor ss-glycerophosphate triggers a signaling cascade of NFAT5/SGK1/ORAI/STIM, thus up-regulating store-operated Ca2+-entry.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "41a87a6a0e17",
+  "interaction_id": "3fef7b06386d",
+  "source_kind": "pubmed",
+  "ref": "PMID:20937810",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Li H",
+  "sentence": "JP1 KO myotubes show down-regulation of Orai1 and Stim1 proteins, suggesting that this pathway may be important in the control of resting Ca(2+) homeostasis.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3406,6 +3466,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 86"
  },
  {
+  "evidence_id": "4c63e33bc8dc",
+  "interaction_id": "639ff4b73a78",
+  "source_kind": "signor",
+  "ref": "SIGNOR-264025",
+  "cited_pmid": "21871017",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "NFAT induces the transcription of the COX2 (cyclo-oxygenase-2) gene incancer cells thereby enhancing invasive migration",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "4cb76400aaa0",
   "interaction_id": "6f12712339e1",
   "source_kind": "omnipath",
@@ -3417,6 +3492,36 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4cf2c7a5a77c",
+  "interaction_id": "12d8dcd8ffb1",
+  "source_kind": "pmc",
+  "ref": "PMC9180186",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Robitaille M",
+  "sentence": "In the absence of calcium store depletion, ORAI1 regulated PTGS2 in MDA-MB-231 cells, and this was dependent on ORAI1 pore function and STIM1 binding.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4d3b47ad2cfd",
+  "interaction_id": "3019579faa8e",
+  "source_kind": "signor",
+  "ref": "SIGNOR-251721",
+  "cited_pmid": "27337441",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Recent reports show that in mice the microbiome, comprising commensal microorganisms that colonize body surfaces, promotes a partial and low-grade M1-like phenotype in macrophages throughout the body, including those in lymphoid organs (119, 120). This M1-like priming of macrophages induces chromatin remodeling with increased H3K4me3 marks at Ifnb, Il6, and Tnf promoters, which is associated with increased binding of NF-κB p65, IRF3, and Pol II upon cell stimulation",
+  "sentence_verified": "unverifiable",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -6856,6 +6961,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8f2c4464ed49",
+  "interaction_id": "2e753c29728a",
+  "source_kind": "pubmed",
+  "ref": "PMID:32750041",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Volz J",
+  "sentence": "Here, we identified the BAR domain superfamily member bridging integrator 2 (BIN2) as an interaction partner of STIM1 and IP3R in platelets.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8fc48e4c82a1",
   "interaction_id": "60fa4ff100bf",
   "source_kind": "curated",
@@ -7681,6 +7801,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "9e02dd8a6ad4",
+  "interaction_id": "3b1a5179c798",
+  "source_kind": "pubmed",
+  "ref": "PMID:31036675",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Harada K",
+  "sentence": "Proximity ligation assay (PLA) revealed that when exogenously expressed in PC12 cells, TRPC1 forms a heteromeric channel with TRPC4, but not with TRPC5, in a STIM1-dependent manner.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "9e8a3c6ee46d",
   "interaction_id": "304551c57e7d",
   "source_kind": "intact",
@@ -7917,6 +8052,21 @@ window.CAMAP.evidence = [
   "sentence": "Here, we show that the lipid raft scaffolding protein caveolin-1 interacts with the STIM1-Orai1 complex to increase channel activity.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a4ad5db598e7",
+  "interaction_id": "750f7e3a17af",
+  "source_kind": "signor",
+  "ref": "SIGNOR-264026",
+  "cited_pmid": "21871017",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "NFAT induces the transcription of the COX2 (cyclo-oxygenase-2) gene incancer cells thereby enhancing invasive migration",
+  "sentence_verified": "true",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8581,6 +8731,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b23e8570a791",
+  "interaction_id": "fbcfb135f730",
+  "source_kind": "pubmed",
+  "ref": "PMID:17486119",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Yuan JP",
+  "sentence": "Here, we report that STIM1 binds TRPC1, TRPC4 and TRPC5 and determines their function as SOCs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b242da59c3b6",
   "interaction_id": "97ffc40e214a",
   "source_kind": "intact",
@@ -8836,6 +9001,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b8bc0ff71f79",
+  "interaction_id": "3ac699f1fe45",
+  "source_kind": "pubmed",
+  "ref": "PMID:20937810",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Li H",
+  "sentence": "JP1 KO myotubes show down-regulation of Orai1 and Stim1 proteins, suggesting that this pathway may be important in the control of resting Ca(2+) homeostasis.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b9802e636874",
   "interaction_id": "d4c2f9cbecf2",
   "source_kind": "signor",
@@ -8877,6 +9057,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ba736fe01bc5",
+  "interaction_id": "86e027c10c69",
+  "source_kind": "pubmed",
+  "ref": "PMID:17486119",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Yuan JP",
+  "sentence": "Here, we report that STIM1 binds TRPC1, TRPC4 and TRPC5 and determines their function as SOCs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -9811,6 +10006,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
+  "evidence_id": "d0ca86000d24",
+  "interaction_id": "8a567431c9ec",
+  "source_kind": "pubmed",
+  "ref": "PMID:42386717",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Lee S",
+  "sentence": "We conclude that Ca2+ ions released by TPC2 channels on lysosomes regulate CaM-dependent STIM1 inactivation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d0fd9a886ab1",
   "interaction_id": "3352e3f8c299",
   "source_kind": "pmc",
@@ -9946,6 +10156,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 88"
  },
  {
+  "evidence_id": "d3b30b58e071",
+  "interaction_id": "caea11d91239",
+  "source_kind": "signor",
+  "ref": "SIGNOR-251731",
+  "cited_pmid": "17079331",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "The calcineurin/nuclear factor of activated T cells (NFAT) signaling pathway has been found to play a role in regulating growth and differentiation in several cell types. However, the functional significance of NFAT in the vasculature is largely unclear. Here we show that NFATc1, NFATc3, and NFATc4 are expressed in human myometrial arteries. |Chronic inhibition of NFAT significantly reduced IL-6 production in intact myometrial arteries and inhibited cell proliferation in vascular smooth muscle cells cultured from explants from the same arteries.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d3c159ed666f",
   "interaction_id": "cdd1cf039408",
   "source_kind": "intact",
@@ -9957,6 +10182,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d4296a2e6a47",
+  "interaction_id": "8c3c347730d9",
+  "source_kind": "pubmed",
+  "ref": "PMID:20534587",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Kawasaki T",
+  "sentence": "We propose that PKC suppresses SOCE and CRAC channel function by phosphorylation of Orai1 at N-terminal serine residues Ser-27 and Ser-30.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -11431,6 +11671,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "ef01416ac6e7",
+  "interaction_id": "cd0746c5ee78",
+  "source_kind": "pubmed",
+  "ref": "PMID:35045297",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Lee SK",
+  "sentence": "Here, we report that PGRMC1 promotes store-operated Ca2+ entry (SOCE) as a functional interactor of stromal interaction molecule 1 (STIM1).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ef23f36f1854",
   "interaction_id": "f0d7c170aa82",
   "source_kind": "intact",
@@ -11551,6 +11806,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
+  "evidence_id": "f21aa3b728b9",
+  "interaction_id": "a1a4f51a650c",
+  "source_kind": "signor",
+  "ref": "SIGNOR-251730",
+  "cited_pmid": "17079331",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "The calcineurin/nuclear factor of activated T cells (NFAT) signaling pathway has been found to play a role in regulating growth and differentiation in several cell types. However, the functional significance of NFAT in the vasculature is largely unclear. Here we show that NFATc1, NFATc3, and NFATc4 are expressed in human myometrial arteries. |Chronic inhibition of NFAT significantly reduced IL-6 production in intact myometrial arteries and inhibited cell proliferation in vascular smooth muscle cells cultured from explants from the same arteries.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "f2c6382a9a58",
   "interaction_id": "0d5730e72e17",
   "source_kind": "curated",
@@ -11577,6 +11847,21 @@ window.CAMAP.evidence = [
   "sentence": "Taken together, our data demonstrate that PAK1 interacts with STIM1 and phosphorylates specific STIM1 cytosolic domains.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f36bae7c4270",
+  "interaction_id": "a63a5cac91e1",
+  "source_kind": "pubmed",
+  "ref": "PMID:23068106",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Horinouchi T",
+  "sentence": "Coimmunoprecipitation experiments have revealed that when compared with STIM1, STIM1L binds more abundantly to Orai1 and also to TRPC3 and TRPC6.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -12012,6 +12297,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fed5d9bdbe9b",
+  "interaction_id": "69e74ba2493e",
+  "source_kind": "pubmed",
+  "ref": "PMID:17486119",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Yuan JP",
+  "sentence": "STIM1 does not bind TRPC3 and TRPC6, and regulates their function indirectly by mediating the heteromultimerization of TRPC3 with TRPC1 and TRPC6 with TRPC4.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },

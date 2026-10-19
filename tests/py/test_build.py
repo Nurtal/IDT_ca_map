@@ -421,6 +421,17 @@ class TestQuoteMatching(BuildCase):
                  "STIM1 was shown to be dispensable throughout the study.")
         self.assertEqual(self.status(quote, text), "false")
 
+    def test_a_word_boundary_the_database_lost_still_verifies(self):
+        # SIGNOR-264025 quotes "incancer cells" where the paper reads "in cancer cells"
+        text = "Similarly, NFAT induces the transcription of the COX2 gene in cancer cells."
+        quote = "NFAT induces the transcription of the COX2 gene incancer cells"
+        self.assertEqual(self.status(quote, text), "true")
+
+    def test_dropping_spaces_does_not_make_an_invented_sentence_match(self):
+        text = "Similarly, NFAT induces the transcription of the COX2 gene in cancer cells."
+        quote = "NFAT represses the transcription of the COX2 gene in cancer cells"
+        self.assertEqual(self.status(quote, text), "false")
+
     def test_sentences_glued_without_a_space_are_still_split(self):
         text = ("Induction of downstream antiviral genes followed. "
                 "A section heading sits here. "

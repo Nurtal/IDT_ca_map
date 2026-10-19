@@ -29,8 +29,22 @@ def normalize(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+@lru_cache(maxsize=512)
+def despaced(text):
+    """`normalize` collapses runs of whitespace; this drops them entirely.
+
+    A database excerpt sometimes loses a word boundary where a line ended in the source
+    ("incancer cells" for "in cancer cells" in SIGNOR-264025). Comparing both sides without
+    any whitespace forgives exactly that, and nothing else: every character of the quote,
+    in order, must still be in the text, so an invented or altered sentence still fails.
+    """
+    return re.sub(r"\s+", "", normalize(text))
+
+
 def sentence_in(sentence, text):
-    return bool(sentence) and normalize(sentence) in normalize(text)
+    if not sentence:
+        return False
+    return normalize(sentence) in normalize(text) or despaced(sentence) in despaced(text)
 
 
 # a sentence boundary with whitespace, a paragraph break, or — as database excerpts come —

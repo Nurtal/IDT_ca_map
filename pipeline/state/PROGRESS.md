@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 420 done, 12977 pending, 120 skipped, 2 error.
+13519 articles in queue: 470 done, 12927 pending, 120 skipped, 2 error.
 
-- tier 0: 392/3800 processed
+- tier 0: 442/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -504,3 +504,53 @@ SOCE even when they cannot release Ca²⁺ — but it says "IP3Rs", and ITPR1, I
 three separate seeds. The same ambiguity as `AP-1` and `septins`.
 
 Map: **236 nodes, 524 interactions, 809 evidence rows**.
+
+## 2026-10-19 — Extraction batch 10 (tier 0, `--primary`)
+
+50 articles, **15 records** in `data/raw/lit_20261019_b14.jsonl`, **4 new nodes** (TPCN2, NFAT5,
+PTGS2, IL6). Most of this batch is STIM1-ORAI1 structure-function — pore mutants, SOAR/CAD
+geometry, gating checkpoints, CRAC inhibitors — which the map already holds as a single edge, so
+the records come from the margins of the batch rather than its centre.
+
+**Six records exist to put a publication under one of the curator's rows**, which had the
+interaction but no reference: **BIN2** (PMID 32750041, the BAR-domain protein binding STIM1 and
+IP3R in platelets), **PGRMC1** (PMID 35045297, binds the STIM1 coiled-coil and promotes the
+conformational switch), **JPH1** ×2 (PMID 20937810, junctophilin-1 knockout myotubes lose STIM1
+and ORAI1 protein), **TRPC5** and **TRPC1** (PMID 17486119, STIM1 binds TRPC1/4/5), **PRKCB**
+(PMID 20534587, PKC phosphorylates ORAI1 at Ser-27/Ser-30 and suppresses SOCE).
+
+**Measured coverage.** Curated *pairs* with a publication on the same pair: **31 of 174**. The
+narrower count — a curated interaction *row* whose own id carries a publication — is only
+**15 of 179**, because the type we read in the paper often differs from the type in her sheet
+(she has BIN2 → STIM1 as `activation`, the paper shows `physical_binding`). The pair-level number
+is the honest one; the row-level number undercounts and should not be read as a regression.
+
+**A disagreement recorded on purpose.** PMID 17486119 says STIM1 **does not** bind TRPC3 or TRPC6
+and reaches them only by pairing TRPC3 with TRPC1 and TRPC6 with TRPC4; PMID 23068106 finds the
+**STIM1L** splice variant binding TRPC3 and TRPC6 directly. Both are in, each with the other named
+in its `mechanism`. Likewise PMID 17486119 (STIM1 binds TRPC1) sits next to PMID 19307462 from
+batch 7 (STIM1 binds TRPC4 *but not* TRPC1). `link_conflicts` does not pair these, because it
+compares the sign of a regulation and both are bindings — a gap worth knowing.
+
+**New arms.** **TPCN2 → STIM1 inhibition** (PMID 42386717, 2026): calcium released by the lysosomal
+two-pore channel enforces calmodulin-dependent STIM1 inactivation — the second lysosomal entry
+point into this map. **ORAI1 → PTGS2** and **ORAI1 → IL6** (PMC9180186): the same channel writes
+two different gene programmes, PTGS2 with full stores and IL6 after thapsigargin, via NFAT1.
+**STIM1 → ITPR3 expression** (PMC7555297): STIM1 knockout cuts ITPR3 and with it mitochondrial
+calcium, respiration and ATP. **NFAT5 → ORAI1 expression** (PMC6997179): phosphate →
+NFAT5 → SGK1 → ORAI1, which gives last batch's SGK1 its upstream.
+
+**The verifier lost one more class of false alarm.** Two new ⚠️ appeared with PTGS2 (SIGNOR-264025/6
+quote `incancer cells` where the paper reads "in cancer cells"). `sentence_in` now retries with all
+whitespace removed on both sides — it forgives a lost word boundary and nothing else, since every
+character of the quote must still appear in order. Red test first, plus one asserting an altered
+sentence still fails. **0 flagged, 46 unverifiable.**
+
+Not recorded, for want of a subject: PMID 35853265 shows lipid transfer proteins controlling SOCE
+through PM phosphoinositides, but names only "ORPs" generically — the fourth time this ambiguity
+has blocked a record, after `AP-1`, `septins` and `IP3Rs`. PMID 32916960's claim that STIM1 binds
+CaV1.2 is background cited to others; the pair is already in the map from the curator's sheet.
+
+Map: **241 nodes, 541 interactions, 829 evidence rows**. Tests: **153 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
