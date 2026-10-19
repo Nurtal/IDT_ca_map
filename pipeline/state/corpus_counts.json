@@ -1,11 +1,11 @@
 {
- "total_articles": 9100,
+ "total_articles": 9104,
  "per_query": {
   "@GENE_STIM1 AND @GENE_STING1": 192,
   "@GENE_STIM1 AND @GENE_STIM2": 1041,
-  "@GENE_STIM1 AND @GENE_ORAI1": 3371,
+  "@GENE_STIM1 AND @GENE_ORAI1": 3372,
   "@GENE_STIM1 AND @GENE_ORAI2": 556,
-  "@GENE_STIM1 AND @GENE_ORAI3": 652,
+  "@GENE_STIM1 AND @GENE_ORAI3": 653,
   "@GENE_STIM1 AND @GENE_SARAF": 130,
   "@GENE_STIM1 AND @GENE_STIMATE": 58,
   "@GENE_STIM1 AND @GENE_CRACR2A": 73,
@@ -28,9 +28,9 @@
   "@GENE_STIMATE AND @GENE_STING1": 5,
   "@GENE_CRACR2A AND @GENE_STING1": 4,
   "@GENE_TRPC1 AND @GENE_STING1": 18,
-  "@GENE_STING1 AND @GENE_CGAS AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 2167,
-  "@GENE_STING1 AND @GENE_TBK1 AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 1073,
-  "@GENE_STING1 AND @GENE_IRF3 AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 1257,
+  "@GENE_STING1 AND @GENE_CGAS AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 2168,
+  "@GENE_STING1 AND @GENE_TBK1 AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 1074,
+  "@GENE_STING1 AND @GENE_IRF3 AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 1258,
   "@GENE_STING1 AND @GENE_IKBKE AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 198,
   "@GENE_STING1 AND @GENE_ATP2A2": 42,
   "@GENE_STING1 AND @GENE_ITPR1": 77,
@@ -38,12 +38,12 @@
   "@GENE_STING1 AND @GENE_ITPR3": 157,
   "@GENE_STING1 AND @GENE_RYR1": 38,
   "@GENE_STING1 AND @GENE_CALM1": 65,
-  "@GENE_STIM1": 5691,
-  "@GENE_STING1 AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 3484
+  "@GENE_STIM1": 5693,
+  "@GENE_STING1 AND (calcium OR Ca2+ OR SOCE OR \"store-operated\")": 3486
  },
  "per_tier": {
   "0": 192,
-  "1": 6582,
-  "2": 2326
+  "1": 6584,
+  "2": 2328
  }
 }

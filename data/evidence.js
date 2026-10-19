@@ -136,6 +136,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "03c6d2e397e6",
+  "interaction_id": "73166cae9c7f",
+  "source_kind": "pmc",
+  "ref": "PMC4320088",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Kodigepalli KM",
+  "sentence": "Strikingly, knockdown of STING dramatically reduced PLSCR1 protein.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "03e9b00a8ead",
   "interaction_id": "6e534e82a5fe",
   "source_kind": "pmc",
@@ -1651,6 +1666,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "32710d575e7c",
+  "interaction_id": "23e45dcb33c4",
+  "source_kind": "pmc",
+  "ref": "PMC6656764",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Tedeschi V",
+  "sentence": "In addition, TRPML1 co-immunoprecipitated with the ER Ca2+ sensor STIM1.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "32b7c28949ca",
   "interaction_id": "0033ae3c1239",
   "source_kind": "curated",
@@ -2926,6 +2956,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 56"
  },
  {
+  "evidence_id": "5553047c79d8",
+  "interaction_id": "dcd386bec779",
+  "source_kind": "pmc",
+  "ref": "PMC4320088",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Kodigepalli KM",
+  "sentence": "Knockdown of STING, STAT1, or IRF3 leads to reduced PLSCR1 protein.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5554a9ceb00a",
   "interaction_id": "8ce086544075",
   "source_kind": "curated",
@@ -3044,6 +3089,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 4",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 85"
+ },
+ {
+  "evidence_id": "5898bb75e04d",
+  "interaction_id": "2447a8d4be0a",
+  "source_kind": "pmc",
+  "ref": "PMC4077721",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Schoggins JW",
+  "sentence": "These data indicate that, in STAT1-/- fibroblasts, lentiviral-driven cGAS expression activates IRF3 through STING and establishes a transcriptional program that inhibits infection of several RNA viruses.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5923e1feba93",
@@ -9400,6 +9460,21 @@ window.CAMAP.evidence = [
   "year": "2023",
   "first_author": "Li S",
   "sentence": "The subsequent binding of cGAMP to STING causes its dissociation from TRPV2, leading to TRPV2 derepression and Ca2+ release from the ER, which in turn activates the downstream signaling cascade to prevent fork degradation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fddae0af34aa",
+  "interaction_id": "8e2e4e6d2d56",
+  "source_kind": "pmc",
+  "ref": "PMC4077721",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Schoggins JW",
+  "sentence": "These data indicate that, in STAT1-/- fibroblasts, lentiviral-driven cGAS expression activates IRF3 through STING and establishes a transcriptional program that inhibits infection of several RNA viruses.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",

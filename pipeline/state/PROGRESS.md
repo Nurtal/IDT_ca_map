@@ -5,11 +5,11 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9100 articles in queue: 111 done, 8910 pending, 77 skipped, 2 error.
+9104 articles in queue: 118 done, 8864 pending, 120 skipped, 2 error.
 
 - tier 0: 71/192 processed
-- tier 1: 119/6582 processed
-- tier 2: 0/2326 processed
+- tier 1: 169/6584 processed
+- tier 2: 0/2328 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
 <!-- auto:end -->
@@ -96,3 +96,39 @@ curated cards in the stack, reviewing source by source is the only practical way
 
 **Next session:** the review stack is what matters now — 394 interactions, most of them unreviewed.
 Extraction resumes at tier 1, PMID 37961129.
+
+### 2026-10-19 — batch 3 (tier 1, 50 articles)
+
+7 done, 43 skipped (27 reviews/commentaries/meeting reports, 16 omics screens or atlases that
+list the genes without measuring them). 5 records in `data/raw/lit_20261019_b03.jsonl`, 2 new
+nodes: **MCOLN1** and **PLSCR1**. Map: 203 nodes, 398 interactions, 640 evidence rows.
+
+- **MCOLN1 (TRPML1) binds STIM1** (PMC6656764, NSC-34 mouse motor neurons): reciprocal co-IP,
+  co-localization lost on TRPML1 silencing. The lysosomal Ca²⁺ channel touching the ER anchor —
+  a lysosome–ER contact feeding the store that drives SOCE. `calcium_evidence = GO+text+curated`.
+- **STING1 → PLSCR1 and IRF3 → PLSCR1** (PMC4320088, T80 human ovarian epithelial cells): STING
+  or IRF3 knockdown ablates dsDNA-induced PLSCR1 protein. PLSCR1 is a Ca²⁺-dependent scramblase
+  in the catalogue, so the STING arm reaches calcium-dependent machinery by transcription, not by
+  binding. This edge exists **only because the catalogue supplies the calcium criterion**.
+- **CGAS → STING1 → IRF3** (PMC4077721, human STAT1-/- fibroblasts): the canonical arm, shown
+  independently of IFN/STAT1 signalling. Strengthens edges the databases already carried.
+
+Read but nothing admissible: **MG53/TRIM72** (PMC7368064) is a real calcium brake on interferon —
+it co-IPs with RyR, suppresses RyR-mediated Ca²⁺ oscillation and so suppresses IFNβ, IRF3 and
+NF-κB activity — but nothing ties TRIM72 to STIM1 or STING1, so the rule drops it. Worth a second
+look if a paper links MG53 to either anchor. Also read: entinostat/IFIT1-STING (PMC7244011, drug
+effect on expression, no interaction of ours), SARS-CoV-2 nsp interactomics (PMC7373130, STING
+only in the introduction), Nampt/Sirt6 (PMC6409323, temporal expression only).
+
+**Convention updated** by the wider net: a claim about a partner the curator brought in (COPA,
+STEEP1, VAPB, ARF1, the ORAI1 interactome) is now admissible and strengthens her edge with a
+publication. The 2026-10-16 rule — do not record a STING partner with no calcium link — only
+still holds for a partner that is in neither the sheets nor the catalogue.
+
+Leads from the reviews, each pointing at a primary paper worth pulling in by PMID: **STING binds
+ITPR1** to release ER calcium and trigger GSDMD pyroptosis and tissue-factor release (cited in
+PMC10001161 and PMC7473058) — ITPR1 is a level-1 seed, so that edge would land on the axis
+directly. And LDL traffic between lysosome and ER driving Ca²⁺ release with STING translocation
+(PMC12866496).
+
+**Next session:** tier 1 continues at PMID 32408624.

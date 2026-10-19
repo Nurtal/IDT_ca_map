@@ -2017,6 +2017,24 @@ window.CAMAP.nodes = [
   "functional_assignment": "Ca2+ ATPase regulation"
  },
  {
+  "id": "PLSCR1",
+  "symbol": "PLSCR1",
+  "name": "phospholipid scramblase 1",
+  "type": "gene",
+  "module": "sting",
+  "is_seed": "false",
+  "uniprot": "O15162",
+  "synonyms": "MMTRA1B",
+  "function_summary": "Catalyzes calcium-induced ATP-independent rapid bidirectional and non-specific movement of phospholipids (lipid scrambling or lipid flip-flop) between the inner and outer leaflet of the plasma membrane resulting in collapse of the phospholipid asymmetry which leads to phosphatidylserine externalization on the cell surface. Mediates calcium-dependent phosphatidylserine externalization and apoptosis in neurons via its association with TRPC5 (By similarity). Also exhibits magnesium-dependent nuclease activity against double-stranded DNA and RNA but not single-stranded DNA and can enhance DNA decatenation mediated by TOP2A. Negatively regulates FcR-mediated phagocytosis in differentiated macrophages. May contribute to cytokine-regulated cell proliferation and differentiation (By similarity). May play a role in the antiviral response of interferon (IFN) by amplifying and enhancing the IFN response through increased expression of select subset of potent antiviral genes. Inhibits the functions of viral transactivators, including human T-cell leukemia virus (HTLV)-1 protein Tax, human immunodeficiency virus (HIV)-1 Tat, human hepatitis B virus (HBV) HBx, Epstein-Barr virus (EBV) BZLF1 and human cytomegalovirus IE1 and IE2 proteins through direct interactions. Also mediates the inhibition of influenza virus infection by preventing nuclear import of the viral nucleoprotein/NP. Plays a crucial role as a defense factor against SARS-CoV-2 independently of its scramblase activity by directly targeting nascent viral vesicles to prevent virus-membrane fusion and the release of viral RNA into the host-cell cytosol",
+  "genecards": "GC03M146515",
+  "protein_type": "",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": ""
+ },
+ {
   "id": "PMP22",
   "symbol": "PMP22",
   "name": "peripheral myelin protein 22",

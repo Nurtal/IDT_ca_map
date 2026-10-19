@@ -75,6 +75,10 @@ Rules of thumb:
 - Bridges between the STIM1/SOCE side and the STING side deserve an explicit justification.
 - Do not invent direction: if unclear, use `physical_binding` or `unknown_regulation`.
 - Keep reviews/meta-analyses as `skipped` unless they report primary data.
+- The partners the curator brought in are now nodes, so a claim about one of them (COPA, STEEP1,
+  VAPB, ARF1, the ORAI1 interactome...) **is** admissible and strengthens her edge with a
+  publication. The 2026-10-16 convention — do not record a STING partner with no calcium link —
+  only still holds for a partner that is in neither the sheets nor the catalogue.
 
 ## Inclusion rule (applied by the build, for reference)
 
