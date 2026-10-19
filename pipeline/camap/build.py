@@ -47,10 +47,20 @@ def source_document(r, texts):
 
 
 def evidence_sentence(r, doc, names):
-    """(sentence, verified) — database rows without a sentence borrow one from the cited abstract."""
+    """(sentence, verified) — database rows without a sentence borrow one from the cited abstract.
+
+    `verified` is "true", "false", "unverifiable" or "" (no quote). A database excerpt usually
+    quotes the full text of the paper it cites, and PubTator often holds only the abstract: not
+    finding it there proves nothing, so calling that "false" buries the one warning that matters,
+    a quote of our own that is not in the text we read.
+    """
     sentence = r.get("sentence", "")
     if sentence:
-        return sentence, "true" if doc and sentence_in(sentence, doc["text"]) else "false"
+        if doc and sentence_in(sentence, doc["text"]):
+            return sentence, "true"
+        if r["source_kind"] in DATABASE_KINDS and not (doc and doc.get("full_text")):
+            return sentence, "unverifiable"
+        return sentence, "false"
     if r["source_kind"] in DATABASE_KINDS and doc:
         found = find_sentence(doc["text"], names(r["_source_id"]), names(r["_target_id"]))
         if found:

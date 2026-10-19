@@ -62,6 +62,19 @@
     return `STRING ${value.toFixed(2)} (annotation, not a source)`;
   }
 
+  // What to say under a quote, given the build's sentence_verified. "false" is the real alarm:
+  // a quote that should be in the text we read and is not. "unverifiable" is a database excerpt
+  // from a paper we only have the abstract of — absence there proves nothing.
+  function verificationNote(verified) {
+    if (verified === "false") {
+      return { level: "warn", text: "⚠️ Not found verbatim in the source text" };
+    }
+    if (verified === "unverifiable") {
+      return { level: "muted", text: "Database excerpt; only the abstract of the cited paper is available" };
+    }
+    return null;
+  }
+
   // Web page of a literature or database reference, or null.
   function refHref(ref) {
     ref = ref || "";
@@ -311,5 +324,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { LABELS, calciumLabel, stringLabel, axisSide, crossesAxis, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { LABELS, calciumLabel, stringLabel, verificationNote, axisSide, crossesAxis, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });

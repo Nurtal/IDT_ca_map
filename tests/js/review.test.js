@@ -247,3 +247,12 @@ test("an interaction crossing the axis is recognised as a STIM1-STING bridge", (
   // a node whose module is unknown makes no claim either way
   assert.equal(crosses("STING1", "UNKNOWN"), false);
 });
+
+test("an unverifiable database excerpt is told apart from a failed verbatim check", () => {
+  assert.deepEqual(core.verificationNote("true"), null);
+  assert.deepEqual(core.verificationNote(""), null);
+  assert.deepEqual(core.verificationNote("false"),
+    { level: "warn", text: "⚠️ Not found verbatim in the source text" });
+  assert.deepEqual(core.verificationNote("unverifiable"),
+    { level: "muted", text: "Database excerpt; only the abstract of the cited paper is available" });
+});

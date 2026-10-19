@@ -329,3 +329,44 @@ class TestStringAnnotation(BuildCase):
         d = self.build(cache_dir=self.tmp / "cache")
         self.assertEqual([(i["source"], i["target"]) for i in d["interactions"]], [("STIM1", "STING1")])
         self.assertNotIn("GAPDH", [n["id"] for n in d["nodes"]])
+
+
+class TestVerificationStatus(BuildCase):
+    """A quote that cannot be checked is not a quote that failed the check.
+
+    A database excerpt usually comes from the full text of the paper it cites, and PubTator
+    often has only the abstract. Flagging those "not found verbatim" put 55 false warnings in
+    the review stack, which is how a real alarm — our own paraphrased quote — gets ignored.
+    """
+
+    def cache_doc(self, pmid, text, full_text=False):
+        d = self.tmp / "cache" / "pubtator"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{pmid}.json").write_text(json.dumps(
+            {"pmid": pmid, "title": "T", "text": text, "full_text": full_text}))
+        return self.tmp / "cache"
+
+    def status(self, records, cache):
+        self.write_raw(records)
+        return [e["sentence_verified"] for e in self.build(cache_dir=cache)["evidence"]]
+
+    def test_a_database_excerpt_absent_from_an_abstract_only_paper_is_unverifiable(self):
+        cache = self.cache_doc("999", "An abstract that says nothing of the kind.")
+        rec_ = rec(source_kind="signor", ref="SIGNOR-1", cited_pmid="999",
+                   sentence="A multi-sentence excerpt from the full text. With a figure call.")
+        self.assertEqual(self.status([rec_], cache), ["unverifiable"])
+
+    def test_a_database_excerpt_absent_from_a_cached_full_text_is_a_real_mismatch(self):
+        cache = self.cache_doc("999", "The full text, which does not contain it.", full_text=True)
+        rec_ = rec(source_kind="signor", ref="SIGNOR-1", cited_pmid="999", sentence="Not in there.")
+        self.assertEqual(self.status([rec_], cache), ["false"])
+
+    def test_our_own_quote_that_is_not_in_the_abstract_stays_a_warning(self):
+        cache = self.cache_doc("PMID:31511697", "An abstract without that sentence.")
+        self.assertEqual(self.status([rec()], cache), ["false"])
+
+    def test_a_quote_found_verbatim_is_verified_whatever_the_source(self):
+        cache = self.cache_doc("999", "SIGNOR says: STING recruits TBK1 here.")
+        rec_ = rec(source_kind="signor", ref="SIGNOR-1", cited_pmid="999",
+                   sentence="STING recruits TBK1 here.")
+        self.assertEqual(self.status([rec_], cache), ["true"])

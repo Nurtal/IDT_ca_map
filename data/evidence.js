@@ -610,7 +610,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Treatment with igf-1 or insulin and dexamethasone mobilizes intracellular calcium, activates the ca2+/calmodulin-dependent phosphatase calcineurin, and induces the nuclear translocation of the transcription factor nf-atc1.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
@@ -1435,7 +1435,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "The ubiquitin ligase RNF5 regulates antiviral responses by mediating degradation of the adaptor protein MITA. RNF5 targeted MITA at Lys150 for ubiquitination and degradation after viral infection.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -1510,7 +1510,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -1675,7 +1675,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "The key event in activation of fluid secretion is an increase in intracellular [ca2+] ([ca2+]i) triggered by ip3-induced release of ca2+ from er via the ip3r.  ip3rs determine the site of initiation and the pattern of [ca2+]i signal in the cell.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -1795,7 +1795,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Heart failure can be traced, in part, to alterations in the activity of the sarcoplasmic reticulum Ca2+ pump that are induced by its interactions with phospholamban, a reversible inhibitor.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
@@ -1930,7 +1930,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "In contrast, we found that TRIM56 preferentially promoted K63 linked ubiquitination of the same lysine residue of STING that was important for the dimer formation and TBK1 activation.|Specifically, TRIM56 induces STING dimerization during dsDNA triggered signaling to potentiate antiviral responses while RNF5 may induce degradation of mitochondrial STING to suppress RLR induced antiviral responses.The findings that TRIM56 failed to interact with dsDNA and that there was no colocalization between TRIM56 and dsDNA within cells suggest that TRIM56 is unlikely to be a dsDNA sensor, and instead facilitates the STING function by ubiquitination.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -2155,7 +2155,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "STIM1 is a novel exercise‐regulated AMPK substrate. Phosphorylation of STIM1 by AMPK suppresses SOCE",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
@@ -2440,7 +2440,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -2635,7 +2635,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikkepsilon And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -2950,7 +2950,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "The in vitro phosphorylation of calmodulin by the insulin receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -2965,7 +2965,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -3055,7 +3055,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "We propose that pkc suppresses soce and crac channel function by phosphorylation of orai1 at n-terminal serine residues ser-27 and ser-30.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -3085,7 +3085,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "EGFRL858R/T790M phosphorylates IKBKE at tyrosine residues. While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -3205,7 +3205,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Tbk-1 coordinated assembly and function of the autophagic machinery and phosphorylated the autophagic adaptor p62 (sequestosome 1) on ser-403, a residue essential for its role in autophagic clearance.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -3310,7 +3310,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -3805,7 +3805,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -4360,7 +4360,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Here, we show that ikkepsilon interacts with and phosphorylates estrogen receptor alpha (eralpha) on serine 167 in vitro and in vivo. As a result, ikkepsilon induces eralpha transactivation activity and enhances eralpha binding to dna.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -4480,7 +4480,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "STIM1 is a novel exercise‐regulated AMPK substrate. Phosphorylation of STIM1 by AMPK suppresses SOCE",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
@@ -5020,7 +5020,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Calmodulin is the best studied and prototypical example of the e-f-hand family of ca2+-sensing proteins. In the event of a transient rise in Ca2+, the Ca2+ ion is coordinated in each Ca2+-binding loop of Ca2+Â–CaM by seven, primarily carboxylate, ligands. The binding of Ca2+ leads to substantial alterations in the interhelical angles within the EÂ–F hands in each domain and dramatically changes the two domains of CaM to produce more Â‘openÂ’ conformations",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -5050,7 +5050,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "STIM1 is a novel exercise‐regulated AMPK substrate. Phosphorylation of STIM1 by AMPK suppresses SOCE",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
@@ -6235,7 +6235,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -6295,7 +6295,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -6385,7 +6385,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -6595,7 +6595,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Whereas nemo assembles some but not all ikk complexes [12,13], recent reports provide strong experimental evidence for a role of tank [also called traf-interacting protein (i-traf)], nak-associated protein (nap1) and similar to nap1 tbk1 adaptor (sintbad) in the assembly of tbk1 and ikk-e kinase complexes that phosphorylate irf3 and irf7 and promote type i ifn gene induction",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7135,7 +7135,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -7255,7 +7255,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phosphorylation of the inositol 1,4,5-trisphosphate receptor by cyclic GMP-dependent protein kinase. | The synthetic peptide corresponding to serine 1755 (GRRESLTSFG) was phosphorylated with aKm in the range of 30-40 microM by both kinases. The kinetic analysis revealed that this peptide substrate is the best substrate described for cGMP kinase to date. Vascular smooth muscle cells prelabeled with [32P]orthophosphate and treated with atrial natriuretic peptide or sodium nitroprusside to elevate cGMP also resulted in increased labeling of the IP3 receptor. Phosphorylation of IP3 receptor by cGMP kinase may regulate the function of IP3 receptor in vascular smooth muscle cells and contribute to the effect of cGMP to regulate intracellular calcium levels.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "rat",
   "curator_note": "",
   "supp_source": ""
@@ -7360,7 +7360,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "We propose that pkc suppresses soce and crac channel function by phosphorylation of orai1 at n-terminal serine residues ser-27 and ser-30.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7465,7 +7465,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "To understand the mechanism by which IKBKE is activated by mutant EGFR, we first investigated if activating mutation of EGFR is able to form a complex with IKBKE.|While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7540,7 +7540,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phopho-specific antibodies demonstrate that InsP(3)R2 Ser-150 is phosphorylated in vivo by CaMKIIδ.  The results of this study show that serine 150 of the InsP(3)R2 is phosphorylated by CaMKII and results in a decrease in the channel open probability.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -7555,7 +7555,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -8035,7 +8035,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -8200,7 +8200,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -8365,7 +8365,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Stim1 is phosphorylated during mitosis. Removal of ten mpm-2 recognition sites by truncation at amino acid 482 abolished mpm-2 recognition of mitotic stim1, and significantly rescued stim1 rearrangement and soce response in mitosis. We identified ser 486 and ser 668 as mitosis-specific phosphorylation sites, and stim1 containing mutations of these sites to alanine also significantly rescued mitotic soce.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -8545,7 +8545,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -8605,7 +8605,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -8770,7 +8770,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -8815,7 +8815,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "We show that purified recombinant ikk-epsilon and tbk1 directly phosphorylate the critical serine residues in irf3 allowing its translocation into the nucleus and production of interferon type i.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -8950,7 +8950,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Activated TAK1 directly mediates STING phosphorylation on serine 355, which facilitates its interaction with STING ER exit protein (STEEP) and thereby promotes its oligomerization and translocation to the ERGIC for subsequent activation",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -9385,7 +9385,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -9445,7 +9445,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Toll/il-1 receptor domain-containing adaptor inducing ifn-beta (trif) associates with tnf receptor-associated factor 6 and tank-binding kinase 1, and activates two distinct transcription factors, nf-kappa b and ifn-regulatory factor-3, in the toll-like receptor signaling",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -9595,7 +9595,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Here we show that overexpression of pka causes phosphorylation and cytoplasmic accumulation of nf-atc1 in direct opposition to calcineurin by phosphorylating ser-245, ser-269, and ser-294 in the conserved serine-proline repeat domainwe further show that a complete block of nf-atc1 nuclear localization by pka requires a second kinase activity that can be supplied by glycogen synthase kinase-3 (gsk-3)",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -10105,7 +10105,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -10195,7 +10195,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Automated Edman sequence analysis of the major phosphopeptide obtained from PK-A and PK-G phosphorylation and one phosphopeptide obtained from PK-CaM phosphorylation yielded the sequence KISQTAQTYDPR (residues 28412852) with serine 2843 as phosphorylation site",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -10225,7 +10225,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "PKA-mediated hyperphosphorylation of a conserved serine, Ser-2843 in skeletal RyR and Ser-2809 in cardiac RyR, results in an aberrant SR function during heart failure. hyperphosphorylated RyRs are leaky and therefore lead to a reduced SR Ca2+ load and impaired contractile function in heart failure",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -10675,7 +10675,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "EGFR phosphorylates IKBKE at tyrosine-153 and -179 residues.|To understand the mechanism by which IKBKE is activated by mutant EGFR, we first investigated if activating mutation of EGFR is able to form a complex with IKBKE.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -10705,7 +10705,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "EGFRL858R/T790M phosphorylates IKBKE at tyrosine residues. While wild-type and mutant EGFR directly interacted with IKBKE, only mutant EGFR phosphorylated IKBKE on residues Y153 and Y179.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -11035,7 +11035,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Upon binding of the Ca2+/calmodulin complex to the binding domain of CaMKII, it is activated via autophosphorylation, then remaining active independent of of Ca2+ levels.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -11185,7 +11185,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "MITA was phosphorylated by TBK1, which is required for MITA-mediated activation of IRF3. Our results suggest that MITA is a critical mediator of virus-triggered IRF3 activation and IFN expression and further demonstrate the importance of certain mitochondrial proteins in innate antiviral immunity.  Consistent with its inability to activate IRF-E, the mutation of S358 to alanine impaired the ability of MITA to interact with TBK1 and to enhance the interaction between TBK1 and IRF3",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -11530,7 +11530,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -11905,7 +11905,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
-  "sentence_verified": "false",
+  "sentence_verified": "unverifiable",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""

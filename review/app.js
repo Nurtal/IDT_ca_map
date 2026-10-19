@@ -77,10 +77,10 @@
         el("p", {}, ev.curator_note || "—"));
     }
     if (!ev.sentence) return el("p", { class: "muted" }, "Database-only, no sentence found");
-    const ok = ev.sentence_verified === "true";
-    return el("blockquote", { class: ok ? "verified" : "unverified" },
+    const note = CamapCore.verificationNote(ev.sentence_verified);
+    return el("blockquote", { class: note && note.level === "warn" ? "unverified" : "verified" },
       ev.sentence,
-      ok ? null : el("div", { class: "warn" }, "⚠️ Not found verbatim in the source text"));
+      note ? el("div", { class: note.level }, note.text) : null);
   }
 
   const byId = Object.fromEntries(interactions.map((i) => [i.interaction_id, i]));

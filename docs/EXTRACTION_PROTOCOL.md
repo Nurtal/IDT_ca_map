@@ -109,6 +109,20 @@ is harmless in the `annotate && build` loop, and a pair STRING does not know sim
 A missing score is informative: STRING has nothing for **STIM1–STING1**, the bridge the whole map
 is built around. 154 of 403 interactions have one, median 0.83.
 
+## Sentence verification (story 14)
+
+`sentence_verified` has four values, and only one of them is an alarm:
+
+| value | meaning |
+|---|---|
+| `true` | found verbatim in the cached text |
+| `false` | **the alarm**: a quote that should be in the text we cached and is not. Fix the record. |
+| `unverifiable` | a database excerpt whose cited paper is cached as an abstract only. Those excerpts usually quote the full text, so absence proves nothing. |
+| *(empty)* | no quote at all (a curated row, or a database row with no sentence) |
+
+Both pages show ⚠️ for `false` only; `unverifiable` gets a plain grey note. Before this split,
+all 55 unverified rows were `false`, which is how a real alarm gets ignored — there are 5.
+
 ## Inclusion rule (applied by the build, for reference)
 
 A non-seed actor survives only if it interacts directly with an anchor (**STIM1, STING1, ORAI1 or

@@ -427,3 +427,26 @@ SIGNOR's (the pre-existing issue); two more appeared because admitting new nodes
 database edges.
 
 Map: **235 nodes, 518 interactions, 803 evidence rows**.
+
+### 2026-10-19 — the ⚠️ count was lying: 55 warnings, 5 real
+
+Before the next batch, a data-quality fix. Every curated and literature quote verifies, but 55
+evidence rows were flagged "not found verbatim" — all SIGNOR's. Reading them explains why: a
+SIGNOR excerpt quotes the **full text** of the paper it cites, often two or three sentences at a
+time, and PubTator frequently holds only the abstract. Looking for it there and reporting failure
+is not a check, it is noise — and 55 false alarms in the review stack is how the one alarm that
+matters, a paraphrased quote of our own, gets ignored.
+
+`sentence_verified` now has four values: `true`, `false` (the alarm), **`unverifiable`** (a
+database excerpt whose cited paper is cached as an abstract only) and empty (no quote). Both pages
+show ⚠️ for `false` alone; `unverifiable` gets a plain grey note saying why. `cli.py build` prints
+the two counts separately and lists the first ten real mismatches instead of only counting them.
+
+Result: **223 true, 50 unverifiable, 5 false, 525 without a quote.**
+
+The 5 survivors deserve a human glance, and two of them are an artefact of my own sentence
+splitter rather than of SIGNOR: the excerpt contains "(Fig. 5d), indicating that…", the splitter
+breaks after "Fig." and the fragment "5d), indicating that…" is then searched as a sentence of its
+own. Each of the five has at least one sentence present verbatim in the cached full text. I chose
+**not** to add a fifth status for that: a quote that does not appear as given is worth a look, and
+five is a number a reviewer can actually look at.

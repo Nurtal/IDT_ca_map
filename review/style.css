@@ -72,6 +72,7 @@ button[hidden] { display: none; }
 blockquote { margin: 8px 0 0; padding-left: 12px; border-left: 3px solid var(--accent); }
 blockquote.unverified { border-left-color: var(--uncertain); }
 .warn { color: var(--uncertain); font-size: .8rem; margin-top: 4px; }
+blockquote .muted { font-size: .8rem; margin-top: 4px; }
 .badge { font-size: .7rem; text-transform: uppercase; padding: 2px 8px; border-radius: 99px; background: var(--border); }
 .badge.pubmed, .badge.pmc { background: color-mix(in srgb, var(--accent) 30%, transparent); }
 .badge.signor, .badge.omnipath, .badge.biogrid, .badge.intact { background: color-mix(in srgb, #8957e5 35%, transparent); }

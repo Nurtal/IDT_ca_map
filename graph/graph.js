@@ -235,8 +235,11 @@
         ev.source_kind === "curated"
           ? el("div", { class: "curator-note" },
               el("div", { class: "note-label" }, "Curator summary"), el("p", {}, ev.curator_note || "—"))
-          : ev.sentence ? el("blockquote", { class: ev.sentence_verified === "true" ? "" : "unverified" }, ev.sentence,
-          ev.sentence_verified === "true" ? null : el("div", { class: "warn small" }, "⚠️ not found verbatim"))
+          : ev.sentence ? (() => {
+            const note = CamapCore.verificationNote(ev.sentence_verified);
+            return el("blockquote", { class: note && note.level === "warn" ? "unverified" : "" }, ev.sentence,
+              note ? el("div", { class: note.level + " small" }, note.text) : null);
+          })()
           : el("p", { class: "muted small" }, "Database-only, no sentence found"))))
         : el("p", { class: "muted small" }, "Evidence details not available for this export."));
   }

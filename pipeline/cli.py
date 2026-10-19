@@ -98,9 +98,16 @@ def main(argv=None):
                                         catalogue_path=ROOT / "data" / "supp_catalogue.json")
         for name, (_, rows) in tables.items():
             print(f"{name}: {len(rows)} rows")
-        unverified = [e for e in tables["evidence"][1] if e["sentence_verified"] == "false"]
+        rows = tables["evidence"][1]
+        unverified = [e for e in rows if e["sentence_verified"] == "false"]
         if unverified:
             print(f"WARNING: {len(unverified)} sentence(s) not found verbatim in cached texts")
+            for e in unverified[:10]:
+                print(f"         {e['ref']}: {e['sentence'][:70]}...")
+        unverifiable = sum(1 for e in rows if e["sentence_verified"] == "unverifiable")
+        if unverifiable:
+            print(f"{unverifiable} database excerpt(s) not checkable: only the abstract of the "
+                  f"cited paper is cached")
         report = Path(args.out) / "supp_dropped.txt"
         if dropped:
             print(f"WARNING: {len(dropped)} curated interaction(s) dropped by the inclusion rule "
