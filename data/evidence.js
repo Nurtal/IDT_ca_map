@@ -676,6 +676,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 45"
  },
  {
+  "evidence_id": "0f15643f346e",
+  "interaction_id": "311b557a5028",
+  "source_kind": "pubmed",
+  "ref": "PMID:23994313",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Albarrán L",
+  "sentence": "Co-immunoprecipitation experiments revealed that TRPA1 associates with STIM1, as well as Orai1, TRPC1 and TRPC6.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0f6cbb7077ef",
   "interaction_id": "cc2142cdaee7",
   "source_kind": "curated",
@@ -1079,6 +1094,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: STING  recruits and activates tank-binding kinase 1 (TBK1), which phosphorylates STING and the transcription factor IRF3 | Infos dans SLE: 10.3389/fimmu.2026.1861904 : altered activity of TBK1",
   "supp_source": "interactome STING.xlsx/interactors/row 47"
+ },
+ {
+  "evidence_id": "18cf0424bc92",
+  "interaction_id": "097fbaa56af3",
+  "source_kind": "pubmed",
+  "ref": "PMID:28105751",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Simo-Cheyou ER",
+  "sentence": "In summary, our data demonstrate that Ang-II-induced Egr-1 expression is mediated by STIM-1/Orai-1/Ca2+ -dependent signaling pathways in A-10 VSMC.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "19062383018d",
@@ -1587,6 +1617,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "29f324249fd2",
+  "interaction_id": "fa7160b31e0b",
+  "source_kind": "pmc",
+  "ref": "PMC4038503",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Giurisato E",
+  "sentence": "We found that STIM1 coimmunoprecipitated with ORAI1 after Tg stimulation and that association was partially reduced in shRNA KSR2 HeLa cells (Supplemental Figure S4A).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3091,6 +3136,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "4be9bce9db86",
+  "interaction_id": "47051b868016",
+  "source_kind": "pmc",
+  "ref": "PMC4038503",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Giurisato E",
+  "sentence": "We found that, after Tg stimulation, KSR2 coimmunoprecipitated with ORAI1 and STIM1 (Figure 5F).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "4c483f39177c",
   "interaction_id": "4289472531fc",
   "source_kind": "curated",
@@ -3164,6 +3224,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Identification MS: STIM1 proteome identified by MS after BioID assay | Localisation: cytosol | Type de protéine: actin-associayed  protein | Protéine: Cofilin-1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 23"
+ },
+ {
+  "evidence_id": "4e6d0b0e283f",
+  "interaction_id": "3a1e75a6fe01",
+  "source_kind": "pubmed",
+  "ref": "PMID:28105751",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Simo-Cheyou ER",
+  "sentence": "In summary, our data demonstrate that Ang-II-induced Egr-1 expression is mediated by STIM-1/Orai-1/Ca2+ -dependent signaling pathways in A-10 VSMC.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "4e6e89a80c9b",
@@ -5701,6 +5776,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "81bcd4ebe8dc",
+  "interaction_id": "8b84961748c2",
+  "source_kind": "pmc",
+  "ref": "PMC4828687",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Srivats S",
+  "sentence": "We conclude that sigma1R attenuates STIM1 coupling to Orai1 and thereby inhibits SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8241075d916b",
   "interaction_id": "0d4897079419",
   "source_kind": "omnipath",
@@ -6134,6 +6224,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "8abdd01aae6c",
+  "interaction_id": "ca06c9caae4f",
+  "source_kind": "pubmed",
+  "ref": "PMID:23994313",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Albarrán L",
+  "sentence": "Co-immunoprecipitation experiments revealed that TRPA1 associates with STIM1, as well as Orai1, TRPC1 and TRPC6.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8afb145a5437",
@@ -7681,6 +7786,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "adf9608fa60f",
+  "interaction_id": "cce9a71645fa",
+  "source_kind": "pubmed",
+  "ref": "PMID:34601312",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "de Souza LB",
+  "sentence": "Plasma membrane PIP2 as well as PIP2-binding protein, SEPT4, significantly impact Orai1-STIM1 interaction.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "adf9713ee73d",
   "interaction_id": "988cc6b6de0a",
   "source_kind": "omnipath",
@@ -8534,6 +8654,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Cytosol | Type de protéine: actin-severing protein | Protéine: Gelsolin",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 38"
+ },
+ {
+  "evidence_id": "c16f135d156b",
+  "interaction_id": "4f5366359f2e",
+  "source_kind": "pmc",
+  "ref": "PMC5648805",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Li X",
+  "sentence": "Here we demonstrate that calcium-bound calmodulin (Ca2+-CaM) binds to the core region of activated STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c177da48b624",
@@ -10872,6 +11007,21 @@ window.CAMAP.evidence = [
   "sentence": "PTK2B promotes TBK1 and STING oligomerization and enhances the STING-TBK1 signaling",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f65830dad6c0",
+  "interaction_id": "442c3fb171de",
+  "source_kind": "pubmed",
+  "ref": "PMID:22586105",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Srikanth S",
+  "sentence": "We propose that junctate, a Ca(2+)-sensing ER protein, is a structural component of the ER-PM junctions where Orai1 and STIM1 cluster and interact in T cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },

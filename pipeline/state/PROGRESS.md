@@ -5,13 +5,13 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 220 done, 13177 pending, 120 skipped, 2 error.
+13519 articles in queue: 270 done, 13127 pending, 120 skipped, 2 error.
 
-- tier 0: 192/3800 processed
+- tier 0: 242/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
-Next article: PMID 29901154 — Low expression of KCNN3 may affect drug resistance in ovarian cancer
+Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
 <!-- auto:end -->
 
 ### 2026-10-16 — batch 1 (tier 0)
@@ -341,3 +341,34 @@ band — the one that gets read first — is now 3800 articles rather than 192. 
 should be much higher there than in the tier-1 tail we were grinding.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
+
+### 2026-10-19 — batch 6 (tier 0, first anchor-pair batch under four anchors)
+
+The widened tier 0 delivers what the grind of the tier-1 tail did not: **10 records from 50
+articles, 4 new nodes**, where the last two batches gave 12 and 6 with almost no new actor.
+
+What came in, and it is all one theme — **the ER-PM junction is a built structure, and several
+proteins decide whether STIM1 and ORAI1 may meet there**:
+
+- **ASPH (junctate)** is a structural component of the junctions where ORAI1 and STIM1 cluster
+  in T cells (PMID 22586105), next to E-Syt1 and Septin4 already in the map.
+- **SEPTIN4** again (PMID 34601312), this time named as the isoform, acting through
+  PIP2 and a CDC42-WASP/WAVE-ARP2/3 cytoskeletal route. Second independent reference.
+- **KSR2 binds ORAI1 and STIM1** (PMC4038503) and holds calcineurin against the channel; without
+  KSR2 the STIM1-ORAI1 association is partially lost.
+- **SIGMAR1 ⊣ STIM1** (PMC4828687): sigma1R follows STIM1 to the junction and keeps it from
+  engaging ORAI1 — a brake applied at the meeting point rather than on either partner.
+- **TRPA1 binds STIM1 and ORAI1** (PMID 23994313): removing it *strengthens* the STIM1-ORAI1
+  pairing, so it holds the complex slightly apart.
+- **CALM1 ⊣ STIM1** (PMC5648805): Ca²⁺-calmodulin binds the core of activated STIM1 and takes the
+  complex and the oligomers apart. The feedback that shuts the channel, now explicit in the map.
+- **STIM1 → EGR1** and **ORAI1 → EGR1** (PMID 28105751, rat VSMC): a transcriptional output of
+  SOCE, the arm that links the channel to the gene programme of intimal hyperplasia.
+
+One note on method: the EGR1 records were first written with the knockdown sentence, which carries
+no calcium term — the build dropped them. The paper's own summary sentence says
+"STIM-1/Orai-1/Ca2+ -dependent signaling pathways", which is the same claim *and* satisfies the
+criterion, so that is the quote now. Choosing which true sentence to quote changes what the rule
+sees; worth remembering rather than reaching for `beyond_calcium`.
+
+Map: **232 nodes, 483 interactions, 762 evidence rows**.

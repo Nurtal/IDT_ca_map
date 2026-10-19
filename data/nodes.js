@@ -1084,6 +1084,25 @@ window.CAMAP.nodes = [
   "functional_assignment": ""
  },
  {
+  "id": "EGR1",
+  "symbol": "EGR1",
+  "name": "early growth response 1",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "P18146",
+  "synonyms": "225; TIS8; AT225; G0S30; NGFI-A; ZIF268; KROX-24; ZIF-268",
+  "function_summary": "Transcriptional regulator. Recognizes and binds to the DNA sequence 5'-GCG(T/G)GGGCG-3'(EGR-site) in the promoter region of target genes (By similarity). Binds double-stranded target DNA, irrespective of the cytosine methylation status. Regulates the transcription of numerous target genes, and thereby plays an important role in regulating the response to growth factors, DNA damage, and ischemia. Plays a role in the regulation of cell survival, proliferation and cell death. Activates expression of p53/TP53 and TGFB1, and thereby helps prevent tumor formation. Required for normal progress through mitosis and normal proliferation of hepatocytes after partial hepatectomy. Mediates responses to ischemia and hypoxia; regulates the expression of proteins such as IL1B and CXCL2 that are involved in inflammatory processes and development of tissue damage after ischemia. Regulates biosynthesis of luteinizing hormone (LHB) in the pituitary (By similarity). Regulates the amplitude of the expression rhythms of clock genes: BMAL1, PER2 and NR1D1 in the liver via the activation of PER1 (clock repressor) transcription. Regulates the rhythmic expression of core-clock gene BMAL1 in the suprachiasmatic nucleus (SCN) (By similarity)",
+  "genecards": "",
+  "protein_type": "",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": ""
+ },
+ {
   "id": "ERBB2",
   "symbol": "ERBB2",
   "name": "erb-b2 receptor tyrosine kinase 2",
@@ -1842,6 +1861,25 @@ window.CAMAP.nodes = [
   "ca_functionality": "",
   "regulation": "",
   "functional_assignment": ""
+ },
+ {
+  "id": "KSR2",
+  "symbol": "KSR2",
+  "name": "kinase suppressor of ras 2",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "Q6VAB6",
+  "synonyms": "FLJ25965",
+  "function_summary": "Location-regulated scaffold connecting MEK to RAF. Has very low protein kinase activity and can phosphorylate MAP2K1 at several Ser and Thr residues with very low efficiency (in vitro). Acts as MAP2K1/MEK1-dependent allosteric activator of BRAF; upon binding to MAP2K1/MEK1, dimerizes with BRAF and promotes BRAF-mediated phosphorylation of MAP2K1/MEK1. Interaction with BRAF enhances KSR2-mediated phosphorylation of MAP2K1 (in vitro). Blocks MAP3K8 kinase activity and MAP3K8-mediated signaling. Acts as a negative regulator of MAP3K3-mediated activation of ERK, JNK and NF-kappa-B pathways, inhibiting MAP3K3-mediated interleukin-8 production",
+  "genecards": "GC12M117453",
+  "protein_type": "SOCE regulation",
+  "localization": "",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "Calcineurin regulated",
+  "functional_assignment": "SOCE"
  },
  {
   "id": "LAMP2",
@@ -3913,6 +3951,25 @@ window.CAMAP.nodes = [
   "ca_functionality": "",
   "regulation": "",
   "functional_assignment": ""
+ },
+ {
+  "id": "TRPA1",
+  "symbol": "TRPA1",
+  "name": "transient receptor potential cation channel subfamily A member 1",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "O75762",
+  "synonyms": "ANKTM1",
+  "function_summary": "Ligand-activated Ca(2+)-permeable, nonselective cation channel involved in pain detection and possibly also in cold perception, oxygen concentration perception, cough, itch, and inner ear function. Has a relatively high Ca(2+) selectivity, with a preference for divalent over monovalent cations (Ca(2+) > Ba(2+) > Mg(2+) > NH4(+) > Li(+) > K(+)), the influx of cation into the cytoplasm leads to membrane depolarization. Has a central role in the pain response to endogenous inflammatory mediators, such as bradykinin and to a diverse array of irritants. Activated by a large variety of structurally unrelated electrophilic and non-electrophilic chemical compounds, such as allylthiocyanate (AITC) from mustard oil or wasabi, cinnamaldehyde, diallyl disulfide (DADS) from garlic, and acrolein, an environmental irritant. Electrophilic ligands activate TRPA1 by interacting with critical N-terminal Cys residues in a covalent manner. Non-electrophile agonists bind at distinct sites in the transmembrane domain to promote channel activation. Also acts as an ionotropic cannabinoid receptor by being activated by delta(9)-tetrahydrocannabinol (THC), the psychoactive component of marijuana. May be a component for the mechanosensitive transduction channel of hair cells in inner ear, thereby participating in the perception of sounds (By similarity)",
+  "genecards": "GC08M072019",
+  "protein_type": "calcium permeable channel; pore-forming subunit",
+  "localization": "PM",
+  "domains": "",
+  "ca_functionality": "Ca2+ entry",
+  "regulation": "",
+  "functional_assignment": "Cytosolic Ca2+ signaling"
  },
  {
   "id": "TRPC1",
