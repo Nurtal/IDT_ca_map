@@ -120,8 +120,15 @@ is built around. 154 of 403 interactions have one, median 0.83.
 | `unverifiable` | a database excerpt whose cited paper is cached as an abstract only. Those excerpts usually quote the full text, so absence proves nothing. |
 | *(empty)* | no quote at all (a curated row, or a database row with no sentence) |
 
-Both pages show ⚠️ for `false` only; `unverifiable` gets a plain grey note. Before this split,
-all 55 unverified rows were `false`, which is how a real alarm gets ignored — there are 5.
+Both pages show ⚠️ for `false` only; `unverifiable` gets a plain grey note.
+
+A quote counts as verbatim when **every sentence of it** is found, not when the whole string
+matches contiguously. The reason is SIGNOR: its excerpts join passages from different parts of a
+paper — sometimes with `|`, sometimes with nothing, sometimes with a heading in between in the
+original. Four formatting differences accounted for every flag we had: Greek letters (PubTator
+writes `IKKepsilon`, SIGNOR writes `IKKε`), `|` separators, the full stop PubTator strips after a
+title, and a sentence glued onto the next with no space. An invented sentence still fails, which
+is what the check is for. 55 flags became 0 without weakening it.
 
 ## Inclusion rule (applied by the build, for reference)
 

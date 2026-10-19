@@ -450,3 +450,25 @@ breaks after "Fig." and the fragment "5d), indicating that…" is then searched 
 own. Each of the five has at least one sentence present verbatim in the cached full text. I chose
 **not** to add a fifth status for that: a quote that does not appear as given is worth a look, and
 five is a number a reviewer can actually look at.
+
+### 2026-10-19 — the last 5 ⚠️ were formatting, not paraphrase (correcting the previous note)
+
+The note above says two of the five remaining flags were "an artefact of my own sentence
+splitter". That was wrong, and the real causes are worth recording because each one is a trap for
+anyone verifying quotes against PubTator:
+
+1. **Greek letters.** PubTator transliterates inside names — the cached text says `IKKepsilon`
+   where SIGNOR says `IKKε`. `normalize()` now transliterates the Greek alphabet (and the micro
+   sign, which is a different code point from mu). Two flags gone.
+2. **The full stop after a title.** SIGNOR quoted the *title* of PMID 31730483 and added a period;
+   PubTator's text runs the title straight into "Background". Trailing punctuation is now forgiven.
+3. **`|` separators.** A SIGNOR excerpt joins several passages of the paper with a pipe.
+4. **No separator at all.** The last two excerpts glued a sentence onto the next with no space,
+   and in the source a section heading sits between them.
+
+So verification now asks: **is every sentence of the quote in the text?** — not: does the whole
+string match contiguously. That is a correction of the rule, not a relaxation: an invented sentence
+inside a real excerpt still fails, and there is a test for exactly that.
+
+**233 verified, 45 unverifiable, 0 flagged, 525 without a quote.** The warning channel is silent,
+which is the point: the next ⚠️ that appears will be a real one.

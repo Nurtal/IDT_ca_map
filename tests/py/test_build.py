@@ -370,3 +370,61 @@ class TestVerificationStatus(BuildCase):
         rec_ = rec(source_kind="signor", ref="SIGNOR-1", cited_pmid="999",
                    sentence="STING recruits TBK1 here.")
         self.assertEqual(self.status([rec_], cache), ["true"])
+
+
+class TestQuoteMatching(BuildCase):
+    """Two mechanical reasons a genuine database quote looked non-verbatim."""
+
+    def cache_doc(self, pmid, text):
+        d = self.tmp / "cache" / "pubtator"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{pmid}.json").write_text(json.dumps(
+            {"pmid": pmid, "title": "T", "text": text, "full_text": True}))
+        return self.tmp / "cache"
+
+    def status(self, sentence, text):
+        cache = self.cache_doc("999", text)
+        self.write_raw([rec(source_kind="signor", ref="SIGNOR-1", cited_pmid="999",
+                            sentence=sentence)])
+        return self.build(cache_dir=cache)["evidence"][0]["sentence_verified"]
+
+    def test_a_greek_letter_matches_the_name_pubtator_writes_it_with(self):
+        # PubTator transliterates: the cached text says IKKepsilon where SIGNOR says IKKε
+        self.assertEqual(
+            self.status("STING recruits TBK1 and IKKε here.",
+                        "We found that STING recruits TBK1 and IKKepsilon here."), "true")
+
+    def test_every_passage_of_a_pipe_joined_excerpt_must_be_found(self):
+        text = "First passage of the paper. Then unrelated prose. Second passage of the paper."
+        self.assertEqual(self.status("First passage of the paper.|Second passage of the paper.", text),
+                         "true")
+        self.assertEqual(self.status("First passage of the paper.|A claim nobody made.", text),
+                         "false")
+
+    def test_a_quote_of_the_title_tolerates_the_full_stop_pubtator_strips(self):
+        self.assertEqual(
+            self.status("Phosphorylation of NFATC1 is essential for cell migration and invasion.",
+                        "Phosphorylation of NFATC1 is essential for cell migration and invasion "
+                        "Background Progression of prostate cancer is a multistep process."), "true")
+
+    def test_two_passages_the_database_joined_without_a_separator_still_verify(self):
+        text = ("Here we show that SRC phosphorylates IRF3 at Y107 in infected cells. "
+                "Unrelated prose sits between them. "
+                "Taken together, these results suggest that progesterone acts through PGR.")
+        quote = ("Here we show that SRC phosphorylates IRF3 at Y107 in infected cells. "
+                 "Taken together, these results suggest that progesterone acts through PGR.")
+        self.assertEqual(self.status(quote, text), "true")
+
+    def test_an_invented_sentence_inside_a_real_excerpt_is_still_caught(self):
+        text = "Here we show that SRC phosphorylates IRF3 at Y107 in infected cells."
+        quote = ("Here we show that SRC phosphorylates IRF3 at Y107 in infected cells. "
+                 "STIM1 was shown to be dispensable throughout the study.")
+        self.assertEqual(self.status(quote, text), "false")
+
+    def test_sentences_glued_without_a_space_are_still_split(self):
+        text = ("Induction of downstream antiviral genes followed. "
+                "A section heading sits here. "
+                "In the above experiments we noticed the same effect.")
+        quote = ("Induction of downstream antiviral genes followed."
+                 "In the above experiments we noticed the same effect.")
+        self.assertEqual(self.status(quote, text), "true")

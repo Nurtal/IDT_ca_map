@@ -175,7 +175,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",
-  "sentence_verified": "false",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -385,7 +385,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phosphorylation of NFATC1 at PIM1 target sites is essential for its ability to promote prostate cancer cell migration and invasion. Here we have identified ten PIM1 target sites in NFATC1 and found that prevention of their phosphorylation significantly decreases the transcriptional activity as well as the pro-migratory and pro-invasive effects of NFATC1 in prostate cancer cells.",
-  "sentence_verified": "false",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -1225,7 +1225,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "In these experiments, SRC also caused phosphorylation of S386 in wild-type IRF3 but not IRF3Y107F (Fig. 5d), indicating that SRC-mediated tyrosine phosphorylation of IRF3Y107 is required for its activation.|Taken together, these results suggest that P4 induces PGR-dependent activation of SRC, which promotes virus-triggered activation of IRF3 as well as induction of downstream antiviral genes.In the above experiments, we noticed that SeV-induced phosphorylation of IRF3S386 but not phosphorylation of TBK1S172 (p-TBK1S172, a hallmark for TBK1 activation) was increased by P4 treatment (Fig. 4g) or decreased by knockout of PGR (Fig. 4h).",
-  "sentence_verified": "false",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -1435,7 +1435,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "The ubiquitin ligase RNF5 regulates antiviral responses by mediating degradation of the adaptor protein MITA. RNF5 targeted MITA at Lys150 for ubiquitination and degradation after viral infection.",
-  "sentence_verified": "unverifiable",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -2440,7 +2440,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
-  "sentence_verified": "unverifiable",
+  "sentence_verified": "true",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -3985,7 +3985,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "STING recruits TBK1 and IKKε and forms the TBK1-IKKε complex via the association with TRAF3. The TBK1 complex induces the phosphorylation, dimerization, and nuclear translocation of IRF3.",
-  "sentence_verified": "false",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -4945,7 +4945,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Mechanistically, the progesterone-PGR axis activates SRC, which then mediates phosphorylation of IRF3 at Y107.|Taken together, these results suggest that P4 induces PGR-dependent activation of SRC, which promotes virus-triggered activation of IRF3 as well as induction of downstream antiviral genes.In the above experiments, we noticed that SeV-induced phosphorylation of IRF3S386 but not phosphorylation of TBK1S172 (p-TBK1S172, a hallmark for TBK1 activation) was increased by P4 treatment (Fig. 4g) or decreased by knockout of PGR (Fig. 4h).",
-  "sentence_verified": "false",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7255,7 +7255,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phosphorylation of the inositol 1,4,5-trisphosphate receptor by cyclic GMP-dependent protein kinase. | The synthetic peptide corresponding to serine 1755 (GRRESLTSFG) was phosphorylated with aKm in the range of 30-40 microM by both kinases. The kinetic analysis revealed that this peptide substrate is the best substrate described for cGMP kinase to date. Vascular smooth muscle cells prelabeled with [32P]orthophosphate and treated with atrial natriuretic peptide or sodium nitroprusside to elevate cGMP also resulted in increased labeling of the IP3 receptor. Phosphorylation of IP3 receptor by cGMP kinase may regulate the function of IP3 receptor in vascular smooth muscle cells and contribute to the effect of cGMP to regulate intracellular calcium levels.",
-  "sentence_verified": "unverifiable",
+  "sentence_verified": "true",
   "species_context": "rat",
   "curator_note": "",
   "supp_source": ""
@@ -7540,7 +7540,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "Phopho-specific antibodies demonstrate that InsP(3)R2 Ser-150 is phosphorylated in vivo by CaMKIIδ.  The results of this study show that serine 150 of the InsP(3)R2 is phosphorylated by CaMKII and results in a decrease in the channel open probability.",
-  "sentence_verified": "unverifiable",
+  "sentence_verified": "true",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
@@ -11905,7 +11905,7 @@ window.CAMAP.evidence = [
   "year": "",
   "first_author": "",
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
-  "sentence_verified": "unverifiable",
+  "sentence_verified": "true",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""

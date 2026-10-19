@@ -12,7 +12,7 @@ from .schema import (ANIMAL_CONTEXTS, CURATED_KINDS, CURATED_NODE_FIELDS, DATABA
                      EVIDENCE_COLUMNS, HUMAN_CONTEXTS,
                      INTERACTION_COLUMNS, LINK_TYPES, LITERATURE_KINDS, NODE_COLUMNS,
                      SPECIES_CONTEXTS)
-from .verify import find_sentence, sentence_in
+from .verify import find_sentence, quote_in
 
 
 def short_hash(text):
@@ -56,7 +56,7 @@ def evidence_sentence(r, doc, names):
     """
     sentence = r.get("sentence", "")
     if sentence:
-        if doc and sentence_in(sentence, doc["text"]):
+        if doc and quote_in(sentence, doc["text"]):
             return sentence, "true"
         if r["source_kind"] in DATABASE_KINDS and not (doc and doc.get("full_text")):
             return sentence, "unverifiable"
