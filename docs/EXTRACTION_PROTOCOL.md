@@ -87,6 +87,14 @@ Rules of thumb:
   publication. The 2026-10-16 convention — do not record a STING partner with no calcium link —
   only still holds for a partner that is in neither the sheets nor the catalogue.
 
+## Crossing the axis (story 7 of issue #1)
+
+An interaction with one foot on each side of the axis — the STING module on one end, anything
+calcium on the other, the same split the corpus queries use — is the cross-talk the map exists to
+find. The graph gives those edges a halo while keeping their type colour, and the review card
+tags them "Crosses the axis: STIM1 ↔ STING". 69 of the 403 current interactions qualify. The
+`bridge` **module** is a different thing: it marks a *node* that touches both anchors.
+
 ## STRING (story 22 of issue #1)
 
 STRING is an **annotation, never an edge source**: its scores mix co-expression, text mining and

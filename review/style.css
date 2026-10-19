@@ -59,6 +59,7 @@ button[hidden] { display: none; }
 .warn-tag { color: var(--uncertain); }
 /* kept although it is not calcium-related: dashed, so the card never looks like calcium evidence */
 .beyond-tag { border: 1px dashed var(--border); background: none; }
+.bridge-tag { color: var(--text); border: 1px solid var(--m-bridge); background: none; }
 
 .neighbourhood .mini-graph { height: 260px; background: var(--panel-2); border-radius: 10px; }
 .neighbourhood .legend { display: flex; gap: 12px; font-size: .75rem; color: var(--muted); margin-top: 6px; flex-wrap: wrap; }

@@ -238,3 +238,18 @@ ADCY6–STIM1 (0.41), SQSTM1–STING1 (0.41) and TICAM1–STING1 (0.41) — all 
 the column is immediately useful as a sanity check at review.
 
 Map unchanged: 207 nodes, 403 interactions, 647 evidence rows. 138 Python + 34 JS tests.
+
+### 2026-10-19 — crossing the axis is now visible (story 7)
+
+Story 7 asked for interactions bridging STIM1 and STING to be highlighted. Only bridge *nodes*
+were marked (the `bridge` module, a node touching both anchors); the edges that cross were drawn
+like any other. `CamapCore.crossesAxis` splits the two endpoints the way the corpus queries do —
+the STING module on one side, anything calcium on the other — and the graph gives those edges a
+halo while keeping their type colour, with a legend entry. The review card gets a
+"Crosses the axis: STIM1 ↔ STING" tag.
+
+**69 of 403 interactions cross the axis.** A metabolite counts as calcium, so STING1→Ca²⁺ is a
+crossing edge, which is right: that is the cross-talk.
+
+One imprecision, deliberate: an edge from a `bridge` node to STING1 reads as crossing, because the
+node's module is not "sting". It errs toward showing cross-talk, which is what the story wants.

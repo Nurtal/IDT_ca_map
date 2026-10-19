@@ -55,7 +55,8 @@
       })),
       ...items.map((i) => ({
         data: { id: i.interaction_id, source: i.source, target: i.target, type: i.type,
-          directed: i.directed, n: Number(i.n_sources || 1), width: 1.2 + 1.6 * Math.log2(1 + Number(i.n_sources || 1)) },
+          directed: i.directed, n: Number(i.n_sources || 1), width: 1.2 + 1.6 * Math.log2(1 + Number(i.n_sources || 1)),
+          bridge: CamapCore.crossesAxis(i, moduleOf) ? "true" : "false" },
       })),
     ];
   }
@@ -76,6 +77,12 @@
         "curve-style": "bezier", opacity: 0.85, "arrow-scale": 0.9,
       } },
       { selector: 'edge[directed = "true"]', style: { "target-arrow-shape": "triangle" } },
+      // story 7: an edge with one foot on each side of the axis gets a halo, keeping its own
+      // type colour — the cross-talk has to be findable at a glance in a 400-edge graph
+      { selector: 'edge[bridge = "true"]', style: {
+        "underlay-color": v("--m-bridge"), "underlay-opacity": 0.55, "underlay-padding": 3.5,
+        opacity: 1, "z-index": 5,
+      } },
       { selector: 'edge[type = "activation"], edge[type = "expression_regulation_up"]', style: { "line-color": v("--keep"), "target-arrow-color": v("--keep") } },
       { selector: 'edge[type = "inhibition"], edge[type = "expression_regulation_down"]', style: { "line-color": v("--reject"), "target-arrow-color": v("--reject"), "target-arrow-shape": "tee" } },
       { selector: 'edge[type = "phosphorylation"], edge[type = "ubiquitination"]', style: { "line-color": v("--uncertain"), "target-arrow-color": v("--uncertain") } },
@@ -299,6 +306,7 @@
     $("legend").replaceChildren(
       ...Object.keys(MODULES).filter(Boolean).map((m) => el("div", { class: "lg" }, el("i", { class: "dot", style: `background:var(--m-${m})` }), MODULES[m])),
       el("div", { class: "lg" }, el("i", { class: "dot ring" }), "seed actor (size = degree)"),
+      el("div", { class: "lg" }, el("i", { class: "line bridge" }), "crosses the axis (STIM1 ↔ STING)"),
       edge("act", "activation / up-regulation →"),
       edge("inh", "inhibition / down-regulation ⊣"),
       edge("mod", "phosphorylation / ubiquitination"),

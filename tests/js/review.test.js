@@ -234,3 +234,16 @@ test("the STRING score travels to the kept export and reads as an annotation", (
   assert.equal(core.stringLabel(""), null);
   assert.equal(core.stringLabel("0.403"), "STRING 0.40 (annotation, not a source)");
 });
+
+test("an interaction crossing the axis is recognised as a STIM1-STING bridge", () => {
+  const moduleOf = (n) => ({ STIM1: "soce", ITPR1: "ca_stores", NFATC1: "effectors",
+                             STING1: "sting", TBK1: "sting", UNKNOWN: "" }[n] || "");
+  const crosses = (a, b) => core.crossesAxis({ source: a, target: b }, moduleOf);
+  assert.equal(crosses("STIM1", "STING1"), true);
+  assert.equal(crosses("ITPR1", "TBK1"), true);
+  assert.equal(crosses("STING1", "NFATC1"), true);
+  assert.equal(crosses("STIM1", "ITPR1"), false);
+  assert.equal(crosses("STING1", "TBK1"), false);
+  // a node whose module is unknown makes no claim either way
+  assert.equal(crosses("STING1", "UNKNOWN"), false);
+});

@@ -40,6 +40,20 @@
     return value.split("+").map((c) => LABELS.calcium[c] || c).join(" + ");
   }
 
+  // Which side of the axis a module sits on, as the pipeline's corpus queries define it:
+  // the STING module, or everything calcium. "" (unplaced) belongs to neither.
+  function axisSide(module) {
+    if (module === "sting") return "sting";
+    return module ? "ca" : "";
+  }
+
+  // Story 7: an interaction with one foot on each side of the axis — the cross-talk the whole
+  // map exists to find. A "bridge" module marks a *node* touching both anchors; this marks edges.
+  function crossesAxis(i, moduleOf) {
+    const sides = [moduleOf(i.source), moduleOf(i.target)].map(axisSide);
+    return sides.includes("sting") && sides.includes("ca");
+  }
+
   // STRING's functional-association score, when it has one for the pair. It is a second opinion
   // on an edge somebody else found, never a source: the wording has to keep that clear.
   function stringLabel(score) {
@@ -297,5 +311,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { LABELS, calciumLabel, stringLabel, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { LABELS, calciumLabel, stringLabel, axisSide, crossesAxis, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });
