@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 320 done, 13077 pending, 120 skipped, 2 error.
+13519 articles in queue: 370 done, 13027 pending, 120 skipped, 2 error.
 
-- tier 0: 292/3800 processed
+- tier 0: 342/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -399,3 +399,31 @@ each.
 remaining 167 are the honest measure of how much of her sheets the corpus has not yet reached.
 
 Map: **232 nodes, 492 interactions, 772 evidence rows**.
+
+### 2026-10-19 — batch 8 (tier 0): the cytoskeleton and a level-2 seed finally anchored
+
+50 articles, 7 records, 3 new nodes (**CAMK2D, HDAC6, EFCAB13**). TMEM178, FLNA and TRPC4 were
+already in the map from the curator's sheets or the databases, so those records back existing rows.
+
+- **CAMK2D → STIM1** (PMID 29669320): overexpressing CaMKIIδ increases STIM1-ORAI1 co-localization
+  and SOCE. This is the first **level-2 seed** to earn its place: calcineurin, NFAT and CaMKII were
+  specified in story 2 as entering only when evidence links them to an anchor, and CaMKII now has
+  that link. The calcium effector feeds back on the sensor that produced the signal.
+- **FLNA binds STIM1 and brakes it** (PMID 29284605, human platelets): silencing filamin A gives
+  *more* STIM1-ORAI1 interaction and more SOCE, and an anti-FLNA antibody makes platelets aggregate
+  harder. Where the sensor is held in the cytoskeleton decides how much of it reaches the channel.
+- **HDAC6 regulates STIM1-mediated SOCE** (PMID 23698468) — and does it *differently* in cervical
+  cancer cells than in normal cervical epithelium. A context dependence worth carrying.
+- **TMEM178 ⊣ STIM1** (PMID 31018906): a brake on puncta formation itself, in the myeloid lineage,
+  which is also where the STING arm of this map lives.
+- **EFCAB13 binds ORAI1** (PMID 40972679): an EF-hand protein uncharacterized until this year,
+  found in primary human platelets, with an age-dependent contribution to SOCE.
+- **STIM1 binds TRPC4 and *not* TRPC1** in glomerular mesangial cells (PMID 19307462) — the
+  opposite of the salivary-gland and platelet picture already in the map. Kept as a negative
+  result the reviewer can weigh against the TRPC1 edges.
+
+Curated rows backed by literature: **14 of 179**. The 55 non-verbatim sentences remain entirely
+SIGNOR's (the pre-existing issue); two more appeared because admitting new nodes pulled in their
+database edges.
+
+Map: **235 nodes, 518 interactions, 803 evidence rows**.

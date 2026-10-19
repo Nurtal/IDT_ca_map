@@ -61,6 +61,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "01d155d7e559",
+  "interaction_id": "66af087269db",
+  "source_kind": "pubmed",
+  "ref": "PMID:31018906",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Yang Z",
+  "sentence": "Here, we identified Tmem178 as a negative modulator of STIM1 puncta formation in myeloid cells.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "01eda528a7c3",
   "interaction_id": "c1fbeeccdc9c",
   "source_kind": "pmc",
@@ -541,6 +556,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 78"
  },
  {
+  "evidence_id": "0b7b4a0c623f",
+  "interaction_id": "c0b3da54c666",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKCB>CAMK2D",
+  "cited_pmid": "17570479",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0beb57160953",
   "interaction_id": "5816665f9666",
   "source_kind": "curated",
@@ -916,6 +946,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "145583a786df",
+  "interaction_id": "c915a7993d6c",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2D>ATP2A2",
+  "cited_pmid": "7929371",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "145f603c402d",
   "interaction_id": "272f6432e725",
   "source_kind": "curated",
@@ -1156,6 +1201,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "1a9ad418637a",
+  "interaction_id": "8cab24713c60",
+  "source_kind": "intact",
+  "ref": "EBI-67180896",
+  "cited_pmid": "38884001",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Yazaki et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1ac5dd312b35",
   "interaction_id": "ebe14b0650e2",
   "source_kind": "signor",
@@ -1331,6 +1391,21 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1d9b48f6142b",
+  "interaction_id": "6f0252d47bd7",
+  "source_kind": "intact",
+  "ref": "EBI-50425225",
+  "cited_pmid": "37207277",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Hsu et al.",
+  "sentence": "REAGENT or RESOURCE\tSOURCE\tIDENTIFIER\t \tAntibodies\t \t\t \tACTB\tAbcam\tCat# ab8227; RRID: AB_2305186\t \tAKAP11\tInvitrogen\tCat# PA5-103369;RRID: AB_2852713\t \tAPLP2\tProteintech Group\tCat# 15041-1-AP;RRID: AB_2289597\t \tARID3B\tFortis Life Sciences\tCat# A302-565A;RRID: AB_2034823\t \tC3\tAbcam\tCat# ab97462;RRID: AB_10679468\t \tCACNA1C\tAlomone Labs\tCat# ACC-003;RRID: AB_2039771\t \tCACNB2\tAbnova\tCat# H00000783-A01;RRID: AB_463642\t \tCACNB3\tAlomone Labs\tCat# ACC-008:RRID: AB_2039787\t \tCAMK2D\tAbcam\tCat# ab181052;RRID: AB_2891241\t \tCHD4\tAbcam\tCat# ab70469;RRID: AB_2229454\t \tCKB\tSanta Cruz Biotechnology\tCat# sc-374072;RRID: AB_10947239\t \tCNTNAP1\tAbcam\tCat# ab34151;RRID: AB_869934\t \tCOPS2\tProteintech Group\tCat# 10969-2-AP;RRID: AB_2276346\t \tCOPS5\tCell Signaling Technology\tCat# 6895;RRID: AB_10839271\t \tCSMD1\tAbcam\tCat# ab166908\t \tCTNND1\tSanta Cruz Biotechnology\tCat# sc-23873;RRID: AB_2086394\t \tCUL3\tFortis Life Sciences\tCat# A301-109A;RRID: AB_873023\t \tELAVL2\tProteintech Group\tCat# 14008-1-AP;RRID: AB_2096356\t \tELAVL3\tABclonal\tCat# A6091;RRID: AB_2766743\t \tEPN2\tFortis Life Sciences\tCat# A305-510A;RRID: AB_2891436\t \tFMR1 (FMRP)\tAbcam\tCat# ab17722;RRID: AB_2278530\t \tFXR1\tProteintech Group\tCat# 13194-1-AP;RRID: AB_2110702\t \tGABBR2 (GABAB2)\tAbcam\tCat# ab75838;RRID: AB_1310245\t \tGNAO1\tAbcam\tCat# ab154001\t \tGRIN2A\tAbcam\tCat# ab133265;RRID: AB_11158532\t \tHCN1\tProteintech Group\tCat# 55222-1-AP;RRID: AB_11182929\t \tHCN4\tAbcam\tCat# ab32675;RRID: AB_732770\t \tHNRNPA2B1\tAbcam\tCat# ab6102;RRID: AB_305293\t \tIGF2BP1\tProteintech Group\tCat# 22803-1-AP;RRID: AB_2879173\t \tIGF2BP2\tAbcam\tCat# ab124930;RRID: AB_11131218\t \tIGF2BP3\tFortis Life Sciences\tCat# A303-426A;RRID: AB_10951696\t \tINA\tFortis Life Sciences\tCat# A305-441A;RRID: AB_2631832\t \tISL1\tAbcam\tCat# ab109517;RRID: AB_10866454\t \tKIAA1549\tFortis Life Sciences\tCat# A305-877A;RRID: AB_2891771\t \tLDB1\tNovus Biologicals\tCat# NBP1-77832;RRID: AB_11038158\t \tMARK3\tLSBio\tCat# LS-B5226;RRID: AB_10851098\t \tMEF2C\tAtlas Antibodies\tCat# AMAb90727;RRID: AB_2665645\t \tMSI2\tAbcam\tCat# ab76148;RRID: AB_1523981\t \tNEGR1\tProteintech Group\tCat# 13674-1-AP;RRID: AB_2877969\t \tNSG1\tMillipore Sigma\tCat# SAB4501190;RRID: AB_10745270\t \tPARP1\tProteintech Group\tCat# 13371-1-AP;RRID: AB_2160459\t \tPCDHA2\tProteintech Group\tCat# 10127-2-AP;RRID: AB_2158964\t \tPCDHB5\tProteintech Group\tCat# 19609-1-AP;RRID: AB_10792248\t \tPCM1\tFortis Life Sciences\tCat# A301-150A;RRID: AB_873100\t \tPDE4B\tCell Signaling Technology\tCat# 72096S;RRID: AB_2799812\t \tPYGB\tProteintech Group\tCat# 12075-1-AP;RRID: AB_2174885\t \tRALY\tAbcam\tCat# ab170105\t \tRIMS1\tProteintech Group\tCat# 24576-1-AP;RRID: AB_2879618\t \tRIMS1\tSanta Cruz Biotechnology\tCat# sc-368540\t \tRUNX1T1\tAbcam\tCat# ab124269;RRID: AB_10976059\t \tSEMA4C\tSanta Cruz Biotechnology\tCat# sc-136445;RRID: AB_10837020\t \tSF3B1\tCell Signaling Technology\tCat# 14434S;RRID: AB_2798479\t \tSRPK2\tFortis Life Sciences\tCat# A302-467A;RRID: AB_1944286\t \tSYNGAP1\tCell Signaling Technology\tCat# 5539;RRID: AB_10694401\t \tTCF4\tGeneTex\tCat# GTX17912;RRID: AB_2887569\t \tXRCC5\tAbcam\tCat# ab80592;RRID: AB_1603758\t \tXRCC6\tAbcam\tCat# ab92450;RRID: AB_10562280\t \tV5 tag\tMBL\tCat# M167-11\t \tMouse IgG1 monoclonal isotype control\tCell Signaling Technology\tCat# 5415;RRID: AB_10829607\t \tMouse IgG2a monoclonal isotype control\tCell Signaling Technology\tCat# 61656;RRID: AB_2799613\t \tRabbit IgG monoclonal isotype control\tCell Signaling Technology\tCat# 3900;RRID: AB_1550038\t \tRabbit IgG polyclonal isotype control\tSigma-Aldrich\tCat# I5006;RRID: AB_1163659\t \t\t \tChemicals, peptides, and recombinant proteins\t \t\t \tAccutase\tGibco\tCat# A11105\t \tAgilent RNA 6000 Pico kit\tAgilent Technologies\tCat# 5067-1513\t \tAmbion DNA-free DNase Treatment kit\tLife Technologies\tCat# AM1906\t \tB-27 supplement\tThermo Scientific\tCat# 17504044\t \tBDNF\tR&D Systems\tCat# 248-BD/CF\t \t2100 Bioanalyzer Instrument\tAgilent Technologies\tCat# G2939BA\t \tBlotting-Grade Blocker\tBio-Rad Laboratories\tCat# 1706404\t \tCNTF\tR&D Systems\tCat# 257-NT\t \tCryoStor CS10\tStem Cell Technologies\tCat# 07930\t \tDMEM/F - 12\tLife Technologies\tCat# 11320033\t \tDoxycycline hyclate\tSigma-Aldrich\tCat# 24390-14-5\t \tFetal Bovine Serum\tR&D Systems\tCat# S11195\t \tGDNF\tR&D Systems\tCat# 212-GD\t \tGeltrex\tLife Technologies\tCat# A1413301\t \tGeneticin\tGibco\tCat# 10131027\t \tD-(+)-Glucose\tSigma-Aldrich\tCat# 50-99-7\t \tGlutamax\tLife Technologies\tCat# 35050079\t \tGridded Plate 150 x 25 mm\tVWR International\tCat# 25383-103\t \tHalt  Protease and Phosphatase Inhibitor\tThermo Scientific\tCat# 78442\t \tLaminin, Mouse\tVWR International\tCat# 47743-734\t \tLDN-193189\tStem Cell Technologies\tCat# 1435934-00-1\t \tMEM NEAA\tLife Technologies\tCat# 11140076\t \tMethanol >=99.8%\tFisher Scientific\tCat# 67-56-1\t \tN-2 Supplement\tLife Technologies\tCat# 17502048\t \tNeurobasal\tLife Technologies\tCat# 21103049\t \tNormocin\tInvitrogen\tCat# ant-nr-2\t \tNuPAGE  12%, Bis-Tris Gel\tInvitrogen\tCat# NP0341PK2\t \tNuPAGE Transfer Buffer (20X)\tLife Technologies\tCat# NP00061\t \tPBS\tLife Technologies\tCat# 10010049\t \tPVDF/Filter Paper Sandwich\tLife Technologies\tCat# LC2002\t \tROCK Inhibitor (Y-27632)\tStemgent\tCat# 04-0012\t \tSB 431542\tTocris\tCat# 1614\t \tStemFlex  Medium\tLife Technologies\tCat# A3349401\t \tMicrocentrifuge Tubes\tVWR International\tCat# 0011-702\t \tSterile Sleeves\tVWR International\tCat# 414004-510\t \tTrizol\tLife Technologies\tCat# 15596026\t \tTruSeq Stranded Total RNA Library Prep Kit\tIllumina\tCat# 20020596\t \tTrypLE\tLife Technologies\tCat# 12604039\t \tTrypsin\tPromega\tCat# V5111\t \tXAV939\tStemgent\tCat# 04-00046\t \t\t \tCritical commercial assays\t \t\t \tPierce  Protein A/G Magnetic Beads\tThermo Scientific\tCat# 88803\t \tSuperSignal  West Femto Maximum Sensitivity Substrate\tThermo Scientific\tCat# 34094\t \tPierce  IP Lysis Buffer\tThermo Scientific\tCat# 87788\t \tEnGen Spy Cas9 NLS\tNew England Biolabs\tCat# M0646T\t \t\t \tDeposited data\t \t\t \tIP-MS data\tThis study\tMassIVE: MSV000087514\t \t\t \tExperimental Models: Cell lines\t \t\t \tiPS line from human fibroblasts with integrated NGN2\tNovartis Institutes for BioMedical Research\tiPS hDFn 83/22 iNgn2#9; iPS3 in Nehme et al.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -2431,6 +2506,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "388610a5f85a",
+  "interaction_id": "8a7041af421e",
+  "source_kind": "intact",
+  "ref": "EBI-28939579",
+  "cited_pmid": "32707033",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Buljan et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "38b7b5921a69",
   "interaction_id": "1b9f840b84de",
   "source_kind": "intact",
@@ -2816,6 +2906,36 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "Stx17 is phosphorylated by TBK1 whereby phospho-Stx17 controls the formation of the ATG13+FIP200+ mammalian pre-autophagosomal structure (mPAS) in response to induction of autophagy.",
   "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "41ed6e4d3b87",
+  "interaction_id": "4adbee446b30",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2D>GRIA1",
+  "cited_pmid": "9407043",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "426eb0ee7963",
+  "interaction_id": "4a2c52525d92",
+  "source_kind": "intact",
+  "ref": "EBI-28939579",
+  "cited_pmid": "32707033",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Buljan et al.",
+  "sentence": "",
+  "sentence_verified": "",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -4126,6 +4246,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "62ffbadf96fd",
+  "interaction_id": "17e048f57103",
+  "source_kind": "intact",
+  "ref": "EBI-28939579",
+  "cited_pmid": "32707033",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Buljan et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "633d7237d9b2",
   "interaction_id": "4a5210f21151",
   "source_kind": "intact",
@@ -4786,6 +4921,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "6e95e73fba56",
+  "interaction_id": "11e4220b7a90",
+  "source_kind": "pubmed",
+  "ref": "PMID:23698468",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Chen YT",
+  "sentence": "Here, we report that the microtubule-associated histone deacetylase 6 (HDAC6) differentially regulates activation of STIM1-mediated store-operated Ca(2+) entry (SOCE) between cervical cancer cells and normal cervical epithelial cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "6eb7c3f9a8de",
   "interaction_id": "ebe14b0650e2",
   "source_kind": "signor",
@@ -5349,6 +5499,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2017",
   "first_author": "Luck et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "791660f8bba8",
+  "interaction_id": "8a7041af421e",
+  "source_kind": "intact",
+  "ref": "EBI-16812871",
+  "cited_pmid": "29426014",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Martínez-Noël et al.",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -5936,6 +6101,21 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "84337c8985b1",
+  "interaction_id": "d1974771f3b9",
+  "source_kind": "pubmed",
+  "ref": "PMID:40972679",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2025",
+  "first_author": "Redondo PC",
+  "sentence": "Coimmunoprecipitation experiments showed that EFCAB13 interacts with Orai1, and colocalization between both proteins increases during TG-evoked SOCE.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -6571,6 +6751,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8efdd919383e",
+  "interaction_id": "62cbd3ce2446",
+  "source_kind": "pubmed",
+  "ref": "PMID:19307462",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2009",
+  "first_author": "Sours-Brothers S",
+  "sentence": "Co-immunoprecipitation showed that STIM1 interacted with TRPC4, but not TRPC1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8f0fb710a876",
   "interaction_id": "4d4ea758009e",
   "source_kind": "intact",
@@ -6614,6 +6809,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: Colocalization of STIM1 and SERCA2b /l interaction between SERCA and STIM1 (FRET IP IF) | Effet de l'interaction: interaction sTIM1/SERCA increased after store depletion | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 2b, SERCA2b",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 9"
+ },
+ {
+  "evidence_id": "8fd89f803acb",
+  "interaction_id": "4106c1135369",
+  "source_kind": "pubmed",
+  "ref": "PMID:29284605",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Lopez JJ",
+  "sentence": "Our results demonstrate that STIM1 interacts with FLNA on calcium store depletion in human platelets.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8fdf6213c9d8",
@@ -6766,6 +6976,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
+  "evidence_id": "9144c71cf016",
+  "interaction_id": "88b29aef5a46",
+  "source_kind": "intact",
+  "ref": "EBI-61297478",
+  "cited_pmid": "39232006",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Serafin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "916d80340c55",
   "interaction_id": "69c70a8b9163",
   "source_kind": "intact",
@@ -6807,6 +7032,21 @@ window.CAMAP.evidence = [
   "sentence": "Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",
   "sentence_verified": "true",
   "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "92a8f69a51f0",
+  "interaction_id": "877622246544",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:RPS6KB1>CAMK2D",
+  "cited_pmid": "17570479",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -6931,6 +7171,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "95fef246aa6e",
+  "interaction_id": "29cf397c9793",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2D>ITPR2",
+  "cited_pmid": "23019322",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "96630bc82171",
   "interaction_id": "12861169be6f",
   "source_kind": "curated",
@@ -7021,6 +7276,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 57"
  },
  {
+  "evidence_id": "9821c439ed75",
+  "interaction_id": "83376959cf2d",
+  "source_kind": "intact",
+  "ref": "EBI-21953213",
+  "cited_pmid": "32873725",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Menzel et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "98305ce4a58b",
   "interaction_id": "7980d54c9c70",
   "source_kind": "omnipath",
@@ -7064,6 +7334,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
+ },
+ {
+  "evidence_id": "99c8bd96956f",
+  "interaction_id": "940e6469befd",
+  "source_kind": "pubmed",
+  "ref": "PMID:29669320",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Li S",
+  "sentence": "RESULTS: Overexpression of CaMKIIdelta enhanced TG-induced STIM1 co-localization and interaction with Orai1 as well as SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "99e6c1475275",
@@ -7242,6 +7527,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9c581cddd7ee",
+  "interaction_id": "7b06b8171dc6",
+  "source_kind": "signor",
+  "ref": "SIGNOR-262692",
+  "cited_pmid": "23019322",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Phopho-specific antibodies demonstrate that InsP(3)R2 Ser-150 is phosphorylated in vivo by CaMKIIδ.  The results of this study show that serine 150 of the InsP(3)R2 is phosphorylated by CaMKII and results in a decrease in the channel open probability.",
+  "sentence_verified": "false",
+  "species_context": "other",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7786,6 +8086,36 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 22"
  },
  {
+  "evidence_id": "aadb504ed06d",
+  "interaction_id": "6f0252d47bd7",
+  "source_kind": "intact",
+  "ref": "EBI-50425434",
+  "cited_pmid": "37207277",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Hsu et al.",
+  "sentence": "REAGENT or RESOURCE\tSOURCE\tIDENTIFIER\t \tAntibodies\t \t\t \tACTB\tAbcam\tCat# ab8227; RRID: AB_2305186\t \tAKAP11\tInvitrogen\tCat# PA5-103369;RRID: AB_2852713\t \tAPLP2\tProteintech Group\tCat# 15041-1-AP;RRID: AB_2289597\t \tARID3B\tFortis Life Sciences\tCat# A302-565A;RRID: AB_2034823\t \tC3\tAbcam\tCat# ab97462;RRID: AB_10679468\t \tCACNA1C\tAlomone Labs\tCat# ACC-003;RRID: AB_2039771\t \tCACNB2\tAbnova\tCat# H00000783-A01;RRID: AB_463642\t \tCACNB3\tAlomone Labs\tCat# ACC-008:RRID: AB_2039787\t \tCAMK2D\tAbcam\tCat# ab181052;RRID: AB_2891241\t \tCHD4\tAbcam\tCat# ab70469;RRID: AB_2229454\t \tCKB\tSanta Cruz Biotechnology\tCat# sc-374072;RRID: AB_10947239\t \tCNTNAP1\tAbcam\tCat# ab34151;RRID: AB_869934\t \tCOPS2\tProteintech Group\tCat# 10969-2-AP;RRID: AB_2276346\t \tCOPS5\tCell Signaling Technology\tCat# 6895;RRID: AB_10839271\t \tCSMD1\tAbcam\tCat# ab166908\t \tCTNND1\tSanta Cruz Biotechnology\tCat# sc-23873;RRID: AB_2086394\t \tCUL3\tFortis Life Sciences\tCat# A301-109A;RRID: AB_873023\t \tELAVL2\tProteintech Group\tCat# 14008-1-AP;RRID: AB_2096356\t \tELAVL3\tABclonal\tCat# A6091;RRID: AB_2766743\t \tEPN2\tFortis Life Sciences\tCat# A305-510A;RRID: AB_2891436\t \tFMR1 (FMRP)\tAbcam\tCat# ab17722;RRID: AB_2278530\t \tFXR1\tProteintech Group\tCat# 13194-1-AP;RRID: AB_2110702\t \tGABBR2 (GABAB2)\tAbcam\tCat# ab75838;RRID: AB_1310245\t \tGNAO1\tAbcam\tCat# ab154001\t \tGRIN2A\tAbcam\tCat# ab133265;RRID: AB_11158532\t \tHCN1\tProteintech Group\tCat# 55222-1-AP;RRID: AB_11182929\t \tHCN4\tAbcam\tCat# ab32675;RRID: AB_732770\t \tHNRNPA2B1\tAbcam\tCat# ab6102;RRID: AB_305293\t \tIGF2BP1\tProteintech Group\tCat# 22803-1-AP;RRID: AB_2879173\t \tIGF2BP2\tAbcam\tCat# ab124930;RRID: AB_11131218\t \tIGF2BP3\tFortis Life Sciences\tCat# A303-426A;RRID: AB_10951696\t \tINA\tFortis Life Sciences\tCat# A305-441A;RRID: AB_2631832\t \tISL1\tAbcam\tCat# ab109517;RRID: AB_10866454\t \tKIAA1549\tFortis Life Sciences\tCat# A305-877A;RRID: AB_2891771\t \tLDB1\tNovus Biologicals\tCat# NBP1-77832;RRID: AB_11038158\t \tMARK3\tLSBio\tCat# LS-B5226;RRID: AB_10851098\t \tMEF2C\tAtlas Antibodies\tCat# AMAb90727;RRID: AB_2665645\t \tMSI2\tAbcam\tCat# ab76148;RRID: AB_1523981\t \tNEGR1\tProteintech Group\tCat# 13674-1-AP;RRID: AB_2877969\t \tNSG1\tMillipore Sigma\tCat# SAB4501190;RRID: AB_10745270\t \tPARP1\tProteintech Group\tCat# 13371-1-AP;RRID: AB_2160459\t \tPCDHA2\tProteintech Group\tCat# 10127-2-AP;RRID: AB_2158964\t \tPCDHB5\tProteintech Group\tCat# 19609-1-AP;RRID: AB_10792248\t \tPCM1\tFortis Life Sciences\tCat# A301-150A;RRID: AB_873100\t \tPDE4B\tCell Signaling Technology\tCat# 72096S;RRID: AB_2799812\t \tPYGB\tProteintech Group\tCat# 12075-1-AP;RRID: AB_2174885\t \tRALY\tAbcam\tCat# ab170105\t \tRIMS1\tProteintech Group\tCat# 24576-1-AP;RRID: AB_2879618\t \tRIMS1\tSanta Cruz Biotechnology\tCat# sc-368540\t \tRUNX1T1\tAbcam\tCat# ab124269;RRID: AB_10976059\t \tSEMA4C\tSanta Cruz Biotechnology\tCat# sc-136445;RRID: AB_10837020\t \tSF3B1\tCell Signaling Technology\tCat# 14434S;RRID: AB_2798479\t \tSRPK2\tFortis Life Sciences\tCat# A302-467A;RRID: AB_1944286\t \tSYNGAP1\tCell Signaling Technology\tCat# 5539;RRID: AB_10694401\t \tTCF4\tGeneTex\tCat# GTX17912;RRID: AB_2887569\t \tXRCC5\tAbcam\tCat# ab80592;RRID: AB_1603758\t \tXRCC6\tAbcam\tCat# ab92450;RRID: AB_10562280\t \tV5 tag\tMBL\tCat# M167-11\t \tMouse IgG1 monoclonal isotype control\tCell Signaling Technology\tCat# 5415;RRID: AB_10829607\t \tMouse IgG2a monoclonal isotype control\tCell Signaling Technology\tCat# 61656;RRID: AB_2799613\t \tRabbit IgG monoclonal isotype control\tCell Signaling Technology\tCat# 3900;RRID: AB_1550038\t \tRabbit IgG polyclonal isotype control\tSigma-Aldrich\tCat# I5006;RRID: AB_1163659\t \t\t \tChemicals, peptides, and recombinant proteins\t \t\t \tAccutase\tGibco\tCat# A11105\t \tAgilent RNA 6000 Pico kit\tAgilent Technologies\tCat# 5067-1513\t \tAmbion DNA-free DNase Treatment kit\tLife Technologies\tCat# AM1906\t \tB-27 supplement\tThermo Scientific\tCat# 17504044\t \tBDNF\tR&D Systems\tCat# 248-BD/CF\t \t2100 Bioanalyzer Instrument\tAgilent Technologies\tCat# G2939BA\t \tBlotting-Grade Blocker\tBio-Rad Laboratories\tCat# 1706404\t \tCNTF\tR&D Systems\tCat# 257-NT\t \tCryoStor CS10\tStem Cell Technologies\tCat# 07930\t \tDMEM/F - 12\tLife Technologies\tCat# 11320033\t \tDoxycycline hyclate\tSigma-Aldrich\tCat# 24390-14-5\t \tFetal Bovine Serum\tR&D Systems\tCat# S11195\t \tGDNF\tR&D Systems\tCat# 212-GD\t \tGeltrex\tLife Technologies\tCat# A1413301\t \tGeneticin\tGibco\tCat# 10131027\t \tD-(+)-Glucose\tSigma-Aldrich\tCat# 50-99-7\t \tGlutamax\tLife Technologies\tCat# 35050079\t \tGridded Plate 150 x 25 mm\tVWR International\tCat# 25383-103\t \tHalt  Protease and Phosphatase Inhibitor\tThermo Scientific\tCat# 78442\t \tLaminin, Mouse\tVWR International\tCat# 47743-734\t \tLDN-193189\tStem Cell Technologies\tCat# 1435934-00-1\t \tMEM NEAA\tLife Technologies\tCat# 11140076\t \tMethanol >=99.8%\tFisher Scientific\tCat# 67-56-1\t \tN-2 Supplement\tLife Technologies\tCat# 17502048\t \tNeurobasal\tLife Technologies\tCat# 21103049\t \tNormocin\tInvitrogen\tCat# ant-nr-2\t \tNuPAGE  12%, Bis-Tris Gel\tInvitrogen\tCat# NP0341PK2\t \tNuPAGE Transfer Buffer (20X)\tLife Technologies\tCat# NP00061\t \tPBS\tLife Technologies\tCat# 10010049\t \tPVDF/Filter Paper Sandwich\tLife Technologies\tCat# LC2002\t \tROCK Inhibitor (Y-27632)\tStemgent\tCat# 04-0012\t \tSB 431542\tTocris\tCat# 1614\t \tStemFlex  Medium\tLife Technologies\tCat# A3349401\t \tMicrocentrifuge Tubes\tVWR International\tCat# 0011-702\t \tSterile Sleeves\tVWR International\tCat# 414004-510\t \tTrizol\tLife Technologies\tCat# 15596026\t \tTruSeq Stranded Total RNA Library Prep Kit\tIllumina\tCat# 20020596\t \tTrypLE\tLife Technologies\tCat# 12604039\t \tTrypsin\tPromega\tCat# V5111\t \tXAV939\tStemgent\tCat# 04-00046\t \t\t \tCritical commercial assays\t \t\t \tPierce  Protein A/G Magnetic Beads\tThermo Scientific\tCat# 88803\t \tSuperSignal  West Femto Maximum Sensitivity Substrate\tThermo Scientific\tCat# 34094\t \tPierce  IP Lysis Buffer\tThermo Scientific\tCat# 87788\t \tEnGen Spy Cas9 NLS\tNew England Biolabs\tCat# M0646T\t \t\t \tDeposited data\t \t\t \tIP-MS data\tThis study\tMassIVE: MSV000087514\t \t\t \tExperimental Models: Cell lines\t \t\t \tiPS line from human fibroblasts with integrated NGN2\tNovartis Institutes for BioMedical Research\tiPS hDFn 83/22 iNgn2#9; iPS3 in Nehme et al.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "aaee4011ced0",
+  "interaction_id": "aa8f61c1a069",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2D>VIM",
+  "cited_pmid": "18669648",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ab691cd9fffa",
   "interaction_id": "4ef9c24441a2",
   "source_kind": "omnipath",
@@ -7872,6 +8202,21 @@ window.CAMAP.evidence = [
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
   "sentence_verified": "false",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ad46704ad31a",
+  "interaction_id": "83376959cf2d",
+  "source_kind": "intact",
+  "ref": "EBI-21956996",
+  "cited_pmid": "32873725",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Menzel et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "other",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8354,6 +8699,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Cytosol | Protéine: Calmodulin",
   "supp_source": "interactome STIM1 bis.xlsx/Orai/row 6"
+ },
+ {
+  "evidence_id": "b704774d96d6",
+  "interaction_id": "ccb0716a9059",
+  "source_kind": "intact",
+  "ref": "EBI-16812871",
+  "cited_pmid": "29426014",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Martínez-Noël et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b753b91f8b90",
@@ -8941,6 +9301,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 55"
  },
  {
+  "evidence_id": "c68771506437",
+  "interaction_id": "384b1787b603",
+  "source_kind": "pubmed",
+  "ref": "PMID:29284605",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Lopez JJ",
+  "sentence": "In platelets, attenuation of FLNA expression using siRNA resulted in enhanced association of STIM1 with the cytoskeleton, greater STIM1-Orai1 interaction, and SOCE.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c6c884d644bf",
   "interaction_id": "a045d5c21000",
   "source_kind": "intact",
@@ -9076,6 +9451,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c8e9dab1cd00",
+  "interaction_id": "e049ce59af7c",
+  "source_kind": "intact",
+  "ref": "EBI-28939579",
+  "cited_pmid": "32707033",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Buljan et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c9523076b6d6",
   "interaction_id": "a1848557ef71",
   "source_kind": "pubmed",
@@ -9159,6 +9549,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2018",
   "first_author": "Liu et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "cc050730fc13",
+  "interaction_id": "878d41a37606",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2D>FLNA",
+  "cited_pmid": "11290523",
+  "doi": "",
+  "year": "",
+  "first_author": "",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -10066,6 +10471,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "dfe9243b7c9e",
+  "interaction_id": "5f5f3007e352",
+  "source_kind": "intact",
+  "ref": "EBI-55019402",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e04d6041bc6b",
   "interaction_id": "e75027fbac22",
   "source_kind": "curated",
@@ -10366,6 +10786,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "e54656e7487d",
+  "interaction_id": "ea3d5f5e2a8c",
+  "source_kind": "signor",
+  "ref": "SIGNOR-250690",
+  "cited_pmid": "16140754",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Interestingly, viral DNA replication also resulted in the activation of calcium calmodulin-dependent protein kinase II (CaM kinase II) and phosphorylation of the N-terminal domain of vimentin on serine 82. Immunostaining showed that vimentin within the cage was phosphorylated on serine 82.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e58794386158",
   "interaction_id": "9b3dee2c8aba",
   "source_kind": "curated",
@@ -10591,6 +11026,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "e8dd4cbc275e",
+  "interaction_id": "e7f88b42a6d2",
+  "source_kind": "signor",
+  "ref": "SIGNOR-255953",
+  "cited_pmid": "19725819",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Upon binding of the Ca2+/calmodulin complex to the binding domain of CaMKII, it is activated via autophosphorylation, then remaining active independent of of Ca2+ levels.",
+  "sentence_verified": "false",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e8dd63e21e90",
   "interaction_id": "522392d7f02f",
   "source_kind": "intact",
@@ -10646,6 +11096,21 @@ window.CAMAP.evidence = [
   "first_author": "Du et al.",
   "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
   "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "eb4afc0e4b45",
+  "interaction_id": "6f018b06ad3e",
+  "source_kind": "intact",
+  "ref": "EBI-21957251",
+  "cited_pmid": "32873725",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Menzel et al.",
+  "sentence": "",
+  "sentence_verified": "",
   "species_context": "other",
   "curator_note": "",
   "supp_source": ""
