@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 470 done, 12927 pending, 120 skipped, 2 error.
+13519 articles in queue: 520 done, 12877 pending, 120 skipped, 2 error.
 
-- tier 0: 442/3800 processed
+- tier 0: 492/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -552,5 +552,53 @@ has blocked a record, after `AP-1`, `septins` and `IP3Rs`. PMID 32916960's claim
 CaV1.2 is background cited to others; the pair is already in the map from the curator's sheet.
 
 Map: **241 nodes, 541 interactions, 829 evidence rows**. Tests: **153 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-10-19 — Extraction batch 11 (tier 0, `--primary`)
+
+50 articles, **18 records** in `data/raw/lit_20261019_b15.jsonl`, **9 new nodes** (RHOA, NOS1,
+RACK1, FOS, TNF, CDK2, CCT2, CCT5, TMEM97). All 18 sentences verified `true`.
+
+**A second non-calcium arm of STIM1, flagged as such.** PMID 23512989: in endothelium the
+thrombin-induced loss of barrier function requires STIM1 but **neither Ca²⁺ entry nor ORAI1** —
+STIM1 couples the thrombin receptor to **RhoA**, myosin light chain phosphorylation and stress
+fibres. Recorded with `beyond_calcium: true`, next to STIM1 → NFATC2 expression from batch 9.
+The map now holds three `beyond_calcium` edges: STING1 → GPX4, GSDMD → F3, STIM1 → RHOA.
+
+**The isoform ambiguity answered, twice.** PMID 20022948 names **type I and type II** IP3
+receptors rather than writing "IP3Rs": ORAI1 associates with both on stimulation, and silencing
+TRPC3 abolishes the ITPR1 contact but not the ITPR2 one. The same complex brings in **RACK1** and
+**TRPC3** on ORAI1. PMC6157965 likewise names **CCT1 (TCP1), CCT2 and CCT5** instead of leaving
+the chaperonin generic, so the complex enters as proteins: the contact is on the ORAI1
+intracellular loop, and knocking down either CCT1 or CCT2 raises ORAI1 at the plasma membrane
+without changing its total level. How much channel is at the surface is itself regulated.
+
+**Four records had to be requoted** before they survived the inclusion rule: the subunit-level
+co-immunoprecipitation sentences carry no calcium term, so CCT2, CCT5 and RACK1 were being
+dropped although the paper is about calcium signalling. Requoted with each paper's own
+calcium-bearing conclusion, with the co-IP left in `mechanism` — the same fix as EGR1 (batch 6)
+and SLC35B1 (batch 9). **This is now the commonest reason a good record fails: the evidence
+sentence and the calcium sentence are different sentences.**
+
+**Other arms.** **NOS1 → STIM1 inhibition** (PMID 29705071): S-nitrosylation at Cys49/Cys56, with
+a double-mutant control — a redox brake in the sarcoplasmic reticulum of cardiomyocytes.
+**TMEM97 (sigma 2 receptor) binds STIM1 and not ORAI1** (PMC7072710), beside SIGMAR1 from batch 7:
+both sigma receptors act on the sensor. **STIM2 → ORAI1 inhibition** (PMID 38537434): the two
+STIM2 splice variants have opposite signs, STIM2.1 suppressing and STIM2.2 enhancing SOCE, which
+is why STIM2 knockdown can *increase* SOCE. **ORAI1 → TRPC4** (PMID 22534489): ORAI1 as a subunit
+that decides whether a TRPC1/4 channel is calcium-selective. **STIM1 → CDK2** (PMC4768259),
+**ORAI1 → FOS** (PMC6555828, two transcription factors needing different numbers of STIM1-ORAI1
+clusters), **STIM1/ORAI1 → TNF** (PMID 33713955, endothelium in sepsis).
+
+**A question for the curator, and a concrete one.** `PPP3CA` is in her seed list but is **not in
+the map**: it is a level-2 seed and needs a link to an anchor, and the papers that would give it
+one — PMC5833430 (caerulein → STIM1-ORAI1 → calcineurin → NFAT/TFEB), PMC4038503 (the KSR2-
+calcineurin complex on the channel) — write "calcineurin", not an isoform. Same shape as `IP3Rs`,
+`AP-1`, `septins`, `ORPs` and now "NF-κB" (PMID 33713955 shows forced NF-κB expression inducing
+STIM1 — a cross-axis link we cannot record for want of a subunit). A single convention from her
+would unblock six records at once.
+
+Map: **249 nodes, 571 interactions, 862 evidence rows**. Tests: **153 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
