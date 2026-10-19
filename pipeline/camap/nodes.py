@@ -108,6 +108,8 @@ def select_nodes(universe, interactions, go_calcium, curated_calcium=None):
             curated_seed[a] = (curated_seed.get(a, False)
                                or bool(i.get("_curated")) and universe.level(b) == 1)
 
+    calcium = {n: bool(universe.level(n)) or go_calcium(n) or text_calcium[n] or curated_calcium(n)
+               for n in neighbours}
     kept = set()
     for node, nbrs in neighbours.items():
         level = universe.level(node)
@@ -117,9 +119,28 @@ def select_nodes(universe, interactions, go_calcium, curated_calcium=None):
         elif level == 2:
             if touches_anchor:
                 kept.add(node)
-        elif touches_anchor and (go_calcium(node) or text_calcium[node] or curated_calcium(node)):
+        elif touches_anchor and calcium[node]:
             kept.add(node)
-    return kept, neighbours
+    kept |= beyond_calcium_nodes(interactions, kept)
+    return kept, neighbours, calcium
+
+
+def beyond_calcium_nodes(interactions, kept):
+    """The endpoints of `beyond_calcium` interactions, as far down a chain as it reaches.
+
+    A flagged claim is an extension of the map, not a map of its own: it enters only where it
+    hangs off something already kept, so one flag cannot drag in a disconnected cluster.
+    """
+    flagged = [i for i in interactions if i.get("_beyond_calcium")]
+    added, growing = set(), True
+    while growing:
+        growing = False
+        for i in flagged:
+            ends = {i["source"], i["target"]}
+            if ends & (kept | added) and not ends <= (kept | added):
+                added |= ends - kept
+                growing = True
+    return added
 
 
 def module_of(universe, node_id, neighbours):

@@ -156,7 +156,8 @@
       el("div", { class: "chips" },
         el("span", { class: "module m-" + n.module }, MODULES[n.module || ""] || n.module),
         n.is_seed === "true" ? el("span", { class: "chip" }, "seed") : null,
-        n.type === "metabolite" ? el("span", { class: "chip" }, "metabolite") : null),
+        n.type === "metabolite" ? el("span", { class: "chip" }, "metabolite") : null,
+        n.calcium_related === "false" ? el("span", { class: "chip beyond" }, "not calcium-related") : null),
       n.synonyms ? el("p", { class: "small muted" }, "Synonyms: " + n.synonyms) : null,
       curatedAnnotations(n),
       n.function_summary ? el("p", { class: "summary" }, n.function_summary) : null,
@@ -206,7 +207,9 @@
       i.mechanism ? el("p", { class: "muted" }, i.mechanism) : null,
       el("div", { class: "chips" },
         el("span", { class: "chip" }, `${i.n_sources} source(s): ${i.n_pubs || 0} pub · ${i.n_db || 0} db`),
-        i.calcium_evidence ? el("span", { class: "chip" }, "Ca²⁺: " + CamapCore.calciumLabel(i.calcium_evidence)) : null,
+        i.beyond_calcium === "true"
+          ? el("span", { class: "chip beyond" }, "not calcium-related (kept on purpose)")
+          : i.calcium_evidence ? el("span", { class: "chip" }, "Ca²⁺: " + CamapCore.calciumLabel(i.calcium_evidence)) : null,
         i.has_human_evidence === "false" && i.has_animal_evidence === "true"
           ? el("span", { class: "chip warn" }, "non-human only") : null,
         i.has_human_evidence === "false" && i.has_animal_evidence === "false"

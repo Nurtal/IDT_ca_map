@@ -646,6 +646,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 9"
  },
  {
+  "evidence_id": "10715708d522",
+  "interaction_id": "0acdf9802cb5",
+  "source_kind": "pubmed",
+  "ref": "PMID:38878778",
+  "cited_pmid": "",
+  "doi": "10.1016/j.cell.2024.05.031",
+  "year": "2024",
+  "first_author": "Woo MS",
+  "sentence": "This detachment initiates non-canonical STING signaling, which leads to autophagic degradation of glutathione peroxidase 4 (GPX4), essential for neuronal redox homeostasis and thereby inducing ferroptosis.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "10853f68aef2",
   "interaction_id": "e27616096e06",
   "source_kind": "pubmed",
@@ -3177,6 +3192,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5a9ac830cff2",
+  "interaction_id": "d256a22825a8",
+  "source_kind": "pubmed",
+  "ref": "PMID:32142632",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Zhang H",
+  "sentence": "The TMEM173-dependent increase in cytosolic calcium drives Gasdermin D (GSDMD) cleavage and activation, which triggers the release of F3, the key initiator of blood coagulation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },

@@ -10,6 +10,7 @@
   const INTERACTION_COLUMNS = [
     "interaction_id", "source", "target", "type", "directed", "mechanism", "n_sources", "n_pubs",
     "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence",
+    "beyond_calcium",
     "justification", "conflict_with",
     "evidence_fingerprint",
   ];
@@ -32,7 +33,9 @@
 
   // "GO+curated" -> "GO annotation + curator's gene catalogue". Several criteria can apply
   // at once (issue #17); "both" is the historical spelling of "GO+text".
-  function calciumLabel(value) {
+  // beyond: the record says "keep this although it is not calcium-related" (build's beyond_calcium)
+  function calciumLabel(value, beyond) {
+    if (beyond === "true" || beyond === true) return "not calcium-related (kept on purpose)";
     if (!value) return "none";
     return value.split("+").map((c) => LABELS.calcium[c] || c).join(" + ");
   }

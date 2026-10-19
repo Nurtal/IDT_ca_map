@@ -114,7 +114,8 @@
         endpoint(i.target)),
       i.mechanism ? el("p", { class: "mechanism" }, i.mechanism) : null,
       el("div", { class: "tags" },
-        el("span", { class: "tag" }, "Calcium evidence: " + calciumLabel(i.calcium_evidence)),
+        el("span", { class: "tag" + (i.beyond_calcium === "true" ? " beyond-tag" : "") },
+           "Calcium evidence: " + calciumLabel(i.calcium_evidence, i.beyond_calcium)),
         i.has_human_evidence === "false" && i.has_animal_evidence === "true"
           ? el("span", { class: "tag warn-tag" }, "Non-human evidence only") : null,
         i.has_human_evidence === "false" && i.has_animal_evidence === "false"

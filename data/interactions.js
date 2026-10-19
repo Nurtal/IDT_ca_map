@@ -14,6 +14,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "336ae21caa2e"
@@ -32,6 +33,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "81edf38f0a00"
@@ -50,6 +52,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "dda43dce9233"
@@ -68,6 +71,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "75c7c2486a2c"
@@ -86,6 +90,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1b3ee06073bb"
@@ -104,6 +109,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "ca2f2ab0249d"
@@ -122,6 +128,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "A TMEM110(STIMATE)–STING interface exists and its mutation deregulates type I IFN: direct contact between a SOCE regulator and STING.",
   "conflict_with": "",
   "evidence_fingerprint": "52e6bfbf31fa"
@@ -140,6 +147,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "1fddde45ab6a"
@@ -158,6 +166,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7abe13fc6ef9"
@@ -176,6 +185,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "dd230d5ad855"
@@ -194,6 +204,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8923abf5b7c4"
@@ -212,6 +223,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3fbc1bc3e067"
@@ -230,6 +242,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ed0e6e422cce"
@@ -248,6 +261,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "eef0638a8fdf"
@@ -266,6 +280,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5e8d616b1f03"
@@ -284,6 +299,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7c1c06a4b51d"
@@ -302,6 +318,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "0a5bef0ab815"
@@ -320,6 +337,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9f2214502877"
@@ -338,6 +356,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ae1be4503f37"
@@ -356,6 +375,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "9079ed231249"
@@ -374,6 +394,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "43f360d51201"
@@ -392,9 +413,29 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "bb18fd4f0be3"
+ },
+ {
+  "interaction_id": "0acdf9802cb5",
+  "source": "STING1",
+  "target": "GPX4",
+  "type": "expression_regulation_down",
+  "directed": "true",
+  "mechanism": "non-canonical STING signalling, initiated by the glutamate-triggered detachment from STIM1, degrades GPX4 by autophagy; neuronal STING inhibition protects against inflammation-induced neurodegeneration (abstract only, no full text in PubTator)",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "false",
+  "has_animal_evidence": "false",
+  "calcium_evidence": "curated",
+  "beyond_calcium": "true",
+  "justification": "The endpoint of the neuronal STIM1-STING arm: losing GPX4 is what kills the neuron by ferroptosis. GPX4 is a redox enzyme, not calcium machinery; it is here as the end of the arm.",
+  "conflict_with": "",
+  "evidence_fingerprint": "24fc1969f10a"
  },
  {
   "interaction_id": "0bd7ba0ddab6",
@@ -410,6 +451,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b32a90985c77"
@@ -428,6 +470,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "90e66d3d9c8b"
@@ -446,6 +489,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "b568b6aeb8a3"
@@ -464,6 +508,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a3f8a6ab2f8c"
@@ -482,6 +527,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "417621dfac19"
@@ -500,6 +546,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "842e7687c167"
@@ -518,6 +565,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b64f2c3966d4"
@@ -536,6 +584,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "6b5da290aa05"
@@ -554,6 +603,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f412719dbbac"
@@ -572,6 +622,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "36e4b122316f"
@@ -590,6 +641,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8614a2ef4fb8"
@@ -608,6 +660,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "SERCA2/ATP2A2, the ER calcium pump, binds STING directly: a third calcium-machinery protein in physical contact with STING, after STIM1 and ITPR1. | Independent confirmation, in two renal carcinoma lines, that STING binds the ER calcium pump ATP2A2/SERCA2 — a second source for that edge.",
   "conflict_with": "",
   "evidence_fingerprint": "304868c2e7e5"
@@ -626,6 +679,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "93c073bc5ba4"
@@ -644,6 +698,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "9f1697689258",
   "evidence_fingerprint": "bbab4c9b6550"
@@ -662,6 +717,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7a20db19f4c3"
@@ -680,6 +736,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "faa73a5b6f86",
   "evidence_fingerprint": "be7cd55640c5"
@@ -698,6 +755,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f47a2c0b43cd"
@@ -716,6 +774,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "237802d91e9d"
@@ -734,6 +793,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "aff2ed8c6fe7"
@@ -752,6 +812,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "ER Ca2+ depletion (HRV 2B viroporin) releases STING from STIM1: store Ca2+ gates STING trafficking. | In human primary T cells, ER Ca2+ store depletion potentiates STING and IRF3 phosphorylation, placing store Ca2+ upstream of STING activation in the adaptive compartment.",
   "conflict_with": "",
   "evidence_fingerprint": "852d9092a2ad"
@@ -770,6 +831,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "Resting STING clamps TRPV2 shut, so STING loss raises cytosolic Ca2+: STING is a brake on ER Ca2+ release, mirroring STIM1 being a brake on STING.",
   "conflict_with": "",
   "evidence_fingerprint": "6e83ef793612"
@@ -788,6 +850,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c8b8784fbf07"
@@ -806,6 +869,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "bbf2ce61d4a5"
@@ -824,6 +888,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "d5f5af9a81aa"
@@ -842,6 +907,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8320aadac57f"
@@ -860,6 +926,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "05c0df07016a"
@@ -878,6 +945,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "16bb7bccffd7"
@@ -896,6 +964,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d29a2fc6c3dc"
@@ -914,6 +983,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b17f1a93924b"
@@ -932,6 +1002,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "52fa5fb16566"
@@ -950,6 +1021,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "157266a6dad4"
@@ -968,6 +1040,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9087437a0eb1"
@@ -986,6 +1059,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "14546562ef32"
@@ -1004,6 +1078,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "85770f6a4339",
   "evidence_fingerprint": "1414ce437a9d"
@@ -1022,6 +1097,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f6817913e2c8"
@@ -1040,6 +1116,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "fc01c7424ac6"
@@ -1058,6 +1135,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "050cbcf07e27"
@@ -1076,6 +1154,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "62bd36116f06"
@@ -1094,6 +1173,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "4ccf865688ee"
@@ -1112,6 +1192,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e3da3990aa26"
@@ -1130,6 +1211,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "987fcb51cfd4"
@@ -1148,6 +1230,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "59450f24325d"
@@ -1166,6 +1249,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "A physical link between the lysosomal Ca2+ channel TRPML1 and the anchor STIM1, i.e. a lysosome-ER contact point feeding the same store that drives SOCE. | Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1fd7eb957254"
@@ -1184,6 +1268,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "The output arm of the anchor STING1, independent of canonical IFN signalling.",
   "conflict_with": "",
   "evidence_fingerprint": "ae75d496b72e"
@@ -1202,6 +1287,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "672f54e2aeb9"
@@ -1220,6 +1306,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ad3970f0dbce"
@@ -1238,6 +1325,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f7ef51177026"
@@ -1256,6 +1344,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "05afc94bbd87"
@@ -1274,6 +1363,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "32293830b279"
@@ -1292,6 +1382,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f6c7d1c99cc5"
@@ -1310,6 +1401,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "05069e448a7a"
@@ -1328,6 +1420,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "93e782d96e44"
@@ -1346,6 +1439,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "TMEM203 promotes STING translocation to endo-lysosomes and TBK1/IRF3 activation; relevant to SLE. | Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d1890f48b440"
@@ -1364,6 +1458,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "4f767a2ccf14"
@@ -1382,6 +1477,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "425447d2b189"
@@ -1400,6 +1496,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "62f592a82883"
@@ -1418,6 +1515,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "39688221ba40"
@@ -1436,6 +1534,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "41c3c52261f1"
@@ -1454,6 +1553,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "2a77d2769083"
@@ -1472,6 +1572,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "379313e11f25"
@@ -1490,6 +1591,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "ITPR1 drives ER-to-mitochondria Ca2+ transfer through the IP3R1-GRP75-VDAC1 axis, the step that leads to mtDNA release and cGAS-STING activation in diabetic retinopathy.",
   "conflict_with": "",
   "evidence_fingerprint": "1d76150c987a"
@@ -1508,6 +1610,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "ea57f1b02ee0"
@@ -1526,6 +1629,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c7195a95142e"
@@ -1544,6 +1648,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d9f07f60faca"
@@ -1562,6 +1667,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3b54c0a48ebc"
@@ -1580,6 +1686,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "880c7da125a5"
@@ -1598,6 +1705,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "81e8bda8cd07"
@@ -1616,6 +1724,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "046bf03101ee"
@@ -1634,6 +1743,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "73d912f80b68"
@@ -1652,6 +1762,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "A transcriptional input to the anchor: BCL6 sustains STIM1 expression in follicular helper T cells, so the amount of the ER calcium sensor available to gate SOCE (and to restrain STING) is itself set by a lineage transcription factor.",
   "conflict_with": "",
   "evidence_fingerprint": "97d147f150c5"
@@ -1670,6 +1781,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "VDAC2, the mitochondrial outer-membrane calcium transporter, is a direct STING partner: STING reaches the mitochondrial calcium machinery, not only the ER's.",
   "conflict_with": "",
   "evidence_fingerprint": "fcb8f63e63e1"
@@ -1688,6 +1800,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "6dcab262fd80"
@@ -1706,6 +1819,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "cae84764bf6f"
@@ -1724,6 +1838,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b9bff158fef3"
@@ -1742,6 +1857,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "18d247e4a315"
@@ -1760,6 +1876,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "dae66441d2b2"
@@ -1778,6 +1895,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "935882697ec4"
@@ -1796,6 +1914,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "9bf8e9ad69ea"
@@ -1814,6 +1933,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "afe4a9ae665c"
@@ -1832,6 +1952,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d627c49a077b"
@@ -1850,6 +1971,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "b029e6c2b7f4",
   "evidence_fingerprint": "68c44fa09d2d"
@@ -1868,6 +1990,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "76dabddc2191"
@@ -1886,6 +2009,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "7e2d476a5b72"
@@ -1904,6 +2028,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "4efe01b4e692"
@@ -1922,6 +2047,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8692d7b58a4c"
@@ -1940,6 +2066,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ee58459a79e9"
@@ -1958,6 +2085,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "dcb8b6944675"
@@ -1976,6 +2104,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b4cab3b07c35"
@@ -1994,6 +2123,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5b7be1f289b3"
@@ -2012,6 +2142,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "ca6bbfbcbe46"
@@ -2030,6 +2161,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "95918d6419d8"
@@ -2048,6 +2180,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "STING drives the inflammasome through lysosomal cell death. The mechanism shown is potassium efflux, not calcium: this edge enters only because NLRP3 is in the curator's catalogue, and it is hers to keep or reject at review.",
   "conflict_with": "",
   "evidence_fingerprint": "98239e262eff"
@@ -2066,6 +2199,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "897bbc6e797b"
@@ -2084,6 +2218,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "453f8a8d7f98"
@@ -2102,6 +2237,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "6076e255e58d"
@@ -2120,6 +2256,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d17e120b9d97"
@@ -2138,6 +2275,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "501e91c8ff1b"
@@ -2156,6 +2294,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a084edf96668"
@@ -2174,6 +2313,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "3eaec056da82"
@@ -2192,6 +2332,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "6261251582be"
@@ -2210,6 +2351,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "601d47e5ba97"
@@ -2228,6 +2370,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "89ea9767309c"
@@ -2246,6 +2389,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8b3e03c7dcff"
@@ -2264,6 +2408,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "ddd17ce0a487"
@@ -2282,6 +2427,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a0144737cefc"
@@ -2300,6 +2446,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "41aab1d2d92d"
@@ -2318,6 +2465,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a54704adfc0b"
@@ -2336,6 +2484,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "22251892dec8"
@@ -2354,6 +2503,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "46503d1910d7"
@@ -2372,6 +2522,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8ec893d0a1dc"
@@ -2390,6 +2541,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f02ae90e9e1b"
@@ -2408,6 +2560,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "STIM1 and TMEM203 compete for STING binding; STIM1 disrupts the activating TMEM203–STING complex.",
   "conflict_with": "",
   "evidence_fingerprint": "d6d4547b29b3"
@@ -2426,6 +2579,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "726a342b07ff"
@@ -2444,6 +2598,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "4929936678a6"
@@ -2462,6 +2617,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a6d33b7fd249"
@@ -2480,6 +2636,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "7c0ffc4575d8"
@@ -2498,6 +2655,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "0400012bdc14"
@@ -2516,6 +2674,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "45de4e5c0a0c"
@@ -2534,6 +2693,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "3f55ff294ee2"
@@ -2552,6 +2712,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "4e55134b946d"
@@ -2570,6 +2731,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "cf4be5878599"
@@ -2588,6 +2750,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "06f98334e783"
@@ -2606,6 +2769,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "0d66c48c7c01"
@@ -2624,6 +2788,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "fddd76631fd8"
@@ -2642,6 +2807,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "7f15dcc8ff67",
   "evidence_fingerprint": "342e46d8409d"
@@ -2660,6 +2826,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "STING binds the IP3 receptor ITPR1 directly: a second STING-calcium channel complex, on the ER release side, driving coagulation in sepsis.",
   "conflict_with": "",
   "evidence_fingerprint": "84e76f5f8005"
@@ -2678,6 +2845,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ae2384f2b549"
@@ -2696,6 +2864,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "12a462453d12"
@@ -2714,6 +2883,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e2794d375588"
@@ -2732,6 +2902,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "42564b71ca93"
@@ -2750,6 +2921,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "6ff99e704b0d"
@@ -2768,6 +2940,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "221075e6975c"
@@ -2786,6 +2959,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a3e82b89760f"
@@ -2804,6 +2978,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a81c85b7129f"
@@ -2822,6 +2997,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "afb7565072b0"
@@ -2840,6 +3016,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a8cba63293e4"
@@ -2858,6 +3035,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d8b8df462fe2"
@@ -2876,6 +3054,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3bec96b436b7"
@@ -2894,6 +3073,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "7759d8d75364"
@@ -2912,6 +3092,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "492bca559c18"
@@ -2930,6 +3111,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "577a6f0e0abb"
@@ -2948,6 +3130,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "ER selenoprotein K (a regulator of Ca2+ flux) binds STING in the ER and licenses its oligomerization.",
   "conflict_with": "",
   "evidence_fingerprint": "b5e9a218891b"
@@ -2966,6 +3149,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "07c88efc9e6c"
@@ -2984,6 +3168,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "205bb8b9a514"
@@ -3002,6 +3187,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "cbe3563bdac7"
@@ -3020,6 +3206,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "40015107770c"
@@ -3038,6 +3225,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "847f9a7abd1a"
@@ -3056,6 +3244,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "779961c0a966"
@@ -3074,6 +3263,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "eaa1deb77150"
@@ -3092,6 +3282,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a9bdaff00e28"
@@ -3110,6 +3301,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "7719b9cee16e"
@@ -3128,6 +3320,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "26f8ba3fcf6a"
@@ -3146,6 +3339,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7fd716dd41e2"
@@ -3164,6 +3358,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "STIM1 binds TMEM203 as well as STING: a three-way competition at the ER.",
   "conflict_with": "",
   "evidence_fingerprint": "c7afc8584deb"
@@ -3182,6 +3377,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "23015b3fb9d8"
@@ -3200,6 +3396,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8e1fe10e6f21"
@@ -3218,6 +3415,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "6aaa6bfb2284"
@@ -3236,6 +3434,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "ATP2A2 governs STING polymerization and trafficking, placing the ER Ca2+ pump itself on the STING activation route.",
   "conflict_with": "",
   "evidence_fingerprint": "9d842998f683"
@@ -3254,6 +3453,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "3875fc7db24b"
@@ -3272,6 +3472,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "7623c407996e"
@@ -3290,6 +3491,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "SELENOK is required for STING oligomerization and ER-to-Golgi trafficking, i.e. STING activation.",
   "conflict_with": "",
   "evidence_fingerprint": "f215626ba99d"
@@ -3308,6 +3510,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "753eebb5f4bd"
@@ -3326,6 +3529,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f5ea298080ac"
@@ -3344,6 +3548,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "fd4ac31ef15e"
@@ -3362,6 +3567,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9ca1aa20a313"
@@ -3380,6 +3586,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "cf3e7fd76d6a"
@@ -3398,6 +3605,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "fa505db1ed3b"
@@ -3416,6 +3624,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "80b687d32d72"
@@ -3434,6 +3643,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9398201b80bc"
@@ -3452,6 +3662,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "STING controls the level of PLSCR1, a Ca2+-dependent phospholipid scramblase in the curator's catalogue: an output of the STING arm that lands on calcium-dependent machinery.",
   "conflict_with": "",
   "evidence_fingerprint": "0bc8c5e8f37d"
@@ -3470,6 +3681,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "3f28594eef4c"
@@ -3488,6 +3700,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "c4292d76e3bd"
@@ -3506,6 +3719,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "bf28db565bd6"
@@ -3524,6 +3738,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8d13b7305353"
@@ -3542,6 +3757,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "1725ca202f5c"
@@ -3560,6 +3776,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d0502e946ad5"
@@ -3578,6 +3795,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ef1c7edec737"
@@ -3596,6 +3814,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d260498479bf"
@@ -3614,6 +3833,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a402fe180c03"
@@ -3632,6 +3852,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a88c4895ad99"
@@ -3650,6 +3871,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e0dd4d8c024e"
@@ -3668,6 +3890,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "6bafc2bca3aa"
@@ -3686,6 +3909,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "5436de207807",
   "evidence_fingerprint": "5d4b0d2e48b9"
@@ -3704,6 +3928,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "82aa0b3abcd6"
@@ -3722,6 +3947,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "98a46f2e8850"
@@ -3740,6 +3966,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Links STING directly to a level-2 calcium effector: STING activation drives the Ca2+-calmodulin-calcineurin-NFAT arm, giving the STIM1/STING axis a transcriptional output in T cells.",
   "conflict_with": "",
   "evidence_fingerprint": "9f920eb4aca1"
@@ -3758,6 +3985,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "aa1ec626dc31"
@@ -3776,6 +4004,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a92a7319d230"
@@ -3794,6 +4023,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "1f017c009e03"
@@ -3812,6 +4042,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "1e0f77983d1d",
   "evidence_fingerprint": "ddf1cbfe0fa1"
@@ -3830,6 +4061,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b6df7a782607"
@@ -3848,6 +4080,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "The functional half of the BCL6 result: losing one Bcl6 allele cuts the calcium response of T cells during B cell contact in vivo, so the transcriptional control of STIM1 by BCL6 has a measured calcium consequence, not just a transcript change.",
   "conflict_with": "",
   "evidence_fingerprint": "0ee50b409779"
@@ -3866,6 +4099,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "fca08e1a4bb1"
@@ -3884,6 +4118,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "0ab7879d3fd9"
@@ -3902,6 +4137,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "fcc567ab7994"
@@ -3920,6 +4156,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a646991faf41"
@@ -3938,6 +4175,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "751eb60fc884"
@@ -3956,6 +4194,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "cGAMP binding is the switch that releases TRPV2 from STING, converting DNA sensing into an ER Ca2+ release signal.",
   "conflict_with": "",
   "evidence_fingerprint": "c8751f72f880"
@@ -3974,6 +4213,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "444c54fa6388"
@@ -3992,6 +4232,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8ef12ab51a53"
@@ -4010,6 +4251,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f98cf8ea0c03"
@@ -4028,6 +4270,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "2b61c020558a"
@@ -4046,6 +4289,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "31fe5e1f2bf7"
@@ -4064,6 +4308,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "bf99b563278e"
@@ -4082,6 +4327,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "STING is required to downregulate SERCA2 in ageing cardiomyocytes, so STING controls the ER calcium pump at the expression level as well as by binding it: a route from DNA sensing to impaired calcium handling and contractility.",
   "conflict_with": "",
   "evidence_fingerprint": "02d6c346e50b"
@@ -4100,6 +4346,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3172fd8a4143"
@@ -4118,6 +4365,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "9b321fbe4628"
@@ -4136,6 +4384,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "Reciprocal arm of the bridge: STING restrains SOCE, so innate immune signalling feeds back on Ca2+ entry. | Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "707e0d0de9b3"
@@ -4154,6 +4403,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "621bb1fed107"
@@ -4172,6 +4422,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "The canonical input to the anchor STING1, shown here independently of IFN/STAT1 signalling.",
   "conflict_with": "",
   "evidence_fingerprint": "b1a3c82afdc4"
@@ -4190,6 +4441,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "379b3d18adf6"
@@ -4208,6 +4460,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "TRPV2 is the channel that carries the STING-gated ER Ca2+ release, feeding CaMKK2/AMPK and replication-fork protection.",
   "conflict_with": "",
   "evidence_fingerprint": "9e10352a787b"
@@ -4226,6 +4479,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "835b1260e95b"
@@ -4244,6 +4498,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5197799bf6e7"
@@ -4262,6 +4517,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "aec6054a8eb7"
@@ -4280,6 +4536,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f4b2c9163904"
@@ -4298,6 +4555,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b8852efbb115"
@@ -4316,6 +4574,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a79c57405199"
@@ -4334,6 +4593,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f370805d1d39"
@@ -4352,6 +4612,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "45aae847a515"
@@ -4370,6 +4631,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f3d898482e14"
@@ -4388,6 +4650,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "2e77a09b78bc"
@@ -4406,6 +4669,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9677913d4dde"
@@ -4424,6 +4688,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "a84be8ddc723",
   "evidence_fingerprint": "f914fc247e75"
@@ -4442,6 +4707,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1395539d7ce4"
@@ -4460,6 +4726,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f0d51db00cb4"
@@ -4478,6 +4745,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "b86d4b07e884"
@@ -4496,6 +4764,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "SAVI gain-of-function STING disrupts T-cell Ca2+ homeostasis independently of IFN, a direct STING-to-calcium link.",
   "conflict_with": "",
   "evidence_fingerprint": "a2ea6f0e5976"
@@ -4514,6 +4783,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "70377c1b5038"
@@ -4532,6 +4802,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "2a3cb8957606"
@@ -4550,6 +4821,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9eb709b4f0e6"
@@ -4568,6 +4840,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "699b208e3df2"
@@ -4586,6 +4859,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "e04d132fe9c7"
@@ -4604,6 +4878,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3b9b882b2c64"
@@ -4622,6 +4897,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1877a52e2286"
@@ -4640,6 +4916,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a09ecb578080"
@@ -4658,6 +4935,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "d15b354c1733"
@@ -4676,6 +4954,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "c533aed5e854"
@@ -4694,6 +4973,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "06bb3b567189"
@@ -4712,6 +4992,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "157c8d5008b0"
@@ -4730,6 +5011,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "TMEM203, an IP3R-interacting regulator of ER Ca2+, binds STING and drives its signalling.",
   "conflict_with": "",
   "evidence_fingerprint": "7567676d61db"
@@ -4748,6 +5030,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e87f545f0558"
@@ -4766,6 +5049,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "01a6578b766f"
@@ -4784,6 +5068,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3a9b5beaf840"
@@ -4802,6 +5087,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "6c65f6109997"
@@ -4820,6 +5106,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9c362e1cbd60"
@@ -4838,6 +5125,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "117c4ab707df",
   "evidence_fingerprint": "8060e1dc5cd9"
@@ -4856,6 +5144,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9472e55488c9"
@@ -4874,6 +5163,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "e3fab00030fc"
@@ -4892,6 +5182,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "STING controls ER–mitochondria (MERC) Ca2+ transfer, linking STING to mitochondrial calcium and pyroptosis. | STING raises cytosolic Ca2+ in Kupffer cells, mostly by ER release, driving caspase-1/GSDMD pyroptosis: a STING-to-calcium effector arm. | Through ITPR1, STING controls ER Ca2+ release in myeloid cells, and this IFN-independent arm drives lethal coagulation. | STING is upstream of mitochondrial Ca2+ overload, not only downstream of it: knocking STING down relieves the overload, closing a feed-forward loop between calcium and DNA sensing. | Here STING *limits* mitochondrial calcium, the opposite sign to the obese-atria study where STING knockdown relieved mitochondrial calcium overload: the direction of STING's effect on mitochondrial calcium is contested. | Pharmacological STING activation in vivo raises and spatially scrambles acinar Ca2+ signals, turning an apically confined rise into a global one: STING reshapes calcium signalling, not just its amplitude. | Constitutive STING activation raises resting cytosolic calcium in primary T cells, the reverse direction of the Srikanth model where STIM1 restrains STING: here the STING end of the axis sets the calcium set-point. | Acute pharmacological STING activation is sufficient to raise basal Ca2+ in wild-type T cells, so the calcium rise is a consequence of STING signalling itself and not of the chronic GOF genotype.",
   "conflict_with": "",
   "evidence_fingerprint": "4e4ecb0bbdc9"
@@ -4910,6 +5201,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "2afa5086dbe6"
@@ -4928,6 +5220,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "55805b2d972c"
@@ -4946,6 +5239,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "28d846065eea"
@@ -4964,6 +5258,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "31aad100137d"
@@ -4982,6 +5277,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8cefef138dbd"
@@ -5000,6 +5296,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "95f8a341cd10",
   "evidence_fingerprint": "bb9cfee14df2"
@@ -5018,6 +5315,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f8431b417000"
@@ -5036,6 +5334,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8b245948a708"
@@ -5054,6 +5353,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "28e620274a33"
@@ -5072,6 +5372,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "51b8dba8b522"
@@ -5090,6 +5391,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Beyond retaining STING in the ER, STIM1 is required for STING exocytosis during HSV-1 infection: a positive trafficking role that conflicts with the pure-brake model. | Mechanism of the bridge: STIM1 acts as an ER retention factor controlling STING trafficking, the rate-limiting step of STING activation.",
   "conflict_with": "",
   "evidence_fingerprint": "ed8b5bc2a2f7"
@@ -5108,6 +5410,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b4b90058e523"
@@ -5126,6 +5429,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5a1a7af97df8"
@@ -5144,6 +5448,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b7a42aaa5d17"
@@ -5162,6 +5467,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d4167b1a615a"
@@ -5180,6 +5486,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "64f8a0c36dbc"
@@ -5198,6 +5505,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "44e59294dfc9"
@@ -5216,6 +5524,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "38544a51e238",
   "evidence_fingerprint": "d53584b18e5f"
@@ -5234,6 +5543,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "605df4670b71"
@@ -5252,6 +5562,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "325d3b6cdff8"
@@ -5270,6 +5581,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "c2a1fbe72c24"
@@ -5288,6 +5600,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7f132f60f141"
@@ -5306,6 +5619,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "ce7b0c28d9cf"
@@ -5324,6 +5638,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "STING restrains expression of the SOCE regulator TMEM110/STIMATE, a feedback from DNA sensing onto a calcium-handling ER protein.",
   "conflict_with": "",
   "evidence_fingerprint": "5ab6dd8268a5"
@@ -5342,6 +5657,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e9e8055804e9"
@@ -5360,6 +5676,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "de614a587bfd"
@@ -5378,6 +5695,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f14d339bb8c6"
@@ -5396,6 +5714,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "7e5f58c23602"
@@ -5414,6 +5733,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c2d42955c8fc"
@@ -5432,6 +5752,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "fc97b6ef49a3"
@@ -5450,6 +5771,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "STING restrains VDAC2, so losing STING builds ER-mitochondria contacts and raises mitochondrial calcium; an innate-immunity-independent growth arm in renal cancer.",
   "conflict_with": "",
   "evidence_fingerprint": "a5ff71867080"
@@ -5468,6 +5790,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c5be38aed266"
@@ -5486,6 +5809,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "1944a6d167b1"
@@ -5504,6 +5828,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d0c476242bd4"
@@ -5522,6 +5847,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "eebcd8a0bcc7"
@@ -5540,6 +5866,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "66316f740e80"
@@ -5558,6 +5885,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "cGAMP binding is what releases STING from STIM1, linking the second messenger to the Ca2+ sensor complex.",
   "conflict_with": "",
   "evidence_fingerprint": "03dae43ff37d"
@@ -5576,6 +5904,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "c024cad70b5f"
@@ -5594,6 +5923,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e0c3af907511"
@@ -5612,6 +5942,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "65e897109bb2"
@@ -5630,6 +5961,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "da66e857be8e"
@@ -5648,6 +5980,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "19143529b535"
@@ -5666,6 +5999,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "edc3773de8b8"
@@ -5684,6 +6018,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f9fa75950bac"
@@ -5702,6 +6037,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "The effector step of the STING-ITPR1 calcium arm: what the calcium released by STING actually does, and the reason that arm is lethal in sepsis.",
   "conflict_with": "",
   "evidence_fingerprint": "6ceab4dc42a4"
@@ -5720,6 +6056,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "a664756308db"
@@ -5738,6 +6075,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8aff00a7be70"
@@ -5756,6 +6094,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "77847cce1438"
@@ -5774,6 +6113,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1c6d6e4f8bef"
@@ -5792,6 +6132,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f2f59adf7b6a"
@@ -5810,6 +6151,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "370fac88c9ba"
@@ -5828,6 +6170,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "0198e7808e41"
@@ -5846,6 +6189,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "STING directly binds the ER Ca2+ channel TRPV2: a second STING-calcium channel complex alongside STIM1, acting on the release side. | Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5484a2047afc"
@@ -5864,6 +6208,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "text",
+  "beyond_calcium": "false",
   "justification": "Cytosolic Ca2+ activates TBK1 directly, through the Ca2+-binding protein TBC1D9 and independently of STING: a calcium entry point into innate immune signalling that bypasses the STIM1-STING brake.",
   "conflict_with": "",
   "evidence_fingerprint": "0f25b7aa9bb5"
@@ -5882,6 +6227,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f59fa08830f2"
@@ -5900,6 +6246,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "fa2aa85225fa"
@@ -5918,6 +6265,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "dffe925e04c2"
@@ -5936,6 +6284,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "7d41ff57125c"
@@ -5954,6 +6303,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "0328a4d423c5"
@@ -5972,9 +6322,29 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Direct functional evidence that STIM1 gates ORAI1, here constitutively: a gain-of-function STIM1 opens ORAI1 without store depletion, anchoring the canonical SOCE edge in primary tissue.",
   "conflict_with": "",
   "evidence_fingerprint": "c9ad93de7926"
+ },
+ {
+  "interaction_id": "d256a22825a8",
+  "source": "GSDMD",
+  "target": "F3",
+  "type": "activation",
+  "directed": "true",
+  "mechanism": "GSDMD cleavage downstream of the STING-ITPR1 calcium rise opens pyroptotic pores that release F3; genetic or pharmacological inhibition of the TMEM173-GSDMD-F3 pathway blocks systemic coagulation in three sepsis models",
+  "n_sources": "1",
+  "n_pubs": "1",
+  "n_db": "0",
+  "n_curated": "0",
+  "has_human_evidence": "false",
+  "has_animal_evidence": "true",
+  "calcium_evidence": "text",
+  "beyond_calcium": "true",
+  "justification": "The endpoint of the STING-ITPR1-calcium arm: F3 release is what makes it lethal, and the upregulation of the pathway tracks DIC severity and mortality in septic patients. F3 itself is not calcium-related; it is here as the end of the arm.",
+  "conflict_with": "",
+  "evidence_fingerprint": "d1e543547921"
  },
  {
   "interaction_id": "d33522fa9187",
@@ -5990,6 +6360,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "ORAI1 sets resting cytosolic Ca2+ and, through it, tonic type I IFN signalling and antiviral resistance: the SOCE pore feeding back on innate immunity.",
   "conflict_with": "",
   "evidence_fingerprint": "d776242a5ff9"
@@ -6008,6 +6379,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "8f788ff32cdf"
@@ -6026,6 +6398,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "d08209c771aa"
@@ -6044,6 +6417,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "bc3e5e7cc6b1"
@@ -6062,6 +6436,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "97429a2c935f"
@@ -6080,6 +6455,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "The STIM1 N-terminal fragment blocks STING trafficking and rescues ER stress / T-cell death caused by a SAVI STING mutant. | STIM1 is the ER retention factor through which an antagonist blocks STING ER-to-Golgi exit; therapeutic angle for lupus. | An RNA virus exploits the STIM1 brake on STING: its protease stabilizes STIM1 to keep STING in the ER and blunt type I IFN, and STIM1 loss restricts the virus. | The STIM1 brake on STING is exploited therapeutically: depleting ER Ca2+ with thapsigargin releases STING trafficking and amplifies tumour type I IFN in vivo. | Second therapeutic exploitation of the STIM1 brake: releasing it with ER stress, alongside mtDNA release, outperforms a clinical STING agonist, so the brake is a druggable amplifier. | Founding STIM1–STING bridge: the SOCE Ca2+ sensor keeps STING silent, so STIM1 loss-of-function (CRAC channelopathy) unleashes type I IFN. | Gain-of-function evidence in human cells that STIM1 dampens STING signalling, including disease-causing STING (SAVI) variants. | A second, independent demonstration that STIM1 restrains STING, in a tissue where the release is driven by glutamate rather than by store depletion. | Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "f77f00805efd"
@@ -6098,6 +6474,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1e7f8ee14ceb"
@@ -6116,6 +6493,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "af0f66adb15b"
@@ -6134,6 +6512,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "The transcriptional step between the anchor STING1 and PLSCR1, so the calcium-side output is attached to the arm that produces it rather than to STING alone.",
   "conflict_with": "",
   "evidence_fingerprint": "d15ec81c88b5"
@@ -6152,6 +6531,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Independent confirmation (FRET, human bronchial cells) of the STIM1–STING ER-retention complex. | The STIM1-STING complex in human THP1 macrophages is pharmacologically targetable: the ISD017 peptide locks STING onto STIM1. | FRET evidence that STING sits on STIM1 at rest and is pulled off it by EV-D68; a STING antagonist restores the STIM1-bound ER state. | Direct physical contact between the two anchors of the map, mapped to their ER transmembrane domains. | The STIM1-STING complex outside immunity: in neurons of multiple sclerosis and its mouse model, the same physical retention that Srikanth 2019 described in immune cells.",
   "conflict_with": "",
   "evidence_fingerprint": "e3e4e31e4f94"
@@ -6170,6 +6550,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "32d236fdc221"
@@ -6188,6 +6569,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "b2e2d0d50031"
@@ -6206,6 +6588,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "923cb2f39cca"
@@ -6224,6 +6607,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "ITPR3 at mitochondria-associated membranes sets mitochondrial Ca2+ influx, the upstream step of a calcium-to-STING arm.",
   "conflict_with": "",
   "evidence_fingerprint": "4b903bad8c6a"
@@ -6242,6 +6626,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "bb005ccad64b"
@@ -6260,6 +6645,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "e21e71e57205"
@@ -6278,6 +6664,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "text+curated",
+  "beyond_calcium": "false",
   "justification": "Non-canonical, cGAS-independent STING activation in neurons driven by IP3R-mediated ER Ca2+ release: calcium acts upstream of STING. | Mitochondrial Ca2+ uptake gates cGAS-STING activation by controlling mtDNA release: an indirect calcium-to-STING route distinct from the STIM1 brake. | Second, independent support for the indirect calcium-to-STING route: cytosolic Ca2+ overload damages mitochondria, releasing mtDNA that activates cGAS-STING in tumour cells. | Third independent support for the indirect route: blocking ER-to-mitochondria Ca2+ shuttling cuts mtDNA release and shuts down cGAS-STING, here switching macrophage phenotype after spinal cord injury. | Fourth context for calcium feeding STING: in adipocytes, disrupted ER-mitochondria contacts and calcium homeostasis drive a STING-centred interferon response and insulin resistance.",
   "conflict_with": "",
   "evidence_fingerprint": "50233cf44a8d"
@@ -6296,6 +6683,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "631954f79f72"
@@ -6314,6 +6702,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c449cbde861a"
@@ -6332,6 +6721,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "b30543e6aa87"
@@ -6350,6 +6740,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "53e2988fb6a0"
@@ -6368,6 +6759,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "STIM1 restrains a second innate-immune arm beyond STING: its coronavirus-cleaved N-terminal fragment blocks MAVS-TRAF2-TBK1 signalosome assembly, so a calcium sensor is turned into an immune suppressor by proteolysis. | Shows the STIM1 brake propagates to the STING kinase TBK1 in human monocytic cells; indirect (through STING).",
   "conflict_with": "",
   "evidence_fingerprint": "64913d5ea986"
@@ -6386,6 +6778,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "d46add287187"
@@ -6404,6 +6797,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f9619c2e61a6"
@@ -6422,6 +6816,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "de0e9f82275a"
@@ -6440,6 +6835,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "0b75b54b7f21"
@@ -6458,6 +6854,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "38c8ae3e3306"
@@ -6476,6 +6873,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "2ed1acca4a15"
@@ -6494,6 +6892,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "cb2ede9f875b"
@@ -6512,6 +6911,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "5953d12bf1b4"
@@ -6530,6 +6930,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "2afdba6a6833"
@@ -6548,6 +6949,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "d3cd3d133b22"
@@ -6566,6 +6968,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "e7fe47d12455"
@@ -6584,6 +6987,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c7d45e37e18a"
@@ -6602,6 +7006,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "b44557f9faa2"
@@ -6620,6 +7025,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "d207eca5cf64"
@@ -6638,6 +7044,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "dea719dd4593"
@@ -6656,6 +7063,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9ecfc207e4b7"
@@ -6674,6 +7082,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "fe2e538631b0"
@@ -6692,6 +7101,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "UNC93B1, the TLR trafficking chaperone, keeps STIM1 primed for SOCE: an innate-immunity protein tuning the STIM1 Ca2+ sensor. | Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "07d6667bed53"
@@ -6710,6 +7120,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3e016ef121e1"
@@ -6728,6 +7139,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "true",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "STIM1-ORAI1 assembly is triggered by mitophagy in beta-cells: ER-to-lysosome Ca2+ flux empties ER stores and recruits SOCE, a new upstream trigger for the STIM1 switch.",
   "conflict_with": "",
   "evidence_fingerprint": "762d0ba389fe"
@@ -6746,6 +7158,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a821d5a01bae"
@@ -6764,6 +7177,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "f79db9104683"
@@ -6782,6 +7196,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+text+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "3f8275a67112"
@@ -6800,6 +7215,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "true",
   "calcium_evidence": "text",
+  "beyond_calcium": "false",
   "justification": "Calcium itself as the activator of GSDMD, which makes the ER release side of the axis a direct cause of pyroptosis rather than a correlate.",
   "conflict_with": "",
   "evidence_fingerprint": "0e5b876a2085"
@@ -6818,6 +7234,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "1dc1fe6cc6a5"
@@ -6836,6 +7253,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "0edc8a515f64"
@@ -6854,6 +7272,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a8b89133b714"
@@ -6872,6 +7291,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "88e139958af1"
@@ -6890,6 +7310,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e586844145c2"
@@ -6908,6 +7329,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "e48f19c9727c"
@@ -6926,6 +7348,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8eac43c06bae"
@@ -6944,6 +7367,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "b028e2efdba9"
@@ -6962,6 +7386,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "2684904bd76d"
@@ -6980,6 +7405,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "4dc5c6b94fdf"
@@ -6998,6 +7424,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "49875650f236"
@@ -7016,6 +7443,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "3ad0b1040fb0"
@@ -7034,6 +7462,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5765662acdfb"
@@ -7052,6 +7481,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "a1cbc98aa862"
@@ -7070,6 +7500,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "8eab17e3d674"
@@ -7088,6 +7519,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "5c4ddcf98b65"
@@ -7106,6 +7538,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "c70d4c9f4652"
@@ -7124,6 +7557,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "12861169be6f",
   "evidence_fingerprint": "b6151aba0507"
@@ -7142,6 +7576,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "true",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "",
   "conflict_with": "",
   "evidence_fingerprint": "9c560d3a1aa5"
@@ -7160,6 +7595,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5d29536cc27f"
@@ -7178,6 +7614,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STIM1 interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "18b0606bf56a"
@@ -7196,6 +7633,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as a STING1 interactor (interactome STING.xlsx). | Curated by the researcher as a modulator of STING1 signalling (interactome STING.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "6eac190c474e"
@@ -7214,6 +7652,7 @@ window.CAMAP.interactions = [
   "has_human_evidence": "false",
   "has_animal_evidence": "false",
   "calcium_evidence": "GO+curated",
+  "beyond_calcium": "false",
   "justification": "Curated by the researcher as an ORAI1/SOCE interactor (interactome STIM1 bis.xlsx).",
   "conflict_with": "",
   "evidence_fingerprint": "5821372fb626"

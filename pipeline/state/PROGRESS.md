@@ -191,3 +191,30 @@ Read it (abstract only, no full text in PubTator). Two records, both STIM1–STI
   `GSDMD → F3`. Worth asking the curator whether GPX4 belongs in her catalogue.
 
 Map: 205 nodes, 401 interactions, 645 evidence rows.
+
+### 2026-10-19 — `beyond_calcium`: the ends of the arms, tagged
+
+The researcher's call on the two endpoints that fell outside the map: record them, and tag what is
+not calcium-related. A raw record may now carry `beyond_calcium: true` — keep this claim although
+it fails the calcium criterion — written by hand, record by record. Two guards: the flag only
+admits what **hangs off the map** (a flagged pair with no link to a kept node stays out, so one
+flag cannot drag in a disconnected cluster), and everything it lets in says so on the card.
+
+Recorded with it:
+
+- **GSDMD → F3** (PMID 32142632): the pyroptotic pores release tissue factor. This is what makes
+  the STING-ITPR1-calcium arm lethal, and its upregulation tracks DIC severity and mortality in
+  septic patients.
+- **STING1 → GPX4** (PMID 38878778): autophagic degradation of GPX4 is what kills the neuron by
+  ferroptosis, downstream of the glutamate-triggered detachment from STIM1.
+
+Both arms are now complete from the anchor to the pathology.
+
+New columns: `beyond_calcium` on interactions, `calcium_related` on nodes. The second one turned
+out to say more than expected — **81 of 207 nodes are `calcium_related = false`**, nearly all of
+them the STING trafficking partners the wider net brought in (COPA, STEEP1, TOLLIP, RNF5, the
+exocyst, the TRIMs...). Nothing in GO, in a sentence or in the catalogue marks them as calcium.
+That is the honest reading of "ratisse large", and it is now visible on every node panel instead
+of being implicit.
+
+Map: **207 nodes, 403 interactions, 647 evidence rows**. 128 Python + 33 JS tests.

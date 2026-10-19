@@ -77,8 +77,8 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG,
 
     go_calcium = lambda node: bool(annotations.get(node).get("go_calcium"))  # noqa: E731
     curated_calcium = lambda node: node in catalogue  # noqa: E731
-    kept, neighbours = select_nodes(universe, interactions.values(), go_calcium,
-                                    curated_calcium=curated_calcium)
+    kept, neighbours, calcium = select_nodes(universe, interactions.values(), go_calcium,
+                                             curated_calcium=curated_calcium)
     dropped = dropped_curated(interactions, kept, universe, neighbours, go_calcium, curated_calcium)
     interactions = {k: i for k, i in interactions.items() if i["source"] in kept and i["target"] in kept}
     evidence = {k: e for k, e in evidence.items() if e["interaction_id"] in interactions}
@@ -90,7 +90,7 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG,
         finalize_interaction(inter, evidence_ids.get(iid, []), go_calcium, curated_calcium)
     link_conflicts(interactions.values())
 
-    nodes = [node_row(n, resolver, universe, annotations, neighbours, catalogue)
+    nodes = [node_row(n, resolver, universe, annotations, neighbours, catalogue, calcium)
              for n in sorted({x for i in interactions.values() for x in (i["source"], i["target"])})]
 
     tables = {
@@ -150,6 +150,7 @@ def collect(records, resolver, universe, texts):
         add_unique(inter["_justifications"], r.get("justification", ""))
         inter["_refs"].add((r["source_kind"], r["ref"]))
         inter["_curated"] = inter.get("_curated", False) or r["source_kind"] in CURATED_KINDS
+        inter["_beyond_calcium"] = inter.get("_beyond_calcium", False) or bool(r.get("beyond_calcium"))
         species = r.get("species_context") or "unknown"
         if species not in SPECIES_CONTEXTS:
             raise ValueError(f"{r.get('_origin')}: unknown species_context {species!r}")
@@ -172,6 +173,7 @@ def collect(records, resolver, universe, texts):
 def finalize_interaction(inter, evidence_ids, go_calcium, curated_calcium):
     refs = inter.pop("_refs")
     inter.pop("_curated", None)
+    inter["beyond_calcium"] = "true" if inter.pop("_beyond_calcium", False) else "false"
     inter["n_pubs"] = sum(1 for k, _ in refs if k in LITERATURE_KINDS)
     inter["n_db"] = sum(1 for k, _ in refs if k in DATABASE_KINDS)
     inter["n_curated"] = sum(1 for k, _ in refs if k in CURATED_KINDS)
@@ -205,14 +207,16 @@ def link_conflicts(interactions):
         i["conflict_with"] = other["interaction_id"] if other else ""
 
 
-def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=None):
+def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=None, calcium=None):
     ann = annotations.get(node_id)
+    # false only for what `beyond_calcium` let in: the biological end of an arm, kept on purpose
+    is_calcium = "true" if (calcium or {}).get(node_id, True) else "false"
     curated = {k: v for k, v in (catalogue or {}).get(node_id, {}).items()
                if k in CURATED_NODE_FIELDS}
     if node_id in resolver.metabolites:
         m = resolver.metabolites[node_id]
         return {"id": node_id, "symbol": m["symbol"], "name": m["name"], "type": "metabolite",
-                "module": "metabolite", "is_seed": "true",
+                "module": "metabolite", "is_seed": "true", "calcium_related": is_calcium,
                 "synonyms": "; ".join(m.get("synonyms", [])),
                 "function_summary": ann.get("function_summary", ""), **curated}
     gene = resolver.gene(node_id)
@@ -220,6 +224,7 @@ def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=Non
         "id": node_id, "symbol": node_id, "name": gene.get("name", ""), "type": "gene",
         "module": module_of(universe, node_id, neighbours),
         "is_seed": "true" if node_id in universe.seeds else "false",
+        "calcium_related": is_calcium,
         "uniprot": ";".join(gene.get("uniprot_ids") or []),
         "synonyms": "; ".join((gene.get("prev_symbol") or []) + (gene.get("alias_symbol") or [])),
         "function_summary": ann.get("function_summary", ""),

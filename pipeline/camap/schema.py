@@ -32,10 +32,13 @@ SPECIES_CONTEXTS = HUMAN_CONTEXTS | ANIMAL_CONTEXTS | {"unknown"}
 # decides which of them the node panel shows.
 CURATED_NODE_FIELDS = ["genecards", "protein_type", "localization", "domains",
                        "ca_functionality", "regulation", "functional_assignment"]
-NODE_COLUMNS = ["id", "symbol", "name", "type", "module", "is_seed", "uniprot",
+# A record may carry `beyond_calcium: true`: keep this claim although it fails the calcium
+# criterion, and say so (user decision of 2026-10-19). It is written by hand, record by record,
+# for the biological end of an arm — GSDMD -> F3, STING1 -> GPX4 — that the rule would cut off.
+NODE_COLUMNS = ["id", "symbol", "name", "type", "module", "is_seed", "calcium_related", "uniprot",
                 "synonyms", "function_summary"] + CURATED_NODE_FIELDS
 INTERACTION_COLUMNS = ["interaction_id", "source", "target", "type", "directed", "mechanism",
-                       "n_sources", "n_pubs", "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence",
+                       "n_sources", "n_pubs", "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence", "beyond_calcium",
                        "justification", "conflict_with", "evidence_fingerprint"]
 EVIDENCE_COLUMNS = ["evidence_id", "interaction_id", "source_kind", "ref", "cited_pmid", "doi", "year",
                     "first_author", "sentence", "sentence_verified", "species_context",

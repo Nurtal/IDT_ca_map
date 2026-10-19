@@ -218,3 +218,12 @@ test("the evidence-kind filter keeps an interaction carrying any of the chosen k
   assert.deepEqual(ids({}), ["l", "d", "c", "b"]);
   assert.deepEqual(ids({ sourceKinds: [] }), []);
 });
+
+test("a deliberately non-calcium endpoint is exported and labelled as such", () => {
+  assert.ok(core.INTERACTION_COLUMNS.includes("beyond_calcium"));
+  const reviews = { a: { decision: "keep", comment: "", reviewer: "nf", reviewed_at: "t" } };
+  const csv = core.keptCsv([I("a", { beyond_calcium: "true", calcium_evidence: "" })], reviews);
+  assert.match(csv.split("\n")[0], /beyond_calcium/);
+  assert.equal(core.calciumLabel("", "true"), "not calcium-related (kept on purpose)");
+  assert.equal(core.calciumLabel("GO", "false"), "GO annotation");
+});

@@ -258,3 +258,47 @@ class TestSpeciesFlags(BuildCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestBeyondCalcium(BuildCase):
+    """`beyond_calcium`: an effector endpoint the researcher wants kept, tagged as not calcium.
+
+    The calcium criterion stops the map at the axis, so the biological end of an arm —
+    GSDMD -> F3, STING1 -> GPX4 — fell out. The flag is written by hand, record by record
+    (user decision of 2026-10-19), and everything it lets in says so on the card.
+    """
+
+    def test_a_flagged_record_enters_although_nothing_about_it_is_calcium(self):
+        self.write_raw([rec(source="STING1", target="GPX4", type="expression_regulation_down",
+                            sentence="STING degrades GPX4.", beyond_calcium=True)])
+        self.assertIn("GPX4", [n["id"] for n in self.build()["nodes"]])
+
+    def test_the_interaction_and_the_node_both_say_they_are_not_calcium_related(self):
+        self.write_raw([rec(source="STING1", target="GPX4", type="expression_regulation_down",
+                            sentence="STING degrades GPX4.", beyond_calcium=True)])
+        d = self.build()
+        i = d["interactions"][0]
+        self.assertEqual((i["beyond_calcium"], i["calcium_evidence"]), ("true", ""))
+        nodes = {n["id"]: n for n in d["nodes"]}
+        self.assertEqual(nodes["GPX4"]["calcium_related"], "false")
+        self.assertEqual(nodes["STING1"]["calcium_related"], "true", "an anchor is the axis itself")
+
+    def test_a_flagged_record_still_has_to_hang_off_the_map(self):
+        self.write_raw([rec(source="GPX4", target="F3", type="activation",
+                            sentence="Unrelated pair.", beyond_calcium=True)])
+        self.assertEqual(self.build()["interactions"], [])
+
+    def test_a_flag_reaches_down_a_chain_that_starts_on_the_map(self):
+        self.write_raw([
+            rec(source="STING1", target="GSDMD", type="activation",
+                sentence="STING raises cytosolic calcium, which cleaves GSDMD."),
+            rec(source="GSDMD", target="F3", type="activation", ref="PMID:2",
+                sentence="GSDMD pores release F3.", beyond_calcium=True),
+        ])
+        self.assertEqual(sorted(n["id"] for n in self.build()["nodes"]),
+                         ["F3", "GSDMD", "STING1"])
+
+    def test_an_unflagged_partner_with_no_calcium_link_is_still_dropped(self):
+        self.write_raw([rec(source="STING1", target="GPX4", type="expression_regulation_down",
+                            sentence="STING degrades GPX4.")])
+        self.assertEqual(self.build()["interactions"], [])

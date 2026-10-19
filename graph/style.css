@@ -50,6 +50,7 @@ input[type="search"], input[list] { font: inherit; font-size: .9rem; color: var(
 .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
 .chip { font-size: .75rem; padding: 2px 8px; border-radius: 99px; background: var(--panel-2); color: var(--muted); }
 .chip.warn { color: var(--uncertain); }
+.chip.beyond { border: 1px dashed var(--border); background: none; }
 .module { font-size: .75rem; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border); color: var(--muted); }
 .m-soce { border-color: var(--m-soce); color: var(--m-soce); }
 .m-sting { border-color: var(--m-sting); color: var(--m-sting); }

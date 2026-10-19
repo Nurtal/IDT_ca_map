@@ -72,6 +72,7 @@ Then open `review/index.html` (double-click, no server). After review, export
 | `doi`, `year`, `first_author` | recommended | from the cached document |
 | `species_context` | yes | `human`, `in_vitro_human_cells`, `mouse`, `rat`, `other`, `unknown` — the system the claim was shown in |
 | `justification` | yes | one or two sentences: why this interaction matters for the STIM1/STING calcium axis |
+| `beyond_calcium` | no | `true` to keep a claim the calcium criterion would cut off (user decision of 2026-10-19). For the biological end of an arm — `GSDMD → F3`, `STING1 → GPX4` — written by hand, record by record. The interaction and the node are then tagged "not calcium-related" on both pages, and the flag only reaches what hangs off the map, so one flag cannot drag in a disconnected cluster. |
 
 Rules of thumb:
 
@@ -93,6 +94,10 @@ calcium-related (GO calcium transport/signalling annotation, a calcium term in a
 or an entry in the curator's gene catalogue).
 Level-1 seeds are always kept; level-2 seeds (calcineurin, NFAT, CaMKII) need a link to an anchor.
 See `pipeline/config/seeds.json`.
+
+A record carrying `beyond_calcium: true` is kept whatever the criterion says, and tagged. The node
+column `calcium_related` says, for every node, whether anything marks it as calcium-related — it is
+`false` for 81 of the 207 nodes, most of them the STING trafficking partners the curator brought in.
 
 **One exception, for curated rows only** (user decision of 2026-10-19): a curated interaction with a
 level-1 seed admits its partner on its own, without the calcium criterion and without an anchor. A row
