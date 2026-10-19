@@ -5,13 +5,13 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-9105 articles in queue: 220 done, 8763 pending, 120 skipped, 2 error.
+13519 articles in queue: 220 done, 13177 pending, 120 skipped, 2 error.
 
-- tier 0: 72/193 processed
-- tier 1: 269/6584 processed
-- tier 2: 1/2328 processed
+- tier 0: 192/3800 processed
+- tier 1: 149/3812 processed
+- tier 2: 1/5907 processed
 
-Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
+Next article: PMID 29901154 — Low expression of KCNN3 may affect drug resistance in ovarian cancer
 <!-- auto:end -->
 
 ### 2026-10-16 — batch 1 (tier 0)
@@ -310,3 +310,34 @@ individual septin — the same ambiguity as the `AP-1` cell in issue #18. If ORA
 anchor, these three come in together.
 
 Map: **210 nodes, 416 interactions, 666 evidence rows**.
+
+### 2026-10-19 — ORAI1 and TRPC1 are anchors
+
+Researcher's decision, closing the asymmetry the last two batches kept running into: her `Orai`
+and `TRPC` rows were entering on her authority while published work on the same partners was
+dropped for sitting two hops from the axis. `pipeline/config/seeds.json` now lists four anchors:
+**STIM1, STING1, ORAI1, TRPC1**.
+
+Effect on the map, before any new reading: **210 → 229 nodes, 416 → 475 interactions, 666 → 752
+evidence rows**. 57 interactions now touch ORAI1 or TRPC1 as an anchor. Three papers read in
+batch 5 and deliberately left out became admissible the moment the change landed, and were
+recorded:
+
+- **ORAI1 → KCNN3 (SK3)**, activation and binding (PMC8699475): calcium through ORAI1 boosts an
+  SK3 potassium current that sustains the driving force for more entry — a feedback loop on the
+  SOCE side, and the one that supports proliferation in breast, colon and prostate cancer cells.
+- **AKAP5 (AKAP79) binds ORAI1** and **ORAI1 → NFATC2** (PMID 32601188): the scaffold that turns
+  calcium entry into a transcriptional decision. STIM2 knockdown barely changes global [Ca²⁺]i but
+  attenuates both the assembly and NFAT1 activation — placement matters more than quantity.
+
+**The corpus widened with the anchors**, since the queries are built from them: `cli.py corpus`
+now finds **13519 articles, up from 9104**. Tier 0 went from 192 to 3800 — anchor×anchor pairs now
+include STIM1×ORAI1, STIM1×TRPC1, ORAI1×STING1, TRPC1×STING1 and ORAI1×TRPC1 — and two new
+single-anchor queries appeared (`@GENE_ORAI1` 4825 hits, `@GENE_TRPC1` 3953). Statuses were
+preserved: 220 done, 120 skipped, 13177 pending.
+
+That is the real cost of the decision: the unread corpus grew by 4415 articles, and the tier-0
+band — the one that gets read first — is now 3800 articles rather than 192. The yield per article
+should be much higher there than in the tier-1 tail we were grinding.
+
+**Next session:** `queue next 50 --tier 0 --primary`.

@@ -1,6 +1,6 @@
 {
-  "_doc": "Seed list and inclusion rule. anchors: a non-seed node must interact directly with an anchor. level 1 seeds are always kept; level 2 seeds only when they interact with an anchor.",
-  "anchors": ["STIM1", "STING1"],
+  "_doc": "Seed list and inclusion rule. anchors: a non-seed node must interact directly with an anchor. level 1 seeds are always kept; level 2 seeds only when they interact with an anchor. ORAI1 and TRPC1 became anchors on 2026-10-19 (researcher's decision): their interactomes were entering from the curator's spreadsheets while the literature on the same partners was being dropped for sitting two hops from the axis. Anchors also define the corpus queries, so the queue widens with them.",
+  "anchors": ["STIM1", "STING1", "ORAI1", "TRPC1"],
   "calcium_query": "(calcium OR Ca2+ OR SOCE OR \"store-operated\")",
   "calcium_go_terms": ["GO:0006816", "GO:0019722"],
   "calcium_text_pattern": "(?i)\\bcalcium\\b|\\bCa2\\+|\\bCa\\(2\\+\\)|Ca²⁺|\\bSOCE\\b|\\bCRAC (?:channel|current)|store[- ]operated|\\bSERCA\\b|\\bIP3R?\\b|\\bER stores?\\b",

@@ -91,6 +91,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0244f23bec12",
+  "interaction_id": "fd8462b1c3fa",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKCB>IRF3",
+  "cited_pmid": "17570479",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "024e9f8607fd",
   "interaction_id": "96114c9d1b00",
   "source_kind": "curated",
@@ -346,6 +361,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "08f44be4c487",
+  "interaction_id": "18d8104caa48",
+  "source_kind": "intact",
+  "ref": "EBI-21301141",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0915d9cb4ed2",
   "interaction_id": "d82408bef80f",
   "source_kind": "pmc",
@@ -374,6 +404,36 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 CAD domain interacts with CaV1.2 C-terminus | Effet de l'interaction: co-immunoprecipitation of Homer1 with STIM1 and the Cav1.2 α1 subunit | Localisation: Plasma Membrane | Protéine: Cav1.2, Calcium Voltage-Gated Channel Subunit Alpha1 C",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
+ },
+ {
+  "evidence_id": "0a04e50f2cf1",
+  "interaction_id": "8d789611273a",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM2>ITPR1",
+  "cited_pmid": "7755592",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "0a4c3e84c759",
+  "interaction_id": "093b61ec5ec8",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM2>TRPC1",
+  "cited_pmid": "12601176",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0a6bbb9b69c6",
@@ -554,6 +614,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
+ },
+ {
+  "evidence_id": "0e19da3f3274",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21305480",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0ed4ab3d197b",
@@ -751,6 +826,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 60"
  },
  {
+  "evidence_id": "13035b23f9f1",
+  "interaction_id": "ea34f0fd02bd",
+  "source_kind": "intact",
+  "ref": "EBI-21302175",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1313a65cb68c",
   "interaction_id": "71aba7e6baa8",
   "source_kind": "curated",
@@ -796,6 +886,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 29"
  },
  {
+  "evidence_id": "1467054df9ea",
+  "interaction_id": "f64ae17d25b0",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CDK1>NFATC2",
+  "cited_pmid": "17570479",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "14cbae3025ef",
   "interaction_id": "61c03ca70754",
   "source_kind": "curated",
@@ -809,6 +914,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: MURC interacts with STIM1 in cardiomyocytes via its ERM domain | Effet de l'interaction: IP/GST pull down, nteraction  via the HR1 and ERM domains of MURC and STIM1, | Localisation: cytoplasm | Type de protéine: Z-line protein | Protéine: muscle-related coiled-coil protein/  Cavin-4",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 50"
+ },
+ {
+  "evidence_id": "169a593d1899",
+  "interaction_id": "8ce2767aeeae",
+  "source_kind": "intact",
+  "ref": "EBI-2105665",
+  "cited_pmid": "10611319",
+  "doi": "",
+  "year": "1999",
+  "first_author": "Boulay et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "16b5ed7b79df",
@@ -869,6 +989,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
+ },
+ {
+  "evidence_id": "17271d6ba5fa",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21301039",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "172d0a9c91e9",
@@ -1017,6 +1152,21 @@ window.CAMAP.evidence = [
   "sentence": "We therefore propose that UNC93B1 is a chaperone that facilitates STIM1 early activation steps associated with ER Ca2+ depletion to enable the switch into an extended conformation required for the efficient trapping of Orai1 channels.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1bce88ee5b3f",
+  "interaction_id": "a5c286d9e85a",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM3>ITPR1",
+  "cited_pmid": "7755592",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1186,6 +1336,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "214f5b302f67",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21306082",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "21deaa4f3209",
   "interaction_id": "19fff2995b55",
   "source_kind": "signor",
@@ -1261,6 +1426,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
+  "evidence_id": "23215f4bcca4",
+  "interaction_id": "74ec9975a4ff",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>TRPV4",
+  "cited_pmid": "20093626",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "OBJECTIVE: The present study is aimed at investigating the interaction of TRPV4 with TRPC1 and the functional role of such an interaction in flow-induced Ca(2+) influx.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "24bf8bd4067c",
   "interaction_id": "45bfb9c9aee6",
   "source_kind": "intact",
@@ -1306,6 +1486,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 7"
  },
  {
+  "evidence_id": "26cad57585d5",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21301081",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "26fd1f71ae9b",
   "interaction_id": "89697c230d78",
   "source_kind": "signor",
@@ -1317,6 +1512,21 @@ window.CAMAP.evidence = [
   "sentence": "The key event in activation of fluid secretion is an increase in intracellular [ca2+] ([ca2+]i) triggered by ip3-induced release of ca2+ from er via the ip3r.  ip3rs determine the site of initiation and the pattern of [ca2+]i signal in the cell.",
   "sentence_verified": "false",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "27fbc1f56304",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21306063",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1407,6 +1617,21 @@ window.CAMAP.evidence = [
   "sentence": "Heart failure can be traced, in part, to alterations in the activity of the sarcoplasmic reticulum Ca2+ pump that are induced by its interactions with phospholamban, a reversible inhibitor.",
   "sentence_verified": "false",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2a8c5cc96162",
+  "interaction_id": "f38e7343ff92",
+  "source_kind": "intact",
+  "ref": "EBI-21302175",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1531,6 +1756,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "2ca1bc277b88",
+  "interaction_id": "8d6c3de76dbe",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM3>ITPR1",
+  "cited_pmid": "7755592",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "2cb20dab167a",
   "interaction_id": "ddf7f926df8c",
   "source_kind": "pubmed",
@@ -1574,6 +1814,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: ARMH3 interacted with STING at the Golgi -recruit PI4KB to synthesize PI4P, which directed STING Golgi-to-endosome trafficking via PI4P-binding proteins AP-1 and GGA2. ARMH3 bridges STING and PIK4B",
   "supp_source": "interactome STING.xlsx/interactors/row 5"
+ },
+ {
+  "evidence_id": "2e1a02889f0c",
+  "interaction_id": "41da0c06b407",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKG1>RYR1",
+  "cited_pmid": "8380342",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "2e694456720e",
@@ -1694,6 +1949,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 and JPH4 interactions using PLA et co-IF/JP4 also formed a complex with junctate | Effet de l'interaction: JP4 directly interacted with STIM1 via its cytoplasmic domain and facilitated its recruitment into the ER–PM junctions | Localisation: ER/Mitochondria associated Mb | Protéine: Junctophilin-4",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 44"
+ },
+ {
+  "evidence_id": "32203720cc6d",
+  "interaction_id": "e76af0bb2387",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:DRD2>TRPC1",
+  "cited_pmid": "18261457",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Ultrastructural analysis of TRPC1 and D2R expression indicates colocalization of the two proteins within the cell body and dendrites of cortical neurons.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "3224500cd8cb",
@@ -1921,6 +2191,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
  },
  {
+  "evidence_id": "35c8256341f9",
+  "interaction_id": "74fbac5692ec",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>TRPV6",
+  "cited_pmid": "16959851",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "361f4de1fd9f",
   "interaction_id": "b044c769f5b6",
   "source_kind": "omnipath",
@@ -1977,6 +2262,21 @@ window.CAMAP.evidence = [
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
   "sentence_verified": "false",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "3712309464c8",
+  "interaction_id": "f9385297a3fe",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPV4>TRPC1",
+  "cited_pmid": "20093626",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "OBJECTIVE: The present study is aimed at investigating the interaction of TRPV4 with TRPC1 and the functional role of such an interaction in flow-induced Ca(2+) influx.",
+  "sentence_verified": "true",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -2161,6 +2461,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "3c424f551d02",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21305993",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "3c46690da1af",
   "interaction_id": "6c7cd57591a4",
   "source_kind": "curated",
@@ -2292,6 +2607,21 @@ window.CAMAP.evidence = [
   "sentence": "Cleavage at the Q496 residue generates two stable products, N-terminal (NT) and C-terminal (CT) fragments, which acquire de novo immunomodulatory functions. NT suppresses MAVS aggregation and MAVS-TRAF2-TBK1 signalosome formation, while CT attenuates IKKalpha-induced p65 phosphorylation and nuclear translocation by interacting with HSP70.",
   "sentence_verified": "true",
   "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "402fd64d941b",
+  "interaction_id": "828cdeb0abb5",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM3>TRPC1",
+  "cited_pmid": "12601176",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -2487,6 +2817,36 @@ window.CAMAP.evidence = [
   "sentence": "In cells co-expressing STING and increasing amounts of full length or the N- and C-terminal binding fragments of STIM1, we observed a dose-dependent inhibition of luciferase reporter expression (Fig. 5c).",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4591bd22c7c4",
+  "interaction_id": "63f96e23a423",
+  "source_kind": "signor",
+  "ref": "SIGNOR-166044",
+  "cited_pmid": "20534587",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We propose that pkc suppresses soce and crac channel function by phosphorylation of orai1 at n-terminal serine residues ser-27 and ser-30.",
+  "sentence_verified": "false",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "4779bd81bbe9",
+  "interaction_id": "5774f6471d66",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:MARCKS>TRPC1",
+  "cited_pmid": "24022404",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "The present study reveals that myristoylated alanine-rich C kinase substrate (MARCKS) protein coordinates activation of TRPC1 channels by PKC and PI(4,5)P2.",
+  "sentence_verified": "true",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -2746,6 +3106,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 86"
  },
  {
+  "evidence_id": "4cb76400aaa0",
+  "interaction_id": "6f12712339e1",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>TRPC3",
+  "cited_pmid": "12601176",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "4dce953ad981",
   "interaction_id": "d82408bef80f",
   "source_kind": "pubmed",
@@ -2881,6 +3256,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "50e39ad132b6",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21301076",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "51655bebd80d",
   "interaction_id": "c5a33bdd6eb9",
   "source_kind": "curated",
@@ -2999,6 +3389,36 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: POST co-immunoprecipitates exogenous STIM1 upon TG | Localisation: ER membrane protein | Type de protéine: adaptor protein | Protéine: Partner of STIM1 - POST, TMEM20",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 70"
+ },
+ {
+  "evidence_id": "532fedd2cf69",
+  "interaction_id": "abede11950f9",
+  "source_kind": "pmc",
+  "ref": "PMC8699475",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Tiffner A",
+  "sentence": "In line with the co-localization of SK3 and Orai1, we discovered co-immunoprecipitation of SK3 and Orai1 in wild-type HEK 293 and HEK 293 STIM1/Orai1 DKO cells",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "539e22c6802e",
+  "interaction_id": "03e68034abb2",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>TRPV4",
+  "cited_pmid": "12724311",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "53b8c4748abe",
@@ -3256,6 +3676,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "5acf2aa53325",
+  "interaction_id": "033b9213428d",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM2>RYR1",
+  "cited_pmid": "8035880",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5b1327dd0cf8",
   "interaction_id": "54912d7bc6cd",
   "source_kind": "pubmed",
@@ -3267,6 +3702,21 @@ window.CAMAP.evidence = [
   "sentence": "Mechanistically, TMEM173 binding to ITPR1 controls calcium release from the endoplasmic reticulum in macrophages and monocytes.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5b1b5d0bae02",
+  "interaction_id": "79e2cd3eb605",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>TRPC6",
+  "cited_pmid": "12857742",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We performed a systematic biochemical study of TRPC interactions in mammalian brain and identified previously unrecognized channel heteromers composed of TRPC1, TRPC4, or TRPC5 and the diacylglycerol-activated TRPC3 or TRPC6 subunits.",
+  "sentence_verified": "true",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3496,6 +3946,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "6189e83b5837",
+  "interaction_id": "faa30d905bd8",
+  "source_kind": "intact",
+  "ref": "EBI-21722147",
+  "cited_pmid": "28514442",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "6235819cf4ce",
   "interaction_id": "38544a51e238",
   "source_kind": "omnipath",
@@ -3601,6 +4066,51 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
+  "evidence_id": "64146a4a70ae",
+  "interaction_id": "ffd8b37bd996",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM3>RYR1",
+  "cited_pmid": "11306590",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "641f273d0fe9",
+  "interaction_id": "5d38a1b10336",
+  "source_kind": "signor",
+  "ref": "SIGNOR-161834",
+  "cited_pmid": "19940156",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Here, we show that ikkepsilon interacts with and phosphorylates estrogen receptor alpha (eralpha) on serine 167 in vitro and in vivo. As a result, ikkepsilon induces eralpha transactivation activity and enhances eralpha binding to dna.",
+  "sentence_verified": "false",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "648e3172ce0a",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21306038",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "64ad43c6d07e",
   "interaction_id": "f4949377b487",
   "source_kind": "curated",
@@ -3661,6 +4171,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/modulators/row 10"
  },
  {
+  "evidence_id": "6618f2aee722",
+  "interaction_id": "fedd2866f78a",
+  "source_kind": "intact",
+  "ref": "EBI-21301141",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "662cb5d51a15",
   "interaction_id": "cd0746c5ee78",
   "source_kind": "curated",
@@ -3719,6 +4244,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: TRIM32 mediates K48- and K63-linked polyubiquitination of STING, accelerating its degradation",
   "supp_source": "interactome STING.xlsx/interactors/row 57"
+ },
+ {
+  "evidence_id": "68733cd64298",
+  "interaction_id": "fea5f783865c",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PKD2>TRPC1",
+  "cited_pmid": "10097141",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Specific association of the gene product of PKD2 with the TRPC1 channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "68ef799fe7c0",
@@ -3991,6 +4531,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "6d3517a5714e",
+  "interaction_id": "8c3c347730d9",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKCB>ORAI1",
+  "cited_pmid": "23144458",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "6d413a362055",
   "interaction_id": "6fea95392a0a",
   "source_kind": "omnipath",
@@ -4201,6 +4756,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "705d691c4fca",
+  "interaction_id": "5a31b9418d8a",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:ITPR3>TRPC3",
+  "cited_pmid": "15623527",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "709ac7898175",
   "interaction_id": "6f259f33d568",
   "source_kind": "curated",
@@ -4271,6 +4841,21 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "71be070beed1",
+  "interaction_id": "4cc577c99fd9",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKG1>TRPC1",
+  "cited_pmid": "25139746",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Furthermore, a phosphorylation assay demonstrated that PKG could directly phosphorylate TRPC1 at Ser(172) and Thr(313).",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -4437,6 +5022,21 @@ window.CAMAP.evidence = [
   "sentence": "The TMEM173-dependent increase in cytosolic calcium drives Gasdermin D (GSDMD) cleavage and activation, which triggers the release of F3, the key initiator of blood coagulation.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "754304ae75df",
+  "interaction_id": "ce45763f8241",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:ITPR1>TRPC3",
+  "cited_pmid": "15623527",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -4786,6 +5386,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 12"
  },
  {
+  "evidence_id": "7bd0b349257f",
+  "interaction_id": "8ce2767aeeae",
+  "source_kind": "intact",
+  "ref": "EBI-2105622",
+  "cited_pmid": "10611319",
+  "doi": "",
+  "year": "1999",
+  "first_author": "Boulay et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "7bf65a3d5bc9",
   "interaction_id": "fe11c16623e4",
   "source_kind": "curated",
@@ -4799,6 +5414,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Identification MS: STIM1 proteome identified by MS after BioID assay | Localisation: ER protein | Protéine: Reticulon-4",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 65"
+ },
+ {
+  "evidence_id": "7c2badb0192f",
+  "interaction_id": "18d8104caa48",
+  "source_kind": "intact",
+  "ref": "EBI-21302175",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "7c40fbe3bfa6",
@@ -4949,6 +5579,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: facilitating STING ubiquitination and degradation. - terminating STING signaling",
   "supp_source": "interactome STING.xlsx/interactors/row 65"
+ },
+ {
+  "evidence_id": "802f61dc2832",
+  "interaction_id": "a94245b6ca6b",
+  "source_kind": "intact",
+  "ref": "EBI-54522354",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "80588e950209",
@@ -5114,6 +5759,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: CASQ1 binds to STIM1 and STIM2 | Localisation: ER protein | Protéine: Calsequestrin 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 20"
+ },
+ {
+  "evidence_id": "83f4cb62ae4d",
+  "interaction_id": "18f3849c235b",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC3>TRPC1",
+  "cited_pmid": "19260825",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8474abb7273f",
@@ -5521,6 +6181,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8b35cdb15ba2",
+  "interaction_id": "e94174460852",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>TRPC6",
+  "cited_pmid": "19932145",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8b5e0597f67b",
   "interaction_id": "8d3636c6bde6",
   "source_kind": "intact",
@@ -5579,6 +6254,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: Promotes STING–TRAPβ interaction and stabilize STING through depolyubiquitin (K48) | domain of the interactor: First TMD | domain of STING: TMD",
   "supp_source": "interactome STING.xlsx/interactors/row 18"
+ },
+ {
+  "evidence_id": "8c2f7bab7006",
+  "interaction_id": "959ee7cea2a5",
+  "source_kind": "intact",
+  "ref": "EBI-2105629",
+  "cited_pmid": "10611319",
+  "doi": "",
+  "year": "1999",
+  "first_author": "Boulay et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8c32726dddd6",
@@ -5671,6 +6361,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
  },
  {
+  "evidence_id": "8e3393166ba7",
+  "interaction_id": "e8dc4ad2d3b7",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM2>ITPR1",
+  "cited_pmid": "7755592",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8e9c1084cd86",
   "interaction_id": "a045d5c21000",
   "source_kind": "intact",
@@ -5759,6 +6464,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 C-terminus (STIM1642–645) binds to EB1 C-terminus | Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 1; EB1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
+ },
+ {
+  "evidence_id": "8fe6eea37ded",
+  "interaction_id": "ea34f0fd02bd",
+  "source_kind": "intact",
+  "ref": "EBI-21301141",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "8ff0a24022bb",
@@ -5892,6 +6612,21 @@ window.CAMAP.evidence = [
   "sentence": "Here, we first report that ATP2A2 directly interacts with STING1, regulating STING1-mediated innate immune response by modulating its polymerization and trafficking, thereby inhibiting DNA virus infection.",
   "sentence_verified": "true",
   "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "932150132df2",
+  "interaction_id": "f38e7343ff92",
+  "source_kind": "intact",
+  "ref": "EBI-21301141",
+  "cited_pmid": "31527615",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Nassa et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -6061,6 +6796,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/modulators/row 11"
  },
  {
+  "evidence_id": "97a8466299d2",
+  "interaction_id": "5a41e8d234d6",
+  "source_kind": "signor",
+  "ref": "SIGNOR-248916",
+  "cited_pmid": "8132598",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Phosphorylation of the inositol 1,4,5-trisphosphate receptor by cyclic GMP-dependent protein kinase. | The synthetic peptide corresponding to serine 1755 (GRRESLTSFG) was phosphorylated with aKm in the range of 30-40 microM by both kinases. The kinetic analysis revealed that this peptide substrate is the best substrate described for cGMP kinase to date. Vascular smooth muscle cells prelabeled with [32P]orthophosphate and treated with atrial natriuretic peptide or sodium nitroprusside to elevate cGMP also resulted in increased labeling of the IP3 receptor. Phosphorylation of IP3 receptor by cGMP kinase may regulate the function of IP3 receptor in vascular smooth muscle cells and contribute to the effect of cGMP to regulate intracellular calcium levels.",
+  "sentence_verified": "false",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "97f7bc73218d",
   "interaction_id": "0445ee6efece",
   "source_kind": "curated",
@@ -6074,6 +6824,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: PDIA3 interacts with STIM1 luminal domain and require C49 and C56 | Localisation: ER protein | Protéine: ERP57, Protein Disulfide Isomerase Family A Member 3",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 57"
+ },
+ {
+  "evidence_id": "98305ce4a58b",
+  "interaction_id": "7980d54c9c70",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>TRPC3",
+  "cited_pmid": "19260825",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "9867b3253e04",
@@ -6104,6 +6869,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: Calcium-dependent interaction of STIM1 SOAR (aa344-444) and calmodulin | Localisation: Cytosol | Protéine: Calmodulin",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
+ },
+ {
+  "evidence_id": "99e6c1475275",
+  "interaction_id": "63f96e23a423",
+  "source_kind": "signor",
+  "ref": "SIGNOR-166040",
+  "cited_pmid": "20534587",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We propose that pkc suppresses soce and crac channel function by phosphorylation of orai1 at n-terminal serine residues ser-27 and ser-30.",
+  "sentence_verified": "false",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "99eae04e0e67",
@@ -6174,6 +6954,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2004",
   "first_author": "Bouwmeester et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9b1515e2a2a7",
+  "interaction_id": "8ce2767aeeae",
+  "source_kind": "intact",
+  "ref": "EBI-2105638",
+  "cited_pmid": "10611319",
+  "doi": "",
+  "year": "1999",
+  "first_author": "Boulay et al.",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -6286,6 +7081,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 59"
  },
  {
+  "evidence_id": "9d726e4b3a76",
+  "interaction_id": "ae59634a560e",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKG1>NFATC1",
+  "cited_pmid": "17570479",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "9dbdf60ca2a8",
   "interaction_id": "5781c39531e9",
   "source_kind": "intact",
@@ -6309,6 +7119,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2021",
   "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9eb125b3c830",
+  "interaction_id": "8ce2767aeeae",
+  "source_kind": "intact",
+  "ref": "EBI-2266291",
+  "cited_pmid": "10611319",
+  "doi": "",
+  "year": "1999",
+  "first_author": "Boulay et al.",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -6346,6 +7171,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "9fd5372d415c",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21301098",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a079caaf4f1d",
   "interaction_id": "ec72048657ca",
   "source_kind": "curated",
@@ -6361,6 +7201,36 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 89"
  },
  {
+  "evidence_id": "a10f8f9f09f2",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21306077",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a16e33e30f65",
+  "interaction_id": "8ce2767aeeae",
+  "source_kind": "intact",
+  "ref": "EBI-2266199",
+  "cited_pmid": "10611319",
+  "doi": "",
+  "year": "1999",
+  "first_author": "Boulay et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a1b273b976a5",
   "interaction_id": "168102ac3602",
   "source_kind": "curated",
@@ -6374,6 +7244,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 proteome identified by MS after IP Flag | Identification MS: STIM1 proteome identified by MS after BioID assay | Localisation: Nuclear/cytosol | Protéine: Exportin 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 91"
+ },
+ {
+  "evidence_id": "a22e5122bf67",
+  "interaction_id": "3834bda172ba",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:DRD2>CALM1",
+  "cited_pmid": "19632986",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a24c319dcb7c",
@@ -6811,6 +7696,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "ae012356185c",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21301034",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ae14805461ac",
   "interaction_id": "e8907df3754d",
   "source_kind": "curated",
@@ -6839,6 +7739,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: regulating STING transport at the Golgi - Retrograde trafficking | Protéine: COP Alpha",
   "supp_source": "interactome STING.xlsx/interactors/row 8"
+ },
+ {
+  "evidence_id": "af01442c7feb",
+  "interaction_id": "78cd38c1ec91",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:ITPR3>TRPV4",
+  "cited_pmid": "18378772",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "TRPV4 channel response to 1 nM 5',6'-EET was greatly potentiated by the presence of 30 muM IP3, a concentration that elicits maximal activation of IP3R type 1 (IP3R1) and 3 (IP3R3) in the pipette solution (Fig.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "af0c5725bfa0",
@@ -7081,6 +7996,36 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b3637751f3eb",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21301086",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b3d912fa9979",
+  "interaction_id": "72ff6204b0e0",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>TRPV6",
+  "cited_pmid": "22932896",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Results: TRPV6 and TRPC1 associate via their ankyrin-like repeat domains.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b40d6c9f7103",
   "interaction_id": "d4c2f9cbecf2",
   "source_kind": "signor",
@@ -7109,6 +8054,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: CLCA2 interacts with STIM1 at intracellular vesicles and ER-PM junctions | Localisation: cytosol/Plasma Membrane | Protéine: Chloride Channel Accessory 2",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 24"
+ },
+ {
+  "evidence_id": "b4a3784fb50b",
+  "interaction_id": "e05e50503201",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>DRD2",
+  "cited_pmid": "10926927",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "b567a4c38780",
@@ -7181,6 +8141,21 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b7b2a9070991",
+  "interaction_id": "e5f0f729bb05",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TRPC1>PKD2",
+  "cited_pmid": "10097141",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Specific association of the gene product of PKD2 with the TRPC1 channel.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7651,6 +8626,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c2eee8f35a05",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21301057",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c3019e1a8526",
   "interaction_id": "512400e0abf8",
   "source_kind": "intact",
@@ -7741,6 +8731,36 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c7b23201a6c7",
+  "interaction_id": "c7a13a67b49b",
+  "source_kind": "pubmed",
+  "ref": "PMID:32601188",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Son GY",
+  "sentence": "We report that STIM2 recruitment of Orai1/STIM1 to ER-PM junctions in response to depletion of ER-Ca2+ promotes assembly of the channel with AKAP79 to form a signaling complex that couples Orai1 channel function to the activation of NFAT1.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c7ccd1f3f376",
+  "interaction_id": "205361d67f4d",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:GRM1>TRPC1",
+  "cited_pmid": "14614461",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Activation of the TRPC1 cation channel by metabotropic glutamate receptor mGluR1.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c7e21a6ba410",
   "interaction_id": "19fff2995b55",
   "source_kind": "signor",
@@ -7797,6 +8817,21 @@ window.CAMAP.evidence = [
   "sentence": "Toll/il-1 receptor domain-containing adaptor inducing ifn-beta (trif) associates with tnf receptor-associated factor 6 and tank-binding kinase 1, and activates two distinct transcription factors, nf-kappa b and ifn-regulatory factor-3, in the toll-like receptor signaling",
   "sentence_verified": "false",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c9523076b6d6",
+  "interaction_id": "a1848557ef71",
+  "source_kind": "pubmed",
+  "ref": "PMID:32601188",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Son GY",
+  "sentence": "We report that STIM2 recruitment of Orai1/STIM1 to ER-PM junctions in response to depletion of ER-Ca2+ promotes assembly of the channel with AKAP79 to form a signaling complex that couples Orai1 channel function to the activation of NFAT1.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8101,6 +9136,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "d26aac80dcef",
+  "interaction_id": "4d420f5d104c",
+  "source_kind": "intact",
+  "ref": "EBI-911456",
+  "cited_pmid": "16512683",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Berggard et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d30718a6df28",
   "interaction_id": "2fa2918f993d",
   "source_kind": "curated",
@@ -8281,6 +9331,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "d5f0da5d562f",
+  "interaction_id": "f9ee72fdb570",
+  "source_kind": "intact",
+  "ref": "EBI-732638",
+  "cited_pmid": "16169070",
+  "doi": "",
+  "year": "2005",
+  "first_author": "Stelzl et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d605e9d3aa26",
   "interaction_id": "512400e0abf8",
   "source_kind": "intact",
@@ -8324,6 +9389,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Identification MS: STIM1 proteome identified by MS after Flag IP | Localisation: cytosol | Type de protéine: nuclear protein import | Protéine: Transportin 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 81"
+ },
+ {
+  "evidence_id": "d7b0ae2da858",
+  "interaction_id": "faa30d905bd8",
+  "source_kind": "intact",
+  "ref": "EBI-54695746",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "d7c97bdaf550",
@@ -8431,6 +9511,36 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 54"
  },
  {
+  "evidence_id": "d88726a94451",
+  "interaction_id": "69420824508c",
+  "source_kind": "signor",
+  "ref": "SIGNOR-248918",
+  "cited_pmid": "8380342",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Automated Edman sequence analysis of the major phosphopeptide obtained from PK-A and PK-G phosphorylation and one phosphopeptide obtained from PK-CaM phosphorylation yielded the sequence KISQTAQTYDPR (residues 28412852) with serine 2843 as phosphorylation site",
+  "sentence_verified": "false",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d89ed0217f56",
+  "interaction_id": "039c0b2bf240",
+  "source_kind": "pmc",
+  "ref": "PMC8699475",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Tiffner A",
+  "sentence": "We show in the current study, via heterologous protein expression, that Orai1 can enhance SK3 K+ currents, in addition to constitutively bound calmodulin (CaM).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d922bb861c6d",
   "interaction_id": "2236c60356ac",
   "source_kind": "signor",
@@ -8517,6 +9627,21 @@ window.CAMAP.evidence = [
   "sentence": "Here, we show that ER Ca2+-store depletion rapidly induces STIM1 phosphorylation at Y361 via proline-rich kinase 2 (Pyk2) in ECs.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "da3de07eee50",
+  "interaction_id": "abcf1dc8b473",
+  "source_kind": "intact",
+  "ref": "EBI-54478779",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8684,6 +9809,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: Promotes the E3 ubiquitin ligase TRIM29-mediated K48-linked ubiquitination of STING | domain of the interactor: Carbohydrate recognition domain 1 | domain of STING: ND",
   "supp_source": "interactome STING.xlsx/interactors/row 13"
+ },
+ {
+  "evidence_id": "e057f6827712",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21301062",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e0d093f40481",
@@ -8881,6 +10021,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "e424dde103ee",
+  "interaction_id": "4dd399c07b8a",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKG1>ITPR1",
+  "cited_pmid": "18669648",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e44fc5b41d25",
   "interaction_id": "96114c9d1b00",
   "source_kind": "curated",
@@ -9061,6 +10216,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 40"
  },
  {
+  "evidence_id": "e7079635883f",
+  "interaction_id": "b43d3c4c255a",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAV1>TRPC1",
+  "cited_pmid": "19897728",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Here we report that caveolin-1 (Cav1) is a critical plasma membrane scaffold that retains TRPC1 within the regions where STIM1 puncta are localized following store depletion.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e72e2a84e5e8",
   "interaction_id": "96114c9d1b00",
   "source_kind": "curated",
@@ -9166,6 +10336,36 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 11"
  },
  {
+  "evidence_id": "eb06b7f299cb",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21301123",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "eb359d65d270",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21306087",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "eb6cf5a0ef8b",
   "interaction_id": "cc2142cdaee7",
   "source_kind": "pmc",
@@ -9191,6 +10391,21 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ec38d9395ed8",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21301057",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -9586,6 +10801,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "f4324ac69b0b",
+  "interaction_id": "2f669fad8377",
+  "source_kind": "intact",
+  "ref": "EBI-21301034",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "f464b243c919",
   "interaction_id": "f9f770bd98b0",
   "source_kind": "curated",
@@ -9671,6 +10901,21 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f84018a51151",
+  "interaction_id": "a0cae7305bcd",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:ORAI1>TRPC3",
+  "cited_pmid": "17360584",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Here we show that Orai1 physically interacts with the N and C termini of TRPC3 and TRPC6, and that in cells overexpressing either TRPC3 or TRPC6 in a store-depletion insensitive manner, these TRPCs become sensitive to store depletion upon expression of an exogenous Orai.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -9781,6 +11026,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 19"
  },
  {
+  "evidence_id": "fbe229149d8e",
+  "interaction_id": "c806bed20ace",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:IKBKE>ESR1",
+  "cited_pmid": "19940156",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "fc2dacfcd254",
   "interaction_id": "a0e77231ef15",
   "source_kind": "pmc",
@@ -9856,6 +11116,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "fe75b7a41f1e",
+  "interaction_id": "852ecf23d90a",
+  "source_kind": "intact",
+  "ref": "EBI-21305472",
+  "cited_pmid": "25114176",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Du et al.",
+  "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "fe8b09957d02",
   "interaction_id": "0d1e4cd38dfa",
   "source_kind": "signor",
@@ -9867,6 +11142,21 @@ window.CAMAP.evidence = [
   "sentence": "IP(3)R-I was phosphorylated by PKA and PKG in vitro and exclusively by PKG in vivo. Sequential phosphorylation by PKA and by PKG-Ialpha in vitro showed that PKA phosphorylated the same site as PKG (presumably S(1755)) and an additional PKA-specific site (S(1589)). Phosphorylation of IP(3)R-I in microsomes by PKG, PKA, or a combination of PKG and PKA inhibited IP(3)-induced Ca(2+) release to the same extent, implying that inhibition was mediated by phosphorylation of the PKG-specific site.",
   "sentence_verified": "false",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fe8d388cbb32",
+  "interaction_id": "2c61ea2e467e",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>MARCKS",
+  "cited_pmid": "2557349",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },

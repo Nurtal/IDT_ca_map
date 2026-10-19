@@ -111,7 +111,8 @@ is built around. 154 of 403 interactions have one, median 0.83.
 
 ## Inclusion rule (applied by the build, for reference)
 
-A non-seed actor survives only if it interacts directly with an anchor (STIM1 or STING1) **and** is
+A non-seed actor survives only if it interacts directly with an anchor (**STIM1, STING1, ORAI1 or
+TRPC1** — the last two since 2026-10-19) **and** is
 calcium-related (GO calcium transport/signalling annotation, a calcium term in a supporting sentence,
 or an entry in the curator's gene catalogue).
 Level-1 seeds are always kept; level-2 seeds (calcineurin, NFAT, CaMKII) need a link to an anchor.
@@ -159,6 +160,8 @@ Rules that keep these rows honest:
 - A cell that is not one gene — a family (`AP-1`, `SEC31`) or two genes at once (`PTPN1/2`) — would
   now become a node named after the cell, so `cli.py supp` holds those rows out of `data/raw` and
   lists them at the top of `data/supp_report.txt`, pending the curator's answer in issue #18.
+- Since ORAI1 and TRPC1 became anchors, the curator's `Orai` and `TRPC` sheets no longer depend on
+  the curated exception: their partners are one hop from an anchor like any other.
 - `cli.py build` writes `data/supp_dropped.txt` when a curated interaction is dropped all the same
   (a row hanging from no seed at all), with its reason. The file is deleted when nothing is dropped,
   so a stale report never claims losses the current build does not make.

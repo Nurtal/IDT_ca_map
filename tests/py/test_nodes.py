@@ -73,8 +73,13 @@ class TestInclusionRule(NodeCase):
                                  sentence="TRIM29 ubiquitinates STING after store-operated Ca2+ entry.")])
         self.assertIn("TRIM29", self.node_ids(d))
 
-    def test_calcium_partner_of_a_non_anchor_seed_is_dropped(self):
+    def test_calcium_partner_of_orai1_is_kept_since_orai1_is_an_anchor(self):
+        # ORAI1 and TRPC1 became anchors on 2026-10-19: their partners are one hop from the axis
         d = self.build_with([rec(source="CASQ1", target="ORAI1", type="physical_binding", sentence=NEUTRAL)])
+        self.assertIn("CASQ1", self.node_ids(d))
+
+    def test_calcium_partner_of_a_seed_that_is_not_an_anchor_is_still_dropped(self):
+        d = self.build_with([rec(source="CASQ1", target="ITPR1", type="physical_binding", sentence=NEUTRAL)])
         self.assertNotIn("CASQ1", self.node_ids(d))
 
     def test_interaction_between_level1_seeds_is_kept(self):
