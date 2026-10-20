@@ -432,6 +432,18 @@ class TestQuoteMatching(BuildCase):
         quote = "NFAT represses the transcription of the COX2 gene in cancer cells"
         self.assertEqual(self.status(quote, text), "false")
 
+    def test_a_reference_marker_the_database_kept_still_verifies(self):
+        # SIGNOR-278237 quotes "... catalytic activity of mTOR [216]." where the paper, as
+        # PubTator caches it, ends the sentence at "mTOR." — the marker is the publisher's
+        text = "They later demonstrated that TBK1 phosphorylates mTOR on Ser 2159."
+        quote = "They later demonstrated that TBK1 phosphorylates mTOR on Ser 2159 [216]."
+        self.assertEqual(self.status(quote, text), "true")
+
+    def test_dropping_a_reference_marker_does_not_excuse_an_invented_sentence(self):
+        text = "They later demonstrated that TBK1 phosphorylates mTOR on Ser 2159."
+        quote = "They later demonstrated that TBK1 dephosphorylates mTOR on Ser 2159 [216]."
+        self.assertEqual(self.status(quote, text), "false")
+
     def test_sentences_glued_without_a_space_are_still_split(self):
         text = ("Induction of downstream antiviral genes followed. "
                 "A section heading sits here. "

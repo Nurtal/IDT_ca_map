@@ -21,11 +21,17 @@ _GREEK = {
 }
 
 
+# a publisher's numeric reference marker: "[216]", "[12,13]", "[4-7]". SIGNOR keeps the one
+# that ended the sentence it copied; PubTator's text does not have it.
+_REF_MARKER = re.compile(r"\[\s*\d+(?:\s*[-,–]\s*\d+)*\s*\]")
+
+
 @lru_cache(maxsize=512)
 def normalize(text):
     text = unicodedata.normalize("NFKC", text).translate(_TRANSLATE)
     for letter, name in _GREEK.items():
         text = text.replace(letter, name)
+    text = _REF_MARKER.sub(" ", text)
     return re.sub(r"\s+", " ", text).strip()
 
 

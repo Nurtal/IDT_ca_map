@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 569 done, 12827 pending, 121 skipped, 2 error.
+13519 articles in queue: 617 done, 12775 pending, 125 skipped, 2 error.
 
-- tier 0: 542/3800 processed
+- tier 0: 594/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -666,5 +666,69 @@ PMID 37739164's STIM1 Tyr361 phosphorylation; Gudlur et al., Nat Commun 9:4536, 
 PMID 30528613 comments on (five more Ca2+ sites in the STIM1 luminal domain).
 
 Map: **250 nodes, 590 interactions, 884 evidence rows**. Tests: **153 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+### 2026-10-20 — Extraction batch 13 (tier 0, `--primary`)
+50 tier-0 primary articles (46 done, 4 skipped as commentaries/reviews) plus **2 leads chased to
+their primary papers**, **23 records** in `data/raw/lit_20261020_b17.jsonl`, **6 new nodes**
+(ATP2A2 already present; CFTR, PIK3R1, MTOR, ITGAL, CXCL8, KDM2B are new). All 23 sentences
+verified `true`; 0 flagged, 46 unverifiable.
+
+**Two literature conflicts now carry a badge, both deliberate.**
+`STIM1 → PRKAA1`: batch 12 recorded activation (PMID 25242372, STIM1 siRNA cuts AMPK
+phosphorylation at Thr172 through CaMKKbeta in neuroblastoma); this batch records inhibition
+(PMID 25917875, losing SOCE to resveratrol causes ER stress that *activates* AMPK in prostate
+cancer cells). `ORAI3 → ORAI1`: inhibition in store-operated entry (PMC7968378, the ORAI2,3
+double knockout raises the fraction of cells reaching a Ca2+ plateau from 16% to ~70%) and
+activation in the store-independent ARC current (PMID 17991693, ORAI3 raises ARC only in cells
+expressing ORAI1, and a dominant-negative ORAI3 kills ARC without touching CRAC). In both cases
+the two mechanisms are in the records, so the badge points at a real context difference rather
+than at a contradiction to be resolved.
+
+**The STIM-IP3R question, and why the convention on issue #18 now blocks a conflict.**
+PMC4266619 shows STIM1 and STIM2 co-immunoprecipitating with **IP3R-1** by isoform-specific
+antibody, and STIM1 knockdown — not STIM2 — cutting IP3R-dependent Ca2+ release without touching
+ER content: a *positive* regulation, recorded. PMC7968378 reports the opposite, that the
+unactivated STIM1/2 luminal domains *inhibit* IP3R-evoked release — but it works in IP3R
+triple-knockout cells and never names an isoform, so **the claim cannot be entered and the
+conflict cannot be shown**. Chasing the commentary PMID 40828111 to its primary paper
+(PMID 40719699, added with `queue add`) reframed rather than settled it: the crosstalk there is
+functional, through resting ER Ca2+ level, and the co-immunoprecipitation shows **no interaction
+between STIM1 and IP3R2 or IP3R3**. Taken with PMC4266619 and with PMID 20022948 from batch 11
+(ORAI1 holds ITPR1 and ITPR2 with *different* TRPC3 dependence), the IP3 receptors behave like
+three different proteins. That is the concrete argument for option 3 on #18 — leave `IP3Rs`
+unrecorded rather than fan out or pick a representative.
+
+**New arms.** **STIM1 → CACNA1C inhibition** *and* STIM1-CACNA1C binding (PMID 20929813): one
+sensor suppressing the voltage-gated channel while activating ORAI, both through the same SOAR
+region, in one ER-PM junction that contains all three proteins. **ATP2A2 (SERCA2a) → STIM1
+inhibition** (PMID 21195084): keep the store full and STIM1 never meets ORAI1 — the pump as an
+upstream regulator of the sensor, with the smooth-muscle phenotypic switch as the readout.
+**CFTR → ORAI1 inhibition** and **ORAI1 → IL8 up** (PMID 21873556): in DeltaF508 cystic fibrosis
+epithelia, ORAI1 insertion into the membrane doubles and IL-8 secretion follows; rescuing CFTR
+trafficking normalises it. **KDM2B → ORAI1 and → STIM1** (PMID 38817821, the lead from batch 12):
+a histone demethylase upstream of both anchors. **STIM1/ORAI1 → ITGAL** (PMC12849750): CD11a but
+not CD11b, E-selectin and CXCL-1 but not P-selectin, and kidney function preserved after
+ischaemia-reperfusion when neutrophils lack them. **STIM1 → MTOR** (PMID 25917875),
+**TRPC1-PIK3R1** (PMC9563726, only after acid adaptation), **PDGFRB → ORAI1** (PMID 20107038,
+by elimination among six channels), **STIM1-ORAI2 / STIM1-ORAI3 binding** stronger at rest than
+STIM1-ORAI1 (PMC7968378), **STIM2-ORAI2** as the working pair in dendritic cells (PMID 20971921),
+**ORAI1-TRPC1 clustering** by immunogold electron microscopy (PMC10025536, which also contradicts
+the model that ORAI1-mediated entry recruits TRPC1 to the membrane).
+
+**One new class of verification false alarm, fixed.** MTOR entering the map pulled in
+SIGNOR-278237, whose excerpt keeps the publisher's reference marker (`... catalytic activity of
+mTOR [216].`) where the cached text ends the sentence at `mTOR.`. `normalize` now strips numeric
+reference markers (`[216]`, `[12,13]`, `[4-7]`) from both sides, red test first; an altered
+sentence still fails. Back to 0 flagged.
+
+**Generic names still blocking records**: `IP3Rs` (above), `Rap1` (PMC12849750: STIM1/ORAI1 →
+Rap1 activation, upstream of the integrin arm we did record), `NF-kappaB` (PMID 36334371, where
+STIM1/ORAI1 overexpression activates it and beta-carotene switches it off), `calmodulin`
+(PMC9563726, the third member of the TRPC1-PI3K complex), plus calcineurine, AP-1, septins,
+ORPs, ERK1/2, Akt/mTOR, NFAT and AMPK from earlier batches.
+
+Map: **256 nodes, 619 interactions, 938 evidence rows**. Tests: **155 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
