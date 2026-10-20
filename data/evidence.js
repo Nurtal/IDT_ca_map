@@ -481,6 +481,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0967035478b0",
+  "interaction_id": "860d9c5f7334",
+  "source_kind": "pubmed",
+  "ref": "PMID:31173198",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Yang J",
+  "sentence": "Moreover, TMEM66 overexpression reduced the increased expression of Stim1 and Orai1 and PDGF-BB treatment-enhanced [Ca2+]i.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0970e16bfdd3",
   "interaction_id": "5ce3347c577f",
   "source_kind": "curated",
@@ -494,6 +509,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 CAD domain interacts with CaV1.2 C-terminus | Effet de l'interaction: co-immunoprecipitation of Homer1 with STIM1 and the Cav1.2 α1 subunit | Localisation: Plasma Membrane | Protéine: Cav1.2, Calcium Voltage-Gated Channel Subunit Alpha1 C",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
+ },
+ {
+  "evidence_id": "0a04ac26cea9",
+  "interaction_id": "094c8c940335",
+  "source_kind": "pmc",
+  "ref": "PMC3262233",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Lur G",
+  "sentence": "In primary isolated PACs (pancreatic acinar cells), Orai1 showed remarkable co-localization and co-immunoprecipitation with all three subtypes of IP3Rs (InsP3 receptors).",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "0a04e50f2cf1",
@@ -961,6 +991,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 60"
  },
  {
+  "evidence_id": "12d41160b26c",
+  "interaction_id": "3af327a510f5",
+  "source_kind": "pubmed",
+  "ref": "PMID:28446591",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Sahu I",
+  "sentence": "As a result, NFAT5 transfection or exposure to hypertonicity (+40 mM NaCl) of MEG-01 cells increased Orai1, Orai2, STIM1, and STIM2 transcript levels.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "13035b23f9f1",
   "interaction_id": "ea34f0fd02bd",
   "source_kind": "intact",
@@ -1079,6 +1124,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: MURC interacts with STIM1 in cardiomyocytes via its ERM domain | Effet de l'interaction: IP/GST pull down, nteraction  via the HR1 and ERM domains of MURC and STIM1, | Localisation: cytoplasm | Type de protéine: Z-line protein | Protéine: muscle-related coiled-coil protein/  Cavin-4",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 50"
+ },
+ {
+  "evidence_id": "1661c30c21fe",
+  "interaction_id": "30834e76e051",
+  "source_kind": "pubmed",
+  "ref": "PMID:26929330",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Woo JS",
+  "sentence": "Mechanistically, JP4 directly interacted with STIM1 via its cytoplasmic domain and facilitated its recruitment into the junctions.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "169a593d1899",
@@ -1287,6 +1347,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "197ab129573e",
+  "interaction_id": "792ae3415a40",
+  "source_kind": "pubmed",
+  "ref": "PMID:19815560",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2009",
+  "first_author": "Gross SA",
+  "sentence": "By co-expressing STIM1 plus ORAI1 or the alpha(1)C and beta(2) subunits of L-type Ca(2+) channels, we found that Ca(2+) entry through either calcium-release-activated-calcium or voltage-dependent Ca(2+) channels is sufficient for TRPC5 channel activation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1527,6 +1602,21 @@ window.CAMAP.evidence = [
   "sentence": "REAGENT or RESOURCE\tSOURCE\tIDENTIFIER\t \tAntibodies\t \t\t \tACTB\tAbcam\tCat# ab8227; RRID: AB_2305186\t \tAKAP11\tInvitrogen\tCat# PA5-103369;RRID: AB_2852713\t \tAPLP2\tProteintech Group\tCat# 15041-1-AP;RRID: AB_2289597\t \tARID3B\tFortis Life Sciences\tCat# A302-565A;RRID: AB_2034823\t \tC3\tAbcam\tCat# ab97462;RRID: AB_10679468\t \tCACNA1C\tAlomone Labs\tCat# ACC-003;RRID: AB_2039771\t \tCACNB2\tAbnova\tCat# H00000783-A01;RRID: AB_463642\t \tCACNB3\tAlomone Labs\tCat# ACC-008:RRID: AB_2039787\t \tCAMK2D\tAbcam\tCat# ab181052;RRID: AB_2891241\t \tCHD4\tAbcam\tCat# ab70469;RRID: AB_2229454\t \tCKB\tSanta Cruz Biotechnology\tCat# sc-374072;RRID: AB_10947239\t \tCNTNAP1\tAbcam\tCat# ab34151;RRID: AB_869934\t \tCOPS2\tProteintech Group\tCat# 10969-2-AP;RRID: AB_2276346\t \tCOPS5\tCell Signaling Technology\tCat# 6895;RRID: AB_10839271\t \tCSMD1\tAbcam\tCat# ab166908\t \tCTNND1\tSanta Cruz Biotechnology\tCat# sc-23873;RRID: AB_2086394\t \tCUL3\tFortis Life Sciences\tCat# A301-109A;RRID: AB_873023\t \tELAVL2\tProteintech Group\tCat# 14008-1-AP;RRID: AB_2096356\t \tELAVL3\tABclonal\tCat# A6091;RRID: AB_2766743\t \tEPN2\tFortis Life Sciences\tCat# A305-510A;RRID: AB_2891436\t \tFMR1 (FMRP)\tAbcam\tCat# ab17722;RRID: AB_2278530\t \tFXR1\tProteintech Group\tCat# 13194-1-AP;RRID: AB_2110702\t \tGABBR2 (GABAB2)\tAbcam\tCat# ab75838;RRID: AB_1310245\t \tGNAO1\tAbcam\tCat# ab154001\t \tGRIN2A\tAbcam\tCat# ab133265;RRID: AB_11158532\t \tHCN1\tProteintech Group\tCat# 55222-1-AP;RRID: AB_11182929\t \tHCN4\tAbcam\tCat# ab32675;RRID: AB_732770\t \tHNRNPA2B1\tAbcam\tCat# ab6102;RRID: AB_305293\t \tIGF2BP1\tProteintech Group\tCat# 22803-1-AP;RRID: AB_2879173\t \tIGF2BP2\tAbcam\tCat# ab124930;RRID: AB_11131218\t \tIGF2BP3\tFortis Life Sciences\tCat# A303-426A;RRID: AB_10951696\t \tINA\tFortis Life Sciences\tCat# A305-441A;RRID: AB_2631832\t \tISL1\tAbcam\tCat# ab109517;RRID: AB_10866454\t \tKIAA1549\tFortis Life Sciences\tCat# A305-877A;RRID: AB_2891771\t \tLDB1\tNovus Biologicals\tCat# NBP1-77832;RRID: AB_11038158\t \tMARK3\tLSBio\tCat# LS-B5226;RRID: AB_10851098\t \tMEF2C\tAtlas Antibodies\tCat# AMAb90727;RRID: AB_2665645\t \tMSI2\tAbcam\tCat# ab76148;RRID: AB_1523981\t \tNEGR1\tProteintech Group\tCat# 13674-1-AP;RRID: AB_2877969\t \tNSG1\tMillipore Sigma\tCat# SAB4501190;RRID: AB_10745270\t \tPARP1\tProteintech Group\tCat# 13371-1-AP;RRID: AB_2160459\t \tPCDHA2\tProteintech Group\tCat# 10127-2-AP;RRID: AB_2158964\t \tPCDHB5\tProteintech Group\tCat# 19609-1-AP;RRID: AB_10792248\t \tPCM1\tFortis Life Sciences\tCat# A301-150A;RRID: AB_873100\t \tPDE4B\tCell Signaling Technology\tCat# 72096S;RRID: AB_2799812\t \tPYGB\tProteintech Group\tCat# 12075-1-AP;RRID: AB_2174885\t \tRALY\tAbcam\tCat# ab170105\t \tRIMS1\tProteintech Group\tCat# 24576-1-AP;RRID: AB_2879618\t \tRIMS1\tSanta Cruz Biotechnology\tCat# sc-368540\t \tRUNX1T1\tAbcam\tCat# ab124269;RRID: AB_10976059\t \tSEMA4C\tSanta Cruz Biotechnology\tCat# sc-136445;RRID: AB_10837020\t \tSF3B1\tCell Signaling Technology\tCat# 14434S;RRID: AB_2798479\t \tSRPK2\tFortis Life Sciences\tCat# A302-467A;RRID: AB_1944286\t \tSYNGAP1\tCell Signaling Technology\tCat# 5539;RRID: AB_10694401\t \tTCF4\tGeneTex\tCat# GTX17912;RRID: AB_2887569\t \tXRCC5\tAbcam\tCat# ab80592;RRID: AB_1603758\t \tXRCC6\tAbcam\tCat# ab92450;RRID: AB_10562280\t \tV5 tag\tMBL\tCat# M167-11\t \tMouse IgG1 monoclonal isotype control\tCell Signaling Technology\tCat# 5415;RRID: AB_10829607\t \tMouse IgG2a monoclonal isotype control\tCell Signaling Technology\tCat# 61656;RRID: AB_2799613\t \tRabbit IgG monoclonal isotype control\tCell Signaling Technology\tCat# 3900;RRID: AB_1550038\t \tRabbit IgG polyclonal isotype control\tSigma-Aldrich\tCat# I5006;RRID: AB_1163659\t \t\t \tChemicals, peptides, and recombinant proteins\t \t\t \tAccutase\tGibco\tCat# A11105\t \tAgilent RNA 6000 Pico kit\tAgilent Technologies\tCat# 5067-1513\t \tAmbion DNA-free DNase Treatment kit\tLife Technologies\tCat# AM1906\t \tB-27 supplement\tThermo Scientific\tCat# 17504044\t \tBDNF\tR&D Systems\tCat# 248-BD/CF\t \t2100 Bioanalyzer Instrument\tAgilent Technologies\tCat# G2939BA\t \tBlotting-Grade Blocker\tBio-Rad Laboratories\tCat# 1706404\t \tCNTF\tR&D Systems\tCat# 257-NT\t \tCryoStor CS10\tStem Cell Technologies\tCat# 07930\t \tDMEM/F - 12\tLife Technologies\tCat# 11320033\t \tDoxycycline hyclate\tSigma-Aldrich\tCat# 24390-14-5\t \tFetal Bovine Serum\tR&D Systems\tCat# S11195\t \tGDNF\tR&D Systems\tCat# 212-GD\t \tGeltrex\tLife Technologies\tCat# A1413301\t \tGeneticin\tGibco\tCat# 10131027\t \tD-(+)-Glucose\tSigma-Aldrich\tCat# 50-99-7\t \tGlutamax\tLife Technologies\tCat# 35050079\t \tGridded Plate 150 x 25 mm\tVWR International\tCat# 25383-103\t \tHalt  Protease and Phosphatase Inhibitor\tThermo Scientific\tCat# 78442\t \tLaminin, Mouse\tVWR International\tCat# 47743-734\t \tLDN-193189\tStem Cell Technologies\tCat# 1435934-00-1\t \tMEM NEAA\tLife Technologies\tCat# 11140076\t \tMethanol >=99.8%\tFisher Scientific\tCat# 67-56-1\t \tN-2 Supplement\tLife Technologies\tCat# 17502048\t \tNeurobasal\tLife Technologies\tCat# 21103049\t \tNormocin\tInvitrogen\tCat# ant-nr-2\t \tNuPAGE  12%, Bis-Tris Gel\tInvitrogen\tCat# NP0341PK2\t \tNuPAGE Transfer Buffer (20X)\tLife Technologies\tCat# NP00061\t \tPBS\tLife Technologies\tCat# 10010049\t \tPVDF/Filter Paper Sandwich\tLife Technologies\tCat# LC2002\t \tROCK Inhibitor (Y-27632)\tStemgent\tCat# 04-0012\t \tSB 431542\tTocris\tCat# 1614\t \tStemFlex  Medium\tLife Technologies\tCat# A3349401\t \tMicrocentrifuge Tubes\tVWR International\tCat# 0011-702\t \tSterile Sleeves\tVWR International\tCat# 414004-510\t \tTrizol\tLife Technologies\tCat# 15596026\t \tTruSeq Stranded Total RNA Library Prep Kit\tIllumina\tCat# 20020596\t \tTrypLE\tLife Technologies\tCat# 12604039\t \tTrypsin\tPromega\tCat# V5111\t \tXAV939\tStemgent\tCat# 04-00046\t \t\t \tCritical commercial assays\t \t\t \tPierce  Protein A/G Magnetic Beads\tThermo Scientific\tCat# 88803\t \tSuperSignal  West Femto Maximum Sensitivity Substrate\tThermo Scientific\tCat# 34094\t \tPierce  IP Lysis Buffer\tThermo Scientific\tCat# 87788\t \tEnGen Spy Cas9 NLS\tNew England Biolabs\tCat# M0646T\t \t\t \tDeposited data\t \t\t \tIP-MS data\tThis study\tMassIVE: MSV000087514\t \t\t \tExperimental Models: Cell lines\t \t\t \tiPS line from human fibroblasts with integrated NGN2\tNovartis Institutes for BioMedical Research\tiPS hDFn 83/22 iNgn2#9; iPS3 in Nehme et al.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1f341bd90116",
+  "interaction_id": "5712d770b1fb",
+  "source_kind": "pubmed",
+  "ref": "PMID:25242372",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Olianas MC",
+  "sentence": "Cell depletion of STIM1 by siRNA treatment reduced both CCh-induced [Ca(2+)]i plateau and AMPK activation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1797,6 +1887,21 @@ window.CAMAP.evidence = [
   "sentence": "The key event in activation of fluid secretion is an increase in intracellular [ca2+] ([ca2+]i) triggered by ip3-induced release of ca2+ from er via the ip3r.  ip3rs determine the site of initiation and the pattern of [ca2+]i signal in the cell.",
   "sentence_verified": "unverifiable",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "27d37a2755ca",
+  "interaction_id": "01e0c439a012",
+  "source_kind": "pmc",
+  "ref": "PMC11730744",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Nieto-Felipe J",
+  "sentence": "Interestingly, Orai1alpha and Orai1beta protein loss in the presence of STIM1 and STIM2 was significantly reduced by treatment with bafilomycin A1 (Figure 10e,f; n = 6), which demonstrates that STIM proteins modulate Orai1 variant expression level by endo-lysosomal degradation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -2926,6 +3031,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "3e0a0133ae0d",
+  "interaction_id": "86e027c10c69",
+  "source_kind": "pmc",
+  "ref": "PMC8373307",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Zhu J",
+  "sentence": "Immunoprecipitation results showed that Dox treatment led to a sharp decrease in the binding of Stim1 to Orai1 and Trpc1 in myocardial tissues (Figure 1C and D).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "3e5149bd2f20",
   "interaction_id": "2b875be9dbb7",
   "source_kind": "pmc",
@@ -3357,6 +3477,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "47d8e6ea3279",
+  "interaction_id": "4ff8a9452420",
+  "source_kind": "pubmed",
+  "ref": "PMID:31243341",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Stewart TA",
+  "sentence": "Cytochalasin D-mediated vimentin induction was, however, sensitive to silencing of another reported STIM1 target, TRPC1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -4456,6 +4591,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 80"
  },
  {
+  "evidence_id": "5edb0008536d",
+  "interaction_id": "86e027c10c69",
+  "source_kind": "pubmed",
+  "ref": "PMID:16870612",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "López JJ",
+  "sentence": "Here we describe for the first time that Ca(2+) store depletion stimulates rapid STIM1 surface expression and association with endogenously expressed human canonical TRP1 (hTRPC1) independently of rises in cytosolic free Ca(2+) concentration.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "60bf2b95176a",
   "interaction_id": "491bbd785519",
   "source_kind": "intact",
@@ -5069,6 +5219,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
+ },
+ {
+  "evidence_id": "6c52d39dd4e3",
+  "interaction_id": "d067132ccaaf",
+  "source_kind": "pubmed",
+  "ref": "PMID:31243341",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Stewart TA",
+  "sentence": "EGTA-AM- and thapsigargin-mediated induction of vimentin expression in MDA-MB-468 cells involves store-operated Ca2+ entry, as evidenced by sensitivity to silencing of the molecular components of this pathway, STIM1 and ORAI1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6c6f5ea0dcc1",
@@ -6181,6 +6346,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "7c7fc9d8ae44",
+  "interaction_id": "17da4d26a036",
+  "source_kind": "pmc",
+  "ref": "PMC11730744",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Nieto-Felipe J",
+  "sentence": "Under resting conditions, there is a pronounced association between STIM2 and Orai1alpha.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "7c937e78a985",
   "interaction_id": "e0ecf79b6be8",
   "source_kind": "intact",
@@ -6631,6 +6811,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "859df20c03e6",
+  "interaction_id": "7f434582430e",
+  "source_kind": "pmc",
+  "ref": "PMC11730744",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Nieto-Felipe J",
+  "sentence": "Interestingly, Orai1alpha and Orai1beta appear to selectively regulate the protein level of STIM1, but not STIM2.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "863bab1e627b",
   "interaction_id": "c11c95f273c9",
   "source_kind": "intact",
@@ -6731,6 +6926,21 @@ window.CAMAP.evidence = [
   "first_author": "Li et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "88634c68ac09",
+  "interaction_id": "d2cd1dd0e05b",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:DYRK2>TBK1",
+  "cited_pmid": "33376136",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "DYRK2 phosphorylates TBK1 at serine527, which leads to phosphorylation-mediated degradation of TBK1 and downregulation of type I IFN signaling upon viral infection.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -6837,6 +7047,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8a77c446f196",
+  "interaction_id": "f7d340dcb330",
+  "source_kind": "pmc",
+  "ref": "PMC11730744",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Nieto-Felipe J",
+  "sentence": "STIM1 and STIM2 are also shown to influence the protein levels of the Orai1 variants, independently of Ca2+ influx, via lysosomal degradation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7711,6 +7936,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "9851437c84f1",
+  "interaction_id": "6276dd8a7414",
+  "source_kind": "pmc",
+  "ref": "PMC9113749",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Wei T",
+  "sentence": "The phosphorylation of STIM1 by DYRK2 substantially increased the interaction of STIM1 with the ORAI1 channel, and C17 impeded the store-operated calcium entry process.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "9867b3253e04",
   "interaction_id": "9d1d4fff27dc",
   "source_kind": "curated",
@@ -7782,6 +8022,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9a30db6dda2a",
+  "interaction_id": "eb07d74ce4f9",
+  "source_kind": "pubmed",
+  "ref": "PMID:26929330",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Woo JS",
+  "sentence": "We propose that the junctate-JP4 complex located at the junctions cooperatively interacts with STIM1 to maintain ER Ca(2+) homeostasis and mediate SOCE in T cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8566,6 +8821,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "aa0b2496c59d",
+  "interaction_id": "329168cf0bd0",
+  "source_kind": "pubmed",
+  "ref": "PMID:16870612",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "López JJ",
+  "sentence": "Electrotransjection of cells with anti-STIM1 antibody, directed toward the N-terminal sequence that includes the Ca(2+)-binding region, prevented the migration of STIM1 toward the plasma membrane, the interaction between STIM1 and hTRPC1, the coupling between hTRPC1 and type II inositol 1,4,5-trisphosphate receptor, and reduced store-operated Ca(2+) entry.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "aa9e3c6fe98e",
   "interaction_id": "1a821b861d09",
   "source_kind": "curated",
@@ -9102,6 +9372,21 @@ window.CAMAP.evidence = [
   "sentence": "As shown in Figure S7, when one copy of the Bcl6 gene was missing, CXCR5+PD-1+ Tfh cells differentially expressed many genes; among those downregulated were Stim1 and Plcg1 (which code for STIM1 and PLCgamma1, respectively) that both impinge on calcium signaling downstream of TCR activation.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b2f22d40538d",
+  "interaction_id": "cad64da5c573",
+  "source_kind": "pubmed",
+  "ref": "PMID:31173198",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Yang J",
+  "sentence": "Moreover, TMEM66 overexpression reduced the increased expression of Stim1 and Orai1 and PDGF-BB treatment-enhanced [Ca2+]i.",
+  "sentence_verified": "true",
+  "species_context": "rat",
   "curator_note": "",
   "supp_source": ""
  },
@@ -9736,6 +10021,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c0c6574c6251",
+  "interaction_id": "959a26a2734e",
+  "source_kind": "pubmed",
+  "ref": "PMID:31243341",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Stewart TA",
+  "sentence": "In stark contrast, cytochalasin D-mediated vimentin induction was insensitive to silencing of ORAI1, despite sensitivity to silencing of its canonical activator the endoplasmic reticulum Ca2+ sensor STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c0e15598d74f",
   "interaction_id": "9bb227bb148d",
   "source_kind": "curated",
@@ -9764,6 +10064,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Cytosol | Type de protéine: actin-severing protein | Protéine: Gelsolin",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 38"
+ },
+ {
+  "evidence_id": "c1690ba32262",
+  "interaction_id": "400e02aeb5d5",
+  "source_kind": "signor",
+  "ref": "SIGNOR-276939",
+  "cited_pmid": "26407194",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We further found that DYRK2 phosphorylated Ser527 of TBK1, which is essential for the recruitment of NLRP4 and for the E3 ubiquitin ligase DTX4 to degrade TBK1.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "c16f135d156b",
@@ -11684,6 +11999,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: CyPa interacts with STIM1 and SERCA2b  and regulate STIM1 phosphorylation | Localisation: Cytosol | Protéine: Peptidylprolyl Isomerase A, cyclophilin A",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 61"
+ },
+ {
+  "evidence_id": "e6714e6c4a5b",
+  "interaction_id": "71b057e9e554",
+  "source_kind": "pubmed",
+  "ref": "PMID:28446591",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Sahu I",
+  "sentence": "As a result, NFAT5 transfection or exposure to hypertonicity (+40 mM NaCl) of MEG-01 cells increased Orai1, Orai2, STIM1, and STIM2 transcript levels.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e68da0f7fe20",

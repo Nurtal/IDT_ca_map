@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 520 done, 12877 pending, 120 skipped, 2 error.
+13519 articles in queue: 569 done, 12827 pending, 121 skipped, 2 error.
 
-- tier 0: 492/3800 processed
+- tier 0: 542/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -600,5 +600,71 @@ STIM1 — a cross-axis link we cannot record for want of a subunit). A single co
 would unblock six records at once.
 
 Map: **249 nodes, 571 interactions, 862 evidence rows**. Tests: **153 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+### 2026-10-20 — Extraction batch 12 (tier 0, `--primary`)
+50 tier-0 primary articles (49 done, 1 skipped as a commentary), **20 records** in
+`data/raw/lit_20261020_b16.jsonl`, **1 new node** (DYRK2). All 20 sentences verified `true`;
+0 flagged, 46 unverifiable.
+
+**The yield of this band is dropping, and for a readable reason.** Deep in tier 0 the queue is
+now dominated by STIM1-ORAI1 biophysics: pore mutants, concatemers, hydrophobic gates,
+2-APB pharmacology, stoichiometry. Those papers say a great deal about *how* the two anchors
+couple and nothing about *who else* is involved, so they are read and marked `done` with no
+record. 38 of the 50 ended that way. The records came from the twelve papers that brought a
+third actor in.
+
+**Abundance as an edge type, between the two anchors themselves.** PMC11730744 (Nieto-Felipe
+2024) shows STIM1 and STIM2 driving ORAI1 to **endo-lysosomal degradation**: bafilomycin A1
+rescues the protein, and the pore-dead ORAI1-E106Q is degraded just as much, so the loss is not
+a consequence of Ca2+ influx. The reciprocal arm exists too — the Orai1 variants set the STIM1
+protein level and leave STIM2 alone — recorded as `unknown_regulation` because that sentence
+gives no sign. The same paper gives **STIM2-ORAI1 binding at rest**, before any store depletion,
+which is what a basal Ca2+ thermostat needs.
+
+**Publications under the curator's rows, again the highest-yield vein.** Her JPH1 row carries
+the note "STIM1 and JPH4 colocolize" with nothing behind it: PMID 26929330 shows JPH4 *binding*
+STIM1 through its cytoplasmic domain and recruiting it into the junction, with junctate. Her
+SARAF row names "TMEM 66" as the synonym and gives SARAF → ORAI1 inhibition with no publication:
+PMID 31173198 supplies one, in a rat carotid artery, and adds a second mode — SARAF holds down
+how much STIM1 and ORAI1 the cell *makes*, not only whether the channel is open. HGNC previous
+symbols resolve TMEM66 → SARAF, so the paper's own name could be kept in the record.
+Her STIM1-VIM row was a BioID proteomics hit with no function: PMID 31243341 makes vimentin a
+transcriptional output of the channel, and splits it — EGTA-AM and thapsigargin need ORAI1,
+cytochalasin D needs STIM1 and **TRPC1** but not ORAI1. Same gene, two channels, stimulus
+decides.
+
+**A loop closed.** SIGNOR already had PRKAA1 phosphorylating STIM1 at Ser257 and down-regulating
+it; PMID 25242372 shows STIM1-dependent SOCE *activating* AMPK (Thr172, through CaMKKbeta) and
+with it glucose uptake. Recorded as PRKAA1 because that subunit already stands for AMPK in the
+map — but the paper only ever writes "AMPK", so this is the generic-name convention of issue #18
+being applied rather than answered. Noted here so it can be revisited with her reply.
+
+**Other arms.** **DYRK2 → STIM1 phosphorylation** (PMC9113749): a kinase that sets the *strength
+of the STIM1-ORAI1 coupling* itself, with a non-phosphorylatable STIM1-10M and a kinase-dead
+control. **ORAI1 → TRPC5 activation** (PMID 19815560): no protein contact at all — the message is
+the Ca2+ ion, over a distance the buffer sets (EGTA permits it, BAPTA abolishes it).
+**ORAI1-ITPR3 binding** in primary pancreatic acinar cells (PMC3262233), the third IP3 receptor
+after ITPR1 and ITPR2 in batch 11, plus the lesson that one anchor can hold two spatially
+separate pools with different partners. **TRPC1-ITPR2 binding** (PMID 16870612), a second paper
+naming "type II" instead of "IP3Rs" — ITPR2 now carries both ORAI1 and TRPC1, which argues
+against collapsing the IP3 receptors into one node. **NFAT5 → ORAI1 and → STIM1**
+(PMID 28446591): an independent second paper for the batch-10 NFAT5 → ORAI1 edge, in
+megakaryocytes, with the silencing half, and it extends NFAT5 to the sensor.
+
+**Generic names blocking records, now eight.** `ERK1/2` (PMID 20736304, ERK1/2 phosphorylates
+STIM1 and the mutants lose ORAI1 FRET — and PMID 34715400 is its published contradiction, so the
+pair would have entered the map as a conflict), `Akt/mTOR/NF-kappaB` (PMID 32882268, ORAI1/ORAI2
+silencing), and `NFAT` (PMC3480383, where ORAI1 drives NFAT and TRPC1 drives NF-kappaB from the
+same store depletion — a result the map cannot hold without a subunit). These join calcineurine,
+IP3Rs, AP-1, septins and ORPs on the issue #18 list.
+
+**Leads worth a `queue add` once their PMIDs are known**: the KDM2B paper behind
+PMID 38903530's "ORAI1 and STIM1 expression was controlled by KDM2B"; the Pyk2 paper behind
+PMID 37739164's STIM1 Tyr361 phosphorylation; Gudlur et al., Nat Commun 9:4536, the paper
+PMID 30528613 comments on (five more Ca2+ sites in the STIM1 luminal domain).
+
+Map: **250 nodes, 590 interactions, 884 evidence rows**. Tests: **153 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.

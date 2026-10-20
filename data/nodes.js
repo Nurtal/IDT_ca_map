@@ -1122,6 +1122,25 @@ window.CAMAP.nodes = [
   "functional_assignment": ""
  },
  {
+  "id": "DYRK2",
+  "symbol": "DYRK2",
+  "name": "dual specificity tyrosine phosphorylation regulated kinase 2",
+  "type": "gene",
+  "module": "soce",
+  "is_seed": "false",
+  "calcium_related": "true",
+  "uniprot": "Q92630",
+  "synonyms": "",
+  "function_summary": "Serine/threonine-protein kinase involved in the regulation of the mitotic cell cycle, cell proliferation, apoptosis, organization of the cytoskeleton and neurite outgrowth. Phosphorylates CRMP2/DPYSL2, CRMP4/DPYSL3, DCX, EIF2B5, EIF4EBP1, GLI2, GLI3, GYS1, JUN, MDM2, MYC, NFATC1, p53/TP53, TAU/MAPT and KATNA1. Can phosphorylate histone H1, histone H3 and histone H2B (in vitro). Can phosphorylate CARHSP1 (in vitro). Functions in part via its role in ubiquitin-dependent proteasomal protein degradation. Functions downstream of ATM and phosphorylates p53/TP53 at 'Ser-46', and thereby contributes to the induction of apoptosis in response to DNA damage. Phosphorylates NFATC1, and thereby inhibits its accumulation in the nucleus and its transcription factor activity. May play a general role in the priming of GSK3 substrates. Phosphorylates EIF2B5 at 'Ser-544', enabling its subsequent phosphorylation and inhibition by GSK3B. Likewise, phosphorylation of NFATC1, CRMP2/DPYSL2 and CRMP4/DPYSL3 promotes their subsequent phosphorylation by GSK3B. Inactivates GYS1 by phosphorylation at 'Ser-641', and potentially also a second phosphorylation site, thus regulating glycogen synthesis. Mediates EDVP E3 ligase complex formation and is required for the phosphorylation and subsequent degradation of KATNA1. Phosphorylates TERT at 'Ser-457', promoting TERT ubiquitination by the EDVP complex. Phosphorylates SIAH2, and thereby increases its ubiquitin ligase activity. Promotes the proteasomal degradation of MYC and JUN, and thereby regulates progress through the mitotic cell cycle and cell proliferation. Acts as a positive regulator of smoothened signaling by mediating phosphorylation of GLI2 and GLI3 in response to smoothened activation, promoting their dissociation from SUFU inhibitor and translocation to the nucleus. Can also acts as a negative regulator of smoothened by catalyzing phosphorylation of GLI2 and GLI3 and promote their proteasomal degradation. Plays a role in cytoskeleton organization and neurite outgrowth via its phosphorylation of DCX and DPYSL2 (By similarity)",
+  "genecards": "GC12P067558",
+  "protein_type": "STIM1 phosphorylation",
+  "localization": "NFTA phosphp",
+  "domains": "",
+  "ca_functionality": "",
+  "regulation": "",
+  "functional_assignment": ""
+ },
+ {
   "id": "EFCAB13",
   "symbol": "EFCAB13",
   "name": "EF-hand calcium binding domain 13",
