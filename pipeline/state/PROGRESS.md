@@ -5,11 +5,11 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 665 done, 12725 pending, 127 skipped, 2 error.
+13519 articles in queue: 718 done, 12672 pending, 127 skipped, 2 error.
 
-- tier 0: 644/3800 processed
+- tier 0: 695/3800 processed
 - tier 1: 149/3812 processed
-- tier 2: 1/5907 processed
+- tier 2: 3/5907 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
 <!-- auto:end -->
@@ -785,5 +785,91 @@ to PMID 36334371), `L-type Ca2+ channels` (PMID 24720513), plus `IP3Rs`, `Rap1`,
 calcineurine, AP-1, septins, ORPs, ERK1/2, Akt/mTOR, NFAT and AMPK from earlier batches.
 
 Map: **270 nodes, 658 interactions, 982 evidence rows**. Tests: **155 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-10-21 — Extraction batch 15 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`, read one at a time, plus **three leads chased** to their
+primary papers. **53 records** in `data/raw/lit_20261021_b19.jsonl`, all 53 sentences verified
+`true`, zero flagged. One article `skipped` (PMID 30217863 was a JGP commentary; PMID 29581306
+was *not* a commentary, it was mis-marked and corrected to `done`). Map: **285 nodes, 754
+interactions, 1110 evidence rows**; 20 new nodes, among them four of the curator's own rows that
+had no literature edge until now (SGK1, PRKCB, TMEM38A, NOTCH1, PLN).
+
+**Three generic names resolved by the articles themselves — this is the best batch yet for
+issue #18.**
+- `ORPs` → **ORP5 and ORP8** (PMC10469337). The family was blocked, and the reason is now
+  demonstrated: in the same cells, in the same experiment, **OSBPL5 inhibits and OSBPL8
+  facilitates** STIM1 clustering, STIM1-ORAI1 interaction and the ORAI1 current. Collapsing the
+  family into one node would have cancelled the biology out.
+- `CaMKII` → **CaMKIIalpha** (PMC8536888). STIM1 and ORAI1 drive CAMK2A phosphorylation in the
+  rat spinal dorsal horn, and YM-58483 suppresses it without changing anchor expression. CAMK2A
+  is a level-2 seed of the curator's effector module and had no literature edge; it now has one,
+  and it arrives with its database neighbourhood (CAMK2A-DLG1, -EGFR, -NOS1 conflicts appeared in
+  the build as a consequence).
+- `NF-kappaB` → **p65/RELA**, in the upstream direction (PMID 22110130, replicated in PMID
+  24522202). Both papers transfect named subunits (p65, p65/p50, p65/p52) and the first one ChIPs
+  the Orai1 and STIM1 promoters. So the map can now draw **SGK1 -> RELA -> ORAI1/STIM1** with
+  named proteins, plus **KL (klotho) -> ... -> anchors** through 1,25(OH)2 vitamin D3, with
+  thrombus formation as the whole-animal read-out. The *downstream* direction is still a problem:
+  PMID 35094865 (dairy cows) names phospho-p65 and was recorded, but it is in vivo co-regulation
+  without a loss-of-function control, so the sign conflict between PMC4530453 and PMID 36334371
+  remains unshowable.
+
+**Two generic names resolved by me, flagged as such in the records and on #18**: `LTCC` →
+**CACNA1C** in ventricular myocytes (PMID 26241845) and `DHPR` → **CACNA1S** in skeletal myotubes
+(PMC6915709). The first one matters because it creates a conflict badge: **STIM1 -> CACNA1C is
+now activation in cardiac muscle and inhibition in smooth muscle/HEK (PMID 20929813, batch 13)**.
+A badge resting on my own name resolution is worth the curator's attention.
+
+**A conflict that is pure biology.** PMC12830608: the active Notch1 intracellular domain
+**lowers** ORAI1 and ORAI3 in MDA-MB-231 and **raises** them in BT20 - same construct, same
+subtype, different cell line - and leaves them alone in MCF10A while lowering STIM1 there. Both
+signs come from one paper, so the badge points at context, not at a disagreement between
+laboratories. The mechanism is **HEY1**, a repressor switched off by phosphorylation at Ser-68.
+
+**The leads.** PMC10592933 mentions in passing that "STIM1 binds to phospholamban ... to
+indirectly activate SERCA2" and PMC6915709 that "STIM2 attenuates SERCA1a activity ... in a tug
+of war with STIM1". Chased by esearch to **PMID 26261328** (rat ventricular myocytes: STIM1-PLN
+binding, STIM1 -> ATP2A2 activation, in cells with *no* SOCE at all), **PMID 24077737** (STIM1
+binds SERCA1a through residues 449-671 and is required for its full activity at micromolar
+cytosolic Ca2+) and **PMC5738411** (STIM2 binds SERCA1a through the homologous region 453-729 and
+*attenuates* it). Two homologous sensors, the same pump, the same binding region, opposite signs.
+Batch 13 had ATP2A2 -> STIM1 inhibition; the loop is now closed in both directions.
+
+**Other arms.** ORAI1-**KCNMA1** binding, reduced in diabetic mice although ORAI1 protein is
+raised (PMC8564290) - Ca2+ entry read straight into membrane potential. **DLG1 (SAP97) -> ORAI1
+trafficking** (PMC8583858): knocking it down leaves SOCE intact and changes only the *shape* of
+the T cell Ca2+ response, which no other record in the map does. **TMEM38A (TRIC-A)** gets
+between the anchors and lowers ICRAC, the mirror image of CRACR2A from batch 14. **PRKCB ->
+STIM1 phosphorylation at Ser660**, and the sign is inhibition, against the grain of the other
+kinases reported on STIM1. **F2RL1 (PAR2) -> ORAI1/STIM1** (PMC10105462, blastocyst proteases),
+which completes the contrast with F2RL3 (PAR4) from batch 14, where PAR2 was explicitly *not* the
+coupled receptor. **LEP -> ORAI1** in dendritic cells, **PGF -> ORAI1/STIM1 -> HIF1A** in ovarian
+carcinoma, **PLA2G6 -> ORAI1** (visible only at endogenous expression - overexpressing either
+anchor hides the requirement), **STIM1 -> RYR2 activation** in cardiac muscle against **STIM1 ->
+RYR1 inhibition** in skeletal muscle, and **STIM2 -> EIF2AK3 inhibition** (PMC10592933), where
+losing STIM2 activates PERK and losing STIM1 does not - PERK now has both sensors on it with the
+same sign from two unrelated papers (the STIM1 one is PMID 23076152, batch 14).
+
+**Two records dropped by the inclusion rule, both worth reporting rather than hiding.**
+`JAK2 -> ORAI1` (PMID 30054044), the kinase between leptin and the channel: no sentence in the
+paper names Jak2 together with a calcium term, and JAK2 has no GO calcium annotation, so the node
+was not admitted and the record was deleted. `STIM2 -> MYC` and `STIM2 -> ATF4` (PMC10592933)
+fail a different rule: they are two hops from an anchor, since STIM2 is a seed and not an anchor.
+The PERK edge survived only because EIF2AK3 was already admitted under STIM1.
+
+**Generic names still blocking records**: `IP3R` again (PMC6125598, a whole paper on the
+IP3R-STIM1 association and the intraluminal microdomain, no isoform anywhere), `MLC2`, `ROCK`,
+`syntaxin 1`, `L-type Ca2+ channels` outside the two tissues resolved above, `KCa channels`
+(PMID 41344216), `ClCa`/TMEM16A as a "probable candidate" only (PMID 20204722), plus `Rap1`,
+`calmodulin`, calcineurine, AP-1, septins, ERK1/2, Akt/mTOR, NFAT and AMPK from earlier batches.
+
+A negative claim worth remembering: **PMID 19332491 says TRPC channels function independently of
+STIM1 and Orai1** in HEK293 and vascular smooth muscle, which contradicts several STIM1-TRPC1
+records in the map. The schema has no way to record a negative, so it lives here.
+
+Map: **285 nodes, 754 interactions, 1110 evidence rows**. Tests: **155 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
