@@ -5,10 +5,10 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 718 done, 12672 pending, 127 skipped, 2 error.
+13520 articles in queue: 767 done, 12621 pending, 130 skipped, 2 error.
 
-- tier 0: 695/3800 processed
-- tier 1: 149/3812 processed
+- tier 0: 746/3801 processed
+- tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
 Next article: PMID 36769349 — How the Innate Immune DNA Sensing cGAS-STING Pathway Is Involved in Apoptosis
@@ -871,5 +871,89 @@ STIM1 and Orai1** in HEK293 and vascular smooth muscle, which contradicts severa
 records in the map. The schema has no way to record a negative, so it lives here.
 
 Map: **285 nodes, 754 interactions, 1110 evidence rows**. Tests: **155 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-10-21 — Extraction batch 16 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`, read one at a time, plus two leads chased. **64 records** in
+`data/raw/lit_20261021_b20.jsonl`, all 64 sentences verified `true`, zero flagged. Three articles
+`skipped` (PMID 31010205 and PMID 36809524 are expression-profiling/bioinformatic screens, PMID
+40522762 a review). Map: **305 nodes, 814 interactions, 1184 evidence rows**; 21 new nodes, and a
+striking number of the curator's own rows finally get a publication under them: TRPC6, TRPC5,
+PAK1, SRC, PTGS2, IL6, TNF, GRIN2A, GRIN2B, NFATC2, MTOR.
+
+**`NFAT` is unblocked, by two papers in the same batch.** PMC6716836 writes **NFAT1** (= NFATC2)
+and shows STIM2, but not STIM1, controlling its expression and its occupancy of the TGF-beta1
+promoter; PMC10641176 writes NFAT1 too and shows STIM1 and STIM2 knock-outs each reducing its
+nuclear translocation, with the double knock-out abolishing it. The second one is what admits
+NFATC2 to the map at all, since a level-2 seed has to touch an **anchor** and STIM2 is not one.
+TGFB1 itself is *not* recorded: it hangs off NFATC2, two hops from an anchor.
+
+**`CaMKII` and `calmodulin` again, with a result.** CAMKK2 (CaMKKbeta) enters from PMID 41765055
+and closes a gap left open since batch 12: STIM1 -> PRKAA1 was recorded *through CaMKKbeta* and
+the kinase had no node. The same paper reports an **ORAI1-p65 co-immunoprecipitation** - the only
+named-subunit physical link between an anchor and NF-kappaB the map has seen - recorded with its
+weakness stated (one pull-down, in tissue, no reciprocal). `calmodulin` stays blocked: PMID
+23109337 is a crystal structure of the ORAI1 CMBD with Ca2+-CaM and never says which CALM gene.
+`NFAT` in PMC9011325 also stays blocked, because there the isoform appears only in an antibody
+catalogue number and a construct name - the same evidence I refused for IP3R1/2/3 in batch 13.
+
+**Three feedback loops now close in the map**, each with the two arrows from different papers:
+**STIM1 <-> SRC** (PMC4242838: the anchors activate Src at invadopodia; PMID 28866365: STIM1 is a
+*downstream* target of Src-Raf-MEK-ERK, and that paper's whole point is that the direction has
+been assumed backwards), **STIM1 <-> MTOR** (batch 13 for the forward arrow; PMC9153009 shows
+rapamycin lowering STIM1 and ORAI1 in vivo), and **STIM1 <-> PLA2G6** (batch 15: the lipase is
+required for endogenous SOCE; PMID 22223729: STIM1 but not ORAI1 is required to activate the
+lipase, and its product then acts on ORAI1 but not STIM1).
+
+**New arms.** **TRPC6 binds ORAI1 and ORAI3** and is required for their surface delivery, with
+the partner swapping between MDA-MB-231 and MCF7 (PMC6162527) - a trafficking edge beside DLG1
+from batch 15. **TRPC5 in a stoichiometric complex with STIM1 and ORAI1**, argued from Sr2+
+permeability (PMID 18250430). **PAK1** binds and activates STIM1 (PMC5960643), pushing it the
+opposite way to PRKCB from batch 15. **STIM1/STIM2 bind GRIN2A and GRIN2B** as endogenous
+proteins in cortical neurons and *restrain* NMDA-evoked Ca2+ (PMC7017226): STIM1-NR2A association
+rises on store depletion while STIM1-NR2B falls, and STIM1 displaces STIM2 from NR2A. **AVP ->
+ORAI1/STIM1 -> RUNX2, MSX2, SOX9, ALPL** (PMID 33409552): a whole osteogenic programme under the
+channel, ending in vascular calcification. **COL6A1 -> STIM1/ORAI1** through mTOR, in mice and in
+Bethlem/Ullrich patients' platelets. **VPS13A (chorein) -> ORAI1/STIM1**, a neurodegeneration
+gene whose loss *lowers* both anchors, reversed by lithium through NF-kappaB. **GNB5 -> STIM1**
+(needs the STIM1 ERM region, not a conducting ORAI1), **MFN2 -> STIM1 trafficking** (mitochondrial
+depolarization blocks the sensor's migration), **NEUROD2 -| STIM1** with a ChIP-seq'd intronic
+binding site (lead chased to PMC5343279), **STIM1/ORAI1 -> MMP14 recycling** and **-> SRC** at
+invadopodia, **-> KRT1** in keratinocytes, **-> KDR** in thyroid cancer, **-> IL2** in T cells,
+**-> CSF1/IL34** in T-ALL, **-> TNF/IL6** in spinal astrocytes (where STIM2 and not STIM1 carries
+the LPS response, in the same cells), **-> PTGS2/IL8/TNF** under cisplatin, and **ORAI3 -> EGFR**
+phosphorylation under hypoxia, which ORAI1 does not do.
+
+**The `beyond_calcium` flag, used for the first time since batch 11, and deliberately.** PMC8316191
+shows STIM1 knock-down *reinstating* TSHR and the thyroid-specific proteins and raising iodine
+uptake, and raising p21. Thyroid differentiation and the cell cycle are the biological end of an
+arm with nothing calcium about them, which is exactly what the user's decision of 2026-10-19
+created the flag for. Both nodes are tagged "not calcium-related" on their pages.
+
+**Three records dropped by the one-hop rule, and they raise a new question for #18.** The lead
+from PMID 29480205 ("mutant Huntingtin sensitizes InsP3R1") was chased to **PMID 12873381** (Tang
+2003), which gives an **InsP3R1-HAP1A-Htt ternary complex** and shows InsP3R1 sensitized by
+polyglutamine-expanded but not normal huntingtin in a planar lipid bilayer. All three records
+(HTT-ITPR1 binding, HAP1-ITPR1 binding, HTT -> ITPR1 activation) were **silently dropped by the
+build**: ITPR1 is a seed, not an anchor, so HTT and HAP1 are two hops out. The records were
+deleted rather than forced with `beyond_calcium`, which would have mislabelled a polyglutamine
+calcium-release mechanism as "not calcium-related". The question for the curator: should seeds
+that are themselves Ca2+ channels or pumps (ITPR1/2/3, RYR1/2, ATP2A1/2) count as anchors for the
+one-hop rule? Everything the map holds upstream of ITPR1 today comes from the databases or her
+own sheets, never from the literature, for exactly this reason.
+
+**Negative claims the schema cannot hold** (recorded here, as in batch 15): PMID 26109647 shows
+STIM1, STIM2 and SOCE are **dispensable** for macrophage and dendritic cell effector functions,
+which sits oddly beside PMID 30054044 (batch 14, leptin -> ORAI1 in dendritic cell maturation).
+PMID 28866365 shows ERK1/2 activation does not need SOCE at all.
+
+**Generic names still blocking records**: `calmodulin` (PMID 23109337), `NFAT` where only an
+antibody names the isoform (PMC9011325), `S1P receptor` (PMC8316191, one of five), `MAPK`
+(PMC7424994), `KV1.3`/`SKCa` (PMC8268022), plus `IP3R`, `MLC2`, `ROCK`, `syntaxin 1`, `KCa`,
+`Rap1`, calcineurine, AP-1, septins, ERK1/2, Akt/mTOR and AMPK from earlier batches.
+
+Map: **305 nodes, 814 interactions, 1184 evidence rows**. Tests: **155 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
