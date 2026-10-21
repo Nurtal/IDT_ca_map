@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 767 done, 12621 pending, 130 skipped, 2 error.
+13520 articles in queue: 814 done, 12570 pending, 134 skipped, 2 error.
 
-- tier 0: 746/3801 processed
+- tier 0: 797/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -955,5 +955,141 @@ antibody names the isoform (PMC9011325), `S1P receptor` (PMC8316191, one of five
 `Rap1`, calcineurine, AP-1, septins, ERK1/2, Akt/mTOR and AMPK from earlier batches.
 
 Map: **305 nodes, 814 interactions, 1184 evidence rows**. Tests: **155 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-10-21 — Extraction batch 17 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`, read one at a time, plus **four leads chased**. **89 records**
+in `data/raw/lit_20261021_b21.jsonl`, all 89 sentences verified `true`, zero flagged. Four
+articles `skipped`: PMID 17193710 is off-topic corpus noise (transposons in *Antirrhinum majus*),
+PMID 23496221 a review of CRAC inhibitors, PMID 36775558 a duplicate PubMed record of PMID
+33649466, and PMID 30401791 the authors' own commentary on their own work — chased to the primary,
+PMID 29284605. Map: **338 nodes, 921 interactions, 1314 evidence rows**; **33 new nodes**, the
+largest single-batch gain so far. Tests: **157 Python + 36 JS**.
+
+**A bug this batch surfaced, fixed with a test: verbatim verification was case-sensitive.**
+`MAPK1` entering the map pulled in SIGNOR-192788, whose excerpt lower-cases the gene symbols
+(`between cdo and stim1 ... at serine 575` where the paper reads `Cdo` and `Stim1`). The quote is
+faithful; the check called it **`false`**, which in the review app reads as *claim disproved*
+rather than *not quoted verbatim*. `sentence_in` now compares case-insensitively (two tests in
+`TestQuoteMatching`: the faithful lower-cased excerpt verifies, an altered one still fails).
+Effect on the whole corpus: the single `false` is gone and **15 database excerpts moved from
+`unverifiable` to `true`** (57 -> 42 unverifiable, 590 -> 606 true).
+
+**The ER/PM junction gets a builder, and the pump turns around.** PMID 31061173 identifies
+**ANO8** as the tether that makes the junction: without it STIM1 neither oligomerizes with itself
+nor reaches ORAI1. The same paper assembles ORAI1, PMCA, STIM1, IP3 receptors and **SERCA2** at
+that junction and describes a new form of channel inactivation in which **ATP2A2 -| ORAI1**,
+SERCA2 pumping the entering Ca2+ straight back into the ER. The map had ATP2A2 only as a *target*
+of STIM1 (batch 15); it is now also an inhibitor of the channel, and **ATP2A2 <-> STIM1** closes
+as a loop with the second arrow from PMID 36442136 (below).
+
+**Which pump is broken decides where the sensor sits — in patients.** PMID 36442136: Darier
+disease (ATP2A2 mutations) shows **cytoplasmic** STIM1 by immunohistochemistry, Hailey-Hailey
+disease (ATP2C1 mutations) a **membrane-associated** pattern, while ORAI1 shows no differential
+pattern at all. Small series (five ambiguous cases, eight controls) and the readout is a staining
+pattern, both written into the mechanism field. **ATP2C1**, a Golgi pump, is a new node.
+
+**Filamin A, both ways round, from two papers.** PMID 39764579: the **calpain-cleaved C-terminal
+fragment** of FLNA (repeats 16-24) slows ORAI1 and STIM1 protein degradation, abolishes Orai1alpha
+*lysosomal* degradation and keeps the channel at the membrane — Orai1beta unaffected. The chased
+primary PMID 29284605 gives the opposite sign for full-length FLNA: it **binds STIM1 on store
+depletion** (dependent on Ser2152 phosphorylation by PKA, lost in the STIM1 K684,685E mutant) and
+**brakes** the coupling — knocking FLNA down raises SOCE, the STIM1-ORAI1 association and
+thrombin-induced platelet aggregation, and re-expression reverses it, while the S2152A mutant does
+not. With batch 14's STIM1 -> CAPN1, the map now shows a cycle rather than a chain: the anchor
+raises calpain, calpain cuts filamin A, the fragment raises the anchor.
+
+**FAK and Pyk2, chased from a parenthesis.** PMID 31652779 remarks "we previously found that Orai1
+is involved in FAK phosphorylation"; that lead is **PMID 27865925** (ORAI1 and ORAI2 -> PTK2 in
+HL60 cells, where TRPC1/3/6 are absent so the entry is Orai-only) and, beside it, **PMID 25433371**
+(ORAI1 -> PTK2B in glioma, with an ORAI1 rescue restoring p-Pyk2). The map carried "SOCE drives
+migration" from a dozen papers with no gene at the mechanical end; it now has both focal-adhesion
+kinases. The same AC8 paper gives **ADCY8-ORAI1**: co-IP with Orai1alpha only, strengthened by
+store depletion *but only when Ca2+ actually enters*, and the AC8-bound subset of ORAI1 is not
+serine-phosphorylated — a cAMP cyclase shielding the channel from its own inactivation.
+
+**New upstream endocrine and receptor inputs**, which now number four on the same channel:
+**NR3C2** (aldosterone, PMID 27129253: ORAI1, STIM1, TRPC1, TRPC4, TRPC5 all up through MR, with
+SGK1 in between), **AGT** (angiotensin II, PMID 34079454), **FFAR1** (GPR40, PMID 31664108: the
+fasiglifam potentiation of insulin secretion dies with knockdown of IP3R1, STIM1 *or* ORAI1, and
+in beta-cell-specific Stim1 knockout mice in vivo), and **MRGPRX2** (PMID 35126366, the receptor
+behind non-IgE mast cell activation). **CASR** arrives on the other side: the receptor that senses
+extracellular Ca2+ lowering the abundance of the channel that lets it in (PMID 33804889).
+
+**Effector ends named as genes.** **ANO1** and **TLR8** in salivary glands (PMID 38260625: SOCE
+activates the chloride channel, and the transcriptome rules out an abundance explanation; TLR8 is
+the authors' answer to why losing SOCE does *not* produce Sjogren's disease). **FASLG, TNF, IFNG**
+in cytotoxic T cells in vivo (PMID 23922331). **IL5, IL13, CSF2, IL9, IL6** in pulmonary ILC2s
+(PMID 37752127). **CCL3** with TNF and CXCL8 in mast cells. **CCND1** in hepatoma (PMID 18506892).
+**MCU** — the mitochondrial uniporter, lower in DT40 cells lacking IP3R, STIM1 *or* ORAI1, through
+CREB bound to its promoter (PMID 25737585). **MAP1LC3B, NPPA, NPPB, COL1A1** in the heart (PMID
+34079454, AAV-shRNA-Orai1 by tail vein), with **CAMKK2 -> MAP1LC3B** completing channel ->
+CaMKKbeta -> AMPK/LC3 from batch 12. **BAX** and **CASP3** twice over: by abundance in lung injury
+(PMID 27025854, where the 2-APB arm's weakness is written into the mechanism) and by activation
+through STIM1 N-glycosylation (PMID 36612199, where the link *breaks* in breast cancer cells).
+
+**Two Alzheimer genes, and a sensor acting on a voltage-gated channel.** PMID 36499137: hippocampal
+neurons of 5xFAD mice have excessive store-operated entry before any plaque, with unchanged STIM1
+and STIM2 protein — a change of function, not abundance. Recorded as **APP -> STIM1** and **PSEN1
+-> STIM1** with the mechanism stating plainly that the model carries mutations in both genes and
+the experiment cannot separate them. The same paper gives **STIM2 -> CACNA1C** (nifedipine
+sensitive, ML218 insensitive, STIM2-dependent *with stores full*), which lands beside the
+STIM1 -> CACNA1C conflict opened in batches 13 and 15.
+
+**GSK3 as a brake on the whole module.** PMID 24523925: dendritic cells from mice whose GSK3alpha
+and GSK3beta carry PKB/SGK-resistant knock-in mutations have **less ORAI1, STIM1 and STIM2**.
+Recorded as six records (both isoforms x three targets) because the knock-in hits both at once;
+four to twenty-four hours of pharmacological inhibition changed no abundance, so the effect is
+chronic. **JAK3** enters with the epistasis test batch 15's lost JAK2 record lacked (PMID 31879743:
+re-expressing ORAI1 *or* STIM1 restores migration in JAK3-silenced cells), and its sentence carries
+the SOCE sentence alongside, which is what the calcium criterion needs.
+
+**ORAI1 and TRPC1, resolved by variant and by direction.** PMID 34988680: APEX2 proximity
+labelling, co-IP and a channel-fused Ca2+ sensor all agree that **Orai1alpha, not Orai1beta**, binds
+TRPC1, that histamine and store depletion strengthen it, and that **ORAI1 carries TRPC1 to the
+membrane while TRPC1 does nothing to ORAI1's location** — an asymmetry between two anchors, tested
+both ways. Beside it, **ORAI1-CTTN** by endogenous-to-endogenous co-IP at the leading edge (PMID
+28341841), with the STIM1-cortactin half recorded as the weaker one it is (colocalization of
+pS575-STIM1, no pulldown). **TRPC1-ORAI1-STIM1** as a ternary co-IP in *human parathyroid tissue*
+rather than in overexpression (PMID 20194530), and **ORAI1/STIM1 colocalized with RYR** in
+preformed 300 nm patches of resting T cells (PMID 30563862), where RYR1 and ORAI1 together build
+Ca2+ microdomains within the first second of TCR stimulation.
+
+**The 33 new nodes dragged in 34 database edges**, several of which matter more than the records
+that admitted them: **MAPK1 -> STIM1** phosphorylation at Ser575 (SIGNOR, from PMID 22298426) now
+closes **ORAI1 -> MAPK1 -> STIM1** — and the cortactin paper independently stains **pS575-STIM1**
+at the leading edge, the same site. **MAP1LC3B-TBK1** binding is the first edge that ties the
+autophagy machinery to the STING arm. **APP binds CALM1 and CAMK2A**; **GSK3B -| NFATC1/NFATC2**
+and **-| ATP2A2**; **AKT1** binds ITPR1, CAMK2A, IKBKE and NFATC1; **CRACR2A-FFAR1**; **CAMK2A ->
+PTK2**. **NTN1** arrives from the axon-guidance paper (PMID 24289807, Xenopus growth cones, netrin-1
+attraction needing STIM1 and TRPC1) and immediately meets the SIGNOR netrin-2/Cdo/STIM1 row that
+the verification fix rescued.
+
+**Records not written, and why.** PMID 34065942 shows **ORAI3 -> NANOG and -> SOX2** enriching
+cancer stem cells under cisplatin, with ORAI1 and STIM1 explicitly *not* changed. Both records
+would have been **silently dropped**: ORAI3 is a level-1 seed but not an anchor, so NANOG and SOX2
+are two hops out — the same wall that cost the huntingtin records in batch 16, and a second
+argument for the #18 question, widened: should **ORAI2, ORAI3 and STIM2** count as anchors too?
+They are the canonical SOCE proteins, and today anything hanging off them alone falls out.
+PMID 26055321 (SOCE restored in invasive melanoma by a PKC-insensitive ORAI1 mutant, with WNT5A
+upstream) is blocked by `PKC` with no isoform. PMID 33804889 and its chased primary PMID 32015442
+both *assert* NFAT5 -> SGK1 -> ORAI1 and neither knocks NFAT5 down, so **NFAT5 is not in the map**:
+the records would have been an abundance correlation dressed as a cascade.
+
+**Negative claims the schema cannot hold**: PMID 36612199 — SOCE in MCF7 and MDA-MB-231 is
+*insensitive* to Orai1 and STIM1 N-linked glycosylation, which is only a defect in non-tumoral
+cells. PMID 29242293 — FERMT3 (kindlin-3) patients lose platelet thrombus formation entirely, by a
+route independent of ORAI1/STIM1. PMID 33182378 — forty STIM1/ORAI1 polymorphisms in 3631 chronic
+hepatitis B patients, none significant after correction for multiple testing.
+
+**Generic names still blocking records**: `PKC` and `PKA` on the ORAI1 Ser-27/30/34 sites (PMID
+26055321, PMID 31652779), `CaMKK` under STO-609 (PMID 34079454, recorded against CAMKK2 with the
+ambiguity stated), `ERK1/2` and `Akt` in mast cells (recorded against MAPK1/MAPK3/AKT1, same
+caveat), plus `calmodulin`, `IP3R`, `MLC2`, `ROCK`, `syntaxin 1`, `KCa`, `Rap1`, calcineurine,
+AP-1, septins and AMPK from earlier batches.
+
+Map: **338 nodes, 921 interactions, 1314 evidence rows**. Tests: **157 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.

@@ -432,6 +432,22 @@ class TestQuoteMatching(BuildCase):
         quote = "NFAT represses the transcription of the COX2 gene in cancer cells"
         self.assertEqual(self.status(quote, text), "false")
 
+    def test_gene_names_the_database_lower_cased_still_verify(self):
+        # SIGNOR-192788 quotes "... between cdo and stim1 ... at serine 575" where the paper
+        # reads "Cdo" and "Stim1": the excerpt is faithful, only its casing is the database's
+        text = ("The netrin-2-mediated NFATc3 activation was coincident with robust interactions "
+                "between Cdo and Stim1 in myoblasts.")
+        quote = ("the netrin-2-mediated nfatc3 activation was coincident with robust interactions "
+                 "between cdo and stim1 in myoblasts")
+        self.assertEqual(self.status(quote, text), "true")
+
+    def test_lower_casing_does_not_excuse_an_invented_sentence(self):
+        text = ("The netrin-2-mediated NFATc3 activation was coincident with robust interactions "
+                "between Cdo and Stim1 in myoblasts.")
+        quote = ("the netrin-2-mediated nfatc3 activation was abolished by robust interactions "
+                 "between cdo and stim1 in myoblasts")
+        self.assertEqual(self.status(quote, text), "false")
+
     def test_a_reference_marker_the_database_kept_still_verifies(self):
         # SIGNOR-278237 quotes "... catalytic activity of mTOR [216]." where the paper, as
         # PubTator caches it, ends the sentence at "mTOR." — the marker is the publisher's

@@ -48,9 +48,17 @@ def despaced(text):
 
 
 def sentence_in(sentence, text):
+    """Case is the database's, not the author's.
+
+    SIGNOR lower-cases the gene symbols inside its excerpts ("between cdo and stim1" for
+    "between Cdo and Stim1" in SIGNOR-192788), which made a faithful quote read as a claim
+    nobody wrote. Comparing case-insensitively forgives that and nothing else: every word of
+    the quote must still be there, in order, so an altered sentence still fails.
+    """
     if not sentence:
         return False
-    return normalize(sentence) in normalize(text) or despaced(sentence) in despaced(text)
+    return (normalize(sentence).casefold() in normalize(text).casefold()
+            or despaced(sentence).casefold() in despaced(text).casefold())
 
 
 # a sentence boundary with whitespace, a paragraph break, or — as database excerpts come —
