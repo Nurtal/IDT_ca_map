@@ -376,6 +376,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0666c356841c",
+  "interaction_id": "ef02b46551ec",
+  "source_kind": "pmc",
+  "ref": "PMC7674615",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Li Y",
+  "sentence": "In cardiomyocytes, lipopolysaccharide (LPS) evoked mitochondrial reactive oxygen species (ROS) production and redistributed STIM1 to interact with Orai1 for the formation of calcium release-activated calcium (CRAC) channels, mediating calcium influx, which were prevented by songorine, likely due to ROS suppression.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "06dc8e430168",
   "interaction_id": "66af087269db",
   "source_kind": "curated",
@@ -1021,6 +1036,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "128f8273f8fe",
+  "interaction_id": "9dbd10e529c8",
+  "source_kind": "pmc",
+  "ref": "PMC6633397",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Schaar A",
+  "sentence": "To understand the mechanisms of how TRPC1 regulates adipokine secretion, we provide evidence that insulin-stimulated TRPC1-mediated Ca2+ influx is necessary for fusion of VAMP2 with SNAP25 and syntaxin 1, and is thus necessary for the secretion of adipokines.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "12c5211cd8e3",
   "interaction_id": "43d307d49fb3",
   "source_kind": "curated",
@@ -1576,6 +1606,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/modulators/row 6"
  },
  {
+  "evidence_id": "1c6a85f94057",
+  "interaction_id": "71c212598b72",
+  "source_kind": "pubmed",
+  "ref": "PMID:33618021",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Cantonero C",
+  "sentence": "TMEM97 facilitates the activation of SOCE by downregulating the association of cholesterol to Orai1 in MDA-MB-231 cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1c905bd884eb",
   "interaction_id": "82a6c49f3f73",
   "source_kind": "curated",
@@ -1951,6 +1996,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 7"
  },
  {
+  "evidence_id": "25dd403e1d59",
+  "interaction_id": "71c212598b72",
+  "source_kind": "pubmed",
+  "ref": "PMID:33618021",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Cantonero C",
+  "sentence": "Interestingly, silencing of TMEM97 in MDA-MB-231 cells significantly reduced the co-localization of Orai1 with the SOCE regulatory protein STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "26cad57585d5",
   "interaction_id": "2f669fad8377",
   "source_kind": "intact",
@@ -1977,6 +2037,21 @@ window.CAMAP.evidence = [
   "sentence": "The key event in activation of fluid secretion is an increase in intracellular [ca2+] ([ca2+]i) triggered by ip3-induced release of ca2+ from er via the ip3r.  ip3rs determine the site of initiation and the pattern of [ca2+]i signal in the cell.",
   "sentence_verified": "unverifiable",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "27c539a5e0dd",
+  "interaction_id": "a39b77077771",
+  "source_kind": "pmc",
+  "ref": "PMC7290784",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Segin S",
+  "sentence": "We observed that the upregulation of Orai3 and Stim1 expression evoked by neurohumoral stress via chronic AngII treatment depends completely on the expression of Orai1.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -2099,6 +2174,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with NMDAR2 - PLA between NR2B/NR2A and STIM1 | Effet de l'interaction: co-localization of STIM1 and NMDAR2 subunits after store depletion | Localisation: Plasma Membrane | Protéine: NDMAR2, Glutamate Ionotropic Receptor NMDA Type Subunit 2A",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 36"
+ },
+ {
+  "evidence_id": "2a36ead204bb",
+  "interaction_id": "6b09caec8067",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKCA>NFATC1",
+  "cited_pmid": "12351631",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "2a695de46589",
@@ -2596,6 +2686,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "3365f90f69f9",
+  "interaction_id": "73526a8c8f11",
+  "source_kind": "pubmed",
+  "ref": "PMID:23076152",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Henke N",
+  "sentence": "STIM1 knock-out mitochondria are tubular, have a higher Ca(2+) concentration, and are metabolically more active, resulting in constitutive oxidative stress causing increased nuclear translocation of the antioxidant transcription factor NRF2 triggered by increased phosphorylation of the translation initiation factor eIF2alpha and the protein kinase-like endoplasmic reticulum kinase PERK.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "33686530d00f",
   "interaction_id": "955dad13e1a5",
   "source_kind": "curated",
@@ -2729,6 +2834,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: Co-Ips / enhances the signal-induced association of STIM1 and O1 | Effet de l'interaction: SPPL3 associates with STIM1 through CAD and transmembrane domains | Localisation: ER membrane | Protéine: Signal peptide peptidase-like 3",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 71"
+ },
+ {
+  "evidence_id": "359271f342ef",
+  "interaction_id": "222753f48f1b",
+  "source_kind": "pmc",
+  "ref": "PMC5690472",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Ohba T",
+  "sentence": "Indeed, our in vitro study showed that STIM1 knockdown inhibited the upregulation of TRPC1 and led to the abrogation of SOCE and a robust decrease in the activation of NFAT, which resulted in the inhibition of cardiomyocyte hypertrophy.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "359c70e789e3",
@@ -3271,6 +3391,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 67"
  },
  {
+  "evidence_id": "40026f4c98a3",
+  "interaction_id": "4a9a57bdd7e6",
+  "source_kind": "pmc",
+  "ref": "PMC2875865",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Srikanth S",
+  "sentence": "Together these data suggest that CRACR2A binds to both Orai1 and STIM1 in a Ca2+-sensitive manner.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "401d5cfe768a",
   "interaction_id": "e38b3abea8d0",
   "source_kind": "pubmed",
@@ -3297,6 +3432,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "40415c7c9c9a",
+  "interaction_id": "3f0fb17466ca",
+  "source_kind": "pubmed",
+  "ref": "PMID:25190815",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Zhou MH",
+  "sentence": "Interestingly, gene silencing of STIM1 or Orai1 also interrupts the activation of calcineurin/nuclear factor of activated T-cells (NFAT) pathway and the production of interleukin 8 triggered by histamine in HUVECs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3856,6 +4006,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "4abdb3b344ba",
+  "interaction_id": "5b5a50ba3549",
+  "source_kind": "pubmed",
+  "ref": "PMID:31938357",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Jin J",
+  "sentence": "Furthermore, in diabetic nephropathy rats, the up-regulated expression of podocyte STIM1 can activate TRPC6 and Orai1 channels, which results in Ca2+ entry.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "4ac6df50f1b3",
   "interaction_id": "f5862429a080",
   "source_kind": "intact",
@@ -4171,6 +4336,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "513f77d6b280",
+  "interaction_id": "b14d8a799884",
+  "source_kind": "pmc",
+  "ref": "PMC6267368",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Latour S",
+  "sentence": "Our results show that RhoA activation by SDF-1 was impaired in cells under-expressing STIM1 or Orai1 suggesting a major role of the RhoA/ROCK pathway in SDF-1-induced B lymphocyte migration (Figure 4B).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5145a30f733a",
   "interaction_id": "ae0f57e46807",
   "source_kind": "intact",
@@ -4242,6 +4422,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "51b7cfaf3ca2",
+  "interaction_id": "4aea7625b03e",
+  "source_kind": "pmc",
+  "ref": "PMC5690472",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Ohba T",
+  "sentence": "In addition, the upregulation of TRPC1 was inhibited in the hearts of STIM1+/-mice, and the expression of TRPC1, TRPC3, TRPC4 and TRPC6 was significantly lower in STIM1+/-than in WT TAC mice.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -4587,6 +4782,36 @@ window.CAMAP.evidence = [
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "597a18d5ff56",
+  "interaction_id": "ff7dc8ee1e3b",
+  "source_kind": "pmc",
+  "ref": "PMC2875865",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Srikanth S",
+  "sentence": "We show that CRACR2A directly interacts with Orai1 and STIM1, forming a ternary complex that dissociates at elevated Ca2+ concentrations.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5a4887f122fe",
+  "interaction_id": "30cfc2e1a4f0",
+  "source_kind": "pmc",
+  "ref": "PMC5841437",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chiu WT",
+  "sentence": "Western blotting results also demonstrated that WT decreased the level of STIM1, Orai1, and Orai2, resulting in reduction of SOCE.",
+  "sentence_verified": "true",
+  "species_context": "other",
   "curator_note": "",
   "supp_source": ""
  },
@@ -5052,6 +5277,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "637e2d71294f",
+  "interaction_id": "e96f72e462b2",
+  "source_kind": "pmc",
+  "ref": "PMC2875865",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Srikanth S",
+  "sentence": "These data suggest a specific role of CRACR2A in enhancement of Orai1-mediated SOCE that is distinct from CRACR2B.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -5806,6 +6046,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 90"
  },
  {
+  "evidence_id": "6fccde5a394f",
+  "interaction_id": "402e82b3b192",
+  "source_kind": "pmc",
+  "ref": "PMC6633397",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Schaar A",
+  "sentence": "To understand the mechanisms of how TRPC1 regulates adipokine secretion, we provide evidence that insulin-stimulated TRPC1-mediated Ca2+ influx is necessary for fusion of VAMP2 with SNAP25 and syntaxin 1, and is thus necessary for the secretion of adipokines.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "6fce0eec5b9a",
   "interaction_id": "4f5366359f2e",
   "source_kind": "curated",
@@ -5954,6 +6209,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: Inhibits the K48-linked ubiquitination (on LYS150 and LYS370) triggered by RNF5 | domain of the interactor: ND | domain of STING: The 111–221 section of STING",
   "supp_source": "interactome STING.xlsx/interactors/row 24"
+ },
+ {
+  "evidence_id": "716ecd0c12ff",
+  "interaction_id": "7b9917c60e79",
+  "source_kind": "pubmed",
+  "ref": "PMID:29677491",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Lin YP",
+  "sentence": "Activation of channel pore-forming Orai1 subunits by mite extract requires gating by STIM1 proteins. Although mite extract stimulates both protease-activated receptor type 2 (PAR2) and PAR4 receptors, Ca2+ influx is more tightly coupled to the PAR4 pathway.",
+  "sentence_verified": "true",
+  "species_context": "unknown",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "71b9c1fd5983",
@@ -6376,6 +6646,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
  },
  {
+  "evidence_id": "783ea3fa85d4",
+  "interaction_id": "909318d611e1",
+  "source_kind": "pmc",
+  "ref": "PMC5841437",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chiu WT",
+  "sentence": "Western blotting results also demonstrated that WT decreased the level of STIM1, Orai1, and Orai2, resulting in reduction of SOCE.",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "7877adc0110f",
   "interaction_id": "a3443361d7dd",
   "source_kind": "intact",
@@ -6400,6 +6685,21 @@ window.CAMAP.evidence = [
   "year": "2018",
   "first_author": "Hodeify R",
   "sentence": "Similarly, knocking down of CCT1 increased Orai1 at PM, showing that the CCT complex regulates Orai1 trafficking and its PM residence.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "78e7cbd4ae28",
+  "interaction_id": "628d17d409e5",
+  "source_kind": "pubmed",
+  "ref": "PMID:27431311",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Xia J",
+  "sentence": "In summary, the composite molecules of SOCE suggest a poor prognosis for GC by promoting tumor cell proliferation, metabolism, migration, and invasion by targeting MACC1.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -6824,6 +7124,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: Suppresses STING signaling by targeting STING for lysosome degradation | domain of the interactor: ND | domain of STING: ND",
   "supp_source": "interactome STING.xlsx/interactors/row 63"
+ },
+ {
+  "evidence_id": "7f5f3cf12baf",
+  "interaction_id": "7ef383d25606",
+  "source_kind": "pubmed",
+  "ref": "PMID:27431311",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Xia J",
+  "sentence": "In summary, the composite molecules of SOCE suggest a poor prognosis for GC by promoting tumor cell proliferation, metabolism, migration, and invasion by targeting MACC1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "7fd16688a6e2",
@@ -7314,6 +7629,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2011",
   "first_author": "Li et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "87f52d476d0c",
+  "interaction_id": "96db0f399451",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:PRKCA>NFATC2",
+  "cited_pmid": "17570479",
+  "doi": "",
+  "year": "",
+  "first_author": "",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -8191,6 +8521,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "9562b1bda666",
+  "interaction_id": "d8c786766682",
+  "source_kind": "pubmed",
+  "ref": "PMID:18337467",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2008",
+  "first_author": "Chiu WT",
+  "sentence": "Chelating extracellular Ca(2+) by EGTA and down-regulated SOC entry by small interfering RNA targeting STIM1 or inhibitors targeting Ca(2+)-binding site of calpain significantly inhibited soft substrate-induced activation of mu-calpain and epithelial cell apoptosis.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "9576a16e5fd4",
   "interaction_id": "512400e0abf8",
   "source_kind": "intact",
@@ -8414,6 +8759,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: modulating its polymerization and trafficking,",
   "supp_source": "interactome STING.xlsx/interactors/row 6"
+ },
+ {
+  "evidence_id": "98f14eaa8923",
+  "interaction_id": "8a957622ffc1",
+  "source_kind": "pubmed",
+  "ref": "PMID:25190815",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Zhou MH",
+  "sentence": "Interestingly, gene silencing of STIM1 or Orai1 also interrupts the activation of calcineurin/nuclear factor of activated T-cells (NFAT) pathway and the production of interleukin 8 triggered by histamine in HUVECs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "999e3ebc68d5",
@@ -9106,6 +9466,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 46"
  },
  {
+  "evidence_id": "a537ae072354",
+  "interaction_id": "ca3bd42282b1",
+  "source_kind": "pmc",
+  "ref": "PMC2875865",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Srikanth S",
+  "sentence": "CRACR2A co-immunoprecipitated with Orai2 and Orai3 suggesting a conserved binding mechanism with all the Orai proteins (Fig. 2c).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a550d9890ece",
   "interaction_id": "ba1837ec77ca",
   "source_kind": "intact",
@@ -9211,6 +9586,36 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "a74498849c9b",
+  "interaction_id": "0f18e0b11a3f",
+  "source_kind": "pubmed",
+  "ref": "PMID:29804005",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Tam KC",
+  "sentence": "Evidence for the interaction of peroxiredoxin-4 with the store-operated calcium channel activator STIM1 in liver cells.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a75cb6c3a1c9",
+  "interaction_id": "45090cd64662",
+  "source_kind": "pmc",
+  "ref": "PMC6267368",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Latour S",
+  "sentence": "Using pharmacological and genetic approaches, we revealed that STIM1 and Orai1 were responsible for Ca2+ influx induced by SDF-1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a78bfaea4906",
   "interaction_id": "bf86bcb995ce",
   "source_kind": "intact",
@@ -9269,6 +9674,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: calreticulin interacts with ERp57 and STIM1 | Localisation: ER protein | Protéine: Calreticulin",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 18"
+ },
+ {
+  "evidence_id": "a99dd26ebfa9",
+  "interaction_id": "6b3f3cfa4586",
+  "source_kind": "pubmed",
+  "ref": "PMID:23076152",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Henke N",
+  "sentence": "STIM1 knock-out mitochondria are tubular, have a higher Ca(2+) concentration, and are metabolically more active, resulting in constitutive oxidative stress causing increased nuclear translocation of the antioxidant transcription factor NRF2 triggered by increased phosphorylation of the translation initiation factor eIF2alpha and the protein kinase-like endoplasmic reticulum kinase PERK.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a9b5795e1a00",
@@ -9537,6 +9957,21 @@ window.CAMAP.evidence = [
   "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
   "sentence_verified": "true",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ae042c9e45fc",
+  "interaction_id": "db84f9a2f563",
+  "source_kind": "pmc",
+  "ref": "PMC6322368",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Song X",
+  "sentence": "When exposed to high tidal volume or large-magnitude CS, Stim1 and Orai1 expression are upregulated, which further activates calcium-sensitive PKCalpha and results in calcium overload, endothelial hyperpermeability, and, finally, lung injury.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -10126,6 +10561,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b76f4cc38af1",
+  "interaction_id": "2098e8a2dc94",
+  "source_kind": "pmc",
+  "ref": "PMC6267368",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Latour S",
+  "sentence": "Our results show that RhoA activation by SDF-1 was impaired in cells under-expressing STIM1 or Orai1 suggesting a major role of the RhoA/ROCK pathway in SDF-1-induced B lymphocyte migration (Figure 4B).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b7b2a9070991",
   "interaction_id": "e5f0f729bb05",
   "source_kind": "omnipath",
@@ -10152,6 +10602,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b8803859ec63",
+  "interaction_id": "5c71da04830a",
+  "source_kind": "pmc",
+  "ref": "PMC7290784",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Segin S",
+  "sentence": "Remarkably, we observed that the increased expression of the negative regulator of calcineurin, Myoz2 (Calsarcin-1), in AngII-treated control mice was completely absent in Orai1CM-KO mice; additionally, the effect of AngII observed in controls hearts on Rcan1, another calcineurin regulator, was significantly reduced in Orai1CM-KO hearts without changes in the calcineurin A alpha expression (Ppp3ca) (Figure 5C).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -10409,6 +10874,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: ER protein | Protéine: Store-Operated Calcium Entry Associated Regulatory Factor, TMEM 66",
   "supp_source": "interactome STIM1 bis.xlsx/Orai/row 10"
+ },
+ {
+  "evidence_id": "bd8726555ca3",
+  "interaction_id": "33f71d47dcee",
+  "source_kind": "signor",
+  "ref": "SIGNOR-249175",
+  "cited_pmid": "12351631",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Protein kinase A negatively modulates the nuclear accumulation of NF-ATc1. | Here we show that overexpression of PKA causes phosphorylation and cytoplasmic accumulation of NF-ATc1 in direct opposition to calcineurin by phosphorylating Ser-245, Ser-269, and Ser-294 in the conserved serine-proline repeat domain, and that mutation of these serines blocks the effect of PKA. Activation of endogenous PKA is similarly able to promote phosphorylation of these sites on NF-ATc1 in two lymphoid cell lines.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "bec983ef01bd",
@@ -10771,6 +11251,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c308166a032c",
+  "interaction_id": "aae5e1c70da0",
+  "source_kind": "pmc",
+  "ref": "PMC5690472",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Ohba T",
+  "sentence": "In addition, the upregulation of TRPC1 was inhibited in the hearts of STIM1+/-mice, and the expression of TRPC1, TRPC3, TRPC4 and TRPC6 was significantly lower in STIM1+/-than in WT TAC mice.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c34303011d79",
   "interaction_id": "a3443361d7dd",
   "source_kind": "intact",
@@ -10797,6 +11292,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c4bbf7ba0202",
+  "interaction_id": "0ed83b2ca6dc",
+  "source_kind": "pmc",
+  "ref": "PMC2875865",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Srikanth S",
+  "sentence": "CRACR2A co-immunoprecipitated with Orai2 and Orai3 suggesting a conserved binding mechanism with all the Orai proteins (Fig. 2c).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -11056,6 +11566,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c9876e343217",
+  "interaction_id": "a76701b43774",
+  "source_kind": "pmc",
+  "ref": "PMC5690472",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Ohba T",
+  "sentence": "In addition, the upregulation of TRPC1 was inhibited in the hearts of STIM1+/-mice, and the expression of TRPC1, TRPC3, TRPC4 and TRPC6 was significantly lower in STIM1+/-than in WT TAC mice.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c9e408fb40fe",
   "interaction_id": "a0e77231ef15",
   "source_kind": "pmc",
@@ -11084,6 +11609,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: ER protein | Protéine: Inositol 1,4,5-Trisphosphate Receptor Type 1, IP3R1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 41"
+ },
+ {
+  "evidence_id": "cab05f74cd0a",
+  "interaction_id": "62dac55c3e45",
+  "source_kind": "pmc",
+  "ref": "PMC5690472",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Ohba T",
+  "sentence": "Furthermore, endothelin-1 treatment of cultured rat myocytes enhanced TRPC1 expression, SOCE, and NFAT activation, and the knockdown of STIM1 suppressed these effects, thereby preventing a hypertrophic response.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "cb09a6d5c457",
@@ -11236,6 +11776,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "cebead7c4a59",
+  "interaction_id": "22bb943573f7",
+  "source_kind": "pmc",
+  "ref": "PMC2875865",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Srikanth S",
+  "sentence": "Surprisingly, in HEK293 cells, depletion of CRACR2B had a stronger effect on SOCE than that of CRACR2A (Fig. 3a, bottom).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ceddeff1a3ef",
   "interaction_id": "96114c9d1b00",
   "source_kind": "curated",
@@ -11367,6 +11922,21 @@ window.CAMAP.evidence = [
   "sentence": "STIM1-Orai1 must be in a PM/ER microdomain tethered by E-Syt1, stabilized by Septin4 and enriched in PI(4,5)P2 for STIM1-SARAF interaction.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d18bac96a057",
+  "interaction_id": "3fdf00eba093",
+  "source_kind": "pmc",
+  "ref": "PMC7290784",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Segin S",
+  "sentence": "Remarkably, we observed that the increased expression of the negative regulator of calcineurin, Myoz2 (Calsarcin-1), in AngII-treated control mice was completely absent in Orai1CM-KO mice; additionally, the effect of AngII observed in controls hearts on Rcan1, another calcineurin regulator, was significantly reduced in Orai1CM-KO hearts without changes in the calcineurin A alpha expression (Ppp3ca) (Figure 5C).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -12001,6 +12571,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "da45de486c70",
+  "interaction_id": "f375d3557dd5",
+  "source_kind": "pmc",
+  "ref": "PMC7290784",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Segin S",
+  "sentence": "We observed that the upregulation of Orai3 and Stim1 expression evoked by neurohumoral stress via chronic AngII treatment depends completely on the expression of Orai1.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "da5915b78b8b",
   "interaction_id": "2098e8a2dc94",
   "source_kind": "pubmed",
@@ -12329,6 +12914,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Identification MS: STIM1 proteome identified by MS after BioID assay | Localisation: ER membrane protein | Protéine: Ribosome Binding Protein 1, ES/130",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 64"
+ },
+ {
+  "evidence_id": "e274de3bbc21",
+  "interaction_id": "6d1911b6c9ca",
+  "source_kind": "pmc",
+  "ref": "PMC6267368",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Latour S",
+  "sentence": "Using pharmacological and genetic approaches, we revealed that STIM1 and Orai1 were responsible for Ca2+ influx induced by SDF-1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e2ee49d5fb75",
@@ -13036,6 +13636,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "ec39e980fec7",
+  "interaction_id": "aeaa7ae4236d",
+  "source_kind": "pmc",
+  "ref": "PMC6322368",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Song X",
+  "sentence": "When exposed to high tidal volume or large-magnitude CS, Stim1 and Orai1 expression are upregulated, which further activates calcium-sensitive PKCalpha and results in calcium overload, endothelial hyperpermeability, and, finally, lung injury.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ec845ddad0b4",
   "interaction_id": "f4949377b487",
   "source_kind": "curated",
@@ -13591,6 +14206,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "f4d9c1cae2a9",
+  "interaction_id": "914b4e454e26",
+  "source_kind": "pmc",
+  "ref": "PMC6633397",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Schaar A",
+  "sentence": "Summary: TRPC1 modulates Ca2+ entry, which is essential in adipocyte differentiation and adiponectin secretion, through facilitating SNARE complex formation, thereby maintaining metabolic homeostasis.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "f65830dad6c0",
   "interaction_id": "442c3fb171de",
   "source_kind": "pubmed",
@@ -13692,6 +14322,36 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fa0f535172c0",
+  "interaction_id": "9e56a219a5e5",
+  "source_kind": "intact",
+  "ref": "EBI-911456",
+  "cited_pmid": "16512683",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Berggard et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fa5fba7162f3",
+  "interaction_id": "fdad695cf76c",
+  "source_kind": "pmc",
+  "ref": "PMC5841437",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chiu WT",
+  "sentence": "Western blotting results also demonstrated that WT decreased the level of STIM1, Orai1, and Orai2, resulting in reduction of SOCE.",
+  "sentence_verified": "true",
+  "species_context": "other",
   "curator_note": "",
   "supp_source": ""
  },

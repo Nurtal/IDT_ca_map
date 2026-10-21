@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13519 articles in queue: 617 done, 12775 pending, 125 skipped, 2 error.
+13519 articles in queue: 665 done, 12725 pending, 127 skipped, 2 error.
 
-- tier 0: 594/3800 processed
+- tier 0: 644/3800 processed
 - tier 1: 149/3812 processed
 - tier 2: 1/5907 processed
 
@@ -730,5 +730,60 @@ STIM1/ORAI1 overexpression activates it and beta-carotene switches it off), `cal
 ORPs, ERK1/2, Akt/mTOR, NFAT and AMPK from earlier batches.
 
 Map: **256 nodes, 619 interactions, 938 evidence rows**. Tests: **155 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-10-21 — Extraction batch 14 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`, read one by one, plus one lead chased to its primary paper.
+**40 records** in `data/raw/lit_20261021_b18.jsonl`, all 40 sentences verified `true`, zero
+flagged. Two articles marked `skipped` (PMID 22111611, a review of ORAI pharmacology; PMID
+30217863, a JGP commentary on Orai1 gating stoichiometry); the other 48 `done`. The deep tier-0
+pattern of batches 12 and 13 holds: about two thirds of the batch is STIM1-ORAI1 biophysics or a
+knockdown phenotype with no third named actor — read, marked `done`, no record.
+
+**The lead.** Bhardwaj 2013 (PMC3814058, this batch) mentions in passing that "CRACR2A regulates
+the interaction of STIM1 and Orai1". Chased by esearch to **PMID 20418871 / PMC2875865**
+(Srikanth 2010), already in the queue, cached in full. It yields six records: CRACR2A binds
+**ORAI1** (direct, GST pulldown, Orai1 N-terminal residues 64-93, abolished in 2 mM Ca2+, lost in
+the Orai1 K85A/K87A mutant) and **STIM1** (coiled-coil and PEST domains, not the S/T-rich region
+that binds ORAI1), so one protein bridges the pair instead of competing with it; it also
+co-precipitates **ORAI2** and **ORAI3**. Functionally CRACR2A depletion cuts SOCE by half in
+Jurkat T cells and stops ORAI1 and STIM1 clustering, and the paralogue **CRACR2B** fills the same
+slot in HEK293 cells — the isoform-swap pattern again (ORAI1/2/3, STIM1/2, IP3R1/2/3).
+
+**New arms.** **BCL2 → STIM1 / ORAI1 / ORAI2 expression down** (PMC5841437): wild-type Bcl-2
+lowers all three and reduces SOCE, the BH1 alpha5-helix mutant (144WGR146→AAA) does the opposite;
+note the paper's own next sentence writes "Bcl-2 increased ..." where the figure shows the mutant,
+so only the WT sentence is recorded. **ORAI1 → MYOZ2 and → RCAN1 up** (PMC7290784): named
+calcineurin regulators under ORAI1 in the angiotensin-II-treated heart, with `Ppp3ca` itself
+unchanged — the closest the map can get to ORAI1 → calcineurin while the isoform convention is
+open. Same paper: **ORAI1 → STIM1 and → ORAI3 expression up**, the stress-evoked induction of the
+sensor needing the channel. **STIM1 → CAPN1 activation** (PMID 18337467), substrate stiffness as
+the input and apoptosis of normal epithelium as the output. **STIM1-PRDX4 binding** (PMID
+29804005), on endogenous protein in rat rough ER; Prx-4 does not set the size of SOCE, it
+protects it from H2O2. **STIM1/ORAI1 → PRKCA** (PMC6322368, ventilator-induced lung injury, the
+isoform written out). **STIM1/ORAI1 → RHOA, flagged `beyond_calcium`** (PMC6267368): in DLBCL the
+migration arm survives EGTA, BAPTA-AM and BTP2, so the anchors act here as scaffolding effectors
+coupling CXCR4 to RhoA/ROCK — a Ca2+-independent function of a calcium anchor, which is what the
+flag is for. **CXCL12 → ORAI1 / STIM1** from the same paper, a physiological agonist upstream for
+once. **TMEM97 → ORAI1** (PMID 33618021), through the cholesterol bound to the channel.
+**STIM1/ORAI1 → IL8** (PMID 25190815, histamine, HUVEC) — independent support for the ORAI1 → IL8
+arm of batch 13 in another tissue. **TRPC1 → ADIPOQ, → VAMP2, → SNAP25** (PMC6633397): an
+exocytosis arm, insulin-stimulated, with body composition as the whole-animal readout.
+**STIM1 → NFE2L2 and → EIF2AK3 inhibition** (PMID 23076152): losing STIM1 drives NRF2 into the
+nucleus via PERK/eIF2alpha, the first link from an anchor to the antioxidant response.
+**EDN1 → TRPC1 up** and **STIM1 → TRPC1/TRPC3/TRPC4/TRPC6 up** (PMC5690472, pressure overload):
+STIM1 sets how much partner channel there is, not only when it opens. **F2RL3 (PAR4) → ORAI1**
+(PMID 29677491), the allergen protease Der p3 input, PAR4 discriminated from PAR2 by experiment.
+**STIM1-ORAI1 binding** under LPS and mitochondrial ROS in rat cardiomyocytes (PMC7674615).
+
+**Generic names still blocking records**: `MLC2` and `ROCK` (PMC6267368, the two steps between
+RHOA and actin), `syntaxin 1` (PMC6633397, the third SNARE — STX1A or STX1B is not said),
+`NF-kappaB` again (PMC4530453, where STIM1/ORAI1 overexpression *inhibits* it, the opposite sign
+to PMID 36334371), `L-type Ca2+ channels` (PMID 24720513), plus `IP3Rs`, `Rap1`, `calmodulin`,
+calcineurine, AP-1, septins, ORPs, ERK1/2, Akt/mTOR, NFAT and AMPK from earlier batches.
+
+Map: **270 nodes, 658 interactions, 982 evidence rows**. Tests: **155 Python + 36 JS**.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
