@@ -25,6 +25,44 @@ test("a browser with no modern DOM at all reports every missing feature, not jus
   assert.equal(compat.missingFeatures({}).length, 5);
 });
 
+test("every data script having run is reported as nothing missing", () => {
+  const camap = { nodes: [], interactions: [], evidence: [] };
+  assert.deepEqual(compat.missingData(camap, ["nodes", "interactions", "evidence"]), []);
+});
+
+test("a data file that never loaded is named by its path, an empty one is not", () => {
+  // the key is absent when the <script> did not run at all: file missing from the copy.
+  // an empty array means the build produced nothing, which is a different story.
+  const camap = { interactions: [] };
+  assert.deepEqual(compat.missingData(camap, ["nodes", "interactions", "evidence"]),
+    ["data/nodes.js", "data/evidence.js"]);
+});
+
+test("a page opened with no data at all names all three files", () => {
+  assert.deepEqual(compat.missingData(undefined, ["nodes", "interactions", "evidence"]),
+    ["data/nodes.js", "data/interactions.js", "data/evidence.js"]);
+});
+
+test("a key whose file is not named after it is reported under the real file name", () => {
+  assert.deepEqual(compat.missingData({}, [["kept", "data/graph_data.js"]]), ["data/graph_data.js"]);
+});
+
+test("the notice's data-requires attribute names the keys, and the odd file path", () => {
+  assert.deepEqual(compat.requiredKeys("nodes,interactions,evidence"),
+    ["nodes", "interactions", "evidence"]);
+  assert.deepEqual(compat.requiredKeys("nodes, kept:data/graph_data.js"),
+    ["nodes", ["kept", "data/graph_data.js"]]);
+  assert.deepEqual(compat.requiredKeys(""), []);
+  assert.deepEqual(compat.requiredKeys(null), []);
+});
+
+test("the data message tells the curator to copy the whole folder", () => {
+  const msg = compat.dataMessage(["data/nodes.js"]);
+  assert.match(msg, /data\/nodes\.js/);
+  assert.match(msg, /whole project folder/i);
+  assert.match(msg, /ZIP/);
+});
+
 test("the message names the browsers the curator can use, and what is missing", () => {
   const msg = compat.message(["Object.fromEntries", "PointerEvent"]);
   assert.match(msg, /Edge/);

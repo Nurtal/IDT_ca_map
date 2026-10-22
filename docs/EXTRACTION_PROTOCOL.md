@@ -19,6 +19,18 @@ python3 pipeline/cli.py build         # data/raw -> data/{nodes,interactions,evi
 Then open `review/index.html` (double-click, no server). After review, export
 `kept_interactions.csv` into `data/`, run `python3 pipeline/cli.py graph`, open `graph/index.html`.
 
+### Carrying the app to another PC
+
+`python3 pipeline/cli.py export` writes `dist/camap-review-DATE.zip`: the two pages, `shared/`,
+`vendor/` and the built `data/*.js`, and nothing else (no raw records, no queue, no pipeline).
+Unzip it and open `camap-review-DATE/review/index.html`.
+
+Both pages load their siblings by relative path (`../data/nodes.js`, `../vendor/cytoscape.min.js`),
+so **the folder has to stay whole**: `review/` copied on its own, or an `index.html` double-clicked
+from inside a ZIP — where Windows extracts that one file to a temp directory — shows an empty page.
+When that happens the red `#assets-missing` notice written into the page says so, and names the
+files it could not load as soon as `shared/compat.js` is among those that did load.
+
 ### Browsers
 
 Edge, Chrome, Firefox and Safari all run the review app from `file://` — nothing is fetched, so no

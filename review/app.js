@@ -9,6 +9,10 @@
   const { refHref, calciumLabel, stringLabel } = CamapCore;
   const { el, link, load, store, storageWorks, download } = CamapUI;
 
+  // A data file that did not load leaves its key unset: the page is a copy that lost the
+  // folder around it, which must not read as "the build produced nothing" (see render()).
+  const absent = CamapCompat.missingData(window.CAMAP, ["nodes", "interactions", "evidence"]);
+
   const data = window.CAMAP || {};
   const interactions = data.interactions || [];
   const nodesById = Object.fromEntries((data.nodes || []).map((n) => [n.id, n]));
@@ -202,7 +206,8 @@
       stage.append(renderCard(card));
       drawNeighbourhood(card);
     } else {
-      const msg = !interactions.length ? "No interactions loaded. Run the pipeline build first."
+      const msg = absent.length ? "The data files next to this page did not load — see the banner above."
+        : !interactions.length ? "No interactions loaded. Run the pipeline build first."
         : session.mode() === "uncertain" ? "No uncertain interactions." : "All interactions reviewed 🎉";
       stage.append(el("div", { class: "empty" }, msg));
     }

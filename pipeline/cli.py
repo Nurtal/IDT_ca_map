@@ -11,9 +11,11 @@
     python3 pipeline/cli.py graph [CSV]    # kept_interactions.csv -> data/graph_data.js for graph/index.html
     python3 pipeline/cli.py supp           # data_supp/*.xlsx -> data/raw/supp_*.jsonl + data/supp_catalogue.json
     python3 pipeline/cli.py build          # data/raw/*.jsonl -> data/{nodes,interactions,evidence}.{csv,js}
+    python3 pipeline/cli.py export         # dist/camap-review-DATE.zip: the review app for another PC
 """
 import argparse
 import csv
+import datetime
 import json
 import sys
 from pathlib import Path
@@ -22,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 
 from camap.build import build_dataset, read_raw  # noqa: E402
+from camap.bundle import write_bundle  # noqa: E402
 from camap.corpus import add_articles, build_queue, next_pending, set_statuses  # noqa: E402
 from camap.pubmed import publication_types  # noqa: E402
 from camap.candidates import candidate_sentences, strong_only  # noqa: E402
@@ -91,6 +94,8 @@ def main(argv=None):
                    help="only anchor-pair sentences, or anchor + seed/calcium with an interaction verb")
     g = sub.add_parser("graph", help="kept_interactions.csv -> data/graph_data.js")
     g.add_argument("csv", nargs="?", default=ROOT / "data" / "kept_interactions.csv", type=Path)
+    e = sub.add_parser("export", help="zip the review app and its data for a PC without the pipeline")
+    e.add_argument("--out", type=Path, default=None, help="destination zip (default dist/camap-review-DATE.zip)")
     args = p.parse_args(argv)
 
     if args.cmd == "build":
@@ -155,6 +160,12 @@ def main(argv=None):
     elif args.cmd == "graph":
         n = build_graph(args.csv, ROOT / "data" / "graph_data.js")
         print(f"{n} kept interactions -> data/graph_data.js")
+    elif args.cmd == "export":
+        folder = "camap-review-" + datetime.date.today().isoformat()
+        dest = args.out or ROOT / "dist" / (folder + ".zip")
+        paths = write_bundle(ROOT, dest, folder=folder)
+        print(f"{len(paths)} files -> {dest}")
+        print(f"Unzip it and open {folder}/review/index.html — the whole folder has to stay together.")
     elif args.cmd == "corpus":
         report = build_queue(load_config(), PubTator(CACHE), STATE, pubtypes=publication_types)
         for text, count in report["per_query"].items():
