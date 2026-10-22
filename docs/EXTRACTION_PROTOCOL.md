@@ -19,6 +19,21 @@ python3 pipeline/cli.py build         # data/raw -> data/{nodes,interactions,evi
 Then open `review/index.html` (double-click, no server). After review, export
 `kept_interactions.csv` into `data/`, run `python3 pipeline/cli.py graph`, open `graph/index.html`.
 
+### Browsers
+
+Edge, Chrome, Firefox and Safari all run the review app from `file://` — nothing is fetched, so no
+server and no `--allow-file-access-from-files` are needed. Floor: Edge/Chrome 86, Firefox 78,
+Safari 14; below it `shared/compat.js` replaces the broken page with a red banner naming what is
+missing. Edge/Chrome 111 and later also colour the source badges by provenance; older versions fall
+back to flat colours (`--badge-*` in `shared/theme.css`).
+
+Two things are Edge/Chrome only and degrade on their own: *Auto-save to a file…* (File System
+Access API — the button hides itself where the API is absent and reports a refusal where the
+browser denies it) and swipe-to-decide on a touchscreen. Everywhere else, **Export reviews.json**
+is the durable path. Decisions live in `localStorage`, which an InPrivate window or a blocked-site-
+data policy can refuse: the app then shows a banner, and nothing is kept across a reload.
+Edge's IE mode is not supported.
+
 ## One extraction batch (~50 articles)
 
 1. `git pull`, read `pipeline/state/PROGRESS.md` (status block + session notes).

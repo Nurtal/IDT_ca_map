@@ -74,9 +74,9 @@ blockquote.unverified { border-left-color: var(--uncertain); }
 .warn { color: var(--uncertain); font-size: .8rem; margin-top: 4px; }
 blockquote .muted { font-size: .8rem; margin-top: 4px; }
 .badge { font-size: .7rem; text-transform: uppercase; padding: 2px 8px; border-radius: 99px; background: var(--border); }
-.badge.pubmed, .badge.pmc { background: color-mix(in srgb, var(--accent) 30%, transparent); }
-.badge.signor, .badge.omnipath, .badge.biogrid, .badge.intact { background: color-mix(in srgb, #8957e5 35%, transparent); }
-.badge.curated { background: color-mix(in srgb, #d29922 40%, transparent); }
+.badge.pubmed, .badge.pmc { background: var(--badge-pub); background: color-mix(in srgb, var(--accent) 30%, transparent); }
+.badge.signor, .badge.omnipath, .badge.biogrid, .badge.intact { background: var(--badge-db); background: color-mix(in srgb, #8957e5 35%, transparent); }
+.badge.curated { background: var(--badge-curated); background: color-mix(in srgb, #d29922 40%, transparent); }
 .curator-note { border-left: 3px solid #d29922; padding: 4px 0 4px 10px; margin: 6px 0; }
 .note-label { font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
 .curated-block { margin: 8px 0; }

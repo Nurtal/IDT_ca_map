@@ -16,6 +16,11 @@
   --m-effectors: #d29922;
   --m-bridge: #f0f6fc;
   --m-metabolite: #3fb950;
+  /* flat equivalents of the color-mix() badge backgrounds, for a browser below Edge 111:
+     an unsupported color-mix() declaration is dropped, so the flat one before it still paints */
+  --badge-pub: #2a4564;
+  --badge-db: #3e3166;
+  --badge-curated: #614d22;
   --shadow: 0 10px 40px rgba(0, 0, 0, .35);
   --radius: 14px;
   color-scheme: dark;
@@ -39,6 +44,9 @@
   --m-effectors: #9a6700;
   --m-bridge: #1f2328;
   --m-metabolite: #1a7f37;
+  --badge-pub: #b5d2f4;
+  --badge-db: #d6c4f6;
+  --badge-curated: #edd6a6;
   --shadow: 0 10px 30px rgba(31, 35, 40, .12);
   color-scheme: light;
 }

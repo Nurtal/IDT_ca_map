@@ -36,6 +36,18 @@ window.CamapUI = (function () {
     }
   }
 
+  // Blocked site data is survivable for a filter or a theme, but it means the decisions only
+  // live in this tab: worth saying out loud rather than discovering it on a reload.
+  function storageWorks() {
+    try {
+      localStorage.setItem("camap.probe", "1");
+      localStorage.removeItem("camap.probe");
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   function download(name, data, type) {
     const blob = data instanceof Blob ? data : new Blob([data], { type });
     const a = el("a", { href: URL.createObjectURL(blob), download: name });
@@ -55,5 +67,5 @@ window.CamapUI = (function () {
     return t;
   }
 
-  return { el, link, load, store, download, applyTheme, toggleTheme };
+  return { el, link, load, store, storageWorks, download, applyTheme, toggleTheme };
 })();

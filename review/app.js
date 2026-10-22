@@ -7,7 +7,7 @@
   };
   const { modules: MODULES, species: SPECIES } = CamapCore.LABELS;
   const { refHref, calciumLabel, stringLabel } = CamapCore;
-  const { el, link, load, store, download } = CamapUI;
+  const { el, link, load, store, storageWorks, download } = CamapUI;
 
   const data = window.CAMAP || {};
   const interactions = data.interactions || [];
@@ -328,9 +328,24 @@
         });
         persist();
       } catch (e) {
-        /* picker cancelled */
+        // Cancelling the picker is an AbortError and means nothing. Anything else is the
+        // browser refusing the File System Access API — which is what Edge and Chrome do
+        // when the page was opened from a network share or a sandboxed profile — and the
+        // curator must hear it, or the button looks broken and the reviews look saved.
+        if (e.name !== "AbortError") {
+          $("file-status").textContent = "This browser will not auto-save to a file (" + e.name
+            + "). Use Export reviews.json instead; your reviews are kept in the browser meanwhile.";
+        }
       }
     });
+  }
+
+  if (!storageWorks()) {
+    // the same banner the capability guard uses: a warning about losing a day of review
+    // cannot sit inside a collapsed menu
+    CamapCompat.announce(document, "This browser is not letting the page store anything "
+      + "(InPrivate window, or site data blocked for file:// pages): your decisions live in this "
+      + "tab only — export reviews.json before you close it.");
   }
 
   CamapUI.applyTheme(load(KEYS.theme, null));
