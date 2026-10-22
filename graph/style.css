@@ -28,6 +28,7 @@ input[type="search"], input[list] { font: inherit; font-size: .9rem; color: var(
 .range output { color: var(--accent); font-weight: 600; }
 .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
 .dot.ring { background: var(--muted); box-shadow: 0 0 0 2px var(--text); }
+.dot.diamond { background: var(--muted); border-radius: 2px; transform: rotate(45deg); }
 .legend { display: flex; flex-direction: column; gap: 5px; font-size: .8rem; color: var(--muted); }
 .line { display: inline-block; width: 22px; height: 0; border-top: 3px solid var(--border); margin-right: 6px; vertical-align: middle; }
 .line.act { border-color: var(--keep); }

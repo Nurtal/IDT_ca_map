@@ -137,14 +137,31 @@
     return adj;
   }
 
+  // How many distinct actors this one touches — the hub test the card's preview leans on.
+  function neighbourCount(interactions, node) {
+    return (adjacency(interactions).get(node) || new Set()).size;
+  }
+
   // Nodes within `hops` of either endpoint of the focal interaction, and the
   // interactions among them, each tagged with its review status.
-  function neighbourhood(interactions, focalId, { hops = 2, reviews = {}, maxNodes = 60 } = {}) {
+  //
+  // expandFrom "sparser" (the default) walks out from one endpoint only when the other is a
+  // hub — STIM1 has 274 partners, and expanding it buried the interaction under its own
+  // interactome. The card's preview is there to situate *this* edge, so the hub stays as a
+  // single node and the context comes from the side that has one. "both" restores the old walk.
+  function neighbourhood(interactions, focalId,
+                         { hops = 2, reviews = {}, maxNodes = 30, expandFrom = "sparser", hubFactor = 2 } = {}) {
     const focal = interactions.find((i) => i.interaction_id === focalId);
-    if (!focal) return { nodes: [], edges: [], truncated: false };
+    if (!focal) return { nodes: [], edges: [], truncated: false, expandedFrom: null };
     const adj = adjacency(interactions);
+    const degree = (n) => (adj.get(n) || new Set()).size;
+    let expandedFrom = null;
+    if (expandFrom === "sparser" && focal.source !== focal.target) {
+      const [lean, hub] = [focal.source, focal.target].sort((a, b) => degree(a) - degree(b));
+      if (degree(hub) >= hubFactor * degree(lean)) expandedFrom = lean;
+    }
     const distance = new Map([[focal.source, 0], [focal.target, 0]]);
-    let frontier = [focal.source, focal.target];
+    let frontier = expandedFrom ? [expandedFrom] : [focal.source, focal.target];
     for (let d = 1; d <= hops; d++) {
       const next = [];
       for (const n of frontier) {
@@ -165,7 +182,7 @@
         focal: i.interaction_id === focalId,
         status: (reviews[i.interaction_id] || {}).decision || "pending",
       }));
-    return { nodes: ordered.map(([id, d]) => ({ id, distance: d })), edges, truncated };
+    return { nodes: ordered.map(([id, d]) => ({ id, distance: d })), edges, truncated, expandedFrom };
   }
 
   // Fewest-hops path between two actors (direction ignored). Returns {nodes, edges} or null.
@@ -199,8 +216,13 @@
 
   // ---------- filters ----------
 
-  // filters: {excludeMouseOnly, types: [...], minSources, modules: [...]};
+  const EXPRESSION_TYPES = new Set(["expression_regulation_up", "expression_regulation_down"]);
+
+  // filters: {excludeMouseOnly, types: [...], minSources, modules: [...], side, expressionOnly};
   // an absent (null/undefined) list means "all", an empty list means "none".
+  // `side` is the deck: "sting" or "ca" (STIM1 and everything calcium). A card is in a deck as
+  // soon as one of its two actors stands on that side, so the bridges — the edges the map exists
+  // to find — are dealt into both decks rather than lost between them.
   function applyFilters(interactions, filters = {}, moduleOf = () => "") {
     const types = Array.isArray(filters.types) ? new Set(filters.types) : null;
     const modules = Array.isArray(filters.modules) ? new Set(filters.modules) : null;
@@ -217,14 +239,21 @@
         && i.has_animal_evidence === "true") &&
       (!types || types.has(i.type)) &&
       Number(i.n_sources || 0) >= minSources &&
+      (!filters.side || [i.source, i.target].some((n) => axisSide(moduleOf(n)) === filters.side)) &&
+      // the transcriptional layer: the edges that *are* a change in expression. Asking instead
+      // for "an actor that modulates expression somewhere" keeps 718 of 921 cards, because
+      // ORAI1 and STIM1 are each upstream of dozens of genes — true, and no help in a stack.
+      (!filters.expressionOnly || EXPRESSION_TYPES.has(i.type)) &&
       (!modules || (modules.has(moduleOf(i.source)) && modules.has(moduleOf(i.target)))));
   }
 
   // ---------- review session ----------
 
-  function createSession({ interactions, reviews = {}, reviewer = "", filters = {}, now = () => new Date().toISOString() }) {
+  function createSession({ interactions, reviews = {}, reviewer = "", filters = {},
+                          moduleOf = () => "", now = () => new Date().toISOString() }) {
     const state = { reviews: { ...reviews }, filters: { ...filters }, mode: "pending", history: [], pinned: null };
-    const visible = () => applyFilters(interactions, state.filters);
+    // the deck filter is the only one that needs to know anything about the actors
+    const visible = () => applyFilters(interactions, state.filters, moduleOf);
     const hasNewEvidence = (i) => {
       const r = state.reviews[i.interaction_id];
       return !!(r && r.evidence_fingerprint && i.evidence_fingerprint && r.evidence_fingerprint !== i.evidence_fingerprint);
@@ -324,5 +353,5 @@
     return toCsv(keptRows(interactions, reviews), INTERACTION_COLUMNS.concat(REVIEW_COLUMNS));
   }
 
-  return { LABELS, calciumLabel, stringLabel, verificationNote, axisSide, crossesAxis, refHref, parseCsv, toCsv, neighbourhood, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
+  return { LABELS, calciumLabel, stringLabel, verificationNote, axisSide, crossesAxis, refHref, parseCsv, toCsv, neighbourhood, neighbourCount, shortestPath, applyFilters, createSession, keptRows, keptCsv, INTERACTION_COLUMNS, REVIEW_COLUMNS };
 });

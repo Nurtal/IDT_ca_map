@@ -19,6 +19,25 @@ python3 pipeline/cli.py build         # data/raw -> data/{nodes,interactions,evi
 Then open `review/index.html` (double-click, no server). After review, export
 `kept_interactions.csv` into `data/`, run `python3 pipeline/cli.py graph`, open `graph/index.html`.
 
+### Reviewing by deck, and the transcriptional layer
+
+The review app's top bar deals the stack into **decks**: *STIM1 / calcium* (798 cards) or *STING*
+(226). A card is in a deck as soon as **one** of its two actors stands on that side, so the 103
+bridges are dealt into both — they are what the map exists to find and must not fall between the
+decks. *Expression regulation only* (134 cards) keeps the edges that turn an actor's expression up
+or down; both filters are on the graph page too, and both are remembered between sessions.
+
+A node that regulates another's expression is marked **⇅ expression modulator** on the card and
+drawn as a **◆ diamond** in both graphs (`expression_modulator` / `expression_targets` in
+`nodes.csv`, counted by the build from the map's own `expression_regulation_*` edges — never from
+an ontology, so the mark is as answerable as the edge under it). 35 actors carry it today, from
+NFATC1, IRF3, RELA and HEY1 to ORAI1 and STIM1, each upstream of dozens of genes.
+
+The card's **local neighbourhood** expands one endpoint only when the other is a hub (twice as
+many partners or more): STIM1 has 274, and expanding it buried the card's own edge under its
+interactome. The hub stays a single node and the note says so — *"STIM1 folded back (274
+partners)"*. `expandFrom: "both"` in `CamapCore.neighbourhood` restores the old walk.
+
 ### Carrying the app to another PC
 
 `python3 pipeline/cli.py export` writes `dist/camap-review-DATE.zip`: the two pages, `shared/`,

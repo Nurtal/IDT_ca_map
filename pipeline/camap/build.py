@@ -105,7 +105,9 @@ def build_dataset(raw_dir, out_dir, cache_dir=None, config_path=DEFAULT_CONFIG,
         inter["string_score"] = "" if score is None else f"{float(score):g}"
     link_conflicts(interactions.values())
 
-    nodes = [node_row(n, resolver, universe, annotations, neighbours, catalogue, calcium)
+    modulated = expression_targets(interactions.values())
+    nodes = [node_row(n, resolver, universe, annotations, neighbours, catalogue, calcium,
+                      modulated.get(n, frozenset()))
              for n in sorted({x for i in interactions.values() for x in (i["source"], i["target"])})]
 
     tables = {
@@ -222,7 +224,26 @@ def link_conflicts(interactions):
         i["conflict_with"] = other["interaction_id"] if other else ""
 
 
-def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=None, calcium=None):
+EXPRESSION_TYPES = ("expression_regulation_up", "expression_regulation_down")
+
+
+def expression_targets(interactions):
+    """Actor -> the set of actors whose expression it regulates, per the map's own edges.
+
+    A modulator of gene expression is not something an ontology decides here: it is an actor the
+    evidence shows turning another actor's expression up or down, which is exactly what an
+    expression_regulation_* edge records. Reading it off the edges keeps the mark as answerable
+    as every other claim in the map — the edge is there, with its sentence, or the mark is not.
+    """
+    out = {}
+    for i in interactions:
+        if i["type"] in EXPRESSION_TYPES:
+            out.setdefault(i["source"], set()).add(i["target"])
+    return out
+
+
+def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=None, calcium=None,
+             modulates=frozenset()):
     ann = annotations.get(node_id)
     # false only for what `beyond_calcium` let in: the biological end of an arm, kept on purpose
     is_calcium = "true" if (calcium or {}).get(node_id, True) else "false"
@@ -233,6 +254,8 @@ def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=Non
         return {"id": node_id, "symbol": m["symbol"], "name": m["name"], "type": "metabolite",
                 "module": "metabolite", "is_seed": "true", "calcium_related": is_calcium,
                 "synonyms": "; ".join(m.get("synonyms", [])),
+                "expression_modulator": "true" if modulates else "false",
+                "expression_targets": str(len(modulates)),
                 "function_summary": ann.get("function_summary", ""), **curated}
     gene = resolver.gene(node_id)
     return {
@@ -242,6 +265,8 @@ def node_row(node_id, resolver, universe, annotations, neighbours, catalogue=Non
         "calcium_related": is_calcium,
         "uniprot": ";".join(gene.get("uniprot_ids") or []),
         "synonyms": "; ".join((gene.get("prev_symbol") or []) + (gene.get("alias_symbol") or [])),
+        "expression_modulator": "true" if modulates else "false",
+        "expression_targets": str(len(modulates)),
         "function_summary": ann.get("function_summary", ""),
         **curated,
     }

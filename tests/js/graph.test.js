@@ -9,19 +9,20 @@ const CHAIN = [E("AB", "A", "B"), E("BC", "B", "C"), E("CD", "C", "D"), E("DE", 
 const ids = (xs) => xs.map((x) => x.id).sort();
 
 test("1-hop neighbourhood of an interaction includes partners of either endpoint", () => {
+  // B has 3 partners and C has 2: neither is a hub beside the other, so both expand
   const n = core.neighbourhood(CHAIN, "BC", { hops: 1 });
   assert.deepEqual(ids(n.nodes), ["A", "B", "C", "D", "X"]);
   assert.deepEqual(ids(n.edges), ["AB", "BC", "BX", "CD"]);
 });
 
 test("2-hop neighbourhood reaches one node further", () => {
-  const n = core.neighbourhood(CHAIN, "AB", { hops: 2 });
+  const n = core.neighbourhood(CHAIN, "AB", { hops: 2, expandFrom: "both" });
   assert.deepEqual(ids(n.nodes), ["A", "B", "C", "D", "X"]);
   assert.deepEqual(ids(n.edges), ["AB", "BC", "BX", "CD"]);
 });
 
 test("nodes carry their distance and the focal edge is flagged", () => {
-  const n = core.neighbourhood(CHAIN, "AB", { hops: 2 });
+  const n = core.neighbourhood(CHAIN, "AB", { hops: 2, expandFrom: "both" });
   const dist = Object.fromEntries(n.nodes.map((x) => [x.id, x.distance]));
   assert.deepEqual(dist, { A: 0, B: 0, C: 1, X: 1, D: 2 });
   assert.equal(n.edges.find((e) => e.id === "AB").focal, true);
@@ -30,9 +31,15 @@ test("nodes carry their distance and the focal edge is flagged", () => {
 
 test("edges carry review status", () => {
   const reviews = { BC: { decision: "keep" }, BX: { decision: "reject" }, CD: { decision: "uncertain" } };
-  const n = core.neighbourhood(CHAIN, "AB", { hops: 2, reviews });
+  const n = core.neighbourhood(CHAIN, "AB", { hops: 2, reviews, expandFrom: "both" });
   const status = Object.fromEntries(n.edges.map((e) => [e.id, e.status]));
   assert.deepEqual(status, { AB: "pending", BC: "keep", BX: "reject", CD: "uncertain" });
+});
+
+test("by default A-B in the chain shows A's side only, B being three times as connected", () => {
+  const n = core.neighbourhood(CHAIN, "AB", { hops: 2 });
+  assert.deepEqual(ids(n.nodes), ["A", "B"]);
+  assert.equal(n.expandedFrom, "A");
 });
 
 test("an isolated interaction has only its two endpoints", () => {
@@ -45,7 +52,7 @@ test("large neighbourhoods are capped, keeping the closest nodes", () => {
   const star = [E("AB", "A", "B")];
   for (let k = 0; k < 30; k++) star.push(E("A" + k, "A", "n" + k));
   star.push(E("far", "n0", "far0"));
-  const n = core.neighbourhood(star, "AB", { hops: 2, maxNodes: 10 });
+  const n = core.neighbourhood(star, "AB", { hops: 2, maxNodes: 10, expandFrom: "both" });
   assert.equal(n.nodes.length, 10);
   assert.ok(n.truncated);
   assert.ok(n.nodes.every((x) => x.distance <= 1));
@@ -88,4 +95,56 @@ test("reference links cover literature and every database", () => {
   assert.equal(core.refHref("BIOGRID:12"), "https://thebiogrid.org/interaction/12");
   assert.match(core.refHref("OmniPath:STIM1>TRPC1"), /omnipathdb\.org\/interactions\?partners=STIM1,TRPC1/);
   assert.equal(core.refHref("something"), null);
+});
+
+test("a deck keeps every card with a foot on that side, so a bridge is in both", () => {
+  const items = [
+    E("soce", "STIM1", "ORAI1"), E("sting", "STING1", "TBK1"),
+    E("bridge", "STIM1", "STING1"), E("loose", "P", "Q"),
+  ];
+  const modules = { STIM1: "soce", ORAI1: "soce", STING1: "sting", TBK1: "sting", P: "", Q: "" };
+  const ids = (f) => core.applyFilters(items, f, (id) => modules[id]).map((i) => i.interaction_id);
+  assert.deepEqual(ids({ side: "ca" }), ["soce", "bridge"]);
+  assert.deepEqual(ids({ side: "sting" }), ["sting", "bridge"]);
+  assert.deepEqual(ids({}), ["soce", "sting", "bridge", "loose"], "no deck chosen shows everything");
+});
+
+test("the expression filter keeps the transcriptional layer, both directions of it", () => {
+  const items = [
+    E("up", "STING1", "STIM1", "expression_regulation_up"),
+    E("down", "GSK3B", "ORAI1", "expression_regulation_down"),
+    E("bind", "STIM1", "ORAI1", "physical_binding"),
+  ];
+  const ids = (f) => core.applyFilters(items, f).map((i) => i.interaction_id);
+  assert.deepEqual(ids({ expressionOnly: true }), ["up", "down"]);
+  assert.deepEqual(ids({ expressionOnly: false }), ["up", "down", "bind"]);
+  assert.deepEqual(ids({}), ["up", "down", "bind"]);
+});
+
+// A card's preview exists to situate the interaction, and a hub ruins it: STIM1 alone has 274
+// partners, so expanding both endpoints drew a hairball the curator could not read.
+test("the preview expands the sparser endpoint only, leaving the hub a single node", () => {
+  // HUB touches H1..H4; SMALL touches S1; the focal edge joins them
+  const edges = [E("focal", "HUB", "SMALL"), E("s1", "SMALL", "S1")];
+  for (const n of ["H1", "H2", "H3", "H4"]) edges.push(E("h-" + n, "HUB", n));
+  const n = core.neighbourhood(edges, "focal", { hops: 1 });
+  assert.deepEqual(n.nodes.map((x) => x.id).sort(), ["HUB", "S1", "SMALL"]);
+  assert.equal(n.expandedFrom, "SMALL");
+});
+
+test("the preview still expands both endpoints when neither is a hub, or when asked", () => {
+  const edges = [E("focal", "A", "B"), E("a1", "A", "A1"), E("b1", "B", "B1")];
+  const tie = core.neighbourhood(edges, "focal", { hops: 1 });
+  assert.deepEqual(tie.nodes.map((x) => x.id).sort(), ["A", "A1", "B", "B1"]);
+  assert.equal(tie.expandedFrom, null);
+  const both = core.neighbourhood(
+    [E("focal", "HUB", "SMALL"), E("h", "HUB", "H1")], "focal", { hops: 1, expandFrom: "both" });
+  assert.deepEqual(both.nodes.map((x) => x.id).sort(), ["H1", "HUB", "SMALL"]);
+});
+
+test("an actor's partner count is distinct partners, not edges", () => {
+  const edges = [E("1", "A", "B"), E("2", "A", "B", "physical_binding"), E("3", "A", "C")];
+  assert.equal(core.neighbourCount(edges, "A"), 2);
+  assert.equal(core.neighbourCount(edges, "C"), 1);
+  assert.equal(core.neighbourCount(edges, "ZZZ"), 0);
 });

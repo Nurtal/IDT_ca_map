@@ -36,7 +36,8 @@ CURATED_NODE_FIELDS = ["genecards", "protein_type", "localization", "domains",
 # criterion, and say so (user decision of 2026-10-19). It is written by hand, record by record,
 # for the biological end of an arm — GSDMD -> F3, STING1 -> GPX4 — that the rule would cut off.
 NODE_COLUMNS = ["id", "symbol", "name", "type", "module", "is_seed", "calcium_related", "uniprot",
-                "synonyms", "function_summary"] + CURATED_NODE_FIELDS
+                "synonyms", "expression_modulator", "expression_targets",
+                "function_summary"] + CURATED_NODE_FIELDS
 INTERACTION_COLUMNS = ["interaction_id", "source", "target", "type", "directed", "mechanism",
                        "n_sources", "n_pubs", "n_db", "n_curated", "has_human_evidence", "has_animal_evidence", "calcium_evidence", "beyond_calcium", "string_score",
                        "justification", "conflict_with", "evidence_fingerprint"]

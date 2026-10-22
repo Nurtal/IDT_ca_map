@@ -42,6 +42,7 @@ button[hidden] { display: none; }
 .endpoint .symbol { font-size: 1.8rem; font-weight: 700; word-break: break-word; }
 .endpoint .name { color: var(--muted); font-size: .85rem; }
 .module { display: inline-block; margin-top: 6px; font-size: .7rem; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border); color: var(--muted); }
+.module.modulator { display: block; width: fit-content; margin: 4px auto 0; border-color: var(--accent); color: var(--accent); }
 .m-soce { border-color: var(--m-soce); color: var(--m-soce); }
 .m-sting { border-color: var(--m-sting); color: var(--m-sting); }
 .m-ca_stores { border-color: var(--m-ca_stores); color: var(--m-ca_stores); }

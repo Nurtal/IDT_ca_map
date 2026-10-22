@@ -467,3 +467,42 @@ class TestQuoteMatching(BuildCase):
         quote = ("Induction of downstream antiviral genes followed."
                  "In the above experiments we noticed the same effect.")
         self.assertEqual(self.status(quote, text), "true")
+
+
+class TestExpressionModulators(BuildCase):
+    """The transcriptional layer the map already holds, named on the node (issue #12 follow-up).
+
+    A modulator is not inferred from an ontology: it is an actor the evidence shows regulating
+    another actor's expression, so the mark is read off the map's own edges.
+    """
+
+    def nodes_by_symbol(self, tables):
+        return {n["symbol"]: n for n in tables["nodes"]}
+
+    def test_the_source_of_an_expression_edge_is_a_modulator_and_counts_its_targets(self):
+        self.write_raw([
+            rec(source="STING1", target="STIM1", type="expression_regulation_up"),
+            rec(source="STING1", target="ORAI1", type="expression_regulation_down"),
+        ])
+        nodes = self.nodes_by_symbol(self.build())
+        self.assertEqual(nodes["STING1"]["expression_modulator"], "true")
+        self.assertEqual(nodes["STING1"]["expression_targets"], "2")
+
+    def test_the_target_of_an_expression_edge_is_not_itself_a_modulator(self):
+        self.write_raw([rec(source="STING1", target="STIM1", type="expression_regulation_up")])
+        nodes = self.nodes_by_symbol(self.build())
+        self.assertEqual(nodes["STIM1"]["expression_modulator"], "false")
+        self.assertEqual(nodes["STIM1"]["expression_targets"], "0")
+
+    def test_binding_and_activation_make_nobody_a_modulator(self):
+        self.write_raw([rec(type="physical_binding"), rec(source="ORAI1", target="STIM1", type="activation")])
+        for node in self.build()["nodes"]:
+            self.assertEqual(node["expression_modulator"], "false", node["symbol"])
+
+    def test_the_same_target_regulated_twice_counts_once(self):
+        self.write_raw([
+            rec(source="STING1", target="STIM1", type="expression_regulation_up"),
+            rec(source="STING1", target="STIM1", type="expression_regulation_up",
+                ref="PMID:33649466", sentence="STING induces STIM1 expression."),
+        ])
+        self.assertEqual(self.nodes_by_symbol(self.build())["STING1"]["expression_targets"], "1")

@@ -28,6 +28,8 @@
 
   const $ = (id) => document.getElementById(id);
   const moduleOf = (id) => (nodesById[id] || {}).module || "";
+  const modulates = (id) => Number((nodesById[id] || {}).expression_targets || 0);
+  const isModulator = (id) => modulates(id) > 0;
 
   // ---------- helpers ----------
 
@@ -51,7 +53,8 @@
     return [
       ...Object.keys(degree).map((id) => ({
         data: { id, label: label(id), module: moduleOf(id) || "none", degree: degree[id],
-          size: 18 + 7 * Math.sqrt(degree[id]), seed: (nodesById[id] || {}).is_seed === "true" },
+          size: 18 + 7 * Math.sqrt(degree[id]), seed: (nodesById[id] || {}).is_seed === "true",
+          modulator: isModulator(id), targets: modulates(id) },
       })),
       ...items.map((i) => ({
         data: { id: i.interaction_id, source: i.source, target: i.target, type: i.type,
@@ -72,6 +75,8 @@
       } },
       ...Object.keys(MODULES).filter(Boolean).map((m) => ({ selector: `node[module = "${m}"]`, style: { "background-color": moduleColor(m) } })),
       { selector: "node[?seed]", style: { "border-width": 2, "border-color": v("--text"), "font-weight": "bold", "font-size": 13 } },
+      // the transcriptional layer, read off the map's own expression_regulation edges
+      { selector: "node[?modulator]", style: { shape: "diamond" } },
       { selector: "edge", style: {
         width: "data(width)", "line-color": v("--muted"), "target-arrow-color": v("--muted"),
         "curve-style": "bezier", opacity: 0.85, "arrow-scale": 0.9,
@@ -302,6 +307,8 @@
     $("f-min").value = String(filters.minSources || 1);
     $("f-min-out").textContent = $("f-min").value;
     $("f-mouse").checked = !!filters.excludeMouseOnly;
+    $("f-side").value = filters.side || "";
+    $("f-modulator").checked = !!filters.expressionOnly;
   }
 
   function buildLegend() {
@@ -309,6 +316,7 @@
     $("legend").replaceChildren(
       ...Object.keys(MODULES).filter(Boolean).map((m) => el("div", { class: "lg" }, el("i", { class: "dot", style: `background:var(--m-${m})` }), MODULES[m])),
       el("div", { class: "lg" }, el("i", { class: "dot ring" }), "seed actor (size = degree)"),
+      el("div", { class: "lg" }, el("i", { class: "dot diamond" }), "modulates another actor's expression"),
       el("div", { class: "lg" }, el("i", { class: "line bridge" }), "crosses the axis (STIM1 ↔ STING)"),
       edge("act", "activation / up-regulation →"),
       edge("inh", "inhibition / down-regulation ⊣"),
@@ -337,6 +345,8 @@
   // ---------- wiring ----------
 
   $("f-mouse").addEventListener("change", (e) => setFilters({ excludeMouseOnly: e.target.checked }));
+  $("f-side").addEventListener("change", (e) => setFilters({ side: e.target.value || null }));
+  $("f-modulator").addEventListener("change", (e) => setFilters({ expressionOnly: e.target.checked }));
   $("f-min").addEventListener("input", (e) => { $("f-min-out").textContent = e.target.value; });
   $("f-min").addEventListener("change", (e) => setFilters({ minSources: Number(e.target.value) }));
   $("search").addEventListener("change", () => {

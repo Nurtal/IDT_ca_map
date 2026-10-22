@@ -19,9 +19,13 @@
   const evidenceByInteraction = groupBy(data.evidence || [], "interaction_id");
   const $ = (id) => document.getElementById(id);
 
+  const moduleOf = (id) => (nodesById[id] || {}).module || "";
+  const modulates = (id) => Number((nodesById[id] || {}).expression_targets || 0);
+  const isModulator = (id) => modulates(id) > 0;
+
   const session = CamapCore.createSession({
     interactions, reviews: load(KEYS.reviews, {}), filters: load(KEYS.filters, {}),
-    reviewer: load(KEYS.reviewer, ""),
+    reviewer: load(KEYS.reviewer, ""), moduleOf,
   });
   let fileHandle = null;
   let hops = load(KEYS.hops, 1);
@@ -66,10 +70,13 @@
 
   function endpoint(id) {
     const n = nodesById[id] || {};
+    const targets = modulates(id);
     return el("div", { class: "endpoint" },
       el("div", { class: "symbol" }, n.symbol || id),
       n.name ? el("div", { class: "name" }, n.name) : null,
-      n.module ? el("span", { class: "module m-" + n.module }, MODULES[n.module] || n.module) : null);
+      n.module ? el("span", { class: "module m-" + n.module }, MODULES[n.module] || n.module) : null,
+      targets ? el("span", { class: "module modulator", title: "Regulates the expression of "
+        + targets + " actor(s) in this map" }, "⇅ expression modulator") : null);
   }
 
   function sentence(ev) {
@@ -125,7 +132,7 @@
         i.has_human_evidence === "false" && i.has_animal_evidence === "false"
           ? el("span", { class: "tag" }, "Species not recorded") : null,
         stringLabel(i.string_score) ? el("span", { class: "tag" }, stringLabel(i.string_score)) : null,
-        CamapCore.crossesAxis(i, (n) => (nodesById[n] || {}).module || "")
+        CamapCore.crossesAxis(i, moduleOf)
           ? el("span", { class: "tag bridge-tag" }, "Crosses the axis: STIM1 ↔ STING") : null),
       el("section", { class: "why" }, el("h3", {}, "Why it matters"), el("p", {}, i.justification || "—")),
       neighbourhoodSection(),
@@ -155,6 +162,7 @@
         el("span", {}, el("i", { style: "background:var(--reject)" }), "rejected"),
         el("span", {}, el("i", { style: "background:var(--uncertain)" }), "unsure"),
         el("span", {}, el("i", { style: "background:var(--muted)" }), "pending"),
+        el("span", {}, "◆ expression modulator"),
         el("span", { id: "nb-note" })));
   }
 
@@ -166,13 +174,20 @@
     const css = getComputedStyle(document.documentElement);
     const v = (name) => css.getPropertyValue(name).trim();
     const statusColor = { pending: v("--muted"), keep: v("--keep"), reject: v("--reject"), uncertain: v("--uncertain") };
-    $("nb-note").textContent = nb.truncated ? `· showing the ${nb.nodes.length} closest actors` : "";
+    const folded = nb.expandedFrom && [card.source, card.target].find((n) => n !== nb.expandedFrom);
+    $("nb-note").textContent = [
+      // a hub is left folded on purpose: STIM1's 274 partners are not this card's context
+      folded ? `· ${nodesById[folded] ? (nodesById[folded].symbol || folded) : folded} folded back `
+        + `(${CamapCore.neighbourCount(interactions, folded)} partners)` : "",
+      nb.truncated ? `· showing the ${nb.nodes.length} closest actors` : "",
+    ].filter(Boolean).join(" ");
     miniGraph = cytoscape({
       container: box,
       elements: [
         ...nb.nodes.map((n) => {
           const node = nodesById[n.id] || {};
-          return { data: { id: n.id, label: node.symbol || n.id, distance: n.distance, color: v("--m-" + node.module) || v("--muted") } };
+          return { data: { id: n.id, label: node.symbol || n.id, distance: n.distance,
+            modulator: isModulator(n.id), color: v("--m-" + node.module) || v("--muted") } };
         }),
         ...nb.edges.map((e) => ({ data: { ...e, color: e.focal ? v("--accent") : statusColor[e.status] } })),
       ],
@@ -183,6 +198,8 @@
         { selector: "node", style: { label: "data(label)", "background-color": "data(color)", color: v("--text"),
           "font-size": 11, "text-valign": "bottom", "text-margin-y": 4, width: 16, height: 16 } },
         { selector: "node[distance = 0]", style: { width: 26, height: 26, "font-weight": "bold", "font-size": 13 } },
+        { selector: "node[?modulator]", style: { shape: "diamond", width: 20, height: 20 } },
+        { selector: "node[?modulator][distance = 0]", style: { width: 30, height: 30 } },
         { selector: "edge", style: { width: 2, "line-color": "data(color)", "target-arrow-color": "data(color)",
           "curve-style": "bezier", opacity: 0.8 } },
         { selector: 'edge[directed = "true"]', style: { "target-arrow-shape": "triangle" } },
@@ -281,21 +298,29 @@
 
   const filterMouse = $("filter-mouse");
   const filterKind = $("filter-kind");
+  const filterSide = $("filter-side");
+  const filterModulator = $("filter-modulator");
   const saved = load(KEYS.filters, {});
   filterMouse.checked = !!saved.excludeMouseOnly;
   filterKind.value = (saved.sourceKinds || []).length === 1 ? saved.sourceKinds[0] : "";
+  filterSide.value = saved.side || "";
+  filterModulator.checked = !!saved.expressionOnly;
   const applyFilters = () => {
     const filters = {
       excludeMouseOnly: filterMouse.checked,
       // one kind at a time here: the stack is reviewed source by source
       sourceKinds: filterKind.value ? [filterKind.value] : null,
+      // the deck: one side of the axis, bridges dealt into both (CamapCore.applyFilters)
+      side: filterSide.value || null,
+      expressionOnly: filterModulator.checked,
     };
     session.setFilters(filters);
     store(KEYS.filters, filters);
     render();
   };
-  filterMouse.addEventListener("change", applyFilters);
-  filterKind.addEventListener("change", applyFilters);
+  for (const input of [filterMouse, filterKind, filterSide, filterModulator]) {
+    input.addEventListener("change", applyFilters);
+  }
 
   const reviewer = $("reviewer");
   reviewer.value = load(KEYS.reviewer, "");

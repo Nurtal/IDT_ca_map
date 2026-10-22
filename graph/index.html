@@ -51,7 +51,15 @@
 
       <section>
         <h2>Filters</h2>
+        <label class="range">Deck
+          <select id="f-side">
+            <option value="">both decks</option>
+            <option value="ca">STIM1 / calcium</option>
+            <option value="sting">STING</option>
+          </select></label>
         <label class="check"><input type="checkbox" id="f-mouse"> Exclude mouse-only evidence</label>
+        <label class="check" title="Only the edges that turn an actor's expression up or down">
+          <input type="checkbox" id="f-modulator"> Expression regulation only</label>
         <label class="range">Min. sources <output id="f-min-out">1</output>
           <input type="range" id="f-min" min="1" max="10" value="1"></label>
         <h3>Evidence</h3>
