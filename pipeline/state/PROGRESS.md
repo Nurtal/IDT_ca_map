@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 814 done, 12570 pending, 134 skipped, 2 error.
+13520 articles in queue: 859 done, 12520 pending, 139 skipped, 2 error.
 
-- tier 0: 797/3801 processed
+- tier 0: 847/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1091,5 +1091,56 @@ caveat), plus `calmodulin`, `IP3R`, `MLC2`, `ROCK`, `syntaxin 1`, `KCa`, `Rap1`,
 AP-1, septins and AMPK from earlier batches.
 
 Map: **338 nodes, 921 interactions, 1314 evidence rows**. Tests: **157 Python + 36 JS**.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-09 — Extraction batch 18 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`. **53 records** in `data/raw/lit_20261109_b22.jsonl`, all 53
+quotes verified `true`, zero flagged. 45 articles `done` (23 with records, 22 read but only
+reporting abundances of SOCE components in a disease, or a drug's effect), 5 `skipped`: a methods
+chapter (PMID 30203284), a commentary on Emrich et al. (PMID 37209447), an editorial (PMID
+37126913), a mathematical model (PMID 42019711) and off-topic noise on HIV (PMID 16312176).
+Map: **352 nodes, 970 interactions, 1394 evidence rows**; 14 new nodes. Tests: **165 Python + 52 JS**.
+
+**The CRAC complex gains three structural partners, each mapped to a domain.** **NAPA**
+(alpha-SNAP, PMID 34653219) binds STIM1 CC3 (W430) and the ORAI1 C-terminal hinge (V262) and
+N-terminus (L74) with higher affinity than STIM1 binds ORAI1, and the mutants co-cluster without
+conducting: entrapment and gating are separable. **CCDC47** binds STIM1 and ORAI1 through its
+coiled-coil and the pancreatic **SPCA2C (ATP2C2)** through its transmembrane domain (PMID
+40783819); ATP2C2 now binds STIM1 as well as ORAI1. PMID 39178228 shows the same separation in
+dendritic spines: AnCoA4 (blocks STIM1 binding) abolishes late structural LTP, Synta66 (pore block)
+does not — the **physical STIM1-ORAI1 interaction, not the Ca2+ entry**, carries the effect.
+
+**The extrusion side of the junction.** **STIM1 -> ATP2B1 (PMCA1)** in human myotubes (PMID
+42269522): canonical STIM1, not STIM1L, couples PMCA1 to SOCE, and PMCA1 knockdown lowers NFATc1
+translocation — STIM1 -> PMCA1 -> NFATC1, isoform-resolved.
+
+**STIM1 gates TRPC4 with ORAI1 excluded genetically** (PMID 22210847, lung endothelium): STIM1
+co-precipitates with TRPC1 and TRPC4 on store depletion, Orai1 R91W and Orai3 E81W dominant
+negatives do nothing, and STIM1 cannot form puncta in TRPC4-/- cells — the reverse arrow
+TRPC4 -> STIM1. **STIM1 -> ORAI3** for the store-independent ARC/LRC Orai1/3 channel (PMID
+24567509). **STIM2** binds **GRIN2A/GRIN2B** and drives their endocytosis after NMDAR overactivation
+(PMID 37989792, rat cortical neurons; STIM1 does not).
+
+**Upstream of abundance**: FGF2 (STIM1, ORAI1), angiotensin II, NOX2 and NF-kappaB p65 (ORAI1; the
+siRNA names p65, so RELA is the subunit tested, not a guess), NFATc1 -> STIM2 (the STIM1 feedback
+loop extended to the second sensor), transthyretin and myogenin (STIM1, ORAI1 in C2C12), PSMB5
+(the proteasome keeps STIM1/STIM2 from autophagic degradation), iPLA2beta (PLA2G6) on STIM1-ORAI1
+coupling in denervated muscle. **Downstream**: ENO1 exteriorization after LPS (STIM1, ORAI1),
+the S100A8-A9 Ca2+ sensor relaying ORAI1 entry to phagosomal ROS, and **mutant huntingtin** driving
+SOCE through TRPC1 and ORAI1 — HTT enters now that TRPC1 is an anchor.
+
+**`beyond_calcium` used for the Treg transcription factors.** Treg-specific Stim1/2 deletion
+(PMID 30862784) loses IRF4, BATF, Blimp-1 (PRDM1) and GATA3 induction; the sentence carries no
+calcium term, so the four records are flagged as the end of the arm. The double knockout cannot
+separate STIM1 from STIM2, written into the mechanism.
+
+**One record dropped and replaced.** `CYBB -> ORAI1` (abundance, NOX2 siRNA) failed the calcium
+criterion: neither NOX2's GO terms nor the sentence name calcium. The paper's next sentence (NOX2
+siRNA lowers Ang II-induced SOCE) is a second, functional claim and carries it in.
+
+**Lead not chased**: Emrich et al. (ORAI1/ORAI3 in B cells), via the commentary PMID 37209447;
+mostly ORAI1/ORAI3 isoform work, which the anchor rule would mostly drop.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
