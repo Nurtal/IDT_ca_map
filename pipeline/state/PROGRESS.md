@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 947 done, 12420 pending, 151 skipped, 2 error.
+13520 articles in queue: 989 done, 12370 pending, 159 skipped, 2 error.
 
-- tier 0: 947/3801 processed
+- tier 0: 997/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1226,5 +1226,44 @@ the abstract's conclusion sentence.
 **Negative results the schema cannot hold**: ORAI1 inactivation does not need calmodulin binding
 (PMID 26809793); STIM1/2 and ORAI1 are not needed for Ca2+ oscillations in mouse eggs (PMID
 28222911); bestrophin-1 supports SOCE *without* binding STIM1 (PMID 23207577).
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-09 — Extraction batch 21 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`. **26 records** in `data/raw/lit_20261109_b25.jsonl`, all
+verified `true`. 41 articles `done` (17 with records), 9 `skipped`: two duplicate PubMed records
+of papers already read (calpain 3, DHHC21), two pieces of corpus noise, an in-silico study, a
+commentary, a reply letter and a meeting report. Map: **382 nodes, 1061 interactions, 1535
+evidence rows**. Tests: **165 Python + 52 JS**.
+
+**STIM1 gates a third kind of channel.** PMID 36037373: STIM1/2 bind the pannexin-1 N-terminus
+and are needed (redundantly) for NMDA-induced, not hypotonic, Panx1 opening — **PANX1** joins TRPC
+and ORAI as a STIM-gated plasma-membrane channel. **ORAI1 binds KCa3.1 (KCNN4)**, ORAI2 does not,
+and mast-cell KCa3.1 currents need ORAI1 entry (PMID 26177720). **ORAI1, not STIM1, binds
+amnionless** in proximal tubule cells (PMID 29203863): albumin endocytosis needs ORAI. STIM1
+co-precipitates GluA1 and GluA2 in rat cortical neurons (PMID 27826230). STIM2-ORAI3 bind at rest
+in prostate cancer cells (PMID 37597301), a seed-seed pair that stays in the map.
+
+**Brakes and amplifiers.** Soluble alphaKlotho (KL) keeps ORAI1 off the surface by blocking PI3K-
+driven exocytosis (PMID 33386992); TRPM7 amplifies ORAI-dependent entry in enamel cells but cannot
+act without ORAI1/2 (PMID 32146159); TAM-associated CASQ1 mutants lose the ability to inhibit
+SOCE (PMID 39126637); calpain 3 (CAPN3) loss raises resting SOCE but blunts exercise-induced
+STIM1-ORAI1 coupling, recorded as `unknown_regulation` because the sign depends on the state
+(PMID 39031532).
+
+**Into innate immunity.** Stim1/2-deficient salivary glands lose **Tlr8** and **Irf7** expression
+(PMID 39479800; IRF7 flagged `beyond_calcium`); STIM1 knockdown blunts **NLRP3** inflammasome
+activation in stretched airway muscle (PMID 38771147); TWEAK-Fn14 (TNFRSF12A) raises STIM1/ORAI1
+in infected macrophages and ORAI1 entry activates CaMKK2-AMPK autophagy (PMID 36321903).
+
+**Abundance and transcription**: SET (I2PP2A) sustains STIM1/ORAI1 in asthmatic ASM; SOCE drives
+PGC-1alpha and PPARalpha (lipolysis, PMID 28132808); ORAI1 -> Blimp-1 (PRDM1) in lupus B cells;
+ORAI1 -> NFATc1 in keratinocyte migration.
+
+**Dropped by the two-hop wall**: `NFATC2 -> AQP5` (NFAT motifs in the AQP5 promoter, PMID
+26903518). NFATC2 is a level-2 seed, not an anchor, so AQP5 two steps from an anchor falls out —
+the same wall as ORAI3 -> NANOG (batch 17); the paper never knocks down ORAI1 or STIM1 by name,
+so the edge cannot honestly be moved onto an anchor.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
