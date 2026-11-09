@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 902 done, 12470 pending, 146 skipped, 2 error.
+13520 articles in queue: 947 done, 12420 pending, 151 skipped, 2 error.
 
-- tier 0: 897/3801 processed
+- tier 0: 947/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1183,5 +1183,48 @@ CCND1 in cardiac progenitors; STIM1/ORAI1 -> ABCB1 (P-gp chemoresistance); STIM1
 release in ethanol injury; **ORAI1 -> STAT6 (M2) against TRPC1 -> STAT1 (M1)** in macrophages
 (PMID 34816101). The first ORAI1 -> STAT6 quote carried no calcium term and was dropped; the
 paper's "Blockade of Ca2+ entry suppresses ... STAT6" sentence carries the edge in.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-09 — Extraction batch 20 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`. **30 records** in `data/raw/lit_20261109_b24.jsonl`, all
+verified `true`. 44 articles `done` (15 with records), 6 `skipped` (a retraction, PMID 37841926;
+two reviews/editorials; two commentaries on Carreras-Sureda et al.; none chased). Map: **373
+nodes, 1037 interactions, 1503 evidence rows**. Tests: **165 Python + 52 JS**.
+
+**A bridge arrives through the back door.** PKCbeta and PKCtheta brake platelet ORAI1-STIM1 entry
+(PMID 39424145, isoforms resolved by an inhibitor panel; phosphosites on BIN2 and STIM1 S512).
+**PRKCQ** entering the map pulled in SIGNOR's **PRKCQ -> TBK1** (Ser716 phosphorylation via
+TBKBP1/CARD10, PMID 31792381): a calcium-side kinase activating the STING-side kinase. Its
+SIGNOR excerpt is flagged ⚠️ `false`, correctly: SIGNOR paraphrases the paper ("protein kinase
+C-theta (PKCθ) through a scaffold protein, CARD10" for "PKCtheta via a scaffold protein, Card10").
+The edge is sound, the quote is not verbatim; the paper's own sentence is in the cache if a
+literature record is wanted (the paper is a TBK1 paper, not in our corpus queries).
+
+**Post-translational writers on the sensor.** **ZDHHC21** binds STIM1 in ORAI1/STIM1 puncta and
+S-acylates it; the depilated mouse (DHHC21 without its calmodulin site) loses STIM1 S-acylation
+and SOCE and phenocopies ALPS (PMID 41279060). **STIM2beta**, a splice isoform, *inhibits* ORAI1
+allosterically once STIM1 heterodimers carry it to the channel (PMID 26033257) — STIM2 -| ORAI1
+and STIM2-STIM1 binding. EB1 (MAPRE1) delaying STIM1 translocation now has its primary paper
+(PMID 29563214) under the curator's row.
+
+**Partners pulled down with the channels**: TPC2 (TPCN2) with STIM1 and ORAI1 only after store
+depletion (PMID 23077736); FKBP52 (FKBP4) with TRPC1 and ORAI1 in platelets, and the IP3R type II
+-TRPC1 coupling it supports (PMID 23228564); Homer1 with ORAI1 and TRPC1 in vascular injury (PMID
+28698564); caveolin binding the ORAI1 N-terminus and internalizing it in meiosis (PMID 21041445,
+Xenopus). Upstream: H1 receptor (HRH1), IL-1beta, IL-4 (second paper, rat airway muscle), HINT1;
+SLC10A7 as a SOCE brake (target among STIM1/ORAI1/SERCA2 unresolved, recorded against ORAI1 with
+that caveat). Downstream: ORAI1 -> PKCbeta2 -> MEK/ERK in leukaemia, CRAC entry localizing WAVE2
+at the immune synapse.
+
+**Dropped by the calcium criterion and left out**: `EIF2S1 -> STIM1` (eIF2alpha controls STIM1
+translation, PMID 29464016) — no sentence of the paper pairs it with a calcium term the pattern
+knows ("CRAC/MEK/ERK" does not match `CRAC (channel|current)`). `IL1B -> ORAI1` was rescued by
+the abstract's conclusion sentence.
+
+**Negative results the schema cannot hold**: ORAI1 inactivation does not need calmodulin binding
+(PMID 26809793); STIM1/2 and ORAI1 are not needed for Ca2+ oscillations in mouse eggs (PMID
+28222911); bestrophin-1 supports SOCE *without* binding STIM1 (PMID 23207577).
 
 **Next session:** `queue next 50 --tier 0 --primary`.
