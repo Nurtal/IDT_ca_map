@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 859 done, 12520 pending, 139 skipped, 2 error.
+13520 articles in queue: 902 done, 12470 pending, 146 skipped, 2 error.
 
-- tier 0: 847/3801 processed
+- tier 0: 897/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1142,5 +1142,46 @@ siRNA lowers Ang II-induced SOCE) is a second, functional claim and carries it i
 
 **Lead not chased**: Emrich et al. (ORAI1/ORAI3 in B cells), via the commentary PMID 37209447;
 mostly ORAI1/ORAI3 isoform work, which the anchor rule would mostly drop.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-09 — Extraction batch 19 (tier 0, `--primary`)
+
+`queue next 50 --tier 0 --primary`. **43 records** in `data/raw/lit_20261109_b23.jsonl`, all
+verified `true`. 42 articles `done` (18 with records), 8 `skipped`: two protocols/commentaries
+without data (PMID 27446917, 19423858), a review of SOCE in mitosis (PMID 22260676), an editorial
+(PMID 33841193), a corrigendum (PMID 41106785), a TAM review (PMID 30418142) and a commentary on
+Chang et al. 2018, EB1 trapping STIM1 (PMID 29764906). Map: **365 nodes, 1013 interactions, 1468
+evidence rows**; 13 new nodes. Tests: **165 Python + 52 JS**.
+
+**ORAI1 switches itself off, and the loop is now on the map.** PMID 31036819: **ADCY8** sits on the
+ORAI1 N-terminus (R31-33, absent from ORAI1beta, which barely inactivates), the Ca2+ entering
+through the pore activates it, and AKAP79 (**AKAP5**, FRET with ORAI1 but not ORAI1beta) places
+PKA to phosphorylate Ser34 and inactivate the channel; calcineurin opposes it. Recorded:
+ADCY8-ORAI1 binding, ORAI1 -> ADCY8, AKAP5-ORAI1 binding and AKAP5 -| ORAI1. The PKA step itself
+is **not** recorded — the paper writes "PKA", the same generic name already blocking the ORAI1
+Ser27/30/34 records of batch 17 (#18).
+
+**Partners at the channel and the junction.** **MS4A12** (colon-specific) forms a hetero-complex
+with ORAI1 and binds STIM1, and ORAI1 displaces it from STIM1 (PMID 33935043). **JPH4** co-clusters
+with STIM1 and ORAI1 in rat DRG neurons and is needed for SOCE and bradykinin pain (PMID
+33569781). **TRPC1 binds calmodulin and the PI3K p85 subunit** (PMID 34642309), a TRPC1 output the
+authors call Ca2+-independent. STIM1L traps and gates ORAI1 without remodelling the cortical ER
+(PMID 25736291). STIM2 E470 makes the second sensor a basal, low-gain ORAI1 activator (PMID
+30444880).
+
+**Receptors upstream, isoform-resolved where the paper resolves them.** **BDKRB2 -> ITPR3** (IP3R1
+and IP3R2 siRNA do nothing) **-> STIM1**, and bradykinin entry through **TRPC1**, not TRPC3/TRPC4
+(PMID 30117680). **C5AR1 -> ORAI1 without STIM1** in mouse neutrophils (PMID 25912155) — STIM1-
+deficient neutrophils answer C5a normally. **F2RL1 (PAR2) -> ORAI1** for house dust mite and
+cockroach allergens, then ORAI1 -> IL6/CXCL8 (PMID 27604412). Abundance: NPC1 (down, PSEN1-
+dependent), SIK3, IL4 and serum amyloid P (APCS, opposite signs), ITGB1, DMD and SNTA1 restraining
+TRPC1 entry in mdx myotubes.
+
+**Downstream**: ORAI1 -> ANO1 in human sweat gland cells (anhidrosis of CRAC patients); SOCE ->
+CCND1 in cardiac progenitors; STIM1/ORAI1 -> ABCB1 (P-gp chemoresistance); STIM1/ORAI1 -> CYCS
+release in ethanol injury; **ORAI1 -> STAT6 (M2) against TRPC1 -> STAT1 (M1)** in macrophages
+(PMID 34816101). The first ORAI1 -> STAT6 quote carried no calcium term and was dropped; the
+paper's "Blockade of Ca2+ entry suppresses ... STAT6" sentence carries the edge in.
 
 **Next session:** `queue next 50 --tier 0 --primary`.

@@ -196,6 +196,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "02f11f678c07",
+  "interaction_id": "967ca44719c8",
+  "source_kind": "pubmed",
+  "ref": "PMID:25912155",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Sogkas G",
+  "sentence": "Our data establish Orai1 as key signal mediator of C5aR activation, contributing to inflammation by a STIM1-independent pathway of Ca(2+) -influx in neutrophils.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "037124c967d6",
   "interaction_id": "6f3b4358302c",
   "source_kind": "curated",
@@ -301,6 +316,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "04300f40b0c0",
+  "interaction_id": "6093cb2270f3",
+  "source_kind": "pubmed",
+  "ref": "PMID:29306759",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Zhong JN",
+  "sentence": "As expected, SAP significantly inhibited IL-4-induced differentiation of fibrocytes, the activity of SOCE and the expression of STIM1 and Orai1 in IL-4-treated fibrocytes.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "044f8a579b04",
   "interaction_id": "168102ac3602",
   "source_kind": "curated",
@@ -399,6 +429,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2022",
   "first_author": "Chevalier et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "056a0160a0eb",
+  "interaction_id": "868fae2ea4ee",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2A>ITGB1",
+  "cited_pmid": "19115199",
+  "doi": "",
+  "year": "",
+  "first_author": "",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -521,6 +566,21 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "06882e0cc5d1",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5237770",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -901,6 +961,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 78"
  },
  {
+  "evidence_id": "0b2c826120b0",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237575",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0b7b4a0c623f",
   "interaction_id": "c0b3da54c666",
   "source_kind": "omnipath",
@@ -1096,6 +1171,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0eb8c629c61f",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237624",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0ed4ab3d197b",
   "interaction_id": "87065912b2ad",
   "source_kind": "intact",
@@ -1276,6 +1366,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "10e540bea808",
+  "interaction_id": "ca135af2adb6",
+  "source_kind": "signor",
+  "ref": "SIGNOR-176775",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We now show that stat6 is required for innate immune signaling in response to virus infection. Viruses or cytoplasmic nucleic acids trigger sting (also named mita/eris) to recruit stat6 to the endoplasmic reticulum, leading to stat6 phosphorylation on ser(407) by tbk1 and tyr(641), independent of jaks. Phosphorylated stat6 then dimerizes and translocates to the nucleus to induce specific target genes responsible for immune cell homing.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "110aaeea2478",
   "interaction_id": "a4c9db5f254a",
   "source_kind": "pubmed",
@@ -1317,6 +1422,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "11ea8b02ed7b",
+  "interaction_id": "01c4041fbbd9",
+  "source_kind": "pmc",
+  "ref": "PMC5982760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Babaer D",
+  "sentence": "Further, it is important to note that knock down of SOCE Ca2+ regulator molecules STIM1 and Orai1-enhanced paclitaxel sensitivity (Figure 3B) and reduced the expression of expression of P-gp (Figure 3C).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1705,6 +1825,21 @@ window.CAMAP.evidence = [
   "year": "2022",
   "first_author": "Sanchez-Collado J",
   "sentence": "Using APEX2 proximity labeling, co-immunoprecipitation and the fluorescence of G-GECO1.2 fused to Orai1alpha our results indicate that agonist stimulation and Ca2+ store depletion enhance Orai1alpha-TRPC1 interaction. Orai1alpha is essential for TRPC1 plasma membrane location and activation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "16842a6bebcb",
+  "interaction_id": "e11c6e2b2eda",
+  "source_kind": "pubmed",
+  "ref": "PMID:29306759",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Zhong JN",
+  "sentence": "It also increased both SOCE which was induced by thapsigargin or UTP and molecules STIM1 and Orai1 which were related to expression of SOC channels in fibrocytes.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -2326,6 +2461,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "1d58b561b98b",
+  "interaction_id": "b083c1258322",
+  "source_kind": "pmc",
+  "ref": "PMC5982760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Babaer D",
+  "sentence": "Further, it is important to note that knock down of SOCE Ca2+ regulator molecules STIM1 and Orai1-enhanced paclitaxel sensitivity (Figure 3B) and reduced the expression of expression of P-gp (Figure 3C).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1d5d3f29a8c0",
   "interaction_id": "c28a91c64733",
   "source_kind": "intact",
@@ -2476,6 +2626,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "20d2e7877673",
+  "interaction_id": "2540826b4272",
+  "source_kind": "pmc",
+  "ref": "PMC6488650",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Zhang X",
+  "sentence": "Using this crucial knowledge, we show that the Ca2+-sensitive adenylyl cyclase 8 (AC8), which is constitutively bound to an ORAI1 N-terminal site containing three arginines (31, 32, and 33), is crucial for CDI.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "20dab1afcf66",
   "interaction_id": "42a436f6cb04",
   "source_kind": "curated",
@@ -2551,6 +2716,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "21d1fc794dcd",
+  "interaction_id": "a645d7b3930d",
+  "source_kind": "pmc",
+  "ref": "PMC8112172",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Han JW",
+  "sentence": "Moreover, immunoprecipitation assay revealed that Orai1 co-expression decreased protein interactions between MS4A12 and STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "21deaa4f3209",
   "interaction_id": "19fff2995b55",
   "source_kind": "signor",
@@ -2594,6 +2774,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 polybasic C-terminus (aa667-685) binds calmodulin | Localisation: Cytosol | Protéine: Myelin Basic Protein; Golli-MBP",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 48"
+ },
+ {
+  "evidence_id": "225920befbd2",
+  "interaction_id": "37059cf5f208",
+  "source_kind": "pubmed",
+  "ref": "PMID:29306759",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Zhong JN",
+  "sentence": "It also increased both SOCE which was induced by thapsigargin or UTP and molecules STIM1 and Orai1 which were related to expression of SOC channels in fibrocytes.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "225cdcf1b3c3",
@@ -2686,6 +2881,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "24215de636e4",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5237846",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "2434400d140b",
   "interaction_id": "35d6440b4e3f",
   "source_kind": "signor",
@@ -2746,6 +2956,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "24f2c3695373",
+  "interaction_id": "ad191bf9ba5a",
+  "source_kind": "pmc",
+  "ref": "PMC6156395",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Li G",
+  "sentence": "Blockade of B2 receptor with HOE140 or IP3Rs with araguspongin B or silencing IP3R3 with siRNA abolished both Ca2+ release and Ca2+ influx.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "25014b77801e",
   "interaction_id": "86c0e63c988a",
   "source_kind": "intact",
@@ -2757,6 +2982,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "252a09bfc507",
+  "interaction_id": "a357a39a4282",
+  "source_kind": "pmc",
+  "ref": "PMC5982760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Babaer D",
+  "sentence": "Taken together, we conclude that SIK3 is an upstream regulator of store operated calcium entry proteins, Orai1 and STIM1, and mediates high salt induced inflammatory cytokine responses and P-gp mediated drug resistance.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3181,6 +3421,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "2a71bbf7e8b0",
+  "interaction_id": "30834e76e051",
+  "source_kind": "pmc",
+  "ref": "PMC7618066",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Hogea A",
+  "sentence": "Thus we show that JPH4 localises to the ER-PM junctional areas and co-clusters with SOCE proteins STIM1 and Orai1 upon ER Ca2+ store depletion.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "2a8c5cc96162",
   "interaction_id": "f38e7343ff92",
   "source_kind": "intact",
@@ -3207,6 +3462,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2aa53d6b0d34",
+  "interaction_id": "be4a6ffa17c2",
+  "source_kind": "pmc",
+  "ref": "PMC5547928",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Qiu C",
+  "sentence": "The results of the present study demonstrated that silencing beta1 integrin led to the downregulation of the SOCE-associated genes ORAI1 and TRPC1.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3271,6 +3541,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 45"
  },
  {
+  "evidence_id": "2b1177da8edd",
+  "interaction_id": "d9d629b8755f",
+  "source_kind": "pubmed",
+  "ref": "PMID:22938798",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Sabourin J",
+  "sentence": "All these results demonstrate an involvement in dystrophin-deficient myotubes of a specific calcium/PKC/PLC pathway in elevation of store-operated cation influx supported by the STIM1/Orai1/TRPC1 proteins, which is normally regulated by the alpha1-syntrophin/dystrophin scaffold.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "2b593d9cfa6c",
   "interaction_id": "bbfe9c06bd7f",
   "source_kind": "omnipath",
@@ -3281,6 +3566,21 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2b9d94a55c50",
+  "interaction_id": "ca135af2adb6",
+  "source_kind": "signor",
+  "ref": "SIGNOR-176771",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We now show that stat6 is required for innate immune signaling in response to virus infection. Viruses or cytoplasmic nucleic acids trigger sting (also named mita/eris) to recruit stat6 to the endoplasmic reticulum, leading to stat6 phosphorylation on ser(407) by tbk1 and tyr(641), independent of jaks. Phosphorylated stat6 then dimerizes and translocates to the nucleus to induce specific target genes responsible for immune cell homing.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -3492,6 +3792,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2e55a73192dd",
+  "interaction_id": "d6bd5201d759",
+  "source_kind": "pubmed",
+  "ref": "PMID:27721237",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Concepcion AR",
+  "sentence": "In human sweat gland cells, SOCE mediated by ORAI1 was necessary for agonist-induced chloride secretion and activation of the Ca2+-activated chloride channel (CaCC) anoctamin 1 (ANO1, also known as TMEM16A).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -4081,6 +4396,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 71"
  },
  {
+  "evidence_id": "357345297684",
+  "interaction_id": "db39e53bbe8f",
+  "source_kind": "pmc",
+  "ref": "PMC8511127",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Sun Y",
+  "sentence": "Here, we showed that TRPC1 directly interacts with CaM, which promotes molecular interactions between CaM and the PI3K p85 subunit, leading to activation of PI3K/AKT signaling cascade.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "35774b5f6708",
   "interaction_id": "ecf17e5033da",
   "source_kind": "pmc",
@@ -4346,6 +4676,21 @@ window.CAMAP.evidence = [
   "first_author": "Haenig et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "3701e6103692",
+  "interaction_id": "1d8df4ba07eb",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:TBK1>STAT6",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -5431,6 +5776,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "450a961933a0",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237795",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "45200e33f4d4",
   "interaction_id": "f959e4bd72df",
   "source_kind": "curated",
@@ -5654,6 +6014,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: co-IP/IF - STIM1 binds SERCA1a via its SBR region (449 to 671 of STIM1) | Effet de l'interaction: positive regulator of SERCA | Localisation: ER membrane | Protéine: sarcoplasmic/endoplasmic reticulum Ca2+-ATPase 1a , SERCA1a",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 8"
+ },
+ {
+  "evidence_id": "48a10a3ebd71",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5237854",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "48cfd8b3334f",
@@ -5924,6 +6299,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: Ano8 increased STIM1-ORAI1 complexes, ER-PM ORAI1 complexes, ER-PMjunction and size | Effet de l'interaction: Ano8 interacts with STIM1 - Ano8 increased STIM1-SARAF interaction | Localisation: ER protein | Protéine: Anoctamin 8 /TMEM16H",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 5"
+ },
+ {
+  "evidence_id": "4b6ed1abf1f5",
+  "interaction_id": "d1a294c17abc",
+  "source_kind": "signor",
+  "ref": "SIGNOR-254502",
+  "cited_pmid": "11956291",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "IRF4 synergizes with NFATc2 and the IL-4-inducing transcription factor, c-maf, to augment IL-4 promoter activity as well as to elicit significant levels of endogenous IL-4 production",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "4ba296123b84",
@@ -6226,6 +6616,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/modulators/row 19"
  },
  {
+  "evidence_id": "4ecf9486a6bf",
+  "interaction_id": "207e34c57ab9",
+  "source_kind": "pubmed",
+  "ref": "PMID:26033013",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Cui R",
+  "sentence": "Blockade of SOCE by pharmacological inhibitors and sh-RNA knockdown of STIM1 and Orai1 attenuated intracellular Ca(2+) overload, restored the mitochondrial membrane potential (MMP), decreased cytochrome C release and inhibited ethanol-induced apoptosis.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "4f5f4dedfd55",
   "interaction_id": "c0d3bf7459f9",
   "source_kind": "pubmed",
@@ -6406,6 +6811,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "513f99240abb",
+  "interaction_id": "1eb8e200da83",
+  "source_kind": "pmc",
+  "ref": "PMC6891088",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Tiscione SA",
+  "sentence": "We determine that NPC1 inhibition or disease mutations potentiate store-operated Ca2+ entry (SOCE) due to a presenilin 1 (PSEN1)-dependent reduction in ER Ca2+ levels alongside elevated expression of the molecular SOCE components ORAI1 and STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5145a30f733a",
   "interaction_id": "ae0f57e46807",
   "source_kind": "intact",
@@ -6447,6 +6867,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5164017a188a",
+  "interaction_id": "cd78b8a6ab55",
+  "source_kind": "pmc",
+  "ref": "PMC6267984",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Zheng S",
+  "sentence": "Further, STIM2 is always partially active, forming constitutive puncta and constantly inducing Ca2+ flux through Orai1 channels at rest.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -6961,6 +7396,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
+  "evidence_id": "5808d5b7843f",
+  "interaction_id": "ef02b46551ec",
+  "source_kind": "pmc",
+  "ref": "PMC4406124",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Saüc S",
+  "sentence": "These results indicate that STIM1L does not mediate rapid SOCE but can trap and gate Orai1 channels efficiently without remodeling cortical ER cisternae.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "585476089399",
   "interaction_id": "bbfec98d2de5",
   "source_kind": "curated",
@@ -7002,6 +7452,21 @@ window.CAMAP.evidence = [
   "sentence": "Here, we report the discovery of the unexpected STAT3 localization to the endoplasmic reticulum (ER), from where it modulates ER-mitochondria Ca2+ release by interacting with the Ca2+ channel IP3R3 and facilitating its degradation.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "59705194c098",
+  "interaction_id": "d1c016e13401",
+  "source_kind": "pmc",
+  "ref": "PMC8511127",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Sun Y",
+  "sentence": "Moreover, there was explicit binding between TRPC1 and PI3K p85 subunit in the SW620 cells with TRPC1 overexpression (Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7091,6 +7556,21 @@ window.CAMAP.evidence = [
   "first_author": "Palty et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "5a78f719ce1a",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237871",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7366,6 +7846,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "5ddb321509b3",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5237874",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5e3b7e0ecf30",
   "interaction_id": "e95d4c17e01c",
   "source_kind": "curated",
@@ -7409,6 +7904,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: Endogenous σ2R co-immunopreicipitated with endogenous STIM1 | Identification MS: Negative Regulators of SOCE: | Localisation: ER/Lysosome | Protéine: Sigma2 Receptor, Transmembrane Protein 9, MAC30, σ2R",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 80"
+ },
+ {
+  "evidence_id": "5e96a9176c37",
+  "interaction_id": "5f60c0754173",
+  "source_kind": "pmc",
+  "ref": "PMC8591423",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Nascimento Da Conceicao V",
+  "sentence": "M1 phenotype is mediated via TRPC1-dependent activation of STAT1/NF-kappaB pathway, whereas M2 phenotype depends on Orai1-mediated activation of STAT6",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "5edb0008536d",
@@ -7632,6 +8142,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "62b182769c1d",
+  "interaction_id": "6ca138dbd0f6",
+  "source_kind": "pmc",
+  "ref": "PMC6488650",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Zhang X",
+  "sentence": "Ca2+ permeating ORAI1 activates AC8 to generate cAMP and activate PKA.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7889,6 +8414,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts and retains STING at the ER | Effet de l'interaction: STIM1 interacts with STING N-terminal domain through the transmembrane domain | Localisation: ER protein | Protéine: Stimulator Of Interferon Response CGAMP Interactor 1, STING 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 74"
+ },
+ {
+  "evidence_id": "64fce60ebff9",
+  "interaction_id": "7939be5c9d39",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:IKBKE>STAT1",
+  "cited_pmid": "24065129",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "recently reported that STAT1 S708 phosphorylation by IKKe is essential for expression of the anti-viral genes IFIT2 and ADAR1, but not the related genes IFIT1, IFIT3, and ISG15 (G1P2).",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "6518a940d42b",
@@ -8746,6 +9286,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "701d60060234",
+  "interaction_id": "51beab3aed59",
+  "source_kind": "pmc",
+  "ref": "PMC7618066",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Hogea A",
+  "sentence": "Thus we show that JPH4 localises to the ER-PM junctional areas and co-clusters with SOCE proteins STIM1 and Orai1 upon ER Ca2+ store depletion.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "702d6a49b961",
   "interaction_id": "a0a38e55417a",
   "source_kind": "signor",
@@ -9136,6 +9691,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "73320202d3ed",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5237871",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "736bd96dc9f8",
   "interaction_id": "e9c1e1ccb74c",
   "source_kind": "intact",
@@ -9266,6 +9836,21 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "756043bba09c",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237874",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -9704,6 +10289,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with CaV3.1 | Localisation: Plasma Membrane | Protéine: CaV3.1, Calcium Voltage-Gated Channel Subunit Alpha1 G",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 16"
+ },
+ {
+  "evidence_id": "79bfa8a3489f",
+  "interaction_id": "c7a13a67b49b",
+  "source_kind": "pmc",
+  "ref": "PMC6488650",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Zhang X",
+  "sentence": "Moreover, we used FRET microscopy to show that AKAP79 associates with ORAI1, but not with ORAI1beta, and this association is not altered by supramaximal stimulation of agonist (500 microM carbachol; Supplementary Fig.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "79cdb8c0c438",
@@ -10186,6 +10786,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STING.xlsx/interactors/row 65"
  },
  {
+  "evidence_id": "7ff11fc4c3c0",
+  "interaction_id": "cf4e522aee5f",
+  "source_kind": "signor",
+  "ref": "SIGNOR-154775",
+  "cited_pmid": "17502367",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "All stats are phosphorylated on at least one serine residue in their tad specifically, ser727 in stats 1 and 3 and ser721 in stat4. Stat serine kinases have been identified through the use of inhibitors, dominant-negative alleles, and in vitro kinase assays. They include mapk (p38mapk: stats 1, 3, 4;erk: stat3, 5;jnk: stat3), pkc_ (stat1, stat3), mtor (stat3), nlk (stat3 (42)), and camkii and ikk_ (stat1 (39, 40, 43)).STAT Serine phosphorylation regulates transcriptional activity (see below).",
+  "sentence_verified": "unverifiable",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8028bed6d418",
   "interaction_id": "90020a06b904",
   "source_kind": "pubmed",
@@ -10411,6 +11026,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8301c6cbd6ba",
+  "interaction_id": "83d67df130d9",
+  "source_kind": "pmc",
+  "ref": "PMC5015156",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Jairaman A",
+  "sentence": "The ensuing Ca2+ entry then activates NFAT/calcineurin signaling to induce transcriptional production of the proinflammatory cytokines IL-6 and IL-8.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "83185ea10cf6",
   "interaction_id": "0e0f97e08c88",
   "source_kind": "intact",
@@ -10452,6 +11082,21 @@ window.CAMAP.evidence = [
   "sentence": "Store-operated Ca(2+) entry was similarly increased by overexpression of p65/p50 or p65/p52 and decreased by treatment with Wogonin.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "833b41256195",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5238175",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -10846,6 +11491,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "882d0b46b87d",
+  "interaction_id": "9b7c61669829",
+  "source_kind": "signor",
+  "ref": "SIGNOR-254498",
+  "cited_pmid": "8668213",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Recombinant NFAT1 can mediate transcription of the interleukin-2, interleukin-4, tumor necrosis factor alpha, and granulocyte-macrophage colony-stimulating factor promoters in T cells, suggesting that NFAT1 contributes to the CsA-sensitive transcription of these genes during the immune response.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "883bc75b12da",
   "interaction_id": "ac52b80da202",
   "source_kind": "pubmed",
@@ -10932,6 +11592,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "88af6399070f",
+  "interaction_id": "6474814f58ac",
+  "source_kind": "pmc",
+  "ref": "PMC5547928",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Qiu C",
+  "sentence": "The results of the present study demonstrated that silencing beta1 integrin led to the downregulation of the SOCE-associated genes ORAI1 and TRPC1.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -11366,6 +12041,21 @@ window.CAMAP.evidence = [
   "first_author": "Rual et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8d891dec933f",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237600",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -11926,6 +12616,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
  },
  {
+  "evidence_id": "93a944770633",
+  "interaction_id": "3935ed0bd9ea",
+  "source_kind": "intact",
+  "ref": "EBI-54534107",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "93b5f4678bdb",
   "interaction_id": "cc2142cdaee7",
   "source_kind": "curated",
@@ -12385,6 +13090,21 @@ window.CAMAP.evidence = [
   "year": "2018",
   "first_author": "Li S",
   "sentence": "RESULTS: Overexpression of CaMKIIdelta enhanced TG-induced STIM1 co-localization and interaction with Orai1 as well as SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "99d5c0e74090",
+  "interaction_id": "0da54e5cc402",
+  "source_kind": "pmc",
+  "ref": "PMC5015156",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Jairaman A",
+  "sentence": "CRAC channel activation occurs, at least in part, through allergen mediated stimulation of PAR2 receptors.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -13032,6 +13752,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a1704d2c6390",
+  "interaction_id": "b82219e333ce",
+  "source_kind": "pmc",
+  "ref": "PMC8112172",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Han JW",
+  "sentence": "In conclusion, we propose that MS4A12 contributes to SOCE through complex formation with Orai1, but does not cooperate with STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -13726,6 +14461,51 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 18"
  },
  {
+  "evidence_id": "a8c61d1dbb65",
+  "interaction_id": "39126fe395c5",
+  "source_kind": "pmc",
+  "ref": "PMC8591423",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Nascimento Da Conceicao V",
+  "sentence": "Our data provide evidence that Ca2+ homeostasis in naive and M2 macrophages is driven by Orai1 channels, whereas the M1 phenotype is strictly dependent on TRPC1-activated STAT1/NF-kappaB pathway.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a94761bbd213",
+  "interaction_id": "8849eedaa539",
+  "source_kind": "pubmed",
+  "ref": "PMID:22938798",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Sabourin J",
+  "sentence": "All these results demonstrate an involvement in dystrophin-deficient myotubes of a specific calcium/PKC/PLC pathway in elevation of store-operated cation influx supported by the STIM1/Orai1/TRPC1 proteins, which is normally regulated by the alpha1-syntrophin/dystrophin scaffold.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a9778e4b43fa",
+  "interaction_id": "b86087ef5a73",
+  "source_kind": "pubmed",
+  "ref": "PMID:29306759",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Zhong JN",
+  "sentence": "As expected, SAP significantly inhibited IL-4-induced differentiation of fibrocytes, the activity of SOCE and the expression of STIM1 and Orai1 in IL-4-treated fibrocytes.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a9879a74d399",
   "interaction_id": "d8c2341d7eea",
   "source_kind": "pubmed",
@@ -13917,6 +14697,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "abbeb2e82be9",
+  "interaction_id": "3cacbff7b0f9",
+  "source_kind": "pmc",
+  "ref": "PMC6891088",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Tiscione SA",
+  "sentence": "We determine that NPC1 inhibition or disease mutations potentiate store-operated Ca2+ entry (SOCE) due to a presenilin 1 (PSEN1)-dependent reduction in ER Ca2+ levels alongside elevated expression of the molecular SOCE components ORAI1 and STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -14581,6 +15376,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b244e822ff36",
+  "interaction_id": "f40dbd875e14",
+  "source_kind": "pmc",
+  "ref": "PMC6156395",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Li G",
+  "sentence": "However, in the cells with silenced Orai1 or STIM1, as in the cells with silenced TRPC1, bradykinin only induced a transient ER IP3R3 Ca2+ release without a subsequent Ca2+ influx.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b24a68edc909",
   "interaction_id": "1001407fa9b7",
   "source_kind": "intact",
@@ -14607,6 +15417,21 @@ window.CAMAP.evidence = [
   "sentence": "Phosphorylation of calmodulin by the epidermal-growth-factor-receptor tyrosine kinase. Phosphorylated calmodulin does not exhibit the characteristic ca2+ shift normally observed with calmodulin in electrophoretic gels, an observation that is consistent with this modification affecting the biological activity of the molecule.",
   "sentence_verified": "unverifiable",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b2a3012d9f2c",
+  "interaction_id": "a8c5d89240f9",
+  "source_kind": "pmc",
+  "ref": "PMC5982760",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Babaer D",
+  "sentence": "Taken together, we conclude that SIK3 is an upstream regulator of store operated calcium entry proteins, Orai1 and STIM1, and mediates high salt induced inflammatory cytokine responses and P-gp mediated drug resistance.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -14951,6 +15776,21 @@ window.CAMAP.evidence = [
   "first_author": "Martínez-Noël et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b71f102b53f0",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237802",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -15552,6 +16392,21 @@ window.CAMAP.evidence = [
   "sentence": "Orai1 and STIM1 transcript levels were further increased in sgk1(+/+) and sgk1(-/-) mast cells by transfection with active NF-kappaB subunit p65 as well as in HEK293 cells by transfection with NF-kappaB subunits p65/p50 or p65/p52.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "be890c888f50",
+  "interaction_id": "b034f14adc4a",
+  "source_kind": "intact",
+  "ref": "EBI-54848512",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -16186,6 +17041,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c561651c6741",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237739",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c5b4407f7cb6",
   "interaction_id": "a29291b6db22",
   "source_kind": "pubmed",
@@ -16240,6 +17110,21 @@ window.CAMAP.evidence = [
   "year": "2018",
   "first_author": "Lopez JJ",
   "sentence": "In platelets, attenuation of FLNA expression using siRNA resulted in enhanced association of STIM1 with the cytoskeleton, greater STIM1-Orai1 interaction, and SOCE.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "c697a3390d3b",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237854",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
   "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
@@ -16531,6 +17416,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "ca3b11b3a614",
+  "interaction_id": "226cc3764610",
+  "source_kind": "intact",
+  "ref": "EBI-1083022",
+  "cited_pmid": "17353931",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Ewing et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ca7de3bbc0f6",
   "interaction_id": "e5cbbe7f3a84",
   "source_kind": "pubmed",
@@ -16666,6 +17566,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "cc56c57493fc",
+  "interaction_id": "5f60c0754173",
+  "source_kind": "pmc",
+  "ref": "PMC8591423",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Nascimento Da Conceicao V",
+  "sentence": "Blockade of Ca2+ entry suppresses pNF-kappaB/pJNK/STAT1 or STAT6 signaling events and consequently lowers cytokine production that is essential for M1 or M2 functions.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "cc5b165862ae",
   "interaction_id": "0989e4d4532c",
   "source_kind": "omnipath",
@@ -16692,6 +17607,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "cc7d89a8b5ac",
+  "interaction_id": "3f0fb17466ca",
+  "source_kind": "pmc",
+  "ref": "PMC5015156",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Jairaman A",
+  "sentence": "The ensuing Ca2+ entry then activates NFAT/calcineurin signaling to induce transcriptional production of the proinflammatory cytokines IL-6 and IL-8.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -16996,6 +17926,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "d0f130b89043",
+  "interaction_id": "537627b51446",
+  "source_kind": "pubmed",
+  "ref": "PMID:26453325",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Che H",
+  "sentence": "Silencing TRPC1, STIM1, or Orai1 with the corresponding siRNA significantly reduced the Ca(2+) signaling through SOCE channels, decreased cell proliferation and migration, and reduced expression of cyclin D1, cyclin E, and/or p-Akt.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d0fd9a886ab1",
   "interaction_id": "3352e3f8c299",
   "source_kind": "pmc",
@@ -17022,6 +17967,21 @@ window.CAMAP.evidence = [
   "sentence": "Remarkably, we observed that the increased expression of the negative regulator of calcineurin, Myoz2 (Calsarcin-1), in AngII-treated control mice was completely absent in Orai1CM-KO mice; additionally, the effect of AngII observed in controls hearts on Rcan1, another calcineurin regulator, was significantly reduced in Orai1CM-KO hearts without changes in the calcineurin A alpha expression (Ppp3ca) (Figure 5C).",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d1b2657623cf",
+  "interaction_id": "b9659b8f7a0a",
+  "source_kind": "intact",
+  "ref": "EBI-5237802",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Viruses or cytoplasmic nucleic acids trigger STING (also named MITA/ERIS) to recruit STAT6 to the endoplasmic reticulum, leading to STAT6 phosphorylation on Ser(407) by TBK1 and Tyr(641), independent of JAKs.",
+  "sentence_verified": "true",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -17881,6 +18841,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "dc018fc4abbe",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237639",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "dc52e4454e83",
   "interaction_id": "82a6c49f3f73",
   "source_kind": "curated",
@@ -18001,6 +18976,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "dcd9a7e283a6",
+  "interaction_id": "cfed236a0da4",
+  "source_kind": "pubmed",
+  "ref": "PMID:26453325",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Che H",
+  "sentence": "Silencing TRPC1, STIM1, or Orai1 with the corresponding siRNA significantly reduced the Ca(2+) signaling through SOCE channels, decreased cell proliferation and migration, and reduced expression of cyclin D1, cyclin E, and/or p-Akt.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "dd6f2d8199b2",
   "interaction_id": "c1d0740329f0",
   "source_kind": "pmc",
@@ -18012,6 +19002,21 @@ window.CAMAP.evidence = [
   "sentence": "In addition, this study unraveled the molecular players involved in the downstream signaling of PAR2 by showing that depletion and re-filling of intracellular calcium stores occurs via PLC, IP3R and the STIM1/Orai1 complex.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "dde21226f8dd",
+  "interaction_id": "cfca540adbde",
+  "source_kind": "pmc",
+  "ref": "PMC6156395",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Li G",
+  "sentence": "Bradykinin-induced Ca2+ influx through TRPC channel was further tested in cells with silenced TRPC1, TRPC3 or TRPC4 (Figure 3C), in which the Ca2+ influx was abolished only in cells transfected with TRPC1 siRNA, but not TRPC3 siRNA or TRPC4 siRNA.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -18146,6 +19151,21 @@ window.CAMAP.evidence = [
   "first_author": "Huttlin et al.",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "dfee15ef231c",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237846",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -18359,6 +19379,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Protéine: phosphatidylinositol kinase vacuolar protein sorting 34 (VPS34)",
   "supp_source": "interactome STING.xlsx/modulators/row 24"
+ },
+ {
+  "evidence_id": "e321bc9cec56",
+  "interaction_id": "4ad5828175c7",
+  "source_kind": "pmc",
+  "ref": "PMC6488650",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Zhang X",
+  "sentence": "Generation of cyclic adenosine monophosphate (cAMP) by AC8 activates PKA to induce CDI through direct phosphorylation of serine-34 in ORAI1 in an A-kinase-anchoring protein 79 (AKAP79)-dependent manner.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "e32f7f2b418f",
@@ -19276,6 +20311,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "eba09706f086",
+  "interaction_id": "eb98215d006c",
+  "source_kind": "intact",
+  "ref": "EBI-5237770",
+  "cited_pmid": "22000020",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Chen et al.",
+  "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ebd278d99d9b",
   "interaction_id": "af5675d3582f",
   "source_kind": "intact",
@@ -19512,6 +20562,21 @@ window.CAMAP.evidence = [
   "sentence": "Furthermore, blockade of SOCE significantly suppressed Orai1, STIM1, Bax, and caspase3 expression both in vivo and in vitro.",
   "sentence_verified": "true",
   "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ee212d2de39b",
+  "interaction_id": "12c0d558ea28",
+  "source_kind": "pmc",
+  "ref": "PMC8511127",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Sun Y",
+  "sentence": "Mechanistically, TRPC1 could enhance the interaction between calmodulin (CaM) and the PI3K p85 subunit by directly binding to CaM, which further activated the PI3K/AKT and its downstream signaling molecules implicated in cell cycle progression and epithelial-mesenchymal transition.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -19994,6 +21059,36 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: TMEM110 or STIM-activating enhancer | Localisation: ER membrane protein | Protéine: TMEM110, STIM Activating Enhancer",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 73"
+ },
+ {
+  "evidence_id": "f3db8443fad5",
+  "interaction_id": "e89b5878d5b0",
+  "source_kind": "pubmed",
+  "ref": "PMID:26453325",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Che H",
+  "sentence": "Silencing TRPC1, STIM1, or Orai1 with the corresponding siRNA significantly reduced the Ca(2+) signaling through SOCE channels, decreased cell proliferation and migration, and reduced expression of cyclin D1, cyclin E, and/or p-Akt.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f3eb60b23e58",
+  "interaction_id": "d1a294c17abc",
+  "source_kind": "signor",
+  "ref": "SIGNOR-255460",
+  "cited_pmid": "23612709",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Activated NFATc2 stimulates myoblast fusion through the increased production of IL-4 and myoferlin",
+  "sentence_verified": "unverifiable",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "f418c2ff118f",
@@ -20697,6 +21792,21 @@ window.CAMAP.evidence = [
   "sentence": "TRPV4, TRPC1, and TRPP2 assemble to form a flow-sensitive heteromeric channel.",
   "sentence_verified": "true",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "fe8a4ee9e472",
+  "interaction_id": "6a733e8ef17d",
+  "source_kind": "pubmed",
+  "ref": "PMID:26033013",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Cui R",
+  "sentence": "Blockade of SOCE by pharmacological inhibitors and sh-RNA knockdown of STIM1 and Orai1 attenuated intracellular Ca(2+) overload, restored the mitochondrial membrane potential (MMP), decreased cytochrome C release and inhibited ethanol-induced apoptosis.",
+  "sentence_verified": "true",
+  "species_context": "rat",
   "curator_note": "",
   "supp_source": ""
  },
