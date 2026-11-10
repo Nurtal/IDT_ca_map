@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 1139 done, 12220 pending, 159 skipped, 2 error.
+13520 articles in queue: 1189 done, 12170 pending, 159 skipped, 2 error.
 
-- tier 0: 1147/3801 processed
+- tier 0: 1197/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1327,5 +1327,26 @@ keeps TRPC1/ORAI1 up in astrocytes; JAK2 inhibition lowers STIM1/ORAI1 (inhibito
 
 **Binding and gating**: STIM1L binds TRPC1/TRPC4 in human myotubes; sigma-1 receptor holds STIM1
 and blocks TRPC1 entry in dopaminergic cells; a second source for STIM2.1 inhibiting ORAI1.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-10 — batch 25 (tier 0, primary)
+
+50 articles read, 20 records in `data/raw/lit_20261110_b29.jsonl`, two dropped by the build.
+Map: 412 nodes, 1138 interactions, 1631 evidence rows.
+
+**New partners at the junction**: CLCA2 binds STIM1 and ORAI1 and boosts SOCE (feeding TMEM16A);
+cathepsin S binds STIM1 and steers its trafficking with EB1; atlastin-1 ER shaping is needed for STIM1
+puncta; EP4 (PTGER4) binds ORAI1 and TRPC1 and opens ORAI1 store-independently via PI3K; SPCA1
+(ATP2C1) opens ORAI1 store-independently like SPCA2.
+
+**Upstream kinases and receptors**: shear stress -> RAF1 / alpha-II spectrin -> STIM1-ORAI1 -> IL8
+(CXCL8) in monocytes (PMID 41579376); Lyn+Syk tonic activity gates Icrac in DT40 B cells (chicken,
+`other`); P2X7 suppresses ORAI1 Ca2+ spiking in microglia; MR (NR3C2) -> TRPC1/STIM1 in rat
+cardiomyocytes (second source).
+
+**Dropped**: `ODC1 -> TRPC1` and `ODC1 -> STIM1` (DFMO lowers TRPC1/STIM1 in colon cancer, PMID
+30642111): ODC1 has no calcium link and the sentence carries no calcium term; inhibitor-only
+evidence, left out rather than forced.
 
 **Next session:** `queue next 50 --tier 0 --primary`.

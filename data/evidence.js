@@ -46,6 +46,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
  },
  {
+  "evidence_id": "00b347c07ee4",
+  "interaction_id": "4d346f1237e2",
+  "source_kind": "pmc",
+  "ref": "PMC7017140",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Bartoli F",
+  "sentence": "Molecular screening by qRT-PCR and Western blot showed a specific upregulation of TRPC1, TRPC5, and STIM1 expression at the messenger RNA (mRNA) and protein levels upon 24-h aldosterone treatment of ARVMs, corroborated by immunostaining.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "00b6c683066b",
   "interaction_id": "12a318b24165",
   "source_kind": "pmc",
@@ -160,6 +175,21 @@ window.CAMAP.evidence = [
   "year": "2023",
   "first_author": "Li S",
   "sentence": "While cGAS mediates cytosDNA sensing and cGAMP production to promote TRPV2-mediated Ca2+ release from the ER after replication stress, STING normally represses TRPV2 activity to prevent unscheduled activation of the pathway in the absence of replication stress.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "022e955a9e00",
+  "interaction_id": "8a957622ffc1",
+  "source_kind": "pmc",
+  "ref": "PMC13034653",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Li W",
+  "sentence": "The increased ERK1/2-mediated phosphorylation of STIM1, which couples to ORAI1, facilitates IL8 expression through enhanced Ca2+ entry.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -312,6 +342,21 @@ window.CAMAP.evidence = [
   "sentence": "SELENOK interacts with STING in the ER and promotes its oligomerization, thereby licensing STING trafficking to the Golgi complex.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "03ed4a19b2d8",
+  "interaction_id": "f79ece91ceed",
+  "source_kind": "pmc",
+  "ref": "PMC13034653",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Li W",
+  "sentence": "The decreased STIM1/ORAI1 interaction in SPTAN1-KD and RAF1-KD cells (Figure 4D), along with published data showing that ERK1/2 mediated phosphorylation of STIM1 promotes SOCE, suggest that SOCE is activated by SPTAN1 and RAF1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1006,6 +1051,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0accb939d3ce",
+  "interaction_id": "3509de7e1bf9",
+  "source_kind": "pmc",
+  "ref": "PMC2064139",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Chung SC",
+  "sentence": "Coupling Ca2+ store release to Icrac channel activation in B lymphocytes requires the activity of Lyn and Syk kinases",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0adb7a669aa0",
   "interaction_id": "a47dea6c18b4",
   "source_kind": "pmc",
@@ -1156,6 +1216,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "0c9a961e1d46",
+  "interaction_id": "4881ab1132d1",
+  "source_kind": "signor",
+  "ref": "SIGNOR-277845",
+  "cited_pmid": "36252040",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Mechanistically, viral infection or foreign DNA transfection triggers recruitment of the spleen tyrosine kinase (SYK) and cGAS to the endosomal vacuolar H+ pump (V-ATPase), where SYK is activated and then phosphorylates human cGASY214/215 (mouse cGasY200/201) to prime its activation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "0cbf31c130a0",
   "interaction_id": "e5af4770414a",
   "source_kind": "intact",
@@ -1182,6 +1257,21 @@ window.CAMAP.evidence = [
   "sentence": "Importantly, silencer RNA knockdown of HINT1 in Neuro-2A cells markedly downregulated Orai1 and STIM1 protein expression and significantly (by 2.5-fold) reduced ATP-induced Ca(2+) influx, while ATP-evoked Ca(2+) release was not changed.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "0d43d9c62966",
+  "interaction_id": "bbfc3d92a8b1",
+  "source_kind": "pmc",
+  "ref": "PMC7017140",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Bartoli F",
+  "sentence": "Our study provides evidence that the mineralocorticoid pathway specifically promotes TRPC1/TRPC5-mediated SOCE in adult rat cardiomyocytes.",
+  "sentence_verified": "true",
+  "species_context": "rat",
   "curator_note": "",
   "supp_source": ""
  },
@@ -1825,6 +1915,21 @@ window.CAMAP.evidence = [
   "year": "2014",
   "first_author": "Maléth J",
   "sentence": "STIM1-Orai1 must be in a PM/ER microdomain tethered by E-Syt1, stabilized by Septin4 and enriched in PI(4,5)P2 for STIM1-SARAF interaction.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "13fad129d7df",
+  "interaction_id": "5a91f8858f95",
+  "source_kind": "pmc",
+  "ref": "PMC13034653",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Li W",
+  "sentence": "The decreased STIM1/ORAI1 interaction in SPTAN1-KD and RAF1-KD cells (Figure 4D), along with published data showing that ERK1/2 mediated phosphorylation of STIM1 promotes SOCE, suggest that SOCE is activated by SPTAN1 and RAF1.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -3106,6 +3211,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "226798a6ae58",
+  "interaction_id": "aaa4a2c05655",
+  "source_kind": "intact",
+  "ref": "EBI-361320",
+  "cited_pmid": "14743216",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Bouwmeester et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "22736b267104",
   "interaction_id": "f5b7558059e2",
   "source_kind": "omnipath",
@@ -3406,6 +3526,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "2557ee44a7e1",
+  "interaction_id": "7f78266bd2d9",
+  "source_kind": "pmc",
+  "ref": "PMC6942437",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Osawa K",
+  "sentence": "Herein, we showed that EP4 formed complexes with Orai1 and transient receptor potential canonical 1 (TRPC1), activated PI3K and induced Ca2+ influx from the extracellular space through Orai1 without activation of store depletion and STIM1, resulting in ERK phosphorylation and then promoting cell migration.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "257d2912a4da",
   "interaction_id": "c89aa4fdbbcf",
   "source_kind": "curated",
@@ -3659,6 +3794,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 2",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 84"
+ },
+ {
+  "evidence_id": "28eda41bbb4e",
+  "interaction_id": "8fb8d80764d5",
+  "source_kind": "pubmed",
+  "ref": "PMID:31340164",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Lin HH",
+  "sentence": "The results of immunoprecipitation assays demonstrated that CTSS could bind to STIM1, which was reversed by CTSS inhibition.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "28f3acda4c79",
@@ -4272,6 +4422,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "2e1d59cd295d",
+  "interaction_id": "f0d82257264e",
+  "source_kind": "pubmed",
+  "ref": "PMID:29555205",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Smaardijk S",
+  "sentence": "Here, we show that like SPCA2, also the overexpression of the ubiquitous SPCA1 induces cytosolic Ca2+ influx, which is abolished by Orai1 knockdown and occurs independently of STIM1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -7876,6 +8041,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "53b23372ca9e",
+  "interaction_id": "af8fc03ab3ad",
+  "source_kind": "pmc",
+  "ref": "PMC2064139",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Chung SC",
+  "sentence": "Coupling Ca2+ store release to Icrac channel activation in B lymphocytes requires the activity of Lyn and Syk kinases",
+  "sentence_verified": "true",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "53b8c4748abe",
   "interaction_id": "64316ff7fff8",
   "source_kind": "intact",
@@ -7930,6 +8110,21 @@ window.CAMAP.evidence = [
   "year": "2012",
   "first_author": "Maiellaro I",
   "sentence": "The chief conclusion of the preceding is that Orai1 is not necessary for store-operated cAMP production, but Ca2+ entry through Orai1 does have a significant inhibitory action on SOcAMPS.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "54ced71f91bd",
+  "interaction_id": "3f0fb17466ca",
+  "source_kind": "pmc",
+  "ref": "PMC13034653",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Li W",
+  "sentence": "In addition, knocking down either STIM1 or ORAI1 (Figures S9D and S9E) significantly reduced responsiveness to hemodynamic stress compared to control cells, as measured by both IL8 expression and cell necrosis (adjusted p < 0.0001; Figures 4C, 4D, and S9C).",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -9745,6 +9940,21 @@ window.CAMAP.evidence = [
   "year": "2011",
   "first_author": "Steinckwich N",
   "sentence": "Then phagosomal ROS production requires extracellular Ca(2+) entry mediated by Orai1/STIM1 and relayed by S100A8-A9 as Ca(2+) sensor.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6bd389c6b969",
+  "interaction_id": "b17466be44ed",
+  "source_kind": "pmc",
+  "ref": "PMC5951673",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Sharma A",
+  "sentence": "Co-immunoprecipitation revealed that CLCA2 interacted with the plasma membrane store-operated calcium channel ORAI-1 and the ER calcium sensor STIM-1.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -12376,6 +12586,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8580814564c9",
+  "interaction_id": "84ade0c810ca",
+  "source_kind": "intact",
+  "ref": "EBI-911456",
+  "cited_pmid": "16512683",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Berggard et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "858ef18acc93",
   "interaction_id": "19fff2995b55",
   "source_kind": "signor",
@@ -13366,6 +13591,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8ec52f7c4deb",
+  "interaction_id": "fb8aec8b941d",
+  "source_kind": "pmc",
+  "ref": "PMC6942437",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Osawa K",
+  "sentence": "Herein, we showed that EP4 formed complexes with Orai1 and transient receptor potential canonical 1 (TRPC1), activated PI3K and induced Ca2+ influx from the extracellular space through Orai1 without activation of store depletion and STIM1, resulting in ERK phosphorylation and then promoting cell migration.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8ee0ed4077ed",
   "interaction_id": "96114c9d1b00",
   "source_kind": "pmc",
@@ -13756,6 +13996,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "91e0b8a781e7",
+  "interaction_id": "0db0e81e1bfa",
+  "source_kind": "pmc",
+  "ref": "PMC5327485",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Li J",
+  "sentence": "Overexpression of wild-type or mutant ATL1 or depletion of ATLs alters ER morphology and affects store-operated calcium entry (SOCE) by decreasing STIM1 puncta formation near the plasma membrane upon calcium depletion of the ER.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "921d427b496a",
   "interaction_id": "0d14e6e1a52c",
   "source_kind": "intact",
@@ -13889,6 +14144,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: CRACR2A interacts with STIM1 (C-terminus) and ORAI1 (N-terminus) at low calcium | Localisation: Cytosol | Protéine: Calcium Release Activated Channel Regulator 2A",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 26"
+ },
+ {
+  "evidence_id": "938e77a0774e",
+  "interaction_id": "60a922d8b5e8",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:SYK>CGAS",
+  "cited_pmid": "36252040",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Mechanistically, viral infection or foreign DNA transfection triggers recruitment of the spleen tyrosine kinase (SYK) and cGAS to the endosomal vacuolar H+ pump (V-ATPase), where SYK is activated and then phosphorylates human cGASY214/215 (mouse cGasY200/201) to prime its activation.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "93a944770633",
@@ -14082,6 +14352,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9551579656af",
+  "interaction_id": "5eaf253eb33e",
+  "source_kind": "pubmed",
+  "ref": "PMID:23830920",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Ikeda M",
+  "sentence": "Because store-operated channels (Stim1/Orai1) were expressed both in MG5 and primary microglial cultures, we suggest that P2X7 receptor signaling inhibits store-operated channels during ATP stimulation, and disinhibition of this process gates TNF-alpha release from microglial cells.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -15475,6 +15760,21 @@ window.CAMAP.evidence = [
   "year": "2013",
   "first_author": "Numaga-Tomita T",
   "sentence": "Knockdown of either STIM1 or Orai1 strongly suppressed SOCE and almost completely abolished the Ca(2+)-switch-induced Ca(2+) responses, resulting in impaired expression of keratin1, an early KC differentiation marker.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a496034d1294",
+  "interaction_id": "b554b000299f",
+  "source_kind": "pmc",
+  "ref": "PMC6942437",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Osawa K",
+  "sentence": "Furthermore, we found that EP4 activated PI3K and induced Ca2+ influx through Orai1 without activation of store depletion and stromal interaction molecule 1 (STIM1).",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -19141,6 +19441,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c9e5d0549b48",
+  "interaction_id": "4881ab1132d1",
+  "source_kind": "signor",
+  "ref": "SIGNOR-277844",
+  "cited_pmid": "36252040",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Mechanistically, viral infection or foreign DNA transfection triggers recruitment of the spleen tyrosine kinase (SYK) and cGAS to the endosomal vacuolar H+ pump (V-ATPase), where SYK is activated and then phosphorylates human cGASY214/215 (mouse cGasY200/201) to prime its activation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ca0a305e6817",
   "interaction_id": "8a06862db70e",
   "source_kind": "pmc",
@@ -21071,6 +21386,21 @@ window.CAMAP.evidence = [
   "first_author": "Chen et al.",
   "sentence": "Activation of STAT6 by STING is critical for antiviral innate immunity.",
   "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "dff21fe4308d",
+  "interaction_id": "b7937bdf9c08",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:LYN>ITPR1",
+  "cited_pmid": "11782428",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -23551,6 +23881,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "fa1dc91d6cc5",
+  "interaction_id": "e5fcef5b5ed1",
+  "source_kind": "pubmed",
+  "ref": "PMID:31340164",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Lin HH",
+  "sentence": "In conclusion, we have demonstrated for the first time that the lysosomal cysteine protease, CTSS, plays an important role in mediating Ca2+ homeostasis by regulating STIM1 trafficking, which leads to the suppression of cell migration and invasion.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "fa5fba7162f3",
   "interaction_id": "fdad695cf76c",
   "source_kind": "pmc",
@@ -24104,5 +24449,20 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 interacts with BAG3 and localizes to autophagosomes in mitosis | Localisation: Cytosol | Protéine: BAG Cochaperone 3",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 12"
+ },
+ {
+  "evidence_id": "fffc7d3d1a3c",
+  "interaction_id": "2d1799aa1e9b",
+  "source_kind": "pmc",
+  "ref": "PMC5951673",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Sharma A",
+  "sentence": "Co-immunoprecipitation revealed that CLCA2 interacted with the plasma membrane store-operated calcium channel ORAI-1 and the ER calcium sensor STIM-1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  }
 ];
