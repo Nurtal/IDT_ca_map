@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 1039 done, 12320 pending, 159 skipped, 2 error.
+13520 articles in queue: 1089 done, 12270 pending, 159 skipped, 2 error.
 
-- tier 0: 1047/3801 processed
+- tier 0: 1097/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1288,5 +1288,27 @@ ORAI1 in coronary muscle; STIM1/ORAI1 -> COX-2 (LPS) and STIM1 -> eNOS.
 
 **Tooling note**: `species_context` takes only the schema values (`in_vitro_human_cells`, `human`,
 `mouse`, `rat`, `other`, `unknown`); cell-line detail goes in the justification.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-10 — batch 23 (tier 0, primary)
+
+50 articles read, 22 records in `data/raw/lit_20261110_b27.jsonl`, one dropped by the build.
+Map: 399 nodes, 1107 interactions, 1592 evidence rows.
+
+**Who writes STIM1/ORAI1**: HNF4alpha represses STIM1 (and ORAI1 mRNA) from the Stim1 promoter,
+released by high glucose in mesangial cells; NFATc3 drives STIM/ORAI upregulation in hyperglycaemic
+endothelium; Oct4 holds STIM1/ORAI1 down in MCF-7 (its loss -> SOCE -> EMT); Fas lowers STIM1 and
+ORAI1 protein through caspases; the PDZ-LIM scaffold PDLIM5 (ENH1) binds TRPC1 and keeps TRPC1 and
+STIM1 mRNA up in myoblasts.
+
+**Outputs**: TRPC1 is the IFN-gamma Ca2+ entry for M1 macrophages (pSTAT1, NOS2, TNF, IL-6;
+PMID 30293012); ORAI1 tonic Ca2+ sustains MEF2C and baseline IFNB (SARS-CoV-2 resistance;
+`beyond_calcium` on IFNB1); ORAI1/STIM1 -> PD-L1 (CD274) under IFN-gamma in oral cancer; STIM2
+binds CaMKK2 as an AMPK scaffold.
+
+**Dropped**: `SGK3 -> STIM2` (expression, sgk3-/- dendritic cells, PMID 23171960): STIM2 is not an
+anchor and SGK3 has no calcium link in the sentence — another case for the issue #18 question on
+STIM2 as an anchor.
 
 **Next session:** `queue next 50 --tier 0 --primary`.

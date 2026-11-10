@@ -631,6 +631,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "069103f8d6a1",
+  "interaction_id": "23bf3636466d",
+  "source_kind": "pubmed",
+  "ref": "PMID:20643097",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Onopiuk M",
+  "sentence": "Here we show that activation of Fas receptor in T-cells results in caspase-dependent decrease of cellular STIM1 and Orai1 protein content.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "06dc8e430168",
   "interaction_id": "66af087269db",
   "source_kind": "curated",
@@ -1516,6 +1531,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "11a46bb85aa5",
+  "interaction_id": "67b4a486120f",
+  "source_kind": "pubmed",
+  "ref": "PMID:25786776",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Wang Y",
+  "sentence": "Knockdown of HNF4alpha using a small interfering RNA approach significantly increased mRNA expression levels of both STIM1 and Orai1 and protein expression levels of STIM1 in cultured human MCs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "11ea8b02ed7b",
   "interaction_id": "01c4041fbbd9",
   "source_kind": "pmc",
@@ -2176,6 +2206,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "17fd6a9c865a",
+  "interaction_id": "c00db043ea19",
+  "source_kind": "pubmed",
+  "ref": "PMID:41666838",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Yamashita E",
+  "sentence": "Consistently, knockdown of Orai1 or STIM1 attenuated PD-L1 induction under IFN-gamma stimulation, while basal expression remained unchanged.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "18135971b5a9",
   "interaction_id": "ddf7f926df8c",
   "source_kind": "pmc",
@@ -2244,6 +2289,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "",
   "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "19717ace02a2",
+  "interaction_id": "78d88f218185",
+  "source_kind": "intact",
+  "ref": "EBI-518177",
+  "cited_pmid": "14594800",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Ahn et al.",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -2742,6 +2802,21 @@ window.CAMAP.evidence = [
   "sentence": "Upon store depletion with Tg, STIM2 aggregates and interacts selectively with Orai2.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "200422120ad8",
+  "interaction_id": "78d88f218185",
+  "source_kind": "intact",
+  "ref": "EBI-518165",
+  "cited_pmid": "14594800",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Ahn et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3460,6 +3535,21 @@ window.CAMAP.evidence = [
   "year": "2024",
   "first_author": "Nieto-Felipe J",
   "sentence": "Interestingly, Orai1alpha and Orai1beta protein loss in the presence of STIM1 and STIM2 was significantly reduced by treatment with bafilomycin A1 (Figure 10e,f; n = 6), which demonstrates that STIM proteins modulate Orai1 variant expression level by endo-lysosomal degradation.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "27e28932d25f",
+  "interaction_id": "90576a20b057",
+  "source_kind": "pubmed",
+  "ref": "PMID:34819389",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Wu B",
+  "sentence": "Transcriptome analysis showed downregulation of multiple antiviral signaling pathways in ORAI1 knockout cells, likely because of reduced expression of the Ca2+-dependent transcription factors of the AP-1 family and MEF2C Accordingly, modulation of homeostatic Ca2+ concentration by pretreatment with ORAI1 blocker or agonist could influence baseline IFNB expression and resistance to SARS-CoV-2 infection in a human lung epithelial cell line.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -6061,6 +6151,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "42155df4bb34",
+  "interaction_id": "15eec4803514",
+  "source_kind": "pubmed",
+  "ref": "PMID:41666838",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Yamashita E",
+  "sentence": "Consistently, knockdown of Orai1 or STIM1 attenuated PD-L1 induction under IFN-gamma stimulation, while basal expression remained unchanged.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "423a28513c2b",
   "interaction_id": "c8996f015a13",
   "source_kind": "intact",
@@ -6207,6 +6312,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "445e50f2d591",
+  "interaction_id": "9e179e556d70",
+  "source_kind": "pubmed",
+  "ref": "PMID:21798248",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Hu J",
+  "sentence": "Silencing Oct4 also upregulated expression of two major components of store-operated Ca(2+) entry channels (SOCs), STIM1 and Orai1, and enhanced SOC-directed Ca(2+) influx.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -6554,6 +6674,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: cytosol | Protéine: Adenylate Cyclase 8, AC8",
   "supp_source": "interactome STIM1 bis.xlsx/Orai/row 3"
+ },
+ {
+  "evidence_id": "491d6fc99de1",
+  "interaction_id": "1738fccddfbc",
+  "source_kind": "pubmed",
+  "ref": "PMID:42083336",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Dong M",
+  "sentence": "Scaffold Protein PDLIM5 Regulates TRPC1 Calcium Channel Mediated Store-Operated Calcium Entry in Mouse Myoblasts.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "49423ac2d3d3",
@@ -8266,6 +8401,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 52"
  },
  {
+  "evidence_id": "5be8e994dfac",
+  "interaction_id": "78d88f218185",
+  "source_kind": "intact",
+  "ref": "EBI-518173",
+  "cited_pmid": "14594800",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Ahn et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5c11e5a064ab",
   "interaction_id": "92dfa4eb1036",
   "source_kind": "curated",
@@ -8562,6 +8712,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "6082166c8c61",
+  "interaction_id": "fa8a0875bf0f",
+  "source_kind": "pubmed",
+  "ref": "PMID:34819389",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Wu B",
+  "sentence": "Transcriptome analysis showed downregulation of multiple antiviral signaling pathways in ORAI1 knockout cells, likely because of reduced expression of the Ca2+-dependent transcription factors of the AP-1 family and MEF2C Accordingly, modulation of homeostatic Ca2+ concentration by pretreatment with ORAI1 blocker or agonist could influence baseline IFNB expression and resistance to SARS-CoV-2 infection in a human lung epithelial cell line.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -9072,6 +9237,21 @@ window.CAMAP.evidence = [
   "sentence": "The abundance of MCU, the pore-forming subunit of the mitochondrial Ca2+ uniporter, was reduced in cells deficient in IP3R, STIM1, or Orai1.",
   "sentence_verified": "true",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "653355018091",
+  "interaction_id": "69aa8790f469",
+  "source_kind": "pubmed",
+  "ref": "PMID:21798248",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2011",
+  "first_author": "Hu J",
+  "sentence": "Silencing Oct4 also upregulated expression of two major components of store-operated Ca(2+) entry channels (SOCs), STIM1 and Orai1, and enhanced SOC-directed Ca(2+) influx.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -11701,6 +11881,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "82bb65ac9325",
+  "interaction_id": "01002297aafb",
+  "source_kind": "pmc",
+  "ref": "PMC6174824",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chauhan A",
+  "sentence": "IFNgamma exposure of TRPC1-sufficient BM macrophages that either are isolated from WT mice or were transfected with non-targeting siRNA (M1-siC) displayed induced expression of NOS2, TNF-alpha, IL-6, IL-23, CXCL9, and CXCL10 (Figures 4C and S7).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "830103157a03",
   "interaction_id": "cf3290140bf1",
   "source_kind": "omnipath",
@@ -12091,6 +12286,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "86345e390b23",
+  "interaction_id": "78d88f218185",
+  "source_kind": "intact",
+  "ref": "EBI-518367",
+  "cited_pmid": "14594800",
+  "doi": "",
+  "year": "2004",
+  "first_author": "Ahn et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "863bab1e627b",
   "interaction_id": "c11c95f273c9",
   "source_kind": "intact",
@@ -12117,6 +12327,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "86b597d2886a",
+  "interaction_id": "013432f12a1f",
+  "source_kind": "pubmed",
+  "ref": "PMID:20643097",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Onopiuk M",
+  "sentence": "Here we show that activation of Fas receptor in T-cells results in caspase-dependent decrease of cellular STIM1 and Orai1 protein content.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -12177,6 +12402,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "877695b33870",
+  "interaction_id": "36f56da16f0a",
+  "source_kind": "pubmed",
+  "ref": "PMID:25471481",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Daskoulidou N",
+  "sentence": "HG-induced upregulation of ORAI and STIM genes was prevented by the calcineurin inhibitor cyclosporin A and NFATc3 siRNA.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -12357,6 +12597,21 @@ window.CAMAP.evidence = [
   "sentence": "Virus-induced phosphoactivation of irf-3, thought to be mediated directly or indirectly by ikk? And/or tbk1 occurs in the c-terminal region of irf-3 at seven ser/thr residues, 385sslentvdlhisnshplslts405 (fig. 1a).Within This region, irf-3 has two phosphorylation sites: site 1 includes ser385 and ser386, whereas site 2 includes ser396, ser398, ser402, ser405, and thr404.",
   "sentence_verified": "unverifiable",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "88be6b3d4129",
+  "interaction_id": "2e54e9807b3c",
+  "source_kind": "pubmed",
+  "ref": "PMID:42083336",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Dong M",
+  "sentence": "ENH1 siRNA knockdown significantly downregulated TRPC1 and STIM1 mRNA expression, increased basal cytosolic Ca2+ level, and impaired SOCE response and myotube maturation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -14686,6 +14941,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "a166f03f8438",
+  "interaction_id": "55373c5b1c20",
+  "source_kind": "pubmed",
+  "ref": "PMID:25786776",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Wang Y",
+  "sentence": "Moreover, knockdown of HNF4alpha significantly augmented store-operated Ca(2+) entry, which is known to be gated by STIM1 and has recently been found to be antifibrotic in MCs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a16e33e30f65",
   "interaction_id": "8ce2767aeeae",
   "source_kind": "intact",
@@ -15264,6 +15534,21 @@ window.CAMAP.evidence = [
   "doi": "",
   "year": "2020",
   "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "a6afd4e9eb63",
+  "interaction_id": "e4b42d372621",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>FAS",
+  "cited_pmid": "23760276",
+  "doi": "",
+  "year": "",
+  "first_author": "",
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
@@ -15882,6 +16167,21 @@ window.CAMAP.evidence = [
   "sentence": "The abundance of MCU, the pore-forming subunit of the mitochondrial Ca2+ uniporter, was reduced in cells deficient in IP3R, STIM1, or Orai1.",
   "sentence_verified": "true",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "add7cead4e94",
+  "interaction_id": "c00db043ea19",
+  "source_kind": "pubmed",
+  "ref": "PMID:41666838",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Yamashita E",
+  "sentence": "Pharmacological inhibition of store-operated calcium entry (SOCE) using the Orai1 inhibitor Synta66 suppressed IFN-gamma-induced PD-L1 expression in a dose-dependent manner.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -16621,6 +16921,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b4b116d7a640",
+  "interaction_id": "90faf8dcca11",
+  "source_kind": "pmc",
+  "ref": "PMC6338636",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Chauhan AS",
+  "sentence": "We reveal that STIM2 interacts with AMPK and CaMKK2 and that the increase in intracellular calcium levels promotes AMPK colocalization and interaction with STIM2.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b4fe4d5910b8",
   "interaction_id": "3227c1d79d38",
   "source_kind": "pubmed",
@@ -16662,6 +16977,21 @@ window.CAMAP.evidence = [
   "sentence": "Furthermore, we show that STIM1-KD increases the susceptibility of thyroid cancer ML-1 cells to drugs used for treatment of thyroid cancer, reinstates the expression of thyroid stimulating hormone receptor (TSHR), thyroid specific proteins and increased iodine uptake.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b5560936ab02",
+  "interaction_id": "3f15fce0f565",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:IRF3>IFNB1",
+  "cited_pmid": "16984921",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -17386,6 +17716,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "bd512758a352",
+  "interaction_id": "392587c70a63",
+  "source_kind": "pubmed",
+  "ref": "PMID:42083336",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2026",
+  "first_author": "Dong M",
+  "sentence": "ENH1 siRNA knockdown significantly downregulated TRPC1 and STIM1 mRNA expression, increased basal cytosolic Ca2+ level, and impaired SOCE response and myotube maturation.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "bd640e77bf83",
   "interaction_id": "a63c5b6ec242",
   "source_kind": "curated",
@@ -17652,6 +17997,21 @@ window.CAMAP.evidence = [
   "sentence": "Our results demonstrate that STIM1 interacts with FLNA on calcium store depletion in human platelets. In platelets, attenuation of FLNA expression using siRNA resulted in enhanced association of STIM1 with the cytoskeleton, greater STIM1-Orai1 interaction, and SOCE.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "bfcc07b66ce1",
+  "interaction_id": "474aa7af9f37",
+  "source_kind": "pmc",
+  "ref": "PMC6174824",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chauhan A",
+  "sentence": "IFNgamma exposure of TRPC1-sufficient BM macrophages that either are isolated from WT mice or were transfected with non-targeting siRNA (M1-siC) displayed induced expression of NOS2, TNF-alpha, IL-6, IL-23, CXCL9, and CXCL10 (Figures 4C and S7).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -18781,6 +19141,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "cc67f817e511",
+  "interaction_id": "f7c99f0a655e",
+  "source_kind": "pmc",
+  "ref": "PMC6174824",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chauhan A",
+  "sentence": "IFNgamma exposure of TRPC1-sufficient BM macrophages that either are isolated from WT mice or were transfected with non-targeting siRNA (M1-siC) displayed induced expression of NOS2, TNF-alpha, IL-6, IL-23, CXCL9, and CXCL10 (Figures 4C and S7).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "cc69ba32c488",
   "interaction_id": "42d917967875",
   "source_kind": "intact",
@@ -19152,6 +19527,21 @@ window.CAMAP.evidence = [
   "sentence": "STIM1-Orai1 must be in a PM/ER microdomain tethered by E-Syt1, stabilized by Septin4 and enriched in PI(4,5)P2 for STIM1-SARAF interaction.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d12fc03ebb9e",
+  "interaction_id": "39126fe395c5",
+  "source_kind": "pmc",
+  "ref": "PMC6174824",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Chauhan A",
+  "sentence": "TRPC1 Deficiency Results in Reduced IFNgamma-Induced Phosphorylation of STAT1 and NF-kappaB as well as Impaired Production of M1 Inflammatory Mediators in Peritoneal Macrophages In Vivo",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -21706,6 +22096,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "ec6f53aa7a62",
+  "interaction_id": "9decf6830b44",
+  "source_kind": "intact",
+  "ref": "EBI-54926507",
+  "cited_pmid": "33961781",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Huttlin et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ec845ddad0b4",
   "interaction_id": "f4949377b487",
   "source_kind": "curated",
@@ -21867,6 +22272,21 @@ window.CAMAP.evidence = [
   "sentence": "While cGAS and its enzymatic product cGAMP are required for [Ca2+]i elevation after replication stress, STING normally associates with and represses TRPV2 to prevent unscheduled Ca2+ release in the absence of replication stress (Figures 4 and 5).",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "edf03c70ccde",
+  "interaction_id": "3412ee693c5e",
+  "source_kind": "signor",
+  "ref": "SIGNOR-252257",
+  "cited_pmid": "16699525",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Similarly, exogenous expression of wild-type Pin1 suppressed TLR3-mediated, IRF3-dependent activation of the IFN-beta promoter and reduced IFN-beta secretion in culture supernatants",
+  "sentence_verified": "unverifiable",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -23144,6 +23564,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Cytosol | Type de protéine: Microtubule-Associated Protein | Protéine: Microtubule Associated Protein RP/EB Family Member 3: EB3",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 47"
+ },
+ {
+  "evidence_id": "fcd8f5f73197",
+  "interaction_id": "160275dd0015",
+  "source_kind": "pubmed",
+  "ref": "PMID:25471481",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Daskoulidou N",
+  "sentence": "HG-induced upregulation of ORAI and STIM genes was prevented by the calcineurin inhibitor cyclosporin A and NFATc3 siRNA.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "fcec322924cb",
