@@ -2506,6 +2506,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "1a266388e980",
+  "interaction_id": "4d9647ea4749",
+  "source_kind": "pmc",
+  "ref": "PMC6315635",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Huang CY",
+  "sentence": "In addition, we found a reduction of calcium influx through a decrease in STIM1 protein after HSP27 was abolished.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1a9ad418637a",
   "interaction_id": "8cab24713c60",
   "source_kind": "intact",
@@ -2592,6 +2607,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1b86a03f0c05",
+  "interaction_id": "b0bda880a29e",
+  "source_kind": "pmc",
+  "ref": "PMC6685097",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Zhang S",
+  "sentence": "Overexpression of miR-10a-5p significantly decreased STIM1/2 and Orai1 mRNA and protein levels as well as SOCE in CD4+ T cells.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -5761,6 +5791,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "3b4b2b046405",
+  "interaction_id": "364df0630a48",
+  "source_kind": "pmc",
+  "ref": "PMC3430656",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Abcejo AJ",
+  "sentence": "Western blot analysis demonstrated increased expression of the ectoenzyme CD38, and the Ca2+ influx regulatory components Orai1 and STIM1, but not TRPC3 (A, B).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "3b7fd73f2612",
   "interaction_id": "8cc2fb85a03c",
   "source_kind": "pubmed",
@@ -6824,6 +6869,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: CASQ1 binds to STIM1 and STIM2 | Localisation: ER protein | Protéine: Calsequestrin 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 20"
+ },
+ {
+  "evidence_id": "487f5a388020",
+  "interaction_id": "a8d51f2441f6",
+  "source_kind": "pmc",
+  "ref": "PMC1761701",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Wang J",
+  "sentence": "Lacritin signaling to PKCalpha activates both Ca2+-NFAT and phospholipase D (PLD)-mTOR pathways via the Ca2+ sensor STIM1, suggesting a novel mitogenic approach for renewal.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "489b86bfb688",
@@ -8470,6 +8530,21 @@ window.CAMAP.evidence = [
   "year": "2010",
   "first_author": "Srikanth S",
   "sentence": "We show that CRACR2A directly interacts with Orai1 and STIM1, forming a ternary complex that dissociates at elevated Ca2+ concentrations.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "59b1934ef21b",
+  "interaction_id": "7883f4e23dac",
+  "source_kind": "pubmed",
+  "ref": "PMID:30015910",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Wang Y",
+  "sentence": "Silencing of HIF-1alpha abrogated the increases in TRPCs and Orail and reversed the increases in basal [Ca2+]i and SOCE.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -10531,6 +10606,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "706151b9d8d3",
+  "interaction_id": "addf724352cd",
+  "source_kind": "pmc",
+  "ref": "PMC9682417",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2023",
+  "first_author": "Chivet M",
+  "sentence": "Immunoprecipitation experiments demonstrated an association of HTT with junctophilin 1 (JPH1) and stromal interaction molecule 1 (STIM1), both providing clues on the functional effects of HTT deletion on calcium fluxes.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "708633793a6d",
   "interaction_id": "68af7f1d2f9f",
   "source_kind": "signor",
@@ -10585,6 +10675,21 @@ window.CAMAP.evidence = [
   "year": "2025",
   "first_author": "Li B",
   "sentence": "These findings suggest that ADRA1 drives STING activation via IP3R-mediated ER Ca2+ depletion and subsequent cytoplasmic Ca2+ dyshomeostasis.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "70f068f64897",
+  "interaction_id": "96f73c5c8734",
+  "source_kind": "pmc",
+  "ref": "PMC3430656",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Abcejo AJ",
+  "sentence": "Western blot analysis demonstrated increased expression of the ectoenzyme CD38, and the Ca2+ influx regulatory components Orai1 and STIM1, but not TRPC3 (A, B).",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -13351,6 +13456,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8bd89c15117e",
+  "interaction_id": "16a756cc1131",
+  "source_kind": "pmc",
+  "ref": "PMC6315635",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Huang CY",
+  "sentence": "HSP27 may interact with STIM1 but not Orai1, as shown by immunoprecipitation assays.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8c2f7bab7006",
   "interaction_id": "959ee7cea2a5",
   "source_kind": "intact",
@@ -14656,6 +14776,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "98f737e80a4e",
+  "interaction_id": "ece69b2d335d",
+  "source_kind": "pmc",
+  "ref": "PMC1761701",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Wang J",
+  "sentence": "The use of inhibitors or siRNA suggests that lacritin mitogenic signaling involves Galphai or Galphao-PKCalpha-PLC-Ca2+-calcineurin-NFATC1 and Galphai or Galphao-PKCalpha-PLC-phospholipase D (PLD)-mTOR in a bell-shaped, dose-dependent manner requiring the Ca2+ sensor STIM1, but not TRPC1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "9930ecf8e519",
   "interaction_id": "421f08cd429d",
   "source_kind": "pubmed",
@@ -15027,6 +15162,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "9cb290053801",
+  "interaction_id": "4877f8a417cd",
+  "source_kind": "pmc",
+  "ref": "PMC1761701",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2006",
+  "first_author": "Wang J",
+  "sentence": "Collectively, these results suggest that PKCalpha plays a central role in lacritin mitogenic signaling, and that STIM1, but not TRPC1, may be necessary for Ca2+ influx, possibly via a SOC mechanism.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -17551,6 +17701,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "b65ede3d5764",
+  "interaction_id": "c89e5c8c98a3",
+  "source_kind": "pmc",
+  "ref": "PMC4488288",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Miller AT",
+  "sentence": "Using Itpkb conditional knockout mice and LMW Itpkb inhibitors these studies reveal that Itpkb through its product IP4 inhibits the Orai1/Stim1 calcium channel on lymphocytes.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "b687cce02990",
   "interaction_id": "ec77b8dcce92",
   "source_kind": "pubmed",
@@ -19591,6 +19756,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "cc020355ecfb",
+  "interaction_id": "8d99681b84a8",
+  "source_kind": "pmc",
+  "ref": "PMC8492340",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Zhang H",
+  "sentence": "Validation of the desmin-STIM1 interaction by immunoprecipitation and immunolocalization confirmed that the CC1-SOAR domains of STIM1 interact with desmin to enhance STIM1 oligomerization yet limit SOCE.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "cc050730fc13",
   "interaction_id": "878d41a37606",
   "source_kind": "omnipath",
@@ -21571,6 +21751,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "e29addad5411",
+  "interaction_id": "9ef654f42822",
+  "source_kind": "intact",
+  "ref": "EBI-26144327",
+  "cited_pmid": "32814053",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "e2a65d9f60b6",
   "interaction_id": "d4518c209aac",
   "source_kind": "pmc",
@@ -21582,6 +21777,21 @@ window.CAMAP.evidence = [
   "sentence": "Moreover, we demonstrated that RNAi-mediated knockdown of TRPC1, Orai1, or STIM1 proteins leads to dramatic reduction of abnormal SOCE in both Neuro-2a and MSNs, expressing Htt138Q-1exon.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "e2ede7401aa9",
+  "interaction_id": "9ef654f42822",
+  "source_kind": "intact",
+  "ref": "EBI-25832939",
+  "cited_pmid": "32814053",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -23701,6 +23911,36 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "f7147031aa93",
+  "interaction_id": "8cc8a5f0194b",
+  "source_kind": "pmc",
+  "ref": "PMC6685097",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2019",
+  "first_author": "Zhang S",
+  "sentence": "Overexpression of miR-10a-5p significantly decreased STIM1/2 and Orai1 mRNA and protein levels as well as SOCE in CD4+ T cells.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f72055cac700",
+  "interaction_id": "ca1409a46fc3",
+  "source_kind": "pubmed",
+  "ref": "PMID:30015910",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2018",
+  "first_author": "Wang Y",
+  "sentence": "Silencing of HIF-1alpha abrogated the increases in TRPCs and Orail and reversed the increases in basal [Ca2+]i and SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "f77eea15ae81",
   "interaction_id": "810388cf19ff",
   "source_kind": "pubmed",
@@ -23757,6 +23997,21 @@ window.CAMAP.evidence = [
   "sentence": "Based on these findings, we propose that PAK1 interacts with STIM1 to regulate calcium mobilization and the formation of cellular adhesions.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f858eeb4e2af",
+  "interaction_id": "9ef654f42822",
+  "source_kind": "intact",
+  "ref": "EBI-25990180",
+  "cited_pmid": "32814053",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Haenig et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },

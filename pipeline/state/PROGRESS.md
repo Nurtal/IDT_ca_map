@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 1189 done, 12170 pending, 159 skipped, 2 error.
+13520 articles in queue: 1239 done, 12120 pending, 159 skipped, 2 error.
 
-- tier 0: 1197/3801 processed
+- tier 0: 1247/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1348,5 +1348,24 @@ cardiomyocytes (second source).
 **Dropped**: `ODC1 -> TRPC1` and `ODC1 -> STIM1` (DFMO lowers TRPC1/STIM1 in colon cancer, PMID
 30642111): ODC1 has no calcium link and the sentence carries no calcium term; inhibitor-only
 evidence, left out rather than forced.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-10 — batch 26 (tier 0, primary)
+
+50 articles read, 14 records in `data/raw/lit_20261110_b30.jsonl`, none dropped.
+Map: 416 nodes, 1153 interactions, 1648 evidence rows.
+
+**Holding STIM1**: HSP27 (HSPB1) binds STIM1 and keeps the protein stable in colorectal cancer;
+desmin binds the STIM1 CC1-SOAR at the Z-line (oligomerizes yet limits SOCE); huntingtin
+co-IPs with STIM1 in muscle.
+
+**Brakes and accelerators**: Itpkb, through IP4, inhibits ORAI1/STIM1 in T cells (PMID 26121493);
+miR-10a-5p (MIR10A) lowers ORAI1/STIM1 in CD4+ T cells; HIF-1alpha raises ORAI1/TRPC1 under
+nicotine; BDNF raises ORAI1/STIM1 in airway smooth muscle; lacritin -> PKCalpha -> STIM1 ->
+NFATC1 in salivary epithelium.
+
+**Left out**: ERGP (gamma-carboxylated ER Gla protein restraining STIM1-ORAI1, PMID 37171959) has
+no resolvable gene symbol in the text; GGCX acts on ERGP, two steps from the anchors.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
