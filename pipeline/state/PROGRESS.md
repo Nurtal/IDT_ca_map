@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 1239 done, 12120 pending, 159 skipped, 2 error.
+13520 articles in queue: 1289 done, 12070 pending, 159 skipped, 2 error.
 
-- tier 0: 1247/3801 processed
+- tier 0: 1297/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1367,5 +1367,23 @@ NFATC1 in salivary epithelium.
 
 **Left out**: ERGP (gamma-carboxylated ER Gla protein restraining STIM1-ORAI1, PMID 37171959) has
 no resolvable gene symbol in the text; GGCX acts on ERGP, two steps from the anchors.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-10 — batch 27 (tier 0, primary)
+
+50 articles read (many TAM/Stormorken case reports and inhibitor screens), 13 records in
+`data/raw/lit_20261110_b31.jsonl`, none dropped. Map: 422 nodes, 1168 interactions, 1663 evidence rows.
+
+**Degradation and trafficking**: cereblon (CRBN) binds and ubiquitinates ORAI1, released during
+efferocytosis (PMID 33127885); RASSF4 -> ARF6/PI(4,5)P2 controls STIM1 translocation to ER-PM
+junctions.
+
+**Outputs of the channel**: ORAI1/STIM1 -> EGF transcription in bronchial epithelium;
+STIM1/ORAI1 -> BDNF secretion from airway smooth muscle (closing a loop with BDNF -> ORAI1/STIM1
+from batch 26); ORAI1/STIM1 -> FGF23 in osteoblast-like cells (pharmacological).
+
+**Upstream**: PTH raises ORAI1 in endothelium; Fyn keeps TRPC1 up in mast cells; CASQ1 binds STIM2;
+TRPC1-TRPC5 heteromers in retina.
 
 **Next session:** `queue next 50 --tier 0 --primary`.

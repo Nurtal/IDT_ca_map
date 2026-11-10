@@ -2596,6 +2596,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 13"
  },
  {
+  "evidence_id": "1b16cff243ac",
+  "interaction_id": "a24074ac903e",
+  "source_kind": "pubmed",
+  "ref": "PMID:20571036",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Suzuki R",
+  "sentence": "We found that Fyn null MCs, which have an impaired degranulation response, expressed reduced levels of TRPC1, had normal depletion of intracellular calcium stores but an impaired calcium influx, and failed to depolymerize cortical F-actin (a key step for granule-plasma membrane fusion).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1b2e5fa7a4f7",
   "interaction_id": "8eb16e98a347",
   "source_kind": "intact",
@@ -2776,6 +2791,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "1cf41e7bf894",
+  "interaction_id": "4014ef3b8f70",
+  "source_kind": "pmc",
+  "ref": "PMC7603501",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Moon H",
+  "sentence": "Here, we report that Orai1, a Crbn substrate, is upregulated via its attenuated interaction with Crbn during efferocytosis, which increases calcium influx into phagocytes and thereby promotes efferocytosis.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1d04a10886ee",
   "interaction_id": "a3d445eb2c88",
   "source_kind": "pubmed",
@@ -2892,6 +2922,21 @@ window.CAMAP.evidence = [
   "sentence": "These results show that the knockdown of STIM1 significantly reduced the peak amplitude of IP3R-dependent Ca2+ release whereas the knockdown of STIM2 did not significantly alter IP3R-dependent Ca2+ release in BAECs.",
   "sentence_verified": "true",
   "species_context": "other",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "1f6c41638971",
+  "interaction_id": "917937ed1509",
+  "source_kind": "pmc",
+  "ref": "PMC4144895",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Samanta K",
+  "sentence": "E, STIM1 knockdown reduces EGF mRNA levels.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -5202,6 +5247,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "35ae6403f593",
+  "interaction_id": "1bb14dbc5103",
+  "source_kind": "pmc",
+  "ref": "PMC5496610",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Chen YJ",
+  "sentence": "First, we discovered that RASSF4 regulates store-operated Ca2+ entry (SOCE), a fundamental Ca2+ signaling mechanism, by affecting the translocation of the endoplasmic reticulum (ER) Ca2+ sensor stromal interaction molecule 1 (STIM1) to ER-plasma membrane (PM) junctions.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -12091,6 +12151,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "7fadd207a737",
+  "interaction_id": "e3271d570ada",
+  "source_kind": "pmc",
+  "ref": "PMC11242081",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Caminos E",
+  "sentence": "There was an overlapping signal in the innermost retina of all animals where TRPC1 and TRPC5 physically interacted.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "7fd16688a6e2",
   "interaction_id": "034ecaefb2ed",
   "source_kind": "curated",
@@ -12644,6 +12719,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Localisation: Plasma Membrane | Protéine: Transient Receptor Protein 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 83"
+ },
+ {
+  "evidence_id": "8502cd50871e",
+  "interaction_id": "5d5b0fbc01db",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:FYN>ITPR1",
+  "cited_pmid": "32516742",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "In vitro, CD36 interacts with Fyn to phosphorylate and activate Inositol (1,4,5)-trisphosphate receptor 1 (IP3R1), causing excess calcium transport from endoplasmic reticulum (ER) to lysosome, which results in lysosomal impairment and inflammation.",
+  "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "85450aa2eff9",
@@ -14101,6 +14191,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "91c70f1e0a3a",
+  "interaction_id": "e469ef29427f",
+  "source_kind": "pmc",
+  "ref": "PMC7603501",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2020",
+  "first_author": "Moon H",
+  "sentence": "In addition, Orai1 associated with Crbn, resulting in ubiquitination and proteasomal degradation of Orai1 and alteration of SOCE-mediated calcium influx.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "91df892f4631",
   "interaction_id": "290e3af4bcd4",
   "source_kind": "intact",
@@ -14232,6 +14337,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "93439450ef2a",
+  "interaction_id": "43d05c68ec2b",
+  "source_kind": "pmc",
+  "ref": "PMC5503987",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Feger M",
+  "sentence": "Orai1/STIM1-mediated SOCE then triggers FGF23 production.",
+  "sentence_verified": "true",
+  "species_context": "rat",
   "curator_note": "",
   "supp_source": ""
  },
@@ -14516,6 +14636,21 @@ window.CAMAP.evidence = [
   "first_author": "Feng et al.",
   "sentence": "Store-independent activation of Orai1 by SPCA2 in mammary tumors.",
   "sentence_verified": "true",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "95a9d118ccea",
+  "interaction_id": "4c9dea13fca3",
+  "source_kind": "signor",
+  "ref": "SIGNOR-121795",
+  "cited_pmid": "14761954",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "We have identified tyrosine 353 (tyr353) in the ip3-binding domain of type 1 ip3r (ip3r1) as a phosphorylation site for fyntyrosine phosphorylation of ip3r1 increased ip3 binding at low ip3 concentrations (<10 nm).",
+  "sentence_verified": "unverifiable",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -16154,6 +16289,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet: prevent the excessive activation of STING1-mediated type I IFN signaling through autophagic degradation of STING1 via SQSTM1",
   "supp_source": "interactome STING.xlsx/modulators/row 22"
+ },
+ {
+  "evidence_id": "a65c910468da",
+  "interaction_id": "4c3599352a52",
+  "source_kind": "pubmed",
+  "ref": "PMID:23899746",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Vohra PK",
+  "sentence": "Chelation of extracellular Ca(2+) (EGTA; 1mM) or intracellular Ca(2+) (BAPTA; 5muM) significantly reduced secreted BDNF, as did the knockdown of SOCE proteins STIM1 and Orai1 or plasma membrane caveolin-1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "a69041cb8045",
@@ -17982,6 +18132,21 @@ window.CAMAP.evidence = [
   "sentence": "SOCE was functionally required for the activation of the Ca2+ activated Cl- channel ANO1.",
   "sentence_verified": "true",
   "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "b91be9eeb5dc",
+  "interaction_id": "6ce450189c2f",
+  "source_kind": "pmc",
+  "ref": "PMC4144895",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Samanta K",
+  "sentence": "Knockdown of Orai1 (Figure 6C-D) reversed the increase in EGF mRNA following stimulation with thapsigargin. siRNA against Orai1 reduced protein expression by ~60% (Figure 4E) and also reduced Orai1 mRNA by ~60% (Figure 6C).",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -19831,6 +19996,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "cc61a4852a68",
+  "interaction_id": "ca775ffbdc20",
+  "source_kind": "pmc",
+  "ref": "PMC5503987",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Feger M",
+  "sentence": "Orai1/STIM1-mediated SOCE then triggers FGF23 production.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "cc67f817e511",
   "interaction_id": "f7c99f0a655e",
   "source_kind": "pmc",
@@ -19932,6 +20112,21 @@ window.CAMAP.evidence = [
   "sentence": "It was blocked by Gd(3+) and the RyR2 modulator K201 but was unaffected by the RyR1/3 antagonist dantrolene and the InsP3R inhibitor xestospongin C, suggesting RyR2 is mainly involved in the process. siRNA knockdown of STIM1, TRPC1, and Orai1, or interruption of STIM1 translocation with ML-9 significantly attenuated the 4-CmC-induced SOCE, similar to SOCE induced by thapsigargin.",
   "sentence_verified": "true",
   "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "cda464b50cca",
+  "interaction_id": "923ae0fc9c4e",
+  "source_kind": "pubmed",
+  "ref": "PMID:23899746",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2013",
+  "first_author": "Vohra PK",
+  "sentence": "Chelation of extracellular Ca(2+) (EGTA; 1mM) or intracellular Ca(2+) (BAPTA; 5muM) significantly reduced secreted BDNF, as did the knockdown of SOCE proteins STIM1 and Orai1 or plasma membrane caveolin-1.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -23431,6 +23626,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 17"
  },
  {
+  "evidence_id": "f17eff1c406d",
+  "interaction_id": "5662238de86c",
+  "source_kind": "pmc",
+  "ref": "PMC8616366",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Jeong SY",
+  "sentence": "First, in the present study, it was found by biochemical approaches that CASQ1 is bound to STIM2 via its 92 N-terminal amino acids (C1 region).",
+  "sentence_verified": "true",
+  "species_context": "mouse",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "f18bc7f452e1",
   "interaction_id": "8ce086544075",
   "source_kind": "curated",
@@ -24657,6 +24867,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ffce9517e9f1",
+  "interaction_id": "c5fadc2b93c4",
+  "source_kind": "pmc",
+  "ref": "PMC8965836",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Wang S",
+  "sentence": "We used immunoblot experiments to find that parathyroid hormone significantly enhanced the expression of the Orai1 channel, a type of channel mediating SOCE, SOCE activity, and Orai1-mediated proliferation of HUVECs but did not increase Orai2 and Orai3.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
