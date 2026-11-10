@@ -16,6 +16,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "006c07786483",
+  "interaction_id": "0e2ace7c4330",
+  "source_kind": "pubmed",
+  "ref": "PMID:20123987",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Ritchie MF",
+  "sentence": "Either overexpression of WT1 or knockdown of EGR1 resulted in loss of STIM1 expression and a resultant decrease in SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "00a61663db5e",
   "interaction_id": "4f5366359f2e",
   "source_kind": "curated",
@@ -1891,6 +1906,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "165348e18519",
+  "interaction_id": "f12d4e68e175",
+  "source_kind": "pmc",
+  "ref": "PMC7817837",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Aoki K",
+  "sentence": "Activated Ezrin inhibits SOCE by directly binding to Orai1 and promotes retraction of membrane blebs.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "1661c30c21fe",
   "interaction_id": "30834e76e051",
   "source_kind": "pubmed",
@@ -2716,6 +2746,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "200debaf8dd2",
+  "interaction_id": "2288619bf280",
+  "source_kind": "intact",
+  "ref": "EBI-1076541",
+  "cited_pmid": "17353931",
+  "doi": "",
+  "year": "2007",
+  "first_author": "Ewing et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "204c494a883b",
   "interaction_id": "dcb821a63a0f",
   "source_kind": "pubmed",
@@ -2982,6 +3027,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "228741924cfd",
+  "interaction_id": "621ac04b90d5",
+  "source_kind": "pubmed",
+  "ref": "PMID:39191091",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Goriounova AS",
+  "sentence": "We previously found that short palate lung and nasal epithelial clone 1's (SPLUNC1) sixth alpha-helix (alpha6) bound Orai1 to inhibit SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -3721,6 +3781,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "2ab6964fa375",
+  "interaction_id": "fbc96dc4007a",
+  "source_kind": "pubmed",
+  "ref": "PMID:20123987",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2010",
+  "first_author": "Ritchie MF",
+  "sentence": "Either overexpression of WT1 or knockdown of EGR1 resulted in loss of STIM1 expression and a resultant decrease in SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "2acf95700ced",
   "interaction_id": "901858a857bb",
   "source_kind": "pubmed",
@@ -4306,6 +4381,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "31c267c61318",
+  "interaction_id": "8bb86dde31d7",
+  "source_kind": "intact",
+  "ref": "EBI-2903350",
+  "cited_pmid": "11397791",
+  "doi": "",
+  "year": "2001",
+  "first_author": "Fleming et al.",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "3214610e8ad8",
   "interaction_id": "17da4d26a036",
   "source_kind": "pubmed",
@@ -4409,6 +4499,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: co-IIP of Homer1 with STIM1 and the Cav1.2 α1 subunit after store depletion | Localisation: cytosol | Protéine: homer scaffold protein 1",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 39"
+ },
+ {
+  "evidence_id": "32ce76a7a4d4",
+  "interaction_id": "2ddfee14c8ab",
+  "source_kind": "pubmed",
+  "ref": "PMID:25172921",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Raphaël M",
+  "sentence": "Here we show that TRPV6 mediates calcium entry, which is highly increased in PCa due to the remodeling mechanism involving the translocation of the TRPV6 channel to the plasma membrane via the Orai1/TRPC1-mediated Ca(2+)/Annexin I/S100A11 pathway, partially contributing to SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "32f939f85494",
@@ -5456,6 +5561,21 @@ window.CAMAP.evidence = [
   "first_author": "",
   "sentence": "",
   "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "3d01c2af9985",
+  "interaction_id": "194efcaff4bd",
+  "source_kind": "signor",
+  "ref": "SIGNOR-251615",
+  "cited_pmid": "24379783",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "Electrons flow from the C-terminal reductase domain of one NOS monomer to the N-terminal oxygenase domain of the other NOS monomer (Siddhanta et al., 1998). The primary mode of enzyme activation is the binding of calcium-bound calmodulin to the N-terminal CaM-binding domain. This facilitates a structure change and the flow of electrons from NADPH through the flavins to the oxygenase domain of the other eNOS monomer",
+  "sentence_verified": "false",
   "species_context": "human",
   "curator_note": "",
   "supp_source": ""
@@ -7051,6 +7171,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "4fd4ae48058e",
+  "interaction_id": "9b6cad74ad4f",
+  "source_kind": "pubmed",
+  "ref": "PMID:39191091",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2024",
+  "first_author": "Goriounova AS",
+  "sentence": "ELD607 continued to colocalize with Orai1 after internalization and this process was dependent on the presence of the ubiquitin ligase NEDD4.2.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "4fed9187ffce",
   "interaction_id": "d82408bef80f",
   "source_kind": "curated",
@@ -7546,6 +7681,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 56"
  },
  {
+  "evidence_id": "5487bc92ced8",
+  "interaction_id": "e109ec87c5e3",
+  "source_kind": "pmc",
+  "ref": "PMC3470754",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Maiellaro I",
+  "sentence": "The chief conclusion of the preceding is that Orai1 is not necessary for store-operated cAMP production, but Ca2+ entry through Orai1 does have a significant inhibitory action on SOcAMPS.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "54f222083dec",
   "interaction_id": "c33b076fe05c",
   "source_kind": "pubmed",
@@ -7662,6 +7812,21 @@ window.CAMAP.evidence = [
   "sentence": "Plasma membrane-localized DHHC21 is dynamically recruited into Orai1/STIM1 puncta upon store depletion, where it physically binds to STIM1.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "567bb8c959f1",
+  "interaction_id": "8e4291557e4f",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2D>ADCY3",
+  "cited_pmid": "8798667",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -8341,6 +8506,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "5fa1e7330ecb",
+  "interaction_id": "eac9be57c808",
+  "source_kind": "pmc",
+  "ref": "PMC9772344",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Qu Q",
+  "sentence": "In the normal condition, GLT-1 is responsible for glutamate uptake and interacts with STIM1/Orai1 to maintain the Ca2+ refilling and phosphorylation of CaMKII in the ER.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "5fb1a33b564b",
   "interaction_id": "a5d1822d547b",
   "source_kind": "omnipath",
@@ -8731,6 +8911,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "640b9bc03537",
+  "interaction_id": "a10c56ac928d",
+  "source_kind": "pmc",
+  "ref": "PMC4159325",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Deng CY",
+  "sentence": "Our results suggested that upregulation of expression of 5-HT2A receptors and the downstream phospholipase C (PLC)/Orai1 signaling pathway could be responsible for an augmented contraction in response to 5-HT.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "64146a4a70ae",
   "interaction_id": "ffd8b37bd996",
   "source_kind": "omnipath",
@@ -9029,6 +9224,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Effet de l'interaction: TRIM32 mediates K48- and K63-linked polyubiquitination of STING, accelerating its degradation",
   "supp_source": "interactome STING.xlsx/interactors/row 57"
+ },
+ {
+  "evidence_id": "674b392d9887",
+  "interaction_id": "1b4052b816fa",
+  "source_kind": "pubmed",
+  "ref": "PMID:22031597",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Ogawa A",
+  "sentence": "PDGF enhances store-operated Ca2+ entry by upregulating STIM1/Orai1 via activation of Akt/mTOR in human pulmonary arterial smooth muscle cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "683163ebbf28",
@@ -11986,6 +12196,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "87c4acd93779",
+  "interaction_id": "9d330e245902",
+  "source_kind": "pmc",
+  "ref": "PMC3470754",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Maiellaro I",
+  "sentence": "Activation of this 'store-operated' pathway requires the ER Ca2+ sensor, STIM1, but the identity of the enzymes responsible for cAMP production and how this process is regulated is unknown.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "87f52d476d0c",
   "interaction_id": "96db0f399451",
   "source_kind": "omnipath",
@@ -12194,6 +12419,21 @@ window.CAMAP.evidence = [
   "species_context": "unknown",
   "curator_note": "Infos sur interaction avec STIM1: STIM1 CAD domain interacts with CaV1.2 C-terminus | Effet de l'interaction: co-immunoprecipitation of Homer1 with STIM1 and the Cav1.2 α1 subunit | Localisation: Plasma Membrane | Protéine: Cav1.2, Calcium Voltage-Gated Channel Subunit Alpha1 C",
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 15"
+ },
+ {
+  "evidence_id": "899480789a3e",
+  "interaction_id": "a10c56ac928d",
+  "source_kind": "pmc",
+  "ref": "PMC4159325",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Deng CY",
+  "sentence": "The decrease in Orai1 expression significantly inhibited 5-HT-evoked entry of Ca2+ in coronary artery cells.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
  },
  {
   "evidence_id": "899c219540de",
@@ -12481,6 +12721,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "8bc82c9450d4",
+  "interaction_id": "5c266cfb95b2",
+  "source_kind": "pubmed",
+  "ref": "PMID:22031597",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Ogawa A",
+  "sentence": "PDGF enhances store-operated Ca2+ entry by upregulating STIM1/Orai1 via activation of Akt/mTOR in human pulmonary arterial smooth muscle cells.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "8c2f7bab7006",
   "interaction_id": "959ee7cea2a5",
   "source_kind": "intact",
@@ -12537,6 +12792,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "8cdd6927e139",
+  "interaction_id": "12d8dcd8ffb1",
+  "source_kind": "pmc",
+  "ref": "PMC5643532",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Wong JH",
+  "sentence": "To validate the effects of SOC channel inhibitors (2-APB and SKF96365), AGS cells were transfected with STIM1 or ORAI1 short hairpin (sh)RNA to observe the effect of knockdown of the SOC channel on LPS-induced COX-2 gene expression.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -12912,6 +13182,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "905c389adc43",
+  "interaction_id": "2bb39a259e6b",
+  "source_kind": "pubmed",
+  "ref": "PMID:25753987",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2015",
+  "first_author": "Wang LY",
+  "sentence": "The impairment of eNOS activity could also be induced by using an SOCE inhibitor or by Stim1 gene silencing, indicating a link between the activities of eNOS and SOCE in AS.",
+  "sentence_verified": "true",
+  "species_context": "mouse",
   "curator_note": "",
   "supp_source": ""
  },
@@ -14701,6 +14986,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "a3f437b0f5b5",
+  "interaction_id": "03d1a92abe49",
+  "source_kind": "pmc",
+  "ref": "PMC5643532",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2017",
+  "first_author": "Wong JH",
+  "sentence": "To validate the effects of SOC channel inhibitors (2-APB and SKF96365), AGS cells were transfected with STIM1 or ORAI1 short hairpin (sh)RNA to observe the effect of knockdown of the SOC channel on LPS-induced COX-2 gene expression.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "a454bf13dede",
   "interaction_id": "20a06a1a0065",
   "source_kind": "pubmed",
@@ -15492,6 +15792,21 @@ window.CAMAP.evidence = [
   "sentence": "ORAI3 but not ORAI1 silencing significantly reduced hypoxia-induced increases in EGFR phosphorylation, although ORAI1 silencing was close to significance (p value of 0.0546) (Figure 4C).",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "ad148a72d312",
+  "interaction_id": "194efcaff4bd",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CALM1>NOS3",
+  "cited_pmid": "16839566",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
   "curator_note": "",
   "supp_source": ""
  },
@@ -17806,6 +18121,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "c3c35ccb9edc",
+  "interaction_id": "9d330e245902",
+  "source_kind": "pmc",
+  "ref": "PMC3470754",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2012",
+  "first_author": "Maiellaro I",
+  "sentence": "Concurrent expression of AC3 plus STIM1 produced an even larger change in cAMP in response to store depletion.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "c3fea6b06b58",
   "interaction_id": "35d6440b4e3f",
   "source_kind": "signor",
@@ -18526,6 +18856,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "cda002d93379",
+  "interaction_id": "c2acecf983d6",
+  "source_kind": "pubmed",
+  "ref": "PMID:27013634",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2016",
+  "first_author": "Lin AH",
+  "sentence": "It was blocked by Gd(3+) and the RyR2 modulator K201 but was unaffected by the RyR1/3 antagonist dantrolene and the InsP3R inhibitor xestospongin C, suggesting RyR2 is mainly involved in the process. siRNA knockdown of STIM1, TRPC1, and Orai1, or interruption of STIM1 translocation with ML-9 significantly attenuated the 4-CmC-induced SOCE, similar to SOCE induced by thapsigargin.",
+  "sentence_verified": "true",
+  "species_context": "rat",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "ce1e1f746c42",
   "interaction_id": "92e4b29edee8",
   "source_kind": "omnipath",
@@ -19126,6 +19471,21 @@ window.CAMAP.evidence = [
   "supp_source": "interactome STIM1 bis.xlsx/STIM1/row 66"
  },
  {
+  "evidence_id": "d48e71efb1bf",
+  "interaction_id": "016538225b64",
+  "source_kind": "omnipath",
+  "ref": "OmniPath:CAMK2A>ADCY3",
+  "cited_pmid": "8798667",
+  "doi": "",
+  "year": "",
+  "first_author": "",
+  "sentence": "",
+  "sentence_verified": "",
+  "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "d4abed2c55db",
   "interaction_id": "9a5ff995ba95",
   "source_kind": "intact",
@@ -19150,6 +19510,21 @@ window.CAMAP.evidence = [
   "year": "2013",
   "first_author": "Miao Y",
   "sentence": "Here we identify an essential role of alpha-SNAP in mediating functional coupling of Stim1 and Orai1 molecules to activate SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "d576c77fda52",
+  "interaction_id": "744b77fa4f37",
+  "source_kind": "pmc",
+  "ref": "PMC8657799",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Grieve AG",
+  "sentence": "We show that RHBDL2 prevents stochastic calcium signaling in unstimulated cells through conformational surveillance and cleavage of inappropriately activated Orai1.",
   "sentence_verified": "true",
   "species_context": "in_vitro_human_cells",
   "curator_note": "",
@@ -19891,6 +20266,21 @@ window.CAMAP.evidence = [
   "supp_source": ""
  },
  {
+  "evidence_id": "ddcc5c53bcf7",
+  "interaction_id": "e6826c48a26d",
+  "source_kind": "pmc",
+  "ref": "PMC9772344",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2022",
+  "first_author": "Qu Q",
+  "sentence": "In the normal condition, GLT-1 is responsible for glutamate uptake and interacts with STIM1/Orai1 to maintain the Ca2+ refilling and phosphorylation of CaMKII in the ER.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
   "evidence_id": "dde21226f8dd",
   "interaction_id": "cfca540adbde",
   "source_kind": "pmc",
@@ -19992,6 +20382,21 @@ window.CAMAP.evidence = [
   "sentence": "Our data show that (i) TRPC2 does not interact with any known TRPC protein and (ii) TRPC1 has the ability to form channel complexes together with TRPC4 and TRPC5.",
   "sentence_verified": "true",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "df40907b8eac",
+  "interaction_id": "2005368b6331",
+  "source_kind": "pubmed",
+  "ref": "PMID:25172921",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2014",
+  "first_author": "Raphaël M",
+  "sentence": "Here we show that TRPV6 mediates calcium entry, which is highly increased in PCa due to the remodeling mechanism involving the translocation of the TRPV6 channel to the plasma membrane via the Orai1/TRPC1-mediated Ca(2+)/Annexin I/S100A11 pathway, partially contributing to SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },
@@ -22287,6 +22692,21 @@ window.CAMAP.evidence = [
   "sentence": "",
   "sentence_verified": "",
   "species_context": "human",
+  "curator_note": "",
+  "supp_source": ""
+ },
+ {
+  "evidence_id": "f6f9a909036d",
+  "interaction_id": "812e526bd021",
+  "source_kind": "pmc",
+  "ref": "PMC7817837",
+  "cited_pmid": "",
+  "doi": "",
+  "year": "2021",
+  "first_author": "Aoki K",
+  "sentence": "We hypothesized that Ezrin, which is activated by RhoA-ROCK, binds Orai1 to competitively exclude STIM1 from retracting blebs and terminate SOCE.",
+  "sentence_verified": "true",
+  "species_context": "in_vitro_human_cells",
   "curator_note": "",
   "supp_source": ""
  },

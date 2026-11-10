@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 989 done, 12370 pending, 159 skipped, 2 error.
+13520 articles in queue: 1039 done, 12320 pending, 159 skipped, 2 error.
 
-- tier 0: 997/3801 processed
+- tier 0: 1047/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1265,5 +1265,28 @@ ORAI1 -> NFATc1 in keratinocyte migration.
 26903518). NFATC2 is a level-2 seed, not an anchor, so AQP5 two steps from an anchor falls out —
 the same wall as ORAI3 -> NANOG (batch 17); the paper never knocks down ORAI1 or STIM1 by name,
 so the edge cannot honestly be moved onto an anchor.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-10 — batch 22 (tier 0, primary)
+
+50 articles read, 22 records in `data/raw/lit_20261110_b26.jsonl`, none dropped by the build.
+Map: 390 nodes, 1083 interactions, 1563 evidence rows.
+
+**Transcription of the sensor**: WT1 represses and EGR1 drives STIM1, both binding the STIM1
+promoter by ChIP (Wilms tumour cells, Egr1-null mice; PMID 20123987). PDGF -> Akt/mTOR upregulates
+STIM1/ORAI1 in PASMC.
+
+**Taking ORAI1 down**: active ezrin binds ORAI1 and evicts STIM1 in retracting blebs; SPLUNC1
+(BPIFA1) binds ORAI1 and sends it to lysosomes, NEDD4.2-dependent; the rhomboid RHBDL2 cleaves
+ORAI1 caught in the active conformation (PMID 34800360).
+
+**New partners and outputs**: GLT-1 (SLC1A2) co-IPs with STIM1 and ORAI1, weakened by epilepsy
+variants; STIM1 drives store-operated cAMP through AC3, and ORAI1 Ca2+ entry shuts it off;
+ORAI1/TRPC1 entry traffics TRPV6 to the membrane; RyR2 gates a STIM1-dependent entry; 5-HT2A ->
+ORAI1 in coronary muscle; STIM1/ORAI1 -> COX-2 (LPS) and STIM1 -> eNOS.
+
+**Tooling note**: `species_context` takes only the schema values (`in_vitro_human_cells`, `human`,
+`mouse`, `rat`, `other`, `unknown`); cell-line detail goes in the justification.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
