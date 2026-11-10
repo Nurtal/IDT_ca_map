@@ -5,9 +5,9 @@ See docs/EXTRACTION_PROTOCOL.md for the session procedure.
 <!-- auto:start -->
 ## Status (generated)
 
-13520 articles in queue: 1089 done, 12270 pending, 159 skipped, 2 error.
+13520 articles in queue: 1139 done, 12220 pending, 159 skipped, 2 error.
 
-- tier 0: 1097/3801 processed
+- tier 0: 1147/3801 processed
 - tier 1: 150/3812 processed
 - tier 2: 3/5907 processed
 
@@ -1310,5 +1310,22 @@ binds CaMKK2 as an AMPK scaffold.
 **Dropped**: `SGK3 -> STIM2` (expression, sgk3-/- dendritic cells, PMID 23171960): STIM2 is not an
 anchor and SGK3 has no calcium link in the sentence — another case for the issue #18 question on
 STIM2 as an anchor.
+
+**Next session:** `queue next 50 --tier 0 --primary`.
+
+## 2026-11-10 — batch 24 (tier 0, primary)
+
+50 articles read (two off-topic HIV papers among them), 15 records in
+`data/raw/lit_20261110_b28.jsonl`, none dropped. Map: 404 nodes, 1119 interactions, 1607 evidence rows.
+
+**Marking ORAI1**: ZDHHC20 S-acylates ORAI1 at Cys143 and sends it to rafts and the immune synapse
+(PMID 34913437); ST6GAL1 sialylates the N223 glycan and damps SOCE; mannan-binding lectin (MBL2)
+promotes ORAI1 ubiquitination through PDK1-SGK1.
+
+**Abundance**: androgen receptor lowers STIM1/ORAI1 and raises SARAF in airway smooth muscle; APP
+keeps TRPC1/ORAI1 up in astrocytes; JAK2 inhibition lowers STIM1/ORAI1 (inhibitor only, noted).
+
+**Binding and gating**: STIM1L binds TRPC1/TRPC4 in human myotubes; sigma-1 receptor holds STIM1
+and blocks TRPC1 entry in dopaminergic cells; a second source for STIM2.1 inhibiting ORAI1.
 
 **Next session:** `queue next 50 --tier 0 --primary`.
